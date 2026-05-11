@@ -1,0 +1,159 @@
+/* ============================================================
+   Morrow AI Consulting — Blog Post Styles
+   ============================================================ */
+
+/* --- Blog Post Layout --- */
+.blog-post {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.blog-header {
+    max-width: 720px;
+    margin: 0 auto 48px;
+}
+
+.blog-back {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    transition: color var(--transition);
+}
+
+.blog-back:hover {
+    color: var(--accent);
+}
+
+.blog-header .post-meta {
+    margin-bottom: 20px;
+}
+
+.blog-title {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+
+.blog-author {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* --- Blog Content --- */
+.blog-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.blog-lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.blog-content p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin-bottom: 20px;
+}
+
+.blog-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 48px;
+    margin-bottom: 20px;
+    padding-top: 8px;
+}
+
+.blog-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.blog-content em {
+    color: var(--text-primary);
+    font-style: italic;
+}
+
+.blog-content a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.blog-content a:hover {
+    color: var(--accent-hover);
+}
+
+/* --- CTA Box --- */
+.blog-cta-box {
+    margin-top: 40px;
+    padding: 24px 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+}
+
+.blog-cta-box p {
+    color: var(--text-secondary);
+    font-size: 0.95rem !important;
+    margin-bottom: 0 !important;
+    font-style: italic;
+}
+
+/* --- Blog Footer --- */
+.blog-footer {
+    max-width: 720px;
+    margin: 60px auto 0;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 12px 28px;
+}
+
+.btn-outline:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .blog-post {
+        padding-top: 100px;
+    }
+
+    .blog-content p {
+        font-size: 1rem;
+    }
+
+    .blog-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .blog-footer {
+        flex-direction: column;
+    }
+
+    .blog-footer .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

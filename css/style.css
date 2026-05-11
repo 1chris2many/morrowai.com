@@ -435,6 +435,9 @@ img {
     padding: 32px;
     transition: border-color var(--transition), transform var(--transition);
     cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .post-card:hover {
@@ -555,6 +558,86 @@ img {
     color: var(--text-secondary);
     font-weight: 500;
     margin-top: 4px;
+}
+
+/* --- Speaking & Thought Leadership --- */
+.speaking-section {
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 1px solid var(--border);
+}
+
+.speaking-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--text-primary);
+}
+
+.speaking-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.speaking-category {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.speaking-category-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.speaking-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.speaking-pill {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(30, 30, 46, 0.5);
+}
+
+.speaking-pill:last-child {
+    border-bottom: none;
+}
+
+.speaking-pill a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.speaking-pill a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.pill-year {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    min-width: 52px;
+    text-align: center;
 }
 
 /* --- Contact --- */
@@ -733,6 +816,11 @@ img {
     .stat {
         flex: 1;
         min-width: 140px;
+    }
+
+    .speaking-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 

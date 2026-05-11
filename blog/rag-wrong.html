@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Most Companies Are Getting RAG Wrong — Morrow AI Consulting</title>
+    <meta name="description" content="Everyone's building RAG. Almost nobody's building it right. The vector database is not your problem — here's what actually matters.">
+    <meta property="og:title" content="Why Most Companies Are Getting RAG Wrong — Morrow AI Consulting">
+    <meta property="og:description" content="Everyone's building RAG. Almost nobody's building it right. The real problem is orchestration, not retrieval.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://morrowai.com/blog/rag-wrong.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0f'/%3E%3Ccircle cx='16' cy='12' r='5' fill='none' stroke='%23d4a853' stroke-width='1.5'/%3E%3Cline x1='16' y1='17' x2='16' y2='26' stroke='%23d4a853' stroke-width='1.5'/%3E%3Cline x1='12' y1='22' x2='20' y2='22' stroke='%23d4a853' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='12' r='2' fill='%23d4a853'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">MORROW <span class="accent">AI</span></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../#services">What I Do</a></li>
+                <li><a href="../#case-studies">Case Studies</a></li>
+                <li><a href="../#the-take">The Take</a></li>
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#contact" class="nav-cta">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <div class="container">
+            <div class="blog-header">
+                <a href="../#the-take" class="blog-back">← Back to The Take</a>
+                <div class="post-meta">
+                    <span class="post-tag">Industry Take</span>
+                    <time class="post-date">May 2026</time>
+                </div>
+                <h1 class="blog-title">Why Most Companies Are Getting RAG Wrong</h1>
+                <p class="blog-author">By Chris Morrow</p>
+            </div>
+
+            <div class="blog-content">
+                <p class="blog-lead">Everyone's building RAG. Almost nobody's building it right.</p>
+
+                <p>I've watched teams spend weeks agonizing over which vector database to use, which embedding model has the best MTEB scores, whether to chunk at 512 or 1024 tokens. And then they ship something that hallucinates constantly, costs a fortune to run, and falls apart the moment real users start asking real questions.</p>
+
+                <p>Here's the thing: the vector database is not your problem. You've been solving for the wrong constraint.</p>
+
+                <h2>The Real Problem Is Orchestration</h2>
+
+                <p>Most teams treat RAG as a retrieval problem. Find the right documents, shove them in the context window, let the model figure it out. That's not RAG — that's context stuffing with extra steps.</p>
+
+                <p>The hard part of RAG isn't retrieval. It's orchestration. It's knowing <em>what</em> to retrieve, <em>when</em> to retrieve it, and <em>how to blend</em> what you retrieved with what the model already knows from pretraining. Those are three completely different decisions, and most pipelines make all three by accident.</p>
+
+                <p>The "dump everything in the context window and hope" approach works fine in demos. It breaks down in production. The model gets confused by contradictory signals between retrieved content and parametric knowledge. Latency spikes because you're always retrieving the maximum amount of context regardless of whether the query needs it. Costs balloon. Quality degrades in ways that are hard to diagnose because you never built the evaluation infrastructure to catch it.</p>
+
+                <p>Let me walk through the specific failure modes I keep seeing.</p>
+
+                <h2>Skipping Query Planning</h2>
+
+                <p>Before you retrieve anything, you need to understand what kind of query you're actually dealing with. Is this a factual lookup? A comparison question? Something the model can answer from its own weights without retrieving anything at all?</p>
+
+                <p>Most teams skip this step entirely. They just route every query through the same retrieval pipeline with the same parameters. That's like using the same search strategy for "what's your return policy" and "compare these three products for someone who cares about sustainability." They're fundamentally different problems.</p>
+
+                <p>In my experience building at scale, query planning deserves its own tight SLA — we're talking under 300ms — because it's on the critical path for everything downstream. The query planner classifies intent and determines retrieval strategy <em>before</em> the main generation call. It's a small model doing a focused job, but it's the decision that shapes everything else.</p>
+
+                <p>Skip it, and you're not saving time. You're just pushing the complexity downstream where it's harder to debug.</p>
+
+                <h2>Treating Model Selection Like It's a One-Time Decision</h2>
+
+                <p>A lot of teams pick a model at the start of a project and use it for everything. I get it — model selection feels like a strategy decision, not an architecture decision.</p>
+
+                <p>But routing matters more than selection. The right question isn't "which model should we use?" It's "which model should handle <em>this specific query</em>?"</p>
+
+                <p>Some queries need a large, expensive model with deep reasoning capabilities. A lot of queries don't. Simple lookups, straightforward intent, high-confidence retrievals — those can often be handled by a faster, cheaper model with no meaningful quality drop. The difference in cost is significant. The difference in latency is significant.</p>
+
+                <p>A real-time router that makes this call per-query is a genuine force multiplier. I've seen architectures where a routing layer selects between multiple models — including custom fine-tuned models for specific domains — based on query characteristics. When you're running millions of queries, even a modest improvement in routing logic compounds into real money and real user experience gains.</p>
+
+                <p>Build the router. Don't just pick the model.</p>
+
+                <h2>Building With No Evaluation Framework</h2>
+
+                <p>This is where I see the most teams completely fall apart: they build the pipeline, demo it to stakeholders, and ship.</p>
+
+                <p>They have no systematic way to measure whether the retrieved context actually <em>helped</em> the response. Not just whether the response looks good — whether the retrieval was doing useful work.</p>
+
+                <p>This matters because RAG can fail in silent ways. The model might be ignoring your retrieved context entirely and just generating from parametric knowledge. It might be confusing retrieved content with the model's own knowledge and producing confident nonsense. You won't catch this without targeted evaluation.</p>
+
+                <p>You need at minimum: retrieval quality metrics separate from generation quality metrics, a way to measure when retrieval hurts rather than helps, and regular regression testing as you update your retrieval pipeline. Without that infrastructure, every change you make is a guess.</p>
+
+                <h2>What You Should Do Instead</h2>
+
+                <p><strong>Start with query planning.</strong> Seriously, build this first. Even a simple classifier that buckets queries into three or four intent categories will immediately improve the coherence of your system.</p>
+
+                <p><strong>Build the router before you obsess over the model.</strong> Get the infrastructure right that lets you swap models per-query, then optimize which model handles what.</p>
+
+                <p><strong>Instrument everything.</strong> You want to know retrieval latency, retrieval relevance (not just cosine similarity — actual relevance to the response), and whether the model is using what you retrieved. This is boring infrastructure work and it's the most valuable thing you can do.</p>
+
+                <p><strong>Think about cost as a first-class constraint, not an afterthought.</strong> At meaningful scale, a 4x cost reduction through smarter routing and model selection isn't a nice-to-have. It's often the difference between a product that gets resourced and one that gets killed.</p>
+
+                <h2>The Bottom Line</h2>
+
+                <p>RAG done right is an orchestration system that happens to include retrieval — not a retrieval system that happens to use a model. The teams I've seen get this right all have one thing in common: they thought hard about the decision layer before they thought about the data layer.</p>
+
+                <p>Everyone's focused on what's in the context window. Start focusing on who decides what goes there.</p>
+            </div>
+
+            <div class="blog-footer">
+                <a href="../#the-take" class="btn btn-primary">← Back to The Take</a>
+                <a href="../#contact" class="btn btn-outline">Let's Talk</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-brand">
+                    <span class="nav-logo">MORROW <span class="accent">AI</span></span>
+                    <p class="footer-location">Seattle, WA</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="../#services">What I Do</a>
+                    <a href="../#case-studies">Case Studies</a>
+                    <a href="../#the-take">The Take</a>
+                    <a href="../#about">About</a>
+                    <a href="../#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Morrow AI Consulting LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile nav toggle
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+        document.getElementById('nav-links').classList.toggle('open');
+        this.classList.toggle('active');
+    });
+    </script>
+</body>
+</html>
