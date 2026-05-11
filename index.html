@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morrow AI Consulting — AI Product Strategy from Someone Who Ships It Every Day</title>
+    <meta name="description" content="Chris Morrow — AI product strategy, GenAI consulting, and hands-on expertise from a practitioner who builds AI products at scale. Formerly Amazon Rufus, currently Meta.">
+    <meta property="og:title" content="Morrow AI Consulting">
+    <meta property="og:description" content="AI product strategy from someone who ships it every day. GenAI, conversational commerce, search & ranking, and agentic commerce consulting.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://morrowai.com">
+    <meta property="og:image" content="https://morrowai.com/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Morrow AI Consulting">
+    <meta name="twitter:description" content="AI product strategy from someone who ships it every day.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0f'/%3E%3Ccircle cx='16' cy='12' r='5' fill='none' stroke='%23d4a853' stroke-width='1.5'/%3E%3Cline x1='16' y1='17' x2='16' y2='26' stroke='%23d4a853' stroke-width='1.5'/%3E%3Cline x1='12' y1='22' x2='20' y2='22' stroke='%23d4a853' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='12' r='2' fill='%23d4a853'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">MORROW <span class="accent">AI</span></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#services">What I Do</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#the-take">The Take</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <svg class="hero-svg" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <radialGradient id="glow1" cx="30%" cy="40%">
+                        <stop offset="0%" stop-color="#d4a853" stop-opacity="0.08"/>
+                        <stop offset="100%" stop-color="#d4a853" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="glow2" cx="70%" cy="60%">
+                        <stop offset="0%" stop-color="#d4a853" stop-opacity="0.05"/>
+                        <stop offset="100%" stop-color="#d4a853" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+                <rect width="1440" height="800" fill="url(#glow1)"/>
+                <rect width="1440" height="800" fill="url(#glow2)"/>
+                <!-- Circuit pattern -->
+                <g stroke="#1e1e2e" stroke-width="1" fill="none" opacity="0.6">
+                    <line x1="200" y1="0" x2="200" y2="800"/>
+                    <line x1="400" y1="0" x2="400" y2="800"/>
+                    <line x1="600" y1="0" x2="600" y2="800"/>
+                    <line x1="800" y1="0" x2="800" y2="800"/>
+                    <line x1="1000" y1="0" x2="1000" y2="800"/>
+                    <line x1="1200" y1="0" x2="1200" y2="800"/>
+                    <line x1="0" y1="200" x2="1440" y2="200"/>
+                    <line x1="0" y1="400" x2="1440" y2="400"/>
+                    <line x1="0" y1="600" x2="1440" y2="600"/>
+                </g>
+                <!-- Circuit nodes -->
+                <g fill="#d4a853" opacity="0.15">
+                    <circle cx="200" cy="200" r="4"/>
+                    <circle cx="400" cy="400" r="4"/>
+                    <circle cx="600" cy="200" r="6"/>
+                    <circle cx="800" cy="600" r="4"/>
+                    <circle cx="1000" cy="400" r="5"/>
+                    <circle cx="1200" cy="200" r="4"/>
+                    <circle cx="400" cy="600" r="5"/>
+                    <circle cx="1000" cy="200" r="4"/>
+                </g>
+                <!-- Diagonal traces -->
+                <g stroke="#d4a853" stroke-width="0.5" opacity="0.1">
+                    <path d="M200 200 L400 400 L600 400"/>
+                    <path d="M600 200 L800 200 L800 400 L1000 400"/>
+                    <path d="M1000 400 L1200 200"/>
+                    <path d="M400 600 L600 400"/>
+                    <path d="M800 600 L1000 400"/>
+                </g>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <p class="hero-name fade-in">Chris Morrow</p>
+            <h1 class="hero-title fade-in delay-1">Morrow AI Consulting</h1>
+            <p class="hero-tagline fade-in delay-2">AI product strategy from someone who ships it every day.</p>
+            <p class="hero-sub fade-in delay-3">I build AI products at scale during the week. I help companies figure out how to do the same on the side.</p>
+            <a href="#contact" class="btn btn-primary fade-in delay-4">Let's Talk</a>
+        </div>
+    </section>
+
+    <!-- What I Do -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title scroll-in">What I Do</h2>
+            <p class="section-subtitle scroll-in">Grounded in daily practice, not slide decks.</p>
+            <div class="services-grid">
+                <div class="service-card scroll-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="8" width="32" height="32" rx="4" stroke="#d4a853" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="8" stroke="#d4a853" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="3" fill="#d4a853"/>
+                            <line x1="24" y1="4" x2="24" y2="8" stroke="#d4a853" stroke-width="2"/>
+                            <line x1="24" y1="40" x2="24" y2="44" stroke="#d4a853" stroke-width="2"/>
+                            <line x1="4" y1="24" x2="8" y2="24" stroke="#d4a853" stroke-width="2"/>
+                            <line x1="40" y1="24" x2="44" y2="24" stroke="#d4a853" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>GenAI & LLM Product Strategy</h3>
+                    <p>From zero-to-one launches to evaluation frameworks and production-scale prompt engineering. I've shipped GenAI products to 120M+ users — I know what works and what doesn't.</p>
+                </div>
+                <div class="service-card scroll-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 36V16a4 4 0 014-4h24a4 4 0 014 4v14a4 4 0 01-4 4H16l-8 6v-4z" stroke="#d4a853" stroke-width="2"/>
+                            <circle cx="18" cy="23" r="2" fill="#d4a853"/>
+                            <circle cx="24" cy="23" r="2" fill="#d4a853"/>
+                            <circle cx="30" cy="23" r="2" fill="#d4a853"/>
+                        </svg>
+                    </div>
+                    <h3>Conversational Commerce & Voice AI</h3>
+                    <p>Shopping, discovery, and engagement through AI-powered conversations. I built this category at Amazon and continue to push it forward.</p>
+                </div>
+                <div class="service-card scroll-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="20" r="10" stroke="#d4a853" stroke-width="2"/>
+                            <line x1="31" y1="27" x2="40" y2="38" stroke="#d4a853" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M14 36h20" stroke="#d4a853" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M18 40h12" stroke="#d4a853" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Search, Ranking & Recommendation</h3>
+                    <p>Query understanding, retrieval, ranking — the full ML stack that powers discovery. Currently scaling AI search across 210M+ locations globally.</p>
+                </div>
+                <div class="service-card scroll-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="14" y="6" width="20" height="14" rx="3" stroke="#d4a853" stroke-width="2"/>
+                            <circle cx="24" cy="13" r="3" fill="#d4a853"/>
+                            <line x1="24" y1="20" x2="24" y2="28" stroke="#d4a853" stroke-width="2"/>
+                            <path d="M12 28h24v10a4 4 0 01-4 4H16a4 4 0 01-4-4V28z" stroke="#d4a853" stroke-width="2"/>
+                            <line x1="18" y1="34" x2="30" y2="34" stroke="#d4a853" stroke-width="1.5"/>
+                            <line x1="20" y1="37" x2="28" y2="37" stroke="#d4a853" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>Agentic Commerce & AI Agents</h3>
+                    <p>The next wave: AI agents that shop, negotiate, and transact on behalf of users. I consult frequently on this emerging space and have strong opinions about where it's headed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section section-alt" id="case-studies">
+        <div class="container">
+            <h2 class="section-title scroll-in">Case Studies</h2>
+            <p class="section-subtitle scroll-in">Real problems. Real outcomes. Names changed to protect the guilty.</p>
+            <div class="cases-grid">
+                <div class="case-card scroll-in">
+                    <div class="case-tag">GenAI • E-Commerce</div>
+                    <h3>Launching a GenAI Shopping Assistant at Scale</h3>
+                    <div class="case-section">
+                        <h4>Challenge</h4>
+                        <p>Major e-commerce platform needed to build a conversational AI shopping experience from scratch — no existing playbook, no benchmarks, no margin for error at their scale.</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Approach</h4>
+                        <p>Led product vision and strategy from concept through global launch. Built novel evaluation frameworks to measure GenAI quality in commerce contexts where "good enough" isn't good enough.</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Impact</h4>
+                        <p class="case-impact">Scaled to <strong>120M+ MAU</strong> across 5 countries, generating <strong>$400M+</strong> in incremental annualized revenue.</p>
+                    </div>
+                </div>
+                <div class="case-card scroll-in">
+                    <div class="case-tag">Agentic Commerce • Investment Research</div>
+                    <h3>Agentic Commerce Strategy for Investor Due Diligence</h3>
+                    <div class="case-section">
+                        <h4>Challenge</h4>
+                        <p>Investment firms needed expert perspective on the emerging agentic commerce landscape — what's real vs. hype, and where the money should go.</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Approach</h4>
+                        <p>Provided structured analysis of current AI agent capabilities, market readiness, and the technical and UX barriers to autonomous shopping agents.</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Impact</h4>
+                        <p class="case-impact">Informed <strong>multi-million dollar investment decisions</strong> with practitioner-grounded insights that separated signal from noise.</p>
+                    </div>
+                </div>
+                <div class="case-card scroll-in">
+                    <div class="case-tag">Search & Discovery • E-Commerce</div>
+                    <h3>E-Commerce Search & Discovery Optimization</h3>
+                    <div class="case-section">
+                        <h4>Challenge</h4>
+                        <p>E-commerce platform struggling with search relevance and product discovery in a rapidly evolving AI landscape. Traditional keyword matching wasn't cutting it anymore.</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Approach</h4>
+                        <p>Evaluated existing search/ranking pipeline, identified NLP model deficiencies, and recommended concrete improvements grounded in production experience at scale.</p>
+                    </div>
+                    <div class="case-section">
+                        <h4>Impact</h4>
+                        <p class="case-impact case-coming-soon">Engagement in progress — May 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Take -->
+    <section class="section" id="the-take">
+        <div class="container">
+            <h2 class="section-title scroll-in">The Take</h2>
+            <p class="section-subtitle scroll-in">Industry takes from someone in the trenches. I react to what's happening in AI — not from the sidelines, but from the field.</p>
+            <div class="posts-grid">
+                <article class="post-card scroll-in">
+                    <div class="post-meta">
+                        <span class="post-tag">Industry Take</span>
+                        <time class="post-date">May 2026</time>
+                    </div>
+                    <h3>Why Most Companies Are Getting RAG Wrong</h3>
+                    <p>Everyone's building RAG pipelines. Most of them are solving the wrong problem. Here's what I see in practice that the blog posts don't tell you.</p>
+                    <span class="post-link">Read more →</span>
+                </article>
+                <article class="post-card scroll-in">
+                    <div class="post-meta">
+                        <span class="post-tag tag-batch">Reacting to The Batch</span>
+                        <time class="post-date">May 2026</time>
+                    </div>
+                    <h3>The Agentic Commerce Hype Cycle: Where We Actually Are</h3>
+                    <p>Andrew Ng's team covered autonomous shopping agents this month. I've been consulting on this exact topic — here's where the optimism outpaces the reality.</p>
+                    <p class="post-source">Subscribe to <a href="https://www.deeplearning.ai/the-batch/" target="_blank" rel="noopener">The Batch by Andrew Ng</a> — the newsletter that sparked this take.</p>
+                    <span class="post-link">Read more →</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section-alt" id="about">
+        <div class="container">
+            <h2 class="section-title scroll-in">About</h2>
+            <div class="about-layout">
+                <div class="about-story scroll-in">
+                    <p class="about-lead">I'm not a consultant who used to build things. I build things every day and consult on the side.</p>
+                    <p>My path to AI product leadership wasn't conventional. I spent <strong>12 years in the U.S. Army</strong> — Ranger School, a deployment to Iraq, leading 180-person organizations, and earning recognition from the President. That's where I learned that strategy without execution is just a slide deck.</p>
+                    <p>After my MBA at Vanderbilt, I joined <strong>Amazon</strong> and spent 7 years building AI-powered products. I created Alexa Shopping experiences, launched the Skill Flow Builder (adopted by EA, Sony Pictures, and Ernst & Young), and then founded <strong>Amazon Rufus</strong> — a GenAI conversational shopping assistant that went from zero to 120M monthly active users across 5 countries.</p>
+                    <p>Now at <strong>Meta</strong>, I lead AI Search for Places — powering discovery across 210M+ locations globally. I've spoken at Ai4, Product School, GDC, and serve as a DeepLearning.ai Ambassador.</p>
+                    <p>I consult because the problems are interesting, the stakes are real, and most companies deserve better advice than what they're getting from people who haven't shipped anything in years.</p>
+                </div>
+                <div class="about-stats scroll-in">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years in AI/ML Product Management</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">120M+</span>
+                        <span class="stat-label">MAU Products Shipped</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">$400M+</span>
+                        <span class="stat-label">Revenue Impact</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Years Military Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title scroll-in">Let's Talk</h2>
+            <p class="section-subtitle scroll-in">No pitch decks needed. Tell me what you're working on and I'll tell you if I can help.</p>
+            <div class="contact-layout scroll-in">
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" autocomplete="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">What can I help with? *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    <p class="form-note">I'll get back to you within a few business days.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-brand">
+                    <span class="nav-logo">MORROW <span class="accent">AI</span></span>
+                    <p class="footer-location">Seattle, WA</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#services">What I Do</a>
+                    <a href="#case-studies">Case Studies</a>
+                    <a href="#the-take">The Take</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Morrow AI Consulting LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
