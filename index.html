@@ -8,23 +8,23 @@
     <meta property="og:title" content="Morrow AI Consulting">
     <meta property="og:description" content="AI product strategy from someone who ships it every day. GenAI, conversational commerce, search & ranking, and agentic commerce consulting.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://morrowai.com">
-    <meta property="og:image" content="https://morrowai.com/images/og-image.png">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://1chris2many.github.io/morrowai.com/">
+    <link rel="canonical" href="https://1chris2many.github.io/morrowai.com/">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Morrow AI Consulting">
     <meta name="twitter:description" content="AI product strategy from someone who ships it every day.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0f'/%3E%3Ccircle cx='16' cy='12' r='5' fill='none' stroke='%23d4a853' stroke-width='1.5'/%3E%3Cline x1='16' y1='17' x2='16' y2='26' stroke='%23d4a853' stroke-width='1.5'/%3E%3Cline x1='12' y1='22' x2='20' y2='22' stroke='%23d4a853' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='12' r='2' fill='%23d4a853'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=20260907">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">MORROW <span class="accent">AI</span></a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -233,16 +233,16 @@
                     <p>Everyone's building RAG pipelines. Most of them are solving the wrong problem. The vector database is not your problem — you've been solving for the wrong constraint.</p>
                     <span class="post-link">Read more →</span>
                 </a>
-                <a href="blog/agentic-commerce-hype.html" class="post-card scroll-in">
+                <article class="post-card scroll-in">
                     <div class="post-meta">
                         <span class="post-tag tag-batch">Reacting to The Batch</span>
                         <time class="post-date">May 2026</time>
                     </div>
-                    <h3>The Agentic Commerce Hype Cycle: Where We Actually Are</h3>
+                    <h3><a href="blog/agentic-commerce-hype.html">The Agentic Commerce Hype Cycle: Where We Actually Are</a></h3>
                     <p>The vision is right, but the timeline is wrong. I've been consulting on this exact topic — here's where the optimism outpaces the reality, and what the smart money is actually funding.</p>
                     <p class="post-source">Subscribe to <a href="https://www.deeplearning.ai/the-batch/" target="_blank" rel="noopener">The Batch by Andrew Ng</a> — the newsletter that sparked this take.</p>
-                    <span class="post-link">Read more →</span>
-                </a>
+                    <a class="post-link" href="blog/agentic-commerce-hype.html">Read more →</a>
+                </article>
             </div>
         </div>
     </section>
@@ -324,26 +324,10 @@
             <h2 class="section-title scroll-in">Let's Talk</h2>
             <p class="section-subtitle scroll-in">No pitch decks needed. Tell me what you're working on and I'll tell you if I can help.</p>
             <div class="contact-layout scroll-in">
-                <form class="contact-form" id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required autocomplete="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required autocomplete="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" name="company" autocomplete="organization">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">What can I help with? *</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
-                    <p class="form-note">I'll get back to you within a few business days.</p>
-                </form>
+                <div class="contact-notice">
+                    <h3>Online inquiries are temporarily unavailable</h3>
+                    <p>This website cannot currently send messages. Please check back for an updated contact option.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -370,6 +354,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260907"></script>
 </body>
 </html>

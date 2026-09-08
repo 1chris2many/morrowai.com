@@ -22,6 +22,7 @@
             if (links.classList.contains('open')) {
                 links.classList.remove('open');
                 toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
             }
         });
     });
@@ -29,9 +30,19 @@
     // --- Mobile menu toggle ---
     var navToggle = document.getElementById('nav-toggle');
     var navLinks = document.getElementById('nav-links');
+    document.documentElement.classList.add('nav-ready');
     navToggle.addEventListener('click', function () {
         navLinks.classList.toggle('open');
         navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', String(navLinks.classList.contains('open')));
+    });
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+            navLinks.classList.remove('open');
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.focus();
+        }
     });
 
     // --- Sticky nav scroll state ---
@@ -87,6 +98,7 @@
         });
 
         scrollElements.forEach(function (el) {
+            el.classList.add('reveal-ready');
             observer.observe(el);
         });
     } else {
@@ -104,55 +116,5 @@
             child.style.transitionDelay = (index * 0.1) + 's';
         });
     });
-
-    // --- Contact form handling ---
-    var form = document.getElementById('contact-form');
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            // Basic validation
-            var name = form.querySelector('#name');
-            var email = form.querySelector('#email');
-            var message = form.querySelector('#message');
-            var valid = true;
-
-            [name, email, message].forEach(function (field) {
-                if (!field.value.trim()) {
-                    field.style.borderColor = '#e74c3c';
-                    valid = false;
-                } else {
-                    field.style.borderColor = '';
-                }
-            });
-
-            if (email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-                email.style.borderColor = '#e74c3c';
-                valid = false;
-            }
-
-            if (!valid) {
-                e.preventDefault();
-                return;
-            }
-
-            // If formspree placeholder, show success message instead of submitting
-            if (form.action.indexOf('placeholder') !== -1) {
-                e.preventDefault();
-                var layout = document.querySelector('.contact-layout');
-                layout.innerHTML =
-                    '<div class="form-success">' +
-                    '<h3>Message Received</h3>' +
-                    '<p>Thanks for reaching out. I\'ll get back to you within a few business days.</p>' +
-                    '</div>';
-                return;
-            }
-        });
-
-        // Clear error styling on input
-        form.querySelectorAll('input, textarea').forEach(function (field) {
-            field.addEventListener('input', function () {
-                this.style.borderColor = '';
-            });
-        });
-    }
 
 })();

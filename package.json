@@ -1,0 +1,10 @@
+{
+  "name": "morrowai-website",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/site.test.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}
