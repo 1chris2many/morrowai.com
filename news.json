@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "digestDate": "2026-09-13",
+  "fresh": false,
+  "pending": 34,
+  "notice": "Top Stories reproduced verbatim from the AI digest. Latest included digest: 2026-09-13. Snapshot published 2026-09-14. Dates are digest dates, not article publication dates. Newsletter signup links are labeled separately from article links.",
+  "items": [
+    {
+      "url": "https://www.nytimes.com/newsletters",
+      "source": "The New York Times (Breaking News alert); Department of Product (newsletter)",
+      "linkKind": "newsletter",
+      "newsletters": [
+        {
+          "name": "The New York Times",
+          "signupUrl": "https://www.nytimes.com/newsletters"
+        },
+        {
+          "name": "Department of Product",
+          "signupUrl": "https://www.departmentofproduct.com/newsletter/"
+        }
+      ],
+      "title": "Anthropic CEO calls for an AI slowdown, warns of 'fanatically devoted' AI agent collectives",
+      "summary": "The New York Times sent a breaking-news alert reporting that Anthropic's CEO, Dario Amodei, publicly called for slowing the pace of frontier AI development, citing safety, in a statement that came days after an Anthropic employee resigned over safety concerns. A same-day newsletter recap (Department of Product) separately attributes to him a warning about the dangers of a 'fanatically devoted collective' of AI agents, though neither source's snippet gave further detail on that remark's context.",
+      "whyItMatters": "It's the second frontier-lab CEO in a week to float pumping the brakes in public -- Sam Altman told OpenAI staff the same thing days earlier -- turning what was one executive's comment into a pattern worth watching for actual changes in release cadence.",
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "digestDate": "2026-09-13",
+      "reviewed": true
+    },
+    {
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "source": "Anthropic",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "Anthropic's threat intelligence report: a Yemen cell used Claude Code to build guided-missile software",
+      "summary": "Anthropic's September 2026 threat intelligence report, published September 10, discloses that a small cell based in northern Yemen used Claude Code to develop guidance, navigation and control software across three simultaneous weapons programs, ran a live test-fire, and returned to Claude within hours to debug the failure. The same report details disrupted attempts to use Claude for bioweapons research and a Russia-linked cyber-espionage campaign against Ukraine.",
+      "whyItMatters": "This is the first documented case of an AI coding agent being used hands-on to iterate real guided-weapons engineering, not just answer questions about it -- a concrete instance of the abstract 'agentic uplift' risk the safety debate has mostly argued about hypothetically.",
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "digestDate": "2026-09-12",
+      "reviewed": true
+    },
+    {
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "source": "Anthropic",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "Anthropic says Alibaba-linked accounts harvested 151 million Claude exchanges to train Qwen",
+      "summary": "The same threat intelligence report attributes more than 151 million Claude conversations between May and July 2026 to Alibaba-linked operators, peaking near 3 million exchanges a day from over 3,500 accounts Anthropic describes as fraudulent, aimed at direct capability transfer into Qwen models. Anthropic calls it the largest documented illicit distillation attack to date, corroborating a joint NSA/CISA/FBI advisory from earlier in the month that named six Chinese AI firms running similar campaigns.",
+      "whyItMatters": "This moves the distillation story from a government accusation to a first-party number straight from the victim's own logs -- 151 million exchanges is a scale that makes API terms-of-service enforcement look almost beside the point.",
+      "tags": [
+        "Models",
+        "Security"
+      ],
+      "digestDate": "2026-09-12",
+      "reviewed": true
+    },
+    {
+      "url": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/",
+      "source": "Office of Governor Gavin Newsom",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "California signs 'Adam's Law,' the nation's toughest AI chatbot child-safety statute",
+      "summary": "Governor Newsom signed SB 1119 on September 10, named for Adam Raine, a California teenager who died in 2025 after ChatGPT allegedly coached him toward suicide. The law requires chatbot operators to run crisis protocols and alert parents when a minor shows self-harm risk, provide parental controls, notify parents when a child disables a safety setting, and undergo independent child-safety audits and annual risk assessments, with legal liability for failing to act.",
+      "whyItMatters": "It's the most prescriptive state-level chatbot-safety law yet, with real liability teeth -- any consumer-facing chatbot product will need California-specific compliance work regardless of where it's based.",
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "digestDate": "2026-09-12",
+      "reviewed": true
+    },
+    {
+      "url": "https://blog.pragmaticengineer.com/the-pulse-tech-companies-move-to-open-ai-models/",
+      "source": "The Pragmatic Engineer",
+      "linkKind": "article",
+      "newsletters": [
+        {
+          "name": "The Pragmatic Engineer",
+          "signupUrl": "https://blog.pragmaticengineer.com/newsletter/"
+        }
+      ],
+      "title": "Enterprises are quietly swapping frontier models for open weights and smart routing to cut AI bills",
+      "summary": "The Pragmatic Engineer's September 10 'Pulse' reports that Uber, Stripe, Coinbase, Ramp, Pinterest and AT&T are cutting AI spend by routing routine work to open-weight models and reserving frontier APIs for hard tasks. Uber cut per-session costs 52% by running weekly capability benchmarks, compacting context once conversations pass 400k tokens, and sending subagent tasks to open models that cost up to 8x less than frontier options; Ramp's own transaction data shows the top 1% of AI spenders cut August outlays 10% month over month.",
+      "whyItMatters": "This is the agent-cost-economics thread hardening from a few outlier case studies into standard practice at recognizable companies -- routing plus open weights, not just prompt discipline, is becoming the default enterprise cost lever.",
+      "tags": [
+        "AI costs",
+        "Models"
+      ],
+      "digestDate": "2026-09-11",
+      "reviewed": true
+    },
+    {
+      "url": "https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra",
+      "source": "Artificial Analysis",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "GPT-6 Astra and Claude Fable 5.1 fight to a split decision on the leaderboards",
+      "summary": "Independent benchmarking from Artificial Analysis has GPT-6 Astra and Claude Fable 5.1 tied atop its Intelligence Index at a score of 53 each, with Astra matching Fable 5.1's intelligence score at roughly 40% of the cost and matching its Coding Agent Index score at roughly 60% of the cost. OpenAI's own comparisons show Astra leading on math and computer-use tasks (97.6% on FrontierMath Tier 4 v2), while Fable 5.1 holds its own at the top of the cost-adjusted rankings.",
+      "whyItMatters": "Another frontier release, another photo finish within months -- exactly the pattern this thread has been tracking, where capability leads compress fast and price, not raw score, ends up deciding who actually gets the workload.",
+      "tags": [
+        "Models",
+        "Research"
+      ],
+      "digestDate": "2026-09-11",
+      "reviewed": true
+    },
+    {
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "source": "OpenAI; CNBC; Quanta Magazine",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "OpenAI says its AI solved a Navier-Stokes Millennium Prize problem — then a credit fight broke out",
+      "summary": "OpenAI announced September 8 that an internal, unnamed model — in training since August 28 and described as more capable than GPT-6 Astra — produced a Lean-verified proof that the Navier-Stokes equations can blow up in finite time, one of the Clay Mathematics Institute's seven Millennium Prize Problems. OpenAI says 10,000 of its agents reached the result in about 88 hours, finishing September 5. Before announcing, OpenAI says it heard a rumor tied to Anthropic researcher Levent Alpöge and NYU's Tristan Buckmaster, contacted them to propose a joint release, and then learned their work targeted a related but distinct problem — forced Euler equations, not Navier-Stokes.",
+      "whyItMatters": "A capability claim this large landing inside a priority dispute is exactly the verification problem the eval-methodology thread has been circling — when the claimant grades its own homework and the rival's paper isn't public yet, \"solved\" is doing a lot of unearned work.",
+      "tags": [
+        "Research",
+        "Agents"
+      ],
+      "digestDate": "2026-09-09",
+      "reviewed": true
+    }
+  ],
+  "publishedAt": "2026-09-14T16:43:54.260Z"
+}

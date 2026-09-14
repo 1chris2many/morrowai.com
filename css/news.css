@@ -1,0 +1,30 @@
+.reading-heading { margin: 48px 0 12px; }
+.about-layout-single { grid-template-columns: minmax(0, 1fr); max-width: 850px; }
+.reading-note { color: var(--text-secondary, #aaa); line-height: 1.6; margin-bottom: 20px; }
+.news-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.news-card { padding: 20px; border: 1px solid var(--border); border-radius: 12px; }
+.news-card h3 { font-size: 1.1rem; line-height: 1.5; margin: 12px 0; overflow-wrap: anywhere; }
+.news-card a { color: inherit; }
+.news-card a:hover { color: var(--accent, #d4a853); }
+.news-card .reading-note { margin-bottom: 0; font-size: .85rem; }
+.news-summary { color: var(--text-secondary, #aaa); font-size: .9rem; line-height: 1.5; margin: 12px 0 18px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.news-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 16px; margin: 24px 0 16px; }
+.news-control { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; flex: 1 1 180px; min-width: 0; }
+.news-controls select { width: 100%; min-width: 0; }
+.news-card .post-meta, .news-newsletter { overflow-wrap: anywhere; }
+.news-controls label { font-size: .85rem; color: var(--text-secondary, #aaa); }
+.news-controls select, .news-clear { min-height: 44px; border: 1px solid var(--border); border-radius: 8px; padding: 10px; background: #15151e; color: #eee; font: inherit; max-width: 100%; }
+.news-clear { cursor: pointer; }
+.news-clear:disabled { opacity: .5; cursor: default; }
+.news-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.news-tag { min-height: 36px; padding: 7px 12px; border: 1px solid #66502a; border-radius: 18px; background: #211e17; color: #ecd49f; font: inherit; font-size: .8rem; cursor: pointer; }
+.news-tag:hover { background: #342b1b; }
+.news-controls select:focus-visible, .news-clear:focus-visible, .news-tag:focus-visible { outline: 2px solid #d4a853; outline-offset: 3px; }
+.news-empty { grid-column: 1 / -1; padding: 24px 0; color: var(--text-secondary, #aaa); }
+.preview-notice { padding: 90px 24px 20px; background: #252014; color: #f0d8a4; text-align: center; }
+.preview-notice a { color: inherit; text-decoration: underline; }
+@media (max-width: 767px) { .news-grid { grid-template-columns: 1fr; } }
+
+
+.news-header { padding-top: 32px; padding-bottom: 24px; }
+.news-footer { padding-top: 48px; padding-bottom: 32px; }
