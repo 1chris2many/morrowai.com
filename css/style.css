@@ -949,3 +949,10 @@ img {
         padding: 24px;
     }
 }
+
+/* September 14 release: measured copy and verified contact channel. */
+.about-layout-single { grid-template-columns: minmax(0, 1fr); max-width: 850px; }
+.reading-note { color: var(--text-secondary, #aaa); line-height: 1.6; margin-bottom: 20px; }
+.contact-email { color: var(--accent); overflow-wrap: anywhere; }
+.speaking-section a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 480px) { .nav-logo { font-size: 1rem; } }
