@@ -1,4 +1,4 @@
-import { selectNews } from './news-model.js';
+import { selectNews, newsAnchor } from './news-model.js';
 
 const status = document.getElementById('news-status');
 const list = document.getElementById('news-items');
@@ -71,6 +71,7 @@ async function loadNews() {
             for (const item of visible) {
                 const card = document.createElement('article');
                 card.className = 'news-card';
+                card.id = newsAnchor(item);
                 card.dataset.date = item.digestDate;
                 const meta = document.createElement('p');
                 meta.className = 'post-meta';
@@ -107,6 +108,12 @@ async function loadNews() {
                 note.className = 'reading-note';
                 note.textContent = item.linkKind === 'newsletter' ? 'Newsletter-sourced · Signup links below' : 'Source link checked · Read original ↗';
                 card.append(meta, heading, summary);
+                if (item.linkKind === 'newsletter') {
+                    const disclosure = document.createElement('p');
+                    disclosure.className = 'newsletter-only';
+                    disclosure.textContent = 'Newsletter-sourced · No direct article link available in this snapshot. Signup links are below.';
+                    heading.after(disclosure);
+                }
                 if (item.whyItMatters) {
                     const whyLabel = document.createElement('p');
                     whyLabel.className = 'reading-note';
@@ -142,6 +149,9 @@ async function loadNews() {
             topic.focus();
         });
         render();
+        if (location.hash.startsWith('#story-')) {
+            document.getElementById(location.hash.slice(1))?.scrollIntoView({ block: 'start' });
+        }
     } catch {
         status.textContent = 'The reading list is temporarily unavailable. Please try again later; the articles above are still available.';
     }

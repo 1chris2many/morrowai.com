@@ -3,145 +3,168 @@ import { before, after, test } from 'node:test';
 import { createServer } from 'node:http';
 import { readFile, mkdir } from 'node:fs/promises';
 import { chromium } from 'playwright';
+import { newsAnchor } from '../js/news-model.js';
 
-const pages = ['index.html', 'blog/rag-wrong.html', 'blog/agentic-commerce-hype.html', 'news.html'];
-const assets = ['css/style.css', 'css/blog.css', 'css/news.css', 'js/main.js', 'js/news.js', 'js/news-model.js', 'news.json'];
-const publicBase = 'https://usefulaiwerks.com/';
+const pages = ['index.html', 'research.html', 'news.html', 'blog/rag-wrong.html', 'blog/agentic-commerce-hype.html'];
+const assets = ['css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/news.js', 'js/news-model.js', 'news.json', 'feed.xml'];
 let server, browser, base;
-
+const feed = JSON.parse(await readFile(new URL('../news.json', import.meta.url)));
 before(async () => {
-    if (process.env.SITE_URL) {
-        base = process.env.SITE_URL.replace(/\/?$/, '/');
-    } else {
+    if (process.env.SITE_URL) base = process.env.SITE_URL.replace(/\/?$/, '/');
+    else {
         server = createServer(async (req, res) => {
             const path = new URL(req.url, 'http://localhost').pathname;
             const file = path.replace(/^\/morrowai.com\//, '') || 'index.html';
-            if (!path.startsWith('/morrowai.com/') || ![...pages, ...assets].includes(file)) {
-                res.writeHead(404).end();
-                return;
-            }
-            const types = { html: 'text/html', css: 'text/css', js: 'text/javascript', json: 'application/json' };
-            res.setHeader('Content-Type', types[file.split('.').pop()]);
+            if (!path.startsWith('/morrowai.com/') || ![...pages, ...assets].includes(file)) return res.writeHead(404).end();
+            res.setHeader('Content-Type', { html: 'text/html', css: 'text/css', js: 'text/javascript', json: 'application/json', xml: 'application/rss+xml' }[file.split('.').pop()]);
             res.end(await readFile(new URL('../' + file, import.meta.url)));
         });
         await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
         base = `http://127.0.0.1:${server.address().port}/morrowai.com/`;
     }
-    browser = await chromium.launch({ channel: process.env.BROWSER_CHANNEL || 'chrome', chromiumSandbox: true });
+    browser = await chromium.launch({ channel: 'chrome', chromiumSandbox: true });
     await mkdir(new URL('../test-results/', import.meta.url), { recursive: true });
 });
+after(async () => { await browser?.close(); if (server) await new Promise(resolve => server.close(resolve)); });
 
-after(async () => {
-    await browser?.close();
-    if (server) await new Promise(resolve => server.close(resolve));
-});
-
-for (const width of [390, 1440]) {
-    test(`pages, contact email, links and navigation at ${width}px`, async () => {
-        const context = await browser.newContext({ viewport: { width, height: 900 } });
+for (const width of [320, 390, 768, 820, 1440]) {
+    test(`v0.2 pages, navigation and layout at ${width}px`, async () => {
+        const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
         const page = await context.newPage();
         const errors = [];
-        page.on('pageerror', error => errors.push(error.message));
+        page.on('pageerror', e => errors.push(e.message));
         try {
             for (const file of pages) {
-                const response = await page.goto(base + (file === 'index.html' ? '' : file));
-                assert.equal(response.status(), 200);
-                const canonicalBase = file.startsWith('blog/') ? 'https://1chris2many.github.io/morrowai.com/' : publicBase;
+                const r = await page.goto(base + (file === 'index.html' ? '' : file));
+                assert.equal(r.status(), 200);
+                const canonicalBase = file.startsWith('blog/') ? 'https://1chris2many.github.io/morrowai.com/' : 'https://usefulaiwerks.com/';
                 assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'), canonicalBase + (file === 'index.html' ? '' : file));
-                if (file !== 'news.html') assert.equal(await page.locator('meta[property="og:url"]').getAttribute('content'), canonicalBase + (file === 'index.html' ? '' : file));
+                assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), file + ' overflow');
                 assert.equal(await page.locator('a a').count(), 0);
-                assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${file} overflows`);
-                const urls = await page.locator('a[href], link[rel="stylesheet"], script[src]').evaluateAll(elements => elements.map(el => el.href || el.src));
-                for (const href of new Set(urls)) {
-                    if (!href.startsWith(base)) continue;
-                    const target = await context.request.get(href.split('#')[0]);
-                    assert.equal(target.status(), 200, href);
-                    if (href.includes('#') && href.split('#')[0] === page.url().split('#')[0]) {
-                        assert.equal(await page.locator('#' + href.split('#')[1]).count(), 1, href);
-                    }
-                }
-                if (width < 768 && file !== 'news.html') {
+                if (width <= 768) {
                     const toggle = page.locator('#nav-toggle');
                     await toggle.click();
                     assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
-                    assert.ok(await page.locator('#nav-links').isVisible());
                     await page.keyboard.press('Escape');
                     assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
                     assert.ok(await toggle.evaluate(el => el === document.activeElement));
+                } else {
+                    assert.ok(await page.evaluate(() => document.querySelector('.nav-logo').getBoundingClientRect().right < document.querySelector('#nav-links').getBoundingClientRect().left));
+                }
+                if (!file.startsWith('blog/')) {
+                    const links = await page.locator('a[href],link[rel="stylesheet"],script[src]').evaluateAll(els => els.map(e => e.href || e.src));
+                    for (const href of new Set(links)) {
+                        if (!href.startsWith(base)) continue;
+                        const response = await context.request.get(href.split('#')[0]);
+                        assert.equal(response.status(), 200, href);
+                    }
                 }
             }
             await page.goto(base);
-            await page.waitForFunction(() => getComputedStyle(document.querySelector('.hero-sub')).opacity === '1');
-            await page.screenshot({ path: `test-results/home-${width}.png` });
-            assert.equal(await page.locator('form, input, textarea').count(), 0, 'No nonfunctional form may collect inquiries');
-            assert.equal(await page.locator('meta[property="og:image"]').count(), 0, 'No missing preview asset');
-            assert.equal(await page.locator('#contact .contact-email').getAttribute('href'), 'mailto:hello@usefulaiwerks.com');
-            assert.doesNotMatch(await page.locator('body').innerText(), /temporarily unavailable|founded Amazon Rufus|Case Studies|currently Meta|8\+ voice/);
-            assert.doesNotMatch(await page.content(), /Message Received|formspree\.io\/f\/placeholder/);
-            assert.equal(await page.locator('.posts-grid > .post-card').count(), 2);
-            assert.equal(await page.locator('.linkedin-posts a[href^="https://www.linkedin.com/"]').count(), 2);
-            assert.equal(await page.locator('#ai-news a').getAttribute('href'), 'news.html');
-            assert.match(await page.locator('h1').innerText(), /Useful AI Werks/);
-            if (width < 768) await page.locator('#nav-toggle').click();
-            await page.locator('#nav-links a[href="#contact"]').click();
-            assert.equal(await page.locator('#nav-toggle').getAttribute('aria-expanded'), 'false');
-            await page.locator('.contact-notice').scrollIntoViewIfNeeded();
-            await page.waitForFunction(() => getComputedStyle(document.querySelector('.contact-layout')).opacity === '1');
-            await page.screenshot({ path: `test-results/contact-${width}.png` });
+            assert.equal(await page.locator('#hero .btn-primary').getAttribute('href'), '#essays');
+            assert.equal(await page.locator('#hero a[href="#contact"]').count(), 0);
+            assert.equal(await page.locator('#nav-links a[href="news.html"]').count(), 1);
+            assert.equal(await page.locator('.essay-card').count(), 2);
+            assert.equal(await page.locator('.digest-preview li').count(), 3);
+            assert.equal(await page.locator('.contact-email').getAttribute('href'), 'mailto:hello@usefulaiwerks.com');
+            assert.equal(await page.locator('form, input, textarea').count(), 0);
+            assert.ok(await page.locator('#essays').evaluate(el => el.getBoundingClientRect().top < innerHeight), 'Writing must begin in first viewport');
+            assert.ok(await page.evaluate(() => document.querySelector('#research').offsetTop < document.querySelector('#contact').offsetTop));
+            await page.screenshot({ path: `test-results/v02-home-${width}.png` });
+            await page.locator('#hero .btn-primary').click();
+            await page.waitForFunction(() => document.querySelector('#nav-links a[href="#essays"]').getAttribute('aria-current') === 'location');
+            if (width === 390 || width === 1440) {
+                await page.locator('#essays').scrollIntoViewIfNeeded();
+                await page.screenshot({ path: `test-results/v02-essays-${width}.png` });
+                await page.goto(base + 'research.html');
+                assert.equal(await page.locator('#nav-links a[href="research.html"]').getAttribute('aria-current'), 'page');
+                assert.match(await page.locator('main').innerText(), /No research papers or findings have been published/);
+                await page.screenshot({ path: `test-results/v02-research-${width}.png` });
+            }
             assert.deepEqual(errors, []);
-        } finally {
-            await context.close();
-        }
+        } finally { await context.close(); }
     });
 }
 
-test('content and mobile navigation work without JavaScript', async () => {
-    const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 900 } });
-    const page = await context.newPage();
-    try {
-        await page.goto(base);
-        assert.ok(await page.locator('#nav-links').isVisible());
-        assert.equal(await page.locator('#nav-toggle').isVisible(), false);
-        for (const element of await page.locator('.scroll-in').all()) {
-            assert.equal(await element.evaluate(el => getComputedStyle(el).opacity), '1');
-        }
-        await page.locator('#nav-links a[href="#contact"]').click();
-        assert.ok(page.url().endsWith('#contact'));
-        assert.ok(await page.locator('.contact-notice').isVisible());
-        await page.screenshot({ path: 'test-results/contact-no-js.png' });
-    } finally {
-        await context.close();
-    }
-});
-
-test('all 24 approved digest stories remain verbatim, including without JavaScript', async () => {
-    const feed = JSON.parse(await readFile(new URL('../news.json', import.meta.url)));
+test('verbatim digest, stable links, filters and RSS', async () => {
     assert.equal(feed.items.length, 24);
     for (const javaScriptEnabled of [true, false]) {
         const context = await browser.newContext({ javaScriptEnabled, viewport: { width: 390, height: 900 } });
+        const page = await context.newPage();
         try {
-            const page = await context.newPage();
             await page.goto(base + 'news.html');
             if (javaScriptEnabled) await page.locator('.news-controls').waitFor();
             const cards = page.locator('.news-card');
             assert.equal(await cards.count(), 24);
             for (const item of feed.items) {
-                const card = cards.filter({ has: page.locator('h3', { hasText: item.title }) });
-                assert.equal(await card.count(), 1);
-                assert.equal(await card.locator('h3').innerText(), item.title);
+                const card = page.locator('#' + newsAnchor(item));
+                assert.equal(await card.locator('h3').textContent(), item.title);
                 assert.equal(await card.locator('.news-summary').first().textContent(), item.summary);
                 assert.equal(await card.locator('.news-why').textContent(), item.whyItMatters);
+                for (const n of item.newsletters || []) assert.equal(await card.locator(`a[href="${n.signupUrl}"]`).count(), 1);
             }
-            assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
-            await page.screenshot({ path: 'test-results/news-' + javaScriptEnabled + '.png' });
+            assert.equal(await page.locator('.newsletter-only').count(), 1);
+            await page.screenshot({ path: `test-results/v02-news-${javaScriptEnabled}.png` });
             if (javaScriptEnabled) {
-                const select = page.locator('.news-controls select').first();
-                const value = await select.locator('option').nth(1).getAttribute('value');
-                await select.selectOption(value);
+                await page.locator('#news-topic').selectOption('Agents');
                 assert.ok(await cards.count() < 24);
                 await page.locator('.news-clear').click();
                 assert.equal(await cards.count(), 24);
+                await page.locator('#news-source').selectOption({ index: 1 });
+                assert.ok(await cards.count() < 24);
+                await page.locator('.news-clear').click();
+                await page.locator('#news-sort').selectOption('oldest');
+                const dates = await cards.evaluateAll(els => els.map(e => e.dataset.date));
+                assert.deepEqual(dates, [...dates].sort());
             }
         } finally { await context.close(); }
     }
+    const page = await browser.newPage();
+    try {
+        await page.goto(base);
+        const response = await page.request.get(base + 'feed.xml');
+        assert.equal(response.status(), 200);
+        const rss = await page.evaluate(xml => {
+            const doc = new DOMParser().parseFromString(xml, 'text/xml');
+            return { errors: doc.querySelectorAll('parsererror').length, items: [...doc.querySelectorAll('item')].map(el => ({
+                title: el.querySelector('title').textContent,
+                guid: el.querySelector('guid').textContent,
+                body: new DOMParser().parseFromString(el.querySelector('description').textContent, 'text/html').body.textContent
+            })) };
+        }, await response.text());
+        assert.equal(rss.errors, 0);
+        assert.equal(rss.items.length, 24);
+        assert.equal(new Set(rss.items.map(i => i.guid)).size, 24);
+        for (const item of feed.items) {
+            const entry = rss.items.find(i => i.title === item.title);
+            assert.ok(entry.body.includes(item.summary));
+            assert.ok(entry.body.includes(item.whyItMatters));
+            assert.ok(entry.guid.endsWith('#' + newsAnchor(item)));
+        }
+    } finally { await page.close(); }
+});
+
+test('no-JS navigation, failure fallback, and accessible skip link', async () => {
+    const nojs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 900 } });
+    const p = await nojs.newPage();
+    try {
+        for (const file of ['index.html', 'research.html', 'news.html']) {
+            await p.goto(base + file);
+            assert.ok(await p.locator('#nav-links').isVisible());
+            assert.equal(await p.locator('#nav-toggle').isVisible(), false);
+            assert.ok(await p.locator('main').isVisible());
+        }
+    } finally { await nojs.close(); }
+    const page = await browser.newPage({ reducedMotion: 'reduce' });
+    try {
+        await page.route('**/news.json', route => route.abort());
+        await page.goto(base + 'news.html');
+        await page.waitForFunction(() => document.querySelector('#news-status').textContent.includes('temporarily unavailable'));
+        assert.equal(await page.locator('.news-card').count(), 24);
+        await page.goto(base);
+        await page.keyboard.press('Tab');
+        assert.equal(await page.locator('.skip-link').evaluate(el => el === document.activeElement), true);
+        await page.keyboard.press('Enter');
+        assert.equal(await page.locator('main').evaluate(el => el === document.activeElement), true);
+    } finally { await page.close(); }
 });

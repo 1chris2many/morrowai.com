@@ -15,7 +15,12 @@
             e.preventDefault();
             var navHeight = document.getElementById('nav').offsetHeight;
             var top = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
-            window.scrollTo({ top: top, behavior: 'smooth' });
+            window.scrollTo({ top: top, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+            if (window.location.hash !== targetId) history.pushState(null, '', targetId);
+            if (targetId === '#main') {
+                target.setAttribute('tabindex', '-1');
+                target.focus({ preventScroll: true });
+            }
             // Close mobile menu if open
             var links = document.getElementById('nav-links');
             var toggle = document.getElementById('nav-toggle');
@@ -59,8 +64,15 @@
     }, { passive: true });
 
     // --- Active nav link highlighting ---
-    var sections = document.querySelectorAll('.section, .hero');
-    var navLinkEls = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+    var sections = document.querySelectorAll('.section[id], .hero[id], .editorial-section[id], .editorial-hero[id]');
+    var navLinkEls = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)');
+    document.querySelectorAll('.nav-links a').forEach(function (link) {
+        var url = new URL(link.href);
+        if (!url.hash && url.pathname === window.location.pathname) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
+    });
 
     function updateActiveNav() {
         var scrollPos = window.pageYOffset + 100;
@@ -71,8 +83,10 @@
             if (scrollPos >= top && scrollPos < bottom) {
                 navLinkEls.forEach(function (link) {
                     link.classList.remove('active');
+                    link.removeAttribute('aria-current');
                     if (link.getAttribute('href') === '#' + id) {
                         link.classList.add('active');
+                        link.setAttribute('aria-current', 'location');
                     }
                 });
             }
@@ -80,6 +94,7 @@
     }
 
     window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
 
     // --- Scroll-in animations (Intersection Observer) ---
     var scrollElements = document.querySelectorAll('.scroll-in');

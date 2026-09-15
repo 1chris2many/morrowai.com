@@ -1,7 +1,9 @@
 {
   "name": "morrowai-website",
   "private": true,
+  "type": "module",
   "scripts": {
+    "build": "node scripts/build-digest.mjs",
     "test": "node --test tests/site.test.mjs"
   },
   "devDependencies": {
