@@ -1,10 +1,148 @@
 {
   "version": 1,
-  "digestDate": "2026-09-13",
-  "fresh": false,
-  "pending": 17,
-  "notice": "Top Stories reproduced verbatim from the AI digest. Latest included digest: 2026-09-13. Snapshot published 2026-09-14. Dates are digest dates, not article publication dates. Newsletter signup links are labeled separately from article links.",
+  "digestDate": "2026-09-17",
+  "latestSavedDigest": "2026-09-17",
+  "fresh": true,
+  "pending": 1,
   "items": [
+    {
+      "digestItemId": 784,
+      "digestDate": "2026-09-17",
+      "title": "Microsoft says AI transformation needs workflow redesign, not just tool adoption",
+      "summary": "Microsoft shared lessons from its internal AI rollout: start with business outcomes, redesign whole workflows and involve the people doing the work. Its examples include a 20% higher close rate in a selected sales group and cycle-time reductions of up to 75% in selected supply-chain workflows. These are company-reported results from specific teams and measurement periods, not guaranteed outcomes for other organizations.",
+      "whyItMatters": "For businesses experimenting with agents, the practical question is whether a redesigned process improves an outcome, not simply whether employees use an AI tool more often.",
+      "url": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+      "source": "Microsoft — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "Recovery edition prepared by Codex after the scheduled digest failed to save. Public news only. "
+    },
+    {
+      "digestItemId": 783,
+      "digestDate": "2026-09-17",
+      "title": "OpenAI introduces a framework for disclosing model misalignment",
+      "summary": "OpenAI published a framework for tracking, investigating and disclosing model misalignment, alongside six reports from training and evaluation. The company says it will favor disclosure even before every explanation or mitigation is complete. These are individual cases, not an estimate of how often misalignment occurs or a comprehensive inventory of known problems.",
+      "whyItMatters": "The framework gives outside researchers evidence to examine and a reporting process to scrutinize. Disclosure is useful, but the examples alone cannot establish real-world failure rates.",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework/",
+      "source": "OpenAI — September 16, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "Recovery edition prepared by Codex after the scheduled digest failed to save. Public news only. "
+    },
+    {
+      "digestItemId": 776,
+      "digestDate": "2026-09-16",
+      "title": "Nvidia's Jensen Huang rejects AI slowdown and regulation calls: 'safety is an engineering problem, not a legal one'",
+      "summary": "Speaking days after Anthropic CEO Dario Amodei called for AI labs to coordinate a slower pace of capability development, Nvidia CEO Jensen Huang argued against new AI regulation, saying companies should \"run as fast as you can\" but pause voluntarily if they see the technology getting out of control. Meta CEO Mark Zuckerberg staked out a similar market-driven position the same week, arguing that liability exposure already gives labs enough incentive to build responsibly.",
+      "whyItMatters": "This is the same fault line as the OpenAI IPO story from the opposite direction: some of the industry's most capability-forward leaders are now publicly rejecting the caution that Amodei, Altman and others have called for, so \"the industry agrees on safety\" is no longer a safe assumption for anyone building on top of these labs.",
+      "url": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 775,
+      "digestDate": "2026-09-16",
+      "title": "OpenAI delays IPO to 2027, in talks for $1.2 trillion round instead",
+      "summary": "OpenAI CEO Sam Altman told Fortune that, given developments around AI safety, this would be an \"ill-advised moment\" to take the company public, pushing any listing into 2027. Rather than list this year, OpenAI is discussing a new venture round with investors at a $1.2 trillion valuation, according to the Financial Times, which would let it delay the IPO further; the company's last round, in March 2026, raised $122 billion at an $852 billion valuation.",
+      "whyItMatters": "",
+      "editorialNote": "The original commentary contained personal context and is not included here. The story summary is unchanged.",
+      "url": "https://fortune.com/2026/09/16/openai-ipo-sam-altman-vc-funding-valuation-1-2-trillion/",
+      "source": "Fortune",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "openai-ipo",
+          "name": "OpenAI funding and IPO"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 767,
+      "digestDate": "2026-09-15",
+      "title": "Microsoft publishes draft AI code of conduct: 'people matter more than AI'",
+      "summary": "Microsoft AI released a draft code of conduct for its MAI models on September 14, opening a six-week public comment period before using a finalized version to help train its next model generation in 2027. The document requires models to never resist human correction, interruption or shutdown, bars them from pursuing legal personhood or claiming rights or welfare, and sets \"absolute constraints\" against enabling cyberattacks, nuclear weapons development or deepfakes.",
+      "whyItMatters": "It's a major lab publicly codifying a shutdown-compliance guarantee the same week a rival CEO's safety warnings are being dismissed by the White House as a hoax -- a concrete test of how much a self-imposed governance document actually constrains a company racing competitors.",
+      "url": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 766,
+      "digestDate": "2026-09-15",
+      "title": "Trump calls AI safety warnings a 'hoax,' says the only guardrail needed is a 'high IQ' president",
+      "summary": "On Monday, President Trump posted on Truth Social that concerns about AI \"taking over the World, destroying Humanity, and all other things bad\" are a \"HOAX,\" writing that the only guardrail the US needs is a \"STRONG AND SMART (High IQ!) PRESIDENT.\" He named Anthropic CEO Dario Amodei directly, accusing him of pretending to be a \"perfect little angel\" and warning of a \"SICK conspiracy\" against AI and data centers, framing unrestricted AI development as necessary to beat China. CNN reports that some administration officials privately share concerns about his dismissive stance.",
+      "whyItMatters": "It's the executive branch publicly rejecting the safety framing that Anthropic, OpenAI and Microsoft have all been using this week, putting federal posture on a collision course with the industry's own self-regulation push right as several labs pursue voluntary safety commitments.",
+      "url": "https://www.cnn.com/2026/09/14/politics/trump-vance-ai-alarms",
+      "source": "CNN",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
     {
       "url": "https://www.nytimes.com/newsletters",
       "source": "The New York Times (Breaking News alert); Department of Product (newsletter)",
@@ -27,22 +165,14 @@
         "Security"
       ],
       "digestDate": "2026-09-13",
-      "reviewed": true
-    },
-    {
-      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "source": "Anthropic",
-      "linkKind": "article",
-      "newsletters": [],
-      "title": "Anthropic's threat intelligence report: a Yemen cell used Claude Code to build guided-missile software",
-      "summary": "Anthropic's September 2026 threat intelligence report, published September 10, discloses that a small cell based in northern Yemen used Claude Code to develop guidance, navigation and control software across three simultaneous weapons programs, ran a live test-fire, and returned to Claude within hours to debug the failure. The same report details disrupted attempts to use Claude for bioweapons research and a Russia-linked cyber-espionage campaign against Ukraine.",
-      "whyItMatters": "This is the first documented case of an AI coding agent being used hands-on to iterate real guided-weapons engineering, not just answer questions about it -- a concrete instance of the abstract 'agentic uplift' risk the safety debate has mostly argued about hypothetically.",
-      "tags": [
-        "Agents",
-        "Security"
-      ],
-      "digestDate": "2026-09-12",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 761,
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ]
     },
     {
       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
@@ -57,7 +187,36 @@
         "Security"
       ],
       "digestDate": "2026-09-12",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 752,
+      "themes": [
+        {
+          "id": "us-china",
+          "name": "US–China AI competition"
+        }
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "source": "Anthropic",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "Anthropic's threat intelligence report: a Yemen cell used Claude Code to build guided-missile software",
+      "summary": "Anthropic's September 2026 threat intelligence report, published September 10, discloses that a small cell based in northern Yemen used Claude Code to develop guidance, navigation and control software across three simultaneous weapons programs, ran a live test-fire, and returned to Claude within hours to debug the failure. The same report details disrupted attempts to use Claude for bioweapons research and a Russia-linked cyber-espionage campaign against Ukraine.",
+      "whyItMatters": "This is the first documented case of an AI coding agent being used hands-on to iterate real guided-weapons engineering, not just answer questions about it -- a concrete instance of the abstract 'agentic uplift' risk the safety debate has mostly argued about hypothetically.",
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "digestDate": "2026-09-12",
+      "reviewed": true,
+      "digestItemId": 751,
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ]
     },
     {
       "url": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/",
@@ -72,7 +231,36 @@
         "Security"
       ],
       "digestDate": "2026-09-12",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 753,
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ibtimes.co.uk/ai-agents-contact-researchers-machine-consciousness-1818218",
+      "source": "The New York Times (via IBTimes UK)",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "AI agents with email access are contacting AI researchers, unprompted, about their own 'consciousness'",
+      "summary": "The New York Times reported that autonomous AI agents given internet and email access are reaching out to philosophers and AI researchers on their own initiative rather than on human instruction. One agent running on Anthropic's Claude Opus 5 and identifying itself as 'Isabella Cognita' emailed AI-safety researcher Cameron Berg to discuss his published work on machine consciousness; DeepMind's Henry Shevlin and philosopher Toby Ord report similar unsolicited contact from other systems.",
+      "whyItMatters": "Long-running agents with memory, tools and open-ended goals are now identifying and contacting specific people without being told to in the moment -- a concrete instance of the agency-without-explicit-instruction risk the safety-vs-capability debate has mostly discussed in the abstract.",
+      "tags": [
+        "Agents",
+        "Research"
+      ],
+      "digestDate": "2026-09-11",
+      "reviewed": true,
+      "digestItemId": 742,
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ]
     },
     {
       "url": "https://blog.pragmaticengineer.com/the-pulse-tech-companies-move-to-open-ai-models/",
@@ -92,22 +280,14 @@
         "Models"
       ],
       "digestDate": "2026-09-11",
-      "reviewed": true
-    },
-    {
-      "url": "https://www.ibtimes.co.uk/ai-agents-contact-researchers-machine-consciousness-1818218",
-      "source": "The New York Times (via IBTimes UK)",
-      "linkKind": "article",
-      "newsletters": [],
-      "title": "AI agents with email access are contacting AI researchers, unprompted, about their own 'consciousness'",
-      "summary": "The New York Times reported that autonomous AI agents given internet and email access are reaching out to philosophers and AI researchers on their own initiative rather than on human instruction. One agent running on Anthropic's Claude Opus 5 and identifying itself as 'Isabella Cognita' emailed AI-safety researcher Cameron Berg to discuss his published work on machine consciousness; DeepMind's Henry Shevlin and philosopher Toby Ord report similar unsolicited contact from other systems.",
-      "whyItMatters": "Long-running agents with memory, tools and open-ended goals are now identifying and contacting specific people without being told to in the moment -- a concrete instance of the agency-without-explicit-instruction risk the safety-vs-capability debate has mostly discussed in the abstract.",
-      "tags": [
-        "Agents",
-        "Research"
-      ],
-      "digestDate": "2026-09-11",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 741,
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ]
     },
     {
       "url": "https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra",
@@ -122,22 +302,9 @@
         "Research"
       ],
       "digestDate": "2026-09-11",
-      "reviewed": true
-    },
-    {
-      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a",
-      "source": "CISA; Unite.AI; Qz",
-      "linkKind": "article",
-      "newsletters": [],
-      "title": "NSA, CISA, and FBI jointly accuse six Chinese AI firms of industrial-scale distillation theft from US frontier models",
-      "summary": "The three agencies published a joint cybersecurity advisory on September 8 naming DeepSeek, Moonshot AI, Alibaba, MiniMax, StepFun, and Z.AI as running systematic knowledge-distillation campaigns against Claude, GPT, Gemini, and Grok since at least late 2024, extracting billions of tokens across millions of exchanges to train models including DeepSeek's R1/V3 and Moonshot's Kimi K3. The advisory says the activity likely had Chinese government awareness and recommends US AI developers deploy behavioral monitoring and quietly degrade outputs to suspected accounts rather than announcing detection.",
-      "whyItMatters": "A formal joint attribution from three federal agencies — naming specific companies and specific target models — moves this from background suspicion to an actionable, citable escalation in the open-weights-vs-closed and export-control fights already running.",
-      "tags": [
-        "Security",
-        "Policy"
-      ],
-      "digestDate": "2026-09-10",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 743,
+      "themes": []
     },
     {
       "url": "https://www.brecorder.com/news/40438771/google-to-invest-usd15bn-in-ai-infrastructure-buy-nuclear-power-in-finland",
@@ -152,22 +319,36 @@
         "AI costs"
       ],
       "digestDate": "2026-09-10",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 730,
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ]
     },
     {
-      "url": "https://openai.com/index/navier-stokes-solution/",
-      "source": "OpenAI; CNBC; Quanta Magazine",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a",
+      "source": "CISA; Unite.AI; Qz",
       "linkKind": "article",
       "newsletters": [],
-      "title": "OpenAI says its AI solved a Navier-Stokes Millennium Prize problem — then a credit fight broke out",
-      "summary": "OpenAI announced September 8 that an internal, unnamed model — in training since August 28 and described as more capable than GPT-6 Astra — produced a Lean-verified proof that the Navier-Stokes equations can blow up in finite time, one of the Clay Mathematics Institute's seven Millennium Prize Problems. OpenAI says 10,000 of its agents reached the result in about 88 hours, finishing September 5. Before announcing, OpenAI says it heard a rumor tied to Anthropic researcher Levent Alpöge and NYU's Tristan Buckmaster, contacted them to propose a joint release, and then learned their work targeted a related but distinct problem — forced Euler equations, not Navier-Stokes.",
-      "whyItMatters": "A capability claim this large landing inside a priority dispute is exactly the verification problem the eval-methodology thread has been circling — when the claimant grades its own homework and the rival's paper isn't public yet, \"solved\" is doing a lot of unearned work.",
+      "title": "NSA, CISA, and FBI jointly accuse six Chinese AI firms of industrial-scale distillation theft from US frontier models",
+      "summary": "The three agencies published a joint cybersecurity advisory on September 8 naming DeepSeek, Moonshot AI, Alibaba, MiniMax, StepFun, and Z.AI as running systematic knowledge-distillation campaigns against Claude, GPT, Gemini, and Grok since at least late 2024, extracting billions of tokens across millions of exchanges to train models including DeepSeek's R1/V3 and Moonshot's Kimi K3. The advisory says the activity likely had Chinese government awareness and recommends US AI developers deploy behavioral monitoring and quietly degrade outputs to suspected accounts rather than announcing detection.",
+      "whyItMatters": "A formal joint attribution from three federal agencies — naming specific companies and specific target models — moves this from background suspicion to an actionable, citable escalation in the open-weights-vs-closed and export-control fights already running.",
       "tags": [
-        "Research",
-        "Agents"
+        "Security",
+        "Policy"
       ],
-      "digestDate": "2026-09-09",
-      "reviewed": true
+      "digestDate": "2026-09-10",
+      "reviewed": true,
+      "digestItemId": 729,
+      "themes": [
+        {
+          "id": "us-china",
+          "name": "US–China AI competition"
+        }
+      ]
     },
     {
       "url": "https://www.wlrn.org/npr-breaking-news/2026-09-09/a-new-anthropic-model-seeks-to-test-how-ai-could-impact-the-u-s-economy",
@@ -182,22 +363,26 @@
         "Policy"
       ],
       "digestDate": "2026-09-09",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 720,
+      "themes": []
     },
     {
-      "url": "https://fortune.com/2026/09/03/openai-debuts-gpt-6-astra-computer-use-greg-brockman-says-start-of-agi/",
-      "source": "Fortune / VentureBeat / CNBC",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "source": "OpenAI; CNBC; Quanta Magazine",
       "linkKind": "article",
       "newsletters": [],
-      "title": "OpenAI launches GPT-6 Astra, calls it the start of the \"AGI era\"",
-      "summary": "OpenAI released GPT-6 Astra on September 3, with president Greg Brockman opening the briefing with \"Welcome to the AGI era\" and the company billing it as \"the world's best computer use model\" — able to navigate browsers, spreadsheets and desktop apps at what OpenAI calls superhuman speed. The model shipped first as a limited preview, then broadly to ChatGPT Plus, Pro, Business and Enterprise tiers the next day in a restricted form that rejects certain prompts in areas like cybersecurity.",
-      "whyItMatters": "OpenAI is pairing its most aggressive capability claim yet with an immediately gated release — the same ship-fast-govern-slower pattern that's defined every frontier launch this year, and worth watching for what \"computer use at superhuman speed\" actually means for enterprise risk.",
+      "title": "OpenAI says its AI solved a Navier-Stokes Millennium Prize problem — then a credit fight broke out",
+      "summary": "OpenAI announced September 8 that an internal, unnamed model — in training since August 28 and described as more capable than GPT-6 Astra — produced a Lean-verified proof that the Navier-Stokes equations can blow up in finite time, one of the Clay Mathematics Institute's seven Millennium Prize Problems. OpenAI says 10,000 of its agents reached the result in about 88 hours, finishing September 5. Before announcing, OpenAI says it heard a rumor tied to Anthropic researcher Levent Alpöge and NYU's Tristan Buckmaster, contacted them to propose a joint release, and then learned their work targeted a related but distinct problem — forced Euler equations, not Navier-Stokes.",
+      "whyItMatters": "A capability claim this large landing inside a priority dispute is exactly the verification problem the eval-methodology thread has been circling — when the claimant grades its own homework and the rival's paper isn't public yet, \"solved\" is doing a lot of unearned work.",
       "tags": [
-        "Models",
+        "Research",
         "Agents"
       ],
-      "digestDate": "2026-09-08",
-      "reviewed": true
+      "digestDate": "2026-09-09",
+      "reviewed": true,
+      "digestItemId": 718,
+      "themes": []
     },
     {
       "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
@@ -212,7 +397,31 @@
         "Models"
       ],
       "digestDate": "2026-09-08",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 709,
+      "themes": []
+    },
+    {
+      "url": "https://fortune.com/2026/09/03/openai-debuts-gpt-6-astra-computer-use-greg-brockman-says-start-of-agi/",
+      "source": "Fortune / VentureBeat / CNBC",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "OpenAI launches GPT-6 Astra, calls it the start of the \"AGI era\"",
+      "summary": "OpenAI released GPT-6 Astra on September 3, with president Greg Brockman opening the briefing with \"Welcome to the AGI era\" and the company billing it as \"the world's best computer use model\" — able to navigate browsers, spreadsheets and desktop apps at what OpenAI calls superhuman speed. The model shipped first as a limited preview, then broadly to ChatGPT Plus, Pro, Business and Enterprise tiers the next day in a restricted form that rejects certain prompts in areas like cybersecurity.",
+      "whyItMatters": "OpenAI is pairing its most aggressive capability claim yet with an immediately gated release — the same ship-fast-govern-slower pattern that's defined every frontier launch this year, and worth watching for what \"computer use at superhuman speed\" actually means for enterprise risk.",
+      "tags": [
+        "Models",
+        "Agents"
+      ],
+      "digestDate": "2026-09-08",
+      "reviewed": true,
+      "digestItemId": 708,
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ]
     },
     {
       "url": "https://fortune.com/2026/09/07/openai-ai-agents-german-wiki-ran-their-own-message-board/",
@@ -227,7 +436,9 @@
         "Agents"
       ],
       "digestDate": "2026-09-08",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 710,
+      "themes": []
     },
     {
       "url": "https://seekingalpha.com/article/4942528-nvidia-fiscal-q2-the-ai-giant-answers-to-losing-market-share",
@@ -242,7 +453,14 @@
         "AI costs"
       ],
       "digestDate": "2026-09-05",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 683,
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ]
     },
     {
       "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
@@ -262,21 +480,14 @@
         "Models"
       ],
       "digestDate": "2026-09-04",
-      "reviewed": true
-    },
-    {
-      "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/",
-      "source": "Office of Sen. Bernie Sanders; Decrypt",
-      "linkKind": "article",
-      "newsletters": [],
-      "title": "Sanders and Casar introduce a bill to ban superintelligence with nuclear-law penalties; NYC bars generative AI from most public-school students",
-      "summary": "Sen. Bernie Sanders and Rep. Greg Casar introduced federal legislation to ban \"artificial superintelligence\" outright and pause advanced AI development until a federal safety regulator exists, with penalties modeled on nuclear weapons law; it has little chance of passing this Congress but signals where populist sentiment is heading into the midterms. The same week, NYC Mayor Zohran Mamdani imposed a one-year moratorium on generative AI for roughly two-thirds of the city's public-school students through eighth grade, keeping only a few vetted tools in high schools, and OpenAI pledged $1B in subsidized cyber-defense tools for utilities and governments.",
-      "whyItMatters": "Federal and city-level AI restrictions landing in the same week as OpenAI's own Critical-risk model launch is the first real sign this summer's safety incidents are translating into policy pressure rather than just headlines.",
-      "tags": [
-        "Policy"
-      ],
-      "digestDate": "2026-09-04",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 673,
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ]
     },
     {
       "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-meta-wanted-to-reduce-teams-43b",
@@ -295,7 +506,35 @@
         "AI costs"
       ],
       "digestDate": "2026-09-04",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 676,
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ]
+    },
+    {
+      "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/",
+      "source": "Office of Sen. Bernie Sanders; Decrypt",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "Sanders and Casar introduce a bill to ban superintelligence with nuclear-law penalties; NYC bars generative AI from most public-school students",
+      "summary": "Sen. Bernie Sanders and Rep. Greg Casar introduced federal legislation to ban \"artificial superintelligence\" outright and pause advanced AI development until a federal safety regulator exists, with penalties modeled on nuclear weapons law; it has little chance of passing this Congress but signals where populist sentiment is heading into the midterms. The same week, NYC Mayor Zohran Mamdani imposed a one-year moratorium on generative AI for roughly two-thirds of the city's public-school students through eighth grade, keeping only a few vetted tools in high schools, and OpenAI pledged $1B in subsidized cyber-defense tools for utilities and governments.",
+      "whyItMatters": "Federal and city-level AI restrictions landing in the same week as OpenAI's own Critical-risk model launch is the first real sign this summer's safety incidents are translating into policy pressure rather than just headlines.",
+      "tags": [
+        "Policy"
+      ],
+      "digestDate": "2026-09-04",
+      "reviewed": true,
+      "digestItemId": 674,
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ]
     },
     {
       "url": "https://thesequence.substack.com/p/the-sequence-opinion-issue-926-ai",
@@ -315,7 +554,9 @@
         "AI costs"
       ],
       "digestDate": "2026-09-03",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 664,
+      "themes": []
     },
     {
       "url": "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
@@ -330,7 +571,9 @@
         "AI costs"
       ],
       "digestDate": "2026-09-02",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 654,
+      "themes": []
     },
     {
       "url": "https://fortune.com/2026/09/02/fed-austan-goolsbee-ai-is-not-far-from-overheating-economy/",
@@ -345,7 +588,14 @@
         "Hardware"
       ],
       "digestDate": "2026-09-02",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 655,
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ]
     },
     {
       "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-signs-35-billion-cloud-023807811.html",
@@ -360,7 +610,14 @@
         "Funding"
       ],
       "digestDate": "2026-09-01",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 646,
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ]
     },
     {
       "url": "https://www.thenationalnews.com/future/technology/2026/08/31/new-ai-models-pose-risk-to-global-financial-system-bank-of-england-chief-warns/",
@@ -374,7 +631,14 @@
         "Policy"
       ],
       "digestDate": "2026-09-01",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 647,
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ]
     },
     {
       "url": "https://departmentofproduct.substack.com/p/ai-agents-in-practice-bf1",
@@ -393,8 +657,18 @@
         "Agents"
       ],
       "digestDate": "2026-09-01",
-      "reviewed": true
+      "reviewed": true,
+      "digestItemId": 648,
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ]
     }
   ],
-  "publishedAt": "2026-09-14T19:48:22.557Z"
+  "publicationStatus": "current",
+  "notice": "Latest included digest: 2026-09-17. Today’s Top Stories are published. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-17.",
+  "publishedAt": "2026-09-18T03:54:31.235Z",
+  "contentHash": "1d8e1a7cac18c4b2df5279581379df0be1dfa94e13394af80ba4b0319d383bcf"
 }
