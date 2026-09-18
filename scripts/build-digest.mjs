@@ -32,7 +32,7 @@ ${credits(item)}</article>`;
 }
 const latest = items.map(i => i.digestDate).sort().at(-1);
 const themes = [...new Map(items.flatMap(i => (i.themes || []).map(t => [t.id,t]))).values()];
-const threadIndex = `<section aria-labelledby="threads-title"><h2 id="threads-title">Developing stories</h2><p class="small-note">Follow related coverage across digest editions. Topic tags group broad subjects; these threads track a continuing story. Grouping is editorial and does not establish causation.</p><ul>${themes.map(t => {const related=items.filter(i=>(i.themes||[]).some(x=>x.id===t.id));const dates=related.map(i=>i.digestDate).sort();return `<li><a href="news.html?theme=${encodeURIComponent(t.id)}">${e(t.name)}</a> · ${related.length} stories · ${dates[0]}–${dates.at(-1)}</li>`;}).join('')}</ul></section>`;
+const threadIndex = `<details class="digest-method"><summary id="threads-title">Developing stories — ${themes.length} threads</summary><p class="small-note">Follow related coverage across digest editions. Topic tags group broad subjects; these threads track a continuing story. Grouping is editorial and does not establish causation.</p><ul>${themes.map(t => {const related=items.filter(i=>(i.themes||[]).some(x=>x.id===t.id));const dates=related.map(i=>i.digestDate).sort();return `<li><a href="news.html?theme=${encodeURIComponent(t.id)}">${e(t.name)}</a> · ${related.length} stories · ${dates[0]}–${dates.at(-1)}</li>`;}).join('')}</ul></details>`;
 const snapshot = feed.notice.match(/Snapshot published (\d{4}-\d{2}-\d{2})/)?.[1];
 if (!snapshot) throw Error('Snapshot publication date must be explicit');
 const news = `<!doctype html>
