@@ -16,7 +16,7 @@ function safeURL(raw) {
     return e(url.href);
 }
 function credits(item) {
-    return (item.newsletters || []).map(n => `<p class="reading-note news-newsletter">Newsletter source: ${e(n.name)} · <a href="${safeURL(n.signupUrl)}" target="_blank" rel="noopener noreferrer">Sign up for ${e(n.name)} ↗</a></p>`).join('\n');
+    return ((item.newsletters || []).length > 1 ? `<p class="small-note">This summary draws on ${item.newsletters.length} newsletter sources. The links below are optional subscriptions to those sources, not links to the underlying articles.</p>` : '') + (item.newsletters || []).map(n => `<p class="reading-note news-newsletter">Newsletter source: ${e(n.name)} · <a href="${safeURL(n.signupUrl)}" target="_blank" rel="noopener noreferrer">Sign up for ${e(n.name)} ↗</a></p>`).join('\n');
 }
 function card(item) {
     return `<article class="news-card" id="${newsAnchor(item)}" data-date="${e(item.digestDate)}">
@@ -24,11 +24,15 @@ function card(item) {
 <h3>${item.linkKind === 'newsletter' ? e(item.title) : `<a href="${safeURL(item.url)}" target="_blank" rel="noopener noreferrer">${e(item.title)}</a>`}</h3>
 ${item.linkKind === 'newsletter' ? '<p class="newsletter-only">Newsletter-sourced · No direct article link available in this snapshot. Signup links are below.</p>' : ''}
 <p class="news-summary">${e(item.summary)}</p>
-<p class="reading-note">Why it matters</p><p class="news-summary news-why">${e(item.whyItMatters)}</p>
+${item.whyItMatters ? `<p class="reading-note">Why it matters</p><p class="news-summary news-why">${e(item.whyItMatters)}</p>` : ''}
+${item.editorialNote ? `<p class="small-note">${e(item.editorialNote)}</p>` : ''}
+${(item.themes || []).map(t => `<p class="reading-note"><a href="news.html?theme=${encodeURIComponent(t.id)}">Follow: ${e(t.name)} →</a></p>`).join('')}
 <p class="reading-note">${item.tags.map(e).join(' · ')}</p>
 ${credits(item)}</article>`;
 }
 const latest = items.map(i => i.digestDate).sort().at(-1);
+const themes = [...new Map(items.flatMap(i => (i.themes || []).map(t => [t.id,t]))).values()];
+const threadIndex = `<section aria-labelledby="threads-title"><h2 id="threads-title">Developing stories</h2><p class="small-note">Follow related coverage across digest editions. Topic tags group broad subjects; these threads track a continuing story. Grouping is editorial and does not establish causation.</p><ul>${themes.map(t => {const related=items.filter(i=>(i.themes||[]).some(x=>x.id===t.id));const dates=related.map(i=>i.digestDate).sort();return `<li><a href="news.html?theme=${encodeURIComponent(t.id)}">${e(t.name)}</a> · ${related.length} stories · ${dates[0]}–${dates.at(-1)}</li>`;}).join('')}</ul></section>`;
 const snapshot = feed.notice.match(/Snapshot published (\d{4}-\d{2}-\d{2})/)?.[1];
 if (!snapshot) throw Error('Snapshot publication date must be explicit');
 const news = `<!doctype html>
@@ -38,17 +42,18 @@ const news = `<!doctype html>
 <link rel="alternate" type="application/rss+xml" title="Useful AI Werks — AI Digest" href="feed.xml">
 <link rel="stylesheet" href="css/style.css?v=20260915"><link rel="stylesheet" href="css/news.css"><link rel="stylesheet" href="css/editorial.css?v=20260915">
 </head><body class="editorial">${nav}
-<main class="container news-main" id="main"><header class="digest-intro"><p class="eyebrow">The reading list</p><h1>AI Digest</h1><p>AI news prepared by Raven, an AI research assistant, for Chris’s reading list. Full summaries, source links, and context.</p>
+<main class="container news-main" id="main"><header class="digest-intro"><p class="eyebrow">The reading list</p><h1>AI Digest</h1><p>AI news from our daily reading list, usually prepared by Raven. Full summaries, source links, and context. Recovery editions are labeled.</p>
 <div class="section-actions"><a class="text-link" href="feed.xml">Follow with RSS ↗</a><a class="text-link" href="./#essays">Read Chris’s essays →</a></div>
 <p id="news-status" class="small-note" role="status">${e(feed.notice)}</p>
-<details class="digest-method"><summary>How this digest is prepared</summary><p class="small-note">Summaries and “Why it matters” commentary are AI-generated and reproduced verbatim. They are separate from Chris’s authored essays and do not imply his endorsement of every interpretation. Wording retains the context of the original reading list. New snapshots appear after publication review, not on a guaranteed daily schedule.</p></details></header>
+<details class="digest-method"><summary>How this digest is prepared</summary><p class="small-note">Top Stories summaries are reproduced verbatim from the morning digest. A deterministic publisher checks source links, digest provenance and privacy before updating this page and RSS. Personal commentary is withheld rather than silently rewritten. Held items do not block other valid stories. Updates are targeted each morning by 8 AM Pacific; delayed editions are labeled and publication failures alert the operator. No system can guarantee uninterrupted delivery.</p></details></header>
+${threadIndex}
 <div class="digest-tools"><noscript><p>All stories are available below. Enable JavaScript for topic/source filters and sorting.</p></noscript></div>
 <div id="news-items" class="news-grid">${items.map(card).join('\n')}</div></main>${footer}<script src="js/main.js?v=20260915"></script><script type="module" src="js/news.js"></script></body></html>\n`;
 
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Useful AI Werks — AI Digest</title><link>https://usefulaiwerks.com/news.html</link><description>AI-generated Top Stories from Raven’s digest, reproduced verbatim with sources. Commentary is separate from Chris Morrow’s essays. Dates identify digest editions. Snapshot published ${snapshot}.</description><language>en-us</language><atom:link href="https://usefulaiwerks.com/feed.xml" rel="self" type="application/rss+xml"/>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Useful AI Werks — AI Digest</title><link>https://usefulaiwerks.com/news.html</link><description>Top Stories from the daily AI digest, reproduced verbatim with sources. Commentary is separate from Chris Morrow’s essays. Dates identify digest editions. Recovery editions are labeled. Snapshot published ${snapshot}.</description><language>en-us</language><atom:link href="https://usefulaiwerks.com/feed.xml" rel="self" type="application/rss+xml"/>
 ${items.map(item => {
-    const body = `<p>In digest ${e(item.digestDate)} · ${e(item.source)}</p><p>${e(item.summary)}</p><p><strong>Why it matters</strong></p><p>${e(item.whyItMatters)}</p>` + (item.linkKind === 'newsletter' ? '<p>Newsletter-sourced; no direct article link available in this snapshot.</p>' : `<p><a href="${safeURL(item.url)}">Read the source article</a></p>`) + credits(item);
+    const body = `<p>In digest ${e(item.digestDate)} · ${e(item.source)}</p><p>${e(item.summary)}</p>` + (item.whyItMatters ? `<p><strong>Why it matters</strong></p><p>${e(item.whyItMatters)}</p>` : '') + (item.editorialNote ? `<p>${e(item.editorialNote)}</p>` : '') + (item.linkKind === 'newsletter' ? '<p>Newsletter-sourced; no direct article link available in this snapshot.</p>' : `<p><a href="${safeURL(item.url)}">Read the source article</a></p>`) + credits(item);
     return `<item><title>${e(item.title)}</title><link>${item.linkKind === 'newsletter' ? e(publicURL(item)) : safeURL(item.url)}</link><guid isPermaLink="true">${e(publicURL(item))}</guid><description>${e(body)}</description>${item.tags.map(tag => `<category>${e(tag)}</category>`).join('')}</item>`;
 }).join('\n')}</channel></rss>\n`;
 const indexPath = new URL('index.html', root);

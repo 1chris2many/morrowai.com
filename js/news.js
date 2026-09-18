@@ -1,4 +1,4 @@
-import { selectNews, newsAnchor } from './news-model.js';
+import { selectNews, newsAnchor, freshnessMessage } from './news-model.js';
 
 const status = document.getElementById('news-status');
 const list = document.getElementById('news-items');
@@ -9,8 +9,8 @@ async function loadNews() {
         if (!response.ok) throw new Error('unavailable');
         const feed = await response.json();
         if (feed.version !== 1 || !Array.isArray(feed.items)) throw new Error('invalid');
-        status.textContent = feed.notice;
-        const items = feed.items.slice(0, 100).filter(item => {
+        status.textContent = freshnessMessage(feed);
+        const items = feed.items.filter(item => {
             try {
                 const url = new URL(item.url);
                 return url.protocol === 'https:' && !url.username && !url.password
@@ -46,6 +46,8 @@ async function loadNews() {
         const sources = [...new Set(items.map(item => item.source))].sort();
         const topic = select('news-topic', 'Topic', [['', 'All topics'], ...topics.map(tag => [tag, tag])]);
         const source = select('news-source', 'Source', [['', 'All sources'], ...sources.map(name => [name, name])]);
+        const themes = [...new Map(items.flatMap(item => (item.themes || []).map(t => [t.id, t]))).values()].sort((a,b) => a.name.localeCompare(b.name));
+        const theme = select('news-theme', 'Developing story', [['', 'All developing stories'], ...themes.map(t => [t.id, t.name])]);
         const sort = select('news-sort', 'Sort by', [['newest', 'Newest digest first'], ['oldest', 'Oldest digest first'], ['title', 'Title A–Z']]);
         const clear = document.createElement('button');
         clear.type = 'button';
@@ -58,10 +60,14 @@ async function loadNews() {
         count.setAttribute('role', 'status');
         list.before(controls, count);
         function render() {
-            const visible = selectNews(items, { topic: topic.value, source: source.value, sort: sort.value });
+            const visible = selectNews(items, { topic: topic.value, source: source.value, theme: theme.value, sort: sort.value });
             list.replaceChildren();
             count.textContent = 'Showing ' + visible.length + ' of ' + items.length + ' articles from recent digests.';
-            clear.disabled = !topic.value && !source.value && sort.value === 'newest';
+            clear.disabled = !topic.value && !source.value && !theme.value && sort.value === 'newest';
+            if (theme.value && visible.length) {
+                const dates = visible.map(i => i.digestDate).sort();
+                count.textContent += ` Thread spans ${dates[0]} to ${dates.at(-1)}. Choose “Oldest digest first” to follow its development.`;
+            }
             if (!visible.length) {
                 const empty = document.createElement('p');
                 empty.className = 'news-empty';
@@ -123,7 +129,22 @@ async function loadNews() {
                     why.textContent = item.whyItMatters;
                     card.append(whyLabel, why);
                 }
+                if (item.editorialNote) {
+                    const editorial = document.createElement('p');
+                    editorial.className = 'small-note'; editorial.textContent = item.editorialNote; card.append(editorial);
+                }
+                for (const t of item.themes || []) {
+                    const follow = document.createElement('button'); follow.type = 'button'; follow.className = 'news-tag';
+                    follow.textContent = 'Follow: ' + t.name;
+                    follow.addEventListener('click', () => { topic.value = source.value = ''; theme.value = t.id; render(); theme.focus(); });
+                    card.append(follow);
+                }
                 card.append(tags, note);
+                if ((item.newsletters || []).length > 1) {
+                    const explanation = document.createElement('p'); explanation.className = 'small-note';
+                    explanation.textContent = `This summary draws on ${item.newsletters.length} newsletter sources. The links below are optional subscriptions to those sources, not links to the underlying articles.`;
+                    card.append(explanation);
+                }
                 for (const newsletter of item.newsletters || []) {
                     const attribution = document.createElement('p');
                     attribution.className = 'reading-note news-newsletter';
@@ -141,9 +162,11 @@ async function loadNews() {
                 list.append(card);
             }
         }
-        [topic, source, sort].forEach(field => field.addEventListener('change', render));
+        [topic, source, theme, sort].forEach(field => field.addEventListener('change', render));
+        const selectedTheme = new URLSearchParams(location.search).get('theme');
+        if (themes.some(t => t.id === selectedTheme)) theme.value = selectedTheme;
         clear.addEventListener('click', () => {
-            topic.value = source.value = '';
+            topic.value = source.value = theme.value = '';
             sort.value = 'newest';
             render();
             topic.focus();

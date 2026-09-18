@@ -3,7 +3,7 @@ import { before, after, test } from 'node:test';
 import { createServer } from 'node:http';
 import { readFile, mkdir } from 'node:fs/promises';
 import { chromium } from 'playwright';
-import { newsAnchor } from '../js/news-model.js';
+import { newsAnchor, selectNews, freshnessMessage } from '../js/news-model.js';
 
 const pages = ['index.html', 'research.html', 'news.html', 'blog/rag-wrong.html', 'blog/agentic-commerce-hype.html'];
 const assets = ['css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/news.js', 'js/news-model.js', 'news.json', 'feed.xml'];
@@ -87,7 +87,7 @@ for (const width of [320, 390, 768, 820, 1440]) {
 }
 
 test('verbatim digest, stable links, filters and RSS', async () => {
-    assert.equal(feed.items.length, 24);
+    assert.ok(feed.items.length >= 24);
     for (const javaScriptEnabled of [true, false]) {
         const context = await browser.newContext({ javaScriptEnabled, viewport: { width: 390, height: 900 } });
         const page = await context.newPage();
@@ -95,24 +95,31 @@ test('verbatim digest, stable links, filters and RSS', async () => {
             await page.goto(base + 'news.html');
             if (javaScriptEnabled) await page.locator('.news-controls').waitFor();
             const cards = page.locator('.news-card');
-            assert.equal(await cards.count(), 24);
+            assert.equal(await cards.count(), feed.items.length);
             for (const item of feed.items) {
                 const card = page.locator('#' + newsAnchor(item));
                 assert.equal(await card.locator('h3').textContent(), item.title);
                 assert.equal(await card.locator('.news-summary').first().textContent(), item.summary);
-                assert.equal(await card.locator('.news-why').textContent(), item.whyItMatters);
+                if (item.whyItMatters) assert.equal(await card.locator('.news-why').textContent(), item.whyItMatters);
                 for (const n of item.newsletters || []) assert.equal(await card.locator(`a[href="${n.signupUrl}"]`).count(), 1);
             }
-            assert.equal(await page.locator('.newsletter-only').count(), 1);
+            assert.equal(await page.locator('.newsletter-only').count(), feed.items.filter(i => i.linkKind === 'newsletter').length);
             await page.screenshot({ path: `test-results/v02-news-${javaScriptEnabled}.png` });
             if (javaScriptEnabled) {
                 await page.locator('#news-topic').selectOption('Agents');
-                assert.ok(await cards.count() < 24);
+                assert.ok(await cards.count() < feed.items.length);
                 await page.locator('.news-clear').click();
-                assert.equal(await cards.count(), 24);
+                assert.equal(await cards.count(), feed.items.length);
                 await page.locator('#news-source').selectOption({ index: 1 });
-                assert.ok(await cards.count() < 24);
+                assert.ok(await cards.count() < feed.items.length);
                 await page.locator('.news-clear').click();
+                const options = await page.locator('#news-theme option').count();
+                if (options > 1) {
+                    await page.locator('#news-theme').selectOption({index:1});
+                    assert.ok(await cards.count() > 0);
+                    assert.match(await page.locator('#news-count').textContent(), /Thread spans/);
+                    await page.locator('.news-clear').click();
+                }
                 await page.locator('#news-sort').selectOption('oldest');
                 const dates = await cards.evaluateAll(els => els.map(e => e.dataset.date));
                 assert.deepEqual(dates, [...dates].sort());
@@ -133,8 +140,8 @@ test('verbatim digest, stable links, filters and RSS', async () => {
             })) };
         }, await response.text());
         assert.equal(rss.errors, 0);
-        assert.equal(rss.items.length, 24);
-        assert.equal(new Set(rss.items.map(i => i.guid)).size, 24);
+        assert.equal(rss.items.length, feed.items.length);
+        assert.equal(new Set(rss.items.map(i => i.guid)).size, feed.items.length);
         for (const item of feed.items) {
             const entry = rss.items.find(i => i.title === item.title);
             assert.ok(entry.body.includes(item.summary));
@@ -160,11 +167,17 @@ test('no-JS navigation, failure fallback, and accessible skip link', async () =>
         await page.route('**/news.json', route => route.abort());
         await page.goto(base + 'news.html');
         await page.waitForFunction(() => document.querySelector('#news-status').textContent.includes('temporarily unavailable'));
-        assert.equal(await page.locator('.news-card').count(), 24);
+        assert.equal(await page.locator('.news-card').count(), feed.items.length);
         await page.goto(base);
         await page.keyboard.press('Tab');
         assert.equal(await page.locator('.skip-link').evaluate(el => el === document.activeElement), true);
         await page.keyboard.press('Enter');
         assert.equal(await page.locator('main').evaluate(el => el === document.activeElement), true);
     } finally { await page.close(); }
+});
+
+test('stale feeds disclose delay even when the publishing machine is offline', () => {
+    assert.match(freshnessMessage({digestDate:'2026-09-16',notice:'Snapshot'},new Date('2026-09-17T16:00:00Z')), /Update delayed/);
+    assert.equal(freshnessMessage({digestDate:'2026-09-17',notice:'Current'},new Date('2026-09-17T16:00:00Z')), 'Current');
+    assert.equal(selectNews([{tags:[],source:'x',digestDate:'2026-09-17',title:'x',themes:[{id:'a'}]}],{theme:'b'}).length,0);
 });
