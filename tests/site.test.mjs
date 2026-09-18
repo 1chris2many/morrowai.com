@@ -5,8 +5,8 @@ import { readFile, mkdir } from 'node:fs/promises';
 import { chromium } from 'playwright';
 import { newsAnchor, selectNews, freshnessMessage } from '../js/news-model.js';
 
-const pages = ['index.html', 'research.html', 'news.html', 'blog/rag-wrong.html', 'blog/agentic-commerce-hype.html'];
-const assets = ['css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/news.js', 'js/news-model.js', 'news.json', 'feed.xml'];
+const pages = ['index.html', 'perspectives.html', 'research.html', 'news.html', 'blog/rag-wrong.html', 'blog/agentic-commerce-hype.html'];
+const assets = ['css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/perspectives.js', 'js/news.js', 'js/news-model.js', 'news.json', 'feed.xml'];
 let server, browser, base;
 const feed = JSON.parse(await readFile(new URL('../news.json', import.meta.url)));
 before(async () => {
@@ -155,7 +155,7 @@ test('no-JS navigation, failure fallback, and accessible skip link', async () =>
     const nojs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 900 } });
     const p = await nojs.newPage();
     try {
-        for (const file of ['index.html', 'research.html', 'news.html']) {
+        for (const file of ['index.html', 'perspectives.html', 'research.html', 'news.html']) {
             await p.goto(base + file);
             assert.ok(await p.locator('#nav-links').isVisible());
             assert.equal(await p.locator('#nav-toggle').isVisible(), false);
@@ -174,6 +174,39 @@ test('no-JS navigation, failure fallback, and accessible skip link', async () =>
         await page.keyboard.press('Enter');
         assert.equal(await page.locator('main').evaluate(el => el === document.activeElement), true);
     } finally { await page.close(); }
+});
+
+test('Perspectives is HTML-first with attributed cards and accessible author filtering', async () => {
+    for (const javaScriptEnabled of [false, true]) {
+        const context = await browser.newContext({ javaScriptEnabled, viewport: { width: 390, height: 900 } });
+        const page = await context.newPage();
+        try {
+            await page.goto(base + 'perspectives.html');
+            const cards = page.locator('#perspectives-list .essay-card:visible');
+            assert.equal(await cards.count(), 2);
+            assert.deepEqual(await cards.evaluateAll(els => els.map(el => el.dataset.authorId)), ['chris-morrow', 'chris-morrow']);
+            assert.equal(await page.locator('.perspectives-byline').allTextContents().then(texts => texts.every(text => text === 'By Chris Morrow')), true);
+            assert.equal(await page.locator('#perspectives-count').textContent(), '2 pieces');
+            assert.equal(await page.locator('label[for="perspectives-author"]').textContent(), 'Browse by author');
+            assert.equal(await page.locator('#perspectives-author').inputValue(), 'all');
+            if (javaScriptEnabled) {
+                await page.locator('#perspectives-author').focus();
+                assert.ok(await page.locator('#perspectives-author').evaluate(el => el === document.activeElement));
+                // Drive the native select portably; headless macOS popup key
+                // synthesis does not reliably commit an option.
+                await page.locator('#perspectives-author').selectOption('chris-morrow');
+                assert.equal(await page.locator('#perspectives-author').inputValue(), 'chris-morrow');
+                assert.equal(await cards.count(), 2);
+                await page.locator('#perspectives-author').evaluate(select => select.add(new Option('Unknown author', 'unknown')));
+                await page.locator('#perspectives-author').selectOption('unknown');
+                assert.equal(await cards.count(), 0);
+                assert.equal(await page.locator('#perspectives-count').textContent(), '0 pieces');
+                assert.ok(await page.locator('#perspectives-empty').isVisible());
+                await page.locator('#perspectives-author').selectOption('all');
+                assert.equal(await cards.count(), 2);
+            }
+        } finally { await context.close(); }
+    }
 });
 
 test('stale feeds disclose delay even when the publishing machine is offline', () => {

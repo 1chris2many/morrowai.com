@@ -27,6 +27,15 @@
 .essay-card h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: 1.65rem; margin-bottom: 18px; }
 .essay-card p { margin-bottom: 24px; }
 .essay-card .text-link { margin-top: auto; }
+.editorial .essay-card[hidden] { display: none; }
+.perspectives-page .essay-card h2 { font-size: 1.65rem; margin-bottom: 18px; }
+.perspectives-byline { font-size: .85rem; }
+.perspectives-tools { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+.perspectives-tools > div { display: none; }
+.perspectives-tools.enhanced > div { display: block; }
+.perspectives-tools label { display: block; margin-bottom: 8px; }
+.perspectives-tools select { min-height: 44px; min-width: 200px; max-width: 100%; color: var(--text-primary); background: #12121a; border: 1px solid #77747e; border-radius: 4px; padding: 8px 12px; font: inherit; }
+.perspectives-tools select:focus-visible { outline: 2px solid #e1bb75; outline-offset: 3px; }
 .text-link { color: #e1bb75; font-size: .95rem; text-decoration: underline; text-underline-offset: 5px; }
 .research-feature { background: #141318; }
 .research-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; }
