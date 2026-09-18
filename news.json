@@ -3,6 +3,14 @@
   "digestDate": "2026-09-17",
   "latestSavedDigest": "2026-09-17",
   "fresh": true,
+  "coverage": {
+    "count": 2,
+    "sourceCount": 2,
+    "targetMin": 5,
+    "targetMax": 8,
+    "minSources": 3,
+    "healthy": false
+  },
   "pending": 1,
   "items": [
     {
@@ -667,8 +675,8 @@
       ]
     }
   ],
-  "publicationStatus": "current",
-  "notice": "Latest included digest: 2026-09-17. Today’s Top Stories are published. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-17.",
-  "publishedAt": "2026-09-18T03:54:31.235Z",
-  "contentHash": "1d8e1a7cac18c4b2df5279581379df0be1dfa94e13394af80ba4b0319d383bcf"
+  "publicationStatus": "thin",
+  "notice": "Latest included digest: 2026-09-17. Today’s saved Top Stories are published. 2 stories today from 2 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-17.",
+  "publishedAt": "2026-09-18T04:20:33.483Z",
+  "contentHash": "5df50ac6721fd39e3a789659c5b6c54b7d42bcfccd1c676a857aef6c547ce5d1"
 }
