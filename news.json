@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-09-18",
   "fresh": true,
   "coverage": {
-    "count": 5,
-    "sourceCount": 5,
+    "count": 11,
+    "sourceCount": 7,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -51,6 +51,142 @@
         "Policy"
       ],
       "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 798,
+      "digestDate": "2026-09-18",
+      "title": "Anthropic merges Claude chat and Cowork, with documents and slides in the same conversation",
+      "summary": "Anthropic announced that Claude chat and Cowork are being combined, alongside new document and slide tools. The unified experience is rolling out to Pro and Max users over several weeks; other plans follow later, and Enterprise administrators will receive advance notice. This is a staged product rollout, not an immediate change for every account.",
+      "whyItMatters": "The change puts conversational assistance and longer-running work in one interface, making handoffs between those modes less visible to users.",
+      "editorialNote": "Backfill supplement prepared by Codex on September 18, 2026, from a public primary source. The source date is listed separately; this story was not in the original morning edition.",
+      "url": "https://claude.com/blog/cowork-is-now-claude",
+      "source": "Anthropic — September 16, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 800,
+      "digestDate": "2026-09-18",
+      "title": "Anthropic opens a verified-organization program for life-sciences access",
+      "summary": "Anthropic introduced a beta verification program that ties life-sciences access to approved organizational use cases and monitoring. Availability includes its first-party API, Enterprise and Team offerings; individual plans and third-party platforms are not yet supported. The program changes access and oversight arrangements, rather than establishing that AI-assisted research is risk-free.",
+      "whyItMatters": "Research access is becoming more dependent on institutional verification and defined project scope, adding governance requirements alongside model capability.",
+      "editorialNote": "Backfill supplement prepared by Codex on September 18, 2026, from a public primary source. The source date is listed separately; this story was not in the original morning edition.",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "source": "Anthropic — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 799,
+      "digestDate": "2026-09-18",
+      "title": "Anthropic publishes internal measures of AI research automation, oversight and compute",
+      "summary": "Anthropic proposed three ways to track development inside frontier labs: AI's role in research, oversight of agent actions, and allocation of computing resources. It supplied measurements from its own operations and described plans for external evaluators. These are a company-reported snapshot, not an independent audit or proof that research is fully autonomous.",
+      "whyItMatters": "Tracking how models are built could complement capability tests, but comparability and outside verification will matter as much as the numbers themselves.",
+      "editorialNote": "Backfill supplement prepared by Codex on September 18, 2026, from a public primary source. The source date is listed separately; this story was not in the original morning edition. The reported internal measurements describe July and August, not September 17.",
+      "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+      "source": "Anthropic — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "recursive-ai",
+          "name": "AI building AI"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 803,
+      "digestDate": "2026-09-18",
+      "title": "Google and RXN publish survey findings on how U.S. teens use and assess AI",
+      "summary": "Google published research conducted with RXN using surveys and focus groups with U.S. teenagers. Respondents described using AI for study and creative work, checking information, and wanting digital-literacy instruction. The findings report participants' views and habits; they do not establish that AI improves learning or resolve competing concerns about dependence.",
+      "whyItMatters": "Teenagers' reported experiences add a different perspective to institutional warnings, but self-report evidence and measured educational outcomes answer different questions.",
+      "editorialNote": "Backfill supplement prepared by Codex on September 18, 2026, from a public primary source. The source date is listed separately; this story was not in the original morning edition.",
+      "url": "https://blog.google/innovation-and-ai/technology/families/teens-ai-research-findings/",
+      "source": "Google — September 16, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 802,
+      "digestDate": "2026-09-18",
+      "title": "Google expands merchant AI insights, YouTube shopping agents and checkout tools",
+      "summary": "Google expanded AI discovery insights in Merchant Center to five markets, opened a U.S. beta for shopping assistance inside YouTube ads, and announced additional Universal Commerce Protocol checkout tools. Cart transfer and checkout testing are rolling out gradually in the U.S. These are related merchant-product updates, not evidence of a guaranteed sales lift.",
+      "whyItMatters": "Retailers are gaining tools to measure AI-mediated discovery and connect it to checkout, while availability still varies by feature and market.",
+      "editorialNote": "Backfill supplement prepared by Codex on September 18, 2026, from a public primary source. The source date is listed separately; this story was not in the original morning edition.",
+      "url": "https://blog.google/products-and-platforms/products/shopping/google-shopping-updates-holiday-shopping/",
+      "source": "Google — September 16, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "agentic-commerce",
+          "name": "Agentic commerce"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 801,
+      "digestDate": "2026-09-18",
+      "title": "Google introduces Gemini 3.8 Live models for voice conversations and background tasks",
+      "summary": "Google introduced Gemini 3.8 Live and an Extended Thinking variant, pairing spoken interaction with visual context and tool use. The latter is designed to keep a conversation moving while reasoning through more complex tasks. Google describes use across developer and consumer products; its launch benchmarks should not be read as a guarantee of reliability in a particular workflow.",
+      "whyItMatters": "Voice interfaces are moving beyond spoken answers toward tool-using assistants, making interruption handling and task verification important evaluation criteria.",
+      "editorialNote": "Backfill supplement prepared by Codex on September 18, 2026, from a public primary source. The source date is listed separately; this story was not in the original morning edition.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "source": "Google — September 15, 2026; updated September 17",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1"
     },
@@ -771,7 +907,7 @@
     }
   ],
   "publicationStatus": "current",
-  "notice": "Latest included digest: 2026-09-18. Today’s saved Top Stories are published. 5 stories today from 5 publishers; daily target 5–8 substantive stories from at least 3 publishers. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-18.",
-  "publishedAt": "2026-09-18T15:18:50.295Z",
-  "contentHash": "7edb81d0aff34a9f4a47f6b5c89c205fd92c858cf14e2e1da136ff4e6f0c0e0b"
+  "notice": "Latest included digest: 2026-09-18. Today’s saved Top Stories are published. 11 stories today from 7 publishers; daily target 5–8 substantive stories from at least 3 publishers. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-18.",
+  "publishedAt": "2026-09-18T19:40:46.101Z",
+  "contentHash": "5645dbd84f7d9814f3275ed13a49041fcaf06c07beb4fcd26dcba21206f9b664"
 }
