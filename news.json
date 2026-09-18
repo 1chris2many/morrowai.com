@@ -2,17 +2,40 @@
   "version": 1,
   "digestDate": "2026-09-18",
   "latestSavedDigest": "2026-09-18",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 2,
-    "sourceCount": 2,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 4,
+  "pending": 1,
   "items": [
+    {
+      "digestItemId": 794,
+      "digestDate": "2026-09-18",
+      "title": "AI rivalry deepens US-China distrust ahead of Trump-Xi summit",
+      "summary": "With President Trump set to host Xi Jinping in Washington on September 24, reporting this week found both governments regard the other's AI ambitions with escalating suspicion rather than converging toward safety cooperation. Trump has rejected calls to slow AI development, saying \"whoever wins AI wins,\" while an article by a senior Chinese security official warning that runaway AI could threaten Communist Party control drew notice inside the Trump administration. US officials remain divided on whether any AI safety agreement with China could be credibly verified or enforced.",
+      "whyItMatters": "Bilateral AI-safety cooperation was the optimistic scenario a few months ago; this reporting shows both governments now treating the other's AI programs primarily as a threat to counter, which lowers the odds of real guardrails coming out of the summit.",
+      "editorialNote": "Source published September 17; the September 24 visit date in the digest was separately corroborated with Reuters reporting. This is reporting about expectations ahead of a planned summit, not its outcome.",
+      "url": "https://www.spokesman.com/stories/2026/sep/17/ai-crisis-heightens-the-stakes-of-xis-visit-to-was/",
+      "source": "Los Angeles Times (via The Spokesman-Review) — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
     {
       "digestItemId": 791,
       "digestDate": "2026-09-18",
@@ -26,6 +49,42 @@
       "tags": [
         "Security",
         "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 793,
+      "digestDate": "2026-09-18",
+      "title": "MIT report warns AI chatbot reliance is causing 'cognitive surrender' among students",
+      "summary": "MIT's Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training released a report after five months of study finding that students increasingly abandon independent effort at the first sign of difficulty and turn to chatbots, a pattern it calls \"cognitive surrender.\" The committee found this reliance is also reshaping campus culture, with students skipping office hours and communal study groups in favor of AI tools. The report calls for a campus-wide redesign of assignments and assessments rather than piecemeal policies.",
+      "whyItMatters": "This is one of the most detailed institutional studies yet of how everyday chatbot use changes learning behavior, and it lands as universities nationwide try to write AI policy faster than the technology is changing.",
+      "editorialNote": "Source-date and evidence context: MIT dated this report August 13. It is a committee assessment based on meetings, research and community outreach, not a controlled causal study. Its discussion of cognitive surrender describes a risk of reliance on AI; the saved digest headline uses stronger causal language. The digest wording is preserved verbatim.",
+      "url": "https://aiandeducation.mit.edu/report/",
+      "source": "MIT Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training — August 13, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 792,
+      "digestDate": "2026-09-18",
+      "title": "OpenAI's claimed Navier-Stokes proof triggers priority dispute with rival mathematicians",
+      "summary": "OpenAI said an internal model, run as a swarm of roughly 10,000 AI agents, found a counterexample showing the Navier-Stokes equations can produce infinite velocities in finite time, and formally verified the proof in the Lean language. Mathematician Tristan Buckmaster alleges OpenAI's system had access to his and Levent Alpöge's unpublished progress on a related method before OpenAI's announcement, which OpenAI denies, saying its result was developed independently over a weekend. The counterexample has not been independently verified, and the Clay Mathematics Institute still lists the underlying Millennium Prize Problem as active.",
+      "whyItMatters": "This is the clearest public test yet of whether \"AI solved a famous unsolved problem\" claims can survive independent scrutiny, and the priority dispute shows how contested credit and provenance get once frontier labs race on pure research results, not just products.",
+      "editorialNote": "Source-date context: the linked report was published September 8, not September 18. OpenAI updated its own account September 10 to say its investigation ruled out influence from the cited recent user prompts. The described result concerns externally forced fluid equations; this card reports the claim and dispute, not an independent mathematical certification.",
+      "url": "https://www.scientificamerican.com/article/openai-claims-blockbuster-math-breakthrough-amid-swirl-of-controversy/",
+      "source": "Scientific American — September 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
       ],
       "themes": [],
       "reviewed": true,
@@ -711,8 +770,8 @@
       ]
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "Latest included digest: 2026-09-18. Update delayed; older stories remain available. 2 stories today from 2 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 4 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-18.",
-  "publishedAt": "2026-09-18T13:58:07.533Z",
-  "contentHash": "162fee69f57fc6a533b17945fdabb3c3b95de58d463a45b974caaf7189e3d6f2"
+  "publicationStatus": "current",
+  "notice": "Latest included digest: 2026-09-18. Today’s saved Top Stories are published. 5 stories today from 5 publishers; daily target 5–8 substantive stories from at least 3 publishers. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-18.",
+  "publishedAt": "2026-09-18T15:18:50.295Z",
+  "contentHash": "7edb81d0aff34a9f4a47f6b5c89c205fd92c858cf14e2e1da136ff4e6f0c0e0b"
 }
