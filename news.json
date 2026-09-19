@@ -2,16 +2,16 @@
   "version": 1,
   "digestDate": "2026-09-19",
   "latestSavedDigest": "2026-09-19",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 4,
-    "sourceCount": 4,
+    "count": 6,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 3,
+  "pending": 1,
   "items": [
     {
       "digestItemId": 805,
@@ -31,6 +31,29 @@
         {
           "id": "recursive-ai",
           "name": "AI building AI"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 808,
+      "digestDate": "2026-09-19",
+      "title": "House passes 417-3 bill directing states to consider making large data centers cover their grid costs",
+      "summary": "The House passed the Ratepayer Protection Act (H.R. 9340) by a 417-3 vote. The bill would require state utility regulators and unregulated utilities to consider adopting standards for loads above 100 megawatts that ensure recovery of the full, incremental cost of any generation, transmission or distribution upgrade needed to serve them, plus upfront financial assurances and guaranteed cost recovery if a large load exits its supply contract early. States would have a year to begin considering the standards and two years to decide, and they are not required to adopt them. Utility Dive reports the bill is unlikely to pass the Senate before the November midterms but could eventually become law.",
+      "whyItMatters": "A 417-3 vote is about as close to consensus as Congress gets, showing bipartisan alarm that data centers are pushing electricity costs onto ordinary ratepayers is now mainstream even if this specific bill stalls.",
+      "url": "https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/",
+      "source": "Utility Dive — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
         }
       ],
       "reviewed": true,
@@ -78,6 +101,24 @@
           "name": "Agents at work"
         }
       ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 807,
+      "digestDate": "2026-09-19",
+      "title": "Trump administration accelerates AI into Medicare and FDA pathways despite physician safety concerns",
+      "summary": "The Department of Health and Human Services is opening several federal pathways for AI in clinical care. Medicare has allowed more than 200 companies into pilot programs that can include AI. The FDA has rejected many of those applicants but has allowed the use of four otherwise-unapproved AI models that meet its safety criteria and appear likely to benefit patients, including a project offering AI-chatbot talk therapy to Medicare beneficiaries with depression or anxiety. A separate pilot with about $60 million in funding at ARPA-H is building an AI for heart-failure patients that could prescribe and manage medications; under current laws and rules a doctor will oversee it. AMA CEO John Whyte warned that \"tech is the tail wagging the dog\" rather than the clinical community driving the pace.",
+      "whyItMatters": "Federal reimbursement and approval pathways, not raw model capability, are the actual gate for AI in medicine, so this is the clearest signal yet of how fast clinical AI, still under physician oversight, is reaching patients.",
+      "url": "https://www.inquirer.com/health/ai-doctors-medicare-fda-20260915.html",
+      "source": "The Philadelphia Inquirer (New York Times) — September 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Agents"
+      ],
+      "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1"
     },
@@ -991,8 +1032,8 @@
       ]
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "Latest included digest: 2026-09-19. Update delayed; older stories remain available. 4 stories in today’s edition from 4 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 3 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-19.",
-  "publishedAt": "2026-09-19T15:02:32.612Z",
-  "contentHash": "b30f5cba96e180982d1741bc3f31a9c3fa13c7f57beec8658b9861f74a6ee053"
+  "publicationStatus": "current",
+  "notice": "Latest included digest: 2026-09-19. Today’s saved Top Stories are published. 6 stories in today’s edition from 6 publishers; daily target 5–8 substantive stories from at least 3 publishers. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-19.",
+  "publishedAt": "2026-09-19T15:13:59.142Z",
+  "contentHash": "bf70d0d18dbc6281c504108a42414fe15d33a05e1b3a9a37908c22e2cec6e963"
 }
