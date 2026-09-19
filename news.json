@@ -1,18 +1,81 @@
 {
   "version": 1,
-  "digestDate": "2026-09-18",
-  "latestSavedDigest": "2026-09-18",
+  "digestDate": "2026-09-19",
+  "latestSavedDigest": "2026-09-19",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 3,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 1,
+  "pending": 4,
   "items": [
+    {
+      "digestItemId": 805,
+      "digestDate": "2026-09-19",
+      "title": "Anthropic says Claude now leads 26% of its own AI research and development, up from under 1% in February",
+      "summary": "Anthropic published the first results of its R&D Automation Index, a measurement framework built on Epoch AI's automation scale, showing Claude models now \"lead\" — completing most of a task end-to-end from a high-level prompt while a human supervises — 26% of the company's internal AI R&D work as of August, versus under 1% in February. More than 90% of that work now involves Claude as at least a collaborator, and roughly 30,000 agents run research and engineering tasks at Anthropic at any given time, with every action passing an online monitor and 100% reviewed after the fact offline. Anthropic says Claude is not operating fully autonomously in any measured category.",
+      "whyItMatters": "This is the first company-published, methodologically explicit measurement of how much of a frontier lab's own model development is now AI-led, giving outside researchers a concrete number to track instead of anecdote about recursive self-improvement.",
+      "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+      "source": "Anthropic Institute — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "recursive-ai",
+          "name": "AI building AI"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 809,
+      "digestDate": "2026-09-19",
+      "title": "OpenAI launches Astra for Law, its first vertical GPT-6 Astra edition, for legal research and drafting",
+      "summary": "OpenAI introduced Astra for Law, a configuration of GPT-6 Astra paired with a legal search index covering more than 230 million URLs of case law, statutes, regulations and court rules, plus access controls built for law firms. At the highest reasoning setting it passed 54.0% of questions on an internal legal-correctness evaluation, versus 38.7% for standard GPT-6 Astra using web search alone. It launches with 26 partner plugins, including Thomson Reuters, Harvey and Legora, offered initially through Trusted Access in ChatGPT and Codex to selected firms.",
+      "whyItMatters": "This is OpenAI's first industry-specific configuration at the GPT-6 Astra tier, and the partner list shows it's aiming to sit underneath existing legal-tech vendors rather than compete with them head-on.",
+      "url": "https://openai.com/index/astra-for-law/",
+      "source": "OpenAI — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 806,
+      "digestDate": "2026-09-19",
+      "title": "Unsealed filings show a Microsoft exec called AI training-data scraping \"the largest theft of labor in human history\"",
+      "summary": "Newly unsealed filings in The New York Times' copyright lawsuit against OpenAI and Microsoft include a 2023 internal memo from Microsoft director Brent Hecht describing the companies' AI training practices as \"an astonishing theft of unprecedented proportions\" and \"the largest theft of labor in human history.\" The filings also describe OpenAI staff discussing a method to bypass the Times' paywall, with OpenAI president Greg Brockman reportedly replying \"ah, nice,\" and cite OpenAI's own ChatGPT lead calling the technology an \"existential threat\" to publishers. Microsoft CEO Satya Nadella testified that paywalled content should have been licensed.",
+      "whyItMatters": "These are the companies' own internal admissions surfacing in discovery rather than outside allegations, which raises the stakes for their shared fair-use defense and for every publisher weighing whether to sue over training data.",
+      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+      "source": "TechCrunch — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
     {
       "digestItemId": 794,
       "digestDate": "2026-09-18",
@@ -906,8 +969,8 @@
       ]
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "Latest included digest: 2026-09-18. Update delayed; older stories remain available. 0 stories in today’s edition from 0 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-19.",
-  "publishedAt": "2026-09-19T07:13:09.423Z",
-  "contentHash": "536ef3e0046d589c8d908fcc015fea43252f0d395d0800ce6116902f72632bfd"
+  "publicationStatus": "partial",
+  "notice": "Latest included digest: 2026-09-19. Update delayed; older stories remain available. 3 stories in today’s edition from 3 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 4 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-19.",
+  "publishedAt": "2026-09-19T13:58:10.105Z",
+  "contentHash": "02da0db4a4de5c1650bebbeed6a1cd1c51a49ab563ae5af870ee74629a34c95d"
 }
