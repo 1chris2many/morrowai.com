@@ -4,14 +4,14 @@
   "latestSavedDigest": "2026-09-19",
   "fresh": false,
   "coverage": {
-    "count": 3,
-    "sourceCount": 3,
+    "count": 4,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 4,
+  "pending": 3,
   "items": [
     {
       "digestItemId": 805,
@@ -31,6 +31,28 @@
         {
           "id": "recursive-ai",
           "name": "AI building AI"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 804,
+      "digestDate": "2026-09-19",
+      "title": "Newsom orders California agencies to draft AI safety recommendations, reversing course after his SB 1047 veto",
+      "summary": "Governor Gavin Newsom directed the Government Operations Agency and the Office of Emergency Services to develop AI safety recommendations by November 16, covering external safety evaluators, kill-switch mechanisms for emergencies, and expanded incident reporting for loss-of-control events. The directive revives elements of SB 1047, the sweeping AI safety bill Newsom vetoed in 2024 in favor of the narrower SB 53. Newsom pointed to recent AI-linked security incidents in explaining the shift, saying the state needs to \"speed up\" its work on oversight.",
+      "whyItMatters": "California sets the default for state-level AI oversight, so a governor who vetoed the stricter bill two years ago now directing agencies to study its provisions signals which safety requirements are likeliest to return in binding form next session.",
+      "url": "https://calmatters.org/politics/2026/09/ai-rules-newsom-state-directive/",
+      "source": "CalMatters — September 18, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
         }
       ],
       "reviewed": true,
@@ -970,7 +992,7 @@
     }
   ],
   "publicationStatus": "partial",
-  "notice": "Latest included digest: 2026-09-19. Update delayed; older stories remain available. 3 stories in today’s edition from 3 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 4 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-19.",
-  "publishedAt": "2026-09-19T13:58:10.105Z",
-  "contentHash": "02da0db4a4de5c1650bebbeed6a1cd1c51a49ab563ae5af870ee74629a34c95d"
+  "notice": "Latest included digest: 2026-09-19. Update delayed; older stories remain available. 4 stories in today’s edition from 4 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 3 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-19.",
+  "publishedAt": "2026-09-19T15:02:32.612Z",
+  "contentHash": "b30f5cba96e180982d1741bc3f31a9c3fa13c7f57beec8658b9861f74a6ee053"
 }
