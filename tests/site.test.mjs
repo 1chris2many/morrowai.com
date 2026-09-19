@@ -64,6 +64,7 @@ for (const width of [320, 390, 768, 820, 1440]) {
             assert.equal(await page.locator('#hero .btn-primary').getAttribute('href'), '#essays');
             assert.equal(await page.locator('#hero a[href="#contact"]').count(), 0);
             assert.equal(await page.locator('#nav-links a[href="news.html"]').count(), 1);
+            assert.equal(await page.locator('#nav-links a[href="perspectives.html"]').count(), 1);
             assert.equal(await page.locator('.essay-card').count(), 2);
             assert.equal(await page.locator('.digest-preview li').count(), 3);
             assert.equal(await page.locator('.contact-email').getAttribute('href'), 'mailto:hello@usefulaiwerks.com');
@@ -72,7 +73,7 @@ for (const width of [320, 390, 768, 820, 1440]) {
             assert.ok(await page.evaluate(() => document.querySelector('#research').offsetTop < document.querySelector('#contact').offsetTop));
             await page.screenshot({ path: `test-results/v02-home-${width}.png` });
             await page.locator('#hero .btn-primary').click();
-            await page.waitForFunction(() => document.querySelector('#nav-links a[href="#essays"]').getAttribute('aria-current') === 'location');
+            await page.waitForFunction(() => location.hash === '#essays');
             if (width === 390 || width === 1440) {
                 await page.locator('#essays').scrollIntoViewIfNeeded();
                 await page.screenshot({ path: `test-results/v02-essays-${width}.png` });

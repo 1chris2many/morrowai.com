@@ -43,7 +43,7 @@ const news = `<!doctype html>
 <link rel="stylesheet" href="css/style.css?v=20260915"><link rel="stylesheet" href="css/news.css"><link rel="stylesheet" href="css/editorial.css?v=20260915">
 </head><body class="editorial">${nav}
 <main class="container news-main" id="main"><header class="digest-intro"><p class="eyebrow">The reading list</p><h1>AI Digest</h1><p>AI news from our daily reading list, usually prepared by Raven. Full summaries, source links, and context. Recovery editions are labeled.</p>
-<div class="section-actions"><a class="text-link" href="feed.xml">Follow with RSS ↗</a><a class="text-link" href="./#essays">Read Chris’s essays →</a></div>
+<div class="section-actions"><a class="text-link" href="feed.xml">Follow with RSS ↗</a><a class="text-link" href="perspectives.html">Browse perspectives →</a></div>
 <p id="news-status" class="small-note" role="status">${e(feed.notice)}</p>
 <details class="digest-method"><summary>How this digest is prepared</summary><p class="small-note">Top Stories summaries are reproduced verbatim from the morning digest. A deterministic publisher checks source links, digest provenance and privacy before updating this page and RSS. Personal commentary is withheld rather than silently rewritten. Held items do not block other valid stories. Updates are targeted each morning by 8 AM Pacific; delayed editions are labeled and publication failures alert the operator. No system can guarantee uninterrupted delivery.</p></details></header>
 ${threadIndex}

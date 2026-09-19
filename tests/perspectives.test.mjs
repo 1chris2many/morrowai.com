@@ -7,6 +7,21 @@ const html = await readFile(new URL('../perspectives.html', import.meta.url), 'u
 const home = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const script = await readFile(new URL('../js/perspectives.js', import.meta.url), 'utf8');
 
+test('Perspectives discovery survives digest regeneration and preserves the homepage preview anchor', async () => {
+    for (const name of ['index.html', 'research.html', 'news.html', 'perspectives.html']) {
+        const page = await readFile(new URL('../' + name, import.meta.url), 'utf8');
+        const nav = page.match(/<ul class="nav-links"[\s\S]*?<\/ul>/)?.[0];
+        assert.match(nav, /href="perspectives.html">Perspectives<\/a>/, name);
+    }
+    const { nav } = await import('../scripts/site-layout.mjs');
+    assert.match(nav, /href="perspectives.html">Perspectives<\/a>/);
+    for (const name of ['news.html', 'scripts/build-digest.mjs']) {
+        assert.match(await readFile(new URL('../' + name, import.meta.url), 'utf8'), /href="perspectives.html">Browse perspectives →/);
+    }
+    assert.match(home, /href="#essays">Explore the writing/);
+    assert.match(home, /id="essays"/);
+});
+
 test('Perspectives serves only the two approved, attributed originals without JavaScript', () => {
     assert.equal((html.match(/class="essay-card" data-author-id="chris-morrow"/g) || []).length, 2);
     assert.equal((html.match(/class="perspectives-byline">By Chris Morrow/g) || []).length, 2);
