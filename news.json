@@ -4,14 +4,14 @@
   "latestSavedDigest": "2026-09-20",
   "fresh": false,
   "coverage": {
-    "count": 3,
-    "sourceCount": 3,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 5,
+  "pending": 3,
   "items": [
     {
       "digestItemId": 811,
@@ -37,6 +37,29 @@
       "reviewMethod": "automated-publication-checks-v1"
     },
     {
+      "digestItemId": 815,
+      "digestDate": "2026-09-20",
+      "title": "Anthropic relaunches Claude Code Projects as an always-on coordinator for parallel cloud coding sessions",
+      "summary": "Anthropic redesigned Claude Code Projects from a folder-based file store into a persistent, conversation-driven coordinator: a developer describes a goal, and Claude spins up, delegates across, and stitches together multiple parallel cloud coding sessions, each running as its own branch with shared memory across threads. Users can steer progress from their phone, and work continues after they disconnect; Anthropic says local-machine execution is coming soon. The beta launched September 17 for select Claude Pro and Max subscribers on cloud sessions, expanding to more users within the week, with Team and Enterprise access to follow.",
+      "whyItMatters": "Coordinating multiple concurrent agents, rather than running one at a time, is the shift that turns a coding assistant into something closer to a delegated engineering team, and it's the same orchestration problem every agentic product will eventually have to solve.",
+      "url": "https://claude.com/blog/projects-redesigned",
+      "source": "Anthropic (Claude) — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
       "digestItemId": 813,
       "digestDate": "2026-09-20",
       "title": "Crusoe raises $3.9B at a $30.9B valuation to build modular AI data centers",
@@ -56,6 +79,24 @@
           "name": "AI infrastructure"
         }
       ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 814,
+      "digestDate": "2026-09-20",
+      "title": "Figure's Helix 2.5 humanoid folds towels and makes beds in 30 homes it had never seen",
+      "summary": "Figure unveiled Helix 2.5, which it calls its most advanced neural network yet, and tested it in 30 Bay Area homes with zero site-specific training, fine-tuning, or adaptation. Pretrained on Figure's \"Index\" dataset of human behavior, the model completed 237 of 420 attempted tasks (a 56% success rate) tidying toys, folding towels, and making beds using each home's own furniture and linens, compared with just 9% for an otherwise identical policy trained from scratch. Figure says Index now generates roughly 35 minutes of new human-behavior data per second and that it has committed $3.5 billion of compute to training Helix.",
+      "whyItMatters": "Zero-shot generalization to homes with no collected data is the specific capability gap that has kept household humanoids as demos rather than products, so a documented jump from 9% to 56% is a concrete, falsifiable data point on how close that gap is to closing.",
+      "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
+      "source": "Figure — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Hardware"
+      ],
+      "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1"
     },
@@ -1096,7 +1137,7 @@
     }
   ],
   "publicationStatus": "partial",
-  "notice": "Latest included digest: 2026-09-20. Update delayed; older stories remain available. 3 stories in today’s edition from 3 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 5 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-20.",
-  "publishedAt": "2026-09-20T13:58:12.766Z",
-  "contentHash": "a89e27d120e656108890d725347b26d4a1465bf163127e350222f894f986b2c6"
+  "notice": "Latest included digest: 2026-09-20. Update delayed; older stories remain available. 5 stories in today’s edition from 4 publishers; daily target 5–8 substantive stories from at least 3 publishers. 3 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-20.",
+  "publishedAt": "2026-09-20T15:07:04.617Z",
+  "contentHash": "55562e519f63305da114f32ab5e3c2c71193a66875f6dd2d2a04df4ba4c530c2"
 }
