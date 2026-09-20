@@ -1,18 +1,81 @@
 {
   "version": 1,
-  "digestDate": "2026-09-19",
-  "latestSavedDigest": "2026-09-19",
+  "digestDate": "2026-09-20",
+  "latestSavedDigest": "2026-09-20",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 3,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 1,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 811,
+      "digestDate": "2026-09-20",
+      "title": "Anthropic pays Accenture at least $1 billion to embed independent evaluators inside its own walls",
+      "summary": "Anthropic and Accenture's Faculty unit announced a partnership placing Accenture staff inside Anthropic with employee-level access to red-team models, run alignment assessments, and test safeguards as they're built, not after release. Both companies plan to invest at least $1 billion each over five years, with Anthropic funding Accenture's side of the work directly given what it called the \"importance and urgency\" of the effort. Anthropic frames this as the first concrete step in CEO Dario Amodei's \"We Must Pace the Frontier\" proposal, and says the arrangement is non-exclusive alongside existing external evaluators like METR.",
+      "whyItMatters": "Embedded, paid evaluators with insider access are a meaningfully different oversight model than after-the-fact external audits, and Anthropic funding its own watchdog is a real-world test of whether a frontier lab will let a critic see the process, not just the output.",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "source": "Anthropic — September 18, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 813,
+      "digestDate": "2026-09-20",
+      "title": "Crusoe raises $3.9B at a $30.9B valuation to build modular AI data centers",
+      "summary": "Crusoe closed a $3.9 billion Series F co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners, with participation from Founders Fund, GIC, Nvidia, Qatar Investment Authority, Radical Ventures, and TPG, valuing the eight-year-old company at $30.9 billion — up from $10 billion just ten months ago. The company, which built OpenAI's first Stargate campus in Abilene, Texas and a 900-megawatt site for Microsoft nearby, will use the funds for existing data-center projects and its truck-transportable modular \"Spark\" data centers, which it says cut field construction from years to weeks. CEO Chase Lochmiller said the strategy is \"controlling the infrastructure from electrons to tokens.\"",
+      "whyItMatters": "A 3x valuation jump in ten months for a company that builds the physical data centers underneath OpenAI and Microsoft's workloads is a direct read on how much investors think AI compute demand still has to grow, independent of any single lab's model roadmap.",
+      "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
+      "source": "TechCrunch — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
+    {
+      "digestItemId": 816,
+      "digestDate": "2026-09-20",
+      "title": "Shopify's CEO says employees' 'AI slop grenades' are creating more work than they save",
+      "summary": "Tobias Lütke, who told Shopify staff last year that using AI was \"a baseline expectation,\" said on The Knowledge Project podcast that a new failure mode has emerged: employees generating AI output faster than anyone can meaningfully review it. He calls the unexamined emails, code, and documents that result \"slop grenades\" — work that shifts the burden of quality control onto whoever receives it next, forcing colleagues to say \"this doesn't look right\" and redo it themselves. Lütke argues AI is valuable when it makes thinking clearer and more concise, and a liability when it just adds volume to a coworker's desk.",
+      "whyItMatters": "This is one of the most AI-aggressive companies' own CEO naming a specific downside of mandated AI adoption — unreviewed volume shifting work onto colleagues — a concrete counterpoint to productivity claims that only measure the output side of the ledger.",
+      "url": "https://fortune.com/2026/09/17/shopify-tobias-lutke-ai-slop-grenades/",
+      "source": "Fortune — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1"
+    },
     {
       "digestItemId": 805,
       "digestDate": "2026-09-19",
@@ -1032,8 +1095,8 @@
       ]
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "Latest included digest: 2026-09-19. Update delayed; older stories remain available. 0 stories in today’s edition from 0 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-20.",
-  "publishedAt": "2026-09-20T07:13:11.884Z",
-  "contentHash": "11631a9cfe104743521628f9674bf5e593331bf912ab5419b28c4befdd313ad7"
+  "publicationStatus": "partial",
+  "notice": "Latest included digest: 2026-09-20. Update delayed; older stories remain available. 3 stories in today’s edition from 3 publishers; daily target 5–8 substantive stories from at least 3 publishers. Coverage is below target. 5 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-20.",
+  "publishedAt": "2026-09-20T13:58:12.766Z",
+  "contentHash": "a89e27d120e656108890d725347b26d4a1465bf163127e350222f894f986b2c6"
 }
