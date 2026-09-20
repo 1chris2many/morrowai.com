@@ -198,6 +198,9 @@ test('Perspectives is HTML-first with attributed cards and accessible author fil
                 await page.locator('#perspectives-author').selectOption('chris-morrow');
                 assert.equal(await page.locator('#perspectives-author').inputValue(), 'chris-morrow');
                 assert.equal(await cards.count(), 2);
+                assert.equal(new URL(page.url()).searchParams.get('author'), 'chris-morrow');
+                await page.reload();
+                assert.equal(await page.locator('#perspectives-author').inputValue(), 'chris-morrow');
                 await page.locator('#perspectives-author').evaluate(select => select.add(new Option('Unknown author', 'unknown')));
                 await page.locator('#perspectives-author').selectOption('unknown');
                 assert.equal(await cards.count(), 0);
@@ -205,6 +208,13 @@ test('Perspectives is HTML-first with attributed cards and accessible author fil
                 assert.ok(await page.locator('#perspectives-empty').isVisible());
                 await page.locator('#perspectives-author').selectOption('all');
                 assert.equal(await cards.count(), 2);
+                assert.equal(new URL(page.url()).searchParams.has('author'), false);
+                await page.goto(base + 'perspectives.html?author=bogus&ref=shared#main');
+                assert.equal(await page.locator('#perspectives-author').inputValue(), 'all');
+                assert.equal(await cards.count(), 2);
+                assert.equal(new URL(page.url()).searchParams.has('author'), false);
+                assert.equal(new URL(page.url()).searchParams.get('ref'), 'shared');
+                assert.equal(new URL(page.url()).hash, '#main');
             }
         } finally { await context.close(); }
     }

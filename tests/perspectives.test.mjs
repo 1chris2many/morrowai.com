@@ -32,24 +32,57 @@ test('Perspectives serves only the two approved, attributed originals without Ja
     assert.match(home, /href="perspectives.html">Browse perspectives by author/);
 });
 
-test('author filter keeps All, matches Chris, and gives unknown authors an empty state', () => {
+function filterFixture(search = '') {
     const cards = [{ dataset: { authorId: 'chris-morrow' }, hidden: false }, { dataset: { authorId: 'chris-morrow' }, hidden: false }];
     const count = { textContent: '' };
     const empty = { hidden: true };
     const tools = { classList: { add(value) { assert.equal(value, 'enhanced'); } } };
-    const selector = { value: 'all', closest() { return tools; }, addEventListener(event, fn) { assert.equal(event, 'change'); this.change = fn; } };
+    const selector = {
+        value: 'all', options: [{ value: 'all' }, { value: 'chris-morrow' }],
+        closest() { return tools; },
+        addEventListener(event, fn) { assert.equal(event, 'change'); this.change = fn; }
+    };
     const document = {
         getElementById(id) { return { 'perspectives-author': selector, 'perspectives-count': count, 'perspectives-empty': empty }[id]; },
         querySelectorAll() { return cards; }
     };
-    runInNewContext(script, { document });
+    const window = {
+        location: { search, href: `https://usefulaiwerks.com/perspectives.html${search}` },
+        history: { replaceState(_state, _title, address) { this.address = address; } }
+    };
+    runInNewContext(script, { document, window, URL, URLSearchParams });
+    return { cards, count, empty, selector, window };
+}
+
+test('author filter keeps All, matches Chris, gives an empty state, and updates its shareable URL', () => {
+    const { cards, count, empty, selector, window } = filterFixture();
     assert.equal(count.textContent, '2 pieces');
     selector.value = 'chris-morrow'; selector.change();
     assert.equal(cards.filter(card => !card.hidden).length, 2);
+    assert.equal(window.history.address, '/perspectives.html?author=chris-morrow');
     selector.value = 'unknown'; selector.change();
     assert.equal(count.textContent, '0 pieces');
     assert.equal(empty.hidden, false);
     selector.value = 'all'; selector.change();
     assert.equal(cards.filter(card => !card.hidden).length, 2);
     assert.equal(empty.hidden, true);
+    assert.equal(window.history.address, '/perspectives.html');
+});
+
+test('a valid author query opens the corresponding author view', () => {
+    const { cards, count, selector, window } = filterFixture('?author=chris-morrow');
+    assert.equal(selector.value, 'chris-morrow');
+    assert.equal(cards.filter(card => !card.hidden).length, 2);
+    assert.equal(count.textContent, '2 pieces');
+    assert.equal(window.history.address, undefined);
+});
+test('invalid and empty author queries normalize to All while preserving unrelated parameters', () => {
+    for (const author of ['bogus', '']) {
+        const { selector, count, empty, window } = filterFixture('?author=' + author + '&ref=shared#top');
+        assert.equal(selector.value, 'all');
+        assert.equal(count.textContent, '2 pieces');
+        assert.equal(empty.hidden, true);
+        assert.equal(window.history.address, '/perspectives.html?ref=shared#top');
+    }
+    assert.equal(filterFixture().window.history.address, undefined);
 });
