@@ -16,7 +16,7 @@
     {
       "digestItemId": 811,
       "digestDate": "2026-09-20",
-      "title": "Anthropic embeds Accenture evaluators inside its own walls; each company commits at least $1 billion over five years",
+      "title": "Anthropic and Accenture plan embedded AI evaluation; each expects to invest at least $1 billion over five years",
       "summary": "Anthropic announced a partnership with Accenture, led by Accenture's specialist AI unit Faculty, to embed independent evaluators inside Anthropic with access comparable to an employee's, so they can watch models take shape in training, red-team them, run alignment assessments, test safeguards, and report incidents. Each company expects to invest at least $1 billion over five years in building this capacity; Anthropic will fund Accenture's work directly, citing the \"importance and urgency\" of the effort, while saying funding should ultimately come from pooled or government sources. Anthropic calls it an important step toward the commitment in CEO Dario Amodei's essay \"We Must Pace the Frontier,\" says many operating details are still being worked out, and describes the arrangement as non-exclusive, with METR and other nonprofit evaluators in dialogue to pilot elements of embedded evaluation.",
       "whyItMatters": "Embedded, paid evaluators with insider access are a meaningfully different oversight model than after-the-fact external audits, and Anthropic funding its own watchdog is a real-world test of whether a frontier lab will let a critic see the process, not just the output.",
       "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
@@ -1178,6 +1178,6 @@
   ],
   "publicationStatus": "current",
   "notice": "Latest included digest: 2026-09-20. Today’s saved Top Stories are published. 7 stories in today’s edition from 6 publishers; daily target 5–8 substantive stories from at least 3 publishers. 1 stories or editions are held for source/privacy checks. Top Stories summaries are reproduced verbatim. Dates are digest dates, not article dates. Snapshot published 2026-09-20.",
-  "publishedAt": "2026-09-20T16:15:50.058Z",
-  "contentHash": "5423fae0cbe9b97e2c04dabada49b2a79e78821e043e1ca78b08cdb28292d15a"
+  "publishedAt": "2026-09-20T23:02:20.723Z",
+  "contentHash": "69fda790976f6e8a8be8d9468a5aa37fa431ceea03aff2b41e2691233d4f4b78"
 }
