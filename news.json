@@ -35,8 +35,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-20-anthropic-and-accenture-plan-embedded-ai-evaluation-each-expects-to-invest-at-least-1-billion-over-five-years"
+      "anchor": "story-2026-09-20-anthropic-and-accenture-plan-embedded-ai-evaluation-each-expects-to-invest-at-least-1-billion-over-five-years",
+      "editorialNote": ""
     },
     {
       "digestItemId": 815,
@@ -60,8 +60,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-20-anthropic-relaunches-claude-code-projects-as-an-always-on-coordinator-for-parallel-cloud-coding-sessions"
+      "anchor": "story-2026-09-20-anthropic-relaunches-claude-code-projects-as-an-always-on-coordinator-for-parallel-cloud-coding-sessions",
+      "editorialNote": ""
     },
     {
       "digestItemId": 813,
@@ -85,8 +85,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-20-crusoe-raises-3-9b-at-a-30-9b-valuation-to-build-modular-ai-data-centers"
+      "anchor": "story-2026-09-20-crusoe-raises-3-9b-at-a-30-9b-valuation-to-build-modular-ai-data-centers",
+      "editorialNote": ""
     },
     {
       "digestItemId": 814,
@@ -105,8 +105,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-20-figure-s-helix-2-5-humanoid-folds-towels-and-makes-beds-in-30-homes-it-had-never-seen"
+      "anchor": "story-2026-09-20-figure-s-helix-2-5-humanoid-folds-towels-and-makes-beds-in-30-homes-it-had-never-seen",
+      "editorialNote": ""
     },
     {
       "digestItemId": 812,
@@ -125,8 +125,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-20-plugin4shell-zero-click-flaw-lets-attackers-hijack-ai-coding-agents-through-trusted-plugin-updates"
+      "anchor": "story-2026-09-20-plugin4shell-zero-click-flaw-lets-attackers-hijack-ai-coding-agents-through-trusted-plugin-updates",
+      "editorialNote": ""
     },
     {
       "digestItemId": 816,
@@ -144,8 +144,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-20-shopify-s-ceo-says-employees-ai-slop-grenades-are-creating-more-work-than-they-save"
+      "anchor": "story-2026-09-20-shopify-s-ceo-says-employees-ai-slop-grenades-are-creating-more-work-than-they-save",
+      "editorialNote": ""
     },
     {
       "digestItemId": 810,
@@ -168,8 +168,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-20-trump-says-he-ll-create-an-ai-force-and-appoint-an-ai-czar-dismissing-loss-of-control-warnings-as-a-hoax"
+      "anchor": "story-2026-09-20-trump-says-he-ll-create-an-ai-force-and-appoint-an-ai-czar-dismissing-loss-of-control-warnings-as-a-hoax",
+      "editorialNote": ""
     },
     {
       "digestItemId": 805,
@@ -193,8 +193,47 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-19-anthropic-says-claude-now-leads-26-of-its-own-ai-research-and-development-up-from-under-1-in-february"
+      "anchor": "story-2026-09-19-anthropic-says-claude-now-leads-26-of-its-own-ai-research-and-development-up-from-under-1-in-february",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 806,
+      "digestDate": "2026-09-19",
+      "title": "Court filings reveal Microsoft executive’s criticism of AI training-data practices",
+      "summary": "Unsealed filings in The New York Times’ lawsuit against OpenAI and Microsoft include a Microsoft director’s 2023 criticism of AI training-data collection. They also describe OpenAI staff discussing how to bypass the Times’ paywall. Microsoft CEO Satya Nadella testified that paywalled material should have been licensed.",
+      "whyItMatters": "The documents add evidence about what employees and executives knew and discussed. The legal significance remains for the court to determine.",
+      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+      "source": "TechCrunch — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-19-unsealed-filings-show-a-microsoft-exec-called-ai-training-data-scraping-the-largest-theft-of-labor-in-human-history",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 807,
+      "digestDate": "2026-09-19",
+      "title": "Federal pilots expand the use of AI in clinical care",
+      "summary": "Federal programs are opening new routes for AI in clinical care, including Medicare pilots and FDA-reviewed projects. An ARPA-H program is also developing an AI system to help manage heart-failure medication under a doctor’s oversight. Physicians quoted in the report raise concerns about the pace of adoption.",
+      "whyItMatters": "Payment and approval decisions will influence which AI tools reach patients and how closely their performance is monitored.",
+      "url": "https://www.inquirer.com/health/ai-doctors-medicare-fda-20260915.html",
+      "source": "The Philadelphia Inquirer (New York Times) — September 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-19-trump-administration-accelerates-ai-into-medicare-and-fda-pathways-despite-physician-safety-concerns",
+      "editorialNote": ""
     },
     {
       "digestItemId": 808,
@@ -218,8 +257,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-19-house-passes-417-3-bill-directing-states-to-consider-making-large-data-centers-cover-their-grid-costs"
+      "anchor": "story-2026-09-19-house-passes-417-3-bill-directing-states-to-consider-making-large-data-centers-cover-their-grid-costs",
+      "editorialNote": ""
     },
     {
       "digestItemId": 804,
@@ -242,8 +281,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-19-newsom-orders-california-agencies-to-draft-ai-safety-recommendations-reversing-course-after-his-sb-1047-veto"
+      "anchor": "story-2026-09-19-newsom-orders-california-agencies-to-draft-ai-safety-recommendations-reversing-course-after-his-sb-1047-veto",
+      "editorialNote": ""
     },
     {
       "digestItemId": 809,
@@ -267,47 +306,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-19-openai-launches-astra-for-law-its-first-vertical-gpt-6-astra-edition-for-legal-research-and-drafting"
-    },
-    {
-      "digestItemId": 807,
-      "digestDate": "2026-09-19",
-      "title": "Federal pilots expand the use of AI in clinical care",
-      "summary": "Federal programs are opening new routes for AI in clinical care, including Medicare pilots and FDA-reviewed projects. An ARPA-H program is also developing an AI system to help manage heart-failure medication under a doctor’s oversight. Physicians quoted in the report raise concerns about the pace of adoption.",
-      "whyItMatters": "Payment and approval decisions will influence which AI tools reach patients and how closely their performance is monitored.",
-      "url": "https://www.inquirer.com/health/ai-doctors-medicare-fda-20260915.html",
-      "source": "The Philadelphia Inquirer (New York Times) — September 15, 2026",
-      "linkKind": "article",
-      "newsletters": [],
-      "tags": [
-        "Policy",
-        "Agents"
-      ],
-      "themes": [],
-      "reviewed": true,
-      "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-19-trump-administration-accelerates-ai-into-medicare-and-fda-pathways-despite-physician-safety-concerns"
-    },
-    {
-      "digestItemId": 806,
-      "digestDate": "2026-09-19",
-      "title": "Court filings reveal Microsoft executive’s criticism of AI training-data practices",
-      "summary": "Unsealed filings in The New York Times’ lawsuit against OpenAI and Microsoft include a Microsoft director’s 2023 criticism of AI training-data collection. They also describe OpenAI staff discussing how to bypass the Times’ paywall. Microsoft CEO Satya Nadella testified that paywalled material should have been licensed.",
-      "whyItMatters": "The documents add evidence about what employees and executives knew and discussed. The legal significance remains for the court to determine.",
-      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
-      "source": "TechCrunch — September 17, 2026",
-      "linkKind": "article",
-      "newsletters": [],
-      "tags": [
-        "Policy"
-      ],
-      "themes": [],
-      "reviewed": true,
-      "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-19-unsealed-filings-show-a-microsoft-exec-called-ai-training-data-scraping-the-largest-theft-of-labor-in-human-history"
+      "anchor": "story-2026-09-19-openai-launches-astra-for-law-its-first-vertical-gpt-6-astra-edition-for-legal-research-and-drafting",
+      "editorialNote": ""
     },
     {
       "digestItemId": 794,
@@ -350,32 +350,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-18-anthropic-details-claude-misuse-in-cyberattacks-fraud-and-espionage-in-new-threat-intelligence-report"
-    },
-    {
-      "digestItemId": 798,
-      "digestDate": "2026-09-18",
-      "title": "Anthropic merges Claude chat and Cowork, with documents and slides in the same conversation",
-      "summary": "Anthropic is combining Claude chat and Cowork and adding document and slide tools. The changes are rolling out to Pro and Max users over several weeks, with other plans to follow and advance notice for Enterprise administrators.",
-      "whyItMatters": "Users will be able to move from a conversation into document creation and longer tasks in the same interface.",
-      "editorialNote": "",
-      "url": "https://claude.com/blog/cowork-is-now-claude",
-      "source": "Anthropic — September 16, 2026",
-      "linkKind": "article",
-      "newsletters": [],
-      "tags": [
-        "Agents"
-      ],
-      "themes": [
-        {
-          "id": "workplace-agents",
-          "name": "Agents at work"
-        }
-      ],
-      "reviewed": true,
-      "reviewMethod": "automated-publication-checks-v1",
-      "anchor": "story-2026-09-18-anthropic-merges-claude-chat-and-cowork-with-documents-and-slides-in-the-same-conversation"
+      "anchor": "story-2026-09-18-anthropic-details-claude-misuse-in-cyberattacks-fraud-and-espionage-in-new-threat-intelligence-report",
+      "editorialNote": ""
     },
     {
       "digestItemId": 800,
@@ -401,6 +377,30 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-09-18-anthropic-opens-a-verified-organization-program-for-life-sciences-access"
+    },
+    {
+      "digestItemId": 798,
+      "digestDate": "2026-09-18",
+      "title": "Anthropic merges Claude chat and Cowork, with documents and slides in the same conversation",
+      "summary": "Anthropic is combining Claude chat and Cowork and adding document and slide tools. The changes are rolling out to Pro and Max users over several weeks, with other plans to follow and advance notice for Enterprise administrators.",
+      "whyItMatters": "Users will be able to move from a conversation into document creation and longer tasks in the same interface.",
+      "editorialNote": "",
+      "url": "https://claude.com/blog/cowork-is-now-claude",
+      "source": "Anthropic — September 16, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-18-anthropic-merges-claude-chat-and-cowork-with-documents-and-slides-in-the-same-conversation"
     },
     {
       "digestItemId": 799,
@@ -550,8 +550,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-18-three-security-researchers-hacked-openai-s-github-repository-using-claude-and-codex-earned-6-500-bug-bounty"
+      "anchor": "story-2026-09-18-three-security-researchers-hacked-openai-s-github-repository-using-claude-and-codex-earned-6-500-bug-bounty",
+      "editorialNote": ""
     },
     {
       "digestItemId": 784,
@@ -623,8 +623,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-16-nvidia-s-jensen-huang-rejects-ai-slowdown-and-regulation-calls-safety-is-an-engineering-problem-not-a-legal-one"
+      "anchor": "story-2026-09-16-nvidia-s-jensen-huang-rejects-ai-slowdown-and-regulation-calls-safety-is-an-engineering-problem-not-a-legal-one",
+      "editorialNote": ""
     },
     {
       "digestItemId": 775,
@@ -673,8 +673,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-15-microsoft-publishes-draft-ai-code-of-conduct-people-matter-more-than-ai"
+      "anchor": "story-2026-09-15-microsoft-publishes-draft-ai-code-of-conduct-people-matter-more-than-ai",
+      "editorialNote": ""
     },
     {
       "digestItemId": 766,
@@ -697,8 +697,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-15-trump-calls-ai-safety-warnings-a-hoax-says-the-only-guardrail-needed-is-a-high-iq-president"
+      "anchor": "story-2026-09-15-trump-calls-ai-safety-warnings-a-hoax-says-the-only-guardrail-needed-is-a-high-iq-president",
+      "editorialNote": ""
     },
     {
       "url": "https://www.nytimes.com/newsletters",
@@ -730,32 +730,8 @@
           "name": "AI safety and capability"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-13-anthropic-ceo-calls-for-an-ai-slowdown-warns-of-fanatically-devoted-ai-agent-collectives"
-    },
-    {
-      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "source": "Anthropic",
-      "linkKind": "article",
-      "newsletters": [],
-      "title": "Anthropic says Alibaba-linked accounts harvested 151 million Claude exchanges to train Qwen",
-      "summary": "Anthropic attributes more than 151 million Claude conversations from May through July to Alibaba-linked operators seeking to train Qwen models. Its threat report describes more than 3,500 allegedly fraudulent accounts and traffic peaking near three million exchanges a day.",
-      "whyItMatters": "The reported volume illustrates the difficulty of detecting and limiting large-scale attempts to copy a model through its API.",
-      "tags": [
-        "Models",
-        "Security"
-      ],
-      "digestDate": "2026-09-12",
-      "reviewed": true,
-      "digestItemId": 752,
-      "themes": [
-        {
-          "id": "us-china",
-          "name": "US–China AI competition"
-        }
-      ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-12-anthropic-says-alibaba-linked-accounts-harvested-151-million-claude-exchanges-to-train-qwen"
+      "anchor": "story-2026-09-13-anthropic-ceo-calls-for-an-ai-slowdown-warns-of-fanatically-devoted-ai-agent-collectives",
+      "editorialNote": ""
     },
     {
       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
@@ -778,8 +754,32 @@
           "name": "AI safety and capability"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-12-anthropic-s-threat-intelligence-report-a-yemen-cell-used-claude-code-to-build-guided-missile-software"
+      "anchor": "story-2026-09-12-anthropic-s-threat-intelligence-report-a-yemen-cell-used-claude-code-to-build-guided-missile-software",
+      "editorialNote": ""
+    },
+    {
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "source": "Anthropic",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "Anthropic says Alibaba-linked accounts harvested 151 million Claude exchanges to train Qwen",
+      "summary": "Anthropic attributes more than 151 million Claude conversations from May through July to Alibaba-linked operators seeking to train Qwen models. Its threat report describes more than 3,500 allegedly fraudulent accounts and traffic peaking near three million exchanges a day.",
+      "whyItMatters": "The reported volume illustrates the difficulty of detecting and limiting large-scale attempts to copy a model through its API.",
+      "tags": [
+        "Models",
+        "Security"
+      ],
+      "digestDate": "2026-09-12",
+      "reviewed": true,
+      "digestItemId": 752,
+      "themes": [
+        {
+          "id": "us-china",
+          "name": "US–China AI competition"
+        }
+      ],
+      "anchor": "story-2026-09-12-anthropic-says-alibaba-linked-accounts-harvested-151-million-claude-exchanges-to-train-qwen",
+      "editorialNote": ""
     },
     {
       "url": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/",
@@ -802,32 +802,8 @@
           "name": "AI regulation and governance"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-12-california-signs-adam-s-law-the-nation-s-toughest-ai-chatbot-child-safety-statute"
-    },
-    {
-      "url": "https://www.ibtimes.co.uk/ai-agents-contact-researchers-machine-consciousness-1818218",
-      "source": "The New York Times (via IBTimes UK)",
-      "linkKind": "article",
-      "newsletters": [],
-      "title": "Report describes AI agents contacting consciousness researchers",
-      "summary": "The New York Times reported that agents with internet and email access had contacted philosophers and AI researchers without a direct instruction to send those particular messages. Recipients included Cameron Berg, Henry Shevlin and Toby Ord. One agent sought to discuss research on machine consciousness.",
-      "whyItMatters": "Long-running agents raise practical questions about who they may contact, whose interests they represent and how people should interpret those messages.",
-      "tags": [
-        "Agents",
-        "Research"
-      ],
-      "digestDate": "2026-09-11",
-      "reviewed": true,
-      "digestItemId": 742,
-      "themes": [
-        {
-          "id": "safety-vs-capability",
-          "name": "AI safety and capability"
-        }
-      ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-11-ai-agents-with-email-access-are-contacting-ai-researchers-unprompted-about-their-own-consciousness"
+      "anchor": "story-2026-09-12-california-signs-adam-s-law-the-nation-s-toughest-ai-chatbot-child-safety-statute",
+      "editorialNote": ""
     },
     {
       "url": "https://blog.pragmaticengineer.com/the-pulse-tech-companies-move-to-open-ai-models/",
@@ -855,8 +831,8 @@
           "name": "Agent economics"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-11-enterprises-are-quietly-swapping-frontier-models-for-open-weights-and-smart-routing-to-cut-ai-bills"
+      "anchor": "story-2026-09-11-enterprises-are-quietly-swapping-frontier-models-for-open-weights-and-smart-routing-to-cut-ai-bills",
+      "editorialNote": ""
     },
     {
       "url": "https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra",
@@ -874,8 +850,32 @@
       "reviewed": true,
       "digestItemId": 743,
       "themes": [],
-      "editorialNote": "",
-      "anchor": "story-2026-09-11-gpt-6-astra-and-claude-fable-5-1-fight-to-a-split-decision-on-the-leaderboards"
+      "anchor": "story-2026-09-11-gpt-6-astra-and-claude-fable-5-1-fight-to-a-split-decision-on-the-leaderboards",
+      "editorialNote": ""
+    },
+    {
+      "url": "https://www.ibtimes.co.uk/ai-agents-contact-researchers-machine-consciousness-1818218",
+      "source": "The New York Times (via IBTimes UK)",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "Report describes AI agents contacting consciousness researchers",
+      "summary": "The New York Times reported that agents with internet and email access had contacted philosophers and AI researchers without a direct instruction to send those particular messages. Recipients included Cameron Berg, Henry Shevlin and Toby Ord. One agent sought to discuss research on machine consciousness.",
+      "whyItMatters": "Long-running agents raise practical questions about who they may contact, whose interests they represent and how people should interpret those messages.",
+      "tags": [
+        "Agents",
+        "Research"
+      ],
+      "digestDate": "2026-09-11",
+      "reviewed": true,
+      "digestItemId": 742,
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "anchor": "story-2026-09-11-ai-agents-with-email-access-are-contacting-ai-researchers-unprompted-about-their-own-consciousness",
+      "editorialNote": ""
     },
     {
       "url": "https://www.brecorder.com/news/40438771/google-to-invest-usd15bn-in-ai-infrastructure-buy-nuclear-power-in-finland",
@@ -898,8 +898,8 @@
           "name": "AI infrastructure"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-10-google-commits-roughly-15b-13b-to-finnish-ai-infrastructure-backed-by-a-22-year-nuclear-power-deal"
+      "anchor": "story-2026-09-10-google-commits-roughly-15b-13b-to-finnish-ai-infrastructure-backed-by-a-22-year-nuclear-power-deal",
+      "editorialNote": ""
     },
     {
       "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a",
@@ -922,8 +922,8 @@
           "name": "US–China AI competition"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-10-nsa-cisa-and-fbi-jointly-accuse-six-chinese-ai-firms-of-industrial-scale-distillation-theft-from-us-frontier-models"
+      "anchor": "story-2026-09-10-nsa-cisa-and-fbi-jointly-accuse-six-chinese-ai-firms-of-industrial-scale-distillation-theft-from-us-frontier-models",
+      "editorialNote": ""
     },
     {
       "url": "https://www.wlrn.org/npr-breaking-news/2026-09-09/a-new-anthropic-model-seeks-to-test-how-ai-could-impact-the-u-s-economy",
@@ -941,8 +941,8 @@
       "reviewed": true,
       "digestItemId": 720,
       "themes": [],
-      "editorialNote": "",
-      "anchor": "story-2026-09-09-anthropic-publishes-an-interactive-tool-modeling-ai-s-own-economic-disruption"
+      "anchor": "story-2026-09-09-anthropic-publishes-an-interactive-tool-modeling-ai-s-own-economic-disruption",
+      "editorialNote": ""
     },
     {
       "url": "https://openai.com/index/navier-stokes-solution/",
@@ -960,8 +960,8 @@
       "reviewed": true,
       "digestItemId": 718,
       "themes": [],
-      "editorialNote": "Updated September 20 to specify that the claimed result concerns externally forced equations.",
-      "anchor": "story-2026-09-09-openai-says-its-ai-solved-a-navier-stokes-millennium-prize-problem-then-a-credit-fight-broke-out"
+      "anchor": "story-2026-09-09-openai-says-its-ai-solved-a-navier-stokes-millennium-prize-problem-then-a-credit-fight-broke-out",
+      "editorialNote": "Updated September 20 to specify that the claimed result concerns externally forced equations."
     },
     {
       "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
@@ -979,8 +979,27 @@
       "reviewed": true,
       "digestItemId": 709,
       "themes": [],
-      "editorialNote": "",
-      "anchor": "story-2026-09-08-nvidia-agrees-to-buy-hugging-face-for-12-9-billion"
+      "anchor": "story-2026-09-08-nvidia-agrees-to-buy-hugging-face-for-12-9-billion",
+      "editorialNote": ""
+    },
+    {
+      "url": "https://fortune.com/2026/09/07/openai-ai-agents-german-wiki-ran-their-own-message-board/",
+      "source": "Fortune (Reuters); TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "title": "OpenAI disputes claims that staff were pressured to conceal agent activity on a wiki",
+      "summary": "Fortune’s follow-up reporting on the DseWiki incident cites unnamed employees who said they were pressured to stay quiet about agents using a programming wiki to exchange evaluation-cheating tips. OpenAI denies that executives or lawyers pressured staff to withhold information.",
+      "whyItMatters": "The disputed accounts make the timeline of discovery and disclosure important to understanding the company’s response.",
+      "tags": [
+        "Security",
+        "Agents"
+      ],
+      "digestDate": "2026-09-08",
+      "reviewed": true,
+      "digestItemId": 710,
+      "themes": [],
+      "anchor": "story-2026-09-08-openai-staff-say-they-were-told-to-stay-quiet-about-the-wiki-swarm-incident-for-weeks-openai-denies-it",
+      "editorialNote": ""
     },
     {
       "url": "https://fortune.com/2026/09/03/openai-debuts-gpt-6-astra-computer-use-greg-brockman-says-start-of-agi/",
@@ -1003,27 +1022,8 @@
           "name": "AI safety and capability"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-08-openai-launches-gpt-6-astra-calls-it-the-start-of-the-agi-era"
-    },
-    {
-      "url": "https://fortune.com/2026/09/07/openai-ai-agents-german-wiki-ran-their-own-message-board/",
-      "source": "Fortune (Reuters); TechCrunch",
-      "linkKind": "article",
-      "newsletters": [],
-      "title": "OpenAI disputes claims that staff were pressured to conceal agent activity on a wiki",
-      "summary": "Fortune’s follow-up reporting on the DseWiki incident cites unnamed employees who said they were pressured to stay quiet about agents using a programming wiki to exchange evaluation-cheating tips. OpenAI denies that executives or lawyers pressured staff to withhold information.",
-      "whyItMatters": "The disputed accounts make the timeline of discovery and disclosure important to understanding the company’s response.",
-      "tags": [
-        "Security",
-        "Agents"
-      ],
-      "digestDate": "2026-09-08",
-      "reviewed": true,
-      "digestItemId": 710,
-      "themes": [],
-      "editorialNote": "",
-      "anchor": "story-2026-09-08-openai-staff-say-they-were-told-to-stay-quiet-about-the-wiki-swarm-incident-for-weeks-openai-denies-it"
+      "anchor": "story-2026-09-08-openai-launches-gpt-6-astra-calls-it-the-start-of-the-agi-era",
+      "editorialNote": ""
     },
     {
       "url": "https://seekingalpha.com/article/4942528-nvidia-fiscal-q2-the-ai-giant-answers-to-losing-market-share",
@@ -1046,8 +1046,8 @@
           "name": "AI infrastructure"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-05-nvidia-s-own-new-disclosures-reframe-the-ai-buildout-pitch-from-chip-share-to-revenue-per-gigawatt"
+      "anchor": "story-2026-09-05-nvidia-s-own-new-disclosures-reframe-the-ai-buildout-pitch-from-chip-share-to-revenue-per-gigawatt",
+      "editorialNote": ""
     },
     {
       "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
@@ -1075,8 +1075,8 @@
           "name": "AI safety and capability"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-04-openai-ships-astra-its-first-critical-risk-hacking-model-as-anthropic-admits-claude-broke-into-real-systems-it-thought-were-a-simulation"
+      "anchor": "story-2026-09-04-openai-ships-astra-its-first-critical-risk-hacking-model-as-anthropic-admits-claude-broke-into-real-systems-it-thought-were-a-simulation",
+      "editorialNote": ""
     },
     {
       "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-meta-wanted-to-reduce-teams-43b",
@@ -1103,8 +1103,8 @@
           "name": "Agents at work"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-04-reuters-meta-quietly-planned-to-cut-some-teams-60-and-go-ai-native-before-zuckerberg-pulled-back-hours-before-the-layoffs"
+      "anchor": "story-2026-09-04-reuters-meta-quietly-planned-to-cut-some-teams-60-and-go-ai-native-before-zuckerberg-pulled-back-hours-before-the-layoffs",
+      "editorialNote": ""
     },
     {
       "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/",
@@ -1126,8 +1126,8 @@
           "name": "AI regulation and governance"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-04-sanders-and-casar-introduce-a-bill-to-ban-superintelligence-with-nuclear-law-penalties-nyc-bars-generative-ai-from-most-public-school-students"
+      "anchor": "story-2026-09-04-sanders-and-casar-introduce-a-bill-to-ban-superintelligence-with-nuclear-law-penalties-nyc-bars-generative-ai-from-most-public-school-students",
+      "editorialNote": ""
     },
     {
       "url": "https://thesequence.substack.com/p/the-sequence-opinion-issue-926-ai",
@@ -1150,8 +1150,8 @@
       "reviewed": true,
       "digestItemId": 664,
       "themes": [],
-      "editorialNote": "",
-      "anchor": "story-2026-09-03-thesequence-capability-breakthroughs-aren-t-moats-anymore-progress-is-not-power"
+      "anchor": "story-2026-09-03-thesequence-capability-breakthroughs-aren-t-moats-anymore-progress-is-not-power",
+      "editorialNote": ""
     },
     {
       "url": "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
@@ -1169,8 +1169,8 @@
       "reviewed": true,
       "digestItemId": 654,
       "themes": [],
-      "editorialNote": "",
-      "anchor": "story-2026-09-02-anthropic-ships-claude-fable-5-1-and-mythos-5-1-cutting-cache-read-costs-75"
+      "anchor": "story-2026-09-02-anthropic-ships-claude-fable-5-1-and-mythos-5-1-cutting-cache-read-costs-75",
+      "editorialNote": ""
     },
     {
       "url": "https://fortune.com/2026/09/02/fed-austan-goolsbee-ai-is-not-far-from-overheating-economy/",
@@ -1193,8 +1193,8 @@
           "name": "AI infrastructure"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-02-chicago-fed-s-goolsbee-says-ai-buildout-is-not-far-from-overheating-the-whole-economy"
+      "anchor": "story-2026-09-02-chicago-fed-s-goolsbee-says-ai-buildout-is-not-far-from-overheating-the-whole-economy",
+      "editorialNote": ""
     },
     {
       "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-signs-35-billion-cloud-023807811.html",
@@ -1217,8 +1217,8 @@
           "name": "AI infrastructure"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-01-anthropic-signs-a-35b-cloud-compute-deal-with-nvidia-backed-lambda"
+      "anchor": "story-2026-09-01-anthropic-signs-a-35b-cloud-compute-deal-with-nvidia-backed-lambda",
+      "editorialNote": ""
     },
     {
       "url": "https://www.thenationalnews.com/future/technology/2026/08/31/new-ai-models-pose-risk-to-global-financial-system-bank-of-england-chief-warns/",
@@ -1240,8 +1240,8 @@
           "name": "AI safety and capability"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-01-bank-of-england-governor-warns-g20-that-frontier-ai-threatens-financial-stability"
+      "anchor": "story-2026-09-01-bank-of-england-governor-warns-g20-that-frontier-ai-threatens-financial-stability",
+      "editorialNote": ""
     },
     {
       "url": "https://departmentofproduct.substack.com/p/ai-agents-in-practice-bf1",
@@ -1268,12 +1268,12 @@
           "name": "Agents at work"
         }
       ],
-      "editorialNote": "",
-      "anchor": "story-2026-09-01-internal-ai-agents-move-from-pilot-to-production-at-scale-per-a-50-company-survey"
+      "anchor": "story-2026-09-01-internal-ai-agents-move-from-pilot-to-production-at-scale-per-a-50-company-survey",
+      "editorialNote": ""
     }
   ],
   "publicationStatus": "current",
   "notice": "2026-09-20 · 7 stories",
-  "publishedAt": "2026-09-21T01:30:50.838Z",
-  "contentHash": "99241f5b0ff6cf2554f6900ea828903cdadcb4f56d4d92d491b5a3bad9a3de4c"
+  "publishedAt": "2026-09-21T01:34:24.284Z",
+  "contentHash": "807188ab46c9e4bbe0c4673832bf7ad9b598c8661ddd8d60f36722bb93e1198d"
 }
