@@ -8,7 +8,7 @@ const home = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const script = await readFile(new URL('../js/perspectives.js', import.meta.url), 'utf8');
 
 test('Perspectives discovery survives digest regeneration and preserves the homepage preview anchor', async () => {
-    for (const name of ['index.html', 'research.html', 'news.html', 'perspectives.html']) {
+    for (const name of ['index.html', 'news.html', 'perspectives.html']) {
         const page = await readFile(new URL('../' + name, import.meta.url), 'utf8');
         const nav = page.match(/<ul class="nav-links"[\s\S]*?<\/ul>/)?.[0];
         assert.match(nav, /href="perspectives.html">Perspectives<\/a>/, name);

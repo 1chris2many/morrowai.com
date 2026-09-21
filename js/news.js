@@ -1,4 +1,4 @@
-import { selectNews, newsAnchor, freshnessMessage } from './news-model.js';
+import { selectNews, newsAnchor, freshnessMessage, sourceName } from './news-model.js';
 
 const status = document.getElementById('news-status');
 const list = document.getElementById('news-items');
@@ -43,7 +43,7 @@ async function loadNews() {
             return field;
         }
         const topics = [...new Set(items.flatMap(item => item.tags))].sort();
-        const sources = [...new Set(items.map(item => item.source))].sort();
+        const sources = [...new Set(items.map(item => sourceName(item.source)))].sort();
         const topic = select('news-topic', 'Topic', [['', 'All topics'], ...topics.map(tag => [tag, tag])]);
         const source = select('news-source', 'Source', [['', 'All sources'], ...sources.map(name => [name, name])]);
         const themes = [...new Map(items.flatMap(item => (item.themes || []).map(t => [t.id, t]))).values()].sort((a,b) => a.name.localeCompare(b.name));
@@ -71,7 +71,7 @@ async function loadNews() {
             if (!visible.length) {
                 const empty = document.createElement('p');
                 empty.className = 'news-empty';
-                empty.textContent = items.length ? 'No articles match these filters. Try another topic or clear the filters.' : 'No reviewed articles are ready yet.';
+                empty.textContent = items.length ? 'No articles match these filters. Try another topic or clear the filters.' : 'The first edition is coming soon.';
                 list.append(empty);
             }
             for (const item of visible) {
@@ -81,7 +81,7 @@ async function loadNews() {
                 card.dataset.date = item.digestDate;
                 const meta = document.createElement('p');
                 meta.className = 'post-meta';
-                meta.textContent = item.source + ' · In digest ' + item.digestDate;
+                meta.textContent = item.source + ' · Edition ' + item.digestDate;
                 const heading = document.createElement('h3');
                 const link = document.createElement('a');
                 link.href = item.url;
@@ -112,12 +112,12 @@ async function loadNews() {
                 }
                 const note = document.createElement('p');
                 note.className = 'reading-note';
-                note.textContent = item.linkKind === 'newsletter' ? 'Newsletter-sourced · Signup links below' : 'Source link checked · Read original ↗';
+                note.textContent = item.linkKind === 'newsletter' ? 'From newsletters' : 'Read the original ↗';
                 card.append(meta, heading, summary);
                 if (item.linkKind === 'newsletter') {
                     const disclosure = document.createElement('p');
                     disclosure.className = 'newsletter-only';
-                    disclosure.textContent = 'Newsletter-sourced · No direct article link available in this snapshot. Signup links are below.';
+                    disclosure.textContent = 'From newsletters · Subscription links below.';
                     heading.after(disclosure);
                 }
                 if (item.whyItMatters) {
@@ -135,27 +135,25 @@ async function loadNews() {
                 }
                 for (const t of item.themes || []) {
                     const follow = document.createElement('button'); follow.type = 'button'; follow.className = 'news-tag';
-                    follow.textContent = 'Follow: ' + t.name;
+                    follow.textContent = 'More: ' + t.name;
                     follow.addEventListener('click', () => { topic.value = source.value = ''; theme.value = t.id; render(); theme.focus(); });
                     card.append(follow);
                 }
-                card.append(tags, note);
-                if ((item.newsletters || []).length > 1) {
-                    const explanation = document.createElement('p'); explanation.className = 'small-note';
-                    explanation.textContent = `This summary draws on ${item.newsletters.length} newsletter sources. The links below are optional subscriptions to those sources, not links to the underlying articles.`;
-                    card.append(explanation);
+                card.append(tags);
+                if (item.linkKind !== 'newsletter') {
+                    const read = document.createElement('a'); read.href = item.url; read.target = '_blank'; read.rel = 'noopener noreferrer'; read.textContent = 'Read the original ↗'; note.replaceChildren(read); card.append(note);
                 }
                 for (const newsletter of item.newsletters || []) {
                     const attribution = document.createElement('p');
                     attribution.className = 'reading-note news-newsletter';
-                    attribution.append(document.createTextNode('Newsletter source: ' + newsletter.name + ' · '));
+                    attribution.append(document.createTextNode(newsletter.name + ' · '));
                     const signup = document.createElement('a');
                     const signupUrl = new URL(newsletter.signupUrl);
                     if (signupUrl.protocol !== 'https:' || signupUrl.username || signupUrl.password || signupUrl.search || signupUrl.hash) continue;
                     signup.href = signupUrl.href;
                     signup.target = '_blank';
                     signup.rel = 'noopener noreferrer';
-                    signup.textContent = 'Sign up for ' + newsletter.name + ' ↗';
+                    signup.textContent = 'Subscribe ↗';
                     attribution.append(signup);
                     card.append(attribution);
                 }

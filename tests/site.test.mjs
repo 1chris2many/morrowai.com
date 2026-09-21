@@ -5,7 +5,7 @@ import { readFile, mkdir } from 'node:fs/promises';
 import { chromium } from 'playwright';
 import { newsAnchor, selectNews, freshnessMessage } from '../js/news-model.js';
 
-const pages = ['index.html', 'perspectives.html', 'research.html', 'news.html', 'blog/rag-wrong.html', 'blog/agentic-commerce-hype.html'];
+const pages = ['index.html', 'perspectives.html', 'news.html'];
 const assets = ['css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/perspectives.js', 'js/news.js', 'js/news-model.js', 'news.json', 'feed.xml'];
 let server, browser, base;
 const feed = JSON.parse(await readFile(new URL('../news.json', import.meta.url)));
@@ -70,24 +70,21 @@ for (const width of [320, 390, 768, 820, 1440]) {
             assert.equal(await page.locator('.contact-email').getAttribute('href'), 'mailto:hello@usefulaiwerks.com');
             assert.equal(await page.locator('form, input, textarea').count(), 0);
             assert.ok(await page.locator('#essays').evaluate(el => el.getBoundingClientRect().top < innerHeight), 'Writing must begin in first viewport');
-            assert.ok(await page.evaluate(() => document.querySelector('#research').offsetTop < document.querySelector('#contact').offsetTop));
+            assert.equal(await page.locator('#research, a[href="research.html"]').count(), 0);
             await page.screenshot({ path: `test-results/v02-home-${width}.png` });
             await page.locator('#hero .btn-primary').click();
             await page.waitForFunction(() => location.hash === '#essays');
             if (width === 390 || width === 1440) {
                 await page.locator('#essays').scrollIntoViewIfNeeded();
                 await page.screenshot({ path: `test-results/v02-essays-${width}.png` });
-                await page.goto(base + 'research.html');
-                assert.equal(await page.locator('#nav-links a[href="research.html"]').getAttribute('aria-current'), 'page');
-                assert.match(await page.locator('main').innerText(), /No research papers or findings have been published/);
-                await page.screenshot({ path: `test-results/v02-research-${width}.png` });
+
             }
             assert.deepEqual(errors, []);
         } finally { await context.close(); }
     });
 }
 
-test('verbatim digest, stable links, filters and RSS', async () => {
+test('edited digest, stable links, filters and RSS', async () => {
     assert.ok(feed.items.length >= 24);
     for (const javaScriptEnabled of [true, false]) {
         const context = await browser.newContext({ javaScriptEnabled, viewport: { width: 390, height: 900 } });
@@ -156,7 +153,7 @@ test('no-JS navigation, failure fallback, and accessible skip link', async () =>
     const nojs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 900 } });
     const p = await nojs.newPage();
     try {
-        for (const file of ['index.html', 'perspectives.html', 'research.html', 'news.html']) {
+        for (const file of ['index.html', 'perspectives.html', 'news.html']) {
             await p.goto(base + file);
             assert.ok(await p.locator('#nav-links').isVisible());
             assert.equal(await p.locator('#nav-toggle').isVisible(), false);
@@ -224,4 +221,28 @@ test('stale feeds disclose delay even when the publishing machine is offline', (
     assert.match(freshnessMessage({digestDate:'2026-09-16',notice:'Snapshot'},new Date('2026-09-17T16:00:00Z')), /Update delayed/);
     assert.equal(freshnessMessage({digestDate:'2026-09-17',notice:'Current'},new Date('2026-09-17T16:00:00Z')), 'Current');
     assert.equal(selectNews([{tags:[],source:'x',digestDate:'2026-09-17',title:'x',themes:[{id:'a'}]}],{theme:'b'}).length,0);
+});
+
+test('withdrawn pages are unavailable and public copy excludes operations boilerplate', async () => {
+    const page = await browser.newPage();
+    try {
+        for (const path of ['research.html','blog/rag-wrong.html','blog/agentic-commerce-hype.html']) {
+            assert.equal((await page.request.get(base + path)).status(), 404, path);
+        }
+        for (const file of pages) {
+            await page.goto(base + file);
+            assert.equal(await page.locator('a[href="research.html"]').count(), 0);
+            const text = await page.locator('main').textContent();
+            assert.doesNotMatch(text, /deterministic publisher|privacy checks|publication failures|reproduced verbatim|Snapshot published|next-best-alternative|recovery edition|backfill supplement/i);
+        }
+        assert.ok(feed.items.length >= 54);
+        assert.equal(new Set(feed.items.map(newsAnchor)).size, feed.items.length);
+        assert.ok(feed.items.find(i=>i.digestItemId===793).anchor);
+        assert.match(feed.items.find(i=>i.digestItemId===793).title, /committee warns/);
+        assert.doesNotMatch(feed.items.find(i=>i.digestItemId===793).title, /is causing/);
+        assert.equal(selectNews([
+            {title:'A',source:'Anthropic — September 17, 2026',tags:[],digestDate:'2026-09-18'},
+            {title:'B',source:'Anthropic — September 18, 2026',tags:[],digestDate:'2026-09-19'}
+        ],{source:'Anthropic'}).length,2);
+    } finally { await page.close(); }
 });
