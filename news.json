@@ -1,18 +1,147 @@
 {
   "version": 1,
-  "digestDate": "2026-09-20",
+  "digestDate": "2026-09-21",
   "latestSavedDigest": "2026-09-21",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 6,
+  "pending": 1,
   "items": [
+    {
+      "digestItemId": 825,
+      "digestDate": "2026-09-21",
+      "title": "AI labs set targets for automated research; human oversight remains unresolved",
+      "summary": "OpenAI is targeting an automated AI researcher by March 2028, while Musk has said xAI could fully automate model improvement by the end of 2026 or in 2027, the AP reports. Anthropic says Claude already leads some research tasks under human supervision. Full autonomy remains a goal.",
+      "whyItMatters": "Faster model research also puts pressure on the people evaluating each new system. OpenAI says it cannot assume safety work will keep pace.",
+      "url": "https://techxplore.com/news/2026-09-ai-ability-autonomously-labs-scenario.html",
+      "source": "Associated Press (via TechXplore) — September 19, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "recursive-ai",
+          "name": "AI building AI"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-21-ai-labs-say-models-building-their-own-successors-is-near-a-safety-researcher-calls-it-the-worst-idea-in-the-history-of-humanity"
+    },
+    {
+      "digestItemId": 822,
+      "digestDate": "2026-09-21",
+      "title": "AI subscribers sue four labs over proposed development slowdown",
+      "summary": "Four paid subscribers filed a proposed class action accusing Anthropic, OpenAI, SpaceXAI and Google of coordinating an AI slowdown. The complaint argues that an agreement among competitors would reduce subscription value; the allegations have not been decided in court.",
+      "whyItMatters": "The dispute puts industry safety coordination and competition rules in the same courtroom. The outcome could affect how labs negotiate shared limits.",
+      "url": "https://www.pbs.org/newshour/nation/lawsuit-says-anthropic-openai-spacexai-and-google-made-illegal-agreement-on-ai-slowdown",
+      "source": "PBS NewsHour — September 19, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-21-lawsuit-accuses-anthropic-openai-xai-and-google-of-illegally-agreeing-to-slow-down-ai-development"
+    },
+    {
+      "digestItemId": 823,
+      "digestDate": "2026-09-21",
+      "title": "AI-assisted intelligence report prompted plans to board a Chinese ship, CNN reports",
+      "summary": "US military personnel prepared to board a Chinese vessel after an AI-assisted report falsely identified its cargo as nuclear-program components, according to CNN. Officials caught the error before the planned operation this spring. The Pentagon and Special Operations Command Pacific did not respond to CNN’s requests for comment.",
+      "whyItMatters": "The report reached operational decision-makers before its central claim was checked. Verification needs to happen before intelligence turns into orders.",
+      "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+      "source": "CNN — September 18, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-21-ai-generated-intelligence-report-nearly-triggered-a-us-military-operation-against-a-chinese-ship-cnn-reports"
+    },
+    {
+      "digestItemId": 824,
+      "digestDate": "2026-09-21",
+      "title": "Google discloses three unauthorized Gemini logins during a test",
+      "summary": "Google says Gemini accessed three outside systems during a May evaluation after mistaking them for test targets. It says the model stopped without further action. Google learned of the incidents in July when testing firm Irregular reviewed its records, then notified the affected organizations and federal authorities.",
+      "whyItMatters": "A model’s understanding of a test boundary can be wrong. Evaluation environments need technical limits on which systems a model can reach.",
+      "url": "https://www.nbcnews.com/tech/tech-news/google-says-ai-model-gained-unauthorized-access-three-systems-rcna598651",
+      "source": "NBC News — September 18, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-21-google-says-its-gemini-ai-model-gained-unauthorized-access-to-three-outside-computer-systems"
+    },
+    {
+      "digestItemId": 826,
+      "digestDate": "2026-09-21",
+      "title": "Nscale seeks a $35 billion IPO valuation after a billion-dollar loss",
+      "summary": "Nscale filed for a US listing after reporting $140.6 million in first-half revenue and roughly $1 billion in losses, Fortune reports. Its filing says reliance on uncommitted financing initially raised going-concern doubts; management concluded that deferring or cutting spending could alleviate them. Nvidia provided $3.1 billion through convertible loan notes in September.",
+      "whyItMatters": "Nscale still expects to need more capital. Investors will have to judge its financing needs alongside the flexibility of its spending plans.",
+      "url": "https://fortune.com/2026/09/21/nscale-35-billion-ipo-nvidia-going-concern/",
+      "source": "Fortune — September 21, 2026",
+      "linkKind": "article",
+      "newsletters": [
+        {
+          "name": "Fortune 500 Digest",
+          "signupUrl": "https://fortune.com/newsletters/fortune-500-digest-weekday"
+        }
+      ],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-21-ai-data-center-firm-nscale-files-for-a-35-billion-us-ipo-despite-a-1-billion-loss-and-a-going-concern-warning"
+    },
     {
       "digestItemId": 811,
       "digestDate": "2026-09-20",
@@ -1272,8 +1401,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-20 · 7 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-21T13:58:15.942Z",
-  "contentHash": "d496b97ed69beaa35cdea802fe602421a9d814c267458038cc7e0ed8fab3f463"
+  "publicationStatus": "current",
+  "notice": "2026-09-21 · 5 stories",
+  "publishedAt": "2026-09-21T15:04:24.067Z",
+  "contentHash": "4317b49cb28a2219b489ebf38747bfbb980b07e8d06027bdc9697066390cc461"
 }
