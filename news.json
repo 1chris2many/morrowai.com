@@ -35,8 +35,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-21-ai-labs-say-models-building-their-own-successors-is-near-a-safety-researcher-calls-it-the-worst-idea-in-the-history-of-humanity"
+      "anchor": "story-2026-09-21-ai-labs-say-models-building-their-own-successors-is-near-a-safety-researcher-calls-it-the-worst-idea-in-the-history-of-humanity",
+      "editorialNote": ""
     },
     {
       "digestItemId": 822,
@@ -59,8 +59,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-21-lawsuit-accuses-anthropic-openai-xai-and-google-of-illegally-agreeing-to-slow-down-ai-development"
+      "anchor": "story-2026-09-21-lawsuit-accuses-anthropic-openai-xai-and-google-of-illegally-agreeing-to-slow-down-ai-development",
+      "editorialNote": ""
     },
     {
       "digestItemId": 823,
@@ -84,8 +84,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-21-ai-generated-intelligence-report-nearly-triggered-a-us-military-operation-against-a-chinese-ship-cnn-reports"
+      "anchor": "story-2026-09-21-ai-generated-intelligence-report-nearly-triggered-a-us-military-operation-against-a-chinese-ship-cnn-reports",
+      "editorialNote": ""
     },
     {
       "digestItemId": 824,
@@ -109,8 +109,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-21-google-says-its-gemini-ai-model-gained-unauthorized-access-to-three-outside-computer-systems"
+      "anchor": "story-2026-09-21-google-says-its-gemini-ai-model-gained-unauthorized-access-to-three-outside-computer-systems",
+      "editorialNote": ""
     },
     {
       "digestItemId": 826,
@@ -139,8 +139,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-21-ai-data-center-firm-nscale-files-for-a-35-billion-us-ipo-despite-a-1-billion-loss-and-a-going-concern-warning"
+      "anchor": "story-2026-09-21-ai-data-center-firm-nscale-files-for-a-35-billion-us-ipo-despite-a-1-billion-loss-and-a-going-concern-warning",
+      "editorialNote": ""
     },
     {
       "digestItemId": 811,
@@ -1403,6 +1403,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-09-21 · 5 stories",
-  "publishedAt": "2026-09-21T15:04:24.067Z",
-  "contentHash": "4317b49cb28a2219b489ebf38747bfbb980b07e8d06027bdc9697066390cc461"
+  "publishedAt": "2026-09-21T15:05:26.173Z",
+  "contentHash": "ea42c3956d9f3d7ea9f29dcfc8f1fd9395edefa3f14cedca7cbfdcf58304bdd9"
 }
