@@ -22,10 +22,13 @@ test('Perspectives discovery survives digest regeneration and preserves the home
     assert.match(home, /id="essays"/);
 });
 
-test('Perspectives serves only the two approved, attributed originals without JavaScript', () => {
+test('Perspectives serves two Chris originals and the approved Persephone piece without JavaScript', () => {
     assert.equal((html.match(/class="essay-card" data-author-id="chris-morrow"/g) || []).length, 2);
     assert.equal((html.match(/class="perspectives-byline">By Chris Morrow/g) || []).length, 2);
     assert.match(html, /value="all">All authors/);
+    assert.equal((html.match(/class="essay-card" data-author-id="persephone"/g) || []).length, 1);
+    assert.match(html, /href="three-windows-ai-safety.html"/);
+    assert.match(html, /value="persephone">Persephone/);
     assert.match(html, /<label for="perspectives-author">Browse by author<\/label>/);
     assert.match(html, /href="https:\/\/www.linkedin.com\/feed\/update\/urn:li:activity:7467678634808549376\/"/);
     assert.match(html, /href="https:\/\/www.linkedin.com\/posts\/cmorrow1_last-fall-openai-launched-instant-checkout-activity-7470339849124945920-c4ji"/);

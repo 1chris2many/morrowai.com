@@ -2,10 +2,11 @@ import assert from 'node:assert/strict';
 import { before, after, test } from 'node:test';
 import { createServer } from 'node:http';
 import { readFile, mkdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { chromium } from 'playwright';
 import { newsAnchor, selectNews, freshnessMessage } from '../js/news-model.js';
 
-const pages = ['index.html', 'perspectives.html', 'news.html'];
+const pages = ['index.html', 'perspectives.html', 'news.html', 'three-windows-ai-safety.html'];
 const assets = ['css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/perspectives.js', 'js/news.js', 'js/news-model.js', 'news.json', 'feed.xml'];
 let server, browser, base;
 const feed = JSON.parse(await readFile(new URL('../news.json', import.meta.url)));
@@ -181,10 +182,13 @@ test('Perspectives is HTML-first with attributed cards and accessible author fil
         try {
             await page.goto(base + 'perspectives.html');
             const cards = page.locator('#perspectives-list .essay-card:visible');
-            assert.equal(await cards.count(), 2);
-            assert.deepEqual(await cards.evaluateAll(els => els.map(el => el.dataset.authorId)), ['chris-morrow', 'chris-morrow']);
-            assert.equal(await page.locator('.perspectives-byline').allTextContents().then(texts => texts.every(text => text === 'By Chris Morrow')), true);
-            assert.equal(await page.locator('#perspectives-count').textContent(), '2 pieces');
+            assert.equal(await cards.count(), 3);
+            assert.deepEqual(await cards.evaluateAll(els => els.map(el => el.dataset.authorId)), ['persephone', 'chris-morrow', 'chris-morrow']);
+            assert.deepEqual(await page.locator('.perspectives-byline').allTextContents(), ['By Persephone', 'By Chris Morrow', 'By Chris Morrow']);
+            assert.equal(await page.locator('#perspectives-count').textContent(), '3 pieces');
+            for (const title of ['AI coding costs and product prioritization', 'Agentic commerce: trust and checkout']) {
+                assert.equal(await page.getByRole('link', { name: title + ' (opens in a new tab)', exact: true }).count(), 1);
+            }
             assert.equal(await page.locator('label[for="perspectives-author"]').textContent(), 'Browse by author');
             assert.equal(await page.locator('#perspectives-author').inputValue(), 'all');
             if (javaScriptEnabled) {
@@ -203,12 +207,26 @@ test('Perspectives is HTML-first with attributed cards and accessible author fil
                 assert.equal(await cards.count(), 0);
                 assert.equal(await page.locator('#perspectives-count').textContent(), '0 pieces');
                 assert.ok(await page.locator('#perspectives-empty').isVisible());
+                await page.locator('#perspectives-author').selectOption('persephone');
+                assert.equal(await cards.count(), 1);
+                assert.equal(await page.locator('#perspectives-count').textContent(), '1 piece');
+                await page.reload();
+                assert.equal(await cards.count(), 1);
+                assert.equal(await page.locator('#perspectives-author').inputValue(), 'persephone');
+                await cards.first().click();
+                assert.equal(await page.locator('h1').textContent(), 'Three new windows into AI safety claims.');
+                assert.equal(await page.locator('.blog-author').textContent(), 'By Persephone');
+                assert.equal(await page.locator('#article-body p').count(), 6);
+                assert.equal(await page.locator('#article-body a').count(), 4);
+                assert.match(await page.locator('.author-disclosure').textContent(), /Written by Persephone.*Source verification: Codex/);
+                await page.screenshot({ path: 'test-results/three-windows-mobile.png', fullPage: true });
+                await page.goto(base + 'perspectives.html');
                 await page.locator('#perspectives-author').selectOption('all');
-                assert.equal(await cards.count(), 2);
+                assert.equal(await cards.count(), 3);
                 assert.equal(new URL(page.url()).searchParams.has('author'), false);
                 await page.goto(base + 'perspectives.html?author=bogus&ref=shared#main');
                 assert.equal(await page.locator('#perspectives-author').inputValue(), 'all');
-                assert.equal(await cards.count(), 2);
+                assert.equal(await cards.count(), 3);
                 assert.equal(new URL(page.url()).searchParams.has('author'), false);
                 assert.equal(new URL(page.url()).searchParams.get('ref'), 'shared');
                 assert.equal(new URL(page.url()).hash, '#main');
@@ -221,6 +239,27 @@ test('stale feeds disclose delay even when the publishing machine is offline', (
     assert.match(freshnessMessage({digestDate:'2026-09-16',notice:'Snapshot'},new Date('2026-09-17T16:00:00Z')), /Update delayed/);
     assert.equal(freshnessMessage({digestDate:'2026-09-17',notice:'Current'},new Date('2026-09-17T16:00:00Z')), 'Current');
     assert.equal(selectNews([{tags:[],source:'x',digestDate:'2026-09-17',title:'x',themes:[{id:'a'}]}],{theme:'b'}).length,0);
+});
+
+test('Persephone article preserves the exact approved body and sources without JavaScript', async () => {
+    // Author commit 81e936e; exact source file SHA256 65915195…08c67f88.
+    const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 1440, height: 1000 } });
+    const page = await context.newPage();
+    try {
+        assert.equal((await page.goto(base + 'three-windows-ai-safety.html')).status(), 200);
+        const paragraphs = await page.locator('#article-body p').allTextContents();
+        assert.equal(createHash('sha256').update(paragraphs.join('\n\n')).digest('hex'), '6698525c1ca71fd26b6af6aa673455734586ea5370b0eab8ff7b136cac5f3e70');
+        assert.equal(await page.locator('h1').textContent(), 'Three new windows into AI safety claims.');
+        assert.equal(await page.locator('.blog-author').textContent(), 'By Persephone');
+        assert.equal(await page.locator('.author-disclosure p').textContent(), "Written by Persephone, an AI author running on Anthropic's Claude; Anthropic is one of the companies discussed. Source verification: Codex.");
+        assert.deepEqual(await page.locator('#article-body a').evaluateAll(es => es.map(e => e.href)), [
+            'https://www.anthropic.com/aug-2026-risk-report', 'https://microsoft.ai/code-of-conduct/',
+            'https://openai.com/index/model-misalignment-reporting-framework/', 'https://microsoft.ai/news/mai-code-of-conduct/'
+        ]);
+        assert.equal(await page.locator('time').getAttribute('datetime'), '2026-09-21');
+        assert.equal(await page.locator('a[href="perspectives.html?author=persephone"]').count(), 1);
+        await page.screenshot({ path: 'test-results/three-windows-desktop.png', fullPage: true });
+    } finally { await context.close(); }
 });
 
 test('withdrawn pages are unavailable and public copy excludes operations boilerplate', async () => {
