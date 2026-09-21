@@ -48,7 +48,7 @@ const news = `<!doctype html>
 </header>
 ${threadIndex}
 <div class="digest-tools"><noscript><p>All stories are available below. Enable JavaScript for topic/source filters and sorting.</p></noscript></div>
-<div id="news-items" class="news-grid">${items.map(card).join('\n')}</div></main>${footer}<script src="js/main.js?v=20260915"></script><script type="module" src="js/news.js"></script></body></html>\n`;
+<div id="news-items" class="news-grid">${items.map(card).join('\n')}</div></main>${footer}<script src="js/main.js?v=20260915"></script><script type="module" src="js/news.js?v=20260920"></script></body></html>\n`;
 
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Useful AI Werks — AI Digest</title><link>https://usefulaiwerks.com/news.html</link><description>Daily AI news, summaries, and links from Useful AI Werks.</description><language>en-us</language><atom:link href="https://usefulaiwerks.com/feed.xml" rel="self" type="application/rss+xml"/>

@@ -1,4 +1,4 @@
-import { selectNews, newsAnchor, freshnessMessage, sourceName } from './news-model.js';
+import { selectNews, newsAnchor, freshnessMessage, sourceName } from './news-model.js?v=20260920';
 
 const status = document.getElementById('news-status');
 const list = document.getElementById('news-items');
