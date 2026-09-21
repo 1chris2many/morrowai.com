@@ -246,3 +246,23 @@ test('withdrawn pages are unavailable and public copy excludes operations boiler
         ],{source:'Anthropic'}).length,2);
     } finally { await page.close(); }
 });
+
+test('profile includes verified Ai4 talks without the canceled workshop', async () => {
+    const page = await browser.newPage();
+    try {
+        await page.goto(base + '#speaking');
+        const speaking = page.locator('#speaking');
+        assert.equal(await speaking.locator('li').count(), 3);
+        const text = await speaking.innerText();
+        for (const title of ['The Replacement Trap', 'The Stochastic Product Manager', 'AI for Language Models']) assert.ok(text.includes(title));
+        assert.ok(text.includes('Pouya Shahbazian'));
+        assert.doesNotMatch(text, /Workshop on Evals|hospice|Speaker Resource Center|Access Key/i);
+        assert.equal(await speaking.locator('a[href*="7361545251091615745"]').count(),1);
+        assert.equal(await speaking.locator('a[href*="7417173701705748480"]').count(),1);
+        assert.equal(await speaking.locator('a[href*="conferenceharvester"], a[href*="mail.google.com"]').count(),0);
+        await page.setViewportSize({width:390,height:900});
+        await speaking.scrollIntoViewIfNeeded();
+        assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+        await speaking.screenshot({path:'test-results/profile-speaking-390.png'});
+    } finally { await page.close(); }
+});
