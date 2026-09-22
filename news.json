@@ -118,8 +118,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-22-alibaba-releases-qwen-image-2-1-an-open-weight-image-model-with-built-in-transparency"
+      "anchor": "story-2026-09-22-alibaba-releases-qwen-image-2-1-an-open-weight-image-model-with-built-in-transparency",
+      "editorialNote": ""
     },
     {
       "digestItemId": 828,
@@ -1535,6 +1535,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-09-22 · 6 stories",
-  "publishedAt": "2026-09-22T16:14:56.495Z",
-  "contentHash": "c82018f37eed0e1751d471a4dd680f2b1ba5307d1eb4e0fb81c595cfeefaa401"
+  "publishedAt": "2026-09-22T16:16:02.464Z",
+  "contentHash": "8a60e4e089de3cd7a12f1f178f74b676b9346810b73696f955df92e5e4cc93bf"
 }
