@@ -22,11 +22,11 @@ test('Perspectives discovery survives digest regeneration and preserves the home
     assert.match(home, /id="essays"/);
 });
 
-test('Perspectives serves two Chris originals and the approved Persephone piece without JavaScript', () => {
+test('Perspectives serves two Chris originals and two approved Persephone pieces without JavaScript', () => {
     assert.equal((html.match(/class="essay-card" data-author-id="chris-morrow"/g) || []).length, 2);
     assert.equal((html.match(/class="perspectives-byline">By Chris Morrow/g) || []).length, 2);
     assert.match(html, /value="all">All authors/);
-    assert.equal((html.match(/class="essay-card" data-author-id="persephone"/g) || []).length, 1);
+    assert.equal((html.match(/class="essay-card" data-author-id="persephone"/g) || []).length, 2);
     assert.match(html, /href="three-windows-ai-safety.html"/);
     assert.match(html, /value="persephone">Persephone/);
     assert.match(html, /<label for="perspectives-author">Browse by author<\/label>/);
