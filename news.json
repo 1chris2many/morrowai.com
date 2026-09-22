@@ -2,16 +2,16 @@
   "version": 1,
   "digestDate": "2026-09-22",
   "latestSavedDigest": "2026-09-22",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 5,
-    "sourceCount": 5,
+    "count": 6,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": true
   },
-  "pending": 2,
+  "pending": 1,
   "items": [
     {
       "digestItemId": 832,
@@ -95,6 +95,31 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-09-22-ai-clinical-documentation-startup-heidi-health-raises-340-million-doubling-its-valuation-to-900-million",
       "editorialNote": ""
+    },
+    {
+      "digestItemId": 829,
+      "digestDate": "2026-09-22",
+      "title": "Qwen-Image-2.1 adds native transparent-image generation",
+      "summary": "Alibaba’s Qwen-Image-2.1 generates and edits transparent images and accepts up to ten reference images. Its visual component has 7 billion parameters; the released weights carry a research license, with a separate license required for commercial use.",
+      "whyItMatters": "Native transparency could reduce background-removal work in design workflows. Commercial users will need to arrange licensing with Qwen.",
+      "url": "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/",
+      "source": "The Decoder — September 20, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-22-alibaba-releases-qwen-image-2-1-an-open-weight-image-model-with-built-in-transparency"
     },
     {
       "digestItemId": 828,
@@ -1508,8 +1533,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "2026-09-22 · 5 stories · More stories to follow",
-  "publishedAt": "2026-09-22T16:13:19.423Z",
-  "contentHash": "1a601c4870892ead134d4e7b62ee289467507f17e118cb81ce22bc5d9be7c1ac"
+  "publicationStatus": "current",
+  "notice": "2026-09-22 · 6 stories",
+  "publishedAt": "2026-09-22T16:14:56.495Z",
+  "contentHash": "c82018f37eed0e1751d471a4dd680f2b1ba5307d1eb4e0fb81c595cfeefaa401"
 }
