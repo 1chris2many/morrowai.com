@@ -1,18 +1,150 @@
 {
   "version": 1,
-  "digestDate": "2026-09-21",
+  "digestDate": "2026-09-22",
   "latestSavedDigest": "2026-09-22",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 6,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 7,
+  "pending": 1,
   "items": [
+    {
+      "digestItemId": 832,
+      "digestDate": "2026-09-22",
+      "title": "AI-exposed jobs show faster growth in advertised pay",
+      "summary": "Advertised salaries in the most AI-exposed US occupations rose 46% since 2021, versus 25% in the least-exposed, according to Indeed data reported by Business Today. Separately, employers cited AI in 116,175 announced US job cuts through August 2026; that count covers this year.",
+      "whyItMatters": "Indeed finds that a shift toward more senior vacancies explains part of the pay gap. Rising advertised salaries can accompany fewer entry-level openings.",
+      "url": "https://www.businesstoday.in/technology/story/us-jobs-paradox-ai-exposed-roles-see-46-pay-surge-even-as-ai-linked-layoffs-rise-556730-2026-09-21",
+      "source": "Business Today, citing Indeed Hiring Lab and Challenger, Gray & Christmas — September 21, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-22-wages-in-the-most-ai-exposed-u-s-jobs-are-up-46-since-2021-even-as-ai-linked-layoffs-mount"
+    },
+    {
+      "digestItemId": 827,
+      "digestDate": "2026-09-22",
+      "title": "AMD reaches $1 trillion market value",
+      "summary": "AMD crossed $1 trillion in market value on September 21 as its shares extended a five-day rally. CNBC reports the stock gained about 25% over that stretch, with AI data-center sales driving revenue growth.",
+      "whyItMatters": "Cloud buyers will be watching how AMD’s growth translates into accelerator availability and pricing.",
+      "url": "https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html",
+      "source": "CNBC — September 21, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-22-amd-s-market-value-tops-1-trillion-for-the-first-time-on-ai-chip-demand"
+    },
+    {
+      "digestItemId": 830,
+      "digestDate": "2026-09-22",
+      "title": "Clinicians ask for stronger evidence beyond AI medical scans",
+      "summary": "WION reports that clinicians want stronger evidence for AI tools that suggest treatments or support other clinical decisions. The article highlights concerns about inaccurate answers and the loss of clinical skills through over-reliance on AI.",
+      "whyItMatters": "For hospitals evaluating these tools, evidence needs to cover the intended clinical use and how clinicians will check the results.",
+      "url": "https://www.wionews.com/world/doctors-are-refusing-ai-beyond-scans-and-the-reason-is-thin-evidence-1789912405164",
+      "source": "WION — September 20, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-22-doctors-are-pushing-back-on-ai-tools-that-go-beyond-reading-medical-scans"
+    },
+    {
+      "digestItemId": 831,
+      "digestDate": "2026-09-22",
+      "title": "Heidi Health announces $340 million funding package",
+      "summary": "Heidi Health announced $100 million in Series C funding led by Blackbird and $240 million in growth investment from General Catalyst. The Australian company plans to expand its AI tools for clinical documentation and other healthcare workflows.",
+      "whyItMatters": "Expansion beyond note-taking puts more weight on how well these tools fit clinical systems and support reliable patient care.",
+      "url": "https://siliconangle.com/2026/09/22/heidi-health-nabs-340m-to-deepen-adoption-of-ai-agents-within-health-systems-globally/",
+      "source": "SiliconANGLE — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-22-ai-clinical-documentation-startup-heidi-health-raises-340-million-doubling-its-valuation-to-900-million"
+    },
+    {
+      "digestItemId": 829,
+      "digestDate": "2026-09-22",
+      "title": "Qwen-Image-2.1 adds native transparent-image generation",
+      "summary": "Alibaba’s Qwen-Image-2.1 generates and edits transparent images and accepts up to ten reference images. Its visual component has 7 billion parameters; the released weights carry a research license, with a separate license required for commercial use.",
+      "whyItMatters": "Native transparency could reduce background-removal work in design workflows. Commercial users will need to arrange licensing with Qwen.",
+      "url": "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/",
+      "source": "The Decoder — September 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-22-alibaba-releases-qwen-image-2-1-an-open-weight-image-model-with-built-in-transparency"
+    },
+    {
+      "digestItemId": 828,
+      "digestDate": "2026-09-22",
+      "title": "UK MPs invite four AI labs to October safety hearing",
+      "summary": "A UK parliamentary committee has invited OpenAI, Anthropic, Google DeepMind and Meta to a hearing on October 13. MPs want answers on mandatory safety testing, incident reporting and the AI Security Institute’s access to models before release.",
+      "whyItMatters": "The hearing will scrutinize voluntary safety commitments and who should have the power to delay an unsafe release.",
+      "url": "https://www.cityam.com/openai-and-anthropic-summoned-to-parliament-on-fears-uk-ai-rules-not-fit-for-future/",
+      "source": "CityAM — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-22-uk-parliament-summons-openai-anthropic-google-deepmind-and-meta-over-ai-safety"
+    },
     {
       "digestItemId": 825,
       "digestDate": "2026-09-21",
@@ -1401,8 +1533,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-21 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-22T13:58:19.113Z",
-  "contentHash": "17630edbcf3b582987723d5fef5855ceacd89488d6005891c690f4c4f1a28f02"
+  "publicationStatus": "current",
+  "notice": "2026-09-22 · 6 stories",
+  "publishedAt": "2026-09-22T15:08:43.553Z",
+  "contentHash": "9df0dc0a159c104e469c4062a4d1aa01a7617c2d57952eefad6ce2dfccacc416"
 }
