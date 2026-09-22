@@ -29,8 +29,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-22-wages-in-the-most-ai-exposed-u-s-jobs-are-up-46-since-2021-even-as-ai-linked-layoffs-mount"
+      "anchor": "story-2026-09-22-wages-in-the-most-ai-exposed-u-s-jobs-are-up-46-since-2021-even-as-ai-linked-layoffs-mount",
+      "editorialNote": ""
     },
     {
       "digestItemId": 827,
@@ -54,8 +54,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-22-amd-s-market-value-tops-1-trillion-for-the-first-time-on-ai-chip-demand"
+      "anchor": "story-2026-09-22-amd-s-market-value-tops-1-trillion-for-the-first-time-on-ai-chip-demand",
+      "editorialNote": ""
     },
     {
       "digestItemId": 830,
@@ -74,8 +74,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-22-doctors-are-pushing-back-on-ai-tools-that-go-beyond-reading-medical-scans"
+      "anchor": "story-2026-09-22-doctors-are-pushing-back-on-ai-tools-that-go-beyond-reading-medical-scans",
+      "editorialNote": ""
     },
     {
       "digestItemId": 831,
@@ -93,8 +93,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-22-ai-clinical-documentation-startup-heidi-health-raises-340-million-doubling-its-valuation-to-900-million"
+      "anchor": "story-2026-09-22-ai-clinical-documentation-startup-heidi-health-raises-340-million-doubling-its-valuation-to-900-million",
+      "editorialNote": ""
     },
     {
       "digestItemId": 829,
@@ -118,8 +118,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-22-alibaba-releases-qwen-image-2-1-an-open-weight-image-model-with-built-in-transparency"
+      "anchor": "story-2026-09-22-alibaba-releases-qwen-image-2-1-an-open-weight-image-model-with-built-in-transparency",
+      "editorialNote": ""
     },
     {
       "digestItemId": 828,
@@ -142,8 +142,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-22-uk-parliament-summons-openai-anthropic-google-deepmind-and-meta-over-ai-safety"
+      "anchor": "story-2026-09-22-uk-parliament-summons-openai-anthropic-google-deepmind-and-meta-over-ai-safety",
+      "editorialNote": ""
     },
     {
       "digestItemId": 825,
@@ -1535,6 +1535,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-09-22 · 6 stories",
-  "publishedAt": "2026-09-22T15:08:43.553Z",
-  "contentHash": "9df0dc0a159c104e469c4062a4d1aa01a7617c2d57952eefad6ce2dfccacc416"
+  "publishedAt": "2026-09-22T15:09:13.899Z",
+  "contentHash": "eb75d0ba94fbf871b09695a3453613a734de7c6c8b02b137ad94471608b3695e"
 }
