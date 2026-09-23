@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { test } from 'node:test';
 import { readFile } from 'node:fs/promises';
 import { runInNewContext } from 'node:vm';
@@ -6,6 +7,12 @@ import { runInNewContext } from 'node:vm';
 const html = await readFile(new URL('../perspectives.html', import.meta.url), 'utf8');
 const home = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const script = await readFile(new URL('../js/perspectives.js', import.meta.url), 'utf8');
+
+test('Perspectives script cache key matches its content hash', () => {
+    const version = html.match(/js\/perspectives\.js\?v=([a-f0-9]{12})(?=["&])/);
+    assert.ok(version, 'perspectives.html must carry a 12-character hexadecimal script version');
+    assert.equal(version[1], createHash('sha256').update(script).digest('hex').slice(0, 12));
+});
 
 test('Perspectives discovery survives digest regeneration and preserves the homepage preview anchor', async () => {
     for (const name of ['index.html', 'news.html', 'perspectives.html']) {
