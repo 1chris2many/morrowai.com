@@ -42,6 +42,14 @@ test('Perspectives serves two Chris originals and two approved Persephone pieces
     assert.match(home, /href="perspectives.html">Browse perspectives by author/);
 });
 
+test('author selector describes its current result count and announces changes politely', () => {
+    const selector = html.match(/<select\b[^>]*id="perspectives-author"[^>]*>/)?.[0];
+    assert.ok(selector);
+    assert.match(selector, /aria-controls="perspectives-list"/);
+    assert.match(selector, /aria-describedby="perspectives-count"/);
+    assert.match(html, /<p id="perspectives-count" role="status" aria-live="polite">4 pieces<\/p>/);
+});
+
 function filterFixture(search = '') {
     const cards = [{ dataset: { authorId: 'chris-morrow' }, hidden: false }, { dataset: { authorId: 'chris-morrow' }, hidden: false }];
     const count = { textContent: '' };
