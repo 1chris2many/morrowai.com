@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-digest.mjs",
-    "test": "node --test tests/site.test.mjs"
+    "test": "node --test tests/*.test.mjs"
   },
   "devDependencies": {
     "playwright": "1.63.0"

@@ -79,6 +79,7 @@ async function loadNews() {
                 card.className = 'news-card';
                 card.id = newsAnchor(item);
                 card.dataset.date = item.digestDate;
+                if (Number.isSafeInteger(item.digestItemId) && item.digestItemId > 0) card.dataset.digestItemId = item.digestItemId;
                 const meta = document.createElement('p');
                 meta.className = 'post-meta';
                 meta.textContent = item.source + ' · Edition ' + item.digestDate;
@@ -135,6 +136,7 @@ async function loadNews() {
                 }
                 for (const t of item.themes || []) {
                     const follow = document.createElement('button'); follow.type = 'button'; follow.className = 'news-tag';
+                    follow.dataset.analyticsTheme = t.id;
                     follow.textContent = 'More: ' + t.name;
                     follow.addEventListener('click', () => { topic.value = source.value = ''; theme.value = t.id; render(); theme.focus(); });
                     card.append(follow);
