@@ -34,8 +34,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-23-un-security-council-to-hear-ai-safety-briefing-from-openai-anthropic-deepseek-and-moonshot-executives"
+      "anchor": "story-2026-09-23-un-security-council-to-hear-ai-safety-briefing-from-openai-anthropic-deepseek-and-moonshot-executives",
+      "editorialNote": ""
     },
     {
       "digestItemId": 835,
@@ -58,8 +58,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "Reporting by Insider Monkey, republished by Yahoo Finance.",
-      "anchor": "story-2026-09-23-alibaba-unveils-zhenwu-v900-ai-chip-claiming-3x-the-performance-of-its-predecessor"
+      "anchor": "story-2026-09-23-alibaba-unveils-zhenwu-v900-ai-chip-claiming-3x-the-performance-of-its-predecessor",
+      "editorialNote": "Reporting by Insider Monkey, republished by Yahoo Finance."
     },
     {
       "digestItemId": 837,
@@ -83,8 +83,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-23-ai-agent-startup-ema-raises-77-million-as-it-targets-enterprise-software-spending"
+      "anchor": "story-2026-09-23-ai-agent-startup-ema-raises-77-million-as-it-targets-enterprise-software-spending",
+      "editorialNote": ""
     },
     {
       "digestItemId": 836,
@@ -102,8 +102,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-23-google-s-robotics-unit-intrinsic-open-sources-its-industrial-robot-software-stack"
+      "anchor": "story-2026-09-23-google-s-robotics-unit-intrinsic-open-sources-its-industrial-robot-software-stack",
+      "editorialNote": ""
     },
     {
       "digestItemId": 833,
@@ -122,8 +122,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-23-openai-launches-cheaper-gpt-6-sol-and-luna-hours-after-anthropic-cuts-claude-opus-5-5-pricing"
+      "anchor": "story-2026-09-23-openai-launches-cheaper-gpt-6-sol-and-luna-hours-after-anthropic-cuts-claude-opus-5-5-pricing",
+      "editorialNote": ""
     },
     {
       "digestItemId": 832,
@@ -1647,6 +1647,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-09-23 · 5 stories",
-  "publishedAt": "2026-09-23T15:04:45.713Z",
-  "contentHash": "164dc13af2f7098587c51042c6a075de57f964e30aee4f34ec6c9ef0a7b9c112"
+  "publishedAt": "2026-09-23T15:05:36.668Z",
+  "contentHash": "cbe6a98469c03005a9ea78d62fa1fa5da9cb9463f27d9c4d3429e8edd29cf900"
 }
