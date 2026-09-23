@@ -1,18 +1,130 @@
 {
   "version": 1,
-  "digestDate": "2026-09-22",
+  "digestDate": "2026-09-23",
   "latestSavedDigest": "2026-09-23",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 6,
+  "pending": 1,
   "items": [
+    {
+      "digestItemId": 834,
+      "digestDate": "2026-09-23",
+      "title": "AI executives expected to brief UN Security Council",
+      "summary": "CNBC reports that Sam Altman, Dario Amodei, Clément Delangue and Yoshua Bengio are expected to address a Security Council meeting on AI on September 23. The planned briefing comes as governments debate safety risks and calls to slow advanced-model development.",
+      "whyItMatters": "The meeting gives governments a forum to question developers about risks that cross national borders.",
+      "url": "https://www.cnbc.com/2026/09/22/altman-amodei-unga-ai-safety.html",
+      "source": "CNBC — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-23-un-security-council-to-hear-ai-safety-briefing-from-openai-anthropic-deepseek-and-moonshot-executives"
+    },
+    {
+      "digestItemId": 835,
+      "digestDate": "2026-09-23",
+      "title": "Alibaba announces Zhenwu V900 chip, targeting production in 2027",
+      "summary": "Alibaba says its Zhenwu V900 accelerator delivers roughly three times its predecessor’s performance, with mass production planned for early 2027. It also outlined ambitions for larger Qwen models and more than 20 gigawatts of global data-center capacity by 2032.",
+      "whyItMatters": "Production timing, software support and independent performance tests will matter more to buyers than the launch comparison alone.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/alibaba-just-unveiled-ai-chip-221410155.html",
+      "source": "Yahoo Finance — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "Reporting by Insider Monkey, republished by Yahoo Finance.",
+      "anchor": "story-2026-09-23-alibaba-unveils-zhenwu-v900-ai-chip-claiming-3x-the-performance-of-its-predecessor"
+    },
+    {
+      "digestItemId": 837,
+      "digestDate": "2026-09-23",
+      "title": "Ema raises $77 million for enterprise AI agents",
+      "summary": "Ema raised a $77 million Series B led by Creaegis, bringing its total funding to $140 million. The company builds teams of AI agents for HR, IT and finance workflows; CEO Surojit Chatterjee says it aims to reduce customers’ reliance on some existing software.",
+      "whyItMatters": "The funding will help expand sales and deployment of agents that work across a company’s applications, with pricing tied to tasks and outcomes.",
+      "url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/",
+      "source": "TechCrunch — September 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-23-ai-agent-startup-ema-raises-77-million-as-it-targets-enterprise-software-spending"
+    },
+    {
+      "digestItemId": 836,
+      "digestDate": "2026-09-23",
+      "title": "Intrinsic releases open-source tools for industrial robots",
+      "summary": "Google’s Intrinsic released Intrinsic Core on September 22 under an Apache 2.0 license. The ROS 2-compatible software combines robot control, motion and grasp planning, perception, and simulation tools.",
+      "whyItMatters": "Developers can reuse these components when connecting robot arms, cameras and grippers instead of building each integration from scratch.",
+      "url": "https://siliconangle.com/2026/09/22/googles-robotics-unit-intrinsic-open-sources-its-foundational-infrastructure-for-intelligent-robots/",
+      "source": "SiliconANGLE — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-23-google-s-robotics-unit-intrinsic-open-sources-its-industrial-robot-software-stack"
+    },
+    {
+      "digestItemId": 833,
+      "digestDate": "2026-09-23",
+      "title": "OpenAI and Anthropic release lower-cost models",
+      "summary": "GPT-6 Sol’s standard API rates are $2 per million input tokens and $10 per million output tokens; Luna’s are $0.10 and $0.50. Anthropic lists Opus 5.5 at $4 and $20, a 20% reduction in input/output token prices from Opus 5.",
+      "whyItMatters": "For teams running many automated tasks, compare the cost of a completed job—including retries and cached tokens—before switching models.",
+      "url": "https://fortune.com/2026/09/22/what-ai-slowdown-openai-anthropic-release-dueling-moreaffordable-models-as-ai-price-wars-heat-up/",
+      "source": "Fortune — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-23-openai-launches-cheaper-gpt-6-sol-and-luna-hours-after-anthropic-cuts-claude-opus-5-5-pricing"
+    },
     {
       "digestItemId": 832,
       "digestDate": "2026-09-22",
@@ -1533,8 +1645,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-22 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-23T13:58:22.157Z",
-  "contentHash": "1372e14ed07f78001c525a8521f4f97addb8f1da8efbc02a3b64c74e6d4fb83b"
+  "publicationStatus": "current",
+  "notice": "2026-09-23 · 5 stories",
+  "publishedAt": "2026-09-23T15:04:45.713Z",
+  "contentHash": "164dc13af2f7098587c51042c6a075de57f964e30aee4f34ec6c9ef0a7b9c112"
 }
