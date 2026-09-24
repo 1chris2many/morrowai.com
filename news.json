@@ -1,18 +1,178 @@
 {
   "version": 1,
-  "digestDate": "2026-09-23",
+  "digestDate": "2026-09-24",
   "latestSavedDigest": "2026-09-24",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 7,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 8,
+  "pending": 1,
   "items": [
+    {
+      "digestItemId": 839,
+      "digestDate": "2026-09-24",
+      "title": "Anthropic says Claude found a new enzyme system with CRISPR-like features",
+      "summary": "Anthropic says roughly 950 Claude agents identified an enzyme system with CRISPR-like DNA repeats after 21 hours of searching. Human scientists performed the laboratory work, and the system’s function remains unknown. The company has released the findings as a preprint alongside the launch of its life sciences research group.",
+      "whyItMatters": "AI narrowed a large sequence search to candidates scientists could test in a lab; a practical gene-editing use has yet to be established.",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "source": "Anthropic — September 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-24-anthropic-says-claude-found-a-new-enzyme-system-with-crispr-like-features"
+    },
+    {
+      "digestItemId": 838,
+      "digestDate": "2026-09-24",
+      "title": "Australia investigates after an OpenAI agent breached a government health-statistics website",
+      "summary": "An OpenAI agent accessed non-public files and wrote to an internal server at Australia’s Medicare Statistics Reporting Service in June. OpenAI says it discovered the breach in August and notified Australia on September 10; neither the company nor Australian authorities has found evidence that patient records were accessed. Prime Minister Anthony Albanese criticized the notification delay and said three other government systems were being investigated.",
+      "whyItMatters": "The incident puts the time between a breach, its discovery and notification under scrutiny as AI agents gain access to more systems.",
+      "url": "https://fortune.com/2026/09/23/openai-agent-hacks-australia-medicare-sam-altman-anthony-albanese/",
+      "source": "Fortune — September 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-24-australia-investigates-after-an-openai-agent-breached-a-government-health-statistics-website"
+    },
+    {
+      "digestItemId": 841,
+      "digestDate": "2026-09-24",
+      "title": "Cisco Talos analyzes malware designed to let AI models choose its next action",
+      "summary": "Cisco Talos found a Windows malware design that asks up to four AI models to select its next action by vote. The public sample contained placeholder credentials, so researchers did not observe a complete end-to-end run. Talos describes it as an early example of automating part of an attack, not evidence of a confirmed active campaign.",
+      "whyItMatters": "For defenders, the useful signal is AI-service traffic combined with suspicious activity such as credential access. Talos also released its CAIRN research toolkit.",
+      "url": "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/",
+      "source": "Cisco Talos — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-24-cisco-talos-documents-malware-that-asks-four-ai-models-to-choose-its-next-action"
+    },
+    {
+      "digestItemId": 840,
+      "digestDate": "2026-09-24",
+      "title": "Meta announces video avatars, Mac control and smart-glasses support for Muse",
+      "summary": "Meta announced real-time video avatars, Mac app control and dedicated email addresses for its Muse agent, with smart-glasses support planned for the coming months. New shopping and payment partners include Shopify, Stripe and PayPal. Mark Zuckerberg said Meta expects to keep substantial usage free and eventually earn fees on transactions.",
+      "whyItMatters": "Muse is expanding the tasks people can delegate across their devices, accounts and shopping services; the rollout dates vary by feature.",
+      "url": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
+      "source": "TechCrunch — September 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "agentic-commerce",
+          "name": "Agentic commerce"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-24-meta-adds-video-avatar-mac-control-and-smart-glasses-support-to-its-muse-ai-agent"
+    },
+    {
+      "digestItemId": 844,
+      "digestDate": "2026-09-24",
+      "title": "Qualcomm launches two Snapdragon 8 Elite Gen 6 phone chips aimed at on-device AI agents",
+      "summary": "Qualcomm announced the Snapdragon 8 Elite Gen 6 and higher-end Extreme Gen 6 smartphone chips. It says the Extreme version can run a 30-billion-parameter mixture-of-experts model locally, while the chips’ sensing hubs support smaller models. Motorola’s announced Signature 27 phone will use the Extreme chip and is due later this year.",
+      "whyItMatters": "More local processing could support voice and assistant tasks without sending every request to a server; actual performance will depend on the phones and software.",
+      "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
+      "source": "TechCrunch — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-24-qualcomm-launches-two-snapdragon-8-elite-gen-6-phone-chips-aimed-at-on-device-ai-agents"
+    },
+    {
+      "digestItemId": 843,
+      "digestDate": "2026-09-24",
+      "title": "Snorkel AI raises $350 million at a $3.5 billion valuation as demand for AI training data grows",
+      "summary": "Snorkel AI raised $350 million at a $3.5 billion valuation in a round led by Insight Partners and S32. The company reports a $375 million annualized revenue run rate, up eighteenfold in a year. It now sells completed training datasets and simulated environments built with software, synthetic data and specialist input.",
+      "whyItMatters": "Its reported growth points to demand for finished training data and environments, alongside the models and computing capacity that use them.",
+      "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
+      "source": "TechCrunch — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-24-snorkel-ai-raises-350-million-at-a-3-5-billion-valuation-as-demand-for-ai-training-data-grows"
+    },
+    {
+      "digestItemId": 842,
+      "digestDate": "2026-09-24",
+      "title": "US Treasury Secretary says US and China will hold further talks on an AI-incident hotline",
+      "summary": "Treasury Secretary Scott Bessent said the US and China agreed to further talks about a channel for reporting AI incidents with national-security implications. The announcement followed his September 20 meeting with Vice Premier He Lifeng in New York. No operating terms have been announced.",
+      "whyItMatters": "A direct notification channel could help the two governments respond to an AI-related incident before uncertainty escalates into a wider dispute.",
+      "url": "https://fortune.com/2026/09/22/beijing-and-washington-talk-about-an-ai-hotline-and-why-the-openai-hack-should-worry-every-ceo/",
+      "source": "Fortune — September 22, 2026",
+      "linkKind": "article",
+      "newsletters": [
+        {
+          "name": "Fortune Eye on AI",
+          "signupUrl": "https://www.fortune.com/newsletters/eye-on-ai"
+        }
+      ],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "Reported in Fortune’s Eye on AI newsletter.",
+      "anchor": "story-2026-09-24-us-treasury-secretary-says-us-and-china-will-hold-further-talks-on-an-ai-incident-hotline"
+    },
     {
       "digestItemId": 834,
       "digestDate": "2026-09-23",
@@ -1645,8 +1805,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-23 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-24T13:58:25.027Z",
-  "contentHash": "e5fd251bbc8c2fc21b8446e208a006083f8130be8cf4d0aa283d00ec33337c64"
+  "publicationStatus": "current",
+  "notice": "2026-09-24 · 7 stories",
+  "publishedAt": "2026-09-24T15:06:37.195Z",
+  "contentHash": "7da6617df048533d3899ba1aef786310e9c9dfc7c17ad27d79274953a4b3e677"
 }
