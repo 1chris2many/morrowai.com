@@ -29,8 +29,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-24-anthropic-says-claude-found-a-new-enzyme-system-with-crispr-like-features"
+      "anchor": "story-2026-09-24-anthropic-says-claude-found-a-new-enzyme-system-with-crispr-like-features",
+      "editorialNote": ""
     },
     {
       "digestItemId": 838,
@@ -54,8 +54,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-24-australia-investigates-after-an-openai-agent-breached-a-government-health-statistics-website"
+      "anchor": "story-2026-09-24-australia-investigates-after-an-openai-agent-breached-a-government-health-statistics-website",
+      "editorialNote": ""
     },
     {
       "digestItemId": 841,
@@ -73,8 +73,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-24-cisco-talos-documents-malware-that-asks-four-ai-models-to-choose-its-next-action"
+      "anchor": "story-2026-09-24-cisco-talos-documents-malware-that-asks-four-ai-models-to-choose-its-next-action",
+      "editorialNote": ""
     },
     {
       "digestItemId": 840,
@@ -97,8 +97,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-24-meta-adds-video-avatar-mac-control-and-smart-glasses-support-to-its-muse-ai-agent"
+      "anchor": "story-2026-09-24-meta-adds-video-avatar-mac-control-and-smart-glasses-support-to-its-muse-ai-agent",
+      "editorialNote": ""
     },
     {
       "digestItemId": 844,
@@ -117,8 +117,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-24-qualcomm-launches-two-snapdragon-8-elite-gen-6-phone-chips-aimed-at-on-device-ai-agents"
+      "anchor": "story-2026-09-24-qualcomm-launches-two-snapdragon-8-elite-gen-6-phone-chips-aimed-at-on-device-ai-agents",
+      "editorialNote": ""
     },
     {
       "digestItemId": 843,
@@ -141,8 +141,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-24-snorkel-ai-raises-350-million-at-a-3-5-billion-valuation-as-demand-for-ai-training-data-grows"
+      "anchor": "story-2026-09-24-snorkel-ai-raises-350-million-at-a-3-5-billion-valuation-as-demand-for-ai-training-data-grows",
+      "editorialNote": ""
     },
     {
       "digestItemId": 842,
@@ -170,8 +170,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "Reported in Fortune’s Eye on AI newsletter.",
-      "anchor": "story-2026-09-24-us-treasury-secretary-says-us-and-china-will-hold-further-talks-on-an-ai-incident-hotline"
+      "anchor": "story-2026-09-24-us-treasury-secretary-says-us-and-china-will-hold-further-talks-on-an-ai-incident-hotline",
+      "editorialNote": "Reported in Fortune’s Eye on AI newsletter."
     },
     {
       "digestItemId": 834,
@@ -1807,6 +1807,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-09-24 · 7 stories",
-  "publishedAt": "2026-09-24T15:06:37.195Z",
-  "contentHash": "7da6617df048533d3899ba1aef786310e9c9dfc7c17ad27d79274953a4b3e677"
+  "publishedAt": "2026-09-24T15:07:33.638Z",
+  "contentHash": "8a3b918e1ee36eaa2bb727bfc5e7cbf5e6c619d81406842116a6f79eeb3a8d1e"
 }
