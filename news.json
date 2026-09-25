@@ -35,8 +35,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-25-akamai-signs-11-6-billion-seven-year-cloud-infrastructure-deal-with-anthropic"
+      "anchor": "story-2026-09-25-akamai-signs-11-6-billion-seven-year-cloud-infrastructure-deal-with-anthropic",
+      "editorialNote": ""
     },
     {
       "digestItemId": 848,
@@ -59,8 +59,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-25-amazon-lets-us-sellers-connect-claude-to-their-accounts-days-after-blocking-meta-s-muse-agent"
+      "anchor": "story-2026-09-25-amazon-lets-us-sellers-connect-claude-to-their-accounts-days-after-blocking-meta-s-muse-agent",
+      "editorialNote": ""
     },
     {
       "digestItemId": 846,
@@ -83,8 +83,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-25-china-says-the-us-and-china-held-their-first-ai-dialogue-as-trump-and-xi-meet-in-washington"
+      "anchor": "story-2026-09-25-china-says-the-us-and-china-held-their-first-ai-dialogue-as-trump-and-xi-meet-in-washington",
+      "editorialNote": ""
     },
     {
       "digestItemId": 852,
@@ -102,8 +102,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-25-gallup-survey-finds-about-68-of-americans-who-use-ai-daily-are-worried-about-it"
+      "anchor": "story-2026-09-25-gallup-survey-finds-about-68-of-americans-who-use-ai-daily-are-worried-about-it",
+      "editorialNote": ""
     },
     {
       "digestItemId": 851,
@@ -121,8 +121,8 @@
       "themes": [],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-25-google-begins-testing-call-for-me-a-gemini-feature-that-phones-businesses-on-a-user-s-behalf"
+      "anchor": "story-2026-09-25-google-begins-testing-call-for-me-a-gemini-feature-that-phones-businesses-on-a-user-s-behalf",
+      "editorialNote": ""
     },
     {
       "digestItemId": 849,
@@ -145,8 +145,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-25-oracle-sends-a-force-majeure-notice-on-its-new-mexico-stargate-data-center-campus"
+      "anchor": "story-2026-09-25-oracle-sends-a-force-majeure-notice-on-its-new-mexico-stargate-data-center-campus",
+      "editorialNote": ""
     },
     {
       "digestItemId": 850,
@@ -175,8 +175,8 @@
       ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
-      "editorialNote": "",
-      "anchor": "story-2026-09-25-the-pragmatic-engineer-reports-a-cpu-shortage-as-ai-agents-drive-up-demand-for-server-processors"
+      "anchor": "story-2026-09-25-the-pragmatic-engineer-reports-a-cpu-shortage-as-ai-agents-drive-up-demand-for-server-processors",
+      "editorialNote": ""
     },
     {
       "digestItemId": 839,
@@ -1972,6 +1972,6 @@
   ],
   "publicationStatus": "partial",
   "notice": "2026-09-25 · 7 stories · More stories to follow",
-  "publishedAt": "2026-09-25T15:03:25.466Z",
-  "contentHash": "bceb9811d1750b20f0fae8017e97399234ccafdd2cb5f2aad7ff8383483fca67"
+  "publishedAt": "2026-09-25T15:07:03.378Z",
+  "contentHash": "7ca0b9feab7ae71a6d88414eecee72a4afd83cbded835e6f78f949fecc07e261"
 }
