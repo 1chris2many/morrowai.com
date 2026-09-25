@@ -17,6 +17,7 @@ test('Perspectives script cache key matches its content hash', () => {
 test('Perspectives discovery survives digest regeneration and preserves the homepage preview anchor', async () => {
     for (const name of ['index.html', 'news.html', 'perspectives.html']) {
         const page = await readFile(new URL('../' + name, import.meta.url), 'utf8');
+        if(name==='index.html') { assert.match(page,/href="#perspectives">Perspectives/); continue; }
         const nav = page.match(/<ul class="nav-links"[\s\S]*?<\/ul>/)?.[0];
         assert.match(nav, /href="perspectives.html">Perspectives<\/a>/, name);
     }
@@ -25,7 +26,7 @@ test('Perspectives discovery survives digest regeneration and preserves the home
     for (const name of ['news.html', 'scripts/build-digest.mjs']) {
         assert.match(await readFile(new URL('../' + name, import.meta.url), 'utf8'), /href="perspectives.html">Browse perspectives →/);
     }
-    assert.match(home, /href="#essays">Explore the writing/);
+    assert.match(home, /href="#perspectives">Perspectives/);
     assert.match(home, /id="essays"/);
 });
 
@@ -47,7 +48,7 @@ test('author selector describes its current result count and announces changes p
     assert.ok(selector);
     assert.match(selector, /aria-controls="perspectives-list"/);
     assert.match(selector, /aria-describedby="perspectives-count"/);
-    assert.match(html, /<p id="perspectives-count" role="status" aria-live="polite">4 pieces<\/p>/);
+    assert.match(html, /<p id="perspectives-count" role="status" aria-live="polite" aria-atomic="true">4 pieces<\/p>/);
 });
 
 function filterFixture(search = '') {
@@ -56,7 +57,7 @@ function filterFixture(search = '') {
     const empty = { hidden: true };
     const tools = { classList: { add(value) { assert.equal(value, 'enhanced'); } } };
     const selector = {
-        value: 'all', options: [{ value: 'all' }, { value: 'chris-morrow' }],
+        value: 'all', options: [{ value: 'all', text: 'All authors' }, { value: 'chris-morrow', text: 'Chris Morrow' }],
         closest() { return tools; },
         addEventListener(event, fn) { assert.equal(event, 'change'); this.change = fn; }
     };
@@ -74,12 +75,12 @@ function filterFixture(search = '') {
 
 test('author filter keeps All, matches Chris, gives an empty state, and updates its shareable URL', () => {
     const { cards, count, empty, selector, window } = filterFixture();
-    assert.equal(count.textContent, '2 pieces');
+    assert.equal(count.textContent, '2 pieces, all authors');
     selector.value = 'chris-morrow'; selector.change();
     assert.equal(cards.filter(card => !card.hidden).length, 2);
     assert.equal(window.history.address, '/perspectives.html?author=chris-morrow');
     selector.value = 'unknown'; selector.change();
-    assert.equal(count.textContent, '0 pieces');
+    assert.equal(count.textContent, '0 pieces by unknown');
     assert.equal(empty.hidden, false);
     selector.value = 'all'; selector.change();
     assert.equal(cards.filter(card => !card.hidden).length, 2);
@@ -91,14 +92,14 @@ test('a valid author query opens the corresponding author view', () => {
     const { cards, count, selector, window } = filterFixture('?author=chris-morrow');
     assert.equal(selector.value, 'chris-morrow');
     assert.equal(cards.filter(card => !card.hidden).length, 2);
-    assert.equal(count.textContent, '2 pieces');
+    assert.equal(count.textContent, '2 pieces by Chris Morrow');
     assert.equal(window.history.address, undefined);
 });
 test('invalid and empty author queries normalize to All while preserving unrelated parameters', () => {
     for (const author of ['bogus', '']) {
         const { selector, count, empty, window } = filterFixture('?author=' + author + '&ref=shared#top');
         assert.equal(selector.value, 'all');
-        assert.equal(count.textContent, '2 pieces');
+        assert.equal(count.textContent, '2 pieces, all authors');
         assert.equal(empty.hidden, true);
         assert.equal(window.history.address, '/perspectives.html?ref=shared#top');
     }

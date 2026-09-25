@@ -14,12 +14,14 @@
 
     function filter(updateAddress) {
         var author = selector.value;
+        var selectedOption = Array.from(selector.options).find(function (option) { return option.value === author; });
         var visible = 0;
         cards.forEach(function (card) {
             card.hidden = author !== 'all' && card.dataset.authorId !== author;
             if (!card.hidden) visible++;
         });
-        count.textContent = visible + (visible === 1 ? ' piece' : ' pieces');
+        count.textContent = visible + (visible === 1 ? ' piece' : ' pieces') +
+            (author === 'all' ? ', all authors' : ' by ' + (selectedOption ? selectedOption.text : author));
         empty.hidden = visible !== 0;
         if (updateAddress) {
             var url = new URL(window.location.href);

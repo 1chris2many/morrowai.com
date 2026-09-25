@@ -67,6 +67,21 @@ test('manual pageview is single, sanitized, and configured without automatic col
     }]);
     assert.equal(setup({ url: 'https://usefulaiwerks.com/index.html' }).events[0].url, '/');
 });
+test('briefing visits and navigation use the existing privacy-safe event schema', () => {
+    const env=setup({url:'https://usefulaiwerks.com/themes.html?private=secret#ai-regulation'});
+    assert.equal(env.events[0].url,'/themes.html');
+    click(env,link('https://usefulaiwerks.com/themes.html#safety-vs-capability'));
+    assert.deepEqual(env.events.at(-1).data,{theme:'safety-vs-capability'});
+    assert.equal(env.events.at(-1).name,'theme_navigation');
+    click(env,link('https://www.anthropic.com/news/example',['.brief-timeline']));
+    assert.deepEqual(env.events.at(-1).data,{destination:'www.anthropic.com',surface:'article'});
+    assert.equal(setup({url:'https://private.ts.net/website/themes.html'}).scripts.length,0);
+    for (const anchor of ['latest','developing','perspectives','team']) {
+        click(env,link('https://usefulaiwerks.com/#'+anchor));
+        assert.equal(env.events.at(-1).name,'navigation_click');
+        assert.deepEqual(env.events.at(-1).data,{destination:'/#'+anchor});
+    }
+});
 
 test('privacy signals, opt-out, automation, previews and unknown pages never load the tracker', () => {
     for (const options of [
@@ -211,10 +226,10 @@ test('tracker failures do not throw or prevent navigation', () => {
 });
 
 test('all public pages carry notice and script; digest rebuild preserves analytics, verification and feed', async () => {
-    const pages = ['index.html', 'news.html', 'perspectives.html', 'three-windows-ai-safety.html', 'two-financing-paths.html'];
+    const pages = ['index.html', 'news.html', 'themes.html', 'perspectives.html', 'three-windows-ai-safety.html', 'two-financing-paths.html'];
     for (const file of pages) {
         const html = await readFile(new URL(file, root), 'utf8');
-        assert.equal((html.match(/src="js\/analytics.js\?v=20260923"/g) || []).length, 1, file);
+        assert.equal((html.match(/src="js\/analytics.js\?v=20260925"/g) || []).length, 1, file);
         assert.equal((html.match(/data-analytics-opt-out/g) || []).length, 1, file);
         if (file === 'index.html' || file === 'perspectives.html') {
             assert.equal((html.match(/data-analytics-story=/g) || []).length, 2, file);
@@ -225,12 +240,24 @@ test('all public pages carry notice and script; digest rebuild preserves analyti
     const news = await readFile(new URL('news.html', root), 'utf8');
     for (const item of feed.items) assert.ok(news.includes('data-digest-item-id="' + item.digestItemId + '"'));
     const fixture = await mkdtemp(join(tmpdir(), 'analytics-build-test-'));
-    for (const file of ['index.html', 'news.html', 'feed.xml', 'news.json', 'scripts', 'js']) {
+    for (const file of ['index.html', 'perspectives.html', 'news.html', 'feed.xml', 'news.json', 'scripts', 'js']) {
         await cp(new URL(file, root), join(fixture, file), { recursive: true });
     }
     await promisify(execFile)(process.execPath, [join(fixture, 'scripts/build-digest.mjs')]);
-    for (const file of ['index.html', 'news.html', 'feed.xml']) {
+    for (const file of ['index.html', 'themes.html', 'news.html', 'feed.xml']) {
         assert.equal(await readFile(join(fixture, file), 'utf8'), await readFile(new URL(file, root), 'utf8'), file + ' rebuild drift');
     }
     assert.match(await readFile(join(fixture, 'index.html'), 'utf8'), /<meta name="google-site-verification" content="Gi1Rhk4SdFHOEY-OUPuQZnoOpq0iUDHMZmSGSKCvluc" \/>/);
+    // Real production CLI, not only the renderer: two rebuilds must stay
+    // indexable even when the starting artifact came from a private preview.
+    await promisify(execFile)(process.execPath, [join(fixture, 'scripts/build-digest.mjs'), '--preview']);
+    const privateBuild = await readFile(join(fixture, 'index.html'), 'utf8');
+    assert.match(privateBuild, /noindex,nofollow/);
+    await promisify(execFile)(process.execPath, [join(fixture, 'scripts/build-digest.mjs')]);
+    const production = await readFile(join(fixture, 'index.html'), 'utf8');
+    assert.doesNotMatch(production, /noindex|nofollow|data-preview-robots/);
+    await promisify(execFile)(process.execPath, [join(fixture, 'scripts/build-digest.mjs')]);
+    assert.equal(await readFile(join(fixture, 'index.html'), 'utf8'), production);
+    await promisify(execFile)(process.execPath, [join(fixture, 'scripts/build-digest.mjs'), '--preview']);
+    assert.equal(await readFile(join(fixture, 'index.html'), 'utf8'), privateBuild);
 });

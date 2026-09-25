@@ -2,6 +2,8 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { newsAnchor, selectNews } from '../js/news-model.js';
 import { nav, footer } from './site-layout.mjs';
+import {renderHome} from './news-first-home.mjs';
+import {renderThemes} from './theme-pages.mjs';
 
 const root = new URL('../', import.meta.url);
 const feed = JSON.parse(await readFile(new URL('news.json', root), 'utf8'));
@@ -49,7 +51,7 @@ const news = `<!doctype html>
 </header>
 ${threadIndex}
 <div class="digest-tools"><noscript><p>All stories are available below. Enable JavaScript for topic/source filters and sorting.</p></noscript></div>
-<div id="news-items" class="news-grid">${items.map(card).join('\n')}</div></main>${footer}<p class="container small-note analytics-notice">We use Umami to count page visits, referring sites, and selected link and filter actions. <a href="?analytics=off" data-analytics-opt-out>Turn off analytics for this tab.</a></p><script defer src="js/analytics.js?v=20260923"></script><script src="js/main.js?v=20260915"></script><script type="module" src="js/news.js?v=20260923"></script></body></html>\n`;
+<div id="news-items" class="news-grid">${items.map(card).join('\n')}</div></main>${footer}<p class="container small-note analytics-notice">We use Umami to count page visits, referring sites, and selected link and filter actions. <a href="?analytics=off" data-analytics-opt-out>Turn off analytics for this tab.</a></p><script defer src="js/analytics.js?v=20260925"></script><script src="js/main.js?v=20260915"></script><script type="module" src="js/news.js?v=20260923"></script></body></html>\n`;
 
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Useful AI Werks — AI Digest</title><link>https://usefulaiwerks.com/news.html</link><description>Daily AI news, summaries, and links from Useful AI Werks.</description><language>en-us</language><atom:link href="https://usefulaiwerks.com/feed.xml" rel="self" type="application/rss+xml"/>
@@ -63,7 +65,11 @@ const marker = /<!-- DIGEST_PREVIEW_START -->[\s\S]*?<!-- DIGEST_PREVIEW_END -->
 if (!marker.test(index)) throw Error('Homepage digest preview markers missing');
 // Headlines only are navigation; full approved text remains visible on the digest.
 const preview = `<!-- DIGEST_PREVIEW_START -->\n<p class="small-note">Latest edition: <time datetime="${latest}">${latest}</time></p><ol class="digest-preview">${items.slice(0, 3).map(item => `<li><a href="news.html#${newsAnchor(item)}">${e(item.title)}</a><p class="small-note">${e(item.source)}${item.linkKind === 'newsletter' ? ' · Newsletter-sourced' : ''}</p></li>`).join('')}</ol>\n<!-- DIGEST_PREVIEW_END -->`;
+const renderedHome=renderHome(index,feed,await readFile(new URL('perspectives.html',root),'utf8'),{preview:process.argv.includes('--preview')});
+// Validate all briefing references before writing the new page/homepage.
+const renderedThemes=renderThemes(renderedHome,feed,{preview:process.argv.includes('--preview')});
 await writeFile(new URL('news.html', root), news);
 await writeFile(new URL('feed.xml', root), rss);
-await writeFile(indexPath, index.replace(marker, preview));
+await writeFile(indexPath,renderedHome);
+await writeFile(new URL('themes.html',root),renderedThemes);
 console.log(`Built ${items.length} reviewed stories, RSS entries and homepage headlines; digest ${latest}, snapshot ${snapshot}.`);

@@ -4,7 +4,7 @@
 
     var website = '45502ceb-6612-4753-82a7-11d449338391';
     var hosts = ['usefulaiwerks.com', 'www.usefulaiwerks.com'];
-    var pages = ['/', '/news.html', '/perspectives.html', '/two-financing-paths.html', '/three-windows-ai-safety.html'];
+    var pages = ['/', '/news.html', '/themes.html', '/perspectives.html', '/two-financing-paths.html', '/three-windows-ai-safety.html'];
     var themes = ['ai-regulation', 'ai-infrastructure', 'workplace-agents', 'open-weights', 'recursive-ai', 'safety-vs-capability', 'agentic-commerce', 'openai-ipo', 'us-china', 'agent-economics'];
     var authors = ['all', 'chris-morrow', 'persephone'];
     var stories = ['ai-coding-costs', 'agentic-commerce-trust'];
@@ -91,7 +91,7 @@
             dimensions = { author: data.author };
             break;
         case 'navigation_click':
-            if (!pages.includes(data.destination) && !['/#about', '/#contact', '/#essays'].includes(data.destination)) return false;
+            if (!pages.includes(data.destination) && !['/#about', '/#contact', '/#essays', '/#latest', '/#developing', '/#perspectives', '/#team'].includes(data.destination)) return false;
             dimensions = { destination: data.destination };
             break;
         case 'rss_click':
@@ -141,6 +141,9 @@
         if (!/^https?:$/.test(url.protocol)) return;
         if (url.origin === location.origin) {
             if (url.pathname === '/feed.xml') return track('rss_click');
+            if (url.pathname === '/themes.html' && themes.includes(url.hash.slice(1))) {
+                return track('theme_navigation', { theme: url.hash.slice(1) });
+            }
             if (url.pathname === '/news.html' && url.searchParams.has('theme')) {
                 return track('theme_navigation', { theme: themeId(url.searchParams.get('theme')) });
             }
@@ -148,15 +151,15 @@
                 return track('author_selection', { author: url.searchParams.get('author') });
             }
             var destination = url.pathname === '/index.html' ? '/' : url.pathname;
-            if (destination === '/' && ['#about', '#contact', '#essays'].includes(url.hash)) destination += url.hash;
-            if (pages.includes(destination) || ['/#about', '/#contact', '/#essays'].includes(destination)) {
+            if (destination === '/' && ['#about', '#contact', '#essays', '#latest', '#developing', '#perspectives', '#team'].includes(url.hash)) destination += url.hash;
+            if (pages.includes(destination) || ['/#about', '/#contact', '/#essays', '/#latest', '/#developing', '/#perspectives', '/#team'].includes(destination)) {
                 track('navigation_click', { destination: destination });
             }
         } else {
             var card = link.closest('.news-card');
             var essay = link.closest('.essay-card');
             var surface = card && !link.closest('.news-newsletter') ? 'digest'
-                : essay ? 'perspectives' : link.closest('.blog-content') ? 'article' : '';
+                : essay ? 'perspectives' : (link.closest('.blog-content') || link.closest('.brief-timeline')) ? 'article' : '';
             if (surface && publicHostname(url.hostname)) {
                 var data = { destination: url.hostname, surface: surface };
                 if (surface === 'digest') data.digest_item_id = Number(card.dataset.digestItemId);

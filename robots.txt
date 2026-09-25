@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://usefulaiwerks.com/sitemap.xml

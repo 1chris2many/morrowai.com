@@ -6,8 +6,8 @@ import { createHash } from 'node:crypto';
 import { chromium } from 'playwright';
 import { newsAnchor, selectNews, freshnessMessage } from '../js/news-model.js';
 
-const pages = ['index.html', 'perspectives.html', 'news.html', 'three-windows-ai-safety.html', 'two-financing-paths.html'];
-const assets = ['css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/perspectives.js', 'js/news.js', 'js/news-model.js', 'js/analytics.js', 'news.json', 'feed.xml'];
+const pages = ['index.html', 'themes.html', 'perspectives.html', 'news.html', 'three-windows-ai-safety.html', 'two-financing-paths.html'];
+const assets = ['css/news-first.css', 'css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/perspectives.js', 'js/news.js', 'js/news-model.js', 'js/analytics.js', 'news.json', 'feed.xml'];
 let server, browser, base;
 const feed = JSON.parse(await readFile(new URL('../news.json', import.meta.url)));
 before(async () => {
@@ -28,62 +28,79 @@ before(async () => {
 });
 after(async () => { await browser?.close(); if (server) await new Promise(resolve => server.close(resolve)); });
 
-for (const width of [320, 390, 768, 820, 1440]) {
-    test(`v0.2 pages, navigation and layout at ${width}px`, async () => {
-        const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
-        const page = await context.newPage();
-        const errors = [];
-        page.on('pageerror', e => errors.push(e.message));
-        try {
-            for (const file of pages) {
-                const r = await page.goto(base + (file === 'index.html' ? '' : file));
-                assert.equal(r.status(), 200);
-                const canonicalBase = file.startsWith('blog/') ? 'https://1chris2many.github.io/morrowai.com/' : 'https://usefulaiwerks.com/';
-                assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'), canonicalBase + (file === 'index.html' ? '' : file));
-                assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), file + ' overflow');
-                assert.equal(await page.locator('a a').count(), 0);
-                if (width <= 768) {
-                    const toggle = page.locator('#nav-toggle');
-                    await toggle.click();
-                    assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
-                    await page.keyboard.press('Escape');
-                    assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
-                    assert.ok(await toggle.evaluate(el => el === document.activeElement));
-                } else {
-                    assert.ok(await page.evaluate(() => document.querySelector('.nav-logo').getBoundingClientRect().right < document.querySelector('#nav-links').getBoundingClientRect().left));
-                }
-                if (!file.startsWith('blog/')) {
-                    const links = await page.locator('a[href],link[rel="stylesheet"],script[src]').evaluateAll(els => els.map(e => e.href || e.src));
-                    for (const href of new Set(links)) {
-                        if (!href.startsWith(base)) continue;
-                        const response = await context.request.get(href.split('#')[0]);
-                        assert.equal(response.status(), 200, href);
-                    }
-                }
-            }
-            await page.goto(base);
-            assert.equal(await page.locator('#hero .btn-primary').getAttribute('href'), '#essays');
-            assert.equal(await page.locator('#hero a[href="#contact"]').count(), 0);
-            assert.equal(await page.locator('#nav-links a[href="news.html"]').count(), 1);
-            assert.equal(await page.locator('#nav-links a[href="perspectives.html"]').count(), 1);
-            assert.equal(await page.locator('.essay-card').count(), 2);
-            assert.equal(await page.locator('.digest-preview li').count(), 3);
-            assert.equal(await page.locator('.contact-email').getAttribute('href'), 'mailto:hello@usefulaiwerks.com');
-            assert.equal(await page.locator('form, input, textarea').count(), 0);
-            assert.ok(await page.locator('#essays').evaluate(el => el.getBoundingClientRect().top < innerHeight), 'Writing must begin in first viewport');
-            assert.equal(await page.locator('#research, a[href="research.html"]').count(), 0);
-            await page.screenshot({ path: `test-results/v02-home-${width}.png` });
-            await page.locator('#hero .btn-primary').click();
-            await page.waitForFunction(() => location.hash === '#essays');
-            if (width === 390 || width === 1440) {
-                await page.locator('#essays').scrollIntoViewIfNeeded();
-                await page.screenshot({ path: `test-results/v02-essays-${width}.png` });
-
-            }
-            assert.deepEqual(errors, []);
-        } finally { await context.close(); }
-    });
+for (const width of [320,390,768,820,1440]) {
+ test('news-first integration at '+width+'px',async()=>{
+  const ctx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'}),p=await ctx.newPage(),errors=[];
+  p.on('pageerror',e=>errors.push(e.message));
+  try {
+   for(const file of pages){
+    assert.equal((await p.goto(base+file)).status(),200);
+    assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),file+' overflow');
+    assert.equal(await p.locator('a a').count(),0);
+    if(!['index.html','themes.html'].includes(file)&&width<=768){await p.locator('#nav-toggle').click();assert.equal(await p.locator('#nav-toggle').getAttribute('aria-expanded'),'true');await p.keyboard.press('Escape');assert.equal(await p.locator('#nav-toggle').getAttribute('aria-expanded'),'false');}
+    for(const href of new Set(await p.locator('a[href],link[rel="stylesheet"],script[src]').evaluateAll(es=>es.map(e=>e.href||e.src))))if(href.startsWith(base))assert.equal((await ctx.request.get(href.split('#')[0])).status(),200,href);
+   }
+   await p.goto(base);
+   assert.equal(await p.locator('h1').textContent(),'What’s changing.Why it matters.');
+   assert.equal(await p.locator('meta[name="robots"]').count(),0);
+   assert.deepEqual(await p.locator('main > section').evaluateAll(es=>es.map(e=>e.id)),['developing','latest','perspectives','team','about','contact']);
+   assert.ok(await p.locator('#developing .brief-card h3').first().evaluate(e=>e.getBoundingClientRect().top<innerHeight),'First briefing begins in first viewport');
+   assert.equal(await p.locator('#developing .brief-map li').count(),9);
+   const current=feed.items.filter(i=>i.digestDate===feed.digestDate);
+   assert.equal(await p.locator('#latest article').count(),current.length);
+   for(const item of current){
+    const c=p.locator('#latest [data-digest-item-id="'+item.digestItemId+'"]');
+    assert.equal(await c.locator('h3').textContent(),item.title);assert.equal(await c.locator('.news-summary').textContent(),item.summary);
+    if(item.whyItMatters)assert.equal(await c.locator('.news-why').textContent(),item.whyItMatters);
+    assert.equal(await c.locator('h3 a').getAttribute('href'),'https://usefulaiwerks.com/news.html#'+item.anchor);
+   }
+   assert.equal(await p.locator('#perspectives .essay-card').count(),4);assert.equal(await p.locator('#team article').count(),7);
+   assert.equal(await p.locator('#speaking .speaking-list li').count(),3);
+   assert.equal(await p.locator('[data-editorial-placeholder],.placeholder').count(),0);
+   assert.equal(await p.locator('.contact-email').getAttribute('href'),'mailto:hello@usefulaiwerks.com');
+   for(const href of await p.locator('a[href^="#"]').evaluateAll(es=>es.map(e=>e.getAttribute('href'))))assert.equal(await p.locator(href).count(),1,href);
+   await p.screenshot({path:'test-results/news-first-home-'+width+'.png'});
+   if(width===390||width===1440){for(const section of ['developing','team']){await p.locator('#'+section).scrollIntoViewIfNeeded();await p.screenshot({path:'test-results/news-first-'+section+'-'+width+'.png'});}}
+   const theme=await p.locator('#developing [data-theme]').first().getAttribute('data-theme');
+   await p.locator('#developing .brief-link').first().click();
+   assert.equal(new URL(p.url()).hash,'#'+theme);
+   assert.equal(await p.locator('.briefing').count(),3);
+   assert.equal(await p.locator('.brief-timeline li').count(),9);
+   assert.equal(await p.locator('.brief-map li').count(),9);
+   await p.locator('#'+theme+' .brief-related summary').click();
+   assert.equal(await p.locator('#'+theme+' .brief-related li:visible').count(),feed.items.filter(i=>i.themes?.some(t=>t.id===theme)).length);
+   await p.locator('#'+theme).scrollIntoViewIfNeeded();
+   await p.screenshot({path:'test-results/theme-briefing-'+width+'.png'});
+   await p.goto(base+'news.html?theme='+theme);await p.locator('#news-theme').waitFor();
+   assert.equal(await p.locator('#news-theme').inputValue(),theme);
+   assert.equal(await p.locator('.news-card:visible').count(),feed.items.filter(i=>i.themes?.some(t=>t.id===theme)).length);
+   assert.deepEqual(errors,[]);
+  }finally{await ctx.close();}
+ });
 }
+
+test('equal-count author switches expose distinct atomic status in Chromium', async () => {
+    for (const width of [390,1440]) {
+        const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();
+        try {
+            await page.goto(base+'perspectives.html?author=chris-morrow&ref=night#main');
+            const status=page.getByRole('status'),select=page.locator('#perspectives-author');
+            assert.equal(await status.textContent(),'2 pieces by Chris Morrow');
+            assert.equal(await status.getAttribute('aria-atomic'),'true');
+            assert.equal(await select.getAttribute('aria-describedby'),'perspectives-count');
+            await select.selectOption('persephone');
+            assert.equal(await status.textContent(),'2 pieces by Persephone');
+            assert.match(await status.ariaSnapshot(),/2 pieces by Persephone/);
+            assert.equal(await page.locator('#perspectives-list .essay-card:visible').count(),2);
+            assert.match(page.url(),/author=persephone&ref=night#main/);
+            await select.selectOption('all');
+            assert.equal(await status.textContent(),'4 pieces, all authors');
+            assert.equal(await page.locator('#perspectives-list .essay-card:visible').count(),4);
+            assert.equal(new URL(page.url()).search,'?ref=night');
+            assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+        } finally {await context.close();}
+    }
+});
 
 test('edited digest, stable links, filters and RSS', async () => {
     assert.ok(feed.items.length >= 24);
@@ -156,7 +173,7 @@ test('no-JS navigation, failure fallback, and accessible skip link', async () =>
     try {
         for (const file of ['index.html', 'perspectives.html', 'news.html']) {
             await p.goto(base + file);
-            assert.ok(await p.locator('#nav-links').isVisible());
+            assert.ok(await p.locator(file==='index.html'?'.site-header nav':'#nav-links').isVisible());
             assert.equal(await p.locator('#nav-toggle').isVisible(), false);
             assert.ok(await p.locator('main').isVisible());
         }
@@ -185,7 +202,7 @@ test('Perspectives is HTML-first with attributed cards and accessible author fil
             assert.equal(await cards.count(), 4);
             assert.deepEqual(await cards.evaluateAll(els => els.map(el => el.dataset.authorId)), ['persephone', 'persephone', 'chris-morrow', 'chris-morrow']);
             assert.deepEqual(await page.locator('.perspectives-byline').allTextContents(), ['By Persephone', 'By Persephone', 'By Chris Morrow', 'By Chris Morrow']);
-            assert.equal(await page.locator('#perspectives-count').textContent(), '4 pieces');
+            assert.equal(await page.locator('#perspectives-count').textContent(), javaScriptEnabled ? '4 pieces, all authors' : '4 pieces');
             for (const title of ['AI coding costs and product prioritization', 'Agentic commerce: trust and checkout']) {
                 assert.equal(await page.getByRole('link', { name: title + ' (opens in a new tab)', exact: true }).count(), 1);
             }
@@ -205,11 +222,11 @@ test('Perspectives is HTML-first with attributed cards and accessible author fil
                 await page.locator('#perspectives-author').evaluate(select => select.add(new Option('Unknown author', 'unknown')));
                 await page.locator('#perspectives-author').selectOption('unknown');
                 assert.equal(await cards.count(), 0);
-                assert.equal(await page.locator('#perspectives-count').textContent(), '0 pieces');
+                assert.equal(await page.locator('#perspectives-count').textContent(), '0 pieces by Unknown author');
                 assert.ok(await page.locator('#perspectives-empty').isVisible());
                 await page.locator('#perspectives-author').selectOption('persephone');
                 assert.equal(await cards.count(), 2);
-                assert.equal(await page.locator('#perspectives-count').textContent(), '2 pieces');
+                assert.equal(await page.locator('#perspectives-count').textContent(), '2 pieces by Persephone');
                 await page.reload();
                 assert.equal(await cards.count(), 2);
                 assert.equal(await page.locator('#perspectives-author').inputValue(), 'persephone');
