@@ -1,18 +1,183 @@
 {
   "version": 1,
-  "digestDate": "2026-09-24",
+  "digestDate": "2026-09-25",
   "latestSavedDigest": "2026-09-25",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 7,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 9,
+  "pending": 2,
   "items": [
+    {
+      "digestItemId": 847,
+      "digestDate": "2026-09-25",
+      "title": "Akamai signs a seven-year, $11.6 billion infrastructure deal with Anthropic",
+      "summary": "Anthropic will use Akamai’s cloud infrastructure for CPU workloads under a seven-year, $11.6 billion agreement, with an option to add $9 billion. Akamai also issued a warrant that could give Anthropic roughly 5% of its stock as commitments increase. Akamai expects about $5.5 billion in capital spending tied to the initial deal.",
+      "whyItMatters": "The agreement commits substantial spending to general-purpose computing alongside the AI industry’s demand for GPUs.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/akamai-signs-11-6-billion-114012385.html",
+      "source": "Quartz via Yahoo Finance — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-25-akamai-signs-11-6-billion-seven-year-cloud-infrastructure-deal-with-anthropic"
+    },
+    {
+      "digestItemId": 848,
+      "digestDate": "2026-09-25",
+      "title": "Amazon opens a Claude connection for sellers after blocking Meta’s Muse",
+      "summary": "US Amazon sellers can connect Claude to their catalogs, performance data and recommendations through Amazon’s Selling Partner plugin. Claude can help with inventory, pricing and shipments, with sellers approving actions. The launch follows Amazon’s block on Muse over unauthorized site access; Meta says Muse cannot see users’ passwords or payment information.",
+      "whyItMatters": "Amazon is allowing an outside agent through an approved integration while restricting access through its retail website.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/amazon-opens-seller-data-claude-201212143.html",
+      "source": "Benzinga via Yahoo Finance — September 24, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "agentic-commerce",
+          "name": "Agentic commerce"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-25-amazon-lets-us-sellers-connect-claude-to-their-accounts-days-after-blocking-meta-s-muse-agent"
+    },
+    {
+      "digestItemId": 846,
+      "digestDate": "2026-09-25",
+      "title": "China reports AI talks with the US as leaders meet in Washington",
+      "summary": "China’s commerce ministry said the two countries held an AI dialogue after a meeting between Scott Bessent and He Lifeng. Bessent said the US proposed a way to notify China of national-security AI incidents. The discussions came as Trump publicly opposed international AI controls and Xi called for keeping AI under human control.",
+      "whyItMatters": "Incident reporting is a concrete area for cooperation even while the countries disagree over broader AI rules.",
+      "url": "https://fortune.com/2026/09/24/us-china-ai-labs-converge-ai-guardrail-hotline/",
+      "source": "Fortune — September 24, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-25-china-says-the-us-and-china-held-their-first-ai-dialogue-as-trump-and-xi-meet-in-washington"
+    },
+    {
+      "digestItemId": 852,
+      "digestDate": "2026-09-25",
+      "title": "Gallup finds AI concerns persist among daily US users",
+      "summary": "About 68% of Americans who use AI daily are worried about it, according to a Microsoft-commissioned Gallup survey. The initial results cover 37 countries, with roughly 1,000 respondents per country surveyed between April and July. Attitudes vary widely: in Singapore, more than 80% of people aware of AI expect it to improve everyday life.",
+      "whyItMatters": "Frequent use and public confidence are different measures; adoption alone does not show that people are comfortable with AI.",
+      "url": "https://techcrunch.com/2026/09/23/even-americans-who-use-ai-every-day-are-worried-about-it/",
+      "source": "TechCrunch — September 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-25-gallup-survey-finds-about-68-of-americans-who-use-ai-daily-are-worried-about-it"
+    },
+    {
+      "digestItemId": 851,
+      "digestDate": "2026-09-25",
+      "title": "Google tests Gemini calls to businesses on users’ behalf",
+      "summary": "Google’s experimental Call for Me feature lets Gemini call businesses to check stock, make reservations and change appointments. Initial access is limited to US Pixel 11 owners with a paid Gemini subscription and the beta Phone app. Calls use the user’s number; users approve personal information, follow a transcript and can take over.",
+      "whyItMatters": "The trial tests delegated phone calls with users able to monitor the conversation and intervene.",
+      "url": "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/",
+      "source": "TechCrunch — September 24, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-25-google-begins-testing-call-for-me-a-gemini-feature-that-phones-businesses-on-a-user-s-behalf"
+    },
+    {
+      "digestItemId": 849,
+      "digestDate": "2026-09-25",
+      "title": "Oracle issues a force majeure notice for New Mexico’s Stargate campus",
+      "summary": "Oracle sent a force majeure notice to the developer of Project Jupiter, the 2.45-gigawatt Stargate campus in New Mexico, Bloomberg reported. The project faces a delayed gas pipeline and a pending air-quality permit. Oracle says it remains on schedule, and Blue Owl Capital says the notice does not change the financial commitments.",
+      "whyItMatters": "The campus depends on gas-powered fuel cells, making fuel supply and permitting central to its construction timetable.",
+      "url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
+      "source": "TechCrunch — September 24, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-25-oracle-sends-a-force-majeure-notice-on-its-new-mexico-stargate-data-center-campus"
+    },
+    {
+      "digestItemId": 850,
+      "digestDate": "2026-09-25",
+      "title": "The Pragmatic Engineer reports growing pressure on CPU capacity",
+      "summary": "The Pragmatic Engineer reports that cloud providers are rejecting some CPU reservations as agents run more code, tests and other tools. Citing Claude Platform engineering leader Katelyn Lesse, it reports server delivery times of roughly six months instead of one to two weeks, with prices up 10–20%. This free article republishes reporting subscribers received two weeks earlier.",
+      "whyItMatters": "Teams running agents at scale may need to reserve CPU capacity earlier and make better use of the machines they already have.",
+      "url": "https://blog.pragmaticengineer.com/the-pulse-a-new-trend-of-cpu-shortages/",
+      "source": "The Pragmatic Engineer — September 24, 2026",
+      "linkKind": "article",
+      "newsletters": [
+        {
+          "name": "The Pragmatic Engineer",
+          "signupUrl": "https://blog.pragmaticengineer.com/newsletter/"
+        }
+      ],
+      "tags": [
+        "Hardware",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "editorialNote": "",
+      "anchor": "story-2026-09-25-the-pragmatic-engineer-reports-a-cpu-shortage-as-ai-agents-drive-up-demand-for-server-processors"
+    },
     {
       "digestItemId": 839,
       "digestDate": "2026-09-24",
@@ -1805,8 +1970,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-24 · 7 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-25T13:58:28.130Z",
-  "contentHash": "a2cea4313f9baa6b548531b755468931f91074626c942a1e72aaa39ebd46e112"
+  "publicationStatus": "partial",
+  "notice": "2026-09-25 · 7 stories · More stories to follow",
+  "publishedAt": "2026-09-25T15:03:25.466Z",
+  "contentHash": "bceb9811d1750b20f0fae8017e97399234ccafdd2cb5f2aad7ff8383483fca67"
 }
