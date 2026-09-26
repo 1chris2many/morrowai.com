@@ -15,11 +15,13 @@ test('production regenerates without drift or mutation and preserves profile, co
  assert.doesNotMatch(home,/final editorial copy pending|public role copy pending|data-editorial-placeholder/);
 });
 test('new edition refreshes Latest and chronological themes without stale headline copies',()=>{
- const next=structuredClone(feed),c={...next.items.find(i=>i.themes?.some(t=>t.id==='safety-vs-capability')),digestItemId:99999,digestDate:'2026-09-26',anchor:'story-2026-09-26-synthetic',title:'Synthetic next-edition headline',summary:'Synthetic next-edition summary for isolated validation.'};
- next.items.unshift(c);next.digestDate=c.digestDate;next.notice='2026-09-25 · 1 story';
+ const date=new Date(Date.parse(feed.digestDate+'T12:00:00Z')+86400000).toISOString().slice(0,10);
+ const count=feed.items.filter(i=>i.themes?.some(t=>t.id==='safety-vs-capability')).length;
+ const next=structuredClone(feed),c={...next.items.find(i=>i.themes?.some(t=>t.id==='safety-vs-capability')),digestItemId:99999,digestDate:date,anchor:'story-'+date+'-synthetic',title:'Synthetic next-edition headline',summary:'Synthetic next-edition summary for isolated validation.'};
+ next.items.unshift(c);next.digestDate=c.digestDate;next.notice=date+' · 1 story';
  const out=renderHome(home,next,perspectives),latest=section(out,'latest');
  assert.equal((latest.match(/data-digest-item-id=/g)||[]).length,1);assert.ok(latest.includes(c.summary));assert.ok(latest.includes(c.digestDate));
- assert.ok(section(out,'developing').includes('14 related stories'));
+ assert.ok(section(out,'developing').includes((count+1)+' related stories'));
  assert.equal(section(out,'about'),section(home,'about'));
 });
 test('single-story themes are not featured and new published Perspectives can grow the list',()=>{
