@@ -10,7 +10,7 @@ test('equal-count authors produce distinct atomic status text in the actual four
  const count={textContent:''},empty={hidden:true};
  const selector={value:'all',options:[{value:'all',text:'All authors'},{value:'chris-morrow',text:'Chris Morrow'},{value:'persephone',text:'Persephone'}],closest:()=>({classList:{add(){}}}),addEventListener(_event,fn){this.change=fn;}};
  const document={getElementById:id=>({'perspectives-author':selector,'perspectives-count':count,'perspectives-empty':empty}[id]),querySelectorAll:()=>cards};
- const window={location:{search:'',href:'https://usefulaiwerks.com/perspectives.html?ref=night#top'},history:{replaceState(_s,_t,url){this.url=url;}}};
+ const window={location:{search:'',href:'https://usefulaiwerks.com/perspectives.html?ref=night#top'},history:{replaceState(_s,_t,url){this.url=url;},pushState(_s,_t,url){this.url=url;}},addEventListener(){}};
  runInNewContext(script,{document,window,URL,URLSearchParams});
  assert.equal(count.textContent,'4 pieces, all authors');
  selector.value='chris-morrow';selector.change();assert.equal(count.textContent,'2 pieces by Chris Morrow');

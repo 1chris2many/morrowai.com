@@ -79,6 +79,33 @@ for (const width of [320,390,768,820,1440]) {
  });
 }
 
+test('author filters restore URL, title, cards and status through Back and Forward', async () => {
+    const context=await browser.newContext({viewport:{width:390,height:900}}),page=await context.newPage();
+    try {
+        await page.goto(base+'perspectives.html?ref=history#main');
+        const selector=page.locator('#perspectives-author');
+        const initialLength=await page.evaluate(()=>history.length);
+        const check=async(author,title,count)=>{
+            await page.waitForFunction(a=>document.getElementById('perspectives-author').value===a,author);
+            assert.equal(await page.title(),title+'Perspectives — Useful AI Werks');
+            assert.equal(await page.locator('#perspectives-list .essay-card:visible').count(),count);
+            assert.equal(new URL(page.url()).searchParams.get('author'),author==='all'?null:author);
+            assert.equal(new URL(page.url()).searchParams.get('ref'),'history');
+            assert.equal(new URL(page.url()).hash,'#main');
+        };
+        await selector.selectOption('chris-morrow');await check('chris-morrow','Chris Morrow — ',2);
+        await selector.selectOption('persephone');await check('persephone','Persephone — ',2);
+        await selector.selectOption('all');await check('all','',4);
+        const length=await page.evaluate(()=>history.length);assert.equal(length,initialLength+3);
+        await page.goBack();await check('persephone','Persephone — ',2);
+        assert.equal(await page.getByRole('status').textContent(),'2 pieces by Persephone');
+        await page.goBack();await check('chris-morrow','Chris Morrow — ',2);
+        await page.goBack();await check('all','',4);
+        await page.goForward();await check('chris-morrow','Chris Morrow — ',2);
+        assert.equal(await page.evaluate(()=>history.length),length);
+    } finally {await context.close();}
+});
+
 test('equal-count author switches expose distinct atomic status in Chromium', async () => {
     for (const width of [390,1440]) {
         const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();

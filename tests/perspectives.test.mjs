@@ -62,15 +62,20 @@ function filterFixture(search = '') {
         addEventListener(event, fn) { assert.equal(event, 'change'); this.change = fn; }
     };
     const document = {
+        title: 'Perspectives — Useful AI Werks',
         getElementById(id) { return { 'perspectives-author': selector, 'perspectives-count': count, 'perspectives-empty': empty }[id]; },
         querySelectorAll() { return cards; }
     };
     const window = {
         location: { search, href: `https://usefulaiwerks.com/perspectives.html${search}` },
-        history: { replaceState(_state, _title, address) { this.address = address; } }
+        history: {
+            replaceState(_state, _title, address) { this.address = address; this.mode = 'replace'; },
+            pushState(_state, _title, address) { this.address = address; this.mode = 'push'; }
+        },
+        addEventListener(event, fn) { assert.equal(event, 'popstate'); this.popstate = fn; }
     };
     runInNewContext(script, { document, window, URL, URLSearchParams });
-    return { cards, count, empty, selector, window };
+    return { cards, count, document, empty, selector, window };
 }
 
 test('author filter keeps All, matches Chris, gives an empty state, and updates its shareable URL', () => {
@@ -94,6 +99,24 @@ test('a valid author query opens the corresponding author view', () => {
     assert.equal(cards.filter(card => !card.hidden).length, 2);
     assert.equal(count.textContent, '2 pieces by Chris Morrow');
     assert.equal(window.history.address, undefined);
+});
+test('author titles and history restore URL state without another history write', () => {
+    const {document,selector,window,count} = filterFixture('?author=chris-morrow');
+    assert.equal(document.title,'Chris Morrow — Perspectives — Useful AI Werks');
+    selector.value='all';selector.change();
+    assert.equal(window.history.mode,'push');
+    assert.equal(document.title,'Perspectives — Useful AI Werks');
+    window.history.address=undefined;window.history.mode=undefined;
+    window.location.search='?author=chris-morrow';window.popstate();
+    assert.equal(selector.value,'chris-morrow');
+    assert.equal(document.title,'Chris Morrow — Perspectives — Useful AI Werks');
+    assert.equal(count.textContent,'2 pieces by Chris Morrow');
+    assert.equal(window.history.address,undefined);
+    window.location.search='?author=bogus';window.popstate();
+    assert.equal(selector.value,'all');
+    assert.equal(document.title,'Perspectives — Useful AI Werks');
+    assert.equal(window.history.address,undefined);
+    assert.equal(filterFixture('?author=bogus').window.history.mode,'replace');
 });
 test('invalid and empty author queries normalize to All while preserving unrelated parameters', () => {
     for (const author of ['bogus', '']) {
