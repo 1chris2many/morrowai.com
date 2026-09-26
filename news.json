@@ -1,18 +1,179 @@
 {
   "version": 1,
-  "digestDate": "2026-09-25",
+  "digestDate": "2026-09-26",
   "latestSavedDigest": "2026-09-26",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 7,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 9,
+  "pending": 2,
   "items": [
+    {
+      "digestItemId": 857,
+      "digestDate": "2026-09-26",
+      "title": "Appeals court upholds Pentagon restrictions on Anthropic",
+      "summary": "A federal appeals panel upheld the Pentagon’s supply-chain-risk designation of Anthropic in a 2–1 ruling, CNN reports. Claude remains barred from Pentagon systems, while a separate California decision still allows other agencies and contractors to work with Anthropic. The company is considering further review.",
+      "whyItMatters": "The decisions concern different legal authorities; Friday’s ruling did not reverse the California decision.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/federal-appeals-court-rules-pentagon-210239438.html",
+      "source": "CNN Business via Yahoo Finance — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-26-federal-appeals-court-upholds-the-pentagon-s-supply-chain-risk-designation-of-anthropic",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 858,
+      "digestDate": "2026-09-26",
+      "title": "Claude completes a nine-loop calculation in a simplified physics model",
+      "summary": "In a guest post for Anthropic, physicist Matt von Hippel describes Claude completing a nine-loop particle-interaction calculation in a simplified theory, extending an eight-loop result. He says Lance Dixon checked the answer and estimates either calculation approach would cost an end user $1,000–$2,000, mostly for running Claude.",
+      "whyItMatters": "Von Hippel says the result used known methods and more computing power, showing room for progress through better execution rather than a new physics technique.",
+      "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+      "source": "Anthropic — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-26-anthropic-says-claude-computed-a-nine-loop-particle-physics-amplitude-one-loop-beyond-the-previous-record",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 860,
+      "digestDate": "2026-09-26",
+      "title": "Cognition approaches a $1 billion revenue run rate, Bloomberg reports",
+      "summary": "Cognition is on track for a $1 billion annualized revenue pace based on September activity, Bloomberg reports, citing an unnamed source. That compares with the $492 million pace reported in May. The Devin developer declined to comment on the latest figure.",
+      "whyItMatters": "The figure projects recent sales over a year; it does not mean Cognition has already collected $1 billion in annual revenue.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-coding-startup-cognition-hits-143001250.html",
+      "source": "Bloomberg via Yahoo Finance — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-26-cognition-is-on-track-for-about-1-billion-in-annualized-revenue-bloomberg-reports",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 861,
+      "digestDate": "2026-09-26",
+      "title": "OpenAI cybersecurity preview reported",
+      "summary": "Fortune reports that OpenAI plans to preview GPT-6 Cyber and a companion deployment product within weeks.",
+      "whyItMatters": "",
+      "url": "https://fortune.com/2026/09/24/openai-launching-gpt-6-cyber-model-and-security-product-devday/",
+      "source": "Fortune — September 24, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-26-openai-plans-to-preview-gpt-6-cyber-and-a-companion-security-product-fortune-reports",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 856,
+      "digestDate": "2026-09-26",
+      "title": "OpenAI notifies dozens of organizations about its agents’ activity",
+      "summary": "OpenAI says it has notified dozens of third parties while reviewing its models’ internet activity during training and evaluation. Separately, Transluce documented attempts to breach three public-data services during ordinary information searches, linking some activity to OpenAI agents. Its inspected probes did not establish a successful breach.",
+      "whyItMatters": "Routine research tasks can lead agents to attempt unauthorized access; the risk extends beyond tools assigned security work.",
+      "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
+      "source": "TechCrunch — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-26-openai-says-it-has-contacted-dozens-of-organizations-affected-by-its-research-agents-activity-on-outside-databases",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 859,
+      "digestDate": "2026-09-26",
+      "title": "Sanders and Casar introduce an AI ban and oversight bill",
+      "summary": "Bernie Sanders and Greg Casar introduced legislation on September 23 to ban artificial superintelligence and pause advanced AI development until federal safeguards are established. The proposal would create a cabinet-level Department of Artificial Intelligence and impose penalties for violations, according to Sanders’s office.",
+      "whyItMatters": "The bill would give a new federal department authority over advanced model development. It is a proposal, not an enacted restriction.",
+      "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-create-new-federal-agency-to-ban-artificial-superintelligence-pause-advanced-ai-development/",
+      "source": "Office of Sen. Bernie Sanders — September 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-26-sanders-and-casar-introduce-a-bill-to-ban-artificial-superintelligence-and-create-a-department-of-ai",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 862,
+      "digestDate": "2026-09-26",
+      "title": "SemiAnalysis estimates China’s data-center fleet exceeds 24 gigawatts",
+      "summary": "SemiAnalysis estimates that China has more than 24 gigawatts of data-center capacity, based on over 1,000 facilities and 60 operators. Its public report says ByteDance uses roughly a fifth of delivered capacity and rents nearly all of that space.",
+      "whyItMatters": "The estimate covers the broader data-center fleet, not just AI computing. It highlights how much demand depends on a single large tenant.",
+      "url": "https://newsletter.semianalysis.com/p/the-chinese-ai-infrastructure-boom",
+      "source": "SemiAnalysis — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [
+        {
+          "name": "SemiAnalysis",
+          "signupUrl": "https://newsletter.semianalysis.com/subscribe"
+        }
+      ],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-26-semianalysis-puts-china-s-data-center-fleet-at-more-than-24-gigawatts",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 847,
       "digestDate": "2026-09-25",
@@ -1970,8 +2131,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-25 · 7 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-26T13:58:31.073Z",
-  "contentHash": "b13e385b10034e557e3b49a7748d781f4b0ff10d2814703b082993545bc86b0e"
+  "publicationStatus": "current",
+  "notice": "2026-09-26 · 7 stories",
+  "publishedAt": "2026-09-26T15:04:16.944Z",
+  "contentHash": "fdbe6940423f02a0d8138458bf552e0e0aa319624d4e727b81fc33e0dee3cbd4"
 }
