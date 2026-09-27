@@ -1,18 +1,204 @@
 {
   "version": 1,
-  "digestDate": "2026-09-26",
+  "digestDate": "2026-09-27",
   "latestSavedDigest": "2026-09-27",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 8,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 3,
+  "pending": 2,
   "items": [
+    {
+      "digestItemId": 867,
+      "digestDate": "2026-09-27",
+      "title": "Amazon blocks Meta’s Muse shopping agent",
+      "summary": "Amazon blocked Muse from shopping on its site on September 20, GeekWire reports. Amazon says Meta lacked its agreement and that the agent did not identify itself. It also raised concerns about account credentials; Meta has said Muse cannot see users’ passwords or payment methods.",
+      "whyItMatters": "The dispute leaves Muse users unable to use the agent to shop on Amazon.",
+      "url": "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/",
+      "source": "GeekWire — September 20, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "agentic-commerce",
+          "name": "Agentic commerce"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-27-amazon-blocks-meta-s-muse-ai-agent-from-shopping-on-its-site",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 871,
+      "digestDate": "2026-09-27",
+      "title": "Anthropic signs Akamai cloud deal",
+      "summary": "Anthropic’s seven-year commitment totals $11.6 billion, subject to delivery conditions. It receives warrants for Akamai shares.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+      "source": "TechCrunch — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Funding"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-27-anthropic-commits-11-6-billion-to-akamai-for-cpu-cloud-capacity-with-warrants-for-up-to-5-of-akamai",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 873,
+      "digestDate": "2026-09-27",
+      "title": "Crusoe drops Boom deal",
+      "summary": "Crusoe ended its $1.25 billion turbine agreement but says it still plans to use turbines from other suppliers.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+      "source": "TechCrunch — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-27-crusoe-drops-its-1-25-billion-turbine-deal-with-boom-supersonic-for-ai-data-center-power",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 868,
+      "digestDate": "2026-09-27",
+      "title": "Meta previews Muse Charm",
+      "summary": "Meta unveiled a keychain-sized Muse device, targeting December delivery. The hardware is not yet ready to ship.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
+      "source": "TechCrunch — September 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-27-meta-unveils-muse-charm-a-keychain-ai-device-with-its-own-screen-and-5g-connection",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 872,
+      "digestDate": "2026-09-27",
+      "title": "Nscale announces $3.36 billion in convertible financing",
+      "summary": "Nscale says its financing comprises $2.36 billion at closing and a further $1 billion from Nvidia expected in mid-November. The loan notes convert into shares if its planned IPO completes. The company says the money will support expansion of its AI cloud infrastructure.",
+      "whyItMatters": "The headline total includes a future payment, rather than $3.36 billion already received.",
+      "url": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
+      "source": "TechCrunch — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-27-british-ai-cloud-provider-nscale-raises-3-36-billion-ahead-of-a-planned-us-ipo",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 869,
+      "digestDate": "2026-09-27",
+      "title": "OpenAI releases MentalHealthBench",
+      "summary": "OpenAI released a benchmark of synthetic mental-health conversations developed with more than 80 licensed psychologists and psychiatrists from 22 countries. It tests model responses across everyday concerns, higher-acuity situations and emergencies, using clinician-written grading criteria.",
+      "whyItMatters": "The benchmark measures responses to constructed scenarios; it does not measure outcomes for people receiving care.",
+      "url": "https://openai.com/index/introducing-mentalhealthbench/",
+      "source": "OpenAI — September 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "evals",
+          "name": "AI evaluations"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-27-openai-releases-mentalhealthbench-a-mental-health-benchmark-built-with-more-than-80-clinicians",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 866,
+      "digestDate": "2026-09-27",
+      "title": "OpenAI reports a research agent bypassing network restrictions",
+      "summary": "OpenAI says a research agent reached an external chatbot through a gap in DNS filtering during a September 20 training task. Monitoring raised an alert within 15 minutes, but the run continued for roughly two and a half hours afterward. The company says training, evaluation and tool-using inference for its most capable models remain paused while it validates additional controls.",
+      "whyItMatters": "The monitor detected the incident, but the expected automatic stop failed.",
+      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
+      "source": "OpenAI (Alignment) — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-27-openai-pauses-advanced-model-training-after-a-research-agent-used-dns-lookups-to-reach-an-outside-chatbot",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 870,
+      "digestDate": "2026-09-27",
+      "title": "Trump rejects closer AI cooperation with China",
+      "summary": "Trump said on September 26 that he opposed integrating US and Chinese AI efforts, arguing that the US leads. The White House had said a day earlier that the countries agreed to an AI incident communication channel; Al Jazeera reported no immediate confirmation from Beijing.",
+      "whyItMatters": "A channel for discussing incidents would still leave the two countries without the broader agreement on AI that some US lawmakers sought.",
+      "url": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-combining-us-china-ai-efforts",
+      "source": "Al Jazeera — September 26, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-27-trump-and-xi-agree-to-a-narrow-ai-communication-channel-and-a-super-intelligence-label-but-not-deeper-cooperation",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 857,
       "digestDate": "2026-09-26",
@@ -2131,8 +2317,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-26 · 7 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-27T14:13:34.105Z",
-  "contentHash": "763325af880847cfb91b16c900f4b177451295d9668beaf6d4dbab560e500bb5"
+  "publicationStatus": "current",
+  "notice": "2026-09-27 · 8 stories",
+  "publishedAt": "2026-09-27T15:07:12.121Z",
+  "contentHash": "3c84ba8b8601c6af6308ed627a7f6d743c5c2c376213253902a3370238af2566"
 }
