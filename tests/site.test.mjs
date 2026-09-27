@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 import { chromium } from 'playwright';
 import { newsAnchor, selectNews, freshnessMessage } from '../js/news-model.js';
 
-const pages = ['index.html', 'themes.html', 'perspectives.html', 'news.html', 'three-windows-ai-safety.html', 'two-financing-paths.html'];
+const pages = ['index.html', 'themes.html', 'perspectives.html', 'news.html', 'three-windows-ai-safety.html', 'two-financing-paths.html', 'the-view-from-inside-the-declaration.html'];
 const assets = ['css/news-first.css', 'css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/perspectives.js', 'js/news.js', 'js/news-model.js', 'js/analytics.js', 'news.json', 'feed.xml'];
 let server, browser, base;
 const feed = JSON.parse(await readFile(new URL('../news.json', import.meta.url)));
@@ -54,7 +54,7 @@ for (const width of [320,390,768,820,1440]) {
     if(item.whyItMatters)assert.equal(await c.locator('.news-why').textContent(),item.whyItMatters);
     assert.equal(await c.locator('h3 a').getAttribute('href'),'https://usefulaiwerks.com/news.html#'+item.anchor);
    }
-   assert.equal(await p.locator('#perspectives .essay-card').count(),4);assert.equal(await p.locator('#team article').count(),7);
+   assert.equal(await p.locator('#perspectives .essay-card').count(),5);assert.equal(await p.locator('#team article').count(),7);
    assert.equal(await p.locator('#speaking .speaking-list li').count(),3);
    assert.equal(await p.locator('[data-editorial-placeholder],.placeholder').count(),0);
    assert.equal(await p.locator('.contact-email').getAttribute('href'),'mailto:hello@usefulaiwerks.com');
@@ -95,12 +95,12 @@ test('author filters restore URL, title, cards and status through Back and Forwa
         };
         await selector.selectOption('chris-morrow');await check('chris-morrow','Chris Morrow — ',2);
         await selector.selectOption('persephone');await check('persephone','Persephone — ',2);
-        await selector.selectOption('all');await check('all','',4);
+        await selector.selectOption('all');await check('all','',5);
         const length=await page.evaluate(()=>history.length);assert.equal(length,initialLength+3);
         await page.goBack();await check('persephone','Persephone — ',2);
         assert.equal(await page.getByRole('status').textContent(),'2 pieces by Persephone');
         await page.goBack();await check('chris-morrow','Chris Morrow — ',2);
-        await page.goBack();await check('all','',4);
+        await page.goBack();await check('all','',5);
         await page.goForward();await check('chris-morrow','Chris Morrow — ',2);
         assert.equal(await page.evaluate(()=>history.length),length);
     } finally {await context.close();}
@@ -121,8 +121,8 @@ test('equal-count author switches expose distinct atomic status in Chromium', as
             assert.equal(await page.locator('#perspectives-list .essay-card:visible').count(),2);
             assert.match(page.url(),/author=persephone&ref=night#main/);
             await select.selectOption('all');
-            assert.equal(await status.textContent(),'4 pieces, all authors');
-            assert.equal(await page.locator('#perspectives-list .essay-card:visible').count(),4);
+            assert.equal(await status.textContent(),'5 pieces, all authors');
+            assert.equal(await page.locator('#perspectives-list .essay-card:visible').count(),5);
             assert.equal(new URL(page.url()).search,'?ref=night');
             assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
         } finally {await context.close();}
@@ -226,10 +226,10 @@ test('Perspectives is HTML-first with attributed cards and accessible author fil
         try {
             await page.goto(base + 'perspectives.html');
             const cards = page.locator('#perspectives-list .essay-card:visible');
-            assert.equal(await cards.count(), 4);
-            assert.deepEqual(await cards.evaluateAll(els => els.map(el => el.dataset.authorId)), ['persephone', 'persephone', 'chris-morrow', 'chris-morrow']);
-            assert.deepEqual(await page.locator('.perspectives-byline').allTextContents(), ['By Persephone', 'By Persephone', 'By Chris Morrow', 'By Chris Morrow']);
-            assert.equal(await page.locator('#perspectives-count').textContent(), javaScriptEnabled ? '4 pieces, all authors' : '4 pieces');
+            assert.equal(await cards.count(), 5);
+            assert.deepEqual(await cards.evaluateAll(els => els.map(el => el.dataset.authorId)), ['nyx', 'persephone', 'persephone', 'chris-morrow', 'chris-morrow']);
+            assert.deepEqual(await page.locator('.perspectives-byline').allTextContents(), ['By Nyx', 'By Persephone', 'By Persephone', 'By Chris Morrow', 'By Chris Morrow']);
+            assert.equal(await page.locator('#perspectives-count').textContent(), javaScriptEnabled ? '5 pieces, all authors' : '5 pieces');
             for (const title of ['AI coding costs and product prioritization', 'Agentic commerce: trust and checkout']) {
                 assert.equal(await page.getByRole('link', { name: title + ' (opens in a new tab)', exact: true }).count(), 1);
             }
@@ -266,17 +266,46 @@ test('Perspectives is HTML-first with attributed cards and accessible author fil
                 await page.screenshot({ path: 'test-results/three-windows-mobile.png', fullPage: true });
                 await page.goto(base + 'perspectives.html');
                 await page.locator('#perspectives-author').selectOption('all');
-                assert.equal(await cards.count(), 4);
+                assert.equal(await cards.count(), 5);
                 assert.equal(new URL(page.url()).searchParams.has('author'), false);
                 await page.goto(base + 'perspectives.html?author=bogus&ref=shared#main');
                 assert.equal(await page.locator('#perspectives-author').inputValue(), 'all');
-                assert.equal(await cards.count(), 4);
+                assert.equal(await cards.count(), 5);
                 assert.equal(new URL(page.url()).searchParams.has('author'), false);
                 assert.equal(new URL(page.url()).searchParams.get('ref'), 'shared');
                 assert.equal(new URL(page.url()).hash, '#main');
             }
         } finally { await context.close(); }
     }
+});
+
+test('Nyx author536 exact essay is HTML-first and discoverable by author', async () => {
+    const source=await readFile(new URL('../content/nyx-view-from-inside.md',import.meta.url),'utf8');
+    assert.equal(createHash('sha256').update(source).digest('hex'),'e1c8630f5372895ddf30a3c0040830f02e47df243e31986826c7d3b0d7471a26');
+    const expected=source.split('\n---\n').slice(1,-1).join('\n---\n').replace(/\[([^\]]+)\]\(https:\/\/[^)]+\)/g,'$1').replace(/---/g,' ').replace(/\s+/g,' ').trim();
+    for(const width of [390,1440]){
+        const context=await browser.newContext({javaScriptEnabled:false,viewport:{width,height:900}}),page=await context.newPage();
+        try{
+            assert.equal((await page.goto(base+'the-view-from-inside-the-declaration.html')).status(),200);
+            assert.equal(await page.locator('h1').textContent(),'The View from Inside the Declaration');
+            assert.equal(await page.locator('.blog-author').textContent(),'By Nyx');
+            assert.equal((await page.locator('#article-body p').allTextContents()).join(' ').replace(/\s+/g,' ').trim(),expected);
+            assert.equal(await page.locator('.author-disclosure').count(),0);
+            assert.equal(await page.locator('meta[name="robots"]').count(),0);
+            assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),'https://usefulaiwerks.com/the-view-from-inside-the-declaration.html');
+            assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+            await page.screenshot({path:'test-results/nyx-essay-'+width+'.png'});
+        }finally{await context.close();}
+    }
+    const context=await browser.newContext(),page=await context.newPage();
+    try{
+        await page.goto(base+'perspectives.html?author=nyx');
+        assert.equal(await page.locator('#perspectives-list .essay-card:visible').count(),1);
+        assert.equal(await page.getByRole('status').textContent(),'1 piece by Nyx');
+        assert.equal(await page.title(),'Nyx — Perspectives — Useful AI Werks');
+        await page.locator('#perspectives-list a:visible').click();
+        assert.equal(new URL(page.url()).pathname.split('/').at(-1),'the-view-from-inside-the-declaration.html');
+    }finally{await context.close();}
 });
 
 test('stale feeds disclose delay even when the publishing machine is offline', () => {

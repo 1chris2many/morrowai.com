@@ -226,10 +226,10 @@ test('tracker failures do not throw or prevent navigation', () => {
 });
 
 test('all public pages carry notice and script; digest rebuild preserves analytics, verification and feed', async () => {
-    const pages = ['index.html', 'news.html', 'themes.html', 'perspectives.html', 'three-windows-ai-safety.html', 'two-financing-paths.html'];
+    const pages = ['index.html', 'news.html', 'themes.html', 'perspectives.html', 'three-windows-ai-safety.html', 'two-financing-paths.html', 'the-view-from-inside-the-declaration.html'];
     for (const file of pages) {
         const html = await readFile(new URL(file, root), 'utf8');
-        assert.equal((html.match(/src="js\/analytics.js\?v=20260925"/g) || []).length, 1, file);
+        assert.equal((html.match(/src="js\/analytics.js\?v=20260926"/g) || []).length, 1, file);
         assert.equal((html.match(/data-analytics-opt-out/g) || []).length, 1, file);
         if (file === 'index.html' || file === 'perspectives.html') {
             assert.equal((html.match(/data-analytics-story=/g) || []).length, 2, file);

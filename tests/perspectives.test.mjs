@@ -48,7 +48,7 @@ test('author selector describes its current result count and announces changes p
     assert.ok(selector);
     assert.match(selector, /aria-controls="perspectives-list"/);
     assert.match(selector, /aria-describedby="perspectives-count"/);
-    assert.match(html, /<p id="perspectives-count" role="status" aria-live="polite" aria-atomic="true">4 pieces<\/p>/);
+    assert.match(html, /<p id="perspectives-count" role="status" aria-live="polite" aria-atomic="true">5 pieces<\/p>/);
 });
 
 function filterFixture(search = '') {

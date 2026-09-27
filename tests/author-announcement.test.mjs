@@ -6,16 +6,16 @@ const html=await readFile(new URL('../perspectives.html',import.meta.url),'utf8'
 const script=await readFile(new URL('../js/perspectives.js',import.meta.url),'utf8');
 test('equal-count authors produce distinct atomic status text in the actual four-card inventory',()=>{
  const cards=[...html.matchAll(/class="essay-card" data-author-id="([^"]+)"/g)].map(m=>({dataset:{authorId:m[1]},hidden:false}));
- assert.equal(cards.length,4);
+ assert.equal(cards.length,5);
  const count={textContent:''},empty={hidden:true};
  const selector={value:'all',options:[{value:'all',text:'All authors'},{value:'chris-morrow',text:'Chris Morrow'},{value:'persephone',text:'Persephone'}],closest:()=>({classList:{add(){}}}),addEventListener(_event,fn){this.change=fn;}};
  const document={getElementById:id=>({'perspectives-author':selector,'perspectives-count':count,'perspectives-empty':empty}[id]),querySelectorAll:()=>cards};
  const window={location:{search:'',href:'https://usefulaiwerks.com/perspectives.html?ref=night#top'},history:{replaceState(_s,_t,url){this.url=url;},pushState(_s,_t,url){this.url=url;}},addEventListener(){}};
  runInNewContext(script,{document,window,URL,URLSearchParams});
- assert.equal(count.textContent,'4 pieces, all authors');
+ assert.equal(count.textContent,'5 pieces, all authors');
  selector.value='chris-morrow';selector.change();assert.equal(count.textContent,'2 pieces by Chris Morrow');
  selector.value='persephone';selector.change();assert.equal(count.textContent,'2 pieces by Persephone');
  assert.equal(cards.filter(c=>!c.hidden).length,2);
  assert.equal(window.history.url,'/perspectives.html?ref=night&author=persephone#top');
- assert.match(html,/<p id="perspectives-count" role="status" aria-live="polite" aria-atomic="true">4 pieces<\/p>/);
+ assert.match(html,/<p id="perspectives-count" role="status" aria-live="polite" aria-atomic="true">5 pieces<\/p>/);
 });

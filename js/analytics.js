@@ -4,9 +4,9 @@
 
     var website = '45502ceb-6612-4753-82a7-11d449338391';
     var hosts = ['usefulaiwerks.com', 'www.usefulaiwerks.com'];
-    var pages = ['/', '/news.html', '/themes.html', '/perspectives.html', '/two-financing-paths.html', '/three-windows-ai-safety.html'];
+    var pages = ['/', '/news.html', '/themes.html', '/perspectives.html', '/two-financing-paths.html', '/three-windows-ai-safety.html', '/the-view-from-inside-the-declaration.html'];
     var themes = ['ai-regulation', 'ai-infrastructure', 'workplace-agents', 'open-weights', 'recursive-ai', 'safety-vs-capability', 'agentic-commerce', 'openai-ipo', 'us-china', 'agent-economics'];
-    var authors = ['all', 'chris-morrow', 'persephone'];
+    var authors = ['all', 'chris-morrow', 'persephone', 'nyx'];
     var stories = ['ai-coding-costs', 'agentic-commerce-trust'];
     var optOutKey = 'usefulaiwerks.analytics.off';
     var stopped = false;
