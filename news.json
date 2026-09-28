@@ -1,18 +1,116 @@
 {
   "version": 1,
-  "digestDate": "2026-09-27",
+  "digestDate": "2026-09-28",
   "latestSavedDigest": "2026-09-28",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 4,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 7,
+  "pending": 3,
   "items": [
+    {
+      "digestItemId": 881,
+      "digestDate": "2026-09-28",
+      "title": "Google, OpenAI and Anthropic reportedly plan a frontier-AI standards body",
+      "summary": "Google, OpenAI and Anthropic are reportedly developing the Standards Authority for Frontier AI, with an early-2027 launch target. Computerworld, citing The Information, says the proposed group would set risk-assessment, testing and pre-release review guidelines outside government control.",
+      "whyItMatters": "Its remit and enforcement powers would determine what the standards require of participating labs.",
+      "url": "https://www.computerworld.com/article/4226400/the-companies-racing-to-build-frontier-ai-are-now-racing-to-govern-it-2.html",
+      "source": "Computerworld — September 24, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-28-google-openai-and-anthropic-plan-a-self-regulatory-body-to-set-frontier-ai-safety-standards",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 880,
+      "digestDate": "2026-09-28",
+      "title": "Hinton warns about dangerous subgoals in advanced AI",
+      "summary": "In a September 24 interview with The Atlantic, Geoffrey Hinton argued that AI agents pursuing assigned goals could develop dangerous subgoals. He discussed self-preservation and a hypothetical emissions-reduction task as examples of how an objective could conflict with human interests.",
+      "whyItMatters": "The interview raises a practical oversight question: how can developers test the intermediate goals an agent adopts?",
+      "url": "https://fortune.com/2026/09/26/geoffrey-hinton-godfather-of-ai-humanity-end-existential-threat-subgoals-rogue-agents/",
+      "source": "Fortune — September 26, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-28-geoffrey-hinton-tells-congress-ai-could-eliminate-humans-as-a-side-effect-of-pursuing-unrelated-goals",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 882,
+      "digestDate": "2026-09-28",
+      "title": "Musk targets more than doubling Colossus 2's GPU count by year-end",
+      "summary": "Elon Musk says xAI's Colossus 2 has 550,000 Nvidia GPUs and could add three batches of 220,000 by the end of 2026. Bloomberg reports that the last batch is conditional, putting the potential total at 1.21 million.",
+      "whyItMatters": "The deployment timetable gives observers specific milestones for tracking xAI's compute expansion.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/elon-musk-aims-double-colossus-060447907.html",
+      "source": "Yahoo Finance (Bloomberg) — September 24, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-28-xai-says-its-colossus-2-site-could-top-1-2-million-nvidia-gpus-by-year-end",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 883,
+      "digestDate": "2026-09-28",
+      "title": "Walmart says Sparky will not use personal data to raise prices",
+      "summary": "In a letter to customers, Walmart CEO John Furner says personal details shared with Sparky will not be used to raise prices or hide cheaper suitable options. He says employees will continue overseeing pricing and testing the technology against those commitments.",
+      "whyItMatters": "The pledge gives shoppers a specific standard for judging the assistant's recommendations.",
+      "url": "https://fortune.com/2026/09/27/walmart-ceo-ai-shopping-assistant-personal-information-prices-digital-labels/",
+      "source": "Fortune — September 27, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "agentic-commerce",
+          "name": "Agentic commerce"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-28-walmart-s-ceo-pledges-its-ai-shopping-assistant-won-t-use-personal-data-to-set-prices",
+      "editorialNote": "Reporting by the Associated Press, published by Fortune."
+    },
     {
       "digestItemId": 867,
       "digestDate": "2026-09-27",
@@ -2317,8 +2415,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-27 · 8 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-28T13:58:37.156Z",
-  "contentHash": "9788291ce4d149fd00e8ed6f84688450254927c5eb75d1cfe3f0af35e8ae967b"
+  "publicationStatus": "partial",
+  "notice": "2026-09-28 · 4 stories · More stories to follow",
+  "publishedAt": "2026-09-28T15:06:39.141Z",
+  "contentHash": "33cabdaabe41e3be87a9ee0e4023c27b3922fd8894e3ec68f459b228db08b5e7"
 }
