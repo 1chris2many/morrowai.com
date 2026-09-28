@@ -10,7 +10,7 @@ const section=(html,id)=>html.match(new RegExp(`<section\\b[^>]*\\bid="${id}"[^>
 test('production regenerates without drift or mutation and preserves profile, contact and privacy assets',()=>{
  const before=JSON.stringify(feed);assert.equal(renderHome(home,feed,perspectives),home);assert.equal(JSON.stringify(feed),before);
  for(const id of ['about','contact'])assert.equal(section(home,id),section(published,id));
- for(const value of ['google-site-verification','js/analytics.js?v=20260926','data-analytics-opt-out'])assert.ok(home.includes(value));
+ for(const value of ['google-site-verification','js/analytics.js?v=20260928','data-analytics-opt-out'])assert.ok(home.includes(value));
  assert.doesNotMatch(home,/noindex|nofollow/);
  assert.doesNotMatch(home,/final editorial copy pending|public role copy pending|data-editorial-placeholder/);
 });

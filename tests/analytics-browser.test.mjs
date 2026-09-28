@@ -71,7 +71,7 @@ test('real DOM filters and links send the expected fake Umami events without cha
         await page.goto('https://usefulaiwerks.com/perspectives.html');
         await page.waitForFunction(() => window.analyticsEvents?.length === 1);
         await page.selectOption('#perspectives-author', 'persephone');
-        assert.equal(await page.locator('#perspectives-list .essay-card:visible').count(), 2);
+        assert.equal(await page.locator('#perspectives-list .essay-card:visible').count(), 3);
         assert.equal(new URL(page.url()).searchParams.get('author'), 'persephone');
         assert.deepEqual(await page.evaluate(() => window.analyticsEvents.map(e => e.name || 'pageview')), ['pageview']);
 

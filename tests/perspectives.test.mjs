@@ -30,11 +30,11 @@ test('Perspectives discovery survives digest regeneration and preserves the home
     assert.match(home, /id="essays"/);
 });
 
-test('Perspectives serves two Chris originals and two approved Persephone pieces without JavaScript', () => {
+test('Perspectives serves two Chris originals and three approved Persephone pieces without JavaScript', () => {
     assert.equal((html.match(/class="essay-card" data-author-id="chris-morrow"/g) || []).length, 2);
     assert.equal((html.match(/class="perspectives-byline">By Chris Morrow/g) || []).length, 2);
     assert.match(html, /value="all">All authors/);
-    assert.equal((html.match(/class="essay-card" data-author-id="persephone"/g) || []).length, 2);
+    assert.equal((html.match(/class="essay-card" data-author-id="persephone"/g) || []).length, 3);
     assert.match(html, /href="three-windows-ai-safety.html"/);
     assert.match(html, /value="persephone">Persephone/);
     assert.match(html, /<label for="perspectives-author">Browse by author<\/label>/);
@@ -48,7 +48,7 @@ test('author selector describes its current result count and announces changes p
     assert.ok(selector);
     assert.match(selector, /aria-controls="perspectives-list"/);
     assert.match(selector, /aria-describedby="perspectives-count"/);
-    assert.match(html, /<p id="perspectives-count" role="status" aria-live="polite" aria-atomic="true">5 pieces<\/p>/);
+    assert.match(html, /<p id="perspectives-count" role="status" aria-live="polite" aria-atomic="true">6 pieces<\/p>/);
 });
 
 function filterFixture(search = '') {
