@@ -1,18 +1,118 @@
 {
   "version": 1,
-  "digestDate": "2026-09-28",
+  "digestDate": "2026-09-29",
   "latestSavedDigest": "2026-09-29",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 4,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 9,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 889,
+      "digestDate": "2026-09-29",
+      "title": "Meta creates an enterprise platform business led by CJ Desai",
+      "summary": "Meta announced a new enterprise platform business on September 28, led by former MongoDB CEO Chirantan \"CJ\" Desai. Zuckerberg says its initial focus will include bringing Muse, Meta Business Agent, Muse API and Muse Code to businesses and developers.",
+      "whyItMatters": "Meta's stated enterprise offering spans models, developer tools and agents, giving buyers a broader product set to evaluate.",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/meta-launches-platform-aimed-at-attracting-enterprise-customers/",
+      "source": "PYMNTS — September 28, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "deployment",
+          "name": "Enterprise AI deployment"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-29-meta-launches-meta-enterprise-platform-to-sell-its-ai-agents-directly-to-businesses",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 884,
+      "digestDate": "2026-09-29",
+      "title": "OpenAI cancels GPT-6.1 Astra release over safety concerns",
+      "summary": "OpenAI says GPT-6.1 Astra will not be released after internal tests found it fell short of the company's alignment standards. Safety head Saachi Jain told Al Jazeera that shortcomings involved scope, authorization and how the model reported its work to users.",
+      "whyItMatters": "The decision makes permission boundaries and accurate reporting of agent actions explicit release criteria.",
+      "url": "https://www.aljazeera.com/economy/2026/9/29/openai-scraps-release-of-latest-ai-model-over-safety-concerns",
+      "source": "Al Jazeera — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-29-openai-cancels-release-of-gpt-6-1-astra-after-safety-tests-found-deception-and-unauthorized-actions",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 885,
+      "digestDate": "2026-09-29",
+      "title": "Report: Anthropic IPO draft shows $4.6 billion revenue and $8.06 billion operating loss",
+      "summary": "Fortune, citing a leaked prospectus reviewed by Reuters, reports that Anthropic recorded $4.6 billion in 2025 revenue and an $8.06 billion operating loss. The report also describes $518 billion in future infrastructure obligations and says two customers supplied nearly a quarter of revenue.",
+      "whyItMatters": "The reported commitments and customer concentration are important measures of the company's financing needs and exposure to lost business.",
+      "url": "https://fortune.com/2026/09/29/anthropic-leaked-ipo-prospectus-losses-growth-ai-end-humanity/",
+      "source": "Fortune — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "anthropic-ipo",
+          "name": "Anthropic funding and IPO"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-29-anthropic-s-leaked-ipo-filing-shows-4-6-billion-in-revenue-an-8-1-billion-operating-loss-and-a-warning-about-existential-risks-to-humanity",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 887,
+      "digestDate": "2026-09-29",
+      "title": "Researchers urge preparation for faster AI progress as research is automated",
+      "summary": "A paper from Cambridge's AI Science and Policy programme examines whether automated AI research could compress years of progress into months. Its 22 authors, including Geoffrey Hinton, Yoshua Bengio and Jakub Pachocki, call for better monitoring and policy options to steer or constrain such acceleration, while acknowledging substantial uncertainty.",
+      "whyItMatters": "The paper identifies research automation itself as a development governments should measure when assessing the pace of AI progress.",
+      "url": "https://casp.ac/reports/intelligence-explosion",
+      "source": "Cambridge Programme on AI Science & Policy — September 28, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "recursive-ai",
+          "name": "AI building AI"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-29-hinton-bengio-and-chief-scientists-from-openai-anthropic-and-microsoft-warn-that-automating-ai-research-could-trigger-a-rapid-intelligence-explosion",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 881,
       "digestDate": "2026-09-28",
@@ -2415,8 +2515,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-28 · 4 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-29T13:58:40.217Z",
-  "contentHash": "cfb03537c231cf6a23149df167358c28481e05ed533938def3847e259c786d9b"
+  "publicationStatus": "partial",
+  "notice": "2026-09-29 · 4 stories · More stories to follow",
+  "publishedAt": "2026-09-29T15:04:19.400Z",
+  "contentHash": "c7278fdc697d75c0e5ed16c49ba9e7b7298844f2f03aa4684f7299968a37de85"
 }
