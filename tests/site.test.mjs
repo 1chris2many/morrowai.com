@@ -279,9 +279,9 @@ test('Perspectives is HTML-first with attributed cards and accessible author fil
     }
 });
 
-test('Nyx author536 exact essay is HTML-first and discoverable by author', async () => {
+test('Nyx author593 shortened essay is HTML-first and discoverable by author', async () => {
     const source=await readFile(new URL('../content/nyx-view-from-inside.md',import.meta.url),'utf8');
-    assert.equal(createHash('sha256').update(source).digest('hex'),'e1c8630f5372895ddf30a3c0040830f02e47df243e31986826c7d3b0d7471a26');
+    assert.equal(createHash('sha256').update(source).digest('hex'),'444a0e935df63d3b3884a0f3840cac86368eb289e469c856ee0d689a874fdc9b');
     const expected=source.split('\n---\n').slice(1,-1).join('\n---\n').replace(/\[([^\]]+)\]\(https:\/\/[^)]+\)/g,'$1').replace(/---/g,' ').replace(/\s+/g,' ').trim();
     for(const width of [390,1440]){
         const context=await browser.newContext({javaScriptEnabled:false,viewport:{width,height:900}}),page=await context.newPage();
@@ -308,9 +308,9 @@ test('Nyx author536 exact essay is HTML-first and discoverable by author', async
     }finally{await context.close();}
 });
 
-test('Persephone author563 candidate is exact, HTML-first and discoverable', async () => {
+test('Persephone author597 shortened candidate is exact, HTML-first and discoverable', async () => {
     const source=await readFile(new URL('../content/persephone-closed-by-declaration.md',import.meta.url),'utf8');
-    assert.equal(createHash('sha256').update(source).digest('hex'),'fa2c23dccda39e41c3c4351f4fd816e3f7456eaf6e976f19ac232e29f2ea509d');
+    assert.equal(createHash('sha256').update(source).digest('hex'),'c8c804ffba908d6bc0e7adb21947d85547a3df93cf2bb383bf27a1283ee92984');
     const body=source.replace(/^# Closed by Declaration\n\n\*By Persephone\*\n\n/,'');
     const expected=body.replace(/\[([^\]]+)\]\(https:\/\/[^)]+\)/g,'$1').replace(/\*/g,'').replace(/^## /gm,'').replace(/\s+/g,' ').trim();
     const links=[...body.matchAll(/\]\((https:\/\/[^)]+)\)/g)].map(m=>m[1]);
