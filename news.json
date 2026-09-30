@@ -1,18 +1,131 @@
 {
   "version": 1,
-  "digestDate": "2026-09-29",
+  "digestDate": "2026-09-30",
   "latestSavedDigest": "2026-09-30",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 11,
+  "pending": 6,
   "items": [
+    {
+      "digestItemId": 891,
+      "digestDate": "2026-09-30",
+      "title": "AMD agrees to acquire World Labs for $8.2 billion",
+      "summary": "AMD announced an all-stock agreement to buy Fei-Fei Li's World Labs for approximately $8.2 billion. The spatial-intelligence team will continue its model research within AMD, with Li joining as executive vice president and chief scientist; closing is expected by year-end, subject to approvals and other conditions.",
+      "whyItMatters": "AMD says the lab's work on 3D environments and robotics will help shape its future hardware and software.",
+      "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+      "source": "TechCrunch — September 28, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-30-amd-to-acquire-fei-fei-li-s-world-labs-for-8-2-billion-in-its-second-largest-deal-ever",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 895,
+      "digestDate": "2026-09-30",
+      "title": "America.gov launches federal-services chatbot with integrations to follow",
+      "summary": "The White House launched America.gov on September 29, offering account-free chatbot answers drawn from official federal sources. An executive order directs agencies to integrate covered online services, while a planned early-2027 phase would let people apply for and track benefits within the site.",
+      "whyItMatters": "The service currently helps people find information; completing agency transactions through it will depend on the promised integrations.",
+      "url": "https://www.nextgov.com/digital-government/2026/09/white-house-launches-ai-powered-americagov-digital-front-door/416303/",
+      "source": "Nextgov/FCW — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-30-trump-administration-launches-america-gov-an-ai-chatbot-for-federal-services-and-orders-agencies-to-integrate-with-it",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 894,
+      "digestDate": "2026-09-30",
+      "title": "OpenAI begins rolling out always-on Dots agents in ChatGPT",
+      "summary": "OpenAI began rolling out Dots on September 29: agents with cloud computers that can work toward goals and carry context across ChatGPT, Slack and Teams. Pro and Business Premium access is arriving gradually, with regional exclusions for Pro; connections used for unassigned proactive research are read-only.",
+      "whyItMatters": "Background work makes approval boundaries and visibility into an agent's actions important parts of the product, alongside task performance.",
+      "url": "https://siliconangle.com/2026/09/29/openai-launches-dots-always-on-ai-agents-in-chatgpt-with-their-own-cloud-computers/",
+      "source": "SiliconANGLE — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-30-openai-launches-dots-always-on-chatgpt-agents-that-run-on-their-own-cloud-computers",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 892,
+      "digestDate": "2026-09-30",
+      "title": "Report: OpenAI's annualized revenue approaches $70 billion",
+      "summary": "PYMNTS, citing Axios sources, reports that OpenAI's annualized revenue is nearing $70 billion, about 70% above its pace at the start of the third quarter. Business revenue reportedly more than doubled over that period; the figure projects current revenue over a year and is not a full year's booked sales.",
+      "whyItMatters": "The report points to rapid enterprise growth, but does not establish profitability: current expense figures were unavailable.",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-annualized-revenue-nears-70-billion-amid-enterprise-growth/",
+      "source": "PYMNTS — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "openai-ipo",
+          "name": "OpenAI funding and IPO"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-30-openai-s-annualized-revenue-run-rate-nears-70-billion-up-from-about-40-billion-a-month-earlier",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 890,
+      "digestDate": "2026-09-30",
+      "title": "Six AI companies sign voluntary White House safety accord",
+      "summary": "Leaders of Anthropic, OpenAI, Google, Meta, xAI and Nvidia signed a voluntary AI safety accord at the White House on September 29. They pledged internal monitoring, outside audits and regular meetings on safety standards; the accord leaves the identity of external evaluators unspecified.",
+      "whyItMatters": "The pledge makes external audits part of the companies' stated commitments, but leaves important questions about auditor independence and enforcement unresolved.",
+      "url": "https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development",
+      "source": "Al Jazeera — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-30-trump-and-top-ai-companies-sign-voluntary-joint-commitment-on-frontier-responsibilities-safety-accord",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 889,
       "digestDate": "2026-09-29",
@@ -2515,8 +2628,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-29 · 4 stories · Today’s edition is delayed",
-  "publishedAt": "2026-09-30T13:58:43.188Z",
-  "contentHash": "9f56bd2c4cdedf18649fd029bb0418c6bbf5c12bffdef051e8ee224e3ee5b7ba"
+  "publicationStatus": "partial",
+  "notice": "2026-09-30 · 5 stories · More stories to follow",
+  "publishedAt": "2026-09-30T15:04:08.572Z",
+  "contentHash": "9c99ae6a34aae1f65abafc8a2b1e8b4323ac467bab2364417e3625a0bd120fa9"
 }
