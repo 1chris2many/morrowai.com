@@ -2,16 +2,16 @@
   "version": 1,
   "digestDate": "2026-09-30",
   "latestSavedDigest": "2026-09-30",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 5,
-    "sourceCount": 5,
+    "count": 6,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": true
   },
-  "pending": 6,
+  "pending": 5,
   "items": [
     {
       "digestItemId": 891,
@@ -76,6 +76,30 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-09-30-openai-launches-dots-always-on-chatgpt-agents-that-run-on-their-own-cloud-computers",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 893,
+      "digestDate": "2026-09-30",
+      "title": "Report: OpenAI seeks $30 billion at a $1.4 trillion pre-money valuation",
+      "summary": "Yahoo Finance, citing Bloomberg sources, reports that OpenAI is discussing a funding round of at least $30 billion at a valuation near $1.4 trillion before the new investment. Talks are preliminary and could change; the financing would provide capital while the company defers a public listing.",
+      "whyItMatters": "The reported target excludes the money being raised, so it is not directly comparable to March's $852 billion post-money valuation.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/openai-targets-30-billion-funding-185008998.html",
+      "source": "Yahoo Finance — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [
+        {
+          "id": "openai-ipo",
+          "name": "OpenAI funding and IPO"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-30-openai-seeks-at-least-30-billion-in-new-funding-at-a-1-4-trillion-valuation-as-it-pushes-its-ipo-to-2027",
       "editorialNote": ""
     },
     {
@@ -2628,8 +2652,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "2026-09-30 · 5 stories · More stories to follow",
-  "publishedAt": "2026-09-30T15:04:08.572Z",
-  "contentHash": "9c99ae6a34aae1f65abafc8a2b1e8b4323ac467bab2364417e3625a0bd120fa9"
+  "publicationStatus": "current",
+  "notice": "2026-09-30 · 6 stories",
+  "publishedAt": "2026-09-30T15:31:37.790Z",
+  "contentHash": "b28ee72e0d230726b09f9bd8ec61a624495bc0dce3e2e675bdd1c5b09ca1989d"
 }
