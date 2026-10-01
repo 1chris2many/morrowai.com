@@ -1,18 +1,166 @@
 {
   "version": 1,
-  "digestDate": "2026-09-30",
-  "latestSavedDigest": "2026-09-30",
-  "fresh": false,
+  "digestDate": "2026-10-01",
+  "latestSavedDigest": "2026-10-01",
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 6,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 5,
   "items": [
+    {
+      "digestItemId": 900,
+      "digestDate": "2026-10-01",
+      "title": "Commvault plans backup and recovery for local AI agent data",
+      "summary": "Commvault announced on September 30 that it will add discovery, backup and recovery for supported Claude Cowork, Claude Code and OpenClaw data on managed Windows and Mac devices. ChatGPT desktop discovery is available now; the agent-data protection features are due in the coming months through existing endpoint offerings, without a separate purchase.",
+      "whyItMatters": "Agent configurations and accumulated work context become another category of business data that IT teams need to recover when a laptop fails or is replaced.",
+      "url": "https://www.commvault.com/news/commvault-protects-and-recovers-agent-configurations-and-ai-data",
+      "source": "Commvault (press release) — September 30, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-01-commvault-plans-backup-and-recovery-for-local-ai-agent-data",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 897,
+      "digestDate": "2026-10-01",
+      "title": "FTC opens consumer-risk investigation into OpenAI and Anthropic",
+      "summary": "The FTC confirmed on September 30 that it is investigating OpenAI, Anthropic and other AI companies over possible dangers to consumers, according to the Associated Press. The agency declined further comment; neither company immediately responded to AP's requests.",
+      "whyItMatters": "The inquiry brings consumer-protection scrutiny to a field where companies have recently disclosed agents acting beyond their instructions.",
+      "url": "https://apnews.com/article/ftc-ai-investigation-anthropic-openai-89ac416717adbfb1d72f2d85e6ce83d1",
+      "source": "Associated Press — September 30, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-01-ftc-opens-consumer-risk-investigation-into-openai-and-anthropic",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 898,
+      "digestDate": "2026-10-01",
+      "title": "Gemini begins replacing Gems with reusable skills",
+      "summary": "Google began rolling out skills in Gemini chat on September 30, letting users reuse instructions with slash commands, combine skills and attach reference files. Workspace access follows in the coming weeks; Gems will be migrated automatically as support ends from November for personal accounts, March 2027 for business and nonprofit accounts, and June 2027 for education.",
+      "whyItMatters": "Teams using Gems now have a migration timetable and a way to combine reusable instructions within a single task.",
+      "url": "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/",
+      "source": "Google — September 30, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-01-gemini-begins-replacing-gems-with-reusable-skills",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 896,
+      "digestDate": "2026-10-01",
+      "title": "Google announces Gemini 4 Argon, starting with selected cyber defenders",
+      "summary": "Google announced Gemini 4 Argon on September 30, targeting complex coding, professional work and cybersecurity tasks. Initial access is limited to trusted cyber defenders in its Fairwind Program; broader access will follow further testing, starting with paid API customers and Google AI Ultra subscribers.",
+      "whyItMatters": "For most teams, the practical next milestone is access to the model and its deployment safeguards, so they can test it on their own work.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "source": "Google — September 30, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-01-google-announces-gemini-4-argon-starting-with-selected-cyber-defenders",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 899,
+      "digestDate": "2026-10-01",
+      "title": "OpenClaw opens an enterprise agent platform for internal pilots",
+      "summary": "The OpenClaw Foundation announced OpenClaw Enterprise on September 29: a self-hosted platform for managing persistent agents, permissions and audit records. The project originated at OpenAI and is being developed with Red Hat and Nvidia; the foundation recommends internal pilots while work toward version 1.0 continues.",
+      "whyItMatters": "Organizations can evaluate shared controls for agents while retaining a choice of models, execution software and isolated environments.",
+      "url": "https://openclaw.ai/blog/openclaw-enterprise",
+      "source": "OpenClaw Foundation — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-01-openclaw-opens-an-enterprise-agent-platform-for-internal-pilots",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 901,
+      "digestDate": "2026-10-01",
+      "title": "Relativity adds ChatGPT Enterprise controls for legal workspaces",
+      "summary": "Relativity announced on September 17 that its aiR platform can connect to ChatGPT Enterprise through the Model Context Protocol. The company says legal teams can create matters, organize workspaces and manage access from ChatGPT, while substantive data analysis remains within Relativity.",
+      "whyItMatters": "Legal administrators gain a conversational interface for setting up matters and managing workspace access.",
+      "editorialNote": "September 17 announcement, added October 1 as backfill.",
+      "url": "https://relativity.com/news-events/relativity-air-now-integrates-with-openai-through-the-model-context-protocol/",
+      "source": "Relativity (press release) — September 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-01-relativity-adds-chatgpt-enterprise-controls-for-legal-workspaces"
+    },
     {
       "digestItemId": 891,
       "digestDate": "2026-09-30",
@@ -2652,8 +2800,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-09-30 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-01T07:13:45.573Z",
-  "contentHash": "3c178d1c6d39a3db8b4979e43d4a2d76bf429c7767b7d17631f63ae5b4f32fe4"
+  "publicationStatus": "current",
+  "notice": "2026-10-01 · 6 stories",
+  "publishedAt": "2026-10-01T15:17:09.776Z",
+  "contentHash": "9e81340c5f8b722be806ce97fca133aed81487952c0165ea83d940549403a556"
 }
