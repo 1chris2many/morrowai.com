@@ -1,18 +1,156 @@
 {
   "version": 1,
-  "digestDate": "2026-10-01",
+  "digestDate": "2026-10-02",
   "latestSavedDigest": "2026-10-02",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 6,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 6,
   "items": [
+    {
+      "digestItemId": 902,
+      "digestDate": "2026-10-02",
+      "title": "Anthropic finds GLM-5.3 approaches Mythos Preview on cyber benchmarks",
+      "summary": "Anthropic reports that GLM-5.3 built working exploits in 50 of 410 sandboxed benchmark attempts, compared with 56 for Claude Mythos Preview. Its September 29 analysis also found weaknesses in GLM-5.3's safeguards, while noting that these simulated tests are imperfect measures of real-world behavior.",
+      "whyItMatters": "The findings point to stronger tools for both vulnerability research and cyber misuse.",
+      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "source": "Anthropic — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-02-anthropic-chinese-open-weight-model-glm-5-3-nearly-matches-claude-s-cyberattack-skills",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 907,
+      "digestDate": "2026-10-02",
+      "title": "Broadcom agrees to provide Anthropic up to $42 billion in financing",
+      "summary": "Reuters reports that Anthropic's IPO filing describes up to $42 billion in Broadcom financing for infrastructure, with debt potentially convertible into shares. Anthropic says it does not expect notes to be sold before its IPO and warns that Broadcom's supplier-and-lender role creates potential conflicts of interest.",
+      "whyItMatters": "The arrangement ties part of Anthropic's financing to a major provider of its computing capacity.",
+      "url": "https://www.cnbc.com/2026/10/01/broadcom-lending-anthropic-42-billion-chips-reuters.html",
+      "source": "CNBC (citing Reuters) — October 1, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-02-broadcom-to-lend-anthropic-up-to-42-billion-to-finance-its-chip-leases",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 904,
+      "digestDate": "2026-10-02",
+      "title": "LeCun challenges AI catastrophe warnings",
+      "summary": "In Fortune, LeCun rejects AI-extinction predictions. He disputes Amodei's warnings.",
+      "whyItMatters": "",
+      "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+      "source": "Fortune — October 1, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-02-yann-lecun-calls-anthropic-s-dario-amodei-deluded-over-ai-extinction-warnings",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 906,
+      "digestDate": "2026-10-02",
+      "title": "NVIDIA pairs agent-runtime controls with a hardware watchdog design",
+      "summary": "NVIDIA announced its Open Agent Safety Platform on September 28, combining OpenShell runtime software with the Sentry reference system design. The company says Sentry runs on BlueField-4 networking processors and can quarantine agents that cross their permitted boundaries in milliseconds.",
+      "whyItMatters": "The design places enforcement outside the AI model, adding a separate layer of control over its actions.",
+      "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+      "source": "Nvidia — September 28, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-02-nvidia-launches-open-agent-safety-platform-to-contain-rogue-ai-agents",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 905,
+      "digestDate": "2026-10-02",
+      "title": "OpenAI releases GPT-6.1 Sol for lower-cost complex work",
+      "summary": "OpenAI released GPT-6.1 Sol on September 29 for coding and professional tasks. Standard API pricing for prompts up to 272,000 input tokens is $2 per million input tokens, $10 per million output tokens and $0.10 per million cached input tokens.",
+      "whyItMatters": "Caching repeated context can reduce input costs for recurring agent tasks.",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "source": "OpenAI — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-02-openai-launches-gpt-6-1-sol-a-cheaper-model-that-nearly-matches-its-flagship",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 908,
+      "digestDate": "2026-10-02",
+      "title": "Salesforce announces Koa, a specialized model for CRM tasks",
+      "summary": "Salesforce and NVIDIA announced Koa on September 15, a model for Agentforce built by adapting NVIDIA Nemotron 3 Super with synthetic business-workflow examples. NVIDIA says Salesforce runs the model on its own infrastructure, with customer pilots preceding expected wider U.S. availability in winter 2026.",
+      "whyItMatters": "Koa gives Agentforce a model tailored to tasks such as updating sales opportunities and routing customer-service cases.",
+      "editorialNote": "September 15 announcement, added later as backfill.",
+      "url": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/",
+      "source": "NVIDIA company blog — September 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-02-salesforce-announces-koa-a-specialized-model-for-crm-tasks"
+    },
     {
       "digestItemId": 900,
       "digestDate": "2026-10-01",
@@ -2800,8 +2938,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-01 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-02T13:58:49.869Z",
-  "contentHash": "161376cd4784edff4061c1d92393b511ae0627fa05114202596ef0a29265449b"
+  "publicationStatus": "partial",
+  "notice": "2026-10-02 · 6 stories · More stories to follow",
+  "publishedAt": "2026-10-02T15:08:07.927Z",
+  "contentHash": "912c3c862fb1fbac2e44f3dda393e05c11414c822ab39132d94c4a4614832758"
 }
