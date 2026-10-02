@@ -2,14 +2,14 @@
   "version": 1,
   "digestDate": "2026-10-01",
   "latestSavedDigest": "2026-10-01",
-  "fresh": true,
+  "fresh": false,
   "coverage": {
-    "count": 6,
-    "sourceCount": 5,
+    "count": 0,
+    "sourceCount": 0,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": true
+    "healthy": false
   },
   "pending": 5,
   "items": [
@@ -2800,8 +2800,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "current",
-  "notice": "2026-10-01 · 6 stories",
-  "publishedAt": "2026-10-01T15:17:09.776Z",
-  "contentHash": "9e81340c5f8b722be806ce97fca133aed81487952c0165ea83d940549403a556"
+  "publicationStatus": "delayed",
+  "notice": "2026-10-01 · 6 stories · Today’s edition is delayed",
+  "publishedAt": "2026-10-02T07:13:48.881Z",
+  "contentHash": "a5cbc34bf4bd48d102899c255f8e6a80db3793f1248364a8555c5e8d8f170409"
 }
