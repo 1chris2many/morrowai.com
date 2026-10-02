@@ -5,7 +5,7 @@
   "fresh": false,
   "coverage": {
     "count": 6,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -2940,6 +2940,6 @@
   ],
   "publicationStatus": "partial",
   "notice": "2026-10-02 · 6 stories · More stories to follow",
-  "publishedAt": "2026-10-02T15:08:07.927Z",
-  "contentHash": "912c3c862fb1fbac2e44f3dda393e05c11414c822ab39132d94c4a4614832758"
+  "publishedAt": "2026-10-02T23:03:12.718Z",
+  "contentHash": "919687311895a1daac333b7fc1e722f45bb74c1df9740f12348d1a1afe27fbd5"
 }
