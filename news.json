@@ -4,12 +4,12 @@
   "latestSavedDigest": "2026-10-03",
   "fresh": true,
   "coverage": {
-    "count": 4,
-    "sourceCount": 3,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 6,
   "items": [
@@ -84,6 +84,30 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-03-nvidia-and-coreweave-make-vera-rubin-cloud-systems-available-for-agent-workloads",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 913,
+      "digestDate": "2026-10-03",
+      "title": "Google's flu forecasting model leads CDC's season evaluation",
+      "summary": "Google's model ranked first among the individual team submissions in the CDC's evaluation of 39 eligible flu hospital-admission forecasting models for the 2025–26 season. The September 30 report scored forecasts across states and Washington, D.C., excluding national totals. Google says it developed the forecasts using its AI research tool, Empirical Research Assistance.",
+      "whyItMatters": "The result measures forecasts against observed hospital admissions across a full season. CDC still uses a combined forecast for its public messaging; that ensemble ranked seventh in this evaluation.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-science-ai-flu-forecasts/",
+      "source": "Google Research — September 30, 2026; ranking checked against CDC evaluation",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "evals",
+          "name": "AI evaluations"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-03-google-s-flu-forecasting-model-leads-cdc-s-season-evaluation",
       "editorialNote": ""
     },
     {
@@ -3036,8 +3060,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "thin",
-  "notice": "2026-10-03 · 4 stories",
-  "publishedAt": "2026-10-03T15:08:46.834Z",
-  "contentHash": "03cb0d5fad2606576d8225d8a3738a969d84ba8156ad869b3ebcb8a8640f5a85"
+  "publicationStatus": "current",
+  "notice": "2026-10-03 · 5 stories",
+  "publishedAt": "2026-10-03T15:37:32.922Z",
+  "contentHash": "af38518aa582cf8373dc1ccb57d81e195273ff338bb96aa6c238fd39c8aaaf80"
 }
