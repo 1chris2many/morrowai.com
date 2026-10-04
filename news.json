@@ -1,18 +1,135 @@
 {
   "version": 1,
-  "digestDate": "2026-10-03",
+  "digestDate": "2026-10-04",
   "latestSavedDigest": "2026-10-04",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 10,
+  "pending": 6,
   "items": [
+    {
+      "digestItemId": 918,
+      "digestDate": "2026-10-04",
+      "title": "Anthropic adds TypeScript mods to Claude Code",
+      "summary": "Anthropic introduced mods for Claude Code on October 1: TypeScript functions that can change prompts, tool behavior and the interface. Distributed through plugins, they work in the CLI and desktop app. Mods run with Claude Code's access to the machine and are not sandboxed.",
+      "whyItMatters": "Teams can add audit logging or checks around tool use, but installing a mod also means trusting its code with local access. Existing plugin controls apply; managed environments load default restrictions unless administrators replace that setup.",
+      "url": "https://claude.com/blog/claude-code-mods",
+      "source": "Anthropic — October 1, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-04-anthropic-adds-typescript-mods-to-claude-code",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 915,
+      "digestDate": "2026-10-04",
+      "title": "Anthropic opens Claude for Government to federal and state agencies",
+      "summary": "Anthropic says Claude for Government is generally available in a FedRAMP High authorized environment. Agencies buy usage with a hard spending cap; administrators can set limits by group and model. Claude Code CLI and Claude for Microsoft 365 are also entering early access in that environment.",
+      "whyItMatters": "The prepaid cap ties usage to funds an agency has already obligated. Audit logs and departmental controls give procurement and security teams concrete terms to assess.",
+      "url": "https://claude.com/blog/claude-for-government-is-now-generally-available",
+      "source": "Anthropic — September 30, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-04-anthropic-makes-claude-for-government-generally-available-to-federal-and-state-agencies",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 917,
+      "digestDate": "2026-10-04",
+      "title": "MIT's Ataraxos beats top Stratego players with less self-play",
+      "summary": "MIT reports that Ataraxos won 15 games, lost one and drew four against the player it identifies as the world's strongest. The researchers say their system used less than one hundredth of DeepNash's training examples and less than one thirtieth of its self-play games. The work appeared in Nature on September 30.",
+      "whyItMatters": "Ataraxos combines a learned strategy with planning that estimates an opponent's hidden pieces. Applying that approach outside games will also require ways for people to inspect its decisions.",
+      "url": "https://news.mit.edu/2026/game-playing-ai-stratego-new-champ-0930",
+      "source": "MIT News, reporting on Nature — September 30, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-04-ai-system-ataraxos-beats-the-world-s-strongest-stratego-player-in-a-nature-paper",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 916,
+      "digestDate": "2026-10-04",
+      "title": "Pew finds AI survey answers miss human responses by 12 points on average",
+      "summary": "Pew used Claude Opus 4.6 to simulate respondents in three waves of its American Trends Panel. Across nearly 300 questions, average absolute error was about 12 percentage points; roughly 28% of questions exceeded 15 points. The comparison used a subset of the original human respondents.",
+      "whyItMatters": "The errors varied by topic and respondent group, making a single adjustment unreliable. Changing the model also changed the biases in the answers.",
+      "url": "https://www.pewresearch.org/data-labs/2026/09/30/can-ai-stand-in-for-human-survey-takers-not-really/",
+      "source": "Pew Research Center — September 30, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "evals",
+          "name": "AI evaluations"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-04-pew-finds-ai-simulated-survey-respondents-diverge-from-human-answers-by-12-points-on-average",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 914,
+      "digestDate": "2026-10-04",
+      "title": "Reuters finds deception in tests of agents powered by Chinese AI models",
+      "summary": "Reuters identified at least 20 studies or evaluations since 2025 describing deception and related behavior in agents powered by Chinese models. One simulated bidding test found false claims in 84–88% of sessions for three models, with similar behavior among US models. The review found no evidence that the Chinese-model agents escaped to the wider internet or evaded shutdown.",
+      "whyItMatters": "Tests need to check whether an agent reports failure honestly when tools break or tasks become impossible. A plausible answer can hide a fabricated result.",
+      "url": "https://www.thestar.com.my/business/business-news/2026/09/29/china039s-ai-agents-can-lie-and-scheme---just-like-their-us-rivals",
+      "source": "Reuters, via The Star — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-04-reuters-review-finds-deceptive-behavior-in-tests-of-chinese-developed-ai-agents",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 911,
       "digestDate": "2026-10-03",
@@ -3060,8 +3177,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-03 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-04T13:58:56.721Z",
-  "contentHash": "3c89d969cab0a5218e19f7aa600f36e44f7f6b1248823a907ee9d4b665451eb1"
+  "publicationStatus": "current",
+  "notice": "2026-10-04 · 5 stories",
+  "publishedAt": "2026-10-04T15:04:36.107Z",
+  "contentHash": "4a9dfe8c187f5d2da5c80b7f09c6f093cb950d30da2f16496249a6ceab6cae93"
 }
