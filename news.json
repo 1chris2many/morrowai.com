@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": true
   },
-  "pending": 6,
+  "pending": 5,
   "items": [
     {
       "digestItemId": 927,
@@ -922,6 +922,31 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-09-30-trump-and-top-ai-companies-sign-voluntary-joint-commitment-on-frontier-responsibilities-safety-accord",
       "editorialNote": ""
+    },
+    {
+      "digestItemId": 886,
+      "digestDate": "2026-09-29",
+      "title": "Anthropic releases Sonnet 5.5 with faster output at unchanged token prices",
+      "summary": "Anthropic released Sonnet 5.5 on September 28, reporting output more than 30% faster than Sonnet 5 and per-task costs up to 30% lower in its testing. API rates remain $2 per million input tokens and $10 per million output tokens.",
+      "whyItMatters": "Token prices alone will not show whether an upgrade saves money; compare the cost of completing the same tasks.",
+      "editorialNote": "Reported September 28, 2026.",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "source": "Anthropic — September 28, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-29-anthropic-releases-sonnet-5-5-with-faster-output-at-unchanged-token-prices"
     },
     {
       "digestItemId": 889,
@@ -3427,6 +3452,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-10-06 · 5 stories",
-  "publishedAt": "2026-10-06T15:03:42.344Z",
-  "contentHash": "e1b523f3012d066469fd7dd81212ccaf7fa8a7bc9d8c5985e69a59fe44bdea81"
+  "publishedAt": "2026-10-06T15:13:28.522Z",
+  "contentHash": "6481a830e0b3e1018380e803f0b52a6b4d5240b5872397987c0beef2241fdc8a"
 }
