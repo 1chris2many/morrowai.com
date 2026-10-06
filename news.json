@@ -1,18 +1,130 @@
 {
   "version": 1,
-  "digestDate": "2026-10-05",
+  "digestDate": "2026-10-06",
   "latestSavedDigest": "2026-10-06",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 11,
+  "pending": 6,
   "items": [
+    {
+      "digestItemId": 927,
+      "digestDate": "2026-10-06",
+      "title": "ChatGPT to test image-ad placements",
+      "summary": "US testing starts later this month. Labeled ads will accompany generated pictures.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/",
+      "source": "TechCrunch — October 5, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-06-openai-to-test-labeled-display-ads-beside-chatgpt-image-generation-results",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 929,
+      "digestDate": "2026-10-06",
+      "title": "Manus 2.0 adds event-triggered work and a separate personal-agent app",
+      "summary": "Manus announced a rebuilt agent framework, desktop workspace and event-triggered automations on September 28. Its separate Cue app gives agents communication accounts and a wallet, with spending constrained by the user's budget.",
+      "whyItMatters": "Manus reports lower costs in one tested configuration; teams should measure their own workflows before budgeting around that result.",
+      "url": "https://manus.im/en/blog/introducing-manus-2-0",
+      "source": "Manus — September 28, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-06-manus-launches-version-2-0-with-a-new-agent-framework-and-cue-an-app-giving-each-agent-its-own-email-and-wallet",
+      "editorialNote": "Announced September 28, 2026."
+    },
+    {
+      "digestItemId": 926,
+      "digestDate": "2026-10-06",
+      "title": "OpenAI plans EU text watermarks",
+      "summary": "OpenAI will add invisible marks to eligible ChatGPT and Codex text in the EU over the coming weeks. API users worldwide can opt in for selected models; watermarking remains off by default there.",
+      "whyItMatters": "Edits and short passages can weaken detection, so an absent mark cannot establish human authorship.",
+      "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+      "source": "TechCrunch — October 5, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-06-openai-will-watermark-chatgpt-text-for-eu-users-to-meet-ai-act-transparency-rules",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 925,
+      "digestDate": "2026-10-06",
+      "title": "Reflection previews Beam ahead of an open-weight release",
+      "summary": "Reflection says Beam matches GLM-5.2 on selected reasoning tests using roughly a quarter to a third of the estimated inference compute. The model is still in final testing, with Apache 2.0 weights planned later in October.",
+      "whyItMatters": "The comparison excludes serving overhead, so actual hosting costs still need measurement.",
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "source": "Reflection AI — October 5, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-06-reflection-unveils-beam-an-open-weight-model-it-says-rivals-glm-5-2-at-lower-inference-cost",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 928,
+      "digestDate": "2026-10-06",
+      "title": "Researchers trace an apparent agent fleet through map queries",
+      "summary": "Researchers found parallel agents investigating which entrances people use at locations listed on Amap. Their preliminary report links the infrastructure to Tencent Cloud but does not establish communication between the agents.",
+      "whyItMatters": "Infrastructure clues can help attribute activity without proving who directed it.",
+      "url": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
+      "source": "TechCrunch — October 5, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-06-independent-researchers-report-a-set-of-ai-agents-repeatedly-querying-alibaba-s-amap-map-service",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 923,
       "digestDate": "2026-10-05",
@@ -3313,8 +3425,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-05 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-06T13:59:03.638Z",
-  "contentHash": "9876b4e7459e33f59d209d2d56bdbb2bec3e885b748035a1f085c3bb73b2858f"
+  "publicationStatus": "current",
+  "notice": "2026-10-06 · 5 stories",
+  "publishedAt": "2026-10-06T15:03:42.344Z",
+  "contentHash": "e1b523f3012d066469fd7dd81212ccaf7fa8a7bc9d8c5985e69a59fe44bdea81"
 }
