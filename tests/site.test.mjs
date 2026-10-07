@@ -45,7 +45,7 @@ for (const width of [320,390,768,820,1440]) {
    assert.equal(await p.locator('meta[name="robots"]').count(),0);
    assert.deepEqual(await p.locator('main > section').evaluateAll(es=>es.map(e=>e.id)),['developing','latest','perspectives','team','about','contact']);
    assert.ok(await p.locator('#developing .brief-card h3').first().evaluate(e=>e.getBoundingClientRect().top<innerHeight),'First briefing begins in first viewport');
-   assert.equal(await p.locator('#developing .brief-map li').count(),9);
+   assert.equal(await p.locator('#developing .brief-map li').count(),12);
    const current=feed.items.filter(i=>i.digestDate===feed.digestDate);
    assert.equal(await p.locator('#latest article').count(),current.length);
    for(const item of current){
@@ -64,9 +64,9 @@ for (const width of [320,390,768,820,1440]) {
    const theme=await p.locator('#developing [data-theme]').first().getAttribute('data-theme');
    await p.locator('#developing .brief-link').first().click();
    assert.equal(new URL(p.url()).hash,'#'+theme);
-   assert.equal(await p.locator('.briefing').count(),3);
+   assert.equal(await p.locator('.briefing').count(),4);
    assert.equal(await p.locator('.brief-timeline li').count(),9);
-   assert.equal(await p.locator('.brief-map li').count(),9);
+   assert.equal(await p.locator('.brief-map li').count(),12);
    await p.locator('#'+theme+' .brief-related summary').click();
    assert.equal(await p.locator('#'+theme+' .brief-related li:visible').count(),feed.items.filter(i=>i.themes?.some(t=>t.id===theme)).length);
    await p.locator('#'+theme).scrollIntoViewIfNeeded();

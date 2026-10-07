@@ -19,6 +19,7 @@ test('new edition refreshes Latest and chronological themes without stale headli
  const count=feed.items.filter(i=>i.themes?.some(t=>t.id==='safety-vs-capability')).length;
  const next=structuredClone(feed),c={...next.items.find(i=>i.themes?.some(t=>t.id==='safety-vs-capability')),digestItemId:99999,digestDate:date,anchor:'story-'+date+'-synthetic',title:'Synthetic next-edition headline',summary:'Synthetic next-edition summary for isolated validation.'};
  next.items.unshift(c);next.digestDate=c.digestDate;next.notice=date+' · 1 story';
+ c.url='https://example.com/synthetic-next-edition';
  const out=renderHome(home,next,perspectives),latest=section(out,'latest');
  assert.equal((latest.match(/data-digest-item-id=/g)||[]).length,1);assert.ok(latest.includes(c.summary));assert.ok(latest.includes(c.digestDate));
  assert.ok(section(out,'developing').includes((count+1)+' related stories'));

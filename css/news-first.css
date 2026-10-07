@@ -73,7 +73,8 @@ footer { padding: 2rem 0 4rem; border-top: 1px solid var(--line); color: var(--m
 .preview-notice { padding:.6rem 1rem; background:#272217; color:#f0eff4; font-size:.8rem; text-align:center; }
 .tone-mint { --brief-accent:#8dd9bb; --brief-tint:#13271f; }
 .tone-lilac { --brief-accent:#c3aff2; --brief-tint:#241d34; }
-.brief-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.2rem; }
+.tone-blue { --brief-accent:#93c6f4; --brief-tint:#162838; }
+.brief-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.2rem; }
 .brief-card { display:flex; flex-direction:column; border-top:3px solid var(--brief-accent); padding:1.6rem; background:linear-gradient(155deg,var(--brief-tint),var(--panel) 75%); }
 .brief-card .kicker { color:var(--brief-accent); }
 .brief-card h3 { font-size:2rem; line-height:1.15; }
