@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": true
   },
-  "pending": 4,
+  "pending": 3,
   "items": [
     {
       "digestItemId": 933,
@@ -1750,6 +1750,30 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-09-25-google-begins-testing-call-for-me-a-gemini-feature-that-phones-businesses-on-a-user-s-behalf",
       "editorialNote": ""
+    },
+    {
+      "digestItemId": 845,
+      "digestDate": "2026-09-25",
+      "title": "Microsoft adds a persistent Autopilot agent to Copilot and hosting for employee-built apps",
+      "summary": "Microsoft’s September 25 announcement describes Autopilot, formerly Scout, as a persistent agent with its own identity, memory and workspace inside a company’s Microsoft 365 environment. It said the private preview would expand at month-end and Copilot Managed Runtime was already in preview for hosting apps built with Copilot. Autopilot uses usage-based billing; the announcement gives no fixed per-agent dollar amount.",
+      "whyItMatters": "Teams adopting persistent agents need to set spending limits and decide who checks work that continues between prompts.",
+      "editorialNote": "Originally covered September 25, 2026.",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "source": "Microsoft — September 25, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-25-microsoft-adds-a-persistent-autopilot-agent-to-copilot-and-hosting-for-employee-built-apps"
     },
     {
       "digestItemId": 849,
@@ -3599,6 +3623,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-10-07 · 5 stories",
-  "publishedAt": "2026-10-07T15:08:25.532Z",
-  "contentHash": "32feaaff016cf797f1e84542dc3d75904ceaf5ed1f49429e64936259f0645ba3"
+  "publishedAt": "2026-10-07T23:02:46.539Z",
+  "contentHash": "a0e08473d0bf907554b735a8473bd6dab42c76f58ccc155b8049b12546febc86"
 }
