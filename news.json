@@ -1,18 +1,140 @@
 {
   "version": 1,
-  "digestDate": "2026-10-06",
-  "latestSavedDigest": "2026-10-06",
-  "fresh": false,
+  "digestDate": "2026-10-07",
+  "latestSavedDigest": "2026-10-07",
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 5,
   "items": [
+    {
+      "digestItemId": 933,
+      "digestDate": "2026-10-07",
+      "title": "Atlassian expands OpenAI partnership for workplace agents",
+      "summary": "Atlassian and OpenAI expanded their agreement to bring OpenAI models to agents across Atlassian's platform and Rovo. The companies are also exploring deeper Jira integrations for assigning work to agents and reviewing results; those proposed features are not a completed rollout.",
+      "whyItMatters": "Connecting agents to project records and documentation makes access permissions part of the workflow design.",
+      "url": "https://openai.com/index/atlassian-partnership/",
+      "source": "OpenAI — October 6, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-07-atlassian-expands-openai-partnership-for-workplace-agents",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 930,
+      "digestDate": "2026-10-07",
+      "title": "Google backs 890 MW of additional nuclear capacity",
+      "summary": "Google and Constellation signed a 20-year power agreement supporting upgrades at 11 nuclear units in three states. Constellation says the work will add 890 megawatts to the PJM grid, with the first upgrade expected in 2028; a separate 15-year agreement covers 2,700 megawatts of existing supply.",
+      "whyItMatters": "The deal ties a large technology buyer's power demand to added output at existing plants, with capacity arriving over years.",
+      "url": "https://www.constellationenergy.com/news/2026/10/google-and-constellation-announce-landmark-agreement-to-bring-890-mw-of-new-nuclear-capacity-to-pjm-grid.html",
+      "source": "Constellation Energy — October 6, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-07-google-backs-890-mw-of-additional-nuclear-capacity",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 932,
+      "digestDate": "2026-10-07",
+      "title": "Ironclad evaluation tests agents on complete contracting workflows",
+      "summary": "OpenAI reports that GPT-6 Astra averaged 55.0% of rubric criteria across 11 Ironclad tasks, compared with 41.6% for GPT-5.6 Sol, at each model's best-scoring reasoning setting. Estimated time per attempt fell from 37.0 to 19.2 minutes; those times are simulations, not measured customer savings.",
+      "whyItMatters": "The evaluation checks whether approval rules and agreement workflows work end to end, exposing errors that individual successful clicks would miss.",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
+      "source": "OpenAI — October 6, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-07-ironclad-evaluation-tests-agents-on-complete-contracting-workflows",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 931,
+      "digestDate": "2026-10-07",
+      "title": "OpenAI releases mathematical results with machine-checkable proofs",
+      "summary": "OpenAI published mathematical results from an internal model alongside Lean formalizations of many proofs, reasoning summaries and information about attempted problems. The October 6 release includes revision and citation procedures; the model that produced the work is not yet publicly released.",
+      "whyItMatters": "Researchers can inspect the published arguments and check the formalized proofs using software.",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "source": "OpenAI — October 6, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "evals",
+          "name": "AI evaluations"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-07-openai-releases-mathematical-results-with-machine-checkable-proofs",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 934,
+      "digestDate": "2026-10-07",
+      "title": "Report: National Compute plans $100 million in research credits",
+      "summary": "National Compute plans to donate $100 million in computing credits to the U.S. administration's Genesis Mission, Politico reports, citing two people familiar with the matter. An announcement is expected October 8; the credits would support AI-assisted scientific research.",
+      "whyItMatters": "The proposed credits would give researchers access to computing capacity; the report does not establish that the resources have already been delivered.",
+      "url": "https://www.politico.com/news/2026/10/07/trump-compute-credits-ai-science-initiative-01109749",
+      "source": "Politico — October 7, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Funding"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-07-report-national-compute-plans-100-million-in-research-credits",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 927,
       "digestDate": "2026-10-06",
@@ -3450,8 +3572,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-06 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-07T07:14:06.045Z",
-  "contentHash": "749f3d06207d563c454e68bf60e8c8b0d1ecb6ea561383f375298f348e49e803"
+  "publicationStatus": "current",
+  "notice": "2026-10-07 · 5 stories",
+  "publishedAt": "2026-10-07T15:06:03.621Z",
+  "contentHash": "020c7b17913b6e676a36e6501ce023cc2b63bb607be2c5e9917d4f123b276d5d"
 }
