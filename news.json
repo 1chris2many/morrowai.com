@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": true
   },
-  "pending": 5,
+  "pending": 4,
   "items": [
     {
       "digestItemId": 933,
@@ -1169,6 +1169,31 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-09-29-hinton-bengio-and-chief-scientists-from-openai-anthropic-and-microsoft-warn-that-automating-ai-research-could-trigger-a-rapid-intelligence-explosion",
       "editorialNote": ""
+    },
+    {
+      "digestItemId": 879,
+      "digestDate": "2026-09-28",
+      "title": "CLM-8B scores an agent’s available choices using reusable embeddings",
+      "summary": "CLM-8B is an Apache-2.0 model that ranks supplied choices using a frozen Qwen3-8B encoder and reusable action embeddings. Its scores are relative to those choices; the reported coding-verifier results require separately fine-tuned heads.",
+      "whyItMatters": "Developers can evaluate it for routing and ranking when they can supply the candidate actions.",
+      "editorialNote": "Originally covered September 28, 2026.",
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
+      "source": "Contrastive-LM model card",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-28-clm-8b-scores-an-agent-s-available-choices-using-reusable-embeddings"
     },
     {
       "digestItemId": 881,
@@ -3574,6 +3599,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-10-07 · 5 stories",
-  "publishedAt": "2026-10-07T15:06:03.621Z",
-  "contentHash": "020c7b17913b6e676a36e6501ce023cc2b63bb607be2c5e9917d4f123b276d5d"
+  "publishedAt": "2026-10-07T15:08:25.532Z",
+  "contentHash": "32feaaff016cf797f1e84542dc3d75904ceaf5ed1f49429e64936259f0645ba3"
 }
