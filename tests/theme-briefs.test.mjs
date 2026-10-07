@@ -22,7 +22,7 @@ test('four substantive source-backed briefings are stable, HTML-first and escape
 });
 test('new coverage changes related inventory, never analysis date or copy',()=>{
  const next=structuredClone(feed),i=next.items.find(i=>i.themes?.some(t=>t.id==='workplace-agents'));
- next.items.unshift({...i,digestItemId:99999,digestDate:'2026-10-07',anchor:'new-coverage',title:'New coverage'});
+ next.items.unshift({...i,digestItemId:99999,digestDate:'2026-10-07',url:'https://example.com/new-coverage',anchor:'new-coverage',title:'New coverage'});
  const out=renderThemes(home,next);
  assert.match(out,/New coverage since this briefing was reviewed/);
  assert.equal((out.match(/Reviewed <time datetime="2026-10-06"/g)||[]).length,4);

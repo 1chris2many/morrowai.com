@@ -33,7 +33,8 @@ test('same-day new evidence queues review, does not rewrite copy; duplicates col
  assert.equal(JSON.stringify(briefs),before);
 });
 test('candidate needs distinct URLs and two publishers; unclassified stories surfaced',()=>{
- const i=feed.items[0];
+ // This synthetic October6 scenario must not inherit a later live edition date.
+ const i={...feed.items[0],digestDate:'2026-10-06',reviewed:true};
  const f={...feed,items:[{...i,digestItemId:99001,url:'https://a.example/a',themes:[{id:'new-topic',name:'New'}]},{...i,digestItemId:99002,url:'https://b.example/b',themes:[{id:'new-topic',name:'New'}]},{...i,digestItemId:99003,url:'https://c.example/c',themes:[]}]};
  const q=themeQueue(f,'2026-10-06');assert.equal(q.candidates.length,1);assert.equal(q.unclassified.length,1);
  f.items[1].url='https://a.example/b';assert.equal(themeQueue(f,'2026-10-06').candidates.length,0);
