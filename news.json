@@ -1,18 +1,142 @@
 {
   "version": 1,
-  "digestDate": "2026-10-07",
-  "latestSavedDigest": "2026-10-07",
-  "fresh": false,
+  "digestDate": "2026-10-08",
+  "latestSavedDigest": "2026-10-08",
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 3,
   "items": [
+    {
+      "digestItemId": 939,
+      "digestDate": "2026-10-08",
+      "title": "Anthropic expands verified access for cybersecurity teams",
+      "summary": "Anthropic combined its Cyber Verification Program and Project Glasswing into three access tiers: Defense, Red Team and Specialized. Eligibility and security controls vary by tier; adversarial testing requires authorization, and the highest-access tier remains limited to verified organizations.",
+      "whyItMatters": "Security teams need to match model access to the work they are authorized to perform and the program's data-handling requirements.",
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "source": "Anthropic — October 6, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-08-anthropic-expands-verified-access-for-cybersecurity-teams",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 935,
+      "digestDate": "2026-10-08",
+      "title": "Anthropic launches Haiku 5.5 with lower short-prompt prices",
+      "summary": "Anthropic released Haiku 5.5 with adjustable effort settings for tasks such as summaries, classification and coding subagents. For prompts up to 100,000 tokens, listed input and output prices are $0.10 and $0.50 per million tokens; longer prompts cost $0.50 and $2.50 respectively.",
+      "whyItMatters": "The prompt-length threshold changes the cost of repetitive work, so estimates need to reflect the requests an application actually sends.",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "source": "Anthropic — October 7, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-08-anthropic-launches-haiku-5-5-with-lower-short-prompt-prices",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 937,
+      "digestDate": "2026-10-08",
+      "title": "Google releases EmbeddingGemma 2 for on-device media search",
+      "summary": "Google released EmbeddingGemma 2, a 740-million-parameter model that maps text, images, audio and video into a shared search representation. It uses an Apache 2.0 license and optional media encoders, allowing text-only applications to use a smaller configuration.",
+      "whyItMatters": "Applications can search across different media types locally without sending each query and file to a remote embedding service.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "source": "Google — October 6, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-08-google-releases-embeddinggemma-2-for-on-device-media-search",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 936,
+      "digestDate": "2026-10-08",
+      "title": "Mistral previews Large 4 ahead of an open-weight release",
+      "summary": "Mistral opened a public API preview of Large 4, a multimodal model it describes as having one trillion total parameters and 52 billion active parameters. The company plans to release the weights by the end of October, following further red-team testing.",
+      "whyItMatters": "Teams can evaluate the hosted model now, while self-hosting plans depend on the later weight release.",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "source": "Mistral — October 6, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-08-mistral-previews-large-4-ahead-of-an-open-weight-release",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 938,
+      "digestDate": "2026-10-08",
+      "title": "RTX Spark laptops open for preorder, with availability set for October 16",
+      "summary": "NVIDIA announced RTX Spark laptops with up to 128 GB of unified memory, opening preorders on October 7 ahead of October 16 availability. Compact desktops are scheduled for November; the company also previewed a separate DGX Station for Windows.",
+      "whyItMatters": "The larger shared memory gives developers more room for local models, while delivery dates determine when those systems can enter real workflows.",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
+      "source": "NVIDIA — October 7, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-08-rtx-spark-laptops-open-for-preorder-with-availability-set-for-october-16",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 933,
       "digestDate": "2026-10-07",
@@ -3621,8 +3745,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-07 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-08T07:14:09.286Z",
-  "contentHash": "45d14e2e3d876b20456805cf4130e561d7f200b4013048547cc64c379dc03ed7"
+  "publicationStatus": "current",
+  "notice": "2026-10-08 · 5 stories",
+  "publishedAt": "2026-10-08T15:07:59.511Z",
+  "contentHash": "a2a0fa90c6adc36fcc013e899918be8f9200fd10d8edee09ab2f5d17505c1255"
 }
