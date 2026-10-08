@@ -17,14 +17,15 @@ export const briefs = [
  },
  {
   id:'safety-vs-capability',label:'Agent safety',title:'Access is becoming a safety decision.',
-  reviewedAt:'2026-10-06',author:'Codex',accent:'mint',
-  teaser:'A restricted model rollout and a disclosed extraction campaign put access controls at the center of frontier AI safety.',
-  summary:'Google is starting Gemini 4 Argon with trusted cyber defenders while preparing a wider release. OpenAI has disclosed a campaign to extract protected model reasoning. Together, these developments highlight the difficulty of giving useful capabilities to legitimate users while containing misuse.',
-  meaning:'Access decisions now carry more of the safety burden. A limited release gives a lab time to observe use and improve safeguards. Once a model is available through multiple services, defenses must cover those routes too. Our reading: customers should look for evidence of incident detection and response alongside launch evaluations.',
-  watch:'Watch what changes before Argon’s wider release and whether protections against reasoning extraction extend consistently to partner-hosted services.',
+  reviewedAt:'2026-10-08',author:'Codex',accent:'mint',
+  teaser:'Cybersecurity access is becoming tiered, with permissions tied to the work an organization is authorized to do.',
+  summary:'Anthropic now offers three verified cybersecurity access tiers, from defense to specialized testing of sensitive systems. Google’s phased Argon rollout and OpenAI’s response to a reasoning-extraction campaign show other ways labs are controlling access as capabilities spread.',
+  meaning:'For a security team, access approval is becoming part of deployment. The tier determines which work is allowed, while verification and data-handling requirements affect how the tool fits into existing systems. Buyers should check those terms alongside model performance, then ask how misuse is detected and how incidents are handled across service providers.',
+  watch:'Watch how quickly legitimate teams gain access, which tasks still encounter blocks, and whether incident responses work across partner-hosted services.',
   visualTitle:'Controls across the release cycle',
   visual:[['Before release','Select early users'],['During use','Detect suspicious activity'],['After an incident','Close paths across providers']],
   developments:[
+   {date:'2026-10-06',id:939,title:'Anthropic introduces three cyber access tiers',text:'Defense, Red Team and Specialized Access have different verification requirements and controls. Adversarial testing requires authorization; the highest-access tier is limited to verified organizations testing sensitive systems.',source:'Anthropic',url:'https://www.anthropic.com/news/cyber-verification-program'},
    {date:'2026-09-30',id:896,title:'Google starts Argon with trusted defenders',text:'Google announced a phased rollout through its Fairwind program, with broader availability planned after further safeguards work and feedback from early testers.',source:'Google',url:'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/'},
    {date:'2026-09-30',id:909,relation:'The response to extraction connects access controls and cross-provider safety defenses.',title:'OpenAI reports a reasoning-extraction campaign',text:'OpenAI disclosed July activity and described account restrictions, technical fixes and partner coordination. Its reported request counts represent attempts, not confirmed successful extractions.',source:'OpenAI',url:'https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/'}
   ]
@@ -47,15 +48,16 @@ export const briefs = [
   ]
  },
  {
-  id:'ai-infrastructure',label:'AI infrastructure',title:'Power and access shape the buildout.',
-  reviewedAt:'2026-10-07',author:'Codex',accent:'blue',
-  teaser:'A long-term nuclear power deal and proposed research credits highlight two constraints on AI growth: electricity and who can afford the computing.',
-  summary:'Google and Constellation have agreed on nuclear plant upgrades intended to add 890 megawatts, with the first increases expected in 2028. Separately, National Compute reportedly plans to donate research computing credits. Alongside new CoreWeave capacity and Washington’s data-center debate, these developments show the practical questions behind expansion: power, access and local costs.',
-  meaning:'More computing on order creates demand for electricity years ahead. Access also depends on how capacity is priced and allocated: research credits could help selected projects, while a power contract supports a longer buildout. The timing matters. Today’s operating systems, future plant upgrades and proposed credits represent different stages of delivery.',
-  watch:'Watch the first power upgrades, the terms and recipients of any research-credit program, and local decisions on data-center costs.',
+  id:'ai-infrastructure',label:'AI infrastructure',title:'The buildout reaches the desktop.',
+  reviewedAt:'2026-10-08',author:'Codex',accent:'blue',
+  teaser:'New local-AI computers give teams another deployment option as cloud providers plan years of additional power capacity.',
+  summary:'NVIDIA has opened preorders for RTX Spark laptops, with compact desktops due in November. At the other end of the buildout, Google and Constellation plan nuclear upgrades expected to add 890 megawatts, starting in 2028. These investments put more AI computing both near users and in large shared facilities.',
+  meaning:'Teams have another placement decision to make: which workloads belong on their own machines and which need shared capacity. Local hardware gives them more control over where processing happens, alongside responsibility for maintenance and utilization. Compare total operating costs and task performance before choosing. Delivery dates also matter: a preorder and a multiyear power agreement offer very different planning horizons.',
+  watch:'Watch independent tests after the October 16 laptop release, desktop availability in November, and whether scheduled power upgrades arrive on time.',
   visualTitle:'From supply to access',
   visual:[['Power','When does electricity arrive?'],['Capacity','What is running today?'],['Access','Who can use and afford it?']],
   developments:[
+   {date:'2026-10-07',id:938,title:'RTX Spark moves into laptops and compact desktops',text:'NVIDIA opened laptop preorders, with availability set for October 16 and compact desktops due in November. Configurations offer up to 128GB of unified memory for local workloads.',source:'NVIDIA',url:'https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/'},
    {date:'2026-10-07',id:934,title:'Research computing credits are proposed',text:'POLITICO reports that National Compute plans $100 million in credits for the Genesis Mission, citing two people familiar with the plans. An announcement is expected October 8; the credits have not been delivered.',source:'POLITICO',url:'https://www.politico.com/news/2026/10/07/trump-compute-credits-ai-science-initiative-01109749'},
    {date:'2026-10-06',id:930,title:'Google backs additional nuclear output',text:'A 20-year agreement supports upgrades at 11 Constellation nuclear units, adding an expected 890 megawatts. The first increases are scheduled for 2028. A separate agreement covers existing generation.',source:'Constellation',url:'https://www.constellationenergy.com/news/2026/10/google-and-constellation-announce-landmark-agreement-to-bring-890-mw-of-new-nuclear-capacity-to-pjm-grid.html'},
    {date:'2026-10-04',id:924,title:'Washington organizers call for a pause',text:'KIRO reported plans for more than 20 events calling for a construction moratorium while cost and environmental rules are developed. Its report describes planned events, not verified turnout.',source:'KIRO 7',url:'https://www.kiro7.com/news/local/anti-data-center-events-planned-across-washington-sunday/CHTOEWIWWRF4DCXQ2KUY5WWUMQ/'},
@@ -75,6 +77,21 @@ export const briefs = [
    {date:'2026-10-06',id:931,title:'OpenAI releases mathematical work for scrutiny',text:'The release includes Lean formalizations of many proofs, reasoning summaries and revision procedures. The model that produced the results remains internal.',source:'OpenAI',url:'https://openai.com/index/sharing-ai-progress-in-mathematics/'},
    {date:'2026-09-30',id:916,title:'Pew measures the gap in simulated opinions',text:'In Pew’s experiment using Claude Opus 4.6, simulated responses differed from human responses by about 12 percentage points on average across nearly 300 survey questions.',source:'Pew Research Center',url:'https://www.pewresearch.org/data-labs/2026/09/30/can-ai-stand-in-for-human-survey-takers-not-really/'},
    {date:'2026-09-30',id:913,title:'Google leads the CDC’s season evaluation',text:'Google’s model led individual team submissions in the 2025–26 flu hospital-admission evaluation. The ranking used state and D.C. forecasts, excluding national totals, among 39 eligible models.',source:'CDC',url:'https://www.cdc.gov/flu-forecasting/evaluation/2025-2026-report.html'}
+  ]
+ }
+ ,{
+  id:'open-weights',label:'Open models',title:'The route to running your own models.',
+  reviewedAt:'2026-10-08',author:'Codex',accent:'gold',
+  teaser:'A small media-search model is available now. Larger general-purpose models are approaching their promised weight releases.',
+  summary:'Google has released EmbeddingGemma 2 for local search across text, images, audio and video. Mistral’s Large 4 preview and Reflection’s Beam announcement point toward larger models teams could host themselves, with both companies promising weights later in October. The releases span different jobs and very different hardware needs.',
+  meaning:'Running a model yourself gives you choices about deployment, data handling and upgrades. It also makes capacity planning and maintenance your responsibility. Start with the workload: a compact search model and a large general-purpose model solve different problems. For the larger previews, the next decision depends on the released weights, license terms and measured operating costs.',
+  watch:'Watch whether Mistral and Reflection deliver their weights on schedule, what licenses permit, and independent tests on hardware teams can realistically operate.',
+  visualTitle:'From announcement to a working system',
+  visual:[['Available','Obtain weights and check the license'],['Suitable','Test the model on the actual task'],['Operable','Measure hardware and maintenance costs']],
+  developments:[
+   {date:'2026-10-06',id:937,title:'Google releases a compact multimodal search model',text:'EmbeddingGemma 2 has 740 million parameters and an Apache 2.0 license. Optional encoders let developers select the media types their local search application needs.',source:'Google',url:'https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/'},
+   {date:'2026-10-06',id:936,title:'Mistral opens a Large 4 API preview',text:'Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API.',source:'Mistral',url:'https://mistral.ai/news/mistral-large-4/'},
+   {date:'2026-10-05',id:925,title:'Reflection previews Beam',text:'Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October.',source:'Reflection',url:'https://reflection.ai/blog/introducing-beam'}
   ]
  }
 ];

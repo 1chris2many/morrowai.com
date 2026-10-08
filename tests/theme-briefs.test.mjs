@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {briefs} from '../scripts/theme-current.mjs';
+import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {renderThemes,validateBriefs,briefingCards} from '../scripts/theme-pages.mjs';
 const root=new URL('../',import.meta.url);
 const home=await readFile(new URL('index.html',root),'utf8');
@@ -33,7 +34,7 @@ test('new coverage changes related inventory, never analysis date or copy',()=>{
  assert.match(briefingCards(next),/themes.html#workplace-agents/);
 });
 test('October 7 editorial additions preserve scope and untouched review dates',()=>{
- for(const id of ['ai-regulation','safety-vs-capability'])assert.equal(briefs.find(b=>b.id===id).reviewedAt,'2026-10-06');
+ assert.equal(briefs.find(b=>b.id==='ai-regulation').reviewedAt,'2026-10-06');
  const workplace=briefs.find(b=>b.id==='workplace-agents');
  assert.match(workplace.developments.find(d=>d.id===932).text,/rubric score of 55.0%/);
  assert.match(workplace.developments.find(d=>d.id===933).text,/exploring/);
@@ -44,6 +45,22 @@ test('October 7 editorial additions preserve scope and untouched review dates',(
  assert.equal(new Set(evals.developments.map(d=>new URL(d.url).hostname)).size,3);
  assert.match(evals.developments.find(d=>d.id===916).text,/percentage points/);
  assert.match(evals.developments.find(d=>d.id===913).url,/www.cdc.gov/);
+});
+test('October 8 synthesis preserves availability distinctions and unrelated dates',()=>{
+ const safety=briefs.find(b=>b.id==='safety-vs-capability');
+ assert.equal(safety.reviewedAt,'2026-10-08');
+ assert.match(safety.developments.find(d=>d.id===939).text,/authorization/);
+ const infra=briefs.find(b=>b.id==='ai-infrastructure');
+ assert.match(infra.developments.find(d=>d.id===938).text,/October 16/);
+ assert.match(infra.developments.find(d=>d.id===938).text,/November/);
+ const open=briefs.find(b=>b.id==='open-weights');
+ assert.equal(new Set(open.developments.map(d=>new URL(d.url).hostname)).size,3);
+ assert.match(open.developments.find(d=>d.id===936).text,/plans to release/);
+ assert.match(open.developments.find(d=>d.id===925).text,/promised/);
+ assert.match(open.developments.find(d=>d.id===937).text,/Apache 2.0/);
+ for(const id of ['workplace-agents','evals'])assert.equal(briefs.find(b=>b.id===id).reviewedAt,'2026-10-07');
+ assert.equal(briefs.find(b=>b.id==='ai-regulation').reviewedAt,'2026-10-06');
+ for(const id of [935,936,937,938,939])assert.ok(reviewedIds.includes(id));
 });
 test('missing, unreviewed or mistagged source references fail closed',()=>{
  for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,themes:[]})]){
