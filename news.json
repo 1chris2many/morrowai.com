@@ -1,18 +1,141 @@
 {
   "version": 1,
-  "digestDate": "2026-10-08",
-  "latestSavedDigest": "2026-10-08",
-  "fresh": false,
+  "digestDate": "2026-10-09",
+  "latestSavedDigest": "2026-10-09",
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 3,
   "items": [
+    {
+      "digestItemId": 940,
+      "digestDate": "2026-10-09",
+      "title": "Anthropic launches infrastructure defense program and free open-source scans",
+      "summary": "Anthropic launched its Cyber Mission with a critical-infrastructure defense program and OSS Scanner, a free opt-in service for open-source projects. Scanner reports are model-generated and sent without human review; the service is aimed at maintainers able to triage the findings.",
+      "whyItMatters": "Finding more bugs also creates more review work; maintainer capacity will determine how quickly reports turn into fixes.",
+      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "source": "Anthropic — October 8, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-09-anthropic-launches-infrastructure-defense-program-and-free-open-source-scans",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 941,
+      "digestDate": "2026-10-09",
+      "title": "Anthropic updates usage rules, effective November 12",
+      "summary": "Anthropic published updated usage rules covering deceptive campaigns, high-risk decisions and autonomous physical actions. It also added a narrow prohibition on sustained, purposeless abuse of its models, excluding ordinary frustration, dark creative themes and research; the changes take effect November 12.",
+      "whyItMatters": "Teams connecting Claude to physical equipment need qualified operators who can stop it and equipment that stays safe if the model disconnects.",
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "source": "Anthropic — October 8, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-09-anthropic-updates-usage-rules-effective-november-12",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 944,
+      "digestDate": "2026-10-09",
+      "title": "Fired OpenAI safety researchers dispute the reasons for their dismissal",
+      "summary": "Three former OpenAI safety researchers published a letter disputing allegations that they mishandled sensitive information and warning that their dismissals could discourage outside safety collaboration. OpenAI denied retaliation and told TechCrunch an investigation had found a pattern of policy violations.",
+      "whyItMatters": "The dispute puts a practical question to safety oversight: how researchers can work with outside evaluators while protecting confidential information.",
+      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "source": "TechCrunch — October 8, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-09-fired-openai-safety-researchers-dispute-the-reasons-for-their-dismissal",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 943,
+      "digestDate": "2026-10-09",
+      "title": "Google opens SynthID Detector to everyone",
+      "summary": "Google made SynthID Detector available worldwide in English for checking images, video and audio for its AI watermark. It covers supported media from Google and partners including OpenAI, NVIDIA and Kakao, with Apple support planned.",
+      "whyItMatters": "A detected watermark supplies evidence of AI use; a missing watermark does not establish that a file was made by a person.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+      "source": "Google — October 7, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-09-google-opens-synthid-detector-to-everyone",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 942,
+      "digestDate": "2026-10-09",
+      "title": "OpenAI reports disrupting two AI-assisted influence operations",
+      "summary": "OpenAI says it banned accounts linked to Russia- and Iran-origin influence operations that used fabricated identities and front organizations to place messages in real media outlets. Its report describes AI use for internal reporting as well as content creation, and says operators sometimes exaggerated their own impact.",
+      "whyItMatters": "Checking a contributor's identity and institutional ties remains important even when an article passes ordinary content checks.",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations/",
+      "source": "OpenAI — October 8, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-09-openai-reports-disrupting-two-ai-assisted-influence-operations",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 939,
       "digestDate": "2026-10-08",
@@ -3745,8 +3868,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-08 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-09T07:14:13.713Z",
-  "contentHash": "1b3c75d00e1d9ad3db834a70d0e9a513fe9a06a4d924a471ef6bf319e775a3b0"
+  "publicationStatus": "current",
+  "notice": "2026-10-09 · 5 stories",
+  "publishedAt": "2026-10-09T15:04:26.203Z",
+  "contentHash": "d671bbfd1d55b785333d84469a3b7ff46b5bc093f50a998cff10a15b1edfe90c"
 }
