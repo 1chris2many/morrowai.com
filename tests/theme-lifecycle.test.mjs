@@ -7,20 +7,22 @@ import {briefingCards,renderThemes} from '../scripts/theme-pages.mjs';
 const feed=JSON.parse(readFileSync(new URL('../news.json',import.meta.url)));
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const reviewDay=briefs.map(b=>b.reviewedAt).sort().at(-1);
+const plusDays=(date,n)=>new Date(Date.parse(date)+n*86400000).toISOString().slice(0,10);
 test('aging removes old analysis from front page, retains stable archive anchors',()=>{
- assert.equal(lifecycle(briefs[0],'2026-10-06').status,'active');
- assert.equal(lifecycle(briefs[0],'2026-10-14').status,'watching');
- assert.equal(lifecycle(briefs[0],'2026-10-21').status,'archived');
+ const start=briefs[0].reviewedAt;
+ assert.equal(lifecycle(briefs[0],start).status,'active');
+ assert.equal(lifecycle(briefs[0],plusDays(start,8)).status,'watching');
+ assert.equal(lifecycle(briefs[0],plusDays(start,15)).status,'archived');
  const archivedDay=new Date(Date.parse(reviewDay)+15*86400000).toISOString().slice(0,10);
  const f={...feed,publishedAt:archivedDay+'T19:00:00Z'};
  assert.doesNotMatch(briefingCards(f),/class="brief-card tone-/);
  const html=renderThemes(home,f);for(const b of briefs)assert.ok(html.includes('id="'+b.id+'"'));
  assert.match(html,/Historical briefing/);
- assert.match(html,/2026-10-06/);
+ assert.ok(html.includes(briefs[0].reviewedAt));
 });
 test('explicit retirement wins; refreshed source evidence can reactivate',()=>{
- const b={...briefs[0],retiredAt:'2026-10-06',retirementReason:'Story resolved'};
- assert.equal(lifecycle(b,'2026-10-06').status,'archived');
+ const b={...briefs[0],retiredAt:briefs[0].reviewedAt,retirementReason:'Story resolved'};
+ assert.equal(lifecycle(b,b.retiredAt).status,'archived');
  const renewed={...briefs[0],reviewedAt:'2026-10-22',developments:[{date:'2026-10-22'}]};
  assert.equal(lifecycle(renewed,'2026-10-22').status,'active');
  assert.throws(()=>lifecycle(renewed,'2026-10-06'),/Future/);

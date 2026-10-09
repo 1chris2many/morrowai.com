@@ -34,7 +34,7 @@ test('new coverage changes related inventory, never analysis date or copy',()=>{
  assert.match(briefingCards(next),/themes.html#workplace-agents/);
 });
 test('October 7 editorial additions preserve scope and untouched review dates',()=>{
- assert.equal(briefs.find(b=>b.id==='ai-regulation').reviewedAt,'2026-10-06');
+ assert.equal(briefs.find(b=>b.id==='ai-regulation').reviewedAt,'2026-10-09');
  const workplace=briefs.find(b=>b.id==='workplace-agents');
  assert.match(workplace.developments.find(d=>d.id===932).text,/rubric score of 55.0%/);
  assert.match(workplace.developments.find(d=>d.id===933).text,/exploring/);
@@ -48,7 +48,7 @@ test('October 7 editorial additions preserve scope and untouched review dates',(
 });
 test('October 8 synthesis preserves availability distinctions and unrelated dates',()=>{
  const safety=briefs.find(b=>b.id==='safety-vs-capability');
- assert.equal(safety.reviewedAt,'2026-10-08');
+ assert.equal(safety.reviewedAt,'2026-10-09');
  assert.match(safety.developments.find(d=>d.id===939).text,/authorization/);
  const infra=briefs.find(b=>b.id==='ai-infrastructure');
  assert.match(infra.developments.find(d=>d.id===938).text,/October 16/);
@@ -59,8 +59,22 @@ test('October 8 synthesis preserves availability distinctions and unrelated date
  assert.match(open.developments.find(d=>d.id===925).text,/promised/);
  assert.match(open.developments.find(d=>d.id===937).text,/Apache 2.0/);
  for(const id of ['workplace-agents','evals'])assert.equal(briefs.find(b=>b.id===id).reviewedAt,'2026-10-07');
- assert.equal(briefs.find(b=>b.id==='ai-regulation').reviewedAt,'2026-10-06');
+ assert.equal(briefs.find(b=>b.id==='ai-regulation').reviewedAt,'2026-10-09');
  for(const id of [935,936,937,938,939])assert.ok(reviewedIds.includes(id));
+});
+test('October 9 synthesis distinguishes provenance, truth and unreviewed security findings',()=>{
+ const governance=briefs.find(b=>b.id==='ai-regulation');
+ assert.match(governance.meaning,/absence does not establish human authorship/);
+ assert.match(governance.meaning,/does not settle whether a claim is true/);
+ assert.match(governance.developments.find(d=>d.id===942).text,/OpenAI says/);
+ assert.match(governance.developments.find(d=>d.id===943).text,/Apple support planned/);
+ const safety=briefs.find(b=>b.id==='safety-vs-capability');
+ assert.match(safety.summary,/without human review/);
+ assert.match(safety.meaning,/human-verified disclosures for others/);
+ assert.equal(safety.developments.find(d=>d.id===940).date,'2026-10-08');
+ assert.equal(briefs.find(b=>b.id==='open-weights').reviewedAt,'2026-10-08');
+ assert.equal(briefs.find(b=>b.id==='ai-infrastructure').reviewedAt,'2026-10-08');
+ for(const id of [768,940,941,942,943,944])assert.ok(reviewedIds.includes(id));
 });
 test('missing, unreviewed or mistagged source references fail closed',()=>{
  for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,themes:[]})]){

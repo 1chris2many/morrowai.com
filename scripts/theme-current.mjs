@@ -2,29 +2,32 @@
 // not ingest dates. Feed ingestion cannot approve or refresh this analysis.
 export const briefs = [
  {
-  id:'ai-regulation', label:'AI governance', title:'The rules are reaching the product.',
-  reviewedAt:'2026-10-06',author:'Codex',accent:'gold',
-  teaser:'Text watermarks and government purchasing controls show how oversight is changing the products people actually use.',
-  summary:'AI oversight is becoming visible in product settings. OpenAI is introducing text watermarking in response to EU rules. Anthropic’s government offering gives agencies spending caps, access controls and audit records. These are concrete choices about how AI can be bought, used and checked.',
-  meaning:'The next test is whether these controls help people make better decisions. A watermark can offer a clue about a text’s origin, but editing can weaken it. Agency administrators need useful records and enforceable limits as adoption spreads across departments. Buyers should ask what a control establishes and how it behaves when it fails.',
-  watch:'Watch the EU rollout, independent testing of text detection, and how agencies use their new administrative controls.',
-  visualTitle:'Oversight becomes a product feature',
-  visual:[['Identify','Signals about generated text'],['Limit','Spending and model access'],['Account','Records of administrative actions']],
+  id:'ai-regulation', label:'AI governance', title:'A source check has several layers.',
+  reviewedAt:'2026-10-09',author:'Codex',accent:'gold',
+  teaser:'Public watermark detection makes one check easier. AI-assisted influence operations show why the identity behind a story still matters.',
+  summary:'AI oversight is reaching everyday media checks. Google has opened SynthID Detector to the public for supported images, video and audio. OpenAI reports disrupting two influence operations that used false identities and real media outlets. Together, these developments put attention on both how content was made and who is trying to distribute it.',
+  meaning:'A watermark can help identify content from a participating AI system. Its absence does not establish human authorship, and detecting AI use does not settle whether a claim is true. OpenAI’s report shows a separate vulnerability: editors can be approached by convincing but false contributors. Organizations need ways to check the source, verify the claim and investigate deceptive distribution alongside their detection tools.',
+  watch:'Watch detector coverage and independent testing, and whether publishers improve contributor checks as influence operations adapt.',
+  visualTitle:'Three checks before trusting a story',
+  visual:[['Origin','What can the media reveal?'],['Source','Who stands behind the claim?'],['Evidence','Can the claim be checked?']],
   developments:[
+   {date:'2026-10-08',id:942,title:'OpenAI reports two false-front operations',text:'OpenAI says it banned Russia- and Iran-origin operations that used AI alongside false identities and conventional media tactics. Some content reached real outlets; the report also describes exaggerated claims of effectiveness.',source:'OpenAI',url:'https://openai.com/index/disrupting-ai-enabled-false-front-operations/'},
+   {date:'2026-10-07',id:943,title:'Google opens SynthID Detector to everyone',text:'The tool is available globally in English for images, video and audio carrying supported watermarks. Google names OpenAI, NVIDIA and Kakao as partners, with Apple support planned.',source:'Google',url:'https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/'},
    {date:'2026-10-05',id:926,title:'OpenAI sets out its watermark rollout',text:'Eligible ChatGPT and Codex text in the EU will gain watermarks over the coming weeks. Selected API models offer an opt-in globally; detector access starts with approved researchers and organizations.',source:'OpenAI',url:'https://openai.com/index/eu-text-provenance/'},
    {date:'2026-09-30',id:915,title:'Claude for Government leaves beta',text:'Anthropic made its FedRAMP High offering generally available, with departmental spending caps, model limits and audit logs. Claude Code CLI and Microsoft 365 support remain in early access.',source:'Anthropic',url:'https://claude.com/blog/claude-for-government-is-now-generally-available'}
   ]
  },
  {
-  id:'safety-vs-capability',label:'Agent safety',title:'Access is becoming a safety decision.',
-  reviewedAt:'2026-10-08',author:'Codex',accent:'mint',
-  teaser:'Cybersecurity access is becoming tiered, with permissions tied to the work an organization is authorized to do.',
-  summary:'Anthropic now offers three verified cybersecurity access tiers, from defense to specialized testing of sensitive systems. Google’s phased Argon rollout and OpenAI’s response to a reasoning-extraction campaign show other ways labs are controlling access as capabilities spread.',
-  meaning:'For a security team, access approval is becoming part of deployment. The tier determines which work is allowed, while verification and data-handling requirements affect how the tool fits into existing systems. Buyers should check those terms alongside model performance, then ask how misuse is detected and how incidents are handled across service providers.',
-  watch:'Watch how quickly legitimate teams gain access, which tasks still encounter blocks, and whether incident responses work across partner-hosted services.',
-  visualTitle:'Controls across the release cycle',
-  visual:[['Before release','Select early users'],['During use','Detect suspicious activity'],['After an incident','Close paths across providers']],
+  id:'safety-vs-capability',label:'Agent safety',title:'Finding the bug starts the work.',
+  reviewedAt:'2026-10-09',author:'Codex',accent:'mint',
+  teaser:'AI security tools are reaching more defenders. Human review and safe patching determine how much protection follows.',
+  summary:'Anthropic’s Cyber Mission adds critical-infrastructure support and a free, opt-in scanner for open-source projects. The scanner sends model-generated findings without human review. Alongside tiered cybersecurity access and phased model releases, this shifts attention toward what defenders can safely do with the results.',
+  meaning:'More findings create work for the people maintaining the software. Teams need time to reproduce a reported bug, judge its severity and test a fix before deployment. Anthropic reserves the unreviewed scanner feed for projects able to handle that workload and continues human-verified disclosures for others. The useful measure is how quickly real vulnerabilities are fixed safely, alongside the cost of reviewing false alarms.',
+  watch:'Watch independently measured report quality, maintainer review time and the interval between a confirmed finding and a safely deployed fix.',
+  visualTitle:'From a finding to protection',
+  visual:[['Find','Surface a possible weakness'],['Verify','Check severity and proposed fixes'],['Repair','Deploy and confirm the fix safely']],
   developments:[
+   {date:'2026-10-08',id:940,title:'Anthropic expands defense support and open-source scanning',text:'Its new program supports critical-infrastructure providers. OSS Scanner sends free, unreviewed model findings to enrolled projects with triage capacity; human-verified disclosure continues for others.',source:'Anthropic',url:'https://www.anthropic.com/news/anthropic-cyber-mission'},
    {date:'2026-10-06',id:939,title:'Anthropic introduces three cyber access tiers',text:'Defense, Red Team and Specialized Access have different verification requirements and controls. Adversarial testing requires authorization; the highest-access tier is limited to verified organizations testing sensitive systems.',source:'Anthropic',url:'https://www.anthropic.com/news/cyber-verification-program'},
    {date:'2026-09-30',id:896,title:'Google starts Argon with trusted defenders',text:'Google announced a phased rollout through its Fairwind program, with broader availability planned after further safeguards work and feedback from early testers.',source:'Google',url:'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/'},
    {date:'2026-09-30',id:909,relation:'The response to extraction connects access controls and cross-provider safety defenses.',title:'OpenAI reports a reasoning-extraction campaign',text:'OpenAI disclosed July activity and described account restrictions, technical fixes and partner coordination. Its reported request counts represent attempts, not confirmed successful extractions.',source:'OpenAI',url:'https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/'}
