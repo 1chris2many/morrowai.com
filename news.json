@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": true
   },
-  "pending": 3,
+  "pending": 2,
   "items": [
     {
       "digestItemId": 940,
@@ -3248,6 +3248,31 @@
       "anchor": "story-2026-09-16-openai-delays-ipo-to-2027-in-talks-for-1-2-trillion-round-instead"
     },
     {
+      "digestItemId": 768,
+      "digestDate": "2026-09-15",
+      "title": "DeepSeek releases V4.1-Flash with image understanding and smaller context caches",
+      "summary": "DeepSeek released V4.1-Flash on September 10 with native image understanding and a new encoder-decoder design. The company says the design reduces GPU memory needed for cached context to a quarter of its predecessor's requirement, alongside lower API prices.",
+      "whyItMatters": "Smaller context caches can make long-running agent tasks less memory-intensive.",
+      "editorialNote": "Originally covered September 15, 2026.",
+      "url": "https://deepseek.com/news/deepseek-v4-1-flash/",
+      "source": "DeepSeek — September 10, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-15-deepseek-releases-v4-1-flash-with-image-understanding-and-smaller-context-caches"
+    },
+    {
       "digestItemId": 767,
       "digestDate": "2026-09-15",
       "title": "Microsoft publishes draft AI code of conduct: 'people matter more than AI'",
@@ -3870,6 +3895,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-10-09 · 5 stories",
-  "publishedAt": "2026-10-09T15:04:26.203Z",
-  "contentHash": "d671bbfd1d55b785333d84469a3b7ff46b5bc093f50a998cff10a15b1edfe90c"
+  "publishedAt": "2026-10-09T15:06:15.462Z",
+  "contentHash": "7bf9c36ffbe1b789def56768a9dcfcdc66d02e061fef09ff8e30412c7cc1441d"
 }
