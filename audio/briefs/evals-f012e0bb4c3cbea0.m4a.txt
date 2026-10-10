@@ -1,0 +1,21 @@
+AI evaluations. Put the result to the test.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 7, 2026. Synthetic narration.
+
+Google’s flu forecasts led a CDC season evaluation. OpenAI is publishing mathematical results with machine-checkable versions of many proofs. Pew found sizable errors when AI stood in for human survey respondents. Each offers a different way to judge an AI result against something outside the model’s own answer.
+
+Three takeaways. Predict. Compare with observed events. Prove. Check the formal reasoning. Represent. Compare with real responses.
+
+What it means. Useful evidence depends on the job. Forecasts can be compared with events that later happen; formal proofs can be checked against precise rules; simulated opinions need comparison with actual people. A strong result in one setting gives buyers a reason to investigate that use. Decisions about another use still need their own evidence.
+
+12 percentage points. Average gap from human survey results. Pew compared AI-generated answers with human responses across nearly 300 questions. This describes its experiment, not every model or polling method. Source: Pew Research Center, 2026-09-30.
+
+How the story developed. These studies test three different claims: predicting events, proving mathematical results and representing people’s opinions. Read them together as examples of how the choice of test changes what an AI result can tell us.
+
+September 30. Pew measures the gap in simulated opinions. In Pew’s experiment using Claude Opus 4.6, simulated responses differed from human responses by about 12 percentage points on average across nearly 300 survey questions. Source: Pew Research Center.
+
+September 30. Google leads the CDC’s season evaluation. Google’s model led individual team submissions in the 2025–26 flu hospital-admission evaluation. The ranking used state and D.C. forecasts, excluding national totals, among 39 eligible models. Source: CDC.
+
+October 6. OpenAI releases mathematical work for scrutiny. Many proofs come in Lean, a language that lets software check each logical step. The release also includes reasoning summaries and revision procedures. The model that produced the results remains internal. Source: OpenAI.
+
+What to watch. Watch independent checks, repeat performance on new data and whether evaluations measure the outcomes users actually need.

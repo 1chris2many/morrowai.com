@@ -21,7 +21,7 @@ export function renderHome(index,feed,perspectives,{preview=false}={}){
   // version). Production regeneration must never inherit its restrictions.
   head=head.replace(/\n?<meta name="robots" content="noindex,nofollow"(?: data-preview-robots)?\s*>/g,'');
   if(!head.includes('css/news-first.css'))head+='\n<link rel="stylesheet" href="css/news-first.css?v=20260924">';
-  head=head.replace(/css\/news-first.css\?v=[a-z0-9]+/g,'css/news-first.css?v=20261006');
+  head=head.replace(/css\/news-first.css\?v=[a-z0-9]+/g,'css/news-first.css?v=20261010');
   if(preview)head+='\n<meta name="robots" content="noindex,nofollow" data-preview-robots>';
   // This homepage has an always-visible native navigation, not the old toggle.
   // Keep analytics/footer, but do not run the toggle-only legacy controller here.

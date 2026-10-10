@@ -1,0 +1,25 @@
+Agents at work. The work continues beyond the chat.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 10, 2026. Synthetic narration.
+
+Google has introduced a Gemini agent designed to carry context and work across applications, including tasks that continue after a laptop closes. Claude’s new dashboard beta connects to company data and shows the query and refresh time behind each chart. Together, these announcements move attention toward ongoing work and outputs that colleagues can inspect.
+
+Three takeaways. Continue. Keep context across applications. Inspect. See inputs, queries and refresh times. Accept. Check the result before relying on it.
+
+What it means. Ongoing automated work needs a clear handoff: what ran, which data it used and what still needs a decision. Visible queries and refresh times help reviewers check whether a calculation answers the business question. Tests in Ironclad, software for managing contracts, also show why teams should measure completed jobs and corrections alongside individual successful steps.
+
+55.0%. Average task-criteria score. GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed. Source: OpenAI, 2026-10-06.
+
+How the story developed. The sequence runs from software that starts work when something changes to agents that continue across applications. Alongside those launches, workflow tests and inspectable dashboards expose the practical question: can someone trust the finished result?
+
+September 28. Manus introduces event-triggered automation. Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work. Source: Manus.
+
+October 6. Ironclad tests agents on legal workflows. OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully. Source: OpenAI.
+
+October 6. Atlassian expands its OpenAI partnership. Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool. Source: OpenAI.
+
+October 8. Google introduces a persistent workplace agent. Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls. Source: Google Cloud.
+
+October 8. Claude makes dashboard results inspectable. Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it. Source: Anthropic.
+
+What to watch. Watch whole-task completion, stale-data errors and review time as teams put these features into everyday use.

@@ -3,7 +3,8 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { newsAnchor, selectNews } from '../js/news-model.js';
 import { nav, footer } from './site-layout.mjs';
 import {renderHome} from './news-first-home.mjs';
-import {renderThemes} from './theme-pages.mjs';
+import {renderThemes,validateBriefs} from './theme-pages.mjs';
+import {buildBriefAudio} from './build-brief-audio.mjs';
 
 const root = new URL('../', import.meta.url);
 const feed = JSON.parse(await readFile(new URL('news.json', root), 'utf8'));
@@ -67,7 +68,9 @@ if (!marker.test(index)) throw Error('Homepage digest preview markers missing');
 const preview = `<!-- DIGEST_PREVIEW_START -->\n<p class="small-note">Latest edition: <time datetime="${latest}">${latest}</time></p><ol class="digest-preview">${items.slice(0, 3).map(item => `<li><a href="news.html#${newsAnchor(item)}">${e(item.title)}</a><p class="small-note">${e(item.source)}${item.linkKind === 'newsletter' ? ' · Newsletter-sourced' : ''}</p></li>`).join('')}</ol>\n<!-- DIGEST_PREVIEW_END -->`;
 const renderedHome=renderHome(index,feed,await readFile(new URL('perspectives.html',root),'utf8'),{preview:process.argv.includes('--preview')});
 // Validate all briefing references before writing the new page/homepage.
-const renderedThemes=renderThemes(renderedHome,feed,{preview:process.argv.includes('--preview')});
+validateBriefs(feed);
+const audioManifest=await buildBriefAudio();
+const renderedThemes=renderThemes(renderedHome,feed,{preview:process.argv.includes('--preview'),audioManifest});
 await writeFile(new URL('news.html', root), news);
 await writeFile(new URL('feed.xml', root), rss);
 await writeFile(indexPath,renderedHome);

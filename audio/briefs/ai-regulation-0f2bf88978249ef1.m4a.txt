@@ -1,0 +1,19 @@
+AI governance. A source check has several layers.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 9, 2026. Synthetic narration.
+
+AI oversight is reaching everyday media checks. Google has opened SynthID Detector to the public for supported images, video and audio. OpenAI reports disrupting two influence operations that used false identities and real media outlets. Together, these developments put attention on both how content was made and who is trying to distribute it.
+
+Three takeaways. Origin. What can the media reveal?. Source. Who stands behind the claim?. Evidence. Can the claim be checked?.
+
+What it means. A watermark can help identify content from a participating AI system. Its absence does not establish human authorship, and detecting AI use does not settle whether a claim is true. OpenAI’s report shows a separate vulnerability: editors can be approached by convincing but false contributors. Organizations need ways to check the source, verify the claim and investigate deceptive distribution alongside their detection tools.
+
+How the story developed. Watermark tools are becoming more accessible, giving readers one way to check how media was made. Reports of disguised influence operations show why checking the people behind a story remains a separate job.
+
+October 5. OpenAI sets out its watermark rollout. Eligible ChatGPT and Codex text in the EU will gain watermarks over the coming weeks. Selected API models offer an opt-in globally; detector access starts with approved researchers and organizations. Source: OpenAI.
+
+October 7. Google opens SynthID Detector to everyone. The tool is available globally in English for images, video and audio carrying supported watermarks. Google names OpenAI, NVIDIA and Kakao as partners, with Apple support planned. Source: Google.
+
+October 8. OpenAI reports two false-front operations. OpenAI says it banned Russia- and Iran-origin operations that used AI alongside false identities and conventional media tactics. Some content reached real outlets; the report also describes exaggerated claims of effectiveness. Source: OpenAI.
+
+What to watch. Watch detector coverage and independent testing, and whether publishers improve contributor checks as influence operations adapt.

@@ -1,0 +1,19 @@
+Open models. The route to running your own models.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 8, 2026. Synthetic narration.
+
+Google has released EmbeddingGemma 2 for local search across text, images, audio and video. AI developers Mistral and Reflection are previewing larger models teams could host themselves. Both promise weights—the files needed to run their models—later in October. These releases serve different jobs and have very different hardware needs.
+
+Three takeaways. Available. Obtain weights and check the license. Suitable. Test the model on the actual task. Operable. Measure hardware and maintenance costs.
+
+What it means. Running a model yourself gives you choices about deployment, data handling and upgrades. It also makes capacity planning and maintenance your responsibility. Start with the workload: a compact search model and a large general-purpose model solve different problems. For the larger previews, the next decision depends on the released weights, license terms and measured operating costs.
+
+How the story developed. A compact search model is already available, while two larger models have announced later releases. The key milestones are access to the model files, permission to use them and evidence that they work on hardware a team can operate.
+
+October 5. Reflection previews Beam. Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October. Source: Reflection.
+
+October 6. Google releases a compact media-search model. EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support. Source: Google.
+
+October 6. Mistral opens a Large 4 API preview. Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API. Source: Mistral.
+
+What to watch. Watch whether Mistral and Reflection deliver their weights on schedule, what licenses permit, and independent tests on hardware teams can realistically operate.

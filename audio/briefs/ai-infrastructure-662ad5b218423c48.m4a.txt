@@ -1,0 +1,25 @@
+AI infrastructure. The buildout reaches the desktop.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 8, 2026. Synthetic narration.
+
+NVIDIA has opened preorders for RTX Spark laptops, with compact desktops due in November. At the other end of the buildout, Google and Constellation plan nuclear upgrades expected to add 890 megawatts, starting in 2028. These investments put more AI computing both near users and in large shared facilities.
+
+Three takeaways. Power. When does electricity arrive?. Capacity. What is running today?. Access. Who can use and afford it?.
+
+What it means. Teams have another placement decision to make: which workloads belong on their own machines and which need shared capacity. Local hardware gives them more control over where processing happens, alongside responsibility for maintenance and utilization. Compare total operating costs and task performance before choosing. Delivery dates also matter: a preorder and a multiyear power agreement offer very different planning horizons.
+
+890 MW. Planned additional nuclear capacity. Constellation’s agreement with Google funds plant upgrades. The first additional output is expected in 2028; this is planned capacity, not power available today. Source: Constellation, 2026-10-06.
+
+How the story developed. AI capacity is expanding on two schedules: computers people can order now and power projects that take years. Following both helps separate near-term access from promises of future supply.
+
+September 30. CoreWeave introduces Vera Rubin capacity. NVIDIA says Cognition, a maker of AI coding tools, is using its Vera Rubin computing systems on CoreWeave’s cloud service for production work. Other customers can request early access. Source: NVIDIA.
+
+October 4. Washington organizers call for a pause. KIRO reported plans for more than 20 events calling for a construction moratorium while cost and environmental rules are developed. Its report describes planned events, not verified turnout. Source: KIRO 7.
+
+October 6. Google backs additional nuclear output. A 20-year agreement supports upgrades at 11 Constellation nuclear units, adding an expected 890 megawatts. The first increases are scheduled for 2028. A separate agreement covers existing generation. Source: Constellation.
+
+October 7. RTX Spark moves into laptops and compact desktops. NVIDIA opened laptop preorders, with availability set for October 16 and compact desktops due in November. Configurations offer up to 128GB of unified memory for local workloads. Source: NVIDIA.
+
+October 7. Research computing credits are proposed. POLITICO reports that National Compute plans $100 million in credits for the Genesis Mission, citing two people familiar with the plans. An announcement is expected October 8; the credits have not been delivered. Source: POLITICO.
+
+What to watch. Watch independent tests after the October 16 laptop release, desktop availability in November, and whether scheduled power upgrades arrive on time.

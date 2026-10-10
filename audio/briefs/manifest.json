@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "engine": "macos-samantha-175-v1",
+  "briefs": {
+    "ai-regulation": {
+      "hash": "0f2bf88978249ef13a3820afda14c285b6dfbbc14c1e17556a2899ae9a679d89",
+      "src": "audio/briefs/ai-regulation-0f2bf88978249ef1.m4a",
+      "duration": 143.089478,
+      "bytes": 615437,
+      "sha256": "88fc4ce37faf30513a005b209e6c81259460dad3944a57b2af248d1664cfcaed"
+    },
+    "safety-vs-capability": {
+      "hash": "20c9030907bbbafcfa1e42a5e0243e2f8c3de674781eefdd561d4b51b21cd834",
+      "src": "audio/briefs/safety-vs-capability-20c9030907bbbafc.m4a",
+      "duration": 177.013878,
+      "bytes": 753711,
+      "sha256": "8f5ba685b9711e6afc90d0e24e0cac8062fba491015612b1f6f901dfeedf05d6"
+    },
+    "workplace-agents": {
+      "hash": "d539771d2c0998280569397abb05a4f4d66e035b0a6bdd07f28ab0ea022fb267",
+      "src": "audio/briefs/workplace-agents-d539771d2c099828.m4a",
+      "duration": 196.30966,
+      "bytes": 832443,
+      "sha256": "ae1163974b5c7f1c2d36e8d5bfee67199df020c5856701cb46ae6e9f8600bc2e"
+    },
+    "ai-infrastructure": {
+      "hash": "662ad5b218423c480bfc71781f63d846ed72567917ae251e044a95164cee64ae",
+      "src": "audio/briefs/ai-infrastructure-662ad5b218423c48.m4a",
+      "duration": 198.79415,
+      "bytes": 841718,
+      "sha256": "471548d78e10323cbe4d41d99a51b30ca4045b366f238cf98013637fd8f56f25"
+    },
+    "evals": {
+      "hash": "f012e0bb4c3cbea02a178528c570f481f5aa8ffd95d6a956c15c2d62f6b00e4c",
+      "src": "audio/briefs/evals-f012e0bb4c3cbea0.m4a",
+      "duration": 154.803946,
+      "bytes": 662098,
+      "sha256": "94277a902f0f587afc5c8ffe762637be8f87e3b9b43025aef06fe7b8fad04e68"
+    },
+    "open-weights": {
+      "hash": "d5c426a79407763387b0323cc902a3f7f5891c1cd111e58bbdb545f03285d52f",
+      "src": "audio/briefs/open-weights-d5c426a794077633.m4a",
+      "duration": 135.156644,
+      "bytes": 583169,
+      "sha256": "02fca3a060e750fe97e1316d8555abd420a88b4cd4a2d381e67a4a98ae1f6a74"
+    }
+  }
+}

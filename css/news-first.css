@@ -132,6 +132,28 @@ footer { padding: 2rem 0 4rem; border-top: 1px solid var(--line); color: var(--m
 .brief-card .brief-map li { grid-template-columns:1.8rem 1fr; gap:0 .5rem; padding:.65rem 0 0; border-color:color-mix(in srgb,var(--brief-accent) 25%,transparent); }
 .brief-card .map-number { grid-row:span 2; font-size:1.25rem; }
 .brief-card .brief-map strong { font-size:.82rem; }
+.brief-listen { margin-top:1.3rem; padding:1rem 1.2rem; border:1px solid var(--line); border-radius:12px; background:rgba(255,255,255,.035); max-width:44rem; }
+.listen-heading { display:flex; flex-wrap:wrap; gap:.3rem 1rem; justify-content:space-between; align-items:baseline; margin-bottom:.65rem; }
+.listen-heading > span,.audio-privacy { color:var(--muted); font-size:.78rem; }
+.brief-listen audio { display:block; width:100%; min-width:0; height:44px; }
+.audio-options { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; margin-top:.65rem; }
+.audio-options[hidden],.audio-options button[hidden] { display:none; }
+.audio-options button,.audio-options select { font:inherit; font-size:.85rem; color:var(--text); background:var(--panel); border:1px solid var(--line); border-radius:6px; min-height:44px; padding:.35rem .6rem; }
+.audio-options button { cursor:pointer; }
+.audio-options label { font-size:.85rem; }
+.audio-options :focus-visible,.audio-transcript summary:focus-visible { outline:3px solid var(--brief-accent); outline-offset:3px; }
+.brief-listen .audio-status { font-size:.85rem; margin:.5rem 0; }
+.brief-listen .audio-status:empty { display:none; }
+.audio-transcript { font-size:.9rem; margin-top:.8rem; }
+.audio-transcript summary { cursor:pointer; min-height:32px; }
+.audio-transcript p { max-width:65ch; }
+.brief-listen .audio-privacy { margin:.5rem 0 0; }
+.timeline-intro { border-left:3px solid var(--brief-accent); padding-left:1rem; margin-bottom:1.7rem; color:var(--muted); }
+.brief-timeline li { scroll-margin-top:8rem; }
+.brief-metric { border-left:3px solid var(--brief-accent); padding:1rem 1.2rem; margin:1.6rem 0; background:rgba(255,255,255,.035); }
+.brief-metric > strong { display:block; font-size:clamp(1.6rem,4vw,2.4rem); line-height:1.15; color:var(--brief-accent); }
+.brief-metric h3 { font-size:.95rem; margin:.6rem 0; }
+.brief-metric p,.brief-metric a { font-size:.88rem; }
 .brief-card .brief-map li > span:last-child { grid-column:2; font-size:.75rem; }
 .brief-card .meta { margin:0; padding-top:0; font-size:.7rem; }
 .brief-card .brief-link { border-top:1px solid color-mix(in srgb,var(--brief-accent) 30%,transparent); padding-top:1rem; text-decoration:none; font-weight:650; font-size:.9rem; }
