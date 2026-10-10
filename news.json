@@ -4,12 +4,12 @@
   "latestSavedDigest": "2026-10-10",
   "fresh": true,
   "coverage": {
-    "count": 3,
-    "sourceCount": 3,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 2,
   "items": [
@@ -39,6 +39,30 @@
       "editorialNote": ""
     },
     {
+      "digestItemId": 949,
+      "digestDate": "2026-10-10",
+      "title": "Claude adds live dashboards and editable animated explainers",
+      "summary": "Anthropic introduced Claude Dashboards in beta on paid plans and Claude Motion in beta for Team and Enterprise. Dashboards show the queries and refresh times behind connected business data; Motion creates code-based animations that users can edit and export as video. Enterprise administrators must enable both features.",
+      "whyItMatters": "Visible queries and editable animation code give teams concrete outputs to inspect before sharing a chart or presentation.",
+      "url": "https://claude.com/resources/articles/dashboards-and-motion",
+      "source": "Anthropic — October 8, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-10-claude-adds-live-dashboards-and-editable-animated-explainers",
+      "editorialNote": ""
+    },
+    {
       "digestItemId": 947,
       "digestDate": "2026-10-10",
       "title": "Google introduces a Gemini agent that carries work across applications",
@@ -60,6 +84,26 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-10-google-introduces-a-gemini-agent-that-carries-work-across-applications",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 948,
+      "digestDate": "2026-10-10",
+      "title": "Illumina releases SpliceAI2 to help interpret genetic variants",
+      "summary": "Illumina released SpliceAI2, a model that predicts how genetic variants affect RNA splicing. The company reports that it identified 17% more disease-relevant splice variants than comparison models in a rare-disease research dataset; the result concerns variant identification, not additional confirmed diagnoses.",
+      "whyItMatters": "Better variant prioritization could help researchers decide which genetic changes deserve follow-up experiments.",
+      "url": "https://www.prnewswire.com/news-releases/illumina-releases-spliceai2-to-help-advance-rare-disease-research-302902489.html",
+      "source": "Illumina via PR Newswire — October 8, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-10-illumina-releases-spliceai2-to-help-interpret-genetic-variants",
       "editorialNote": ""
     },
     {
@@ -3967,8 +4011,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "thin",
-  "notice": "2026-10-10 · 3 stories",
-  "publishedAt": "2026-10-10T15:06:49.707Z",
-  "contentHash": "72162130c29c88694e97d95ab9488d25b7f7b00adeb4437c7c4307c4afd7a90a"
+  "publicationStatus": "current",
+  "notice": "2026-10-10 · 5 stories",
+  "publishedAt": "2026-10-10T15:32:29.938Z",
+  "contentHash": "fbba9b31aa6f82e85c06eff25ffa671ebcf2f82c1e34ceb006e67bc71ee52c97"
 }
