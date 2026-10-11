@@ -1,18 +1,38 @@
 {
   "version": 1,
-  "digestDate": "2026-10-10",
+  "digestDate": "2026-10-11",
   "latestSavedDigest": "2026-10-11",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 1,
+    "sourceCount": 1,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 3,
+  "pending": 2,
   "items": [
+    {
+      "digestItemId": 950,
+      "digestDate": "2026-10-11",
+      "title": "Nadella proposes stronger AI controls",
+      "summary": "Nadella proposes independent AI safeguards and auditable actions. Humans would retain shutdown authority, TechCrunch reports.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+      "source": "TechCrunch (Anthony Ha)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-11-microsoft-s-satya-nadella-calls-for-an-ai-emergency-brake",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 945,
       "digestDate": "2026-10-10",
@@ -4011,8 +4031,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-10 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-11T13:59:22.349Z",
-  "contentHash": "ec4e11549d31a6d1754d3aaff702fb3c191876fb9f228aa501df4f2bdb1b72c3"
+  "publicationStatus": "thin",
+  "notice": "2026-10-11 · 1 stories",
+  "publishedAt": "2026-10-11T15:02:32.131Z",
+  "contentHash": "f51c293f72a2e327ec7ef131763a6c24d1f99625649a508b43259736ce108d9c"
 }
