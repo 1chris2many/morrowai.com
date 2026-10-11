@@ -19,7 +19,7 @@ test('every briefing has current, nonempty audio with a matching transcript and 
 });
 test('any narrated-content edit invalidates audio; feed-only changes do not',()=>{
  for(const b of briefs){
-  for(const prop of ['title','summary','meaning','watch','timelineIntro','reviewedAt']){const copy=structuredClone(b);copy[prop]+=' changed';if(prop==='reviewedAt')copy[prop]='2026-10-11';assert.notEqual(audioHash(copy),audioHash(b));assert.equal(audioEntry(copy,manifest),null);}
+  for(const prop of ['title','summary','meaning','watch','timelineIntro','reviewedAt']){const copy=structuredClone(b);copy[prop]+=' changed';if(prop==='reviewedAt')copy[prop]=new Date(Date.parse(b.reviewedAt+'T12:00:00Z')+86400000).toISOString().slice(0,10);assert.notEqual(audioHash(copy),audioHash(b));assert.equal(audioEntry(copy,manifest),null);}
   const copy=structuredClone(b);copy.developments[0].text+=' New evidence.';assert.equal(audioEntry(copy,manifest),null);
   assert.equal(audioHash({...b,relatedCount:999}),audioHash(b));
  }

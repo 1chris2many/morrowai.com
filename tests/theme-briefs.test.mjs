@@ -48,7 +48,7 @@ test('October 7 editorial additions preserve scope and untouched review dates',(
 });
 test('October 8 synthesis preserves availability distinctions and unrelated dates',()=>{
  const safety=briefs.find(b=>b.id==='safety-vs-capability');
- assert.equal(safety.reviewedAt,'2026-10-10');
+ assert.equal(safety.reviewedAt,'2026-10-11');
  assert.match(safety.developments.find(d=>d.id===939).text,/authorization/);
  const infra=briefs.find(b=>b.id==='ai-infrastructure');
  assert.match(infra.developments.find(d=>d.id===938).text,/October 16/);
@@ -98,4 +98,21 @@ test('missing, unreviewed or mistagged source references fail closed',()=>{
   assert.throws(()=>validateBriefs(next),/source 926/);
  }
  const copy=structuredClone(briefs);copy[0].developments[0].url='javascript:alert(1)';assert.throws(()=>validateBriefs(feed,copy),/Unsafe/);
+});
+test('October 11 timeline keeps proposal status and event date without rewriting unrelated briefings',()=>{
+ const safety=briefs.find(b=>b.id==='safety-vs-capability');
+ const addition=safety.developments.find(d=>d.id===950);
+ assert.equal(addition.date,'2026-10-10');
+ assert.equal(safety.reviewedAt,'2026-10-11');
+ assert.match(addition.text,/TechCrunch reports/);
+ assert.match(addition.text,/proposals, not verified deployments/);
+ assert.ok(addition.relation.length>=30);
+ assert.ok(reviewedIds.includes(950));
+ assert.equal(briefs.length,6);
+ assert.deepEqual(briefs.filter(b=>b.id!=='safety-vs-capability').map(b=>[b.id,b.reviewedAt]),[
+  ['ai-regulation','2026-10-09'],['workplace-agents','2026-10-10'],
+  ['ai-infrastructure','2026-10-08'],['evals','2026-10-07'],['open-weights','2026-10-08']
+ ]);
+ const missing=structuredClone(feed);missing.items=missing.items.filter(i=>i.digestItemId!==950);
+ assert.throws(()=>validateBriefs(missing),/source 950/);
 });
