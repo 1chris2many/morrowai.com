@@ -6,3 +6,6 @@ export const reviewedIds = [646,647,648,654,655,664,673,674,676,683,708,709,710,
 reviewedIds.push(945,946,947,948,949);
 // October 11: 950 source read and added to the agent-safety timeline.
 reviewedIds.push(950);
+// October12: five reviewed new cards; four incorporated in existing briefings.
+// WindBorne's contract is one development, insufficient for a new weather theme.
+reviewedIds.push(951,952,953,954,955);

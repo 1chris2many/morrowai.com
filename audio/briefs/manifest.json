@@ -17,18 +17,18 @@
       "sha256": "41ac032f6c63e61d8d824fe4e1a795868e0fbd7f30d895c7641333a833c39fd2"
     },
     "workplace-agents": {
-      "hash": "d539771d2c0998280569397abb05a4f4d66e035b0a6bdd07f28ab0ea022fb267",
-      "src": "audio/briefs/workplace-agents-d539771d2c099828.m4a",
-      "duration": 196.30966,
-      "bytes": 832443,
-      "sha256": "ae1163974b5c7f1c2d36e8d5bfee67199df020c5856701cb46ae6e9f8600bc2e"
+      "hash": "90d03ba71924fa7dc687c76067c208195b00c3f20e9c1997fe9ce4adac7067c0",
+      "src": "audio/briefs/workplace-agents-90d03ba71924fa7d.m4a",
+      "duration": 229.827664,
+      "bytes": 968731,
+      "sha256": "303f1a9c9d3c6f4a33dafaf38a04368c3ce56ce215886859521205fac2fe0c1e"
     },
     "ai-infrastructure": {
-      "hash": "662ad5b218423c480bfc71781f63d846ed72567917ae251e044a95164cee64ae",
-      "src": "audio/briefs/ai-infrastructure-662ad5b218423c48.m4a",
-      "duration": 198.79415,
-      "bytes": 841718,
-      "sha256": "471548d78e10323cbe4d41d99a51b30ca4045b366f238cf98013637fd8f56f25"
+      "hash": "d5e055680656d6cf6a067e926d0a70d62e43fe91a13bc62f6383b0aa0d629f4a",
+      "src": "audio/briefs/ai-infrastructure-d5e055680656d6cf.m4a",
+      "duration": 218.8678,
+      "bytes": 924279,
+      "sha256": "94110c2e6c05576c079f2f82c7e142113a7a67be240a2c7b502a8dcb9760a9c4"
     },
     "evals": {
       "hash": "f012e0bb4c3cbea02a178528c570f481f5aa8ffd95d6a956c15c2d62f6b00e4c",
