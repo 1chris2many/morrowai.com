@@ -1,18 +1,135 @@
 {
   "version": 1,
-  "digestDate": "2026-10-11",
-  "latestSavedDigest": "2026-10-11",
-  "fresh": false,
+  "digestDate": "2026-10-12",
+  "latestSavedDigest": "2026-10-12",
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 2,
   "items": [
+    {
+      "digestItemId": 954,
+      "digestDate": "2026-10-12",
+      "title": "Ambi opens early access for AI that carries work across devices",
+      "summary": "Ambi is opening early access for a service that retains context and continues tasks across devices. Its website describes research during conversations and recurring tasks, and says recorded audio is deleted after transcription while the remaining data is encrypted and stored in the United States. Hardware is planned for early next year.",
+      "whyItMatters": "Continuous context makes recording consent, connected-service permissions and deletion controls important parts of evaluating the product.",
+      "url": "https://www.ambi.ai/en",
+      "source": "Ambi; launch reported by TechCrunch on October 12, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-12-ambi-opens-early-access-for-ai-that-carries-work-across-devices",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 951,
+      "digestDate": "2026-10-12",
+      "title": "Meta releases Muse Wonder for longer-running agent tasks",
+      "summary": "Meta released Muse Wonder through its Model API and Muse Code, with Wonder Full available to Muse Code subscribers. The company describes improved retrieval of context across conversations and sustained work on complex tasks. A rollout into the Muse app is planned, starting with subscribers.",
+      "whyItMatters": "Developers can test the new models now; availability through the API and coding product does not establish that every Muse app conversation has switched models.",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "source": "Meta — October 12, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-12-meta-releases-muse-wonder-for-longer-running-agent-tasks",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 952,
+      "digestDate": "2026-10-12",
+      "title": "Microsoft plans Maia 300 production deployments in 2027",
+      "summary": "Microsoft introduced Maia 300 and plans to expand its Maia chip family to multi-gigawatt deployments starting in 2027. It expects Maia 300 to deliver 40% more tokens per megawatt than leading GPU-based systems. Maia 200 already serves Microsoft production workloads, including Copilot; the newer system has not yet entered production deployment.",
+      "whyItMatters": "Microsoft is designing its own chips around the cost of serving AI. Buyers will need workload-specific results to assess the company's projected efficiency gains.",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "source": "Microsoft — October 12, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-12-microsoft-plans-maia-300-production-deployments-in-2027",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 953,
+      "digestDate": "2026-10-12",
+      "title": "NVIDIA contributes Vera Rubin rack designs to open infrastructure standards",
+      "summary": "At the Open Compute Project summit, NVIDIA contributed Vera Rubin rack and compute-tray designs through its MGX architecture. The company and partners also published specifications for data-center facilities and behavior during power-grid disturbances. NVIDIA released software for configuring networks, checking cluster readiness and managing racks.",
+      "whyItMatters": "Shared designs give equipment makers common interfaces to build against. Operators still need to verify compatibility and performance in their own facilities.",
+      "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "source": "NVIDIA — October 12, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-12-nvidia-contributes-vera-rubin-rack-designs-to-open-infrastructure-standards",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 955,
+      "digestDate": "2026-10-12",
+      "title": "WindBorne wins Air Force data contract",
+      "summary": "TechCrunch reports a $49 million ceiling; $1.7 million ordered. Balloon data feeds AI forecasts.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+      "source": "TechCrunch — October 12, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-12-windborne-wins-air-force-data-contract",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 950,
       "digestDate": "2026-10-11",
@@ -4031,8 +4148,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-11 · 1 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-12T07:14:25.692Z",
-  "contentHash": "3cca60a1342514b9118d5b17c073a74d322e50d67cd03f3cf5a4d1c9253bce8b"
+  "publicationStatus": "current",
+  "notice": "2026-10-12 · 5 stories",
+  "publishedAt": "2026-10-12T23:12:37.301Z",
+  "contentHash": "f1a7459b24266212737f624bf8a83ce99effb7e0dc4b614a2c90ff0796e7834d"
 }
