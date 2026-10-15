@@ -4,12 +4,12 @@
   "latestSavedDigest": "2026-10-15",
   "fresh": true,
   "coverage": {
-    "count": 1,
-    "sourceCount": 1,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 2,
   "items": [
@@ -30,6 +30,99 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-15-amazon-launches-two-new-bee-ai-wearables-the-frontier-and-eclipse",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 968,
+      "digestDate": "2026-10-15",
+      "title": "Google pledges compute credits for European researchers",
+      "summary": "Google pledged $3 million in compute credits and access to scientific AI models for up to 200 European researchers through the EU's RAISE initiative. The listed tools include AlphaFold 3, WeatherNext and AlphaGenome, covering protein structures, weather forecasting and genomics.",
+      "whyItMatters": "",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models/",
+      "source": "Google — October 14, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-15-google-pledges-compute-credits-for-european-researchers",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 966,
+      "digestDate": "2026-10-15",
+      "title": "Google rolls out Universal Cart in the US",
+      "summary": "Google began rolling out Universal Cart in the U.S. across Search and the Gemini app on October 15. It combines products from different retailers and tracks price and stock changes; shoppers can complete checkout through Google Pay or the merchant's site.",
+      "whyItMatters": "",
+      "url": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
+      "source": "Google — October 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "agentic-commerce",
+          "name": "Agentic commerce"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-15-google-rolls-out-universal-cart-in-the-us",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 967,
+      "digestDate": "2026-10-15",
+      "title": "Meta shares ten health research manuscripts developed with Muse",
+      "summary": "Meta published ten health-research manuscripts developed over four weeks by medical researchers using its Muse models. The researchers led the scientific decisions while Muse helped write analysis code and manuscripts; each paper received biostatistician and contracted expert review.",
+      "whyItMatters": "",
+      "url": "https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models",
+      "source": "Meta — October 14, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-15-meta-shares-ten-health-research-manuscripts-developed-with-muse",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 965,
+      "digestDate": "2026-10-15",
+      "title": "NVIDIA releases Nemotron models for servers and local devices",
+      "summary": "NVIDIA released Nemotron 3.5 Super VL, a 120-billion-parameter model for agents working with text and images, alongside Bolt 74B-A9B for local workloads. The company says Bolt fits 24GB of memory; a smaller 4GB Bolt E4B model is due October 23.",
+      "whyItMatters": "",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "source": "NVIDIA — October 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-15-nvidia-releases-nemotron-models-for-servers-and-local-devices",
       "editorialNote": ""
     },
     {
@@ -4338,8 +4431,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "thin",
-  "notice": "2026-10-15 · 1 stories",
-  "publishedAt": "2026-10-15T15:07:40.795Z",
-  "contentHash": "867482b59875bdf223c36c5fa254efe7008a69ec0ecb40c2c69c473bbf1b3940"
+  "publicationStatus": "current",
+  "notice": "2026-10-15 · 5 stories",
+  "publishedAt": "2026-10-15T15:16:51.992Z",
+  "contentHash": "8e77e36b55c4e488f14c90ced83cda72a51805eaec9a0c273ecad9bcd13cd454"
 }
