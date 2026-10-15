@@ -12,3 +12,7 @@ reviewedIds.push(951,952,953,954,955);
 // October14: original sources956–960 and candidate/unclassified queue reviewed.
 // 958 updates the safety synthesis; the other four do not alone establish a new theme.
 reviewedIds.push(956,957,958,959,960);
+// October15: 963 incorporated after fresh source review. 962 is a cooperation
+// announcement, not evidence for the provenance briefing; 964 is a single device
+// refresh, not yet a separate cross-story development. Other dates are unchanged.
+reviewedIds.push(962,963,964);
