@@ -1,0 +1,19 @@
+AI operating costs. The model bill depends on the job.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 15, 2026. Synthetic narration.
+
+Anthropic’s Haiku 5.5 prices favor prompts up to 100,000 tokens. Microsoft’s Decision-1 charges for input while returning fixed-choice scores, with no output-token charge. Google has launched Argon with introductory rates through November 30. These offers reward different workloads; comparing them starts with what each step of a task actually needs.
+
+Three takeaways. Match. Choose a model for each step. Measure. Include retries and review. Budget. Use the ongoing price.
+
+What it means. Separate routine classification from open-ended reasoning when testing a workflow. Measure the total cost of an accepted result, including retries, tool calls and human review. Track long prompts and cache use, since they can change the bill. Budget using the rate that will apply after a promotion ends, and keep quality and response time beside the price.
+
+How the story developed. Three October releases offer different pricing structures: a prompt-length threshold, a model for predefined choices, and a temporary introductory rate. Their usefulness depends on the work being assigned.
+
+October 7. Anthropic ties Haiku prices to prompt length. For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing. Source: Anthropic.
+
+October 9. Microsoft prices fixed-choice decisions. Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer. Source: Microsoft.
+
+October 13. Google sets a time-limited Argon price. Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026. Source: Google.
+
+What to watch. Watch measured cost per accepted result, error rates when routing work to smaller models, and Argon pricing after November 30.

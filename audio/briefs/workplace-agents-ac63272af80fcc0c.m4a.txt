@@ -1,0 +1,31 @@
+Agents at work. AI work needs an inspectable result.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 15, 2026. Synthetic narration.
+
+Meta reports that medical researchers developed ten manuscripts in four weeks using Muse for coding, analysis and writing. Researchers retained responsibility for scientific decisions, with reviews by a biostatistician and contracted outside experts. Alongside persistent assistants and dashboards that expose their queries, the project puts a practical question in view: how can people examine and approve the work an agent produces?
+
+Three takeaways. Remember. Retrieve details relevant to this task. Inspect. See what the agent used and did. Accept. Check the result and correct its context.
+
+What it means. An assistant that remembers a project can reduce repeated briefing. The result still needs a trail that another person can follow: the data used, the code or queries run, and the choices that shaped the answer. Build those checks into the workflow, and let users correct or delete remembered context. In consequential work, decide who owns the judgment before delegating the task.
+
+55.0%. Average task-criteria score. GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed. Source: OpenAI, 2026-10-06.
+
+How the story developed. Event-triggered work and persistent assistants added ways to start tasks and carry work across sessions. Dashboards and the latest human-led research project show different ways to inspect their outputs and keep responsibility for decisions clear.
+
+September 28. Manus introduces event-triggered automation. Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work. Source: Manus.
+
+October 6. Ironclad tests agents on legal workflows. OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully. Source: OpenAI.
+
+October 6. Atlassian expands its OpenAI partnership. Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool. Source: OpenAI.
+
+October 8. Google introduces a persistent workplace agent. Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls. Source: Google Cloud.
+
+October 8. Claude makes dashboard results inspectable. Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it. Source: Anthropic.
+
+October 12. Meta releases Muse Wonder. The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned. Source: Meta.
+
+October 12. Ambi opens early access. Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to. Source: Ambi.
+
+October 14. Meta shares human-led research manuscripts. Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work. Source: Meta.
+
+What to watch. Watch independent assessment of the research manuscripts, inspectable outputs after long tasks, and controls for correcting or deleting remembered context.

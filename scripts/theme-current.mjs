@@ -38,17 +38,18 @@ export const briefs = [
   ]
  },
  {
-  id:'workplace-agents',label:'Agents at work',title:'Remembering the work is becoming part of the product.',
-  reviewedAt:'2026-10-12',author:'Codex',accent:'lilac',
-  teaser:'Meta and Ambi are emphasizing memory across conversations and devices. The practical test is whether that context helps finish the right task.',
-  summary:'Meta’s Muse Wonder announcement emphasizes retrieval of relevant context and sustained work on difficult tasks. Ambi is opening early access for assistance that follows conversations and continues across devices. These launches extend a direction already visible in Google’s persistent workplace agent: users are being asked to trust systems with an ongoing record of their work.',
-  meaning:'Remembered context can spare a user repeated briefing, but an old preference or unfinished task can also become the wrong instruction. Evaluate whether the product recalls the right details, shows what it acted on and lets a person correct or delete them. For work shared with colleagues, inspectable outputs and clear approval points remain useful checks on what the agent actually completed.',
-  watch:'Watch task completion after interruptions, correction and deletion controls, and recording consent when assistants gather context from other people.',
+  id:'workplace-agents',label:'Agents at work',title:'AI work needs an inspectable result.',
+  reviewedAt:'2026-10-15',author:'Codex',accent:'lilac',
+  teaser:'Persistent assistants are taking on longer tasks. Meta’s human-led research project shows how expert decisions and review can accompany that work.',
+  summary:'Meta reports that medical researchers developed ten manuscripts in four weeks using Muse for coding, analysis and writing. Researchers retained responsibility for scientific decisions, with reviews by a biostatistician and contracted outside experts. Alongside persistent assistants and dashboards that expose their queries, the project puts a practical question in view: how can people examine and approve the work an agent produces?',
+  meaning:'An assistant that remembers a project can reduce repeated briefing. The result still needs a trail that another person can follow: the data used, the code or queries run, and the choices that shaped the answer. Build those checks into the workflow, and let users correct or delete remembered context. In consequential work, decide who owns the judgment before delegating the task.',
+  watch:'Watch independent assessment of the research manuscripts, inspectable outputs after long tasks, and controls for correcting or deleting remembered context.',
   visualTitle:'Follow the work to its result',
   visual:[['Remember','Retrieve details relevant to this task'],['Inspect','See what the agent used and did'],['Accept','Check the result and correct its context']],
-  timelineIntro:'Event-triggered work and persistent workplace agents came first. The latest launches put more emphasis on remembered context, while dashboard and workflow tests offer ways to inspect the resulting work.',
+  timelineIntro:'Event-triggered work and persistent assistants added ways to start tasks and carry work across sessions. Dashboards and the latest human-led research project show different ways to inspect their outputs and keep responsibility for decisions clear.',
   metric:{value:'55.0%',label:'Average task-criteria score',context:'GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed.',sourceId:932},
   developments:[
+   {date:'2026-10-14',id:967,title:'Meta shares human-led research manuscripts',text:'Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work.',source:'Meta',url:'https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models'},
    {date:'2026-10-12',id:951,title:'Meta releases Muse Wonder',text:'The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned.',source:'Meta',url:'https://research.meta.ai/blog/muse-wonder'},
    {date:'2026-10-12',id:954,title:'Ambi opens early access',text:'Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to.',source:'Ambi',url:'https://www.ambi.ai/en'},
    {date:'2026-10-08',id:947,title:'Google introduces a persistent workplace agent',text:'Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls.',source:'Google Cloud',url:'https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026'},
@@ -96,19 +97,36 @@ export const briefs = [
   ]
  }
  ,{
-  id:'open-weights',label:'Open models',title:'The route to running your own models.',
-  reviewedAt:'2026-10-08',author:'Codex',accent:'gold',
-  teaser:'A small media-search model is available now. Larger general-purpose models are approaching their promised weight releases.',
-  summary:'Google has released EmbeddingGemma 2 for local search across text, images, audio and video. AI developers Mistral and Reflection are previewing larger models teams could host themselves. Both promise weights—the files needed to run their models—later in October. These releases serve different jobs and have very different hardware needs.',
-  meaning:'Running a model yourself gives you choices about deployment, data handling and upgrades. It also makes capacity planning and maintenance your responsibility. Start with the workload: a compact search model and a large general-purpose model solve different problems. For the larger previews, the next decision depends on the released weights, license terms and measured operating costs.',
-  watch:'Watch whether Mistral and Reflection deliver their weights on schedule, what licenses permit, and independent tests on hardware teams can realistically operate.',
+  id:'open-weights',label:'Open models',title:'Open models are reaching more kinds of hardware.',
+  reviewedAt:'2026-10-15',author:'Codex',accent:'gold',
+  teaser:'NVIDIA’s latest releases span servers and local systems. Hardware needs are becoming central to choosing a model you can run yourself.',
+  summary:'NVIDIA has released Nemotron 3.5 Super VL and Bolt 74B-A9B. It says the Bolt model fits in 24GB of memory on supported NVIDIA systems; a smaller Bolt is due October 23. They join Google’s compact media-search model while Mistral and Reflection still describe larger weight releases planned for later in October.',
+  meaning:'Model files are only the starting point for self-hosting. Check the license, supported hardware, memory required during real tasks and how quickly the model responds. A model that fits in memory may still be too slow for the job. Test with the context and tools you intend to use, then include maintenance and upgrades in the operating cost.',
+  watch:'Watch independent performance on local hardware, the October 23 Bolt release, and whether Mistral and Reflection deliver their planned weights.',
   visualTitle:'From announcement to a working system',
   visual:[['Available','Obtain weights and check the license'],['Suitable','Test the model on the actual task'],['Operable','Measure hardware and maintenance costs']],
-  timelineIntro:'A compact search model is already available, while two larger models have announced later releases. The key milestones are access to the model files, permission to use them and evidence that they work on hardware a team can operate.',
+  timelineIntro:'Local search and larger model previews were followed by NVIDIA releases aimed at server and desktop deployments. Availability, hardware requirements and performance on the intended task remain separate checks.',
   developments:[
+   {date:'2026-10-15',id:965,title:'NVIDIA releases server and local Nemotron models',text:'Super VL and Bolt 74B-A9B are available now, according to NVIDIA. The company says Bolt uses a 2-bit representation to fit in 24GB of memory on supported local systems. The smaller Bolt E4B is due October 23.',source:'NVIDIA',url:'https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/'},
    {date:'2026-10-06',id:937,title:'Google releases a compact media-search model',text:'EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support.',source:'Google',url:'https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/'},
    {date:'2026-10-06',id:936,title:'Mistral opens a Large 4 API preview',text:'Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API.',source:'Mistral',url:'https://mistral.ai/news/mistral-large-4/'},
    {date:'2026-10-05',id:925,title:'Reflection previews Beam',text:'Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October.',source:'Reflection',url:'https://reflection.ai/blog/introducing-beam'}
+  ]
+ },
+ {
+  id:'agent-economics',label:'AI operating costs',title:'The model bill depends on the job.',
+  reviewedAt:'2026-10-15',author:'Codex',accent:'blue',
+  teaser:'Cheaper short prompts, fixed-choice models and temporary launch prices offer different ways to manage an AI bill.',
+  summary:'Anthropic’s Haiku 5.5 prices favor prompts up to 100,000 tokens. Microsoft’s Decision-1 charges for input while returning fixed-choice scores, with no output-token charge. Google has launched Argon with introductory rates through November 30. These offers reward different workloads; comparing them starts with what each step of a task actually needs.',
+  meaning:'Separate routine classification from open-ended reasoning when testing a workflow. Measure the total cost of an accepted result, including retries, tool calls and human review. Track long prompts and cache use, since they can change the bill. Budget using the rate that will apply after a promotion ends, and keep quality and response time beside the price.',
+  watch:'Watch measured cost per accepted result, error rates when routing work to smaller models, and Argon pricing after November 30.',
+  visualTitle:'Compare the cost of completed work',
+  visual:[['Match','Choose a model for each step'],['Measure','Include retries and review'],['Budget','Use the ongoing price']],
+  timelineIntro:'Three October releases offer different pricing structures: a prompt-length threshold, a model for predefined choices, and a temporary introductory rate. Their usefulness depends on the work being assigned.',
+  developments:[
+   {date:'2026-10-13',id:961,title:'Google sets a time-limited Argon price',text:'Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026.',source:'Google',url:'https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/'},
+   {date:'2026-10-09',id:946,title:'Microsoft prices fixed-choice decisions',text:'Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer.',source:'Microsoft',url:'https://commandline.microsoft.com/microsoft-decision-1-model-foundry/'},
+   {date:'2026-10-07',id:935,title:'Anthropic ties Haiku prices to prompt length',text:'For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing.',source:'Anthropic',url:'https://www.anthropic.com/claude-haiku-5-5'}
   ]
  }
 ];

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {createServer} from 'node:http';
 import {readFile,mkdir} from 'node:fs/promises';
 import {chromium} from 'playwright';
+import {briefs} from '../scripts/theme-current.mjs';
 let server,browser,base;
 before(async()=>{
  server=createServer(async(req,res)=>{try{
@@ -19,12 +20,12 @@ before(async()=>{
  browser=await chromium.launch({channel:'chrome',chromiumSandbox:true});await mkdir(new URL('../test-results/',import.meta.url),{recursive:true});
 });
 after(async()=>{await browser?.close();server?.closeAllConnections();await new Promise(resolve=>server?.close(resolve));});
-test('real audio decodes and plays all six briefings, speed/resume persist, only one plays',{timeout:45000},async()=>{
+test('real audio decodes and plays every briefing, speed/resume persist, only one plays',{timeout:45000},async()=>{
  const context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage(),errors=[];
  page.on('pageerror',e=>errors.push(e.message));
  await page.goto(base+'/themes.html');
- assert.equal(await page.locator('audio').count(),6);
- for(let i=0;i<6;i++){
+ assert.equal(await page.locator('audio').count(),briefs.length);
+ for(let i=0;i<briefs.length;i++){
   const box=page.locator('[data-brief-audio]').nth(i);
   await box.locator('[data-restart]').click();
   await page.waitForFunction(i=>{const a=document.querySelectorAll('audio')[i];return a.currentTime>0&&a.duration>60&&!a.error;},i);
@@ -65,6 +66,6 @@ test('audio errors and disabled storage retain a readable usable page',async()=>
 });
 test('no JavaScript still exposes native controls and a complete transcript',async()=>{
  const ctx=await browser.newContext({javaScriptEnabled:false}),p=await ctx.newPage();await p.goto(base+'/themes.html');
- assert.equal(await p.locator('audio[controls]').count(),6);assert.equal(await p.locator('.audio-options:visible').count(),0);
+ assert.equal(await p.locator('audio[controls]').count(),briefs.length);assert.equal(await p.locator('.audio-options:visible').count(),0);
  await p.locator('.audio-transcript summary').first().click();assert.ok(await p.locator('.audio-transcript p').first().isVisible());await ctx.close();
 });

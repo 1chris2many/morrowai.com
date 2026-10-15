@@ -1,0 +1,21 @@
+Open models. Open models are reaching more kinds of hardware.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 15, 2026. Synthetic narration.
+
+NVIDIA has released Nemotron 3.5 Super VL and Bolt 74B-A9B. It says the Bolt model fits in 24GB of memory on supported NVIDIA systems; a smaller Bolt is due October 23. They join Google’s compact media-search model while Mistral and Reflection still describe larger weight releases planned for later in October.
+
+Three takeaways. Available. Obtain weights and check the license. Suitable. Test the model on the actual task. Operable. Measure hardware and maintenance costs.
+
+What it means. Model files are only the starting point for self-hosting. Check the license, supported hardware, memory required during real tasks and how quickly the model responds. A model that fits in memory may still be too slow for the job. Test with the context and tools you intend to use, then include maintenance and upgrades in the operating cost.
+
+How the story developed. Local search and larger model previews were followed by NVIDIA releases aimed at server and desktop deployments. Availability, hardware requirements and performance on the intended task remain separate checks.
+
+October 5. Reflection previews Beam. Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October. Source: Reflection.
+
+October 6. Google releases a compact media-search model. EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support. Source: Google.
+
+October 6. Mistral opens a Large 4 API preview. Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API. Source: Mistral.
+
+October 15. NVIDIA releases server and local Nemotron models. Super VL and Bolt 74B-A9B are available now, according to NVIDIA. The company says Bolt uses a 2-bit representation to fit in 24GB of memory on supported local systems. The smaller Bolt E4B is due October 23. Source: NVIDIA.
+
+What to watch. Watch independent performance on local hardware, the October 23 Bolt release, and whether Mistral and Reflection deliver their planned weights.

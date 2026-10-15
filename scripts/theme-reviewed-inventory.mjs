@@ -16,3 +16,7 @@ reviewedIds.push(956,957,958,959,960);
 // announcement, not evidence for the provenance briefing; 964 is a single device
 // refresh, not yet a separate cross-story development. Other dates are unchanged.
 reviewedIds.push(962,963,964);
+// October15 10:00 cycle: original sources965–968 inspected;965/967 incorporated.
+// 961 joins935/946 in a reviewed pricing synthesis.966 is user-controlled shopping,
+// and968 is a research-access pledge; neither alone establishes a new trend.
+reviewedIds.push(961,965,966,967,968);

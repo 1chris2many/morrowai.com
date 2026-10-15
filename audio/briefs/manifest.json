@@ -17,11 +17,11 @@
       "sha256": "b358d45d7be8e761a5f74d5bb3a58bc31a734f2b6055781d77ce13151c576592"
     },
     "workplace-agents": {
-      "hash": "90d03ba71924fa7dc687c76067c208195b00c3f20e9c1997fe9ce4adac7067c0",
-      "src": "audio/briefs/workplace-agents-90d03ba71924fa7d.m4a",
-      "duration": 229.827664,
-      "bytes": 968731,
-      "sha256": "303f1a9c9d3c6f4a33dafaf38a04368c3ce56ce215886859521205fac2fe0c1e"
+      "hash": "ac63272af80fcc0c2880e85a1bbdbfa3731b6d3eec87e1c2a7793e46242a5154",
+      "src": "audio/briefs/workplace-agents-ac63272af80fcc0c.m4a",
+      "duration": 254.905215,
+      "bytes": 1070715,
+      "sha256": "d3f2416bc3dae8f5ff15d1e7a80a9a5f54ae6d1aa17fbbe0067aee2ed6478e72"
     },
     "ai-infrastructure": {
       "hash": "d5e055680656d6cf6a067e926d0a70d62e43fe91a13bc62f6383b0aa0d629f4a",
@@ -38,11 +38,18 @@
       "sha256": "94277a902f0f587afc5c8ffe762637be8f87e3b9b43025aef06fe7b8fad04e68"
     },
     "open-weights": {
-      "hash": "d5c426a79407763387b0323cc902a3f7f5891c1cd111e58bbdb545f03285d52f",
-      "src": "audio/briefs/open-weights-d5c426a794077633.m4a",
-      "duration": 135.156644,
-      "bytes": 583169,
-      "sha256": "02fca3a060e750fe97e1316d8555abd420a88b4cd4a2d381e67a4a98ae1f6a74"
+      "hash": "ced1e007ead7e83adcd6fc5217b25b392dcf61aed5403155ae2a40735faf6cd7",
+      "src": "audio/briefs/open-weights-ced1e007ead7e83a.m4a",
+      "duration": 155.892063,
+      "bytes": 667633,
+      "sha256": "2b64e653ced911ba459c56246a0e6cb4c0e07afd5658a2ded9509ab05747fafb"
+    },
+    "agent-economics": {
+      "hash": "c8859a5796eb6204cd45c4b0cbd832a391e18bfbd9fcbd46def773ab213d1f76",
+      "src": "audio/briefs/agent-economics-c8859a5796eb6204.m4a",
+      "duration": 148.697098,
+      "bytes": 638466,
+      "sha256": "83f444092d3e413f8c69617d3fb1402aac2f81bdde78e53ab4a4ea91af063e2c"
     }
   }
 }
