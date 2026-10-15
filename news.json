@@ -1,18 +1,115 @@
 {
   "version": 1,
-  "digestDate": "2026-10-12",
+  "digestDate": "2026-10-14",
   "latestSavedDigest": "2026-10-14",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 2,
+    "sourceCount": 1,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 7,
+  "pending": 2,
   "items": [
+    {
+      "digestItemId": 959,
+      "digestDate": "2026-10-14",
+      "title": "Apple gains access to hiring records",
+      "summary": "A judge ordered expedited disclosure from OpenAI. Broader hardware-research requests were denied for now.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-14-judge-orders-openai-to-turn-over-hiring-records-in-apple-s-trade-secrets-lawsuit",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 960,
+      "digestDate": "2026-10-14",
+      "title": "Scimplify raises $25 million",
+      "summary": "The startup uses AI to coordinate specialty-materials production. Hitachi Ventures led the round.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-14-scimplify-raises-25-million-to-build-ai-driven-alternatives-to-chinese-critical-materials-supply-chains",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 957,
+      "digestDate": "2026-10-13",
+      "title": "Amex adds purchase-intent checks",
+      "summary": "Customers approve shopping instructions before agents receive payment credentials. Amex aims to catch unauthorized purchases before checkout.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-13-american-express-launches-framework-to-stop-ai-shopping-agents-from-making-wrong-purchases",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 958,
+      "digestDate": "2026-10-13",
+      "title": "Anthropic tests AI replication on consumer-class hardware",
+      "summary": "Anthropic ran a model across 15 inexpensive TV boxes. In a separate, simplified lab network, a larger model reliably carried out replication steps while running on an external server. The study explores how future smaller models might combine those capabilities.",
+      "whyItMatters": "The work makes hardware capacity and model capability separate questions for defenders. It tests a possible route to autonomous spread, rather than demonstrating a self-sustaining outbreak on consumer devices.",
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "source": "Anthropic (Frontier Red Team)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-13-anthropic-warns-small-ai-models-may-soon-be-able-to-self-replicate-on-everyday-smart-devices",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 956,
+      "digestDate": "2026-10-13",
+      "title": "Character.AI seeks bankruptcy protection",
+      "summary": "TechCrunch reports a Chapter 11 filing. The platform’s future depends on finding a buyer.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-13-character-ai-files-for-chapter-11-bankruptcy-selling-assets-to-disney-for-20-million",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 954,
       "digestDate": "2026-10-12",
@@ -4148,8 +4245,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-12 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-14T13:59:34.093Z",
-  "contentHash": "d3a2c9a43474d2b520cf435283e8b28cd237ed6c05be466603766e3179b0b8e6"
+  "publicationStatus": "thin",
+  "notice": "2026-10-14 · 2 stories",
+  "publishedAt": "2026-10-15T00:21:51.663Z",
+  "contentHash": "82ed19664e9a55d9633e6a8c9bff05a8174eea463bbaa7225c5239e2d541517c"
 }
