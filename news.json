@@ -1,18 +1,37 @@
 {
   "version": 1,
-  "digestDate": "2026-10-14",
+  "digestDate": "2026-10-15",
   "latestSavedDigest": "2026-10-15",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 1,
+    "sourceCount": 1,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 3,
+  "pending": 2,
   "items": [
+    {
+      "digestItemId": 964,
+      "digestDate": "2026-10-15",
+      "title": "Amazon expands its Bee listening devices",
+      "summary": "Amazon announced the $75 Bee Frontier wearable and the $100 Bee Eclipse, which attaches magnetically to a smartphone. Both capture conversations for AI-generated notes; Frontier is available today, while Eclipse is coming later. Frontier costs more than the previous $50 model.",
+      "whyItMatters": "",
+      "url": "https://www.cnbc.com/2026/10/15/amazon-bee-frontier-eclipse-ai-devices.html",
+      "source": "CNBC",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-15-amazon-launches-two-new-bee-ai-wearables-the-frontier-and-eclipse",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 962,
       "digestDate": "2026-10-14",
@@ -4319,8 +4338,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-14 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-15T13:59:37.747Z",
-  "contentHash": "18acee6309851d572e5330f5c28a40bb720d518b8ea4e7d01c5ab959757fabf3"
+  "publicationStatus": "thin",
+  "notice": "2026-10-15 · 1 stories",
+  "publishedAt": "2026-10-15T15:07:40.795Z",
+  "contentHash": "867482b59875bdf223c36c5fa254efe7008a69ec0ecb40c2c69c473bbf1b3940"
 }
