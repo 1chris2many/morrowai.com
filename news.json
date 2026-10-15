@@ -4,15 +4,39 @@
   "latestSavedDigest": "2026-10-14",
   "fresh": true,
   "coverage": {
-    "count": 2,
-    "sourceCount": 1,
+    "count": 5,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 2,
   "items": [
+    {
+      "digestItemId": 962,
+      "digestDate": "2026-10-14",
+      "title": "Anthropic opens Singapore office and signs government cooperation pact",
+      "summary": "Anthropic opened its fifth Asia-Pacific office in Singapore on October 14 and signed a cooperation agreement with the country's digital ministry. Planned work covers model testing, incident response, AI skills and adoption by businesses and public agencies.",
+      "whyItMatters": "",
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "source": "Anthropic — October 14, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-14-anthropic-opens-singapore-office-and-signs-government-cooperation-pact",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 959,
       "digestDate": "2026-10-14",
@@ -30,6 +54,56 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-14-judge-orders-openai-to-turn-over-hiring-records-in-apple-s-trade-secrets-lawsuit",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 963,
+      "digestDate": "2026-10-14",
+      "title": "Claude adds election safeguards and plans official voting information",
+      "summary": "Anthropic says Claude will draw state-specific voting information from Democracy Works later in October and display official results starting on election night. It also added detection for multi-step election abuse after external testers found that malicious campaigns could evade safeguards when broken into seemingly harmless requests.",
+      "whyItMatters": "",
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "source": "Anthropic — October 14, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-14-claude-adds-election-safeguards-and-plans-official-voting-information",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 961,
+      "digestDate": "2026-10-14",
+      "title": "Google expands Gemini 4 Argon access",
+      "summary": "Google made Gemini 4 Argon available through its paid API and to AI Pro and Ultra subscribers in the Gemini app and AI Mode in Search on October 13. Introductory API prices are $2 per million input tokens and $10 per million output tokens through November 30; Google lists $4 and $20 afterward.",
+      "whyItMatters": "",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "source": "Google — October 13, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-14-google-expands-gemini-4-argon-access",
       "editorialNote": ""
     },
     {
@@ -4245,8 +4319,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "thin",
-  "notice": "2026-10-14 · 2 stories",
-  "publishedAt": "2026-10-15T00:21:51.663Z",
-  "contentHash": "82ed19664e9a55d9633e6a8c9bff05a8174eea463bbaa7225c5239e2d541517c"
+  "publicationStatus": "current",
+  "notice": "2026-10-14 · 5 stories",
+  "publishedAt": "2026-10-15T00:49:14.206Z",
+  "contentHash": "aedf99d56b76585416e505c746654b92d799d7932d6a0958e97490eda1df0f4d"
 }
