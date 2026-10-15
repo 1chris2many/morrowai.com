@@ -29,11 +29,17 @@ test('explicit retirement wins; refreshed source evidence can reactivate',()=>{
  assert.throws(()=>day('2026-02-30'),/Invalid/);
 });
 test('same-day new evidence queues review, does not rewrite copy; duplicates collapse',()=>{
- const i=feed.items.find(i=>i.digestItemId===926), before=JSON.stringify(briefs);
+ const i={...feed.items.find(i=>i.digestItemId===926),digestDate:reviewDay}, before=JSON.stringify(briefs);
+ const baseline=themeQueue(feed,reviewDay).updates.find(x=>x.id==='ai-regulation');
  const f={...feed,items:[...feed.items,{...i,digestItemId:99001,url:'https://example.com/new'}, {...i,digestItemId:99002,url:'https://example.com/new?utm_source=test'}]};
- const q=themeQueue(f,reviewDay);
- assert.equal(q.updates.find(x=>x.id==='ai-regulation').items.length,1);
- assert.equal(q.updates.find(x=>x.id==='ai-regulation').needsReview,true);
+ const update=themeQueue(f,reviewDay).updates.find(x=>x.id==='ai-regulation');
+ // A daily edition may already have pending evidence. Keep it queued while
+ // asserting that the two synthetic URLs add exactly one new review item.
+ assert.equal(update.items.length,baseline.items.length+1);
+ assert.deepEqual(update.items.filter(x=>![99001,99002].includes(x.id)),baseline.items);
+ assert.deepEqual(update.items.filter(x=>[99001,99002].includes(x.id)).map(x=>x.id),[99001]);
+ assert.equal(update.items.find(x=>x.id===99001).editionDate,reviewDay);
+ assert.equal(update.needsReview,true);
  assert.equal(JSON.stringify(briefs),before);
 });
 test('candidate needs distinct URLs and two publishers; unclassified stories surfaced',()=>{
