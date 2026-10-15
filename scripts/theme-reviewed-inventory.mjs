@@ -9,3 +9,6 @@ reviewedIds.push(950);
 // October12: five reviewed new cards; four incorporated in existing briefings.
 // WindBorne's contract is one development, insufficient for a new weather theme.
 reviewedIds.push(951,952,953,954,955);
+// October14: original sources956–960 and candidate/unclassified queue reviewed.
+// 958 updates the safety synthesis; the other four do not alone establish a new theme.
+reviewedIds.push(956,957,958,959,960);

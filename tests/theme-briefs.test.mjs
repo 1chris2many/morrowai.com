@@ -47,7 +47,7 @@ test('October 7 editorial additions preserve scope and untouched review dates',(
 });
 test('October 8 synthesis preserves availability distinctions and unrelated dates',()=>{
  const safety=briefs.find(b=>b.id==='safety-vs-capability');
- assert.equal(safety.reviewedAt,'2026-10-11');
+ assert.equal(safety.reviewedAt,'2026-10-14');
  assert.match(safety.developments.find(d=>d.id===939).text,/authorization/);
  const infra=briefs.find(b=>b.id==='ai-infrastructure');
  assert.match(infra.developments.find(d=>d.id===938).text,/October 16/);
@@ -100,7 +100,7 @@ test('October 11 timeline keeps proposal status and event date',()=>{
  const safety=briefs.find(b=>b.id==='safety-vs-capability');
  const addition=safety.developments.find(d=>d.id===950);
  assert.equal(addition.date,'2026-10-10');
- assert.equal(safety.reviewedAt,'2026-10-11');
+ assert.equal(safety.reviewedAt,'2026-10-14');
  assert.match(addition.text,/TechCrunch reports/);
  assert.match(addition.text,/proposals, not verified deployments/);
  assert.ok(addition.relation.length>=30);
@@ -126,6 +126,24 @@ test('October 12 memory and infrastructure synthesis preserves actual availabili
  for(const id of [951,952,953,954,955])assert.ok(reviewedIds.includes(id));
  assert.equal(briefs.length,6);assert.ok(!briefs.some(b=>b.developments.some(d=>d.id===955)));
  assert.deepEqual(briefs.filter(b=>!['workplace-agents','ai-infrastructure'].includes(b.id)).map(b=>[b.id,b.reviewedAt]),[
-  ['ai-regulation','2026-10-09'],['safety-vs-capability','2026-10-11'],['evals','2026-10-07'],['open-weights','2026-10-08']
+  ['ai-regulation','2026-10-09'],['safety-vs-capability','2026-10-14'],['evals','2026-10-07'],['open-weights','2026-10-08']
  ]);
+});
+test('October 14 replication addition separates hardware demo from simplified lab capability',()=>{
+ const safety=briefs.find(b=>b.id==='safety-vs-capability');
+ const d=safety.developments.find(d=>d.id===958);
+ assert.equal(d.date,'2026-10-12');
+ assert.equal(safety.reviewedAt,'2026-10-14');
+ assert.match(d.text,/separate tests/);
+ assert.match(d.text,/ran externally/);
+ assert.match(d.text,/does not demonstrate a self-sustaining outbreak/);
+ assert.match(safety.summary,/connected devices outside their original host/);
+ assert.match(safety.watch,/hardware constraints/);
+ for(const id of [956,957,958,959,960])assert.ok(reviewedIds.includes(id));
+ assert.equal(briefs.length,6);
+ assert.deepEqual(briefs.filter(b=>b.id!=='safety-vs-capability').map(b=>[b.id,b.reviewedAt]),[
+  ['ai-regulation','2026-10-09'],['workplace-agents','2026-10-12'],['ai-infrastructure','2026-10-12'],['evals','2026-10-07'],['open-weights','2026-10-08']
+ ]);
+ const missing=structuredClone(feed);missing.items=missing.items.filter(i=>i.digestItemId!==958);
+ assert.throws(()=>validateBriefs(missing),/source 958/);
 });
