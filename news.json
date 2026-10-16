@@ -1,18 +1,130 @@
 {
   "version": 1,
-  "digestDate": "2026-10-15",
+  "digestDate": "2026-10-16",
   "latestSavedDigest": "2026-10-16",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 4,
+  "pending": 2,
   "items": [
+    {
+      "digestItemId": 969,
+      "digestDate": "2026-10-16",
+      "title": "Anthropic embeds METR evaluators with internal access",
+      "summary": "Anthropic said on October 15 that six METR staff now have access to internal tools and systems comparable to its own risk teams. METR can publish its assessments without Anthropic's veto, subject to narrowly defined redactions.",
+      "whyItMatters": "",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "source": "Anthropic Newsroom",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-16-anthropic-gives-metr-employee-like-access-to-evaluate-its-ai-risk-practices",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 972,
+      "digestDate": "2026-10-16",
+      "title": "Anthropic makes Code Review generally available",
+      "summary": "Anthropic made Code Review generally available to Claude Team and Enterprise organizations, with administrators able to choose Quick, Standard or Deep reviews for each repository. The company says most reviews now finish in six to ten minutes, compared with about twenty minutes during the research preview.",
+      "whyItMatters": "",
+      "url": "https://claude.com/resources/articles/code-review-is-now-generally-available",
+      "source": "Anthropic — October 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-16-anthropic-makes-code-review-generally-available",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 973,
+      "digestDate": "2026-10-16",
+      "title": "Black Forest Labs releases FLUX 3 Image Klein",
+      "summary": "Black Forest Labs released FLUX 3 Image Klein, a 5.6-billion-parameter image generator for creating and editing images with up to ten references. Base and distilled weights are available under its FLUX Kommunity License, which permits free commercial use for individuals and companies with annual revenue below $5 million.",
+      "whyItMatters": "",
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "source": "Black Forest Labs — October 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-16-black-forest-labs-releases-flux-3-image-klein",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 971,
+      "digestDate": "2026-10-16",
+      "title": "IBM combines chat, decisions and speech in Granite Switch 4.1",
+      "summary": "IBM announced Granite Switch 4.1 models built around 8B and 30B base models, combining chat, decision-making, safety screening and speech transcription through one endpoint. IBM says the combined system uses roughly the GPU memory of its base model alone; the Apache-2.0 release supports English speech input.",
+      "whyItMatters": "",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "source": "IBM on Hugging Face — October 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-16-ibm-combines-chat-decisions-and-speech-in-granite-switch-4-1",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 970,
+      "digestDate": "2026-10-16",
+      "title": "OpenAI employee charged over alleged covert recording",
+      "summary": "U.S. prosecutors charged an OpenAI employee arrested October 9 with intercepting oral communications. In an October 13 announcement, the Justice Department said a complaint alleges he concealed a recording device in an executive conference room.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/13/fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-conference-room/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-16-fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-executive-conference-room",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 964,
       "digestDate": "2026-10-15",
@@ -4431,8 +4543,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-15 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-16T13:59:41.378Z",
-  "contentHash": "fb040c9a2b4cd0ae0941f5fc7c89994ae7667ecc832c988f7f1893c05a955bc5"
+  "publicationStatus": "current",
+  "notice": "2026-10-16 · 5 stories",
+  "publishedAt": "2026-10-16T15:07:08.878Z",
+  "contentHash": "e38a89f9c83190f3c5c9fdc2b27e5354f7f62d5421d3b116dcc2a16e91c3849e"
 }
