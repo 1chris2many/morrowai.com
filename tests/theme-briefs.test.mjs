@@ -40,8 +40,8 @@ test('October 7 editorial additions preserve scope and untouched review dates',(
  assert.match(workplace.developments.find(d=>d.id===933).text,/exploring/);
  const infrastructure=briefs.find(b=>b.id==='ai-infrastructure');
  assert.match(infrastructure.developments.find(d=>d.id===930).text,/2028/);
- const evals=briefs.find(b=>b.id==='evals');assert.equal(evals.developments.length,3);
- assert.equal(new Set(evals.developments.map(d=>new URL(d.url).hostname)).size,3);
+ const evals=briefs.find(b=>b.id==='evals');assert.equal(evals.developments.length,5);
+ assert.equal(new Set(evals.developments.map(d=>new URL(d.url).hostname)).size,5);
  assert.match(evals.developments.find(d=>d.id===916).text,/percentage points/);
  assert.match(evals.developments.find(d=>d.id===913).url,/www.cdc.gov/);
 });
@@ -53,11 +53,11 @@ test('October 8 synthesis preserves availability distinctions and unrelated date
  assert.match(infra.developments.find(d=>d.id===938).text,/October 16/);
  assert.match(infra.developments.find(d=>d.id===938).text,/November/);
  const open=briefs.find(b=>b.id==='open-weights');
- assert.equal(new Set(open.developments.map(d=>new URL(d.url).hostname)).size,4);
+ assert.equal(new Set(open.developments.map(d=>new URL(d.url).hostname)).size,6);
  assert.match(open.developments.find(d=>d.id===936).text,/plans to release/);
  assert.match(open.developments.find(d=>d.id===925).text,/promised/);
  assert.match(open.developments.find(d=>d.id===937).text,/Apache 2.0/);
- assert.equal(briefs.find(b=>b.id==='evals').reviewedAt,'2026-10-07');
+ assert.equal(briefs.find(b=>b.id==='evals').reviewedAt,'2026-10-16');
  assert.equal(briefs.find(b=>b.id==='ai-regulation').reviewedAt,'2026-10-09');
  for(const id of [935,936,937,938,939])assert.ok(reviewedIds.includes(id));
 });
@@ -71,7 +71,7 @@ test('October 9 synthesis distinguishes provenance, truth and unreviewed securit
  assert.match(safety.developments.find(d=>d.id===940).text,/unreviewed/);
  assert.match(safety.developments.find(d=>d.id===940).text,/human-verified disclosure continues/);
  assert.equal(safety.developments.find(d=>d.id===940).date,'2026-10-08');
- assert.equal(briefs.find(b=>b.id==='open-weights').reviewedAt,'2026-10-15');
+ assert.equal(briefs.find(b=>b.id==='open-weights').reviewedAt,'2026-10-16');
  for(const id of [768,940,941,942,943,944])assert.ok(reviewedIds.includes(id));
 });
 test('October 10 synthesis keeps evaluation scope, beta access and event dates explicit',()=>{
@@ -112,11 +112,11 @@ test('October 11 timeline keeps proposal status and event date',()=>{
 test('October 12 memory and infrastructure synthesis preserves actual availability and unchanged dates',()=>{
  const work=briefs.find(b=>b.id==='workplace-agents');
  const infra=briefs.find(b=>b.id==='ai-infrastructure');
- assert.equal(work.reviewedAt,'2026-10-15');assert.equal(infra.reviewedAt,'2026-10-12');
+ assert.equal(work.reviewedAt,'2026-10-16');assert.equal(infra.reviewedAt,'2026-10-12');
  assert.match(work.developments.find(d=>d.id===951).text,/memory retrieval/);
  assert.match(work.developments.find(d=>d.id===951).text,/App rollout is still planned/);
  assert.match(work.developments.find(d=>d.id===954).text,/It says audio is deleted after transcription/);
- assert.match(work.meaning,/correct or delete/);
+ assert.match(work.meaning,/inspect, correct and delete/);
  assert.match(infra.meaning,/Power availability, cooling, compatible equipment and maintenance/);
  assert.match(infra.developments.find(d=>d.id===952).text,/planned for 2027/);
  assert.match(infra.developments.find(d=>d.id===952).text,/expected 40%/);
@@ -126,7 +126,7 @@ test('October 12 memory and infrastructure synthesis preserves actual availabili
  for(const id of [951,952,953,954,955])assert.ok(reviewedIds.includes(id));
  assert.equal(briefs.length,7);assert.ok(!briefs.some(b=>b.developments.some(d=>d.id===955)));
  assert.deepEqual(briefs.filter(b=>!['workplace-agents','ai-infrastructure'].includes(b.id)).map(b=>[b.id,b.reviewedAt]),[
-  ['ai-regulation','2026-10-09'],['safety-vs-capability','2026-10-15'],['evals','2026-10-07'],['open-weights','2026-10-15'],['agent-economics','2026-10-15']
+  ['ai-regulation','2026-10-09'],['safety-vs-capability','2026-10-15'],['evals','2026-10-16'],['open-weights','2026-10-16'],['agent-economics','2026-10-15']
  ]);
 });
 test('October 14 replication addition separates hardware demo from simplified lab capability',()=>{
@@ -142,7 +142,7 @@ test('October 14 replication addition separates hardware demo from simplified la
  for(const id of [956,957,958,959,960])assert.ok(reviewedIds.includes(id));
  assert.equal(briefs.length,7);
  assert.deepEqual(briefs.filter(b=>b.id!=='safety-vs-capability').map(b=>[b.id,b.reviewedAt]),[
-  ['ai-regulation','2026-10-09'],['workplace-agents','2026-10-15'],['ai-infrastructure','2026-10-12'],['evals','2026-10-07'],['open-weights','2026-10-15'],['agent-economics','2026-10-15']
+  ['ai-regulation','2026-10-09'],['workplace-agents','2026-10-16'],['ai-infrastructure','2026-10-12'],['evals','2026-10-16'],['open-weights','2026-10-16'],['agent-economics','2026-10-15']
  ]);
  const missing=structuredClone(feed);missing.items=missing.items.filter(i=>i.digestItemId!==958);
  assert.throws(()=>validateBriefs(missing),/source 958/);

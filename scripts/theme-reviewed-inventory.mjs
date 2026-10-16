@@ -20,3 +20,6 @@ reviewedIds.push(962,963,964);
 // 961 joins935/946 in a reviewed pricing synthesis.966 is user-controlled shopping,
 // and968 is a research-access pledge; neither alone establishes a new trend.
 reviewedIds.push(961,965,966,967,968);
+// October16: 969 strengthens evaluations;972 workplace;971/973 open models.
+// 970 is a dated allegation about one incident, not evidence of a broader trend.
+reviewedIds.push(969,970,971,972,973);

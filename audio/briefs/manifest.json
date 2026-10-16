@@ -17,11 +17,11 @@
       "sha256": "b358d45d7be8e761a5f74d5bb3a58bc31a734f2b6055781d77ce13151c576592"
     },
     "workplace-agents": {
-      "hash": "ac63272af80fcc0c2880e85a1bbdbfa3731b6d3eec87e1c2a7793e46242a5154",
-      "src": "audio/briefs/workplace-agents-ac63272af80fcc0c.m4a",
-      "duration": 254.905215,
-      "bytes": 1070715,
-      "sha256": "d3f2416bc3dae8f5ff15d1e7a80a9a5f54ae6d1aa17fbbe0067aee2ed6478e72"
+      "hash": "5e4350867022fdde0e684c10b553be88e2b67e993c230cab6d98369b86a006fd",
+      "src": "audio/briefs/workplace-agents-5e4350867022fdde.m4a",
+      "duration": 270.799274,
+      "bytes": 1134474,
+      "sha256": "d53477fb80317f30f93f50f38d0e831fd74923535b9d8433f776158b2b02326b"
     },
     "ai-infrastructure": {
       "hash": "d5e055680656d6cf6a067e926d0a70d62e43fe91a13bc62f6383b0aa0d629f4a",
@@ -31,18 +31,18 @@
       "sha256": "94110c2e6c05576c079f2f82c7e142113a7a67be240a2c7b502a8dcb9760a9c4"
     },
     "evals": {
-      "hash": "f012e0bb4c3cbea02a178528c570f481f5aa8ffd95d6a956c15c2d62f6b00e4c",
-      "src": "audio/briefs/evals-f012e0bb4c3cbea0.m4a",
-      "duration": 154.803946,
-      "bytes": 662098,
-      "sha256": "94277a902f0f587afc5c8ffe762637be8f87e3b9b43025aef06fe7b8fad04e68"
+      "hash": "aaecba59a43bd196f07d327abd383b13c4f5f521f6d7c4a154bfec692010f7ed",
+      "src": "audio/briefs/evals-aaecba59a43bd196.m4a",
+      "duration": 209.428889,
+      "bytes": 885686,
+      "sha256": "c6e9dc2519e7ba43bedc902e098741d1a3d04c5cfc11f5974a15552a85ca3265"
     },
     "open-weights": {
-      "hash": "ced1e007ead7e83adcd6fc5217b25b392dcf61aed5403155ae2a40735faf6cd7",
-      "src": "audio/briefs/open-weights-ced1e007ead7e83a.m4a",
-      "duration": 155.892063,
-      "bytes": 667633,
-      "sha256": "2b64e653ced911ba459c56246a0e6cb4c0e07afd5658a2ded9509ab05747fafb"
+      "hash": "477066653ff89f0739783d51931687eb7eef90555023848cd87d6f3a36107d2f",
+      "src": "audio/briefs/open-weights-477066653ff89f07.m4a",
+      "duration": 216.321995,
+      "bytes": 914212,
+      "sha256": "240cd0a80be868b921aa9d5d2631f1cf968da25a3dab0e33196da9498048b514"
     },
     "agent-economics": {
       "hash": "c8859a5796eb6204cd45c4b0cbd832a391e18bfbd9fcbd46def773ab213d1f76",

@@ -38,6 +38,6 @@ test('every timeline connects the events; quantitative highlights require source
  for(const b of briefs){assert.ok(b.timelineIntro.length>60);const text=narration(b);assert.ok(text.includes(b.timelineIntro));assert.doesNotMatch(text,/https:\/\/|related stories|Open filtered/);}
  const invalid=structuredClone(briefs);invalid[0].metric={value:'99%',label:'Claim',context:'Unknown',sourceId:-1};assert.throws(()=>validateBriefs(feed,invalid),/Metric/);
  assert.equal(briefs.filter(b=>b.metric).length,3);
- const workplace=briefs.find(b=>b.id==='workplace-agents');assert.deepEqual(workplace.developments.map(d=>d.id),[967,951,954,947,949,932,933,929]);assert.doesNotMatch(narration(workplace),/strongest tested configuration/);
+ const workplace=briefs.find(b=>b.id==='workplace-agents');assert.deepEqual(workplace.developments.map(d=>d.id),[972,967,951,954,947,949,932,933,929]);assert.doesNotMatch(narration(workplace),/strongest tested configuration/);
  assert.match(narration(briefs.find(b=>b.id==='safety-vs-capability')),/Fairwind, Google’s program for trusted cyber defenders/);
 });
