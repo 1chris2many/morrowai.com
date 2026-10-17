@@ -32,10 +32,12 @@ test('real audio decodes and plays every briefing, speed/resume persist, only on
   assert.equal(await page.locator('audio').evaluateAll(as=>as.filter(a=>!a.paused).length),1);
  }
  const first=page.locator('[data-brief-audio]').first();
+ const firstId=await first.getAttribute('data-brief-audio');
+ assert.ok(briefs.some(brief=>brief.id===firstId));
  await first.locator('[data-restart]').click();
  await first.locator('select').selectOption('1.5');
  await first.locator('audio').evaluate(async a=>{await new Promise(resolve=>{a.addEventListener('seeked',resolve,{once:true});a.currentTime=45;});a.pause();});
- await page.waitForFunction(()=>Object.entries(localStorage).some(([k,v])=>k.startsWith('brief-audio:ai-regulation:')&&JSON.parse(v).time>=45));
+ await page.waitForFunction(id=>Object.entries(localStorage).some(([k,v])=>k.startsWith(`brief-audio:${id}:`)&&JSON.parse(v).time>=45),firstId);
  await page.reload();
  await first.locator('[data-resume]').waitFor({state:'visible'});
  assert.match(await first.locator('[data-resume]').textContent(),/0:45/);
