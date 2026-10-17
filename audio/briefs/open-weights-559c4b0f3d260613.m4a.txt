@@ -1,0 +1,27 @@
+Open models. Running a model yourself takes more than weights.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 17, 2026. Synthetic narration.
+
+Meta has released Muse Spark Open with downloadable weights and limited commercial terms, describing a local setup using two M5 Ultra Mac Studios. It joins IBM’s Apache 2.0 Granite Switch models, FLUX’s image tools and NVIDIA’s server and local releases. The growing range of models makes the practical comparison more specific: what can this system do, on this hardware, under this license?
+
+Three takeaways. Available. Obtain weights and check the license. Suitable. Test the model on the actual task. Operable. Measure hardware and maintenance costs.
+
+What it means. Check the license against your intended use and organization, then measure the complete system on real tasks. A desktop demonstration may require multiple high-memory machines. FLUX also needs a text encoder; IBM’s speech and decision features add components around a base model. Include those parts, working memory and expected response time in hardware tests. Compare ongoing maintenance costs with a hosted service before committing to self-hosting.
+
+How the story developed. Compact search and larger model previews were followed by NVIDIA, IBM and FLUX releases. Meta’s much larger downloadable model adds another local option, with a two-machine configuration and its own commercial terms.
+
+October 5. Reflection previews Beam. Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October. Source: Reflection.
+
+October 6. Google releases a compact media-search model. EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support. Source: Google.
+
+October 6. Mistral opens a Large 4 API preview. Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API. Source: Mistral.
+
+October 15. Meta releases Muse Spark Open weights. Meta describes running its 816-billion-parameter model, with 42 billion active per token, on two M5 Ultra Mac Studios using MLX. Weights and hosted access are available. The Muse Model License has limited commercial terms; downloadable weights do not imply unrestricted commercial use. Source: Meta.
+
+October 15. FLUX releases image-generation and editing weights. FLUX 3 Image Klein includes base and distilled weights. Its image generator has 5.6 billion parameters, excluding the text encoder. The FLUX Kommunity License permits free commercial use for individuals and companies with annual revenue under $5 million; larger organizations need a commercial arrangement for commercial deployment. Source: Black Forest Labs.
+
+October 15. IBM announces combined chat, decisions and transcription. IBM’s announcement describes Granite Switch 4.1 models released October 14. Decision and safety adapters plus speech transcription surround 8B or 30B base models, under Apache 2.0 licensing. IBM says the combined system uses approximately the base model’s GPU memory, a claim to test on the intended workload. Source: IBM.
+
+October 15. NVIDIA releases server and local Nemotron models. Super VL and Bolt 74B-A9B are available now, according to NVIDIA. The company says Bolt uses a 2-bit representation to fit in 24GB of memory on supported local systems. The smaller Bolt E4B is due October 23. Source: NVIDIA.
+
+What to watch. Watch independent measurements of memory, speed and task quality, the October 23 Bolt release, and whether Mistral and Reflection deliver their planned weights.

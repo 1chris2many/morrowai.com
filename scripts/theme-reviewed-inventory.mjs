@@ -23,3 +23,8 @@ reviewedIds.push(961,965,966,967,968);
 // October16: 969 strengthens evaluations;972 workplace;971/973 open models.
 // 970 is a dated allegation about one incident, not evidence of a broader trend.
 reviewedIds.push(969,970,971,972,973);
+// October17: 976 extends open-model deployment choices;977 workplace expectations;
+// 978 connects tool-call classification to application enforcement.974 is a
+// disputed vendor-switch claim;975 reinforces existing access-boundary concerns.
+// Neither establishes a new theme or refreshes the media-provenance briefing.
+reviewedIds.push(974,975,976,977,978);

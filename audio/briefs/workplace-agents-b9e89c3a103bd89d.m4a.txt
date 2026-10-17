@@ -1,0 +1,35 @@
+Agents at work. AI work needs an inspectable result.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 17, 2026. Synthetic narration.
+
+Anthropic’s August surveys found that staff expected AI to handle a much larger share of their work by 2030 than employed US respondents did. These are expectations about future capability. Meanwhile, automatic code reviews, inspectable dashboard queries and human-led research manuscripts provide present-day opportunities to examine an agent’s output. Adoption decisions need evidence from the work a team actually does.
+
+Three takeaways. Remember. Retrieve details relevant to this task. Inspect. See what the agent used and did. Accept. Check the result and correct its context.
+
+What it means. Start with a specific task and measure quality, time saved and the effort spent correcting results. Keep data, code, queries and important choices available to the person accepting the work. Separate assumptions about future capability from the evidence supporting today’s staffing and product decisions. Users also need to inspect, correct and delete persistent context. Assign responsibility for the final decision before delegating the task.
+
+55.0%. Average task-criteria score. GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed. Source: OpenAI, 2026-10-06.
+
+How the story developed. Event-triggered work and memory extended what agents could carry out. Queries, manuscript reviews and code checks make their outputs more inspectable. The latest survey shows how differently people expect those capabilities to develop.
+
+September 28. Manus introduces event-triggered automation. Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work. Source: Manus.
+
+October 6. Ironclad tests agents on legal workflows. OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully. Source: OpenAI.
+
+October 6. Atlassian expands its OpenAI partnership. Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool. Source: OpenAI.
+
+October 8. Google introduces a persistent workplace agent. Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls. Source: Google Cloud.
+
+October 8. Claude makes dashboard results inspectable. Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it. Source: Anthropic.
+
+October 12. Meta releases Muse Wonder. The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned. Source: Meta.
+
+October 12. Ambi opens early access. Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to. Source: Ambi.
+
+October 14. Meta shares human-led research manuscripts. Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work. Source: Meta.
+
+October 15. Claude expands automatic code review. Code Review is generally available to Team and Enterprise organizations. Administrators can choose Quick, Standard or Deep for each repository. Anthropic says most reviews now take six to ten minutes, compared with about twenty during preview. Source: Anthropic.
+
+October 16. Survey shows a gap in expectations about work. In August surveys, Anthropic staff expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. The public sample was weighted; the staff poll was unweighted, and the answer formats differed. These figures describe expectations, not measured automation. Source: Anthropic.
+
+What to watch. Watch measured results outside AI labs, which code-review findings people accept, and whether long-running assistants leave enough evidence to check their outputs.
