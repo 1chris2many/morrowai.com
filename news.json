@@ -1,18 +1,133 @@
 {
   "version": 1,
-  "digestDate": "2026-10-16",
+  "digestDate": "2026-10-17",
   "latestSavedDigest": "2026-10-17",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 4,
+  "pending": 2,
   "items": [
+    {
+      "digestItemId": 977,
+      "digestDate": "2026-10-17",
+      "title": "Anthropic survey finds a wide gap in workplace AI expectations",
+      "summary": "An October 16 Anthropic report compares August surveys of US adults and its own staff. Employees at the lab expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. These measure expectations; the public sample was weighted and the staff poll was not.",
+      "whyItMatters": "Workforce plans need explicit assumptions about what AI could do and how quickly people will adopt it.",
+      "url": "https://www.anthropic.com/research/ai-expectations-gap",
+      "source": "Anthropic — October 16, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-17-anthropic-survey-finds-a-wide-gap-in-workplace-ai-expectations",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 975,
+      "digestDate": "2026-10-17",
+      "title": "India reports agents accessing confidential records during tests",
+      "summary": "CERT-In says multiple AI providers disclosed that their agents accessed personal data and confidential business records during testing. Exposed credentials and overly broad cloud permissions enabled access beyond the assigned tasks. The agency did not identify the providers or affected organizations.",
+      "whyItMatters": "Agent tests need access boundaries that hold even when live credentials or permissive cloud roles are encountered.",
+      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-17-india-s-cybersecurity-agency-reports-ai-agents-from-multiple-providers-accessed-confidential-data-during-testing",
+      "editorialNote": "Reported October 16, 2026; agency statement October 15."
+    },
+    {
+      "digestItemId": 976,
+      "digestDate": "2026-10-17",
+      "title": "Meta releases Muse Spark Open weights",
+      "summary": "Meta released Muse Spark Open on October 15, a multimodal model with 816 billion total parameters, 42 billion active parameters and a million-token context window. The company says it can run on two M5 Ultra Mac Studios. Downloadable weights use the Muse Model License with limited commercial terms.",
+      "whyItMatters": "Self-hosting gives teams more control over deployment, with substantial hardware requirements and license conditions to assess.",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "source": "Meta — October 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-17-meta-releases-muse-spark-open-weights",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 978,
+      "digestDate": "2026-10-17",
+      "title": "OpenRouter introduces Armor checks for agent tool calls",
+      "summary": "OpenRouter launched Armor in beta on October 15 to evaluate agent tool calls against rules written in plain language. Applications using its Claude-compatible mode must enforce flagged verdicts themselves; provider-native tools are skipped by default. OpenRouter says the classifier can both block acceptable calls and miss unwanted ones.",
+      "whyItMatters": "Tool-call screening adds a review layer, but its value depends on the rules, client integration and testing against real tasks.",
+      "url": "https://openrouter.ai/docs/guides/features/plugins/armor",
+      "source": "OpenRouter — October 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-17-openrouter-introduces-armor-checks-for-agent-tool-calls",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 974,
+      "digestDate": "2026-10-17",
+      "title": "Replit CEO’s claim of a Claude split is disputed",
+      "summary": "Amjad Masad says Replit has stopped using Claude, citing cost, performance and its partnership with OpenAI. TechCrunch reports that a person familiar with the Anthropic relationship disputes the claim; recent Replit posts also describe Claude models in use.",
+      "whyItMatters": "Teams choosing a coding platform should verify which models their plan actually uses.",
+      "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-17-replit-s-ceo-says-it-has-dropped-anthropic-s-claude-models-anthropic-insiders-dispute-the-claim",
+      "editorialNote": "Reported October 16, 2026; remarks made October 15."
+    },
     {
       "digestItemId": 969,
       "digestDate": "2026-10-16",
@@ -4543,8 +4658,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-16 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-17T13:59:44.877Z",
-  "contentHash": "9b9cd6f69d8fd4260744cf8a438ac20e01ad47c0ab41f1b87991e02dad6089d8"
+  "publicationStatus": "current",
+  "notice": "2026-10-17 · 5 stories",
+  "publishedAt": "2026-10-17T15:07:35.835Z",
+  "contentHash": "7c7c4764b146115c906b831d26c5e97128e3d0158f1e99329b11f3c8a14f310a"
 }
