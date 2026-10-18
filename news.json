@@ -209,9 +209,9 @@
     {
       "digestItemId": 974,
       "digestDate": "2026-10-17",
-      "title": "Replit CEO’s claim of a Claude split is disputed",
-      "summary": "Amjad Masad says Replit has stopped using Claude, citing cost, performance and its partnership with OpenAI. TechCrunch reports that a person familiar with the Anthropic relationship disputes the claim; recent Replit posts also describe Claude models in use.",
-      "whyItMatters": "Teams choosing a coding platform should verify which models their plan actually uses.",
+      "title": "Replit changes its default model provider",
+      "summary": "OpenAI is now the default; customers can still choose Claude.",
+      "whyItMatters": "",
       "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "source": "TechCrunch",
       "linkKind": "article",
@@ -224,7 +224,7 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-17-replit-s-ceo-says-it-has-dropped-anthropic-s-claude-models-anthropic-insiders-dispute-the-claim",
-      "editorialNote": "Reported October 16, 2026; remarks made October 15."
+      "editorialNote": "Updated October 17, 2026."
     },
     {
       "digestItemId": 969,
@@ -2110,11 +2110,11 @@
     {
       "digestItemId": 892,
       "digestDate": "2026-09-30",
-      "title": "Report: OpenAI's annualized revenue approaches $70 billion",
-      "summary": "PYMNTS, citing Axios sources, reports that OpenAI's annualized revenue is nearing $70 billion, about 70% above its pace at the start of the third quarter. Business revenue reportedly more than doubled over that period; the figure projects current revenue over a year and is not a full year's booked sales.",
-      "whyItMatters": "The report points to rapid enterprise growth, but does not establish profitability: current expense figures were unavailable.",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-annualized-revenue-nears-70-billion-amid-enterprise-growth/",
-      "source": "PYMNTS — September 29, 2026",
+      "title": "OpenAI revenue accounting clarified",
+      "summary": "TechCrunch, citing the FT, reports nearly $50B annualized revenue; earlier $70B estimates used different partner-sales accounting.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
+      "source": "TechCrunch — October 8, 2026",
       "linkKind": "article",
       "newsletters": [],
       "tags": [

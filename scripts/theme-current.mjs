@@ -2,6 +2,25 @@
 // not ingest dates. Feed ingestion cannot approve or refresh this analysis.
 export const briefs = [
  {
+  id:'ai-market-leadership',label:'AI competition',title:'The cost of losing the default.',
+  reviewedAt:'2026-10-18',author:'Codex',accent:'gold',
+  teaser:'Businesses are adopting more AI while shifting spending between providers. Usage-based billing makes the work a customer sends tomorrow increasingly important.',
+  summary:'AI adoption continues to grow in business-spending samples, even as OpenAI gains ground on Anthropic. More companies are switching providers, and token use is rising faster than spending in Ramp’s data. The pattern puts the durability of market leadership under scrutiny: expanding demand can bring revenue to a different supplier from the one that led the previous release cycle.',
+  meaning:'A customer can keep access to several providers and move work between them. With fixed subscriptions, a supplier can retain fees until renewal; separately metered usage responds as consumption changes, subject to prepaid credits and contracts. That makes workload retention important to revenue forecasts. For valuations, the risk is assuming that today’s share and pricing power will endure. The sampled shifts do not by themselves establish a fall in Anthropic’s total revenue or the reasons individual customers switched.',
+  watch:'Watch whether provider-share shifts persist across releases, how much spending changes reflect prices versus volume, and whether customers return after improvements. Follow actual revenue and retention alongside adoption counts; keep run-rate estimates separate from booked sales.',
+  visualTitle:'Three forces shaping provider revenue',
+  visual:[['Demand','How much AI work customers do'],['Share','Which provider gets that work'],['Pricing','What the provider earns from it']],
+  timelineIntro:'The evidence spans a provider choice, two business-spending datasets and current billing terms. Together they show how AI adoption can grow while the distribution of spending changes. Each dataset has its own population and measure.',
+  metric:{value:'54.1% → 52.2%',label:'Claude’s share of AI spending in one UK sample',context:'Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue.',sourceId:986},
+  developments:[
+   {date:'2026-10-18',id:988,title:'Enterprise billing exposes consumption separately',text:'Anthropic’s current guide separates annual Enterprise access fees from usage billed at API rates. Legacy arrangements transition at renewal. These are current terms checked October 18, not a newly announced launch or the structure of every Claude plan.',source:'Anthropic Help Center',url:'https://support.claude.com/en/articles/11526368-how-am-i-billed-for-my-enterprise-plan',relation:'Personally reviewed Enterprise billing terms explain the proposed link between workload retention and variable revenue.'},
+   {date:'2026-10-17',id:974,title:'Replit',text:'Default changes.',source:'TechCrunch',url:'https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/',relation:'The clarified source records a change in preferred provider rather than a complete loss of access to Claude.'},
+   {date:'2026-10-14',id:987,title:'Usage grows faster than spending',text:'Ramp reports rising token volumes and little token-spending growth during August and September. Its economist attributes the gap to price declines and efficiency. Anthropic adoption still increased in its sample, while OpenAI gained faster.',source:'Ramp',url:'https://ramp.com/data/ai-index-oct-2026',relation:'The observed gap between volume and spending separates overall AI activity from provider monetization.'},
+   {date:'2026-10-12',id:986,title:'UK adoption expands as provider shares move',text:'Capital on Tap’s Q3 data shows broader AI adoption alongside a spending-share shift toward ChatGPT. Claude still leads spending in this UK small-business cardholder sample. Free use, app-store subscriptions and invoiced contracts are excluded.',source:'Capital on Tap',url:'https://www.capitalontap.com/en/blog/posts/spend-trends-on-tap-q3-2026/',relation:'A separate transaction dataset shows expanding adoption alongside a redistribution of provider spending share.'},
+   {date:'2026-10-06',id:985,title:'Provider switching reaches a sample high',text:'Ramp’s three-month-average monthly switching rate reached 8% in September. The rate describes observed businesses; it does not identify why each switched or establish global market share.',source:'Ramp',url:'https://ramp.com/data/businesses-are-changing-ai-model-providers-more-often',relation:'Directly reviewed switching data supports the theme’s focus on the durability of provider loyalty.'}
+  ]
+ },
+ {
    "id": "ai-science",
    "label": "AI in science",
    "title": "AI research moves closer to the experiment.",

@@ -32,3 +32,6 @@ reviewedIds.push(974,975,976,977,978);
 // 983/984 with968 justify a scientific-workflow briefing.981 remains a dated
 // consumer-assistant plan, not evidence of a workplace rollout.980 is held.
 reviewedIds.push(979,981,982,983,984);
+// October18 owner-requested market-leadership review: separate adoption,
+// switching, spending share and current Enterprise billing terms.974 clarified.
+reviewedIds.push(985,986,987,988);

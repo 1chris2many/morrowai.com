@@ -24,7 +24,7 @@ test('October18 timing correction changes exactly three spans, without redating 
 test('October18 precision correction preserves three still-unrevised briefings',()=>{
  const unchanged={"ai-regulation":"569612be8f5b46cd953c8b16975242bfd92980dcdbdac60368bafac88d00928f","safety-vs-capability":"b0ec7f38a369aacdfa9de4a69c8b2ff4685192cc11a13d20373e976cbe2cad07","evals":"115b28b5eac8e506dedf5333c805e2e6e26d38fdfc345883efeebb44f4e493c7"};
  for(const [id,value] of Object.entries(unchanged))assert.equal(hash(get(id)),value,id);
- assert.equal(briefs.length,8);
+ assert.equal(briefs.length,9);
 });
 test('corrected infrastructure narration is exact, valid and rejects the old audio',()=>{
  const b=get('ai-infrastructure');

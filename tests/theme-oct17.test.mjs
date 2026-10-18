@@ -20,7 +20,7 @@ test('October17 preserves two unrelated briefings and every earlier event and me
   assert.equal(hash(b.metric||null),prior.metric,id);
   assert.ok(b.reviewedAt>='2026-10-17');
  }
- assert.equal(briefs.length,8);
+ assert.equal(briefs.length,9);
  assert.equal(lifecycle(get('ai-regulation'),'2026-10-17').status,'watching');
  assert.ok(!briefingCards(feed).includes('data-theme="ai-regulation"'));
 });

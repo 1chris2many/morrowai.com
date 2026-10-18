@@ -19,7 +19,7 @@ test('October18 preserves four unrelated briefings, all earlier developments and
   assert.equal(hash(b.metric||null),prior.metric,id);
   assert.equal(b.reviewedAt,'2026-10-18');
  }
- assert.equal(briefs.length,8);
+ assert.equal(briefs.length,9);
  assert.equal(get('ai-science').metric,undefined);
 });
 test('new workplace evidence preserves denominator, hiring shares and observational limits',()=>{

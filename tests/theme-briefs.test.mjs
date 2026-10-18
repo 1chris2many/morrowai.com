@@ -93,7 +93,7 @@ test('October 10 synthesis keeps evaluation scope, beta access and event dates e
  assert.match(dashboard.text,/beta on paid plans/);
  assert.match(dashboard.text,/require Enterprise administrators/);
  assert.equal(dashboard.date,'2026-10-08');
- assert.equal(briefs.length,8);
+ assert.equal(briefs.length,9);
  for(const id of [945,946,947,948,949])assert.ok(reviewedIds.includes(id));
 });
 test('missing, unreviewed or mistagged source references fail closed',()=>{
@@ -112,7 +112,7 @@ test('October 11 timeline keeps proposal status and event date',()=>{
  assert.match(addition.text,/proposals, not verified deployments/);
  assert.ok(addition.relation.length>=30);
  assert.ok(reviewedIds.includes(950));
- assert.equal(briefs.length,8);
+ assert.equal(briefs.length,9);
  const missing=structuredClone(feed);missing.items=missing.items.filter(i=>i.digestItemId!==950);
  assert.throws(()=>validateBriefs(missing),/source 950/);
 });
@@ -131,7 +131,7 @@ test('October 12 memory and infrastructure synthesis preserves actual availabili
  assert.ok(!infra.developments.some(d=>d.id===934),'October 7 proposal has no verified outcome; keep archive card, omit from refreshed brief');
  for(const b of [work,infra])for(const d of b.developments.filter(d=>d.id>=951&&d.id<=954))assert.equal(d.date,'2026-10-12');
  for(const id of [951,952,953,954,955])assert.ok(reviewedIds.includes(id));
- assert.equal(briefs.length,8);assert.ok(!briefs.some(b=>b.developments.some(d=>d.id===955)));
+ assert.equal(briefs.length,9);assert.ok(!briefs.some(b=>b.developments.some(d=>d.id===955)));
  for(const [id,date]of [
   ['ai-regulation','2026-10-09'],['safety-vs-capability','2026-10-15'],['evals','2026-10-16'],['open-weights','2026-10-16'],['agent-economics','2026-10-15']
  ])assertReviewDate(id,date);
@@ -147,7 +147,7 @@ test('October 14 replication addition separates hardware demo from simplified la
  assert.match(d.text,/consumer devices/);
  assert.match(d.relation,/consumer hardware/);
  for(const id of [956,957,958,959,960])assert.ok(reviewedIds.includes(id));
- assert.equal(briefs.length,8);
+ assert.equal(briefs.length,9);
  for(const [id,date]of [
   ['ai-regulation','2026-10-09'],['workplace-agents','2026-10-16'],['ai-infrastructure','2026-10-12'],['evals','2026-10-16'],['open-weights','2026-10-16'],['agent-economics','2026-10-15']
  ])assertReviewDate(id,date);
