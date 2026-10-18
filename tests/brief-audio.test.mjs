@@ -37,7 +37,7 @@ test('HTML-first players disclose synthesis, offer transcripts and never autopla
 test('every timeline connects the events; quantitative highlights require source context',()=>{
  for(const b of briefs){assert.ok(b.timelineIntro.length>60);const text=narration(b);assert.ok(text.includes(b.timelineIntro));assert.doesNotMatch(text,/https:\/\/|related stories|Open filtered/);}
  const invalid=structuredClone(briefs);invalid[0].metric={value:'99%',label:'Claim',context:'Unknown',sourceId:-1};assert.throws(()=>validateBriefs(feed,invalid),/Metric/);
- assert.equal(briefs.filter(b=>b.metric).length,3);
+ assert.equal(briefs.filter(b=>b.metric).length,4);
  const workplace=briefs.find(b=>b.id==='workplace-agents'),historical=[972,967,951,954,947,949,932,933,929];
  assert.deepEqual(workplace.developments.filter(d=>historical.includes(d.id)).map(d=>d.id),historical);
  assert.doesNotMatch(narration(workplace),/strongest tested configuration/);
