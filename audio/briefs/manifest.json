@@ -2,6 +2,13 @@
   "version": 1,
   "engine": "macos-samantha-175-v1",
   "briefs": {
+    "ai-market-leadership": {
+      "hash": "e7293aa4a9b56566f46ea9a95a73e8445242d8340c767ceaf400d3ee7dce8028",
+      "src": "audio/briefs/ai-market-leadership-e7293aa4a9b56566.m4a",
+      "duration": 216.754785,
+      "bytes": 915167,
+      "sha256": "7f309c1878dd0c093ce66b8ec976413ae9e361f02192aaf8dca9edfd7aef96d9"
+    },
     "ai-science": {
       "hash": "e8226b9d4fb06b065d9a8d80c686fe0540b6a3ec36332e9f5c7af56f7f9e68cc",
       "src": "audio/briefs/ai-science-e8226b9d4fb06b06.m4a",

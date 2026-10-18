@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-10-18",
   "fresh": false,
   "coverage": {
-    "count": 5,
-    "sourceCount": 5,
+    "count": 9,
+    "sourceCount": 8,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -53,6 +53,26 @@
       "editorialNote": ""
     },
     {
+      "digestItemId": 988,
+      "digestDate": "2026-10-18",
+      "title": "Claude Enterprise billing separates access fees from consumption",
+      "summary": "Anthropic's current Enterprise billing guide describes annual seat fees plus separately metered usage at API rates. Legacy seat arrangements transition at renewal. This is the Enterprise structure, not a description of every Claude subscription.",
+      "whyItMatters": "Customers can retain paid access while changing the amount of work they send to the provider.",
+      "url": "https://support.claude.com/en/articles/11526368-how-am-i-billed-for-my-enterprise-plan",
+      "source": "Anthropic Help Center — checked October 18, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-18-claude-enterprise-billing-separates-access-fees-from-consumption",
+      "editorialNote": ""
+    },
+    {
       "digestItemId": 982,
       "digestDate": "2026-10-18",
       "title": "DeepSeek updates V4.1 Flash and opens search APIs",
@@ -93,6 +113,46 @@
       "editorialNote": ""
     },
     {
+      "digestItemId": 987,
+      "digestDate": "2026-10-18",
+      "title": "Ramp finds rising AI token use without matching spending growth",
+      "summary": "Ramp's October index reports rising token volumes but little token-spending growth in August and September. Anthropic adoption still increased in its business sample, while OpenAI gained faster. Ramp's economist attributes the spending pattern to lower blended prices and efficiency improvements.",
+      "whyItMatters": "Usage, customer adoption and provider revenue can move at different rates.",
+      "url": "https://ramp.com/data/ai-index-oct-2026",
+      "source": "Ramp — October 14, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-18-ramp-finds-rising-ai-token-use-without-matching-spending-growth",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 985,
+      "digestDate": "2026-10-18",
+      "title": "Ramp records more businesses switching AI providers",
+      "summary": "Ramp reports that its three-month-average monthly provider-switching rate reached 8% in September, a record in its dataset. The measure covers businesses observed by Ramp, not the whole AI market.",
+      "whyItMatters": "More frequent switching makes the durability of a provider's customer base a question worth tracking.",
+      "url": "https://ramp.com/data/businesses-are-changing-ai-model-providers-more-often",
+      "source": "Ramp — October 6, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-18-ramp-records-more-businesses-switching-ai-providers",
+      "editorialNote": ""
+    },
+    {
       "digestItemId": 981,
       "digestDate": "2026-10-18",
       "title": "Rivian considers outside AI agents",
@@ -110,6 +170,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-18-rivian-s-ceo-says-future-cars-could-run-outside-ai-agents-like-anthropic-s-claude",
       "editorialNote": "Reported October 15."
+    },
+    {
+      "digestItemId": 986,
+      "digestDate": "2026-10-18",
+      "title": "UK small-business AI adoption grows as spending shares shift",
+      "summary": "Among Capital on Tap's UK business cardholders, AI adoption rose from 12.8% in Q2 to 14.5% in Q3. Claude's share of AI spending slipped from 54.1% to 52.2%, while ChatGPT's rose from 27.3% to 32.4%. The figures cover direct card payments and exclude invoiced contracts.",
+      "whyItMatters": "This sample shows broader adoption alongside a shift in spending share; Claude remained the spending leader.",
+      "url": "https://www.capitalontap.com/en/blog/posts/spend-trends-on-tap-q3-2026/",
+      "source": "Capital on Tap — October 12, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-18-uk-small-business-ai-adoption-grows-as-spending-shares-shift",
+      "editorialNote": ""
     },
     {
       "digestItemId": 977,
@@ -2084,30 +2164,6 @@
       "editorialNote": ""
     },
     {
-      "digestItemId": 893,
-      "digestDate": "2026-09-30",
-      "title": "Report: OpenAI seeks $30 billion at a $1.4 trillion pre-money valuation",
-      "summary": "Yahoo Finance, citing Bloomberg sources, reports that OpenAI is discussing a funding round of at least $30 billion at a valuation near $1.4 trillion before the new investment. Talks are preliminary and could change; the financing would provide capital while the company defers a public listing.",
-      "whyItMatters": "The reported target excludes the money being raised, so it is not directly comparable to March's $852 billion post-money valuation.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/openai-targets-30-billion-funding-185008998.html",
-      "source": "Yahoo Finance — September 29, 2026",
-      "linkKind": "article",
-      "newsletters": [],
-      "tags": [
-        "Funding"
-      ],
-      "themes": [
-        {
-          "id": "openai-ipo",
-          "name": "OpenAI funding and IPO"
-        }
-      ],
-      "reviewed": true,
-      "reviewMethod": "automated-publication-checks-v1",
-      "anchor": "story-2026-09-30-openai-seeks-at-least-30-billion-in-new-funding-at-a-1-4-trillion-valuation-as-it-pushes-its-ipo-to-2027",
-      "editorialNote": ""
-    },
-    {
       "digestItemId": 892,
       "digestDate": "2026-09-30",
       "title": "OpenAI revenue accounting clarified",
@@ -2129,6 +2185,30 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-09-30-openai-s-annualized-revenue-run-rate-nears-70-billion-up-from-about-40-billion-a-month-earlier",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 893,
+      "digestDate": "2026-09-30",
+      "title": "Report: OpenAI seeks $30 billion at a $1.4 trillion pre-money valuation",
+      "summary": "Yahoo Finance, citing Bloomberg sources, reports that OpenAI is discussing a funding round of at least $30 billion at a valuation near $1.4 trillion before the new investment. Talks are preliminary and could change; the financing would provide capital while the company defers a public listing.",
+      "whyItMatters": "The reported target excludes the money being raised, so it is not directly comparable to March's $852 billion post-money valuation.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/openai-targets-30-billion-funding-185008998.html",
+      "source": "Yahoo Finance — September 29, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [
+        {
+          "id": "openai-ipo",
+          "name": "OpenAI funding and IPO"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-09-30-openai-seeks-at-least-30-billion-in-new-funding-at-a-1-4-trillion-valuation-as-it-pushes-its-ipo-to-2027",
       "editorialNote": ""
     },
     {
@@ -4757,7 +4837,7 @@
     }
   ],
   "publicationStatus": "partial",
-  "notice": "2026-10-18 · 5 stories · More stories to follow",
-  "publishedAt": "2026-10-18T15:07:54.379Z",
-  "contentHash": "99a625667f6967baea98624ddc124849a754d80660653cf3412393c898717635"
+  "notice": "2026-10-18 · 9 stories · More stories to follow",
+  "publishedAt": "2026-10-18T19:39:32.547Z",
+  "contentHash": "04b4de197f7bec7103f912740a0a62baead9b5505f7c4da89f893cd8a32c0ce0"
 }
