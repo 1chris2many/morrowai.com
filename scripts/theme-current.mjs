@@ -2,6 +2,63 @@
 // not ingest dates. Feed ingestion cannot approve or refresh this analysis.
 export const briefs = [
  {
+   "id": "ai-science",
+   "label": "AI in science",
+   "title": "AI research moves closer to the experiment.",
+   "reviewedAt": "2026-10-18",
+   "author": "Codex",
+   "accent": "mint",
+   "teaser": "CERN plans a model for particle physics; Google is testing agents with laboratory robots. The two efforts test different routes from scientific data to useful results.",
+   "summary": "CERN and Mistral plan a model trained on simulated particle collisions. Google Research is testing laboratory automation and repeated molecular-design experiments, while a separate Google pledge expands researchers’ access to models and compute. These efforts address different parts of scientific work, from obtaining resources to testing a proposal against physical evidence.",
+   "meaning": "Choose the research step an AI system is meant to improve, then define how its output will be checked. Simulated collisions need tests against the physics they represent; laboratory actions need checks against equipment and materials. Preserve the experimental record so researchers can trace a result and investigate errors. Access to a model, a partnership announcement and a demonstrated experiment establish different levels of readiness.",
+   "watch": "Watch CERN’s training and validation results, independent tests of the laboratory systems, and whether researchers receiving support publish reproducible findings.",
+   "visualTitle": "Three parts of a research workflow",
+   "visual": [
+     [
+       "Access",
+       "Obtain models, data and compute"
+     ],
+     [
+       "Experiment",
+       "Test proposals against evidence"
+     ],
+     [
+       "Verify",
+       "Inspect methods and repeat results"
+     ]
+   ],
+   "timelineIntro": "The announcements address different research constraints: access to computing, a proposed physics model and laboratory prototypes.",
+   "developments": [
+     {
+       "date": "2026-10-16",
+       "id": 984,
+       "title": "Google tests agents with laboratory feedback",
+       "text": "Google describes three separate projects involving laboratory robots and molecular design. Its VERID system checks actions against a live model of the lab. Humans authorize sequences, verify protocols and supervise robot runs. Combining the projects remains a next step.",
+       "source": "Google Research",
+       "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+       "relation": "Laboratory prototypes connect agent proposals to physical measurements, execution checks and experimental feedback."
+     },
+     {
+       "date": "2026-10-15",
+       "id": 983,
+       "title": "CERN and Mistral set out a physics-model plan",
+       "text": "CERN’s announcement describes a signed statement of intent. The planned Large Physics Model would learn from simulated proton collisions and support tasks such as particle identification and detector design. It is a development plan, with validation and results still to come.",
+       "source": "CERN",
+       "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+       "relation": "A planned scientific foundation model supplies a distinct physics example, separate from laboratory robotics and compute access."
+     },
+     {
+       "date": "2026-10-14",
+       "id": 968,
+       "title": "Google pledges access and compute credits",
+       "text": "Google pledges frontier-model access for up to 200 European scientific researchers and $3 million in compute credits in total. The pledge supports the EU’s RAISE research initiative.",
+       "source": "Google",
+       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models/",
+       "relation": "Researcher access and compute support are enabling resources, distinct from the scientific model and experimental results."
+     }
+   ]
+ },
+ {
   id:'ai-regulation', label:'AI governance', title:'A source check has several layers.',
   reviewedAt:'2026-10-09',author:'Codex',accent:'gold',
   teaser:'Public watermark detection makes one check easier. AI-assisted influence operations show why the identity behind a story still matters.',
@@ -39,28 +96,129 @@ export const briefs = [
   ]
  },
  {
-  id:'workplace-agents',label:'Agents at work',title:'AI work needs an inspectable result.',
-  reviewedAt:'2026-10-17',author:'Codex',accent:'lilac',
-  teaser:'A survey finds sharply different expectations for AI at work. Inspectable outputs give teams something concrete to judge as they decide what to delegate.',
-  summary:'Anthropic’s August surveys found that staff expected AI to handle a much larger share of their work by 2030 than employed US respondents did. These are expectations about future capability. Meanwhile, automatic code reviews, inspectable dashboard queries and human-led research manuscripts provide present-day opportunities to examine an agent’s output. Adoption decisions need evidence from the work a team actually does.',
-  meaning:'Start with a specific task and measure quality, time saved and the effort spent correcting results. Keep data, code, queries and important choices available to the person accepting the work. Separate assumptions about future capability from the evidence supporting today’s staffing and product decisions. Users also need to inspect, correct and delete persistent context. Assign responsibility for the final decision before delegating the task.',
-  watch:'Watch measured results outside AI labs, which code-review findings people accept, and whether long-running assistants leave enough evidence to check their outputs.',
-  visualTitle:'Follow the work to its result',
-  visual:[['Remember','Retrieve details relevant to this task'],['Inspect','See what the agent used and did'],['Accept','Check the result and correct its context']],
-  timelineIntro:'Event-triggered work and memory extended what agents could carry out. Queries, manuscript reviews and code checks make their outputs more inspectable. The latest survey shows how differently people expect those capabilities to develop.',
-  metric:{value:'55.0%',label:'Average task-criteria score',context:'GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed.',sourceId:932},
-  developments:[
-   {date:'2026-10-16',id:977,title:'Survey shows a gap in expectations about work',text:'In August surveys, Anthropic staff expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. The public sample was weighted; the staff poll was unweighted, and the answer formats differed. These figures describe expectations, not measured automation.',source:'Anthropic',url:'https://www.anthropic.com/research/ai-expectations-gap'},
-   {date:'2026-10-15',id:972,title:'Claude expands automatic code review',text:'Code Review is generally available to Team and Enterprise organizations. Administrators can choose Quick, Standard or Deep for each repository. Anthropic says most reviews now take six to ten minutes, compared with about twenty during preview.',source:'Anthropic',url:'https://claude.com/resources/articles/code-review-is-now-generally-available'},
-   {date:'2026-10-14',id:967,title:'Meta shares human-led research manuscripts',text:'Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work.',source:'Meta',url:'https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models'},
-   {date:'2026-10-12',id:951,title:'Meta releases Muse Wonder',text:'The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned.',source:'Meta',url:'https://research.meta.ai/blog/muse-wonder'},
-   {date:'2026-10-12',id:954,title:'Ambi opens early access',text:'Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to.',source:'Ambi',url:'https://www.ambi.ai/en'},
-   {date:'2026-10-08',id:947,title:'Google introduces a persistent workplace agent',text:'Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls.',source:'Google Cloud',url:'https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026'},
-   {date:'2026-10-08',id:949,title:'Claude makes dashboard results inspectable',text:'Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it.',source:'Anthropic',url:'https://claude.com/resources/articles/dashboards-and-motion'},
-   {date:'2026-10-06',id:932,title:'Ironclad tests agents on legal workflows',text:'OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully.',source:'OpenAI',url:'https://openai.com/index/advancing-computer-use-with-ironclad/'},
-   {date:'2026-10-06',id:933,title:'Atlassian expands its OpenAI partnership',text:'Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool.',source:'OpenAI',url:'https://openai.com/index/atlassian-partnership/'},
-   {date:'2026-09-28',id:929,title:'Manus introduces event-triggered automation',text:'Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work.',source:'Manus',url:'https://manus.im/en/blog/introducing-manus-2-0'}
-  ]
+   "id": "workplace-agents",
+   "label": "Agents at work",
+   "title": "AI work needs an inspectable result.",
+   "reviewedAt": "2026-10-18",
+   "author": "Codex",
+   "accent": "lilac",
+   "teaser": "Anthropic’s internal study pairs rising agent use with changing hiring patterns. Human review capacity is becoming part of the adoption decision.",
+   "summary": "Anthropic reports rising output after employees adopted coding agents and a falling share of junior technical hires. Its study also describes the effort needed to manage and review agent output. Alongside inspectable queries, code reviews and research manuscripts, this puts a practical question in focus: can a team assess the work as quickly as it is produced?",
+   "meaning": "Measure accepted results, correction time and review workload together. Keep code, data and important decisions available to the person approving the work. Track hiring and training separately from output: an increase in completed tasks does not explain how entry-level staff will develop expertise. Anthropic’s observational study cannot establish how much of its changes AI caused, or how the pattern transfers to other employers.",
+   "watch": "Watch results outside AI labs, review time per accepted task and how employers preserve routes into junior roles.",
+   "visualTitle": "Follow the work to its result",
+   "visual": [
+     [
+       "Delegate",
+       "Choose a task with a checkable result"
+     ],
+     [
+       "Review",
+       "Measure quality and correction time"
+     ],
+     [
+       "Develop",
+       "Track skills and entry-level opportunities"
+     ]
+   ],
+   "timelineIntro": "Memory, queries and code reviews made delegated work easier to inspect. Surveys then exposed differing expectations. Anthropic’s employment study adds observations about output, hiring and the human effort surrounding agent use.",
+   "metric": {
+     "value": "55.0%",
+     "label": "Average task-criteria score",
+     "context": "GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed.",
+     "sourceId": 932
+   },
+   "developments": [
+     {
+       "date": "2026-10-16",
+       "id": 979,
+       "title": "Anthropic measures changes in work and hiring",
+       "text": "The share of junior technical hires fell from 27% to 9% since early 2025. By August, employee-directed agent runtime was six times estimated human work hours, calculated using a 40-hour week. Output rose after adoption, but adoption was not randomized. Runtime is not equivalent to productive output.",
+       "source": "Anthropic",
+       "url": "https://www.anthropic.com/research/employment-at-anthropic",
+       "relation": "Internal employment and agent-use evidence extends the workplace briefing beyond expectations to observed organizational changes."
+     },
+     {
+       "date": "2026-10-16",
+       "id": 977,
+       "title": "Survey shows a gap in expectations about work",
+       "text": "In August surveys, Anthropic staff expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. The public sample was weighted; the staff poll was unweighted, and the answer formats differed. These figures describe expectations, not measured automation.",
+       "source": "Anthropic",
+       "url": "https://www.anthropic.com/research/ai-expectations-gap"
+     },
+     {
+       "date": "2026-10-15",
+       "id": 972,
+       "title": "Claude expands automatic code review",
+       "text": "Code Review is generally available to Team and Enterprise organizations. Administrators can choose Quick, Standard or Deep for each repository. Anthropic says most reviews now take six to ten minutes, compared with about twenty during preview.",
+       "source": "Anthropic",
+       "url": "https://claude.com/resources/articles/code-review-is-now-generally-available"
+     },
+     {
+       "date": "2026-10-14",
+       "id": 967,
+       "title": "Meta shares human-led research manuscripts",
+       "text": "Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work.",
+       "source": "Meta",
+       "url": "https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models"
+     },
+     {
+       "date": "2026-10-12",
+       "id": 951,
+       "title": "Meta releases Muse Wonder",
+       "text": "The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned.",
+       "source": "Meta",
+       "url": "https://research.meta.ai/blog/muse-wonder"
+     },
+     {
+       "date": "2026-10-12",
+       "id": 954,
+       "title": "Ambi opens early access",
+       "text": "Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to.",
+       "source": "Ambi",
+       "url": "https://www.ambi.ai/en"
+     },
+     {
+       "date": "2026-10-08",
+       "id": 947,
+       "title": "Google introduces a persistent workplace agent",
+       "text": "Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls.",
+       "source": "Google Cloud",
+       "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+     },
+     {
+       "date": "2026-10-08",
+       "id": 949,
+       "title": "Claude makes dashboard results inspectable",
+       "text": "Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it.",
+       "source": "Anthropic",
+       "url": "https://claude.com/resources/articles/dashboards-and-motion"
+     },
+     {
+       "date": "2026-10-06",
+       "id": 932,
+       "title": "Ironclad tests agents on legal workflows",
+       "text": "OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully.",
+       "source": "OpenAI",
+       "url": "https://openai.com/index/advancing-computer-use-with-ironclad/"
+     },
+     {
+       "date": "2026-10-06",
+       "id": 933,
+       "title": "Atlassian expands its OpenAI partnership",
+       "text": "Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool.",
+       "source": "OpenAI",
+       "url": "https://openai.com/index/atlassian-partnership/"
+     },
+     {
+       "date": "2026-09-28",
+       "id": 929,
+       "title": "Manus introduces event-triggered automation",
+       "text": "Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work.",
+       "source": "Manus",
+       "url": "https://manus.im/en/blog/introducing-manus-2-0"
+     }
+   ]
  },
  {
   id:'ai-infrastructure',label:'AI infrastructure',title:'Power, cooling and chips need to fit together.',
@@ -102,39 +260,161 @@ export const briefs = [
   ]
  }
  ,{
-  id:'open-weights',label:'Open models',title:'Running a model yourself takes more than weights.',
-  reviewedAt:'2026-10-17',author:'Codex',accent:'gold',
-  teaser:'Meta’s desktop demonstration uses two high-memory Mac Studios. Downloadable models span very different hardware requirements and commercial terms.',
-  summary:'Meta has released Muse Spark Open with downloadable weights and limited commercial terms, describing a local setup using two M5 Ultra Mac Studios. It joins IBM’s Apache 2.0 Granite Switch models, FLUX’s image tools and NVIDIA’s server and local releases. The growing range of models makes the practical comparison more specific: what can this system do, on this hardware, under this license?',
-  meaning:'Check the license against your intended use and organization, then measure the complete system on real tasks. A desktop demonstration may require multiple high-memory machines. FLUX also needs a text encoder; IBM’s speech and decision features add components around a base model. Include those parts, working memory and expected response time in hardware tests. Compare ongoing maintenance costs with a hosted service before committing to self-hosting.',
-  watch:'Watch independent measurements of memory, speed and task quality, the October 23 Bolt release, and whether Mistral and Reflection deliver their planned weights.',
-  visualTitle:'From announcement to a working system',
-  visual:[['Available','Obtain weights and check the license'],['Suitable','Test the model on the actual task'],['Operable','Measure hardware and maintenance costs']],
-  timelineIntro:'Compact search and larger model previews were followed by NVIDIA, IBM and FLUX releases. Meta’s much larger downloadable model adds another local option, with a two-machine configuration and its own commercial terms.',
-  developments:[
-   {date:'2026-10-15',id:976,title:'Meta releases Muse Spark Open weights',text:'Meta describes running its 816-billion-parameter model, with 42 billion active per token, on two M5 Ultra Mac Studios using MLX. Weights and hosted access are available. The Muse Model License has limited commercial terms; downloadable weights do not imply unrestricted commercial use.',source:'Meta',url:'https://research.meta.ai/blog/muse-spark-open'},
-   {date:'2026-10-15',id:973,title:'FLUX releases image-generation and editing weights',text:'FLUX 3 Image Klein includes base and distilled weights. Its image generator has 5.6 billion parameters, excluding the text encoder. The FLUX Kommunity License permits free commercial use for individuals and companies with annual revenue under $5 million; larger organizations need a commercial arrangement for commercial deployment.',source:'Black Forest Labs',url:'https://bfl.ai/blog/flux-3-image-klein'},
-   {date:'2026-10-15',id:971,title:'IBM announces combined chat, decisions and transcription',text:'IBM’s announcement describes Granite Switch 4.1 models released October 14. Decision and safety adapters plus speech transcription surround 8B or 30B base models, under Apache 2.0 licensing. IBM says the combined system uses approximately the base model’s GPU memory, a claim to test on the intended workload.',source:'IBM',url:'https://huggingface.co/blog/ibm-granite/granite-switch-4-1'},
-   {date:'2026-10-15',id:965,title:'NVIDIA releases server and local Nemotron models',text:'Super VL and Bolt 74B-A9B are available now, according to NVIDIA. The company says Bolt uses a 2-bit representation to fit in 24GB of memory on supported local systems. The smaller Bolt E4B is due October 23.',source:'NVIDIA',url:'https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/'},
-   {date:'2026-10-06',id:937,title:'Google releases a compact media-search model',text:'EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support.',source:'Google',url:'https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/'},
-   {date:'2026-10-06',id:936,title:'Mistral opens a Large 4 API preview',text:'Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API.',source:'Mistral',url:'https://mistral.ai/news/mistral-large-4/'},
-   {date:'2026-10-05',id:925,title:'Reflection previews Beam',text:'Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October.',source:'Reflection',url:'https://reflection.ai/blog/introducing-beam'}
-  ]
+   "id": "open-weights",
+   "label": "Open models",
+   "title": "Running a model yourself takes more than weights.",
+   "reviewedAt": "2026-10-18",
+   "author": "Codex",
+   "accent": "gold",
+   "teaser": "DeepSeek’s latest downloadable update includes its own prompt-format tooling. Hardware, licensing and the surrounding software all shape a deployment.",
+   "summary": "DeepSeek has released V4.1 Flash 1017 weights under MIT, alongside hosted access and updated integration tools. Its model card leaves inference, tool execution and transport to the operator. Meta’s two-Mac demonstration and IBM’s and FLUX’s additional components show why each downloadable model needs a complete deployment plan.",
+   "meaning": "Check the license against your intended use and organization, then test the full system on real tasks. DeepSeek’s prompt-format toolkit does not run the model or execute its tools. Meta’s desktop demonstration uses multiple high-memory machines; FLUX requires a text encoder. Include those components, working memory, maintenance and expected response time when comparing self-hosting with a hosted service.",
+   "watch": "Watch independent memory, speed and quality tests, compatibility with each model’s integration tools, and the planned October releases from NVIDIA, Mistral and Reflection.",
+   "visualTitle": "From announcement to a working system",
+   "visual": [
+     [
+       "Available",
+       "Obtain weights and check the license"
+     ],
+     [
+       "Suitable",
+       "Test the model on the actual task"
+     ],
+     [
+       "Operable",
+       "Measure hardware and maintenance costs"
+     ]
+   ],
+   "timelineIntro": "The releases span compact search, image tools and large general-purpose models. DeepSeek’s October 17 update adds another downloadable option and makes the division between model formatting and runtime operations explicit.",
+   "developments": [
+     {
+       "date": "2026-10-17",
+       "id": 982,
+       "title": "DeepSeek publishes updated weights and integration tools",
+       "text": "V4.1 Flash 1017 is available through DeepSeek’s hosted services and as downloadable weights. Its official model repository lists MIT licensing and a prompt-format toolkit. Inference, tool execution and transport remain the operator’s responsibility. Performance improvements are reported by DeepSeek.",
+       "source": "DeepSeek",
+       "url": "https://api-docs.deepseek.com/news/news261017/",
+       "relation": "The announcement links the exact official model repository, whose weights, license and runtime responsibilities were reviewed for this deployment comparison."
+     },
+     {
+       "date": "2026-10-15",
+       "id": 976,
+       "title": "Meta releases Muse Spark Open weights",
+       "text": "Meta describes running its 816-billion-parameter model, with 42 billion active per token, on two M5 Ultra Mac Studios using MLX. Weights and hosted access are available. The Muse Model License has limited commercial terms; downloadable weights do not imply unrestricted commercial use.",
+       "source": "Meta",
+       "url": "https://research.meta.ai/blog/muse-spark-open"
+     },
+     {
+       "date": "2026-10-15",
+       "id": 973,
+       "title": "FLUX releases image-generation and editing weights",
+       "text": "FLUX 3 Image Klein includes base and distilled weights. Its image generator has 5.6 billion parameters, excluding the text encoder. The FLUX Kommunity License permits free commercial use for individuals and companies with annual revenue under $5 million; larger organizations need a commercial arrangement for commercial deployment.",
+       "source": "Black Forest Labs",
+       "url": "https://bfl.ai/blog/flux-3-image-klein"
+     },
+     {
+       "date": "2026-10-15",
+       "id": 971,
+       "title": "IBM announces combined chat, decisions and transcription",
+       "text": "IBM’s announcement describes Granite Switch 4.1 models released October 14. Decision and safety adapters plus speech transcription surround 8B or 30B base models, under Apache 2.0 licensing. IBM says the combined system uses approximately the base model’s GPU memory, a claim to test on the intended workload.",
+       "source": "IBM",
+       "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+     },
+     {
+       "date": "2026-10-15",
+       "id": 965,
+       "title": "NVIDIA releases server and local Nemotron models",
+       "text": "Super VL and Bolt 74B-A9B are available now, according to NVIDIA. The company says Bolt uses a 2-bit representation to fit in 24GB of memory on supported local systems. The smaller Bolt E4B is due October 23.",
+       "source": "NVIDIA",
+       "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+     },
+     {
+       "date": "2026-10-06",
+       "id": 937,
+       "title": "Google releases a compact media-search model",
+       "text": "EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support.",
+       "source": "Google",
+       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
+     },
+     {
+       "date": "2026-10-06",
+       "id": 936,
+       "title": "Mistral opens a Large 4 API preview",
+       "text": "Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API.",
+       "source": "Mistral",
+       "url": "https://mistral.ai/news/mistral-large-4/"
+     },
+     {
+       "date": "2026-10-05",
+       "id": 925,
+       "title": "Reflection previews Beam",
+       "text": "Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October.",
+       "source": "Reflection",
+       "url": "https://reflection.ai/blog/introducing-beam"
+     }
+   ]
  },
  {
-  id:'agent-economics',label:'AI operating costs',title:'The model bill depends on the job.',
-  reviewedAt:'2026-10-15',author:'Codex',accent:'blue',
-  teaser:'Cheaper short prompts, fixed-choice models and temporary launch prices offer different ways to manage an AI bill.',
-  summary:'Anthropic’s Haiku 5.5 prices favor prompts up to 100,000 tokens. Microsoft’s Decision-1 charges for input while returning fixed-choice scores, with no output-token charge. Google has launched Argon with introductory rates through November 30. These offers reward different workloads; comparing them starts with what each step of a task actually needs.',
-  meaning:'Separate routine classification from open-ended reasoning when testing a workflow. Measure the total cost of an accepted result, including retries, tool calls and human review. Track long prompts and cache use, since they can change the bill. Budget using the rate that will apply after a promotion ends, and keep quality and response time beside the price.',
-  watch:'Watch measured cost per accepted result, error rates when routing work to smaller models, and Argon pricing after November 30.',
-  visualTitle:'Compare the cost of completed work',
-  visual:[['Match','Choose a model for each step'],['Measure','Include retries and review'],['Budget','Use the ongoing price']],
-  timelineIntro:'Three October releases offer different pricing structures: a prompt-length threshold, a model for predefined choices, and a temporary introductory rate. Their usefulness depends on the work being assigned.',
-  developments:[
-   {date:'2026-10-13',id:961,title:'Google sets a time-limited Argon price',text:'Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026.',source:'Google',url:'https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/'},
-   {date:'2026-10-09',id:946,title:'Microsoft prices fixed-choice decisions',text:'Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer.',source:'Microsoft',url:'https://commandline.microsoft.com/microsoft-decision-1-model-foundry/'},
-   {date:'2026-10-07',id:935,title:'Anthropic ties Haiku prices to prompt length',text:'For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing.',source:'Anthropic',url:'https://www.anthropic.com/claude-haiku-5-5'}
-  ]
+   "id": "agent-economics",
+   "label": "AI operating costs",
+   "title": "The model bill depends on the job.",
+   "reviewedAt": "2026-10-18",
+   "author": "Codex",
+   "accent": "blue",
+   "teaser": "DeepSeek’s search tools add per-call charges to the model bill. Temporary waivers can hide part of a workflow’s ongoing cost.",
+   "summary": "DeepSeek has opened Search and Fetch APIs with separate per-call prices and a temporary waiver for supported server-side integrations. This joins prompt-length pricing from Anthropic, fixed-choice scoring from Microsoft and Google’s introductory Argon rates. A useful comparison adds up the full task after promotions expire.",
+   "meaning": "Measure the cost of an accepted result, including model tokens, search and retrieval calls, retries and human review. Test smaller models for routine classification while keeping quality and response time beside the price. Record which calls a promotion actually covers. Downloadable weights and a provider’s hosted search service are separate cost decisions; self-hosting a model does not remove charges for external tools.",
+   "watch": "Watch cost per accepted result, DeepSeek’s integration waiver ending October 31 at 16:00 UTC, and Argon pricing after November 30.",
+   "visualTitle": "Compare the cost of completed work",
+   "visual": [
+     [
+       "Match",
+       "Choose a model for each step"
+     ],
+     [
+       "Measure",
+       "Include retries and review"
+     ],
+     [
+       "Budget",
+       "Use the ongoing price"
+     ]
+   ],
+   "timelineIntro": "Three model releases introduced different token-pricing structures. DeepSeek’s separate search and page-retrieval charges add another item to the same task budget.",
+   "developments": [
+     {
+       "date": "2026-10-17",
+       "id": 982,
+       "title": "DeepSeek prices search and page retrieval separately",
+       "text": "Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call.",
+       "source": "DeepSeek",
+       "url": "https://api-docs.deepseek.com/news/news261017/",
+       "relation": "Separately priced search and retrieval calls directly extend the briefing’s analysis of total task cost and expiring promotions."
+     },
+     {
+       "date": "2026-10-13",
+       "id": 961,
+       "title": "Google sets a time-limited Argon price",
+       "text": "Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026.",
+       "source": "Google",
+       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+     },
+     {
+       "date": "2026-10-09",
+       "id": 946,
+       "title": "Microsoft prices fixed-choice decisions",
+       "text": "Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer.",
+       "source": "Microsoft",
+       "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+     },
+     {
+       "date": "2026-10-07",
+       "id": 935,
+       "title": "Anthropic ties Haiku prices to prompt length",
+       "text": "For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing.",
+       "source": "Anthropic",
+       "url": "https://www.anthropic.com/claude-haiku-5-5"
+     }
+   ]
  }
 ];

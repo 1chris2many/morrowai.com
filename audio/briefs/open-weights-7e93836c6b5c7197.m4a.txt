@@ -1,0 +1,29 @@
+Open models. Running a model yourself takes more than weights.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 18, 2026. Synthetic narration.
+
+DeepSeek has released V4.1 Flash 1017 weights under MIT, alongside hosted access and updated integration tools. Its model card leaves inference, tool execution and transport to the operator. Meta’s two-Mac demonstration and IBM’s and FLUX’s additional components show why each downloadable model needs a complete deployment plan.
+
+Three takeaways. Available. Obtain weights and check the license. Suitable. Test the model on the actual task. Operable. Measure hardware and maintenance costs.
+
+What it means. Check the license against your intended use and organization, then test the full system on real tasks. DeepSeek’s prompt-format toolkit does not run the model or execute its tools. Meta’s desktop demonstration uses multiple high-memory machines; FLUX requires a text encoder. Include those components, working memory, maintenance and expected response time when comparing self-hosting with a hosted service.
+
+How the story developed. The releases span compact search, image tools and large general-purpose models. DeepSeek’s October 17 update adds another downloadable option and makes the division between model formatting and runtime operations explicit.
+
+October 5. Reflection previews Beam. Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October. Source: Reflection.
+
+October 6. Google releases a compact media-search model. EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support. Source: Google.
+
+October 6. Mistral opens a Large 4 API preview. Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API. Source: Mistral.
+
+October 15. Meta releases Muse Spark Open weights. Meta describes running its 816-billion-parameter model, with 42 billion active per token, on two M5 Ultra Mac Studios using MLX. Weights and hosted access are available. The Muse Model License has limited commercial terms; downloadable weights do not imply unrestricted commercial use. Source: Meta.
+
+October 15. FLUX releases image-generation and editing weights. FLUX 3 Image Klein includes base and distilled weights. Its image generator has 5.6 billion parameters, excluding the text encoder. The FLUX Kommunity License permits free commercial use for individuals and companies with annual revenue under $5 million; larger organizations need a commercial arrangement for commercial deployment. Source: Black Forest Labs.
+
+October 15. IBM announces combined chat, decisions and transcription. IBM’s announcement describes Granite Switch 4.1 models released October 14. Decision and safety adapters plus speech transcription surround 8B or 30B base models, under Apache 2.0 licensing. IBM says the combined system uses approximately the base model’s GPU memory, a claim to test on the intended workload. Source: IBM.
+
+October 15. NVIDIA releases server and local Nemotron models. Super VL and Bolt 74B-A9B are available now, according to NVIDIA. The company says Bolt uses a 2-bit representation to fit in 24GB of memory on supported local systems. The smaller Bolt E4B is due October 23. Source: NVIDIA.
+
+October 17. DeepSeek publishes updated weights and integration tools. V4.1 Flash 1017 is available through DeepSeek’s hosted services and as downloadable weights. Its official model repository lists MIT licensing and a prompt-format toolkit. Inference, tool execution and transport remain the operator’s responsibility. Performance improvements are reported by DeepSeek. Source: DeepSeek.
+
+What to watch. Watch independent memory, speed and quality tests, compatibility with each model’s integration tools, and the planned October releases from NVIDIA, Mistral and Reflection.

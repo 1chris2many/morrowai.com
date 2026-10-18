@@ -28,3 +28,7 @@ reviewedIds.push(969,970,971,972,973);
 // disputed vendor-switch claim;975 reinforces existing access-boundary concerns.
 // Neither establishes a new theme or refreshes the media-provenance briefing.
 reviewedIds.push(974,975,976,977,978);
+// October18: 979 informs work/hiring;982 model deployment and tool costs;
+// 983/984 with968 justify a scientific-workflow briefing.981 remains a dated
+// consumer-assistant plan, not evidence of a workplace rollout.980 is held.
+reviewedIds.push(979,981,982,983,984);

@@ -2,6 +2,13 @@
   "version": 1,
   "engine": "macos-samantha-175-v1",
   "briefs": {
+    "ai-science": {
+      "hash": "e8226b9d4fb06b065d9a8d80c686fe0540b6a3ec36332e9f5c7af56f7f9e68cc",
+      "src": "audio/briefs/ai-science-e8226b9d4fb06b06.m4a",
+      "duration": 150.972653,
+      "bytes": 648340,
+      "sha256": "c05c5a18ded7eb3816463dac651038913a1c8acc9e7360dc58d62ec2cc94fc85"
+    },
     "ai-regulation": {
       "hash": "0f2bf88978249ef13a3820afda14c285b6dfbbc14c1e17556a2899ae9a679d89",
       "src": "audio/briefs/ai-regulation-0f2bf88978249ef1.m4a",
@@ -17,11 +24,11 @@
       "sha256": "fec14096576753b2f26b6b1d36e5d54448b71b2028fa48354cfaa715dba7072c"
     },
     "workplace-agents": {
-      "hash": "b9e89c3a103bd89dbd123c1bf10f80cb5f1d3a4fc55688a90cfad85b81e5a174",
-      "src": "audio/briefs/workplace-agents-b9e89c3a103bd89d.m4a",
-      "duration": 305.826576,
-      "bytes": 1277855,
-      "sha256": "b8340437665b282fcc62dd0228b133631d480e44cd3d6b8d9eac72c73ee435bb"
+      "hash": "56bfcbca97fa82ddaa7d7fcb3394ea746a0b83a0ff122f1c978e049fef436bf4",
+      "src": "audio/briefs/workplace-agents-56bfcbca97fa82dd.m4a",
+      "duration": 326.225306,
+      "bytes": 1361628,
+      "sha256": "01074d0ed1267fe3b270763536ff40de72fcd33df61526722f8023040fa187fd"
     },
     "ai-infrastructure": {
       "hash": "730c974b0238a20297f25186b18b982eee634be497694d0be657c30acb5453c7",
@@ -38,18 +45,18 @@
       "sha256": "c6e9dc2519e7ba43bedc902e098741d1a3d04c5cfc11f5974a15552a85ca3265"
     },
     "open-weights": {
-      "hash": "559c4b0f3d260613cf5ebbeb669f8cf7971b5b038df9bdaa98df2a010a4a1f4e",
-      "src": "audio/briefs/open-weights-559c4b0f3d260613.m4a",
-      "duration": 246.972336,
-      "bytes": 1038492,
-      "sha256": "375a2fa49ecafc7a2e1a31294779c9d00bcff162cb2b351a558ff0bc304581ea"
+      "hash": "7e93836c6b5c7197f376a13058690b0e51a9dfc5e09c729b3029c283552b9821",
+      "src": "audio/briefs/open-weights-7e93836c6b5c7197.m4a",
+      "duration": 268.636553,
+      "bytes": 1126143,
+      "sha256": "dd00413e8461c1125ea4e28d0417943226d985fef7895ff5310dc3c861ce79cd"
     },
     "agent-economics": {
-      "hash": "c8859a5796eb6204cd45c4b0cbd832a391e18bfbd9fcbd46def773ab213d1f76",
-      "src": "audio/briefs/agent-economics-c8859a5796eb6204.m4a",
-      "duration": 148.697098,
-      "bytes": 638466,
-      "sha256": "83f444092d3e413f8c69617d3fb1402aac2f81bdde78e53ab4a4ea91af063e2c"
+      "hash": "87da5d8a88342e70d8459936b41239501778786811f370a338810dba147651de",
+      "src": "audio/briefs/agent-economics-87da5d8a88342e70.m4a",
+      "duration": 175.214286,
+      "bytes": 747208,
+      "sha256": "bae76ce80bb9e0d4fc53115eb8516187117b43d88938b7e1d1551c54042140f9"
     }
   }
 }

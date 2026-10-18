@@ -11,16 +11,16 @@ const feed=JSON.parse(readFileSync(new URL('../news.json',import.meta.url)));
 const manifest=JSON.parse(readFileSync(new URL('../audio/briefs/manifest.json',import.meta.url)));
 const hash=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');
 const get=id=>briefs.find(b=>b.id===id);
-test('October17 preserves three unrelated briefings and every earlier event and metric',()=>{
- const unchanged={"ai-regulation":"569612be8f5b46cd953c8b16975242bfd92980dcdbdac60368bafac88d00928f","evals":"115b28b5eac8e506dedf5333c805e2e6e26d38fdfc345883efeebb44f4e493c7","agent-economics":"74215dabcf25368096118f13440f491a125039a05cd8412e2fe1b01fb4bb42cb"};
+test('October17 preserves two unrelated briefings and every earlier event and metric',()=>{
+ const unchanged={"ai-regulation":"569612be8f5b46cd953c8b16975242bfd92980dcdbdac60368bafac88d00928f","evals":"115b28b5eac8e506dedf5333c805e2e6e26d38fdfc345883efeebb44f4e493c7"};
  for(const [id,value]of Object.entries(unchanged))assert.equal(hash(get(id)),value,id);
  const histories={"safety-vs-capability":{"events":"2f88e3d861c1978dc093d1a3859ca87350407f6259e45fdd65be6a221a87a68c","metric":"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"},"workplace-agents":{"events":"4ecac95bdbfe35c63e3811bf84a858f996833f653ed6272da8cf68940148b81c","metric":"27f5b1483e24beaa54e0e43c1d97309100fbf3c499b81dafe1a1ae469bd397cb"},"open-weights":{"events":"29818da4e99ed7695b4345208e5a736589533fea9fdd3191dda832228c911738","metric":"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"}};
  for(const [id,prior]of Object.entries(histories)){
   const b=get(id);assert.equal(hash(b.developments.filter(d=>d.id<976)),prior.events,id);
   assert.equal(hash(b.metric||null),prior.metric,id);
-  assert.equal(b.reviewedAt,'2026-10-17');
+  assert.ok(b.reviewedAt>='2026-10-17');
  }
- assert.equal(briefs.length,7);
+ assert.equal(briefs.length,8);
  assert.equal(lifecycle(get('ai-regulation'),'2026-10-17').status,'watching');
  assert.ok(!briefingCards(feed).includes('data-theme="ai-regulation"'));
 });
@@ -56,7 +56,7 @@ test('updated narration exactly matches current public copy and rejects stale co
 test('all five new cards are triaged without forcing a new theme or redating governance',()=>{
  for(const id of [974,975,976,977,978])assert.ok(reviewedIds.includes(id));
  assert.ok(!briefs.some(b=>b.developments.some(d=>[974,975].includes(d.id))));
- const q=themeQueue(feed,'2026-10-17');assert.equal(q.candidates.length,0);
+ const q=themeQueue(feed,briefs.map(b=>b.reviewedAt).sort().at(-1));assert.equal(q.candidates.length,0);
  assert.ok(q.updates.every(b=>b.items.length===0));
  assert.equal(get('ai-regulation').reviewedAt,'2026-10-09');
 });

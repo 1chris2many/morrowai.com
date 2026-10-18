@@ -1,0 +1,37 @@
+Agents at work. AI work needs an inspectable result.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 18, 2026. Synthetic narration.
+
+Anthropic reports rising output after employees adopted coding agents and a falling share of junior technical hires. Its study also describes the effort needed to manage and review agent output. Alongside inspectable queries, code reviews and research manuscripts, this puts a practical question in focus: can a team assess the work as quickly as it is produced?
+
+Three takeaways. Delegate. Choose a task with a checkable result. Review. Measure quality and correction time. Develop. Track skills and entry-level opportunities.
+
+What it means. Measure accepted results, correction time and review workload together. Keep code, data and important decisions available to the person approving the work. Track hiring and training separately from output: an increase in completed tasks does not explain how entry-level staff will develop expertise. Anthropic’s observational study cannot establish how much of its changes AI caused, or how the pattern transfers to other employers.
+
+55.0%. Average task-criteria score. GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed. Source: OpenAI, 2026-10-06.
+
+How the story developed. Memory, queries and code reviews made delegated work easier to inspect. Surveys then exposed differing expectations. Anthropic’s employment study adds observations about output, hiring and the human effort surrounding agent use.
+
+September 28. Manus introduces event-triggered automation. Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work. Source: Manus.
+
+October 6. Ironclad tests agents on legal workflows. OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully. Source: OpenAI.
+
+October 6. Atlassian expands its OpenAI partnership. Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool. Source: OpenAI.
+
+October 8. Google introduces a persistent workplace agent. Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls. Source: Google Cloud.
+
+October 8. Claude makes dashboard results inspectable. Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it. Source: Anthropic.
+
+October 12. Meta releases Muse Wonder. The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned. Source: Meta.
+
+October 12. Ambi opens early access. Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to. Source: Ambi.
+
+October 14. Meta shares human-led research manuscripts. Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work. Source: Meta.
+
+October 15. Claude expands automatic code review. Code Review is generally available to Team and Enterprise organizations. Administrators can choose Quick, Standard or Deep for each repository. Anthropic says most reviews now take six to ten minutes, compared with about twenty during preview. Source: Anthropic.
+
+October 16. Anthropic measures changes in work and hiring. The share of junior technical hires fell from 27% to 9% since early 2025. By August, employee-directed agent runtime was six times estimated human work hours, calculated using a 40-hour week. Output rose after adoption, but adoption was not randomized. Runtime is not equivalent to productive output. Source: Anthropic.
+
+October 16. Survey shows a gap in expectations about work. In August surveys, Anthropic staff expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. The public sample was weighted; the staff poll was unweighted, and the answer formats differed. These figures describe expectations, not measured automation. Source: Anthropic.
+
+What to watch. Watch results outside AI labs, review time per accepted task and how employers preserve routes into junior roles.

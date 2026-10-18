@@ -6,7 +6,8 @@ import { createHash } from 'node:crypto';
 import { chromium } from 'playwright';
 import { newsAnchor, selectNews, freshnessMessage } from '../js/news-model.js';
 import { briefs } from '../scripts/theme-current.mjs';
-import { lifecycle, asOf, distinct } from '../scripts/theme-lifecycle.mjs';
+import { related } from '../scripts/theme-pages.mjs';
+import { lifecycle, asOf } from '../scripts/theme-lifecycle.mjs';
 
 const pages = ['index.html', 'themes.html', 'perspectives.html', 'news.html', 'three-windows-ai-safety.html', 'two-financing-paths.html', 'the-view-from-inside-the-declaration.html', 'closed-by-declaration.html'];
 const assets = ['css/news-first.css', 'css/style.css', 'css/blog.css', 'css/news.css', 'css/editorial.css', 'js/main.js', 'js/perspectives.js', 'js/news.js', 'js/news-model.js', 'js/analytics.js', 'js/brief-audio.js', 'news.json', 'feed.xml'];
@@ -47,7 +48,7 @@ for (const width of [320,390,768,820,1440]) {
    assert.equal(await p.locator('meta[name="robots"]').count(),0);
    assert.deepEqual(await p.locator('main > section').evaluateAll(es=>es.map(e=>e.id)),['developing','latest','perspectives','team','about','contact']);
    assert.ok(await p.locator('#developing .brief-card h3').first().evaluate(e=>e.getBoundingClientRect().top<innerHeight),'First briefing begins in first viewport');
-   const featured=briefs.filter(b=>lifecycle(b,asOf(feed)).status==='active'&&distinct(feed.items.filter(i=>i.reviewed&&i.themes?.some(t=>t.id===b.id))).length>=2);
+   const featured=briefs.filter(b=>lifecycle(b,asOf(feed)).status==='active'&&related(feed,b.id).length>=2);
    assert.equal(await p.locator('#developing .brief-card').count(),featured.length);
    assert.equal(await p.locator('#developing .brief-map li').count(),featured.reduce((n,b)=>n+b.visual.length,0));
    const current=feed.items.filter(i=>i.digestDate===feed.digestDate);
@@ -72,12 +73,14 @@ for (const width of [320,390,768,820,1440]) {
    assert.equal(await p.locator('.brief-timeline li').count(),briefs.reduce((n,b)=>n+b.developments.length,0));
    assert.equal(await p.locator('.brief-map li').count(),briefs.reduce((n,b)=>n+b.visual.length,0));
    await p.locator('#'+theme+' .brief-related summary').click();
-   assert.equal(await p.locator('#'+theme+' .brief-related li:visible').count(),feed.items.filter(i=>i.themes?.some(t=>t.id===theme)).length);
+   const themeItems=related(feed,theme),allTagged=themeItems.every(i=>i.themes?.some(t=>t.id===theme));
+   assert.equal(await p.locator('#'+theme+' .brief-related li:visible').count(),themeItems.length);
    await p.locator('#'+theme).scrollIntoViewIfNeeded();
    await p.screenshot({path:'test-results/theme-briefing-'+width+'.png'});
-   await p.goto(base+'news.html?theme='+theme);await p.locator('#news-theme').waitFor();
-   assert.equal(await p.locator('#news-theme').inputValue(),theme);
-   assert.equal(await p.locator('.news-card:visible').count(),feed.items.filter(i=>i.themes?.some(t=>t.id===theme)).length);
+   await p.locator('#'+theme+' .brief-related > a').click();await p.locator('#news-theme').waitFor();
+   assert.equal(new URL(p.url()).searchParams.get('theme'),allTagged?theme:null);
+   assert.equal(await p.locator('#news-theme').inputValue(),allTagged?theme:'');
+   assert.equal(await p.locator('.news-card:visible').count(),allTagged?themeItems.length:feed.items.length);
    assert.deepEqual(errors,[]);
   }finally{await ctx.close();}
  });

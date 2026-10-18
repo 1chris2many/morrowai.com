@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {renderHome,developing} from '../scripts/news-first-home.mjs';
+import {related} from '../scripts/theme-pages.mjs';
 const home=await readFile(new URL('../index.html',import.meta.url),'utf8');
 const published=home;
 const feed=JSON.parse(await readFile(new URL('../news.json',import.meta.url)));
@@ -16,7 +17,7 @@ test('production regenerates without drift or mutation and preserves profile, co
 });
 test('new edition refreshes Latest and chronological themes without stale headline copies',()=>{
  const date=new Date(Date.parse(feed.digestDate+'T12:00:00Z')+86400000).toISOString().slice(0,10);
- const count=feed.items.filter(i=>i.themes?.some(t=>t.id==='safety-vs-capability')).length;
+ const count=related(feed,'safety-vs-capability').length;
  const next=structuredClone(feed),c={...next.items.find(i=>i.themes?.some(t=>t.id==='safety-vs-capability')),digestItemId:99999,digestDate:date,anchor:'story-'+date+'-synthetic',title:'Synthetic next-edition headline',summary:'Synthetic next-edition summary for isolated validation.'};
  next.items.unshift(c);next.digestDate=c.digestDate;next.notice=date+' · 1 story';
  c.url='https://example.com/synthetic-next-edition';
