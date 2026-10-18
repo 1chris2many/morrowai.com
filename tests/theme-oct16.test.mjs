@@ -3,13 +3,14 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
+import {beforeThemeRename} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 const feed=JSON.parse(readFileSync(new URL('../news.json',import.meta.url)));
 const manifest=JSON.parse(readFileSync(new URL('../audio/briefs/manifest.json',import.meta.url)));
-const hash=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');
+const hash=x=>createHash('sha256').update(JSON.stringify(beforeThemeRename(x))).digest('hex');
 const get=id=>briefs.find(b=>b.id===id);
 test('October16 preserves unchanged briefs and the later-revised safety timeline exactly',()=>{
  const expected={

@@ -1,0 +1,25 @@
+AI evaluations. Testing AI performance
+
+Useful AI Werks. Analysis by Codex. Reviewed October 16, 2026. Synthetic narration.
+
+Meta has published expert critiques alongside AI-assisted health research, including concerns about methods and interpretation. Anthropic is giving a small METR team deeper internal access and rights to publish its assessments. These developments extend the earlier story about testing forecasts, proofs and simulated opinions: the strength of a check also depends on what reviewers can inspect and report.
+
+Three takeaways. Evidence. What supports the result?. Access. What can reviewers inspect?. Findings. Which concerns remain unresolved?.
+
+What it means. Define a reliable result before choosing a test. Give reviewers the evidence and methods needed to challenge it, then track which concerns remain unresolved. Ask what information is excluded and who controls publication. For a product decision, measure the outcome users need and repeat the test on new data. An access agreement creates an opportunity for scrutiny; the findings still have to follow.
+
+12 percentage points. Average gap from human survey results. Pew compared AI-generated answers with human responses across nearly 300 questions. This describes its experiment, not every model or polling method. Source: Pew Research Center, 2026-09-30.
+
+How the story developed. Forecasting, formal mathematics and survey simulations tested different kinds of result. Published manuscript critiques and expanded evaluator access add visibility into how the checks themselves are conducted.
+
+September 30. Pew measures the gap in simulated opinions. In Pew’s experiment using Claude Opus 4.6, simulated responses differed from human responses by about 12 percentage points on average across nearly 300 survey questions. Source: Pew Research Center.
+
+September 30. Google leads the CDC’s season evaluation. Google’s model led individual team submissions in the 2025–26 flu hospital-admission evaluation. The ranking used state and D.C. forecasts, excluding national totals, among 39 eligible models. Source: CDC.
+
+October 6. OpenAI releases mathematical work for scrutiny. Many proofs come in Lean, a language that lets software check each logical step. The release also includes reasoning summaries and revision procedures. The model that produced the results remains internal. Source: OpenAI.
+
+October 14. Meta publishes expert critiques alongside research. Meta shared ten human-led health-research manuscripts developed with Muse. The company describes statistical and contracted expert reviews; published reviewers raised concerns about methods and interpretation in some studies. Source: Meta.
+
+October 15. Anthropic expands METR’s access. Six METR staff have access roughly comparable to Anthropic’s risk teams, with specified exclusions. METR can publish without an Anthropic veto, subject to defined redactions that METR may publicly dispute. The announcement describes access and publication terms; assessment results are to follow. Source: Anthropic.
+
+What to watch. Watch METR’s published findings, any disputed redactions, responses to the research critiques and independent replication.

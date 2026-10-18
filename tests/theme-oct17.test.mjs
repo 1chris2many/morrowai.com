@@ -3,13 +3,14 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
+import {beforeThemeRename} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs,briefingCards} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 const feed=JSON.parse(readFileSync(new URL('../news.json',import.meta.url)));
 const manifest=JSON.parse(readFileSync(new URL('../audio/briefs/manifest.json',import.meta.url)));
-const hash=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');
+const hash=x=>createHash('sha256').update(JSON.stringify(beforeThemeRename(x))).digest('hex');
 const get=id=>briefs.find(b=>b.id===id);
 test('October17 preserves two unrelated briefings and every earlier event and metric',()=>{
  const unchanged={"ai-regulation":"569612be8f5b46cd953c8b16975242bfd92980dcdbdac60368bafac88d00928f","evals":"115b28b5eac8e506dedf5333c805e2e6e26d38fdfc345883efeebb44f4e493c7"};

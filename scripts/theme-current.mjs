@@ -2,7 +2,7 @@
 // not ingest dates. Feed ingestion cannot approve or refresh this analysis.
 export const briefs = [
  {
-  id:'ai-market-leadership',label:'AI competition',title:'The cost of losing the default.',
+  id:'ai-market-leadership',label:'AI competition',title:'Competition between AI providers',
   reviewedAt:'2026-10-18',author:'Codex',accent:'gold',
   teaser:'Businesses are adopting more AI while shifting spending between providers. Usage-based billing makes the work a customer sends tomorrow increasingly important.',
   summary:'AI adoption continues to grow in business-spending samples, even as OpenAI gains ground on Anthropic. More companies are switching providers, and token use is rising faster than spending in Ramp’s data. The pattern puts the durability of market leadership under scrutiny: expanding demand can bring revenue to a different supplier from the one that led the previous release cycle.',
@@ -23,7 +23,7 @@ export const briefs = [
  {
    "id": "ai-science",
    "label": "AI in science",
-   "title": "AI research moves closer to the experiment.",
+   "title": "AI in scientific research",
    "reviewedAt": "2026-10-18",
    "author": "Codex",
    "accent": "mint",
@@ -78,7 +78,7 @@ export const briefs = [
    ]
  },
  {
-  id:'ai-regulation', label:'AI governance', title:'A source check has several layers.',
+  id:'ai-regulation', label:'AI governance', title:'Checking AI sources',
   reviewedAt:'2026-10-09',author:'Codex',accent:'gold',
   teaser:'Public watermark detection makes one check easier. AI-assisted influence operations show why the identity behind a story still matters.',
   summary:'AI oversight is reaching everyday media checks. Google has opened SynthID Detector to the public for supported images, video and audio. OpenAI reports disrupting two influence operations that used false identities and real media outlets. Together, these developments put attention on both how content was made and who is trying to distribute it.',
@@ -94,7 +94,7 @@ export const briefs = [
   ]
  },
  {
-  id:'safety-vs-capability',label:'Agent safety',title:'Agent safeguards need the whole task in view.',
+  id:'safety-vs-capability',label:'Agent safety',title:'AI agent safety',
   reviewedAt:'2026-10-17',author:'Codex',accent:'mint',
   teaser:'Tools that flag risky actions are spreading. Whether the application actually stops those actions is a separate engineering question.',
   summary:'Anthropic’s internal evaluations have exposed agents exceeding their instructions, while election tests found abuse spread across smaller tasks. OpenRouter’s new Armor beta checks tool calls against rules and conversation context. Its documentation makes an important implementation detail explicit: in Claude-compatible mode, the application must enforce the verdict.',
@@ -117,7 +117,7 @@ export const briefs = [
  {
    "id": "workplace-agents",
    "label": "Agents at work",
-   "title": "AI work needs an inspectable result.",
+   "title": "AI agents at work",
    "reviewedAt": "2026-10-18",
    "author": "Codex",
    "accent": "lilac",
@@ -240,7 +240,7 @@ export const briefs = [
    ]
  },
  {
-  id:'ai-infrastructure',label:'AI infrastructure',title:'Power, cooling and chips need to fit together.',
+  id:'ai-infrastructure',label:'AI infrastructure',title:'Power and hardware for AI',
   reviewedAt:'2026-10-12',author:'Codex',accent:'blue',
   teaser:'Microsoft is planning larger deployments of its own inference chips. NVIDIA is opening rack designs and facility standards to equipment partners.',
   summary:'Microsoft plans multi-gigawatt Maia deployments starting in 2027. NVIDIA’s latest contributions cover racks, cooling interfaces and data-center standards. The announcements show two ways to expand capacity: optimize a system for known workloads, and give suppliers common designs to build and operate together.',
@@ -260,7 +260,7 @@ export const briefs = [
   ]
  },
  {
-  id:'evals',label:'AI evaluations',title:'Put the result to the test.',
+  id:'evals',label:'AI evaluations',title:'Testing AI performance',
   reviewedAt:'2026-10-16',author:'Codex',accent:'mint',
   teaser:'Published research critiques and deeper access for external evaluators put a new question beside the score: what can a reviewer actually check?',
   summary:'Meta has published expert critiques alongside AI-assisted health research, including concerns about methods and interpretation. Anthropic is giving a small METR team deeper internal access and rights to publish its assessments. These developments extend the earlier story about testing forecasts, proofs and simulated opinions: the strength of a check also depends on what reviewers can inspect and report.',
@@ -281,7 +281,7 @@ export const briefs = [
  ,{
    "id": "open-weights",
    "label": "Open models",
-   "title": "Running a model yourself takes more than weights.",
+   "title": "Running AI models yourself",
    "reviewedAt": "2026-10-18",
    "author": "Codex",
    "accent": "gold",
@@ -376,7 +376,7 @@ export const briefs = [
  {
    "id": "agent-economics",
    "label": "AI operating costs",
-   "title": "The model bill depends on the job.",
+   "title": "The cost of running AI",
    "reviewedAt": "2026-10-18",
    "author": "Codex",
    "accent": "blue",

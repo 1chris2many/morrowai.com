@@ -3,8 +3,9 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {briefs} from '../scripts/theme-current.mjs';
+import {beforeThemeRename} from './theme-name-history.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
-const hash=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');
+const hash=x=>createHash('sha256').update(JSON.stringify(beforeThemeRename(x))).digest('hex');
 const get=id=>briefs.find(b=>b.id===id);
 test('October18 timing correction changes exactly three spans, without redating the briefing',()=>{
  const b=get('ai-infrastructure'), prior=structuredClone(b);

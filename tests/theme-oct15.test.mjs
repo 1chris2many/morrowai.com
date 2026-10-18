@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
+import {beforeThemeRename} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
@@ -33,7 +34,7 @@ test('October15 leaves unrelated briefings and their review dates unchanged',()=
   // October18 permits exactly three timing spans; its regression reverses them to the original hash.
   'ai-infrastructure':'40a392ab01ed7e02ead8568f1896851a53aefc897dcfc254f60a76a1fca7146a'
  };
- for(const b of briefs.filter(b=>expected[b.id]))assert.equal(createHash('sha256').update(JSON.stringify(b)).digest('hex'),expected[b.id]);
+ for(const b of briefs.filter(b=>expected[b.id]))assert.equal(createHash('sha256').update(JSON.stringify(beforeThemeRename(b))).digest('hex'),expected[b.id]);
  assert.equal(lifecycle(briefs.find(b=>b.id==='evals'),'2026-10-16').status,'active');
 });
 test('October15 model and research updates retain availability and authorship limits',()=>{

@@ -1,0 +1,25 @@
+AI competition. Competition between AI providers
+
+Useful AI Werks. Analysis by Codex. Reviewed October 18, 2026. Synthetic narration.
+
+AI adoption continues to grow in business-spending samples, even as OpenAI gains ground on Anthropic. More companies are switching providers, and token use is rising faster than spending in Ramp’s data. The pattern puts the durability of market leadership under scrutiny: expanding demand can bring revenue to a different supplier from the one that led the previous release cycle.
+
+Three takeaways. Demand. How much AI work customers do. Share. Which provider gets that work. Pricing. What the provider earns from it.
+
+What it means. A customer can keep access to several providers and move work between them. With fixed subscriptions, a supplier can retain fees until renewal; separately metered usage responds as consumption changes, subject to prepaid credits and contracts. That makes workload retention important to revenue forecasts. For valuations, the risk is assuming that today’s share and pricing power will endure. The sampled shifts do not by themselves establish a fall in Anthropic’s total revenue or the reasons individual customers switched.
+
+54.1% → 52.2%. Claude’s share of AI spending in one UK sample. Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue. Source: Capital on Tap, 2026-10-12.
+
+How the story developed. The evidence spans a provider choice, two business-spending datasets and current billing terms. Together they show how AI adoption can grow while the distribution of spending changes. Each dataset has its own population and measure.
+
+October 6. Provider switching reaches a sample high. Ramp’s three-month-average monthly switching rate reached 8% in September. The rate describes observed businesses; it does not identify why each switched or establish global market share. Source: Ramp.
+
+October 12. UK adoption expands as provider shares move. Capital on Tap’s Q3 data shows broader AI adoption alongside a spending-share shift toward ChatGPT. Claude still leads spending in this UK small-business cardholder sample. Free use, app-store subscriptions and invoiced contracts are excluded. Source: Capital on Tap.
+
+October 14. Usage grows faster than spending. Ramp reports rising token volumes and little token-spending growth during August and September. Its economist attributes the gap to price declines and efficiency. Anthropic adoption still increased in its sample, while OpenAI gained faster. Source: Ramp.
+
+October 17. Replit. Default changes. Source: TechCrunch.
+
+October 18. Enterprise billing exposes consumption separately. Anthropic’s current guide separates annual Enterprise access fees from usage billed at API rates. Legacy arrangements transition at renewal. These are current terms checked October 18, not a newly announced launch or the structure of every Claude plan. Source: Anthropic Help Center.
+
+What to watch. Watch whether provider-share shifts persist across releases, how much spending changes reflect prices versus volume, and whether customers return after improvements. Follow actual revenue and retention alongside adoption counts; keep run-rate estimates separate from booked sales.

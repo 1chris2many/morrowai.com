@@ -1,0 +1,19 @@
+AI in science. AI in scientific research
+
+Useful AI Werks. Analysis by Codex. Reviewed October 18, 2026. Synthetic narration.
+
+CERN and Mistral plan a model trained on simulated particle collisions. Google Research is testing laboratory automation and repeated molecular-design experiments, while a separate Google pledge expands researchers’ access to models and compute. These efforts address different parts of scientific work, from obtaining resources to testing a proposal against physical evidence.
+
+Three takeaways. Access. Obtain models, data and compute. Experiment. Test proposals against evidence. Verify. Inspect methods and repeat results.
+
+What it means. Choose the research step an AI system is meant to improve, then define how its output will be checked. Simulated collisions need tests against the physics they represent; laboratory actions need checks against equipment and materials. Preserve the experimental record so researchers can trace a result and investigate errors. Access to a model, a partnership announcement and a demonstrated experiment establish different levels of readiness.
+
+How the story developed. The announcements address different research constraints: access to computing, a proposed physics model and laboratory prototypes.
+
+October 14. Google pledges access and compute credits. Google pledges frontier-model access for up to 200 European scientific researchers and $3 million in compute credits in total. The pledge supports the EU’s RAISE research initiative. Source: Google.
+
+October 15. CERN and Mistral set out a physics-model plan. CERN’s announcement describes a signed statement of intent. The planned Large Physics Model would learn from simulated proton collisions and support tasks such as particle identification and detector design. It is a development plan, with validation and results still to come. Source: CERN.
+
+October 16. Google tests agents with laboratory feedback. Google describes three separate projects involving laboratory robots and molecular design. Its VERID system checks actions against a live model of the lab. Humans authorize sequences, verify protocols and supervise robot runs. Combining the projects remains a next step. Source: Google Research.
+
+What to watch. Watch CERN’s training and validation results, independent tests of the laboratory systems, and whether researchers receiving support publish reproducible findings.

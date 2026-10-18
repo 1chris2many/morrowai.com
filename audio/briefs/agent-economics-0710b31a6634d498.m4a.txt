@@ -1,0 +1,21 @@
+AI operating costs. The cost of running AI
+
+Useful AI Werks. Analysis by Codex. Reviewed October 18, 2026. Synthetic narration.
+
+DeepSeek has opened Search and Fetch APIs with separate per-call prices and a temporary waiver for supported server-side integrations. This joins prompt-length pricing from Anthropic, fixed-choice scoring from Microsoft and Google’s introductory Argon rates. A useful comparison adds up the full task after promotions expire.
+
+Three takeaways. Match. Choose a model for each step. Measure. Include retries and review. Budget. Use the ongoing price.
+
+What it means. Measure the cost of an accepted result, including model tokens, search and retrieval calls, retries and human review. Test smaller models for routine classification while keeping quality and response time beside the price. Record which calls a promotion actually covers. Downloadable weights and a provider’s hosted search service are separate cost decisions; self-hosting a model does not remove charges for external tools.
+
+How the story developed. Three model releases introduced different token-pricing structures. DeepSeek’s separate search and page-retrieval charges add another item to the same task budget.
+
+October 7. Anthropic ties Haiku prices to prompt length. For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing. Source: Anthropic.
+
+October 9. Microsoft prices fixed-choice decisions. Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer. Source: Microsoft.
+
+October 13. Google sets a time-limited Argon price. Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026. Source: Google.
+
+October 17. DeepSeek prices search and page retrieval separately. Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call. Source: DeepSeek.
+
+What to watch. Watch cost per accepted result, DeepSeek’s integration waiver ending October 31 at 16:00 UTC, and Argon pricing after November 30.
