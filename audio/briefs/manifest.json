@@ -24,11 +24,11 @@
       "sha256": "b8340437665b282fcc62dd0228b133631d480e44cd3d6b8d9eac72c73ee435bb"
     },
     "ai-infrastructure": {
-      "hash": "d5e055680656d6cf6a067e926d0a70d62e43fe91a13bc62f6383b0aa0d629f4a",
-      "src": "audio/briefs/ai-infrastructure-d5e055680656d6cf.m4a",
-      "duration": 218.8678,
-      "bytes": 924279,
-      "sha256": "94110c2e6c05576c079f2f82c7e142113a7a67be240a2c7b502a8dcb9760a9c4"
+      "hash": "730c974b0238a20297f25186b18b982eee634be497694d0be657c30acb5453c7",
+      "src": "audio/briefs/ai-infrastructure-730c974b0238a202.m4a",
+      "duration": 219.784989,
+      "bytes": 926677,
+      "sha256": "b51f2041de0a6dca26863cf9f2e52147c9af371355feda3d5b80aa1758a783b4"
     },
     "evals": {
       "hash": "aaecba59a43bd196f07d327abd383b13c4f5f521f6d7c4a154bfec692010f7ed",

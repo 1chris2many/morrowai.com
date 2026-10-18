@@ -14,7 +14,8 @@ const get=id=>briefs.find(b=>b.id===id);
 test('October16 preserves unchanged briefs and the later-revised safety timeline exactly',()=>{
  const expected={
   'ai-regulation':'569612be8f5b46cd953c8b16975242bfd92980dcdbdac60368bafac88d00928f',
-  'ai-infrastructure':'8a936788eb82088ebef10d14d72b169559c8b2378f72c5ec840443536bba7ae5',
+  // October18 permits exactly three timing spans; its regression reverses them to the original hash.
+  'ai-infrastructure':'40a392ab01ed7e02ead8568f1896851a53aefc897dcfc254f60a76a1fca7146a',
   'agent-economics':'74215dabcf25368096118f13440f491a125039a05cd8412e2fe1b01fb4bb42cb'
  };
  for(const [id,value]of Object.entries(expected))assert.equal(hash(get(id)),value,id);

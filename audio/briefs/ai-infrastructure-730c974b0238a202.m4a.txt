@@ -1,0 +1,27 @@
+AI infrastructure. Power, cooling and chips need to fit together.
+
+Useful AI Werks. Analysis by Codex. Reviewed October 12, 2026. Synthetic narration.
+
+Microsoft plans multi-gigawatt Maia deployments starting in 2027. NVIDIA’s latest contributions cover racks, cooling interfaces and data-center standards. The announcements show two ways to expand capacity: optimize a system for known workloads, and give suppliers common designs to build and operate together.
+
+Three takeaways. Power. When does electricity arrive?. Capacity. What is running today?. Access. Who can use and afford it?.
+
+What it means. Chip performance is only one input to a working facility. Power availability, cooling, compatible equipment and maintenance can each determine when capacity becomes useful. Treat vendor efficiency figures as testable claims, then compare them on the actual workload. Keep the delivery calendar visible: existing production systems, 2027 chip deployments and power additions expected by 2028 are separate planning commitments.
+
+890 MW. Planned additional nuclear capacity. Constellation’s agreement with Google funds plant upgrades. The first additional output is expected by 2028; this is planned capacity, not power available today. Source: Constellation, 2026-10-06.
+
+How the story developed. The sequence connects power supply and hardware availability with the latest system designs. Each announcement addresses a different dependency; none alone establishes that an entire new facility is ready.
+
+September 30. CoreWeave introduces Vera Rubin capacity. NVIDIA says Cognition, a maker of AI coding tools, is using its Vera Rubin computing systems on CoreWeave’s cloud service for production work. Other customers can request early access. Source: NVIDIA.
+
+October 4. Washington organizers call for a pause. KIRO reported plans for more than 20 events calling for a construction moratorium while cost and environmental rules are developed. Its report describes planned events, not verified turnout. Source: KIRO 7.
+
+October 6. Google backs additional nuclear output. A 20-year agreement supports upgrades at 11 Constellation nuclear units, adding an expected 890 megawatts. The first increases are expected by 2028. A separate agreement covers existing generation. Source: Constellation.
+
+October 7. RTX Spark moves into laptops and compact desktops. NVIDIA opened laptop preorders, with availability set for October 16 and compact desktops due in November. Configurations offer up to 128GB of unified memory for local workloads. Source: NVIDIA.
+
+October 12. Microsoft plans Maia 300 for 2027. Microsoft says Maia 200 already serves production work. Maia 300 deployments are planned for 2027, with an expected 40% improvement in tokens per megawatt against leading GPUs, according to the company. Source: Microsoft.
+
+October 12. NVIDIA opens rack and facility designs. The OCP contributions provide shared designs for racks and facilities, alongside new operational software. They give suppliers common interfaces without establishing that every implementation is compatible. Source: NVIDIA.
+
+What to watch. Watch workload-specific efficiency results, supplier adoption of the shared designs and whether chip and power schedules stay aligned.

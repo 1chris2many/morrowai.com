@@ -30,7 +30,8 @@ test('October15 safety update distinguishes misuse and preserves source dates an
 test('October15 leaves unrelated briefings and their review dates unchanged',()=>{
  const expected={
   'ai-regulation':'569612be8f5b46cd953c8b16975242bfd92980dcdbdac60368bafac88d00928f',
-  'ai-infrastructure':'8a936788eb82088ebef10d14d72b169559c8b2378f72c5ec840443536bba7ae5'
+  // October18 permits exactly three timing spans; its regression reverses them to the original hash.
+  'ai-infrastructure':'40a392ab01ed7e02ead8568f1896851a53aefc897dcfc254f60a76a1fca7146a'
  };
  for(const b of briefs.filter(b=>expected[b.id]))assert.equal(createHash('sha256').update(JSON.stringify(b)).digest('hex'),expected[b.id]);
  assert.equal(lifecycle(briefs.find(b=>b.id==='evals'),'2026-10-16').status,'active');
