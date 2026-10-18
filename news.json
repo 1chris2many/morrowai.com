@@ -1,18 +1,116 @@
 {
   "version": 1,
-  "digestDate": "2026-10-17",
+  "digestDate": "2026-10-18",
   "latestSavedDigest": "2026-10-18",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 5,
+  "pending": 3,
   "items": [
+    {
+      "digestItemId": 979,
+      "digestDate": "2026-10-18",
+      "title": "Anthropic reports changes in junior hiring and agent use",
+      "summary": "Anthropic’s October 16 study puts employee-directed agent runtime at six times estimated human work hours in August; the human baseline assumes a 40-hour week. The share of junior technical hires fell from 27% to 9% since early 2025, while measured output rose after agent adoption. The company notes that adoption was not randomized.",
+      "whyItMatters": "Review capacity and entry-level hiring deserve separate tracking alongside output measures.",
+      "url": "https://www.anthropic.com/research/employment-at-anthropic",
+      "source": "Anthropic",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-18-anthropic-report-finds-its-ai-agents-now-log-six-times-more-work-hours-than-employees",
+      "editorialNote": "Study published October 16, 2026."
+    },
+    {
+      "digestItemId": 983,
+      "digestDate": "2026-10-18",
+      "title": "CERN and Mistral plan a model for particle physics",
+      "summary": "CERN announced on October 15 that it and Mistral signed a statement of intent to develop foundation models for science. Their planned Large Physics Model would train on simulated proton collisions and support tasks including particle identification and detector design.",
+      "whyItMatters": "The proposal would test whether one model can support several stages of collider analysis currently handled by specialized algorithms.",
+      "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+      "source": "CERN — October 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-18-cern-and-mistral-plan-a-model-for-particle-physics",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 982,
+      "digestDate": "2026-10-18",
+      "title": "DeepSeek updates V4.1 Flash and opens search APIs",
+      "summary": "DeepSeek released its October 17 V4.1 Flash update across its website, app and API, reporting improvements in coding and agent tasks. It also opened public Search and Fetch APIs, listing each at $0.75 per 1,000 calls; a temporary waiver covers server-side tool calls through supported coding clients.",
+      "whyItMatters": "Model quality and web-tool costs both affect the cost of completing an agent task.",
+      "url": "https://api-docs.deepseek.com/news/news261017/",
+      "source": "DeepSeek — October 17, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-18-deepseek-updates-v4-1-flash-and-opens-search-apis",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 984,
+      "digestDate": "2026-10-18",
+      "title": "Google tests AI agents against laboratory reality",
+      "summary": "Google Research’s October 16 report describes three projects involving laboratory robots and repeated molecular-design experiments. Its VERID system checks proposed robot actions against a live laboratory model before execution, with humans authorizing sequences, checking protocols and supervising runs. Combining the projects into one workflow remains a next step.",
+      "whyItMatters": "Physical-state checks and experimental feedback help expose mistakes that plausible-looking code or molecular designs can miss.",
+      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+      "source": "Google Research — October 16, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-18-google-tests-ai-agents-against-laboratory-reality",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 981,
+      "digestDate": "2026-10-18",
+      "title": "Rivian considers outside AI agents",
+      "summary": "CEO RJ Scaringe outlined plans for outside AI agents in Rivian vehicles, without a launch date.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-18-rivian-s-ceo-says-future-cars-could-run-outside-ai-agents-like-anthropic-s-claude",
+      "editorialNote": "Reported October 15."
+    },
     {
       "digestItemId": 977,
       "digestDate": "2026-10-17",
@@ -4658,8 +4756,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-17 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-18T13:59:48.530Z",
-  "contentHash": "1ff21af3b34eef7404f7849cb5ffea8b946146a249721d214bbb5dc7f26ad90e"
+  "publicationStatus": "partial",
+  "notice": "2026-10-18 · 5 stories · More stories to follow",
+  "publishedAt": "2026-10-18T15:07:54.379Z",
+  "contentHash": "99a625667f6967baea98624ddc124849a754d80660653cf3412393c898717635"
 }
