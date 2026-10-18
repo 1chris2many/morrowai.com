@@ -21,7 +21,7 @@ test('substantive source-backed briefings are stable, HTML-first and escaped',()
  assert.equal((out.match(/<h3>What it means<\/h3>/g)||[]).length,briefs.length);
  assert.equal((out.match(/<h3>What to watch<\/h3>/g)||[]).length,briefs.length);
  assert.equal((out.match(/opens in a new tab/g)||[]).length,briefs.reduce((n,b)=>n+b.developments.length,0));
- assert.match(out,/Text|AI oversight/);
+ assert.match(out,/real publishers’ editorial channels/);
  assert.match(out,/noindex,nofollow/);assert.doesNotMatch(renderThemes(home,feed),/noindex|nofollow" data-preview/);
  assert.match(out,/rel="canonical" href="https:\/\/usefulaiwerks.com\/themes.html"/);
  const next=structuredClone(feed);next.items[0].title='<script>bad()</script>';
@@ -70,8 +70,8 @@ test('October 8 synthesis preserves availability distinctions and unrelated date
 });
 test('October 9 synthesis distinguishes provenance, truth and unreviewed security findings',()=>{
  const governance=briefs.find(b=>b.id==='ai-regulation');
- assert.match(governance.meaning,/absence does not establish human authorship/);
- assert.match(governance.meaning,/does not settle whether a claim is true/);
+ assert.match(governance.meaning,/cannot establish that an author exists/);
+ assert.match(governance.meaning,/or verify its claims/);
  assert.match(governance.developments.find(d=>d.id===942).text,/OpenAI says/);
  assert.match(governance.developments.find(d=>d.id===943).text,/Apple support planned/);
  const safety=briefs.find(b=>b.id==='safety-vs-capability');
@@ -124,7 +124,8 @@ test('October 12 memory and infrastructure synthesis preserves actual availabili
  assert.match(work.developments.find(d=>d.id===951).text,/App rollout is still planned/);
  assert.match(work.developments.find(d=>d.id===954).text,/It says audio is deleted after transcription/);
  assert.match(work.developments.find(d=>d.id===954).text,/users control which services it can connect to/);
- assert.match(infra.meaning,/Power availability, cooling, compatible equipment and maintenance/);
+ assert.match(infra.meaning,/real power and deployment constraints/);
+ assert.match(infra.meaning,/do not by themselves make accelerators and software interchangeable/);
  assert.match(infra.developments.find(d=>d.id===952).text,/planned for 2027/);
  assert.match(infra.developments.find(d=>d.id===952).text,/expected 40%/);
  assert.match(infra.developments.find(d=>d.id===953).text,/shared designs/);

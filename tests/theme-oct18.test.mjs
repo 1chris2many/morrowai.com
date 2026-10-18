@@ -27,7 +27,7 @@ test('new workplace evidence preserves denominator, hiring shares and observatio
  const b=get('workplace-agents'),d=b.developments.find(d=>d.id===979);
  assert.equal(d.date,'2026-10-16');
  for(const re of [/share of junior technical hires/,/27% to 9%/,/agent runtime/,/estimated human work hours/,/40-hour week/,/not randomized/,/not equivalent to productive output/])assert.match(d.text,re);
- assert.match(b.meaning,/review workload/);assert.match(b.meaning,/other employers/);
+ assert.match(b.meaning,/human’s attention/);assert.match(b.meaning,/other employers/);
 });
 test('DeepSeek separates downloadable-model operation from hosted tool charges',()=>{
  const open=get('open-weights'),econ=get('agent-economics');
@@ -35,7 +35,8 @@ test('DeepSeek separates downloadable-model operation from hosted tool charges',
  for(const source of [d,cost])assert.equal(source.date,'2026-10-17');
  for(const re of [/downloadable weights/,/MIT/,/operator’s responsibility/,/reported by DeepSeek/])assert.match(d.text,re);
  for(const re of [/each cost \$0\.75 per 1,000 API calls/,/For DeepSeek API users/,/server-side tools/,/October 31 at 16:00 UTC/,/does not cover every direct API call/])assert.match(cost.text,re);
- assert.match(econ.meaning,/separate cost decisions/);
+ assert.match(econ.meaning,/per-call meter/);
+ assert.match(open.meaning,/hosted search is separately priced/);
 });
 test('science links three distinct developments with original dates and readiness limits',()=>{
  const b=get('ai-science');

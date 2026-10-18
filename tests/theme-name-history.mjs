@@ -1,6 +1,14 @@
-// Owner requested simpler public theme names on October 18.
-// Normalize ONLY those exact approved renames for earlier content-preservation snapshots.
-// Unexpected title edits still fail; current names are asserted in theme-names.test.mjs.
+import {readFileSync} from 'node:fs';
+export const insightRevision=JSON.parse(readFileSync(new URL('./theme-insight-fixture.json',import.meta.url)));
+// Historical snapshots predate the owner-requested insight revision. Reverse only
+// the exact reviewed editorial fields. Unexpected edits fail the old snapshots;
+// IDs, dates, source developments, metrics and other fields are never normalized.
+export function beforeInsightRevision(value){
+ const change=value&&insightRevision.changes[value.id];
+ if(!change||!insightRevision.fields.every(k=>JSON.stringify(value[k])===JSON.stringify(change.after[k])))return value;
+ return {...value,...change.before};
+}
+// Also reverse the earlier exact title-only revision for pre-rename snapshots.
 export const themeNameChanges={
   "ai-market-leadership": {
     "before": "The cost of losing the default.",
@@ -40,6 +48,7 @@ export const themeNameChanges={
   }
 };
 export function beforeThemeRename(value){
+ value=beforeInsightRevision(value);
  const change=value&&themeNameChanges[value.id];
  return change&&value.title===change.after?{...value,title:change.before}:value;
 }

@@ -38,7 +38,7 @@ test('October17 source dates and key limitations survive synthesis',()=>{
  for(const re of [/August surveys/,/75%/,/28%/,/employed US respondents/,/unweighted/,/answer formats differed/,/expectations, not measured automation/])assert.match(survey.text,re);
  const armor=safety.developments.find(d=>d.id===978);
  for(const re of [/clients must honor flagged verdicts/,/Provider-native server tools are skipped by default/,/audit mode/,/false alarms and missed violations/])assert.match(armor.text,re);
- assert.match(safety.meaning,/entire path/);assert.match(safety.meaning,/times out/);
+ assert.match(safety.meaning,/entire path/);assert.match(safety.meaning,/unavailable check/);
 });
 test('all three new sources remain bound to reviewed related feed cards',()=>{
  validateBriefs(feed);

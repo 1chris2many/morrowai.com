@@ -8,7 +8,7 @@ import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 const hash=x=>createHash('sha256').update(JSON.stringify(beforeThemeRename(x))).digest('hex');
 const get=id=>briefs.find(b=>b.id===id);
 test('October18 timing correction changes exactly three spans, without redating the briefing',()=>{
- const b=get('ai-infrastructure'), prior=structuredClone(b);
+ const b=get('ai-infrastructure'), prior=structuredClone(beforeThemeRename(b));
  for(const [holder,key,corrected,old] of [
   [prior,'meaning','2027 chip deployments and power additions expected by 2028','2027 chip deployments and 2028 power additions'],
   [prior.metric,'context','The first additional output is expected by 2028','The first additional output is expected in 2028'],

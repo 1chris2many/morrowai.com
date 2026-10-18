@@ -1,0 +1,25 @@
+AI competition. AI vendors can lose the work before they lose the customer
+
+Useful AI Werks. Analysis by Codex. Reviewed October 18, 2026. Synthetic narration.
+
+A provider can retain a capable model and a paying account while losing its place in someone’s daily work. Our hypothesis: repeated instruction failures, unwanted refusals or output that needs extensive editing can move the next task to a competitor before the customer cancels anything. Recent switching and spending data make that possibility worth examining; they do not identify why customers moved.
+
+Three takeaways. Daily friction. The next task goes to a rival. Quiet migration. The original account stays open. Revenue impact. Metered usage follows the work.
+
+What it means. This creates a gap between account retention and workload retention. A fixed subscription can keep producing fees while use dwindles; metered consumption reflects the change sooner, subject to credits and contractual commitments. That can make a vendor’s product problem look like weakening demand for AI, even when the same work is moving to a rival. Revenue forecasts and valuations that treat an installed customer base as durable demand may miss the loss until it reaches the bill.
+
+54.1% → 52.2%. Claude’s share of AI spending in one UK sample. Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue. Source: Capital on Tap, 2026-10-12.
+
+How the story developed. The sources establish more switching, changing spending shares and billing that separates access from consumption. The behavioral explanation above is a hypothesis connecting those facts, not a measured account of every switch.
+
+October 6. Provider switching reaches a sample high. Ramp’s three-month-average monthly switching rate reached 8% in September. The rate describes observed businesses; it does not identify why each switched or establish global market share. Source: Ramp.
+
+October 12. UK adoption expands as provider shares move. Capital on Tap’s Q3 data shows broader AI adoption alongside a spending-share shift toward ChatGPT. Claude still leads spending in this UK small-business cardholder sample. Free use, app-store subscriptions and invoiced contracts are excluded. Source: Capital on Tap.
+
+October 14. Usage grows faster than spending. Ramp reports rising token volumes and little token-spending growth during August and September. Its economist attributes the gap to price declines and efficiency. Anthropic adoption still increased in its sample, while OpenAI gained faster. Source: Ramp.
+
+October 17. Replit. Default changes. Source: TechCrunch.
+
+October 18. Enterprise billing exposes consumption separately. Anthropic’s current guide separates annual Enterprise access fees from usage billed at API rates. Legacy arrangements transition at renewal. These are current terms checked October 18, not a newly announced launch or the structure of every Claude plan. Source: Anthropic Help Center.
+
+What to watch. Watch whether the same customers keep their accounts but shift their important tasks, and whether product improvements win that work back. Separate price changes from usage changes. These samples do not establish a decline in Anthropic’s total revenue or measure human correction costs.

@@ -1,0 +1,19 @@
+AI in science. A better lab score can conceal a worse molecule
+
+Useful AI Werks. Analysis by Codex. Reviewed October 18, 2026. Synthetic narration.
+
+In Google’s laboratory experiments, an AI-driven design round favored molecules that stuck to the target protein—but also to other proteins and laboratory beads. The raw result improved while specificity deteriorated. Feedback from those controls changed the design rules, and a later round recovered more selective results. The experiment shows how an apparently successful search can drift away from the scientific objective.
+
+Three takeaways. Apparent gain. More binding to the target. Hidden failure. More binding to other material too. Better feedback. Controls redirect the search.
+
+What it means. Faster candidate generation makes the quality of experimental feedback more consequential. If the measurement rewards the wrong behavior, a more capable optimizer can pursue that mistake more effectively. Laboratories with reliable controls and traceable experiments may therefore capture more value from AI than those that merely generate more proposals. CERN’s planned physics model faces a related test: useful scientific performance must survive validation beyond the data used to train it.
+
+How the story developed. Compute access expands who can try AI science. CERN’s model plan and Google’s laboratory prototypes turn attention to the harder question: how will a promising result be shown to mean what researchers think it means?
+
+October 14. Google pledges access and compute credits. Google pledges frontier-model access for up to 200 European scientific researchers and $3 million in compute credits in total. The pledge supports the EU’s RAISE research initiative. Source: Google.
+
+October 15. CERN and Mistral set out a physics-model plan. CERN’s announcement describes a signed statement of intent. The planned Large Physics Model would learn from simulated proton collisions and support tasks such as particle identification and detector design. It is a development plan, with validation and results still to come. Source: CERN.
+
+October 16. Google tests agents with laboratory feedback. Google describes three separate projects involving laboratory robots and molecular design. Its VERID system checks actions against a live model of the lab. Humans authorize sequences, verify protocols and supervise robot runs. Combining the projects remains a next step. Source: Google Research.
+
+What to watch. Watch whether independent experiments preserve the reported gains, whether controls expose new shortcuts, and whether faster design produces more validated findings. Google’s projects remain supervised prototypes; CERN has announced a development plan.

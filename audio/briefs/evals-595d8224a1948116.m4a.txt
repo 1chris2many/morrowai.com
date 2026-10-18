@@ -1,0 +1,25 @@
+AI evaluations. Who gets to challenge an AI result?
+
+Useful AI Werks. Analysis by Codex. Reviewed October 16, 2026. Synthetic narration.
+
+OpenAI has released mathematical proofs that can be checked while the producing model remains internal. Meta has published expert critiques alongside AI-assisted research. Anthropic is granting selected external evaluators deeper internal access. These are different ways to expose evidence, with different limits on who can investigate a result and what they can learn.
+
+Three takeaways. Public artifact. Anyone can inspect the released result. Privileged access. Selected evaluators can probe more deeply. Right to report. Publication terms shape what others learn.
+
+What it means. An inspectable artifact can establish something narrow and strong: a proof checks, or a manuscript contains a methodological weakness. It does not establish how reliably the model will perform on the next task. Privileged evaluation access can expose broader behavior, but the scope of access and rules for publishing findings become part of the assurance. For readers and buyers, the useful distinction is what a claim leaves open to challenge—and what remains inaccessible.
+
+12 percentage points. Average gap from human survey results. Pew compared AI-generated answers with human responses across nearly 300 questions. This describes its experiment, not every model or polling method. Source: Pew Research Center, 2026-09-30.
+
+How the story developed. Earlier forecasting and survey tests exposed the importance of the chosen outcome. The newer releases expose another dependency: the evidence available to people who want to challenge the conclusion.
+
+September 30. Pew measures the gap in simulated opinions. In Pew’s experiment using Claude Opus 4.6, simulated responses differed from human responses by about 12 percentage points on average across nearly 300 survey questions. Source: Pew Research Center.
+
+September 30. Google leads the CDC’s season evaluation. Google’s model led individual team submissions in the 2025–26 flu hospital-admission evaluation. The ranking used state and D.C. forecasts, excluding national totals, among 39 eligible models. Source: CDC.
+
+October 6. OpenAI releases mathematical work for scrutiny. Many proofs come in Lean, a language that lets software check each logical step. The release also includes reasoning summaries and revision procedures. The model that produced the results remains internal. Source: OpenAI.
+
+October 14. Meta publishes expert critiques alongside research. Meta shared ten human-led health-research manuscripts developed with Muse. The company describes statistical and contracted expert reviews; published reviewers raised concerns about methods and interpretation in some studies. Source: Meta.
+
+October 15. Anthropic expands METR’s access. Six METR staff have access roughly comparable to Anthropic’s risk teams, with specified exclusions. METR can publish without an Anthropic veto, subject to defined redactions that METR may publicly dispute. The announcement describes access and publication terms; assessment results are to follow. Source: Anthropic.
+
+What to watch. Watch what METR actually publishes, any disputes over redactions, responses to the public research critiques and whether outsiders can reproduce results beyond the released examples. An access agreement is a route to evidence, not a safety finding.

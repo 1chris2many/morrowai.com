@@ -17,7 +17,7 @@ test('October15 safety update distinguishes misuse and preserves source dates an
  assert.match(election.text,/Anthropic says/);
  assert.match(election.text,/could miss election abuse spread across ordinary-looking requests/);
  assert.match(election.text,/classifiers targeting multi-step misuse/);
- assert.match(safety.watch,/false alarms/);
+ assert.match(safety.watch,/legitimate work blocked/);
  const historical=[963,958,950,945,940,939,896];
  assert.deepEqual(safety.developments.filter(d=>historical.includes(d.id)).map(d=>d.id),historical);
  assert.equal(election.date,'2026-10-14');
@@ -59,12 +59,12 @@ test('new economics briefing distinguishes pricing structures and event dates',(
  const original=b.developments.filter(d=>[961,946,935].includes(d.id));
  assert.deepEqual(original.map(d=>[d.id,d.date]),[[961,'2026-10-13'],[946,'2026-10-09'],[935,'2026-10-07']]);
  assert.equal(new Set(original.map(d=>new URL(d.url).hostname)).size,3);
- assert.match(b.summary,/fixed-choice scor/);
+ assert.match(b.summary,/fixed-choice decisions without an output-token charge/);
  assert.match(original[0].text,/expires November 30, 2026/);
  assert.match(original[1].text,/\$0\.042 per million input tokens/);
  assert.match(original[2].text,/Above that threshold/);
- assert.match(b.meaning,/cost of an accepted result/);
- assert.match(b.meaning,/quality and response time/);
+ assert.match(b.meaning,/not measured savings between equivalent systems/);
+ assert.match(b.watch,/preserve the needed quality/);
  const queue=themeQueue(feed,reviewDay);
  assert.ok(!queue.candidates.some(c=>c.id===b.id));
  for(const id of [961,965,966,967,968])assert.ok(reviewedIds.includes(id));
