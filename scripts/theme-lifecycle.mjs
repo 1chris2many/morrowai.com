@@ -21,7 +21,8 @@ export function distinct(items){const seen=new Set();return items.filter(i=>{con
 export function sourceOrganization(raw){
  const host=new URL(raw).hostname.replace(/^www\./,'');
  if(['claude.com','anthropic.com'].includes(host))return 'anthropic';
- if(host==='blog.google'||host==='deepmind.google')return 'google';
+ if(['blog.google','deepmind.google','research.google'].includes(host))return 'google';
+ if(['blogs.nvidia.com','nvidianews.nvidia.com'].includes(host))return 'nvidia';
  return host;
 }
 export function themeQueue(feed,now=asOf(feed),content=briefs){

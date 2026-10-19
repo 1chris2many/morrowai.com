@@ -35,3 +35,11 @@ reviewedIds.push(979,981,982,983,984);
 // October18 owner-requested market-leadership review: separate adoption,
 // switching, spending share and current Enterprise billing terms.974 clarified.
 reviewedIds.push(985,986,987,988);
+// October19: all five original sources and current explanations reviewed.
+// 989 is a proposed equity-funded benefit scheme, unrelated to the existing
+// false-contributor/provenance mechanism.990 is one bankruptcy transaction.
+// 991 is a driving roadmap;993 selected creative-workload acceleration claims.
+// 992 checks document consistency, not independent experimental validity.
+// No existing thesis is reinforced/changed enough to warrant a new development;
+// no evidence date, narration or lifecycle status is refreshed by this triage.
+reviewedIds.push(989,990,991,992,993);
