@@ -1,18 +1,113 @@
 {
   "version": 1,
-  "digestDate": "2026-10-18",
+  "digestDate": "2026-10-19",
   "latestSavedDigest": "2026-10-19",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 5,
+  "pending": 3,
   "items": [
+    {
+      "digestItemId": 993,
+      "digestDate": "2026-10-19",
+      "title": "Adobe and NVIDIA expand GPU acceleration for creative tools",
+      "summary": "Adobe and NVIDIA announced expanded creative-tool integration on October 15, including RTX Spark optimizations for Photoshop, Premiere and Substance 3D and GPU-based processing for Frame.io. The companies report gains on selected workloads, while a Nemotron-powered Brand Concierge version is due for enterprise customers later this year.",
+      "whyItMatters": "Accelerating Frame.io's media processing and search could shorten the wait between uploading footage and locating usable clips.",
+      "url": "https://nvidianews.nvidia.com/news/adobe-and-nvidia-expand-collaboration-to-speed-agentic-creation",
+      "source": "NVIDIA — October 15, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-19-adobe-and-nvidia-expand-gpu-acceleration-for-creative-tools",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 989,
+      "digestDate": "2026-10-19",
+      "title": "Anthropic proposes a share-funded public benefit fund",
+      "summary": "Anthropic announced on October 18 that it plans to dedicate 5% of its shares to a public benefit fund, subject to stockholder approval. Its board could add another 2% for each 50% increase in valuation above a set baseline. The fund will be a wholly owned LLC; governance details are still to come.",
+      "whyItMatters": "Equity sets aside a stake in future value; the amount ultimately distributed and who directs it remain important open questions.",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-19-anthropic-commits-5-of-its-shares-to-a-new-public-benefit-fund",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 990,
+      "digestDate": "2026-10-19",
+      "title": "Disney plans Character.AI hires",
+      "summary": "Reported offers cover at least 60 employees. A competing bankruptcy bid could still change the deal.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "source": "TechCrunch, citing a bankruptcy court filing reported by Bloomberg",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-19-disney-to-hire-majority-of-bankrupt-character-ai-s-staff-per-court-filing",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 992,
+      "digestDate": "2026-10-19",
+      "title": "Google opens Deep Review for technical-document feedback",
+      "summary": "Google Research opened Deep Review to the public on October 14 after opt-in trials separate from conference peer review. It initially accepts PDF and plain-text files, with two free reviews a week and higher usage through the Gemini API. Google says uploads are kept for a year but are not used to train its models.",
+      "whyItMatters": "Section-by-section checks can surface inconsistencies before expert review; upload retention matters for teams handling confidential documents.",
+      "url": "https://research.google/blog/analyzing-technical-documents-with-deep-review/",
+      "source": "Google Research — October 14, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-19-google-opens-deep-review-for-technical-document-feedback",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 991,
+      "digestDate": "2026-10-19",
+      "title": "Mercedes-Benz and NVIDIA extend their automated-driving partnership",
+      "summary": "Mercedes-Benz and NVIDIA said on October 16 they will extend their automated-driving partnership, combining MB.OS with NVIDIA's Hyperion computing and sensor platform, Alpamayo software and Halos safety system. The companies describe support for driver assistance and future Level 4 applications, without announcing a launch date for those applications.",
+      "whyItMatters": "The collaboration combines vehicle software, sensors and a separate safety system, making deployment depend on more than improvements to the driving model.",
+      "url": "https://nvidianews.nvidia.com/news/mercedes-benz-and-nvidia-expand-strategic-partnership-to-advance-safe-highly-automated-driving-in-the-next-decade",
+      "source": "NVIDIA — October 16, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-19-mercedes-benz-and-nvidia-extend-their-automated-driving-partnership",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 979,
       "digestDate": "2026-10-18",
@@ -4836,8 +4931,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-18 · 9 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-19T13:59:52.893Z",
-  "contentHash": "3b997d739e55f2a15010f969a13aecc1df759835ea311e0988591b65dc558dd4"
+  "publicationStatus": "current",
+  "notice": "2026-10-19 · 5 stories",
+  "publishedAt": "2026-10-19T15:07:16.805Z",
+  "contentHash": "941d436fd86f29a5ad3335be79c3cc473dc84a52a5723edd8d80f16f1579271d"
 }
