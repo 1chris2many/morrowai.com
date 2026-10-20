@@ -1,18 +1,133 @@
 {
   "version": 1,
-  "digestDate": "2026-10-19",
-  "latestSavedDigest": "2026-10-19",
-  "fresh": false,
+  "digestDate": "2026-10-20",
+  "latestSavedDigest": "2026-10-20",
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 3,
   "items": [
+    {
+      "digestItemId": 997,
+      "digestDate": "2026-10-20",
+      "title": "Dream Labs opens a robot-control model through an API",
+      "summary": "Dream Labs has released Dream-1, an API it says can control previously unseen two-armed robots with parallel grippers without robot-specific demonstrations. The company lists model usage at $3 per hour, with a $2-per-hour Flash variant. It reports variable performance across robots and a dependence on the robot's motion solver.",
+      "whyItMatters": "Transfer between robot designs could reduce setup work, but a model-usage price alone does not establish the cost of reliable operation.",
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "source": "Dream Labs — October 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-20-dream-labs-opens-a-robot-control-model-through-an-api"
+    },
+    {
+      "digestItemId": 998,
+      "digestDate": "2026-10-20",
+      "title": "EBU and NVIDIA expand a sovereign AI framework for broadcasters",
+      "summary": "NVIDIA said on October 19 that its work with the European Broadcasting Union is expanding to include cloud providers, open-model developers and systems integrators. The initiative will define requirements and reference architectures for broadcaster control over workloads, data, models and security. Microsoft, Nebius and Qvest are among the named participants.",
+      "whyItMatters": "Shared deployment requirements could make editorial control a procurement condition; the announcement does not establish adoption across member broadcasters.",
+      "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+      "source": "NVIDIA — October 19, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-20-ebu-and-nvidia-expand-a-sovereign-ai-framework-for-broadcasters"
+    },
+    {
+      "digestItemId": 996,
+      "digestDate": "2026-10-20",
+      "title": "Gemini Notebook adds review before slides and videos render",
+      "summary": "Google announced on October 19 that Gemini Notebook users can review and revise proposed slide outlines or video producer notes before generation. Users can also guide topics, style and format from chat. The controls are rolling out globally to all users over the following week.",
+      "whyItMatters": "Reviewing structure before rendering gives users an earlier chance to correct an unwanted direction.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/",
+      "source": "Google — October 19, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-20-gemini-notebook-adds-review-before-slides-and-videos-render"
+    },
+    {
+      "digestItemId": 995,
+      "digestDate": "2026-10-20",
+      "title": "Meta details the operating first phase of Prometheus",
+      "summary": "Meta says the completed first phase of its Prometheus supercluster trained the Muse models, including Muse Wonder. Its October 19 engineering account describes hundreds of thousands of GPUs already connected across the Ohio site. Roughly one million GPUs is the eventual scale it is working toward, not the current installed count.",
+      "whyItMatters": "Meta's account shows how networking and system reliability determine how much of a large GPU fleet contributes to training.",
+      "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
+      "source": "Engineering at Meta — October 19, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-20-meta-details-the-operating-first-phase-of-prometheus"
+    },
+    {
+      "digestItemId": 994,
+      "digestDate": "2026-10-20",
+      "title": "Microsoft extends agent supervision to threats inside the enterprise",
+      "summary": "Microsoft described on October 19 how Project Perception can supervise an organization's own AI agents. Its design combines identity, permissions and runtime signals with continuous risk assessment and Guardian Agents that respond to risky actions. Microsoft presents this as containment across the surrounding systems, not a guarantee of safe model behavior.",
+      "whyItMatters": "An agent's approved access can still enable harmful actions; supervision needs to account for what it does after deployment.",
+      "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+      "source": "Microsoft — October 19, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-20-microsoft-extends-agent-supervision-to-threats-inside-the-enterprise"
+    },
     {
       "digestItemId": 993,
       "digestDate": "2026-10-19",
@@ -4931,8 +5046,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-19 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-20T07:14:55.625Z",
-  "contentHash": "6b87a860b4bcb8a02cb5ef96618b44edb16025711963ff9a752c0c2ea0fc0b9c"
+  "publicationStatus": "current",
+  "notice": "2026-10-20 · 5 stories",
+  "publishedAt": "2026-10-20T15:11:35.798Z",
+  "contentHash": "29f6d0fb780d140b5f07ea01805d1b45465f46f11c8361bd41c416a1de973874"
 }
