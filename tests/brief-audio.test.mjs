@@ -11,7 +11,9 @@ const home=await readFile(new URL('index.html',root),'utf8');
 const feed=JSON.parse(await readFile(new URL('news.json',root)));
 test('every briefing has current, nonempty audio with a matching transcript and checksum',async()=>{
  for(const b of briefs){
-  const a=audioEntry(b,manifest);assert.ok(a,b.id);assert.ok(a.duration>60&&a.duration<360);
+  // The growing source timeline is included verbatim; keep a bounded seven-minute
+  // ceiling while retaining earlier evidence rather than silently trimming it.
+  const a=audioEntry(b,manifest);assert.ok(a,b.id);assert.ok(a.duration>60&&a.duration<420);
   const bytes=await readFile(new URL(a.src,root));assert.equal(bytes.length,a.bytes);
   assert.equal(createHash('sha256').update(bytes).digest('hex'),a.sha256);
   assert.equal(await readFile(new URL(a.src+'.txt',root),'utf8'),narration(b)+'\n');
@@ -37,7 +39,7 @@ test('HTML-first players disclose synthesis, offer transcripts and never autopla
 test('every timeline connects the events; quantitative highlights require source context',()=>{
  for(const b of briefs){assert.ok(b.timelineIntro.length>60);const text=narration(b);assert.ok(text.includes(b.timelineIntro));assert.doesNotMatch(text,/https:\/\/|related stories|Open filtered/);}
  const invalid=structuredClone(briefs);invalid[0].metric={value:'99%',label:'Claim',context:'Unknown',sourceId:-1};assert.throws(()=>validateBriefs(feed,invalid),/Metric/);
- assert.equal(briefs.filter(b=>b.metric).length,4);
+ assert.equal(briefs.filter(b=>b.metric).length,5);
  const workplace=briefs.find(b=>b.id==='workplace-agents'),historical=[972,967,951,954,947,949,932,933,929];
  assert.deepEqual(workplace.developments.filter(d=>historical.includes(d.id)).map(d=>d.id),historical);
  assert.doesNotMatch(narration(workplace),/strongest tested configuration/);

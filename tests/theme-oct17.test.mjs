@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
-import {beforeThemeRename} from './theme-name-history.mjs';
+import {beforeThemeRename,beforeOct20} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs,briefingCards} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
@@ -21,7 +21,7 @@ test('October17 preserves two unrelated briefings and every earlier event and me
   assert.equal(hash(b.metric||null),prior.metric,id);
   assert.ok(b.reviewedAt>='2026-10-17');
  }
- assert.equal(briefs.length,9);
+ assert.equal(briefs.length,10);
  assert.equal(lifecycle(get('ai-regulation'),'2026-10-17').status,'watching');
  assert.ok(!briefingCards(feed).includes('data-theme="ai-regulation"'));
 });
@@ -38,7 +38,7 @@ test('October17 source dates and key limitations survive synthesis',()=>{
  for(const re of [/August surveys/,/75%/,/28%/,/employed US respondents/,/unweighted/,/answer formats differed/,/expectations, not measured automation/])assert.match(survey.text,re);
  const armor=safety.developments.find(d=>d.id===978);
  for(const re of [/clients must honor flagged verdicts/,/Provider-native server tools are skipped by default/,/audit mode/,/false alarms and missed violations/])assert.match(armor.text,re);
- assert.match(safety.meaning,/entire path/);assert.match(safety.meaning,/unavailable check/);
+ assert.match(beforeOct20(safety).meaning,/entire path/);assert.match(beforeOct20(safety).meaning,/unavailable check/);
 });
 test('all three new sources remain bound to reviewed related feed cards',()=>{
  validateBriefs(feed);

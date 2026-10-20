@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {briefs} from '../scripts/theme-current.mjs';
-import {beforeThemeRename} from './theme-name-history.mjs';
+import {beforeThemeRename,beforeOct20} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {related,validateBriefs,briefingCards,renderThemes} from '../scripts/theme-pages.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
@@ -15,12 +15,12 @@ const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 test('October18 preserves four unrelated briefings, all earlier developments and metrics',()=>{
  for(const [id,value]of Object.entries({"ai-regulation":"569612be8f5b46cd953c8b16975242bfd92980dcdbdac60368bafac88d00928f","safety-vs-capability":"b0ec7f38a369aacdfa9de4a69c8b2ff4685192cc11a13d20373e976cbe2cad07","ai-infrastructure":"40a392ab01ed7e02ead8568f1896851a53aefc897dcfc254f60a76a1fca7146a","evals":"115b28b5eac8e506dedf5333c805e2e6e26d38fdfc345883efeebb44f4e493c7"}))assert.equal(hash(get(id)),value,id);
  for(const [id,prior]of Object.entries({"workplace-agents":{"events":"6645b0aa68a2c29779dbc58604103cd2e412641556cc83a55b5436bcf94db8a1","metric":"27f5b1483e24beaa54e0e43c1d97309100fbf3c499b81dafe1a1ae469bd397cb"},"open-weights":{"events":"69bc76aba90bde92ed2ca82742b1689c22ad79a55d7c91ed46d895d4daced612","metric":"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"},"agent-economics":{"events":"e0570e1668d8170d76a71cb1ad4a1e95091119477b9b3ea67f82d30d495b0d32","metric":"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"}})){
-  const b=get(id);
+  const b=beforeOct20(get(id));
   assert.equal(hash(b.developments.filter(d=>![979,982].includes(d.id))),prior.events,id);
   assert.equal(hash(b.metric||null),prior.metric,id);
   assert.equal(b.reviewedAt,'2026-10-18');
  }
- assert.equal(briefs.length,9);
+ assert.equal(briefs.length,10);
  assert.equal(get('ai-science').metric,undefined);
 });
 test('new workplace evidence preserves denominator, hiring shares and observational limits',()=>{

@@ -43,3 +43,9 @@ reviewedIds.push(985,986,987,988);
 // No existing thesis is reinforced/changed enough to warrant a new development;
 // no evidence date, narration or lifecycle status is refreshed by this triage.
 reviewedIds.push(989,990,991,992,993);
+// October20: primary sources994–998 personally reviewed against current briefs.
+// 994/995/996 update safety, infrastructure and human review;997 joins the
+// freshly rechecked Figure814 study in a robotics-transfer synthesis.
+// 998 concerns deployment sovereignty, not fabricated contributor provenance;
+// it does not reactivate or redate the existing governance briefing.
+reviewedIds.push(994,995,996,997,998);

@@ -1,0 +1,29 @@
+AI infrastructure. Recovering from failures is part of an AI operator’s advantage
+
+Useful AI Werks. Analysis by Codex. Reviewed October 20, 2026. Synthetic narration.
+
+Meta's Prometheus account describes training jobs in which one failing component can interrupt many processors working together. Spare hardware, fault isolation and checkpoints limit that lost work. Meta reports more than 85% pre-training goodput during Muse Wonder runs. Its first phase is operating with hundreds of thousands of GPUs; roughly one million is the planned eventual scale.
+
+Three takeaways. Linked processors. One fault can interrupt a much larger job. Contain and recover. Isolate failures and limit repeated work. Useful capacity. More of the installed fleet advances training.
+
+What it means. Shared rack and cooling designs can make compatible equipment easier to obtain. The operating knowledge needed to keep a large job progressing may still separate buyers of similar hardware. Meta's account illustrates how firmware fixes, networking and recovery turn installed equipment into productive training. Our inference is that an operator can build an advantage by losing less work to failures, even as components become more widely available. Chip counts and announced power capacity alone miss that distinction. Microsoft’s workload-specific Maia design pursues another route to better use of constrained power.
+
+890 MW. Planned additional nuclear capacity. Constellation’s agreement with Google funds plant upgrades. The first additional output is expected by 2028; this is planned capacity, not power available today. Source: Constellation, 2026-10-06.
+
+How the story developed. Power agreements and hardware releases set the physical limits. Shared designs make deployment easier; Meta's operating account shows why recovering productive work remains a separate engineering problem.
+
+September 30. CoreWeave introduces Vera Rubin capacity. NVIDIA says Cognition, a maker of AI coding tools, is using its Vera Rubin computing systems on CoreWeave’s cloud service for production work. Other customers can request early access. Source: NVIDIA.
+
+October 4. Washington organizers call for a pause. KIRO reported plans for more than 20 events calling for a construction moratorium while cost and environmental rules are developed. Its report describes planned events, not verified turnout. Source: KIRO 7.
+
+October 6. Google backs additional nuclear output. A 20-year agreement supports upgrades at 11 Constellation nuclear units, adding an expected 890 megawatts. The first increases are expected by 2028. A separate agreement covers existing generation. Source: Constellation.
+
+October 7. RTX Spark moves into laptops and compact desktops. NVIDIA opened laptop preorders, with availability set for October 16 and compact desktops due in November. Configurations offer up to 128GB of unified memory for local workloads. Source: NVIDIA.
+
+October 12. Microsoft plans Maia 300 for 2027. Microsoft says Maia 200 already serves production work. Maia 300 deployments are planned for 2027, with an expected 40% improvement in tokens per megawatt against leading GPUs, according to the company. Source: Microsoft.
+
+October 12. NVIDIA opens rack and facility designs. The OCP contributions provide shared designs for racks and facilities, alongside new operational software. They give suppliers common interfaces without establishing that every implementation is compatible. Source: NVIDIA.
+
+October 19. Meta details Prometheus fault recovery. Meta says Prometheus's completed first phase trained Muse Wonder. It describes spare hardware, isolating failed replicas and restarting from checkpoints, reporting more than 85% pre-training and more than 90% reinforcement-learning goodput on those runs. These are company-reported training results. Source: Engineering at Meta.
+
+What to watch. Watch useful training output, time lost to faults and recovery costs as clusters expand. Comparable workload results would test whether operating practices create a durable advantage. Meta's reported goodput is not an industry comparison; Microsoft's 2027 efficiency target and power additions expected by 2028 remain future commitments.

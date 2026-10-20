@@ -2,6 +2,13 @@
   "version": 1,
   "engine": "macos-samantha-175-v1",
   "briefs": {
+    "robot-transfer": {
+      "hash": "f98958c2276c70fc276fd3de5a98b7d19e5f842500e4e262da66437ed78dc4a2",
+      "src": "audio/briefs/robot-transfer-f98958c2276c70fc.m4a",
+      "duration": 183.073197,
+      "bytes": 778383,
+      "sha256": "3e277a499a065b989b26d0c0b6b6c42962d669dd8f5eb4f5c3b468dfbaea4d80"
+    },
     "ai-market-leadership": {
       "hash": "a3070204bea641bd8c320796c5278fd7a55449fb807d99f9eeedfcb81775163e",
       "src": "audio/briefs/ai-market-leadership-a3070204bea641bd.m4a",
@@ -24,25 +31,25 @@
       "sha256": "228284d3a3634b7ee0b4b63a651304e0a42c2a0532dc7823ffdf3c6a22f8fcf8"
     },
     "safety-vs-capability": {
-      "hash": "2533b0dad889f79a4e0fa0b6f97e88ac794be83d2c457bb3a7298d9a44618b76",
-      "src": "audio/briefs/safety-vs-capability-2533b0dad889f79a.m4a",
-      "duration": 270.903764,
-      "bytes": 1136045,
-      "sha256": "891e407f85a19f3560fd2e81624df647d51b9807f04ccb392512e3a142b9b715"
+      "hash": "32909316a93625a31eafa881cea617e6c3044f146d138f81ded62f179568bb9f",
+      "src": "audio/briefs/safety-vs-capability-32909316a93625a3.m4a",
+      "duration": 308.171791,
+      "bytes": 1287664,
+      "sha256": "bb8a4dbd8c02c0be359a4d5e8dd07413b3cd81601f75fea082ce99e169db02c6"
     },
     "workplace-agents": {
-      "hash": "3f63463152aa5d9d33006a07cd3f33cc410f58f8ee3df9d578aea53f37061339",
-      "src": "audio/briefs/workplace-agents-3f63463152aa5d9d.m4a",
-      "duration": 334.828299,
-      "bytes": 1394891,
-      "sha256": "5215795d5bbedc7460396d6383e53c89aa8b6f5ee6d7cc62bf8e04bd82f33188"
+      "hash": "9c7e0c646a05e42f779930a40dd4e3b780e1ac88d55a9a05b854118be91bac91",
+      "src": "audio/briefs/workplace-agents-9c7e0c646a05e42f.m4a",
+      "duration": 370.0878,
+      "bytes": 1574564,
+      "sha256": "b339e64b0212fa29f258b1746d25f7aa8abefe0933037d08e14dcccdd3adcda3"
     },
     "ai-infrastructure": {
-      "hash": "3e3f7fa4010c67ba583655660f98f91fe07dfd20610598610803e2dcbbf9156b",
-      "src": "audio/briefs/ai-infrastructure-3e3f7fa4010c67ba.m4a",
-      "duration": 241.333107,
-      "bytes": 1014168,
-      "sha256": "0b1f81508787d77c3be2f4d71ac45c4d4a48e288d2060708cd6b27ea5ee006c3"
+      "hash": "b6ca66e8ed8a18641f48b35806adad3da0f35a96ce321e8915ce51354d09a601",
+      "src": "audio/briefs/ai-infrastructure-b6ca66e8ed8a1864.m4a",
+      "duration": 274.827891,
+      "bytes": 1151141,
+      "sha256": "0c81944aa51db76d6df8938bd88ad6dc626ff3337336fde14430486d2fcc614c"
     },
     "evals": {
       "hash": "595d8224a1948116c00c98960e8bb94306c792fc1b95cf5a4067eaad0932f144",

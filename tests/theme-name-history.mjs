@@ -1,9 +1,17 @@
 import {readFileSync} from 'node:fs';
+export const oct20Revision=JSON.parse(readFileSync(new URL('./theme-oct20-fixture.json',import.meta.url)));
+// Undo only a byte-exact approved October20 replacement for older snapshots.
+// Today's tests separately assert the full new content and every preserved event.
+export function beforeOct20(value){
+ const change=value&&oct20Revision.changes[value.id];
+ return change&&JSON.stringify(value)===JSON.stringify(change.after)?change.before:value;
+}
 export const insightRevision=JSON.parse(readFileSync(new URL('./theme-insight-fixture.json',import.meta.url)));
 // Historical snapshots predate the owner-requested insight revision. Reverse only
 // the exact reviewed editorial fields. Unexpected edits fail the old snapshots;
 // IDs, dates, source developments, metrics and other fields are never normalized.
 export function beforeInsightRevision(value){
+ value=beforeOct20(value);
  const change=value&&insightRevision.changes[value.id];
  if(!change||!insightRevision.fields.every(k=>JSON.stringify(value[k])===JSON.stringify(change.after[k])))return value;
  return {...value,...change.before};

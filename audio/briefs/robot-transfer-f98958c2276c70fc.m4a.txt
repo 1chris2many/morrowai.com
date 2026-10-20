@@ -1,0 +1,19 @@
+Robotics. Less robot setup can shift the work to rescuing failed tasks
+
+Useful AI Werks. Analysis by Codex. Reviewed October 20, 2026. Synthetic narration.
+
+Figure reports 56% full-task success for three trained behaviors tested in 30 unfamiliar homes. Dream Labs tackles a different transfer problem: controlling previously unseen two-armed robots through a shared gripper interface. These results show transfer without repeating all the setup for each new home or robot body. Neither establishes that an arbitrary household job will finish without help.
+
+Three takeaways. Transfer a skill. Less retraining for each new setting. Try more jobs. Real environments expose remaining failures. Measure the rescue work. Include supervision and recovery in the cost.
+
+What it means. Training a robot for each location or body makes expansion expensive before useful work begins. Transfer could lower that entry cost, making more deployments worth trying. Our inference is that the remaining burden then shifts toward interventions, retries and integration: a robot that starts quickly but frequently needs rescuing can still consume substantial human time. Figure counts safety interventions as failed trials; Dream Labs describes dependence on each robot's motion solver. The useful commercial measure is completed work with the cost of that support included.
+
+56%. Reported full-task success. Figure's evaluation of three behaviors across 30 unseen homes. Tasks were trained elsewhere; safety interventions counted as failures. This is not a result for Dream-1. Source: Figure, 2026-09-17.
+
+How the story developed. Figure's September study tests transfer to unfamiliar homes and objects after task-specific training elsewhere. Dream Labs' October release tests transfer across robot bodies. The distinction matters: these are different tests, not a shared leaderboard.
+
+September 17. Figure evaluates three behaviors in 30 unfamiliar homes. Figure reports 56% full-task success for tidying, towel folding and bed making. The homes and manipulated objects were unseen; the behaviors were trained on data from elsewhere. Safety interventions failed the trial. Source: Figure.
+
+Source checked October 20. Dream Labs tests transfer across robot bodies. Its October 2026 release describes control of unseen two-armed, parallel-gripper robots without robot-specific demonstrations. Performance varies and depends on the robot's motion solver. Dream Labs calls it a research beta; the page supplies no exact launch day. Source: Dream Labs.
+
+What to watch. Watch full-task completion in unfamiliar settings, interventions per operating hour and recovery time. Compare like tasks and hardware before ranking models. Dream-1's hourly API rate covers model use, not the robot, supervision or repairs; its research beta is not validated for safety-critical use.
