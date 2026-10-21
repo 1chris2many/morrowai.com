@@ -1,18 +1,148 @@
 {
   "version": 1,
-  "digestDate": "2026-10-20",
+  "digestDate": "2026-10-21",
   "latestSavedDigest": "2026-10-21",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 6,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 7,
+  "pending": 3,
   "items": [
+    {
+      "digestItemId": 999,
+      "digestDate": "2026-10-21",
+      "title": "Anthropic pitches federal AI safety bill with a 50-death, $1 billion damage threshold",
+      "summary": "Anthropic has circulated a draft federal AI safety bill to lawmakers that would let regulators block release of an AI model only when it poses a foreseeable, imminent risk of killing more than 50 people or causing over $1 billion in damage, stemming from a biological weapon, a model evading its developer's controls, or a cyberattack. Independent evaluators registered with the Commerce Department would assess frontier models and, if they find an imminent catastrophic risk, have 72 hours to notify Commerce, which could then ask a federal judge in Washington, D.C. to halt the model's release. Politico first reported the draft bill on October 16, 2026, and Anthropic confirmed it reflects proposals from the company's Advanced AI Framework, which it has pitched to federal and state lawmakers since June.",
+      "whyItMatters": "Requiring an outside evaluator and a court decision would turn a release dispute into a question of test evidence a judge can act on. Labs would gain a more predictable route to market; the public would depend on whether evaluations can detect a catastrophe before deployment. Who funds and validates those tests would become a competitive issue for labs trying to launch on time.",
+      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-21-anthropic-pitches-federal-ai-safety-bill-with-a-50-death-1-billion-damage-threshold",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1004,
+      "digestDate": "2026-10-21",
+      "title": "AWS and i14 show a fixed-memory alternative for serving long-running AI workloads",
+      "summary": "AWS and i14 published a case study of Laplace 3B, a linear-attention model trained and served on Trainium2 using native PyTorch. Its compressed recurrent state remains 29.5 MB per sequence as context grows; AWS reports 11,544 output tokens per second across 1,280 concurrent sequences on one instance. The port required changes to GPU-specific kernels, optimizer communication and compilation.",
+      "whyItMatters": "Long-running agents can become more expensive simply because each conversation occupies increasing memory. Fixed-size state could let a service keep more sessions active on the same hardware, but it achieves that by compressing history; missed details can create retries or human repair that erase the saving. Those correction costs belong alongside throughput in any deployment decision.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+      "source": "AWS",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Research",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-21-aws-and-i14-show-a-fixed-memory-alternative-for-serving-long-running-ai-workloads",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1000,
+      "digestDate": "2026-10-21",
+      "title": "DHS orders DeepSeek removed from federal civilian agency computer systems",
+      "summary": "A DHS order published in the Federal Register on October 20 requires federal civilian agencies to exclude DeepSeek and its affiliates from procurement and remove their products, including third-party implementations. The signed order, dated July 24, requires immediate compliance or an exception and sets a 60-day window from issuance for written exception requests. DHS cites risks including Chinese government access to sensitive data.",
+      "whyItMatters": "An agency can buy software from a familiar U.S. vendor and still inherit a prohibited model several layers underneath. That makes model provenance and the ability to replace an embedded dependency procurement requirements: a cheap model becomes expensive if adopting it later forces an application out of service. Suppliers that can document and swap their model dependencies have a practical advantage in retaining government customers.",
+      "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-21-dhs-orders-deepseek-removed-from-federal-civilian-agency-computer-systems",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1001,
+      "digestDate": "2026-10-21",
+      "title": "Google open-sources TorchTPU, its PyTorch layer for running AI apps on TPUs",
+      "summary": "Google released TorchTPU, an open-source backend for running PyTorch workloads on its Tensor Processing Units with minimal code changes, according to Google. Google said it worked with Meta, Hugging Face, and the makers of the vLLM and SGLang inference tools to ensure compatibility, and also released a TPU migration agent and an updated LiteRT tool for running AI on phones and other devices. The move follows Amazon's release one day earlier of TorchNeuron, its own PyTorch layer for its Trainium chips, and a push by Amazon to contribute code upstream that reduces PyTorch's reliance on Nvidia-specific hardware.",
+      "whyItMatters": "A credible alternative changes a chip negotiation before a customer moves its largest workload. If TorchTPU reduces the engineering needed to test Google's hardware, buyers can compare capacity and prices without first committing to a full migration—and Google gains a chance to sell compute previously tied to Nvidia. Whether that bargaining option becomes a production switch still depends on workload performance and the code that must change.",
+      "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-21-google-open-sources-torchtpu-its-pytorch-layer-for-running-ai-apps-on-tpus",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1003,
+      "digestDate": "2026-10-21",
+      "title": "Microsoft expands locally operated AI and development tools in Sovereign Cloud",
+      "summary": "Microsoft outlined an expanded Sovereign Cloud lineup on October 20. Foundry Local and GitHub Enterprise Local are scheduled to become generally available on Azure Local at Ignite, and Copilot can use locally hosted models for inference. The package also adds controls for operator access, encryption keys and disconnected operations, with availability varying by feature.",
+      "whyItMatters": "Customers that cannot send sensitive work to a shared cloud can become AI customers if the models and the surrounding development tools run under their own control. Microsoft can retain those workloads even when the customer rejects its standard hosting model; the trade-off for buyers is taking on more infrastructure and operating responsibility while remaining inside Microsoft's software ecosystem.",
+      "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+      "source": "Microsoft",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "ai-regulation",
+          "name": "AI regulation and governance"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-21-microsoft-expands-locally-operated-ai-and-development-tools-in-sovereign-cloud",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1002,
+      "digestDate": "2026-10-21",
+      "title": "OpenAI acquires biotech-operations startup Orchestra Bio for its Rosalind life-sciences platform",
+      "summary": "OpenAI announced it has acquired Orchestra Bio, a four-year-old startup that builds AI agents to help biotech companies manage drug-discovery operations, including finance tracking and clinical trial scheduling. Deal terms were not disclosed; Orchestra had previously raised about $20 million from investors including Andreessen Horowitz, Atria, and 8VC. OpenAI said Orchestra's team and technology will be folded into Rosalind, its AI model for life-sciences research, and the Rosalind Workbench tool, whose customers include Moderna and Novo Nordisk.",
+      "whyItMatters": "Better scientific reasoning can move the bottleneck downstream: a promising experiment still needs manufacturing capacity, a budget and a workable trial schedule. Bringing those dependencies into Rosalind could give OpenAI a larger role in how a biotech company executes its research—and make switching providers more disruptive than swapping a model API. The value would come from resolving an operational conflict before it becomes a delay, with people retaining the decision.",
+      "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-21-openai-acquires-biotech-operations-startup-orchestra-bio-for-its-rosalind-life-sciences-platform",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 997,
       "digestDate": "2026-10-20",
@@ -5051,8 +5181,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-20 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-21T14:00:01.179Z",
-  "contentHash": "b2253417782d2c614a3374cc6e8409ba3fab9c018ca5d1bffa18f60f4977b35b"
+  "publicationStatus": "current",
+  "notice": "2026-10-21 · 6 stories",
+  "publishedAt": "2026-10-21T15:10:40.905Z",
+  "contentHash": "10172dafee3a31fc035ec35d78e29fef65e8676d34f6f5b1dab630e585aa2f2c"
 }
