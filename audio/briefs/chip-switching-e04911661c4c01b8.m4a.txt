@@ -1,0 +1,17 @@
+AI chip competition. Rival AI chips need to become cheap to try
+
+Useful AI Werks. Analysis by Codex. Reviewed October 21, 2026. Synthetic narration.
+
+Google has opened TorchTPU, a native PyTorch backend that it says runs existing workloads with minimal code changes. Separately, AWS and i14 describe adapting a custom model to Trainium2 through native PyTorch. That project still required specialized engineering. Together, they show two different hurdles: making another chip accessible to developers and making a real workload run well on it.
+
+Three takeaways. Keep familiar tools. Reduce the work needed to start a trial. Test the actual workload. Expose performance and integration costs. Gain a credible choice. Compare offers before committing to a move.
+
+What it means. An alternative supplier has little leverage if evaluating its offer is itself a major project. Shared tools can lower that initial cost while preserving developers' existing skills. Our inference is that this creates a purchasing option before it creates a production migration: buyers can test a rival's offer without first replacing their whole workflow. The advantage may then shift toward the supplier that makes representative trials easiest to reproduce. Compatibility alone cannot establish which hardware delivers the better result for the money.
+
+How the story developed. These October 20 sources describe separate developments: Google's general-purpose backend and an AWS/i14 implementation case. The case study tests the limits of the broader promise; it is not a head-to-head chip comparison.
+
+October 20. Google brings native PyTorch to TPUs. Google releases a native PyTorch backend for its chips. Its primary announcement qualifies migration as requiring minimal code changes. Source: TechCrunch.
+
+October 20. A Trainium2 case exposes the remaining engineering. AWS and i14 describe changes to kernels, communication and compilation. A fixed-batch test also concealed delays under changing traffic. Source: AWS.
+
+What to watch. Watch engineering hours needed for a representative trial, performance under real traffic and the work required to operate it afterward. Compare equivalent models and quality. A familiar interface can lower the cost of evaluation without eliminating specialized optimization or ongoing cloud dependence.

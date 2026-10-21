@@ -21,7 +21,7 @@ test('October16 preserves unchanged briefs and the later-revised safety timeline
  for(const [id,value]of Object.entries(expected))assert.equal(hash(get(id)),value,id);
  const safetyHistory=[963,958,950,945,940,939,896];
  assert.equal(hash(get('safety-vs-capability').developments.filter(d=>safetyHistory.includes(d.id))),'2f88e3d861c1978dc093d1a3859ca87350407f6259e45fdd65be6a221a87a68c');
- assert.equal(briefs.length,10);
+ assert.equal(briefs.length,11);
 });
 test('October16 additions preserve historical developments and quantitative scope',()=>{
  const expected={

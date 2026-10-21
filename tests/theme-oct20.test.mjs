@@ -6,7 +6,7 @@ import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {narration,audioEntry} from '../scripts/brief-audio.mjs';
 import {validateBriefs,related,renderThemes,briefingCards} from '../scripts/theme-pages.mjs';
 import {lifecycle,themeQueue} from '../scripts/theme-lifecycle.mjs';
-import {beforeOct20,oct20Revision} from './theme-name-history.mjs';
+import {beforeOct20,oct20Revision,beforeOct21} from './theme-name-history.mjs';
 const root=new URL('../',import.meta.url),read=p=>JSON.parse(readFileSync(new URL(p,root)));
 const feed=read('news.json'),manifest=read('audio/briefs/manifest.json'),get=id=>briefs.find(b=>b.id===id);
 const home=readFileSync(new URL('index.html',root),'utf8');
@@ -19,7 +19,7 @@ test('October20 exact reviewed replacements preserve every previous development 
   assert.deepEqual(beforeOct20(b),c.before);
   assert.equal(beforeOct20({...b,meaning:b.meaning+' mutation'}).meaning,b.meaning+' mutation');
  }
- assert.equal(briefs.length,10);
+ assert.equal(briefs.length,11);
  assert.deepEqual(get('robot-transfer'),oct20Revision.added[0]);
 });
 test('new controls and review are proposals and optional workflows, not measured safety or productivity',()=>{
@@ -70,7 +70,7 @@ test('four exact narrations reject stale text and preserve matching downloadable
 test('new triage clears pending sources without refreshing unrelated governance',()=>{
  for(const id of[994,995,996,997,998])assert.ok(reviewedIds.includes(id));
  assert.ok(!reviewedIds.includes(980));
- const q=themeQueue(feed,'2026-10-20');
+ const q=themeQueue(feed,'2026-10-20',briefs.filter(b=>b.id!=='chip-switching').map(beforeOct21));
  assert.equal(q.updates.flatMap(x=>x.items).length,0);
  assert.equal(q.unclassified.filter(i=>!reviewedIds.includes(i.id)).length,0);
  const governance=get('ai-regulation');

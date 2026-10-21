@@ -1,8 +1,14 @@
 import {readFileSync} from 'node:fs';
+export const oct21Revision=JSON.parse(readFileSync(new URL('./theme-oct21-fixture.json',import.meta.url)));
+export function beforeOct21(value){
+ const change=value&&oct21Revision.changes[value.id];
+ return change&&JSON.stringify(value)===JSON.stringify(change.after)?change.before:value;
+}
 export const oct20Revision=JSON.parse(readFileSync(new URL('./theme-oct20-fixture.json',import.meta.url)));
 // Undo only a byte-exact approved October20 replacement for older snapshots.
 // Today's tests separately assert the full new content and every preserved event.
 export function beforeOct20(value){
+ value=beforeOct21(value);
  const change=value&&oct20Revision.changes[value.id];
  return change&&JSON.stringify(value)===JSON.stringify(change.after)?change.before:value;
 }

@@ -1,0 +1,23 @@
+AI operating costs. An agent’s design is becoming part of its price
+
+Useful AI Werks. Analysis by Codex. Reviewed October 21, 2026. Synthetic narration.
+
+Microsoft prices fixed-choice decisions without an output-token charge. Anthropic raises Haiku’s rates above a prompt-length threshold. DeepSeek meters search and page retrieval separately, while Google’s Argon discount expires on a set date. These terms make workflow structure and timing part of the bill, before any change in the task’s objective.
+
+Three takeaways. Output. A predefined choice or a generated answer. Context. How much history each step carries. Tools. How many separately billed calls it makes.
+
+What it means. The prices create incentives to design work differently. A routing decision may only need a choice among options; an accumulating conversation can enter a higher price tier; repeated searches add a per-call meter. AWS and i14 now describe a different constraint: Laplace 3B compresses history into fixed-size serving state. That could let a provider serve longer-running agents without growing each conversation's state as its history lengthens. Compression still has to preserve the information the task needs. Our inference is that this shifts part of the cost question from how much history to keep toward how reliably it remains usable. These are potential serving benefits, not measured savings for equivalent completed tasks or a promise of lower customer prices.
+
+How the story developed. Earlier releases changed the bill through output choices, context thresholds and tool charges. The new AWS/i14 case concerns the underlying cost of serving history. Provider costs and customer prices can move differently.
+
+October 7. Anthropic ties Haiku prices to prompt length. For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing. Source: Anthropic.
+
+October 9. Microsoft prices fixed-choice decisions. Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer. Source: Microsoft.
+
+October 13. Google sets a time-limited Argon price. Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026. Source: Google.
+
+October 17. DeepSeek prices search and page retrieval separately. Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call. Source: DeepSeek.
+
+October 20. A fixed-state model changes the memory constraint. AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation. Source: AWS.
+
+What to watch. Watch retrieval quality as histories grow, customer bills versus provider serving cost, and repeated paid tool calls. Fixed serving state is not lossless recall or fixed total system memory. DeepSeek’s integration waiver ends October 31 at 16:00 UTC; Argon’s introductory rates end November 30.

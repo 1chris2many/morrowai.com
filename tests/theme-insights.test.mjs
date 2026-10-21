@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {briefs} from '../scripts/theme-current.mjs';
-import {insightRevision,beforeInsightRevision,oct20Revision,beforeOct20} from './theme-name-history.mjs';
+import {insightRevision,beforeInsightRevision,oct20Revision,beforeOct20,oct21Revision} from './theme-name-history.mjs';
 import {lifecycle} from '../scripts/theme-lifecycle.mjs';
 const hash=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');
 const immutable={
@@ -19,7 +19,7 @@ const immutable={
 };
 const originalBriefs=briefs.filter(b=>Object.hasOwn(immutable,b.id));
 test('October20 includes exactly the approved replacements and the new robotics brief',()=>{
- assert.deepEqual(briefs.map(b=>b.id).sort(),[...Object.keys(immutable),'robot-transfer'].sort());
+ assert.deepEqual(briefs.map(b=>b.id).sort(),[...Object.keys(immutable),'robot-transfer','chip-switching'].sort());
  assert.deepEqual(Object.keys(oct20Revision.changes).sort(),['ai-infrastructure','safety-vs-capability','workplace-agents']);
  assert.deepEqual(oct20Revision.added.map(b=>b.id),['robot-transfer']);
  for(const [id,change] of Object.entries(oct20Revision.changes)){
@@ -43,7 +43,7 @@ test('rewriting interpretation never manufactures a new evidence date or reactiv
  for(const current of originalBriefs){
   const b=beforeOct20(current);
   assert.equal(b.reviewedAt,expected[b.id],b.id);
-  assert.equal(current.reviewedAt,oct20Revision.changes[b.id]?'2026-10-20':expected[b.id],b.id);
+  assert.equal(current.reviewedAt,oct21Revision.changes[b.id]?'2026-10-21':oct20Revision.changes[b.id]?'2026-10-20':expected[b.id],b.id);
  }
  assert.equal(briefs.find(b=>b.id==='robot-transfer').reviewedAt,'2026-10-20');
  const b=briefs.find(b=>b.id==='ai-regulation');

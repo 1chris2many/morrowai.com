@@ -3,6 +3,46 @@
 // Feed ingestion cannot approve or refresh this analysis.
 export const briefs = [
   {
+    "id": "chip-switching",
+    "label": "AI chip competition",
+    "title": "Rival AI chips need to become cheap to try",
+    "reviewedAt": "2026-10-21",
+    "author": "Codex",
+    "accent": "blue",
+    "teaser": "A lower chip price is hard to act on when testing it requires a rewrite. Familiar software can make another supplier a credible option before a buyer moves its largest workload.",
+    "summary": "Google has opened TorchTPU, a native PyTorch backend that it says runs existing workloads with minimal code changes. Separately, AWS and i14 describe adapting a custom model to Trainium2 through native PyTorch. That project still required specialized engineering. Together, they show two different hurdles: making another chip accessible to developers and making a real workload run well on it.",
+    "meaning": "An alternative supplier has little leverage if evaluating its offer is itself a major project. Shared tools can lower that initial cost while preserving developers' existing skills. Our inference is that this creates a purchasing option before it creates a production migration: buyers can test a rival's offer without first replacing their whole workflow. The advantage may then shift toward the supplier that makes representative trials easiest to reproduce. Compatibility alone cannot establish which hardware delivers the better result for the money.",
+    "watch": "Watch engineering hours needed for a representative trial, performance under real traffic and the work required to operate it afterward. Compare equivalent models and quality. A familiar interface can lower the cost of evaluation without eliminating specialized optimization or ongoing cloud dependence.",
+    "visualTitle": "How another supplier becomes a real option",
+    "visual": [
+      ["Keep familiar tools", "Reduce the work needed to start a trial"],
+      ["Test the actual workload", "Expose performance and integration costs"],
+      ["Gain a credible choice", "Compare offers before committing to a move"]
+    ],
+    "timelineIntro": "These October 20 sources describe separate developments: Google's general-purpose backend and an AWS/i14 implementation case. The case study tests the limits of the broader promise; it is not a head-to-head chip comparison.",
+    "developments": [
+      {
+        "date": "2026-10-20",
+        "id": 1001,
+        "title": "Google brings native PyTorch to TPUs",
+        "text": "Google releases a native PyTorch backend for its chips. Its primary announcement qualifies migration as requiring minimal code changes.",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+        "primaryUrl": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
+        "relation": "Directly checked Google announcement establishes a familiar developer interface as a route to testing another hardware supplier."
+      },
+      {
+        "date": "2026-10-20",
+        "id": 1004,
+        "title": "A Trainium2 case exposes the remaining engineering",
+        "text": "AWS and i14 describe changes to kernels, communication and compilation. A fixed-batch test also concealed delays under changing traffic.",
+        "source": "AWS",
+        "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+        "relation": "A distinct native-PyTorch implementation demonstrates why framework compatibility and useful workload performance are separate tests."
+      }
+    ]
+  },
+  {
     "id": "robot-transfer",
     "label": "Robotics",
     "title": "Less robot setup can shift the work to rescuing failed tasks",
@@ -746,13 +786,13 @@ export const briefs = [
     "id": "agent-economics",
     "label": "AI operating costs",
     "title": "An agent’s design is becoming part of its price",
-    "reviewedAt": "2026-10-18",
+    "reviewedAt": "2026-10-21",
     "author": "Codex",
     "accent": "blue",
-    "teaser": "Context length, generated output and search calls can activate different charges. The same task can carry a different bill depending on how the agent attempts it.",
+    "teaser": "The cost of a longer conversation depends on both the provider's meter and the model's memory design. Cheaper serving only improves the economics if the agent still recalls what the task requires.",
     "summary": "Microsoft prices fixed-choice decisions without an output-token charge. Anthropic raises Haiku’s rates above a prompt-length threshold. DeepSeek meters search and page retrieval separately, while Google’s Argon discount expires on a set date. These terms make workflow structure and timing part of the bill, before any change in the task’s objective.",
-    "meaning": "The prices create incentives to design work differently. A routing decision may only need a choice among options; an accumulating conversation can enter a higher price tier; repeated searches add a per-call meter. A system that becomes more persistent or remembers more may therefore change its economics without changing its listed model. Promotions introduce another jump when the same workflow starts paying the normal rate. These are billing mechanisms, not measured savings between equivalent systems or a calculation of human-inclusive cost.",
-    "watch": "Watch how bills change as conversations grow, how often agents repeat paid tool calls, and whether specialized steps preserve the needed quality. DeepSeek’s integration waiver ends October 31 at 16:00 UTC; Argon’s introductory rates end November 30.",
+    "meaning": "The prices create incentives to design work differently. A routing decision may only need a choice among options; an accumulating conversation can enter a higher price tier; repeated searches add a per-call meter. AWS and i14 now describe a different constraint: Laplace 3B compresses history into fixed-size serving state. That could let a provider serve longer-running agents without growing each conversation's state as its history lengthens. Compression still has to preserve the information the task needs. Our inference is that this shifts part of the cost question from how much history to keep toward how reliably it remains usable. These are potential serving benefits, not measured savings for equivalent completed tasks or a promise of lower customer prices.",
+    "watch": "Watch retrieval quality as histories grow, customer bills versus provider serving cost, and repeated paid tool calls. Fixed serving state is not lossless recall or fixed total system memory. DeepSeek’s integration waiver ends October 31 at 16:00 UTC; Argon’s introductory rates end November 30.",
     "visualTitle": "Three choices that change the bill",
     "visual": [
       [
@@ -768,8 +808,17 @@ export const briefs = [
         "How many separately billed calls it makes"
       ]
     ],
-    "timelineIntro": "The releases put different meters around the same broad activity of getting work done. Comparing the headline token rate alone misses those architectural and calendar effects.",
+    "timelineIntro": "Earlier releases changed the bill through output choices, context thresholds and tool charges. The new AWS/i14 case concerns the underlying cost of serving history. Provider costs and customer prices can move differently.",
     "developments": [
+      {
+        "date": "2026-10-20",
+        "id": 1004,
+        "title": "A fixed-state model changes the memory constraint",
+        "text": "AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation.",
+        "source": "AWS",
+        "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+        "relation": "New architecture evidence distinguishes the provider's serving constraints from the customer-facing billing mechanisms already tracked."
+      },
       {
         "date": "2026-10-17",
         "id": 982,

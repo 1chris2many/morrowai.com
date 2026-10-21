@@ -8,7 +8,7 @@ import {sourceOrganization,themeQueue,lifecycle} from '../scripts/theme-lifecycl
 const feed=JSON.parse(readFileSync(new URL('../news.json',import.meta.url)));
 // Historical October19 triage uses only its nine briefs, undoing byte-exact
 // approved October20 replacements; today's evidence has its own regression.
-const historical=briefs.filter(b=>b.id!=='robot-transfer').map(beforeOct20);
+const historical=briefs.filter(b=>!['robot-transfer','chip-switching'].includes(b.id)).map(beforeOct20);
 const fixture=(urls)=>({items:urls.map((url,n)=>({digestItemId:990001+n,digestDate:'2026-10-19',reviewed:true,url,title:'Distinct development '+n,themes:[{id:'candidate-only',name:'Candidate'}]}))});
 test('Google research and blogs count as one source organization',()=>{
  const urls=['https://blog.google/a','https://deepmind.google/b','https://research.google/c'];

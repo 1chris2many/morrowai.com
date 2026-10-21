@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
-import {themeNameChanges,beforeThemeRename,beforeInsightRevision,insightRevision,oct20Revision,beforeOct20} from './theme-name-history.mjs';
+import {themeNameChanges,beforeThemeRename,beforeInsightRevision,insightRevision,oct20Revision,beforeOct20,oct21Revision} from './theme-name-history.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const themes=readFileSync(new URL('../themes.html',import.meta.url),'utf8');
@@ -10,10 +10,11 @@ const manifest=JSON.parse(readFileSync(new URL('../audio/briefs/manifest.json',i
 const currentTitles={
  ...Object.fromEntries(Object.entries(insightRevision.changes).map(([id,change])=>[id,change.after.title])),
  ...Object.fromEntries(Object.entries(oct20Revision.changes).map(([id,change])=>[id,change.after.title])),
- ...Object.fromEntries(oct20Revision.added.map(b=>[b.id,b.title]))
+ ...Object.fromEntries(oct20Revision.added.map(b=>[b.id,b.title])),
+ ...Object.fromEntries(oct21Revision.added.map(b=>[b.id,b.title]))
 };
 test('all theme headings state the reviewed insight while preserving stable links',()=>{
- assert.equal(Object.keys(currentTitles).length,10);
+ assert.equal(Object.keys(currentTitles).length,11);
  assert.deepEqual(briefs.map(b=>b.id).sort(),Object.keys(currentTitles).sort());
  for(const b of briefs){
   const expected=currentTitles[b.id];
@@ -37,7 +38,7 @@ test('revised audio starts with the visible heading and cannot reuse earlier rec
    assert.equal(audioEntry(beforeThemeRename(b),manifest),null,b.id+':pre-rename');
    assert.equal(audioEntry(beforeInsightRevision(b),manifest),null,b.id+':pre-insight');
   }else{
-   assert.equal(b.id,'robot-transfer');
+   assert.ok(['robot-transfer','chip-switching'].includes(b.id));
    const stale=structuredClone(b);stale.summary+=' Unreviewed stale text.';
    assert.equal(audioEntry(stale,manifest),null,b.id+':stale-text');
   }

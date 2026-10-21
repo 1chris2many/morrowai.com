@@ -49,3 +49,11 @@ reviewedIds.push(989,990,991,992,993);
 // 998 concerns deployment sovereignty, not fabricated contributor provenance;
 // it does not reactivate or redate the existing governance briefing.
 reviewedIds.push(994,995,996,997,998);
+// October21: all six new sources read, including primary corroboration.
+// 1001/1004 establish chip-trial switching costs;1004 also extends operating
+// costs with compressed fixed-state serving.999 is a proposed law,1000 an
+// existing procurement restriction,1003 local-operation product plans: none
+// updates the false-contributor mechanism or establishes a common legal regime.
+// 1002 adds drug-program coordination, not evidence of better scientific
+// validation. Preserve the science/provenance dates and existing narrations.
+reviewedIds.push(999,1000,1001,1002,1003,1004);

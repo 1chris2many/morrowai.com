@@ -2,6 +2,13 @@
   "version": 1,
   "engine": "macos-samantha-175-v1",
   "briefs": {
+    "chip-switching": {
+      "hash": "e04911661c4c01b8fc0de44f3f1f371e97a4fbd7cd17bd2071c797aa56ab8c29",
+      "src": "audio/briefs/chip-switching-e04911661c4c01b8.m4a",
+      "duration": 145.283764,
+      "bytes": 625063,
+      "sha256": "66a3cd739c9422645a0688cd1c699606857c8d608164042b1174f32b988f9d59"
+    },
     "robot-transfer": {
       "hash": "f98958c2276c70fc276fd3de5a98b7d19e5f842500e4e262da66437ed78dc4a2",
       "src": "audio/briefs/robot-transfer-f98958c2276c70fc.m4a",
@@ -66,11 +73,11 @@
       "sha256": "836012773154b5411c99ff739f67803de8ec95142c2300f54841691e78f0090f"
     },
     "agent-economics": {
-      "hash": "0eeed9f22d1fe917b60fc953d5f754c2c8acad27790591f922ca927feecbee29",
-      "src": "audio/briefs/agent-economics-0eeed9f22d1fe917.m4a",
-      "duration": 193.3839,
-      "bytes": 819779,
-      "sha256": "81c84bffeef89b975363b8af3254d4e813743f8520abc7448f6e19683558c67c"
+      "hash": "5577eb823b6d587160becbd124d5c5df4d87378297a94e0739727884019494e1",
+      "src": "audio/briefs/agent-economics-5577eb823b6d5871.m4a",
+      "duration": 232.822993,
+      "bytes": 980265,
+      "sha256": "053b7cb37398a537ef94fd1707a102f9fcdb7440ddc60a35779e3c2acab10245"
     }
   }
 }

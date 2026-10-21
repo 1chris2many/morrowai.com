@@ -21,7 +21,7 @@ test('substantive source-backed briefings are stable, HTML-first and escaped',()
  for(const b of briefs){assert.ok(out.includes(b.id));for(const d of b.developments)assert.ok(out.includes(d.url));}
  assert.equal((out.match(/<h3>What it means<\/h3>/g)||[]).length,briefs.length);
  assert.equal((out.match(/<h3>What to watch<\/h3>/g)||[]).length,briefs.length);
- assert.equal((out.match(/opens in a new tab/g)||[]).length,briefs.reduce((n,b)=>n+b.developments.length,0));
+ assert.equal((out.match(/opens in a new tab/g)||[]).length,briefs.reduce((n,b)=>n+b.developments.reduce((m,d)=>m+1+Number(Boolean(d.primaryUrl)),0),0));
  assert.match(out,/real publishers’ editorial channels/);
  assert.match(out,/noindex,nofollow/);assert.doesNotMatch(renderThemes(home,feed),/noindex|nofollow" data-preview/);
  assert.match(out,/rel="canonical" href="https:\/\/usefulaiwerks.com\/themes.html"/);
@@ -95,7 +95,7 @@ test('October 10 synthesis keeps evaluation scope, beta access and event dates e
  assert.match(dashboard.text,/beta on paid plans/);
  assert.match(dashboard.text,/require Enterprise administrators/);
  assert.equal(dashboard.date,'2026-10-08');
- assert.equal(briefs.length,10);
+ assert.equal(briefs.length,11);
  for(const id of [945,946,947,948,949])assert.ok(reviewedIds.includes(id));
 });
 test('missing, unreviewed or mistagged source references fail closed',()=>{
@@ -114,7 +114,7 @@ test('October 11 timeline keeps proposal status and event date',()=>{
  assert.match(addition.text,/proposals, not verified deployments/);
  assert.ok(addition.relation.length>=30);
  assert.ok(reviewedIds.includes(950));
- assert.equal(briefs.length,10);
+ assert.equal(briefs.length,11);
  const missing=structuredClone(feed);missing.items=missing.items.filter(i=>i.digestItemId!==950);
  assert.throws(()=>validateBriefs(missing),/source 950/);
 });
@@ -134,7 +134,7 @@ test('October 12 memory and infrastructure synthesis preserves actual availabili
  assert.ok(!infra.developments.some(d=>d.id===934),'October 7 proposal has no verified outcome; keep archive card, omit from refreshed brief');
  for(const b of [work,infra])for(const d of b.developments.filter(d=>d.id>=951&&d.id<=954))assert.equal(d.date,'2026-10-12');
  for(const id of [951,952,953,954,955])assert.ok(reviewedIds.includes(id));
- assert.equal(briefs.length,10);assert.ok(!briefs.some(b=>b.developments.some(d=>d.id===955)));
+ assert.equal(briefs.length,11);assert.ok(!briefs.some(b=>b.developments.some(d=>d.id===955)));
  for(const [id,date]of [
   ['ai-regulation','2026-10-09'],['safety-vs-capability','2026-10-15'],['evals','2026-10-16'],['open-weights','2026-10-16'],['agent-economics','2026-10-15']
  ])assertReviewDate(id,date);
@@ -150,7 +150,7 @@ test('October 14 replication addition separates hardware demo from simplified la
  assert.match(d.text,/consumer devices/);
  assert.match(d.relation,/consumer hardware/);
  for(const id of [956,957,958,959,960])assert.ok(reviewedIds.includes(id));
- assert.equal(briefs.length,10);
+ assert.equal(briefs.length,11);
  for(const [id,date]of [
   ['ai-regulation','2026-10-09'],['workplace-agents','2026-10-16'],['ai-infrastructure','2026-10-12'],['evals','2026-10-16'],['open-weights','2026-10-16'],['agent-economics','2026-10-15']
  ])assertReviewDate(id,date);
