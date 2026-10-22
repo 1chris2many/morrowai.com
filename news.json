@@ -1,18 +1,122 @@
 {
   "version": 1,
-  "digestDate": "2026-10-21",
+  "digestDate": "2026-10-22",
   "latestSavedDigest": "2026-10-22",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 6,
+  "pending": 3,
   "items": [
+    {
+      "digestItemId": 1007,
+      "digestDate": "2026-10-22",
+      "title": "Blackstone executive says fears over AI data-center debt are overblown",
+      "summary": "Speaking at TechCrunch Disrupt, Blackstone's Jas Khaira, who leads the firm's AI investment hub BXN1, said rising borrowing costs and higher credit spreads on AI infrastructure debt do not resemble a 2008-style credit crisis, since most of the debt is ultimately backed by creditworthy hyperscale customers like Microsoft and Meta. He acknowledged the market is reassessing neocloud valuations after CoreWeave's debt load grew to roughly $50 billion and its stock dropped over 20%, and after GPU provider Firmus scrapped a planned ~$30 billion IPO.",
+      "whyItMatters": "A reliable customer can make a loan more likely to be repaid without making the project attractive at every borrowing rate. Rising finance costs can squeeze a compute provider even while demand grows, forcing it to accept lower returns, raise prices or slow expansion. That is why a repricing of infrastructure can coexist with strong AI adoption; neither one alone establishes a collapse in demand.",
+      "url": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-22-blackstone-executive-says-fears-over-ai-data-center-debt-are-overblown",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1005,
+      "digestDate": "2026-10-22",
+      "title": "DeepSeek reportedly raises about $15 billion",
+      "summary": "Chinese AI lab DeepSeek has raised approximately $15 billion in a new funding round, Bloomberg reported, with potential investors including CATL and Tencent. It follows a June raise of more than $7 billion at a $50 billion valuation, and DeepSeek is reportedly pursuing an IPO in China as early as next year.",
+      "whyItMatters": "Restrictions on one customer group do not remove a rival's ability to finance its next model. If the reported capital supports cheaper or stronger releases elsewhere, competitors can still face pricing pressure even in markets where DeepSeek cannot sell to government buyers. The funding therefore says more about the resources behind continuing competition than about whether U.S. procurement restrictions are working.",
+      "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+      "source": "TechCrunch, citing Bloomberg",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-22-deepseek-reportedly-raises-15-billion-days-after-us-restrictions",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1008,
+      "digestDate": "2026-10-22",
+      "title": "Google tests pregnancy dating with novice-operated ultrasound",
+      "summary": "Google Research reported an October 21 study in which minimally trained operators used handheld ultrasound probes and an AI model to estimate gestational age in Chicago and Nairobi. Across 385 participants in the primary cohort, mean absolute error was 4.18 days versus 4.48 for the expert clinical approach; the Nairobi test used no local fine-tuning. This was a research assessment of pregnancy dating, not evidence that the system replaces a complete prenatal examination.",
+      "whyItMatters": "The scarce resource is often the specialist needed to acquire a usable scan, not just the machine. If a simpler scanning technique preserves accuracy, clinics could bring pregnancy dating closer to patients without first building a full sonography workforce. The constraint then moves to reliable equipment, rejection of poor scans and access to follow-up care; accuracy alone does not deliver those services.",
+      "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+      "source": "Google Research — October 21, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-22-google-tests-pregnancy-dating-with-novice-operated-ultrasound",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1006,
+      "digestDate": "2026-10-22",
+      "title": "Meta says its Muse AI agent has topped 10 million users, with shopping a top activity",
+      "summary": "Meta told investors on its Q3 earnings call that its Muse AI app has surpassed 10 million users, confirming earlier estimates from market-intelligence firm Sensor Tower. CEO Mark Zuckerberg said about 25% of people who set up Muse use it daily, and that over a quarter of Muse's engaged shoppers had average purchase sizes over $200 through its Plaid-powered checkout. Meta plans to keep Muse free for most users while taking a cut of commerce conducted through it, and expects the product to become profitable as compute costs fall and usage scales.",
+      "whyItMatters": "A shopping commission pays for a completed purchase, while the assistant incurs compute costs on searches and abandoned attempts too. That makes conversion and repeat use more important to profitability than a large signup total alone. It also creates a tension for the product: the advice that earns a user's trust may sometimes be to buy nothing, even when the provider earns money from transactions.",
+      "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-22-meta-says-its-muse-ai-agent-has-topped-10-million-users-with-shopping-a-top-activity",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1009,
+      "digestDate": "2026-10-22",
+      "title": "NVIDIA extends OpenShell into a hardware-backed agent architecture",
+      "summary": "NVIDIA introduced its OpenShell Reference Architecture on October 21, combining its agent runtime with Vera Rubin inference systems, Vera CPUs for tool execution, and BlueField-4 processors running Sentry monitoring and policy enforcement. NVIDIA says the reference design is available and describes security enforcement outside the agent's host environment. Its performance and protection claims remain vendor claims.",
+      "whyItMatters": "Giving an agent useful access increases the damage it can do if its software controls fail. Moving another enforcement layer outside that environment could let companies delegate more work without giving the agent authority over its own boundaries. For NVIDIA, that makes the safety requirement a reason to buy a broader computing stack; buyers still need to establish which protection requires its hardware and how much operational complexity it adds.",
+      "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+      "source": "NVIDIA — October 21, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "safety-vs-capability",
+          "name": "AI safety and capability"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-22-nvidia-extends-openshell-into-a-hardware-backed-agent-architecture",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 999,
       "digestDate": "2026-10-21",
@@ -5181,8 +5285,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-21 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-22T14:00:05.902Z",
-  "contentHash": "794bd379792154ac50e2c81cf77f9bc6d36eded8328c7fd3c883d9a9ec4f4ce3"
+  "publicationStatus": "current",
+  "notice": "2026-10-22 · 5 stories",
+  "publishedAt": "2026-10-22T15:13:03.823Z",
+  "contentHash": "2041e480832f8f489ece027c9f3040e13b501b829ce349749dc386b1fb3529da"
 }
