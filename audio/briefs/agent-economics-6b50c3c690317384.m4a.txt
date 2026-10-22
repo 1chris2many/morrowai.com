@@ -1,0 +1,25 @@
+AI operating costs. An agent’s design is becoming part of its price
+
+Useful AI Werks. Analysis by Codex. Reviewed October 22, 2026. Synthetic narration.
+
+Microsoft prices fixed-choice decisions without an output-token charge; Anthropic raises Haiku's rates above a prompt-length threshold. DeepSeek meters search and retrieval separately, while Google's Argon discount expires on a set date. Meta adds a different direction: planned business-paid transaction fees for Muse. Its finance team says subscriptions remain the only current revenue source.
+
+Three takeaways. Meter the work. API calls can be billed without a useful result. Change the workflow. Reduce unnecessary generation, memory and retries. Charge for an outcome. The provider must cover attempts that do not pay.
+
+What it means. Billing changes the incentive to redesign work. A short routing decision can avoid a generated answer; repeated searches add paid calls. AWS and i14's compressed, fixed-size serving state could reduce the memory needed for longer histories, provided retrieval remains useful. Meta's planned transaction fees would move another constraint: the provider would incur costs on shopping attempts that earn no purchase fee. Our inference is that reducing retries and abandoned work becomes especially valuable when revenue depends on an outcome. Advising a user to buy nothing could build trust while producing no transaction revenue. Cheaper inference alone would not resolve that tension. These are potential mechanisms, not measured savings for equivalent completed tasks or evidence that Muse's planned commerce model is profitable.
+
+How the story developed. Earlier releases changed output, context and tool pricing; the AWS/i14 case changes serving constraints. Meta's October 21 calls distinguish today's subscription revenue from planned transaction fees. The latter would change who carries the cost of unsuccessful attempts.
+
+October 7. Anthropic ties Haiku prices to prompt length. For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing. Source: Anthropic.
+
+October 9. Microsoft prices fixed-choice decisions. Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer. Source: Microsoft.
+
+October 13. Google sets a time-limited Argon price. Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026. Source: Google.
+
+October 17. DeepSeek prices search and page retrieval separately. Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call. Source: DeepSeek.
+
+October 20. A fixed-state model changes the memory constraint. AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation. Source: AWS.
+
+October 21. Meta outlines transaction fees; Muse still earns subscriptions only. Meta plans business-paid fees for transactions Muse facilitates. Its follow-up call says charging for transactions needs more users and business partners, and that subscriptions are its only current monetization. The projected tenfold efficiency gain still requires technological advances. Source: TechCrunch.
+
+What to watch. Watch provider cost per completed outcome, including unsuccessful attempts, alongside customer bills and retrieval quality. For Muse, watch when transaction charging begins and whether users and business partners adopt it. Fixed serving state is not lossless recall or fixed total system memory. DeepSeek's integration waiver ends October 31 at 16:00 UTC; Argon's introductory rates end November 30.

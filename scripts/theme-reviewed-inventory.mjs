@@ -57,3 +57,9 @@ reviewedIds.push(994,995,996,997,998);
 // 1002 adds drug-program coordination, not evidence of better scientific
 // validation. Preserve the science/provenance dates and existing narrations.
 reviewedIds.push(999,1000,1001,1002,1003,1004);
+// October22: five new sources triaged against all current explanations.
+// 1006 (with Meta primary transcripts) changes who bears unconverted work;
+// 1009 adds optional hardware-isolated enforcement to agent safety.
+// 1005 is reported funding,1007 a financier's risk opinion,1008 a clinical
+// access study: none justifies refreshing unrelated theses or a new theme.
+reviewedIds.push(1005,1006,1007,1008,1009);

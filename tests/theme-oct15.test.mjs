@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
-import {beforeThemeRename,beforeOct21} from './theme-name-history.mjs';
+import {beforeThemeRename,beforeOct21,beforeOct22} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
@@ -17,7 +17,7 @@ test('October15 safety update distinguishes misuse and preserves source dates an
  assert.match(election.text,/Anthropic says/);
  assert.match(election.text,/could miss election abuse spread across ordinary-looking requests/);
  assert.match(election.text,/classifiers targeting multi-step misuse/);
- assert.match(safety.watch,/legitimate work blocked/);
+ assert.match(beforeOct22(safety).watch,/legitimate work blocked/);
  const historical=[963,958,950,945,940,939,896];
  assert.deepEqual(safety.developments.filter(d=>historical.includes(d.id)).map(d=>d.id),historical);
  assert.equal(election.date,'2026-10-14');

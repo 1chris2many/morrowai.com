@@ -58,17 +58,18 @@ test('real audio decodes and plays every briefing, speed/resume persist, only on
  }
  assert.deepEqual(errors,[]);await context.close();
 });
-test('October21 new brief and operating-cost update are readable at phone and desktop widths',async()=>{
+test('October22 safety and operating-cost updates are readable at phone and desktop widths',async()=>{
  const ctx=await browser.newContext(),page=await ctx.newPage(),errors=[];
  page.on('pageerror',e=>errors.push(e.message));await page.goto(base+'/themes.html');
- for(const width of [390,1440])for(const id of ['chip-switching','agent-economics']){
+ for(const width of [390,1440])for(const id of ['safety-vs-capability','agent-economics']){
   await page.setViewportSize({width,height:1000});
   const section=page.locator('#'+id);await section.scrollIntoViewIfNeeded();
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   assert.equal(await section.locator('audio').count(),1);
-  await section.screenshot({path:`test-results/oct21-${id}-${width}.png`});
+  await section.screenshot({path:`test-results/oct22-${id}-${width}.png`});
  }
- assert.equal(await page.locator('#chip-switching-source-1001 a').count(),2);
+ assert.equal(await page.locator('#safety-vs-capability-source-1009 a').count(),2);
+ assert.equal(await page.locator('#agent-economics-source-1006 a').count(),2);
  assert.deepEqual(errors,[]);await ctx.close();
 });
 test('audio errors and disabled storage retain a readable usable page',async()=>{

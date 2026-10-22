@@ -1,6 +1,12 @@
 import {readFileSync} from 'node:fs';
+export const oct22Revision=JSON.parse(readFileSync(new URL('./theme-oct22-fixture.json',import.meta.url)));
+export function beforeOct22(value){
+ const change=value&&oct22Revision.changes[value.id];
+ return change&&JSON.stringify(value)===JSON.stringify(change.after)?change.before:value;
+}
 export const oct21Revision=JSON.parse(readFileSync(new URL('./theme-oct21-fixture.json',import.meta.url)));
 export function beforeOct21(value){
+ value=beforeOct22(value);
  const change=value&&oct21Revision.changes[value.id];
  return change&&JSON.stringify(value)===JSON.stringify(change.after)?change.before:value;
 }

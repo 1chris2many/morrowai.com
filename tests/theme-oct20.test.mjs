@@ -6,13 +6,13 @@ import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {narration,audioEntry} from '../scripts/brief-audio.mjs';
 import {validateBriefs,related,renderThemes,briefingCards} from '../scripts/theme-pages.mjs';
 import {lifecycle,themeQueue} from '../scripts/theme-lifecycle.mjs';
-import {beforeOct20,oct20Revision,beforeOct21} from './theme-name-history.mjs';
+import {beforeOct20,oct20Revision,beforeOct21,beforeOct22} from './theme-name-history.mjs';
 const root=new URL('../',import.meta.url),read=p=>JSON.parse(readFileSync(new URL(p,root)));
 const feed=read('news.json'),manifest=read('audio/briefs/manifest.json'),get=id=>briefs.find(b=>b.id===id);
 const home=readFileSync(new URL('index.html',root),'utf8');
 test('October20 exact reviewed replacements preserve every previous development and metric',()=>{
  for(const [id,c]of Object.entries(oct20Revision.changes)){
-  const b=get(id);assert.deepEqual(b,c.after);
+  const b=beforeOct22(get(id));assert.deepEqual(b,c.after);
   assert.deepEqual(b.developments.slice(1),c.before.developments);
   assert.deepEqual(b.metric,c.before.metric);
   assert.equal(b.reviewedAt,'2026-10-20');
@@ -23,7 +23,7 @@ test('October20 exact reviewed replacements preserve every previous development 
  assert.deepEqual(get('robot-transfer'),oct20Revision.added[0]);
 });
 test('new controls and review are proposals and optional workflows, not measured safety or productivity',()=>{
- const s=get('safety-vs-capability'),w=get('workplace-agents');
+ const s=beforeOct22(get('safety-vs-capability')),w=get('workplace-agents');
  assert.match(s.meaning,/Valid credentials cannot establish/);
  assert.match(s.meaning,/must enforce/);
  assert.match(s.developments[0].text,/first announced in July/);

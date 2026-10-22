@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {briefs} from '../scripts/theme-current.mjs';
-import {insightRevision,beforeInsightRevision,oct20Revision,beforeOct20,oct21Revision} from './theme-name-history.mjs';
+import {insightRevision,beforeInsightRevision,oct20Revision,beforeOct20,oct21Revision,beforeOct22} from './theme-name-history.mjs';
 import {lifecycle} from '../scripts/theme-lifecycle.mjs';
 const hash=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');
 const immutable={
@@ -23,7 +23,7 @@ test('October20 includes exactly the approved replacements and the new robotics 
  assert.deepEqual(Object.keys(oct20Revision.changes).sort(),['ai-infrastructure','safety-vs-capability','workplace-agents']);
  assert.deepEqual(oct20Revision.added.map(b=>b.id),['robot-transfer']);
  for(const [id,change] of Object.entries(oct20Revision.changes)){
-  const current=briefs.find(b=>b.id===id);
+  const current=beforeOct22(briefs.find(b=>b.id===id));
   assert.deepEqual(current,change.after,id);
   assert.deepEqual(beforeOct20(current),change.before,id);
  }
@@ -43,7 +43,7 @@ test('rewriting interpretation never manufactures a new evidence date or reactiv
  for(const current of originalBriefs){
   const b=beforeOct20(current);
   assert.equal(b.reviewedAt,expected[b.id],b.id);
-  assert.equal(current.reviewedAt,oct21Revision.changes[b.id]?'2026-10-21':oct20Revision.changes[b.id]?'2026-10-20':expected[b.id],b.id);
+  assert.equal(beforeOct22(current).reviewedAt,oct21Revision.changes[b.id]?'2026-10-21':oct20Revision.changes[b.id]?'2026-10-20':expected[b.id],b.id);
  }
  assert.equal(briefs.find(b=>b.id==='robot-transfer').reviewedAt,'2026-10-20');
  const b=briefs.find(b=>b.id==='ai-regulation');
@@ -88,7 +88,7 @@ test('October20 normalization rejects unapproved metadata and evidence changes',
  assert.equal(beforeInsightRevision(robot),robot);
 });
 test('mechanisms retain concrete evidence and distinguish hypotheses from measured results',()=>{
- const get=id=>briefs.find(b=>b.id===id);
+ const get=id=>beforeOct22(briefs.find(b=>b.id===id));
  assert.match(get('ai-science').summary,/specificity deteriorated/);
  assert.match(get('workplace-agents').summary,/interactive agent sessions.*80%.*elapsed time/);
  assert.match(get('safety-vs-capability').meaning,/application must enforce a flagged verdict/);

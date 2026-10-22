@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
-import {oct21Revision,beforeOct21} from './theme-name-history.mjs';
+import {oct21Revision,beforeOct21,beforeOct22} from './theme-name-history.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 import {related,validateBriefs,briefingCards,renderThemes} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
@@ -12,7 +12,7 @@ const feed=read('news.json'),audio=read('audio/briefs/manifest.json');
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const get=id=>briefs.find(b=>b.id===id);
 test('October21 exact source-reviewed copy preserves earlier economics developments',()=>{
- const b=get('agent-economics'),c=oct21Revision.changes[b.id];
+ const b=beforeOct22(get('agent-economics')),c=oct21Revision.changes[b.id];
  assert.deepEqual(b,c.after);assert.deepEqual(b.developments.slice(1),c.before.developments);
  assert.deepEqual(b.metric,c.before.metric);assert.deepEqual(beforeOct21(b),c.before);
  assert.deepEqual(get('chip-switching'),oct21Revision.added[0]);assert.equal(briefs.length,11);
@@ -42,7 +42,7 @@ test('chip comparison distinguishes trial access from optimization and preserves
  }
 });
 test('fixed state is compressed history, not free memory or proved customer savings',()=>{
- const b=get('agent-economics');assert.equal(b.reviewedAt,'2026-10-21');
+ const b=beforeOct22(get('agent-economics'));assert.equal(b.reviewedAt,'2026-10-21');
  assert.match(b.developments[0].text,/29.5 MB of recurrent state per sequence/);
  assert.match(b.developments[0].text,/retrieval quality needs workload-specific evaluation/);
  assert.match(b.watch,/not lossless recall or fixed total system memory/);
@@ -61,7 +61,7 @@ test('both changed recordings bind exact visible text and stale variants fail cl
 test('six-source triage does not refresh unrelated briefs or admit the held story',()=>{
  for(const id of [999,1000,1001,1002,1003,1004])assert.ok(reviewedIds.includes(id));
  assert.ok(!reviewedIds.includes(980));
- const q=themeQueue(feed,'2026-10-21');
+ const q=themeQueue(feed,'2026-10-21',briefs.map(beforeOct22));
  assert.equal(q.updates.flatMap(x=>x.items).length,0);assert.equal(q.candidates.length,0);
  assert.equal(q.unclassified.filter(i=>!reviewedIds.includes(i.id)).length,0);
  assert.equal(get('ai-regulation').reviewedAt,'2026-10-09');
