@@ -1,18 +1,138 @@
 {
   "version": 1,
-  "digestDate": "2026-10-22",
+  "digestDate": "2026-10-23",
   "latestSavedDigest": "2026-10-23",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 6,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 7,
+  "pending": 3,
   "items": [
+    {
+      "digestItemId": 1010,
+      "digestDate": "2026-10-23",
+      "title": "Anthropic opens Claude Duet preview for background work",
+      "summary": "Anthropic introduced Claude Duet, an Opus 5.5 agent that works on a cloud computer, prepares briefings and dashboards, and requests approval for sensitive actions. It connects with more than 6,000 tools and is available through a waitlist for US Pro and Max subscribers on mobile and the web; Team and Enterprise plans are not yet included. Background checks share the subscriber's existing usage allowance.",
+      "whyItMatters": "Background work saves attention only if the agent knows when to interrupt. Too many approval requests return the supervision burden to the user; too few put consequential actions beyond meaningful oversight. Because Duet's monitoring also consumes the subscriber's allowance, the useful measure is work completed per interruption and per unit of usage—not how long the agent stays busy.",
+      "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-23-anthropic-launches-claude-duet-a-task-automating-agent-app-for-professionals-and-small-businesses",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1014,
+      "digestDate": "2026-10-23",
+      "title": "Anthropic transfers Agent Skills to the Agentic AI Foundation",
+      "summary": "Anthropic announced on October 22 that it is donating the Agent Skills standard, its name and logo, GitHub organization and domain to the Linux Foundation's Agentic AI Foundation. The company says more than 70 agent platforms support the format. Maintainers from several companies will steward it, with versioned releases, a proposal process and security guidance on the proposed roadmap.",
+      "whyItMatters": "Procedures learned for one agent are part of the cost of moving work to another. A portable format with shared governance could let teams keep more of that investment when changing providers, making it easier for a rival to win the next task. Execution quality and permissions still differ, so the standard reduces one switching cost without making the agents interchangeable.",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "source": "Anthropic — October 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-23-anthropic-transfers-agent-skills-to-the-agentic-ai-foundation"
+    },
+    {
+      "digestItemId": 1015,
+      "digestDate": "2026-10-23",
+      "title": "Microsoft adds interactive exploration to AI-generated charts",
+      "summary": "Microsoft Research introduced Flint-interactive on October 22, a language for specifying chart interactions such as filtering, linked selections and updates across charts and tables. Agents describe the intended interaction while Flint's compiler handles rendering dependencies. The system can be used in chat or embedded in applications.",
+      "whyItMatters": "A static chart forces readers back into a generation loop whenever they want another view. Reusable interactions could let them explore the same data directly, while the compiler absorbs low-level code that an agent would otherwise have to write and debug. That shifts effort toward choosing useful comparisons and validating the data—work that an attractive, responsive chart cannot do for the reader.",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "source": "Microsoft Research — October 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Research"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-23-microsoft-adds-interactive-exploration-to-ai-generated-charts"
+    },
+    {
+      "digestItemId": 1012,
+      "digestDate": "2026-10-23",
+      "title": "Microsoft reports gains on simulated diagnostic cases",
+      "summary": "Microsoft reported that its MAI-DxO system reached 83% accuracy on simulated complex medical cases, compared with 36% for individual generalist physicians using reference materials. The Science study evaluates step-by-step questioning and test selection; specialist teams were not the comparison group. Microsoft plans a prospective evaluation with Beth Israel Deaconess Medical Center to examine performance in clinical settings.",
+      "whyItMatters": "A diagnostic application has to add value beyond the increasingly capable models it coordinates. Better test selection, lower workup costs and dependable integration could provide that value even where an extra layer of agents adds little accuracy. The clinical study matters because it can test whether those advantages survive the incomplete information and coordination demands of real care.",
+      "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-23-microsoft-says-its-ai-diagnostic-system-beat-generalist-doctors-on-complex-cases-in-a-new-study",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1013,
+      "digestDate": "2026-10-23",
+      "title": "OpenAI opens Decisions API for fast, bounded choices",
+      "summary": "OpenAI made its Decisions API generally available on October 22, using GPT-6 Luna to classify inputs, score them or select from predefined answers. The release adds native voice integration, prompt caching and support for up to 400 questions per request. Customer Speak reported that one integration reduced the time to its next action from 1.4 seconds to 0.13 seconds in testing.",
+      "whyItMatters": "A decision fast enough to sit between a user's action and an app's response can replace fixed rules without making the product feel slower. That could reduce spending on expensive model calls while opening many more occasions to use AI. The business outcome depends on how often those new decisions run and what mistakes cost; a cheaper choice does not necessarily produce a smaller total bill.",
+      "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-23-openai-widely-releases-its-decisions-api-entering-the-fast-growing-market-for-decision-models",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1011,
+      "digestDate": "2026-10-23",
+      "title": "Uber expands ChatGPT Work to 30,000 employees",
+      "summary": "Uber is expanding ChatGPT Work from a roughly 1,000-person pilot to its approximately 30,000 employees worldwide. Early non-engineer users built dashboards, analyzed operations data and localized training materials. Uber has not disclosed the rollout's cost and says usage and workflow outcomes will guide its deployment decisions.",
+      "whyItMatters": "The rollout gives non-engineers a route to build analysis tools without waiting for an engineering slot. Whether that frees capacity or creates a second support burden depends on who checks those tools and maintains them after the original builder moves on. Company-wide access gives OpenAI distribution; reliable, repeatable work will determine how much of that access becomes lasting use.",
+      "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-23-uber-expands-chatgpt-work-to-its-entire-30-000-person-workforce",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 1007,
       "digestDate": "2026-10-22",
@@ -5285,8 +5405,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-22 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-23T14:00:10.290Z",
-  "contentHash": "2cec0b0d79516f3c61122cc117b530eec796c7a50f13bf580749360db336abd3"
+  "publicationStatus": "current",
+  "notice": "2026-10-23 · 6 stories",
+  "publishedAt": "2026-10-23T15:07:11.971Z",
+  "contentHash": "b67fe25f81cb354868eeaad144c2493e6580c5d42ca338b9861967e183187db8"
 }
