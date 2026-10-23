@@ -27,7 +27,7 @@ test('new workplace evidence preserves denominator, hiring shares and observatio
  const b=get('workplace-agents'),d=b.developments.find(d=>d.id===979);
  assert.equal(d.date,'2026-10-16');
  for(const re of [/share of junior technical hires/,/27% to 9%/,/agent runtime/,/estimated human work hours/,/40-hour week/,/not randomized/,/not equivalent to productive output/])assert.match(d.text,re);
- assert.match(b.meaning,/human’s attention/);assert.match(b.meaning,/other employers/);
+ assert.match(beforeOct22(b).meaning,/human’s attention/);assert.match(beforeOct22(b).meaning,/other employers/);
 });
 test('DeepSeek separates downloadable-model operation from hosted tool charges',()=>{
  const open=get('open-weights'),econ=get('agent-economics');

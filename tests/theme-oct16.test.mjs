@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
-import {beforeThemeRename} from './theme-name-history.mjs';
+import {beforeThemeRename,beforeOct23} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
@@ -32,12 +32,12 @@ test('October16 additions preserve historical developments and quantitative scop
  for(const [id,[historical,events,metric]]of Object.entries(expected)){
   const b=get(id);assert.equal(hash(b.developments.filter(d=>historical.includes(d.id))),events);
   assert.equal(hash(b.metric||null),metric);
-  if(id==='evals')assert.equal(b.reviewedAt,'2026-10-16');else assert.ok(b.reviewedAt>='2026-10-16');
+  if(id==='evals')assert.equal(beforeOct23(b).reviewedAt,'2026-10-16');else assert.ok(b.reviewedAt>='2026-10-16');
   assert.equal(lifecycle(b,b.reviewedAt).status,'active');
  }
 });
 test('evaluation review distinguishes access terms from results and keeps cross-theme sourcing explicit',()=>{
- const b=get('evals');assert.deepEqual(b.developments.slice(0,2).map(d=>[d.id,d.date]),[[969,'2026-10-15'],[967,'2026-10-14']]);
+ const b=beforeOct23(get('evals'));assert.deepEqual(b.developments.slice(0,2).map(d=>[d.id,d.date]),[[969,'2026-10-15'],[967,'2026-10-14']]);
  assert.match(b.developments[0].text,/specified exclusions/);assert.match(b.developments[0].text,/defined redactions/);
  assert.match(b.developments[0].text,/results are to follow/);
  assert.match(b.developments[1].text,/contracted expert reviews/);

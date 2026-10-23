@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {briefs} from '../scripts/theme-current.mjs';
-import {beforeThemeRename} from './theme-name-history.mjs';
+import {beforeThemeRename,beforeOct23} from './theme-name-history.mjs';
 import {related,validateBriefs,briefingCards} from '../scripts/theme-pages.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 const feed=JSON.parse(readFileSync(new URL('../news.json',import.meta.url)));
@@ -20,6 +20,7 @@ test('historical competition release snapshots survive only the exact later edit
  }
 });
 test('competition thesis distinguishes retained accounts from lost work without claiming causation',()=>{
+ const b=beforeOct23(briefs.find(b=>b.id==='ai-market-leadership'));
  assert.equal(b.reviewedAt,'2026-10-18');
  assert.match(b.summary,/Our hypothesis/);
  assert.match(b.summary,/do not identify why customers moved/);
@@ -40,9 +41,9 @@ test('market-share number identifies the sample, period and denominator',()=>{
  assert.match(billing.text,/Legacy arrangements transition at renewal/);
  assert.equal(b.developments.find(d=>d.id===985).date,'2026-10-06');
 });
-test('five exact reviewed sources connect the theme to stable news anchors',()=>{
+test('six exact reviewed sources connect the theme to stable news anchors',()=>{
  validateBriefs(feed);
- const ids=[974,985,986,987,988];
+ const ids=[974,985,986,987,988,1014];
  assert.deepEqual(new Set(related(feed,b.id).map(i=>i.digestItemId)),new Set(ids));
  assert.match(briefingCards(feed),/themes.html#ai-market-leadership/);
  for(const id of ids){

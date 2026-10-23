@@ -23,7 +23,7 @@ test('October20 exact reviewed replacements preserve every previous development 
  assert.deepEqual(get('robot-transfer'),oct20Revision.added[0]);
 });
 test('new controls and review are proposals and optional workflows, not measured safety or productivity',()=>{
- const s=beforeOct22(get('safety-vs-capability')),w=get('workplace-agents');
+ const s=beforeOct22(get('safety-vs-capability')),w=beforeOct22(get('workplace-agents'));
  assert.match(s.meaning,/Valid credentials cannot establish/);
  assert.match(s.meaning,/must enforce/);
  assert.match(s.developments[0].text,/first announced in July/);

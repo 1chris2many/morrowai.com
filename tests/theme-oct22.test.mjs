@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
-import {oct22Revision,beforeOct22} from './theme-name-history.mjs';
+import {oct22Revision,beforeOct22,beforeOct23} from './theme-name-history.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 import {related,validateBriefs,renderThemes} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
@@ -64,9 +64,9 @@ test('both narrations match exact copy and reject the prior approved version',()
 test('all five sources are triaged without a forced new theme or unrelated freshness bump',()=>{
  for(const id of [1005,1006,1007,1008,1009])assert.ok(reviewedIds.includes(id));
  assert.ok(!reviewedIds.includes(980));
- const q=themeQueue(feed,'2026-10-22');assert.equal(q.updates.flatMap(x=>x.items).length,0);
+ const q=themeQueue(feed,'2026-10-22',briefs.map(beforeOct23));assert.equal(q.updates.flatMap(x=>x.items).length,0);
  assert.equal(q.candidates.length,0);assert.equal(q.unclassified.filter(i=>!reviewedIds.includes(i.id)).length,0);
- for(const [id,date]of Object.entries({'chip-switching':'2026-10-21','robot-transfer':'2026-10-20','ai-market-leadership':'2026-10-18','ai-science':'2026-10-18','ai-regulation':'2026-10-09','workplace-agents':'2026-10-20','ai-infrastructure':'2026-10-20','evals':'2026-10-16','open-weights':'2026-10-18'}))assert.equal(get(id).reviewedAt,date);
+ for(const [id,date]of Object.entries({'chip-switching':'2026-10-21','robot-transfer':'2026-10-20','ai-market-leadership':'2026-10-18','ai-science':'2026-10-18','ai-regulation':'2026-10-09','workplace-agents':'2026-10-20','ai-infrastructure':'2026-10-20','evals':'2026-10-16','open-weights':'2026-10-18'}))assert.equal(beforeOct23(get(id)).reviewedAt,date);
  assert.equal(lifecycle(get('ai-regulation'),'2026-10-22').status,'watching');
  assert.ok(!briefs.some(b=>b.developments.some(d=>[1005,1007,1008].includes(d.id))));
 });

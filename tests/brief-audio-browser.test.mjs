@@ -72,6 +72,22 @@ test('October22 safety and operating-cost updates are readable at phone and desk
  assert.equal(await page.locator('#agent-economics-source-1006 a').count(),2);
  assert.deepEqual(errors,[]);await ctx.close();
 });
+test('October23 updated briefings and primary links remain usable on phone and desktop',async()=>{
+ const ctx=await browser.newContext(),page=await ctx.newPage(),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));await page.goto(base+'/themes.html');
+ for(const width of [390,1440])for(const id of ['ai-market-leadership','workplace-agents','evals']){
+  await page.setViewportSize({width,height:1000});
+  const section=page.locator('#'+id);await section.locator('h2').scrollIntoViewIfNeeded();
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  assert.equal(await section.locator('audio').count(),1);
+  assert.equal(await section.locator('header time').getAttribute('datetime'),'2026-10-23');
+  await page.screenshot({path:`test-results/oct23-${id}-${width}.png`});
+ }
+ assert.equal(await page.locator('#workplace-agents-source-1010 a').count(),2);
+ assert.equal(await page.locator('#evals-source-1012 a').count(),2);
+ assert.match(await page.locator('#ai-market-leadership-source-974').textContent(),/Claude remains available/);
+ assert.deepEqual(errors,[]);await ctx.close();
+});
 test('audio errors and disabled storage retain a readable usable page',async()=>{
  const ctx=await browser.newContext(),p=await ctx.newPage(),errors=[];
  await ctx.addInitScript(()=>{Storage.prototype.getItem=()=>{throw Error('disabled');};Storage.prototype.setItem=()=>{throw Error('disabled');};});

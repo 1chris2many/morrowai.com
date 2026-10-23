@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {briefs} from '../scripts/theme-current.mjs';
-import {beforeOct20} from './theme-name-history.mjs';
+import {beforeOct20,beforeOct23} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {renderThemes,validateBriefs,briefingCards} from '../scripts/theme-pages.mjs';
 const root=new URL('../',import.meta.url);
@@ -48,7 +48,7 @@ test('October 7 editorial additions preserve scope and untouched review dates',(
  assert.match(workplace.developments.find(d=>d.id===933).text,/exploring/);
  const infrastructure=briefs.find(b=>b.id==='ai-infrastructure');
  assert.match(infrastructure.developments.find(d=>d.id===930).text,/2028/);
- const evals=briefs.find(b=>b.id==='evals');assert.equal(evals.developments.length,5);
+ const evals=beforeOct23(briefs.find(b=>b.id==='evals'));assert.equal(evals.developments.length,5);
  assert.equal(new Set(evals.developments.map(d=>new URL(d.url).hostname)).size,5);
  assert.match(evals.developments.find(d=>d.id===916).text,/percentage points/);
  assert.match(evals.developments.find(d=>d.id===913).url,/www.cdc.gov/);
@@ -66,7 +66,7 @@ test('October 8 synthesis preserves availability distinctions and unrelated date
  assert.match(open.developments.find(d=>d.id===936).text,/plans to release/);
  assert.match(open.developments.find(d=>d.id===925).text,/promised/);
  assert.match(open.developments.find(d=>d.id===937).text,/Apache 2.0/);
- assert.equal(briefs.find(b=>b.id==='evals').reviewedAt,'2026-10-16');
+ assert.equal(beforeOct23(briefs.find(b=>b.id==='evals')).reviewedAt,'2026-10-16');
  assert.equal(briefs.find(b=>b.id==='ai-regulation').reviewedAt,'2026-10-09');
  for(const id of [935,936,937,938,939])assert.ok(reviewedIds.includes(id));
 });

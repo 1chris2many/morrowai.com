@@ -63,3 +63,9 @@ reviewedIds.push(999,1000,1001,1002,1003,1004);
 // 1005 is reported funding,1007 a financier's risk opinion,1008 a clinical
 // access study: none justifies refreshing unrelated theses or a new theme.
 reviewedIds.push(1005,1006,1007,1008,1009);
+// October23: 1014 extends switching costs through shared skills stewardship;
+// 1010/1015 connect human attention to background work and reusable controls.
+// 1012 opens selected diagnostic evaluation code, extending evidence access.
+// 1011 is a rollout without measured maintenance/productivity evidence;
+// 1013 reinforces existing decision-cost mechanics without a distinct thesis.
+reviewedIds.push(1010,1011,1012,1013,1014,1015);

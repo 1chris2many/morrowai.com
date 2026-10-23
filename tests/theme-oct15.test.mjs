@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
-import {beforeThemeRename,beforeOct21,beforeOct22} from './theme-name-history.mjs';
+import {beforeThemeRename,beforeOct21,beforeOct22,beforeOct23} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
@@ -35,7 +35,7 @@ test('October15 leaves unrelated briefings and their review dates unchanged',()=
   'ai-infrastructure':'40a392ab01ed7e02ead8568f1896851a53aefc897dcfc254f60a76a1fca7146a'
  };
  for(const b of briefs.filter(b=>expected[b.id]))assert.equal(createHash('sha256').update(JSON.stringify(beforeThemeRename(b))).digest('hex'),expected[b.id]);
- assert.equal(lifecycle(briefs.find(b=>b.id==='evals'),'2026-10-16').status,'active');
+ assert.equal(lifecycle(beforeOct23(briefs.find(b=>b.id==='evals')),'2026-10-16').status,'active');
 });
 test('October15 model and research updates retain availability and authorship limits',()=>{
  const work=briefs.find(b=>b.id==='workplace-agents'),open=briefs.find(b=>b.id==='open-weights');

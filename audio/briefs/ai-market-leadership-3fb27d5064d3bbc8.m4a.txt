@@ -1,0 +1,27 @@
+AI competition. AI vendors can lose the work before they lose the customer
+
+Useful AI Werks. Analysis by Codex. Reviewed October 23, 2026. Synthetic narration.
+
+A provider can retain a capable model and a paying account while losing its place in someone’s daily work. Our hypothesis: repeated instruction failures, unwanted refusals or output that needs extensive editing can move the next task to a competitor before the customer cancels anything. Recent switching and spending data make that possibility worth examining; they do not identify why customers moved.
+
+Three takeaways. Daily friction. The next task goes to a rival. Quiet migration. The original account stays open. Revenue impact. Metered usage follows the work.
+
+What it means. Account retention and workload retention can diverge. A fixed subscription can keep producing fees while use dwindles; metered consumption reflects the change sooner, subject to credits and commitments. Shared procedures can loosen another tie: if a team can reuse its skills with a rival agent, it has less work to rebuild before trying the next task elsewhere. Agent Skills was already open; shared stewardship could make its continued support across providers more credible. Models, integrations and permissions still need testing. Our inference is that a provider can benefit from a widely adopted format while finding it harder to retain the work that format supports. Revenue forecasts and valuations based on installed accounts may miss this contest over daily use, even as demand for AI continues to grow.
+
+54.1% → 52.2%. Claude’s share of AI spending in one UK sample. Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue. Source: Capital on Tap, 2026-10-12.
+
+How the story developed. Switching and spending data expose movement between providers; billing terms show how that can reach revenue. The transfer of an already-open skills format adds shared stewardship to the question of how much work customers must rebuild when moving.
+
+October 6. Provider switching reaches a sample high. Ramp’s three-month-average monthly switching rate reached 8% in September. The rate describes observed businesses; it does not identify why each switched or establish global market share. Source: Ramp.
+
+October 12. UK adoption expands as provider shares move. Capital on Tap’s Q3 data shows broader AI adoption alongside a spending-share shift toward ChatGPT. Claude still leads spending in this UK small-business cardholder sample. Free use, app-store subscriptions and invoiced contracts are excluded. Source: Capital on Tap.
+
+October 14. Usage grows faster than spending. Ramp reports rising token volumes and little token-spending growth during August and September. Its economist attributes the gap to price declines and efficiency. Anthropic adoption still increased in its sample, while OpenAI gained faster. Source: Ramp.
+
+October 17. Replit changes its preferred provider. OpenAI becomes the default, while Claude remains available to customers. Source: TechCrunch.
+
+October 18. Enterprise billing exposes consumption separately. Anthropic’s current guide separates annual Enterprise access fees from usage billed at API rates. Legacy arrangements transition at renewal. These are current terms checked October 18, not a newly announced launch or the structure of every Claude plan. Source: Anthropic Help Center.
+
+October 22. Agent Skills moves to shared stewardship. Anthropic is donating the already-open standard and its project assets to the Linux Foundation’s Agentic AI Foundation. Maintainers from several companies will guide it. This changes governance; it does not mark the start of cross-agent portability. Source: Anthropic.
+
+What to watch. Watch whether teams can move real workflows without extensive repair, and whether accounts stay open as important tasks shift. Compare usage with prices, credits and commitments. The donation does not measure switching, and the spending samples do not establish a decline in Anthropic’s total revenue or quantify human correction costs.

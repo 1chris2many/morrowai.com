@@ -92,13 +92,13 @@ export const briefs = [
     "id": "ai-market-leadership",
     "label": "AI competition",
     "title": "AI vendors can lose the work before they lose the customer",
-    "reviewedAt": "2026-10-18",
+    "reviewedAt": "2026-10-23",
     "author": "Codex",
     "accent": "gold",
-    "teaser": "A paid account can survive long after the customer’s important work moves elsewhere. Usage billing can turn that quiet loss of preference into revenue pressure.",
+    "teaser": "A paid account can survive after important work moves elsewhere. Portable workflows can make that move easier; usage billing can expose the loss before cancellation.",
     "summary": "A provider can retain a capable model and a paying account while losing its place in someone’s daily work. Our hypothesis: repeated instruction failures, unwanted refusals or output that needs extensive editing can move the next task to a competitor before the customer cancels anything. Recent switching and spending data make that possibility worth examining; they do not identify why customers moved.",
-    "meaning": "This creates a gap between account retention and workload retention. A fixed subscription can keep producing fees while use dwindles; metered consumption reflects the change sooner, subject to credits and contractual commitments. That can make a vendor’s product problem look like weakening demand for AI, even when the same work is moving to a rival. Revenue forecasts and valuations that treat an installed customer base as durable demand may miss the loss until it reaches the bill.",
-    "watch": "Watch whether the same customers keep their accounts but shift their important tasks, and whether product improvements win that work back. Separate price changes from usage changes. These samples do not establish a decline in Anthropic’s total revenue or measure human correction costs.",
+    "meaning": "Account retention and workload retention can diverge. A fixed subscription can keep producing fees while use dwindles; metered consumption reflects the change sooner, subject to credits and commitments. Shared procedures can loosen another tie: if a team can reuse its skills with a rival agent, it has less work to rebuild before trying the next task elsewhere. Agent Skills was already open; shared stewardship could make its continued support across providers more credible. Models, integrations and permissions still need testing. Our inference is that a provider can benefit from a widely adopted format while finding it harder to retain the work that format supports. Revenue forecasts and valuations based on installed accounts may miss this contest over daily use, even as demand for AI continues to grow.",
+    "watch": "Watch whether teams can move real workflows without extensive repair, and whether accounts stay open as important tasks shift. Compare usage with prices, credits and commitments. The donation does not measure switching, and the spending samples do not establish a decline in Anthropic’s total revenue or quantify human correction costs.",
     "visualTitle": "How work can leave before an account closes",
     "visual": [
       [
@@ -114,7 +114,7 @@ export const briefs = [
         "Metered usage follows the work"
       ]
     ],
-    "timelineIntro": "The sources establish more switching, changing spending shares and billing that separates access from consumption. The behavioral explanation above is a hypothesis connecting those facts, not a measured account of every switch.",
+    "timelineIntro": "Switching and spending data expose movement between providers; billing terms show how that can reach revenue. The transfer of an already-open skills format adds shared stewardship to the question of how much work customers must rebuild when moving.",
     "metric": {
       "value": "54.1% → 52.2%",
       "label": "Claude’s share of AI spending in one UK sample",
@@ -122,6 +122,15 @@ export const briefs = [
       "sourceId": 986
     },
     "developments": [
+      {
+        "date": "2026-10-22",
+        "id": 1014,
+        "title": "Agent Skills moves to shared stewardship",
+        "text": "Anthropic is donating the already-open standard and its project assets to the Linux Foundation’s Agentic AI Foundation. Maintainers from several companies will guide it. This changes governance; it does not mark the start of cross-agent portability.",
+        "source": "Anthropic",
+        "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+        "relation": "Shared stewardship of portable procedures extends the briefing’s explanation of what makes daily work easier to move between providers."
+      },
       {
         "date": "2026-10-18",
         "id": 988,
@@ -134,8 +143,8 @@ export const briefs = [
       {
         "date": "2026-10-17",
         "id": 974,
-        "title": "Replit",
-        "text": "Default changes.",
+        "title": "Replit changes its preferred provider",
+        "text": "OpenAI becomes the default, while Claude remains available to customers.",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
         "relation": "The clarified source records a change in preferred provider rather than a complete loss of access to Claude."
@@ -397,13 +406,13 @@ export const briefs = [
     "id": "workplace-agents",
     "label": "Agents at work",
     "title": "More agents can mean more work waiting on you",
-    "reviewedAt": "2026-10-20",
+    "reviewedAt": "2026-10-23",
     "author": "Codex",
     "accent": "lilac",
-    "teaser": "AI can produce work faster than people can decide what happens next. Adding agents can enlarge the decision queue instead of clearing it.",
-    "summary": "Anthropic’s internal study reports that interactive agent sessions spent about 80% of elapsed time waiting for human input. Employees were building tools to sort requests and supervise agents; output could already exceed what people could comfortably read. This is a different scaling constraint from model speed: several productive agents can all depend on the same person’s next decision.",
-    "meaning": "When every uncertainty returns to a human, increasing agent output also increases demands on that human’s attention. Where review happens can change that burden. Google's optional outline review in Gemini Notebook lets a person redirect slides or video before rendering. Our inference: a small early decision could prevent a larger finished artifact from needing inspection and repair, while an unnecessary checkpoint simply adds another interruption. The advantage may lie in choosing the few decisions that avert expensive rework. Google reports no measured time savings here, and Anthropic’s experience does not establish the size of this effect at other employers.",
-    "watch": "Watch total review and rework time, not just how fast an agent generates output. Does an early checkpoint prevent a bad direction, or create another queue? Track which decisions still need people and whether fewer interruptions conceal defects. Junior hiring and training remain separate questions.",
+    "teaser": "The useful agent may be the one that needs fewer decisions from you. Early review and reusable controls can reduce repeated work, while proactive agents can create fresh interruptions.",
+    "summary": "Anthropic’s internal study found interactive agent sessions spent about 80% of elapsed time waiting for human input. Gemini’s early review, Duet’s background approval requests and Flint’s reusable chart controls place that attention at different points in a task.",
+    "meaning": "An early decision can prevent a deck from needing repair; useful chart filters can answer routine follow-up questions without another generation turn. Flint’s benefit depends on interactions the artifact already supports—new questions can still require model work. Duet’s background checks consume the subscriber’s allowance, while approval requests consume attention. It has to spend both on decisions worth making. Our inference is that advantage comes from reducing repeated supervision while preserving useful control. A quieter agent can still make mistakes, and a responsive chart can rest on bad data. These releases have not established the net time saved.",
+    "watch": "Watch review and rework time alongside generation time and usage. Which interruptions avert errors, and which return work to the user? Compare completed outcomes after correction; fewer prompts and more runtime are not productivity measures.",
     "visualTitle": "Why output can outgrow completion",
     "visual": [
       [
@@ -419,7 +428,7 @@ export const briefs = [
         "Routine decisions can proceed"
       ]
     ],
-    "timelineIntro": "Persistent agents and automatic reviews expand delegated work. Anthropic's study exposes the resulting coordination burden; Google's pre-render review illustrates an attempt to put human attention where it can prevent later rework.",
+    "timelineIntro": "Persistent agents expanded delegated work and exposed a shared human bottleneck. Early review, proactive approvals and reusable chart interactions make different demands on that person’s attention.",
     "metric": {
       "value": "55.0%",
       "label": "Average task-criteria score",
@@ -427,6 +436,24 @@ export const briefs = [
       "sourceId": 932
     },
     "developments": [
+      {
+        "date": "2026-10-22",
+        "id": 1010,
+        "title": "Duet brings background work back for decisions",
+        "text": "Anthropic’s US Pro/Max waitlisted preview can return work and request decisions through messages. Background checks count against the subscriber’s existing allowance. The company acknowledges that the preview can misjudge urgency or miss intervening messages.",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+        "primaryUrl": "https://claude.com/product/claude-duet",
+        "relation": "Directly checked product terms connect background usage and human interruptions to the attention bottleneck, without claiming measured productivity."
+      },
+      {
+        "date": "2026-10-22",
+        "id": 1015,
+        "title": "Flint makes chart exploration reusable",
+        "text": "Microsoft Research’s Flint-interactive lets agents specify filtering and linked selections while a compiler handles rendering dependencies. Readers can explore the supported views directly; the announcement does not quantify net time saved.",
+        "source": "Microsoft Research",
+        "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
+      },
       {
         "date": "2026-10-19",
         "id": 996,
@@ -622,13 +649,13 @@ export const briefs = [
     "id": "evals",
     "label": "AI evaluations",
     "title": "Who gets to challenge an AI result?",
-    "reviewedAt": "2026-10-16",
+    "reviewedAt": "2026-10-23",
     "author": "Codex",
     "accent": "mint",
-    "teaser": "A proof anyone can inspect and an evaluation available only to selected reviewers offer different kinds of assurance. Access and publication rights determine what outsiders can challenge.",
-    "summary": "OpenAI has released mathematical proofs that can be checked while the producing model remains internal. Meta has published expert critiques alongside AI-assisted research. Anthropic is granting selected external evaluators deeper internal access. These are different ways to expose evidence, with different limits on who can investigate a result and what they can learn.",
-    "meaning": "An inspectable artifact can establish something narrow and strong: a proof checks, or a manuscript contains a methodological weakness. It does not establish how reliably the model will perform on the next task. Privileged evaluation access can expose broader behavior, but the scope of access and rules for publishing findings become part of the assurance. For readers and buyers, the useful distinction is what a claim leaves open to challenge—and what remains inaccessible.",
-    "watch": "Watch what METR actually publishes, any disputes over redactions, responses to the public research critiques and whether outsiders can reproduce results beyond the released examples. An access agreement is a route to evidence, not a safety finding.",
+    "teaser": "A result is easier to challenge when outsiders can inspect how it was produced. A released test still leaves questions about the cases it excludes and the real-world outcome it represents.",
+    "summary": "OpenAI has released checkable mathematical proofs; Meta has published expert critiques; Anthropic is granting selected evaluators internal access. Microsoft now adds benchmark and evaluation code for selected diagnostic cases. These approaches expose different parts of a claim, with different limits on what outsiders can reproduce.",
+    "meaning": "The evidence made available determines which objections outsiders can investigate. A proof can be checked; a released benchmark lets researchers examine its cases, scoring and cost assumptions. Microsoft’s diagnostic release covers selected NEJM cases, so access to that code alone does not reproduce every reported result. Even a successful replication would establish performance on simulated cases, leaving performance in clinical settings to prospective study. Privileged evaluation can probe broader behavior, but publication rights then shape what others learn. The value of openness is a more precise argument: readers can see where a conclusion is supported and where it still relies on extrapolation.",
+    "watch": "Watch independent replications and changes to benchmark cases, scoring or cost assumptions. For medical systems, compare those results with the planned prospective clinical study. Continue watching METR’s published findings and any redaction disputes: an access agreement alone supplies no assessment result.",
     "visualTitle": "Different ways to make a claim checkable",
     "visual": [
       [
@@ -644,7 +671,7 @@ export const briefs = [
         "Publication terms shape what others learn"
       ]
     ],
-    "timelineIntro": "Earlier forecasting and survey tests exposed the importance of the chosen outcome. The newer releases expose another dependency: the evidence available to people who want to challenge the conclusion.",
+    "timelineIntro": "Forecasting and survey tests showed how the chosen outcome shapes a score. Public artifacts, privileged access and now executable diagnostic evaluations expose another question: which parts of the claim can an outsider actually test?",
     "metric": {
       "value": "12 percentage points",
       "label": "Average gap from human survey results",
@@ -652,6 +679,16 @@ export const briefs = [
       "sourceId": 916
     },
     "developments": [
+      {
+        "date": "2026-10-22",
+        "id": 1012,
+        "title": "Microsoft opens selected diagnostic evaluations",
+        "text": "Microsoft says it is releasing SDBench for selected NEJM cases, including case-interaction, judging and cost-estimation code. The evaluations simulate diagnostic decisions. A planned prospective hospital study will examine clinical performance separately.",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+        "primaryUrl": "https://microsoft.ai/news/building-medical-superintelligence/",
+        "relation": "Primary-source release of selected benchmark cases and evaluation code directly extends the theme’s distinction between reported results and evidence outsiders can challenge."
+      },
       {
         "date": "2026-10-15",
         "id": 969,

@@ -1,0 +1,27 @@
+AI evaluations. Who gets to challenge an AI result?
+
+Useful AI Werks. Analysis by Codex. Reviewed October 23, 2026. Synthetic narration.
+
+OpenAI has released checkable mathematical proofs; Meta has published expert critiques; Anthropic is granting selected evaluators internal access. Microsoft now adds benchmark and evaluation code for selected diagnostic cases. These approaches expose different parts of a claim, with different limits on what outsiders can reproduce.
+
+Three takeaways. Public artifact. Anyone can inspect the released result. Privileged access. Selected evaluators can probe more deeply. Right to report. Publication terms shape what others learn.
+
+What it means. The evidence made available determines which objections outsiders can investigate. A proof can be checked; a released benchmark lets researchers examine its cases, scoring and cost assumptions. Microsoft’s diagnostic release covers selected NEJM cases, so access to that code alone does not reproduce every reported result. Even a successful replication would establish performance on simulated cases, leaving performance in clinical settings to prospective study. Privileged evaluation can probe broader behavior, but publication rights then shape what others learn. The value of openness is a more precise argument: readers can see where a conclusion is supported and where it still relies on extrapolation.
+
+12 percentage points. Average gap from human survey results. Pew compared AI-generated answers with human responses across nearly 300 questions. This describes its experiment, not every model or polling method. Source: Pew Research Center, 2026-09-30.
+
+How the story developed. Forecasting and survey tests showed how the chosen outcome shapes a score. Public artifacts, privileged access and now executable diagnostic evaluations expose another question: which parts of the claim can an outsider actually test?
+
+September 30. Pew measures the gap in simulated opinions. In Pew’s experiment using Claude Opus 4.6, simulated responses differed from human responses by about 12 percentage points on average across nearly 300 survey questions. Source: Pew Research Center.
+
+September 30. Google leads the CDC’s season evaluation. Google’s model led individual team submissions in the 2025–26 flu hospital-admission evaluation. The ranking used state and D.C. forecasts, excluding national totals, among 39 eligible models. Source: CDC.
+
+October 6. OpenAI releases mathematical work for scrutiny. Many proofs come in Lean, a language that lets software check each logical step. The release also includes reasoning summaries and revision procedures. The model that produced the results remains internal. Source: OpenAI.
+
+October 14. Meta publishes expert critiques alongside research. Meta shared ten human-led health-research manuscripts developed with Muse. The company describes statistical and contracted expert reviews; published reviewers raised concerns about methods and interpretation in some studies. Source: Meta.
+
+October 15. Anthropic expands METR’s access. Six METR staff have access roughly comparable to Anthropic’s risk teams, with specified exclusions. METR can publish without an Anthropic veto, subject to defined redactions that METR may publicly dispute. The announcement describes access and publication terms; assessment results are to follow. Source: Anthropic.
+
+October 22. Microsoft opens selected diagnostic evaluations. Microsoft says it is releasing SDBench for selected NEJM cases, including case-interaction, judging and cost-estimation code. The evaluations simulate diagnostic decisions. A planned prospective hospital study will examine clinical performance separately. Source: TechCrunch.
+
+What to watch. Watch independent replications and changes to benchmark cases, scoring or cost assumptions. For medical systems, compare those results with the planned prospective clinical study. Continue watching METR’s published findings and any redaction disputes: an access agreement alone supplies no assessment result.
