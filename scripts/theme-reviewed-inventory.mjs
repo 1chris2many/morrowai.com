@@ -69,3 +69,7 @@ reviewedIds.push(1005,1006,1007,1008,1009);
 // 1011 is a rollout without measured maintenance/productivity evidence;
 // 1013 reinforces existing decision-cost mechanics without a distinct thesis.
 reviewedIds.push(1010,1011,1012,1013,1014,1015);
+// October24: source review incorporated1016 containment policy,1018 reusable
+// field knowledge,1019 bounded proof artifacts,1020 reusable source controls.
+// 1017 remains a standalone TB deployment account, insufficient for a new theme.
+reviewedIds.push(1016,1017,1018,1019,1020);

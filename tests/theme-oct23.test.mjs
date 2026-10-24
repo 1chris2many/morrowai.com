@@ -3,12 +3,12 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
-import {oct23Revision,beforeOct23} from './theme-name-history.mjs';
+import {oct23Revision,beforeOct23,beforeOct24} from './theme-name-history.mjs';
 import {related,validateBriefs,renderThemes} from '../scripts/theme-pages.mjs';
 import {narration,audioEntry} from '../scripts/brief-audio.mjs';
 import {themeQueue} from '../scripts/theme-lifecycle.mjs';
 const root=new URL('../',import.meta.url), read=p=>JSON.parse(readFileSync(new URL(p,root)));
-const feed=read('news.json'),audio=read('audio/briefs/manifest.json'),get=id=>briefs.find(b=>b.id===id);
+const feed=read('news.json'),audio=read('audio/briefs/manifest.json'),liveGet=id=>briefs.find(b=>b.id===id),get=id=>beforeOct24(liveGet(id));
 test('October23 source-bound changes preserve earlier events except the explicit Replit copy repair',()=>{
  assert.equal(briefs.length,11);
  for(const [id,c]of Object.entries(oct23Revision.changes)){
@@ -63,13 +63,13 @@ test('all four incorporated sources require reviewed exact links and render sour
 });
 test('new narration matches exact copy and only genuinely reviewed evidence clears the queue',()=>{
  for(const [id,c]of Object.entries(oct23Revision.changes)){
-  const b=get(id),a=audioEntry(b,audio);assert.ok(a);
+  const b=liveGet(id),a=audioEntry(b,audio);assert.ok(a);
   assert.equal(readFileSync(new URL(a.src+'.txt',root),'utf8'),narration(b)+'\n');
   assert.equal(audioEntry(c.before,audio),null);
  }
  for(const id of[1010,1011,1012,1013,1014,1015])assert.ok(reviewedIds.includes(id));
  assert.ok(!reviewedIds.includes(980));
- const q=themeQueue(feed,'2026-10-23');assert.equal(q.updates.flatMap(x=>x.items).length,0);
+ const q=themeQueue(feed,'2026-10-23',briefs.map(beforeOct24));assert.equal(q.updates.flatMap(x=>x.items).length,0);
  assert.equal(q.unclassified.filter(i=>!reviewedIds.includes(i.id)).length,0);assert.equal(q.candidates.length,0);
  assert.ok(!briefs.some(b=>b.developments.some(d=>[1011,1013].includes(d.id))));
  assert.equal(get('ai-regulation').reviewedAt,'2026-10-09');assert.equal(get('agent-economics').reviewedAt,'2026-10-22');

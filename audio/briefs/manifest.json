@@ -38,18 +38,18 @@
       "sha256": "228284d3a3634b7ee0b4b63a651304e0a42c2a0532dc7823ffdf3c6a22f8fcf8"
     },
     "safety-vs-capability": {
-      "hash": "f06004de8fab8241347befc3928174b0cc8e81b4ca79de18d53e5105651aeda1",
-      "src": "audio/briefs/safety-vs-capability-f06004de8fab8241.m4a",
-      "duration": 342.351565,
-      "bytes": 1459102,
-      "sha256": "a3a8e344819863dbb2e577df8b0a9a9b7fadc8f1d6f7c098630657d82f57ad07"
+      "hash": "7b8aed14eced5bf6fc4ab23ae2b2066f2e853a82dd9a0ae4e701bbb49486fee7",
+      "src": "audio/briefs/safety-vs-capability-7b8aed14eced5bf6.m4a",
+      "duration": 371.132698,
+      "bytes": 1579684,
+      "sha256": "91bb3a85d898cd3870fa8b0088b9e721f495c22a0536b0b97ed031623fa04b29"
     },
     "workplace-agents": {
-      "hash": "2d17f72cec430acf03d7a8c0fb1c51e50fd77ceb8da7fac2b89d5e01b61d540b",
-      "src": "audio/briefs/workplace-agents-2d17f72cec430acf.m4a",
-      "duration": 400.076372,
-      "bytes": 1701574,
-      "sha256": "17953a59151054daac0035d088c45e86ad174215fe088f3cba462b04485fc277"
+      "hash": "9622bf0bafb1e2f174201fbc0abd6ad377c0870ac2901b4a7261bc19ad614938",
+      "src": "audio/briefs/workplace-agents-9622bf0bafb1e2f1.m4a",
+      "duration": 463.594558,
+      "bytes": 1962914,
+      "sha256": "19b48ff4aa761424e0d4426b544be62dd2d16ab8156ceb3ca77d8fd3102d3992"
     },
     "ai-infrastructure": {
       "hash": "b6ca66e8ed8a18641f48b35806adad3da0f35a96ce321e8915ce51354d09a601",
@@ -59,11 +59,11 @@
       "sha256": "0c81944aa51db76d6df8938bd88ad6dc626ff3337336fde14430486d2fcc614c"
     },
     "evals": {
-      "hash": "3cb212523034341ddd553d32f9eeab4723557611f94b6032743e3053955c42ae",
-      "src": "audio/briefs/evals-3cb212523034341d.m4a",
-      "duration": 264.460181,
-      "bytes": 1109412,
-      "sha256": "5e877416f13cefa8edadac1667503765d5bdc656b7e66a93975645faec20d926"
+      "hash": "6b918da392223df9e29070354bb55f10ae19b05fddd4556b9dd7f67fbe463481",
+      "src": "audio/briefs/evals-6b918da392223df9.m4a",
+      "duration": 307.893107,
+      "bytes": 1286336,
+      "sha256": "287bb36f704c3b3d3a7733cbc30d619a419bad9d32bb8b937ad298ef9460b8be"
     },
     "open-weights": {
       "hash": "8895db27ed7d85ebd9eb729a2994d2a2838897697e779894f23cdefc36e6f182",

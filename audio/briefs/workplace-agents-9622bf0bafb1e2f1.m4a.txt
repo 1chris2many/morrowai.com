@@ -1,0 +1,47 @@
+Agents at work. More agents can mean more work waiting on you
+
+Useful AI Werks. Analysis by Codex. Reviewed October 24, 2026. Synthetic narration.
+
+Early review and interactive charts let people steer work before generating another result. TK Elevator adds a different approach: agents prepare technicians for visits and capture their spoken debriefs for future service work. AWS’s new search-domain controls let developers decide which domains can appear in Bedrock Web Search results.
+
+Three takeaways. Capture expertise. Record the reasoning from completed work. Reuse it. Give the next task better starting information. Keep it correct. Fix mistakes before they spread through later answers.
+
+What it means. The opportunity is to make a useful human decision reusable. A technician’s explanation can help the next technician; a source rule can guide later searches. That shifts some effort from repeatedly answering agents to maintaining knowledge they can use. The trade-off compounds too: an incorrect service note or an overly narrow source list can shape many later answers. Our inference is that the advantage belongs to systems that make valuable expertise easy to contribute and easy to correct. Gemini’s early review and Flint’s reusable chart controls address the same attention constraint at different stages; Duet’s proactive requests can add to it. The practical test is whether finished work needs less human repair after those maintenance costs are counted.
+
+55.0%. Average task-criteria score. GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed. Source: OpenAI, 2026-10-06.
+
+How the story developed. Persistent agents exposed a shared human bottleneck. Early review and reusable interfaces address repeated decisions within a task. Service records and source-selection rules extend that idea across tasks, adding a continuing need to maintain what gets reused.
+
+September 28. Manus introduces event-triggered automation. Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work. Source: Manus.
+
+October 6. Ironclad tests agents on legal workflows. OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully. Source: OpenAI.
+
+October 6. Atlassian expands its OpenAI partnership. Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool. Source: OpenAI.
+
+October 8. Google introduces a persistent workplace agent. Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls. Source: Google Cloud.
+
+October 8. Claude makes dashboard results inspectable. Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it. Source: Anthropic.
+
+October 12. Meta releases Muse Wonder. The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned. Source: Meta.
+
+October 12. Ambi opens early access. Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to. Source: Ambi.
+
+October 14. Meta shares human-led research manuscripts. Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work. Source: Meta.
+
+October 15. Claude expands automatic code review. Code Review is generally available to Team and Enterprise organizations. Administrators can choose Quick, Standard or Deep for each repository. Anthropic says most reviews now take six to ten minutes, compared with about twenty during preview. Source: Anthropic.
+
+October 16. Anthropic measures changes in work and hiring. The share of junior technical hires fell from 27% to 9% since early 2025. By August, employee-directed agent runtime was six times estimated human work hours, calculated using a 40-hour week. Output rose after adoption, but adoption was not randomized. Runtime is not equivalent to productive output. Source: Anthropic.
+
+October 16. Survey shows a gap in expectations about work. In August surveys, Anthropic staff expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. The public sample was weighted; the staff poll was unweighted, and the answer formats differed. These figures describe expectations, not measured automation. Source: Anthropic.
+
+October 19. Google adds an optional review before rendering. Gemini Notebook can show slide outlines or video producer notes for feedback before the final artifact renders. Users can skip the review toggle. Google announced a global rollout over the following week; it did not report measured reductions in review time or rework. Source: Google.
+
+October 22. TK Elevator captures field knowledge for the next visit. Microsoft’s case study describes agents that prepare service briefings from equipment data, manuals and history. After a visit, a voice agent records the technician’s debrief and asks follow-up questions. Technicians still perform the physical inspection and repair; the account does not quantify net time saved. Source: Microsoft.
+
+October 22. Duet brings background work back for decisions. Anthropic’s US Pro/Max waitlisted preview can return work and request decisions through messages. Background checks count against the subscriber’s existing allowance. The company acknowledges that the preview can misjudge urgency or miss intervening messages. Source: TechCrunch.
+
+October 22. Flint makes chart exploration reusable. Microsoft Research’s Flint-interactive lets agents specify filtering and linked selections while a compiler handles rendering dependencies. Readers can explore the supported views directly; the announcement does not quantify net time saved. Source: Microsoft Research.
+
+October 23. AWS moves source selection into search configuration. Amazon Bedrock Web Search adds filtering for up to 100 allowed domains or 100 blocked domains, plus optional user location. These settings filter search results; the announcement does not measure answer quality or time saved. Source: AWS.
+
+What to watch. Compare review, correction and record-maintenance time with the time saved on later tasks. Track whether incorrect notes can be corrected wherever they are reused and whether source exclusions hide relevant evidence. TK Elevator’s case study and AWS’s controls announcement do not measure net productivity gains.

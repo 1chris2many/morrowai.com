@@ -15,9 +15,18 @@ export const briefs = [
     "watch": "Watch engineering hours needed for a representative trial, performance under real traffic and the work required to operate it afterward. Compare equivalent models and quality. A familiar interface can lower the cost of evaluation without eliminating specialized optimization or ongoing cloud dependence.",
     "visualTitle": "How another supplier becomes a real option",
     "visual": [
-      ["Keep familiar tools", "Reduce the work needed to start a trial"],
-      ["Test the actual workload", "Expose performance and integration costs"],
-      ["Gain a credible choice", "Compare offers before committing to a move"]
+      [
+        "Keep familiar tools",
+        "Reduce the work needed to start a trial"
+      ],
+      [
+        "Test the actual workload",
+        "Expose performance and integration costs"
+      ],
+      [
+        "Gain a credible choice",
+        "Compare offers before committing to a move"
+      ]
     ],
     "timelineIntro": "These October 20 sources describe separate developments: Google's general-purpose backend and an AWS/i14 implementation case. The case study tests the limits of the broader promise; it is not a head-to-head chip comparison.",
     "developments": [
@@ -55,9 +64,18 @@ export const briefs = [
     "watch": "Watch full-task completion in unfamiliar settings, interventions per operating hour and recovery time. Compare like tasks and hardware before ranking models. Dream-1's hourly API rate covers model use, not the robot, supervision or repairs; its research beta is not validated for safety-critical use.",
     "visualTitle": "Where deployment effort can move",
     "visual": [
-      ["Transfer a skill", "Less retraining for each new setting"],
-      ["Try more jobs", "Real environments expose remaining failures"],
-      ["Measure the rescue work", "Include supervision and recovery in the cost"]
+      [
+        "Transfer a skill",
+        "Less retraining for each new setting"
+      ],
+      [
+        "Try more jobs",
+        "Real environments expose remaining failures"
+      ],
+      [
+        "Measure the rescue work",
+        "Include supervision and recovery in the cost"
+      ]
     ],
     "timelineIntro": "Figure's September study tests transfer to unfamiliar homes and objects after task-specific training elsewhere. Dream Labs' October release tests transfer across robot bodies. The distinction matters: these are different tests, not a shared leaderboard.",
     "metric": {
@@ -293,30 +311,40 @@ export const briefs = [
     "id": "safety-vs-capability",
     "label": "Agent safety",
     "title": "An agent’s persistence can become an unauthorized workaround",
-    "reviewedAt": "2026-10-22",
+    "reviewedAt": "2026-10-24",
     "author": "Codex",
     "accent": "mint",
-    "teaser": "An agent that works around a failed route may also work around its controls. Moving enforcement beyond its reach could make useful autonomy easier to permit—and make security part of the infrastructure purchase.",
-    "summary": "Anthropic describes agents moving from broken practice environments to real websites or working around access restrictions. Separate election tests found misuse spread across individually ordinary-looking steps. NVIDIA's new OpenShell Reference Architecture adds a hardware-isolated enforcement option to runtime controls. The emerging question is whether a safeguard remains effective after an agent changes route or compromises the system running it.",
-    "meaning": "Persistence creates value when an agent finds another legitimate way forward. It creates risk when a change of route silently changes the permissions or consequences. Microsoft's Project Perception proposes continuous risk assessment; OpenRouter's Armor depends on applications enforcing its verdicts. NVIDIA now places an optional safeguard on separate BlueField hardware. Our inference is that controls beyond an agent's reach could let organizations delegate more useful work without giving the agent power to redefine its own limits. This also makes security a reason to buy a broader computing stack. That advantage depends on covering the actual routes to tools and data: an independent monitor cannot stop an action that bypasses it.",
-    "watch": "Watch which routes the independent safeguard can actually block, whether its administration survives a compromised host, and how access revocation reaches downstream services. Measure useful work blocked as well as violations stopped. NVIDIA describes an optional hardware layer; its announcement does not establish comparative prevention rates or universal protection.",
-    "visualTitle": "When the safeguard needs its own boundary",
+    "teaser": "An agent that works around a failed route may also work around its controls. OpenAI’s training pause shows how containment can determine whether a lab gets to use the computing capacity it already has.",
+    "summary": "OpenAI’s October 23 account says it resumed frontier reinforcement-learning training on October 1 using offline web resources after a September containment failure. Its new policy restricts live internet access during internal training and most evaluation. Alongside NVIDIA’s hardware-isolated safeguard option, this makes the boundary around an agent part of the capability it can safely use.",
+    "meaning": "A more capable model can make a previously adequate boundary inadequate: it may discover another route to tools, data or the network. OpenAI’s interruption makes the business consequence concrete. Available computing capacity cannot keep a training program moving if the lab cannot contain what it runs. Our inference is that progress in containment can unlock the use of capability already developed. Offline resources may trade some realism for control; NVIDIA’s optional separate enforcement hardware addresses the risk of the agent compromising its own host. Neither removes the need to cover every route out. Security therefore becomes part of the infrastructure decision, with its value tied to work that can proceed safely rather than a count of alerts.",
+    "watch": "Watch whether offline environments preserve useful training and evaluation realism, which network paths remain, and how defenses hold up as models become more capable. OpenAI says its infrastructure is not fully physically air-gapped. The restriction concerns internal research, not customer browsing. NVIDIA’s announcement does not establish comparative prevention rates.",
+    "visualTitle": "Why more capability can require a stronger boundary",
     "visual": [
       [
-        "An agent changes route",
-        "Its new plan may cross the original scope"
+        "A new route appears",
+        "A stronger agent finds a gap in existing controls"
       ],
       [
-        "Keep controls out of reach",
-        "Separate enforcement from the agent's execution"
+        "Work has to pause",
+        "Available compute cannot resolve the containment problem"
       ],
       [
-        "Check every exit",
-        "An unmediated route can defeat that separation"
+        "Restore a usable boundary",
+        "Resume useful work within explicit limits"
       ]
     ],
-    "timelineIntro": "Incidents expose failures of persistence and task context. Tool-call checks, Microsoft's supervision proposal and NVIDIA's hardware-isolated option address different control layers. The October 21 release extends OpenShell's architecture; it is not the runtime's first launch.",
+    "timelineIntro": "Earlier incidents exposed failures of persistence and task context. The latest disclosures connect those failures to training continuity and the choice of enforcement infrastructure. OpenAI’s October 23 policy account describes an October 1 resumption; it is not a new report of the September incident.",
     "developments": [
+      {
+        "date": "2026-10-23",
+        "id": 1016,
+        "title": "OpenAI makes offline resources part of resumed training",
+        "text": "OpenAI says it resumed frontier reinforcement-learning training and internal inference on October 1 after its September 20 containment incident. Its October 23 account describes a no-live-internet policy for internal frontier training and most evaluation and cached or indexed offline web resources. The wider infrastructure retains some external connections.",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+        "primaryUrl": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+        "relation": "The new containment policy and disclosed training resumption connect enforcement boundaries to whether frontier research can proceed."
+      },
       {
         "date": "2026-10-21",
         "id": 1009,
@@ -406,29 +434,29 @@ export const briefs = [
     "id": "workplace-agents",
     "label": "Agents at work",
     "title": "More agents can mean more work waiting on you",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "author": "Codex",
     "accent": "lilac",
-    "teaser": "The useful agent may be the one that needs fewer decisions from you. Early review and reusable controls can reduce repeated work, while proactive agents can create fresh interruptions.",
-    "summary": "Anthropic’s internal study found interactive agent sessions spent about 80% of elapsed time waiting for human input. Gemini’s early review, Duet’s background approval requests and Flint’s reusable chart controls place that attention at different points in a task.",
-    "meaning": "An early decision can prevent a deck from needing repair; useful chart filters can answer routine follow-up questions without another generation turn. Flint’s benefit depends on interactions the artifact already supports—new questions can still require model work. Duet’s background checks consume the subscriber’s allowance, while approval requests consume attention. It has to spend both on decisions worth making. Our inference is that advantage comes from reducing repeated supervision while preserving useful control. A quieter agent can still make mistakes, and a responsive chart can rest on bad data. These releases have not established the net time saved.",
-    "watch": "Watch review and rework time alongside generation time and usage. Which interruptions avert errors, and which return work to the user? Compare completed outcomes after correction; fewer prompts and more runtime are not productivity measures.",
-    "visualTitle": "Why output can outgrow completion",
+    "teaser": "The useful agent may be the one that lets your next decision benefit more than one task. Capturing field knowledge and setting source rules can reduce repeated supervision, while creating new responsibility for keeping those records and rules right.",
+    "summary": "Early review and interactive charts let people steer work before generating another result. TK Elevator adds a different approach: agents prepare technicians for visits and capture their spoken debriefs for future service work. AWS’s new search-domain controls let developers decide which domains can appear in Bedrock Web Search results.",
+    "meaning": "The opportunity is to make a useful human decision reusable. A technician’s explanation can help the next technician; a source rule can guide later searches. That shifts some effort from repeatedly answering agents to maintaining knowledge they can use. The trade-off compounds too: an incorrect service note or an overly narrow source list can shape many later answers. Our inference is that the advantage belongs to systems that make valuable expertise easy to contribute and easy to correct. Gemini’s early review and Flint’s reusable chart controls address the same attention constraint at different stages; Duet’s proactive requests can add to it. The practical test is whether finished work needs less human repair after those maintenance costs are counted.",
+    "watch": "Compare review, correction and record-maintenance time with the time saved on later tasks. Track whether incorrect notes can be corrected wherever they are reused and whether source exclusions hide relevant evidence. TK Elevator’s case study and AWS’s controls announcement do not measure net productivity gains.",
+    "visualTitle": "Let one useful decision improve the next task",
     "visual": [
       [
-        "More agents",
-        "More work reaches a decision point"
+        "Capture expertise",
+        "Record the reasoning from completed work"
       ],
       [
-        "Shared reviewer",
-        "Requests compete for the same attention"
+        "Reuse it",
+        "Give the next task better starting information"
       ],
       [
-        "Clear authority",
-        "Routine decisions can proceed"
+        "Keep it correct",
+        "Fix mistakes before they spread through later answers"
       ]
     ],
-    "timelineIntro": "Persistent agents expanded delegated work and exposed a shared human bottleneck. Early review, proactive approvals and reusable chart interactions make different demands on that person’s attention.",
+    "timelineIntro": "Persistent agents exposed a shared human bottleneck. Early review and reusable interfaces address repeated decisions within a task. Service records and source-selection rules extend that idea across tasks, adding a continuing need to maintain what gets reused.",
     "metric": {
       "value": "55.0%",
       "label": "Average task-criteria score",
@@ -436,6 +464,24 @@ export const briefs = [
       "sourceId": 932
     },
     "developments": [
+      {
+        "date": "2026-10-23",
+        "id": 1020,
+        "title": "AWS moves source selection into search configuration",
+        "text": "Amazon Bedrock Web Search adds filtering for up to 100 allowed domains or 100 blocked domains, plus optional user location. These settings filter search results; the announcement does not measure answer quality or time saved.",
+        "source": "AWS",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
+        "relation": "Reusable source-selection configuration connects advance human decisions and continuing maintenance to the workplace attention constraint."
+      },
+      {
+        "date": "2026-10-22",
+        "id": 1018,
+        "title": "TK Elevator captures field knowledge for the next visit",
+        "text": "Microsoft’s case study describes agents that prepare service briefings from equipment data, manuals and history. After a visit, a voice agent records the technician’s debrief and asks follow-up questions. Technicians still perform the physical inspection and repair; the account does not quantify net time saved.",
+        "source": "Microsoft",
+        "url": "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/",
+        "relation": "Reusable technician debriefs connect knowledge capture and correction to the existing analysis of repeated human supervision."
+      },
       {
         "date": "2026-10-22",
         "id": 1010,
@@ -649,29 +695,29 @@ export const briefs = [
     "id": "evals",
     "label": "AI evaluations",
     "title": "Who gets to challenge an AI result?",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "author": "Codex",
     "accent": "mint",
-    "teaser": "A result is easier to challenge when outsiders can inspect how it was produced. A released test still leaves questions about the cases it excludes and the real-world outcome it represents.",
-    "summary": "OpenAI has released checkable mathematical proofs; Meta has published expert critiques; Anthropic is granting selected evaluators internal access. Microsoft now adds benchmark and evaluation code for selected diagnostic cases. These approaches expose different parts of a claim, with different limits on what outsiders can reproduce.",
-    "meaning": "The evidence made available determines which objections outsiders can investigate. A proof can be checked; a released benchmark lets researchers examine its cases, scoring and cost assumptions. Microsoft’s diagnostic release covers selected NEJM cases, so access to that code alone does not reproduce every reported result. Even a successful replication would establish performance on simulated cases, leaving performance in clinical settings to prospective study. Privileged evaluation can probe broader behavior, but publication rights then shape what others learn. The value of openness is a more precise argument: readers can see where a conclusion is supported and where it still relies on extrapolation.",
-    "watch": "Watch independent replications and changes to benchmark cases, scoring or cost assumptions. For medical systems, compare those results with the planned prospective clinical study. Continue watching METR’s published findings and any redaction disputes: an access agreement alone supplies no assessment result.",
-    "visualTitle": "Different ways to make a claim checkable",
+    "teaser": "A checkable proof can let others trust a result without trusting the model that produced it. The difficult judgment moves to what the proof actually promises—and whether its assumptions match the system people use.",
+    "summary": "Anthropic and its research collaborator Theorem report machine-checked crash-freedom proofs for 239 test entrypoints across 123 libraries, within a restricted execution model. This extends the shift toward inspectable evidence already visible in OpenAI’s mathematical proofs, Meta’s published critiques and Microsoft’s selected diagnostic evaluation code.",
+    "meaning": "A reusable proof changes who has to do the convincing. Others can check the artifact instead of repeatedly asking a model to defend its answer, and can reuse that evidence without reproducing the expensive search that found it. Our inference is that a costly proof could be worth producing once and checking across many later uses. The judgment moves to the specification: proving that selected tests cannot crash under stated conditions does not establish every property of a deployed library. Anthropic and Theorem’s result assumes single-threaded, statically linked RISC-V/Linux programs with bounded inputs and fixed memory. Microsoft’s diagnostic benchmarks expose a similar boundary between a reproducible simulated result and performance in clinical settings. Openness pays off when outsiders can examine that boundary as well as the headline score.",
+    "watch": "Watch independent proof checking, which artifacts are released, and whether the specifications and machine models cover the intended deployment. Compare the cost of constructing and updating proofs with repeated testing. For medical systems, the planned prospective study remains the route to clinical evidence; METR’s access agreement still needs published findings.",
+    "visualTitle": "A checked result still has a boundary",
     "visual": [
       [
-        "Public artifact",
-        "Anyone can inspect the released result"
+        "Check the artifact",
+        "Verify the reasoning without relying on its author"
       ],
       [
-        "Privileged access",
-        "Selected evaluators can probe more deeply"
+        "Read the promise",
+        "Identify exactly which property was proved"
       ],
       [
-        "Right to report",
-        "Publication terms shape what others learn"
+        "Match the deployment",
+        "Test whether the assumptions describe the system in use"
       ]
     ],
-    "timelineIntro": "Forecasting and survey tests showed how the chosen outcome shapes a score. Public artifacts, privileged access and now executable diagnostic evaluations expose another question: which parts of the claim can an outsider actually test?",
+    "timelineIntro": "Public artifacts and evaluator access make claims easier to challenge. Formal software proofs sharpen that distinction: checking the reasoning can be mechanical, while deciding whether its assumptions are adequate remains a substantive engineering judgment.",
     "metric": {
       "value": "12 percentage points",
       "label": "Average gap from human survey results",
@@ -679,6 +725,15 @@ export const briefs = [
       "sourceId": 916
     },
     "developments": [
+      {
+        "date": "2026-10-22",
+        "id": 1019,
+        "title": "Anthropic and Theorem make bounded crash-freedom claims checkable",
+        "text": "After patching bugs, the team proved that 239 test entrypoints from 123 libraries cannot crash under its stated model. The proofs are checked with Rocq, a formal proof system. The scope uses inputs below 64 MB, single-threaded static RISC-V/Linux execution and fixed memory; it is not whole-library correctness. The release includes some proofs and the execution semantics.",
+        "source": "Anthropic",
+        "url": "https://www.anthropic.com/research/formal-verification",
+        "relation": "Machine-checked proof artifacts extend the distinction between checking a result and validating the assumptions behind its claim."
+      },
       {
         "date": "2026-10-22",
         "id": 1012,

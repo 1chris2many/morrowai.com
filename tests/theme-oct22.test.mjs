@@ -9,7 +9,7 @@ import {related,validateBriefs,renderThemes} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
 const feed=read('news.json'),audio=read('audio/briefs/manifest.json');
-const get=id=>briefs.find(b=>b.id===id);
+const liveGet=id=>briefs.find(b=>b.id===id),get=id=>beforeOct23(liveGet(id));
 test('October22 exact reviewed replacements preserve every earlier development and stable identity',()=>{
  assert.equal(briefs.length,11);
  for(const [id,c]of Object.entries(oct22Revision.changes)){
@@ -55,7 +55,7 @@ test('exact sources and primary links are required; unreviewed or wrong links fa
 });
 test('both narrations match exact copy and reject the prior approved version',()=>{
  for(const [id,c]of Object.entries(oct22Revision.changes)){
-  const b=get(id),a=audioEntry(b,audio);assert.ok(a);
+  const b=liveGet(id),a=audioEntry(b,audio);assert.ok(a);
   assert.equal(readFileSync(new URL('../'+a.src+'.txt',import.meta.url),'utf8'),narration(b)+'\n');
   assert.equal(audioEntry(c.before,audio),null);
   assert.equal(audioEntry({...b,meaning:b.meaning+' unreviewed'},audio),null);

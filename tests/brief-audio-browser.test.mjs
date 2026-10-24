@@ -80,7 +80,7 @@ test('October23 updated briefings and primary links remain usable on phone and d
   const section=page.locator('#'+id);await section.locator('h2').scrollIntoViewIfNeeded();
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   assert.equal(await section.locator('audio').count(),1);
-  assert.equal(await section.locator('header time').getAttribute('datetime'),'2026-10-23');
+  assert.equal(await section.locator('header time').getAttribute('datetime'),briefs.find(b=>b.id===id).reviewedAt);
   await page.screenshot({path:`test-results/oct23-${id}-${width}.png`});
  }
  assert.equal(await page.locator('#workplace-agents-source-1010 a').count(),2);
