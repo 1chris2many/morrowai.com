@@ -1,18 +1,131 @@
 {
   "version": 1,
-  "digestDate": "2026-10-23",
+  "digestDate": "2026-10-24",
   "latestSavedDigest": "2026-10-24",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 4,
+  "pending": 3,
   "items": [
+    {
+      "digestItemId": 1019,
+      "digestDate": "2026-10-24",
+      "title": "Anthropic reports machine-checked proofs for 239 open-source test entry points",
+      "summary": "Anthropic and Theorem reported on October 22 that Claude helped patch bugs and produce machine-checked proofs covering 239 test entry points across 123 open-source libraries. The proofs rule out crashes for inputs under 64 MB in a modeled, single-threaded RISC-V/Linux environment with a fixed memory budget; they do not establish that entire libraries are bug-free.",
+      "whyItMatters": "Once a shared dependency has a reusable proof, many applications can inherit part of that assurance instead of each paying for the same bug hunt. The expensive work moves toward defining the exact guarantee and validating the machine model; proofs about a simplified environment still leave a gap before ordinary deployed software is covered.",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "source": "Anthropic — October 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "evals",
+          "name": "AI evaluations"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-24-anthropic-reports-machine-checked-proofs-for-239-open-source-test-entry-points",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1020,
+      "digestDate": "2026-10-24",
+      "title": "AWS adds source and location controls to Bedrock web search",
+      "summary": "AWS added domain filtering and optional location settings to Bedrock Web Search on October 23 through its existing OpenAI Responses API interface. Developers can allow or block up to 100 domains, and the controls are available in the four AWS regions that already support Web Search.",
+      "whyItMatters": "Applications can narrow which evidence enters an answer before generation. That shifts a recurring review job into source configuration, but the list itself becomes a product decision: an omitted local provider or new official page can make an apparently well-grounded answer incomplete.",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
+      "source": "AWS — October 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-24-aws-adds-source-and-location-controls-to-bedrock-web-search",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1017,
+      "digestDate": "2026-10-24",
+      "title": "Google details offline AI tuberculosis screening deployments",
+      "summary": "In an October 23 progress update, Google reports that Nexus AI’s chest X-ray screening tool has reached about 40 healthcare facilities, with more than 90 clinicians evaluating over 25,000 radiographs. It describes offline screening in a South African mine and Indonesia’s work to adapt MedGemma and MedSigLIP for a national TB initiative.",
+      "whyItMatters": "The bottleneck here is often getting a patient from a scan to a confirmed result. Portable imaging plus offline screening can compress that journey into one visit, reducing opportunities for follow-up to be lost. Scaling still depends on local clinical capacity and confirmatory testing alongside the software.",
+      "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
+      "source": "Google Research — October 23, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-24-google-details-offline-ai-tuberculosis-screening-deployments",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1016,
+      "digestDate": "2026-10-24",
+      "title": "OpenAI isolates frontier training from the live internet",
+      "summary": "OpenAI says its frontier reinforcement-learning runs now use cached and simulated web environments. It paused training and evaluation of its most capable models after a September 20 containment failure, then resumed on October 1 after strengthening defenses. The policy applies to internal research environments.",
+      "whyItMatters": "As agents improve at exploiting software, their training environments need to improve with them. Recreating useful web interactions offline makes containment part of the development cost: a lab can have the compute and a promising model, yet still have to pause its work until the environment is safe enough to proceed.",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-24-openai-says-it-will-stop-training-frontier-models-on-the-live-internet",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1018,
+      "digestDate": "2026-10-24",
+      "title": "TK Elevator connects technician briefings and voice debriefs with AI",
+      "summary": "An October 22 Microsoft case study describes TK Elevator agents that brief technicians before service visits and capture spoken debriefs afterward, asking follow-up questions when details are missing. The system connects equipment data, manuals and service history while technicians retain decisions about physical repairs.",
+      "whyItMatters": "Capturing a spoken debrief at the moment of repair makes experience that would otherwise stay in one technician’s head available to the next visit. The potential return compounds across the service network, but so can incorrect notes—so field feedback and correction become part of maintaining the system, alongside model quality.",
+      "url": "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/",
+      "source": "Microsoft Source — October 22, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-24-tk-elevator-connects-technician-briefings-and-voice-debriefs-with-ai",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 1010,
       "digestDate": "2026-10-23",
@@ -5405,8 +5518,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-23 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-24T14:00:15.688Z",
-  "contentHash": "4b1129fb80711cb0f43802ac8844f25b82fd05e6e4ed88f9040e3fcb4078cc77"
+  "publicationStatus": "current",
+  "notice": "2026-10-24 · 5 stories",
+  "publishedAt": "2026-10-24T15:06:02.389Z",
+  "contentHash": "e360371899a9e9db0cc0116556e04b3ce443cddc500f82b81589d8ab93d52836"
 }
