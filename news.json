@@ -1,18 +1,131 @@
 {
   "version": 1,
-  "digestDate": "2026-10-24",
+  "digestDate": "2026-10-25",
   "latestSavedDigest": "2026-10-25",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 5,
+  "pending": 3,
   "items": [
+    {
+      "digestItemId": 1022,
+      "digestDate": "2026-10-25",
+      "title": "API study finds opposite political preferences in forced candidate choices",
+      "summary": "Convovo tested GPT-6.1 Sol and Grok 4.7 through their developers’ APIs with web search, explicitly requiring a single candidate choice in 2026 congressional and governor races. In the October 21 runs, GPT’s choices predominantly favored Democrats and Grok’s Republicans; the researchers say the consumer apps declined the same request.",
+      "whyItMatters": "An app can avoid direct voting recommendations while its underlying API still makes them. For developers, swapping models can change the politics of a product even when its own prompt stays fixed. Neutrality has to be tested in the actual search-and-answer workflow; a consumer app’s refusal is not a guarantee inherited by tools built on its API.",
+      "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-25-study-finds-grok-and-gpt-models-give-opposite-political-recommendations-when-forced-to-pick-a-candidate",
+      "editorialNote": "API tests conducted October 21, 2026; reported October 24."
+    },
+    {
+      "digestItemId": 1025,
+      "digestDate": "2026-10-25",
+      "title": "AWS opens custom training loops without reserved GPU capacity",
+      "summary": "AWS made SageMaker AI training sessions generally available, letting developers supply their own post-training loops and reward functions while AWS manages GPU allocation and recovery. Billing covers processed tokens and pauses while a customer’s reward function scores a batch in its own environment.",
+      "whyItMatters": "Agent training alternates between generating actions and waiting for tools or evaluators to score them. Paying for reserved GPUs through those pauses can make a slow evaluator an expensive design choice. Token billing shifts that idle-capacity problem to AWS and leaves customers freer to design useful checks, although their own evaluation infrastructure still costs money.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+      "source": "AWS",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-25-aws-opens-custom-training-loops-without-reserved-gpu-capacity",
+      "editorialNote": "Announced October 22, 2026."
+    },
+    {
+      "digestItemId": 1021,
+      "digestDate": "2026-10-25",
+      "title": "Block previews Dessa, a speech-only voice model",
+      "summary": "Block is previewing Dessa, a model trained directly on human conversation that can listen and speak at the same time. The company says it runs locally on a MacBook Pro M4 Max or better and is offering early access to a small group of safety researchers.",
+      "whyItMatters": "Turning speech into text discards timing and tone that can explain what a person means. Preserving them could reduce the back-and-forth needed to clarify a request, while local execution shifts serving costs onto the device. That makes understanding the task—not just sounding natural—the useful test of whether this approach earns its hardware requirements.",
+      "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-25-block-releases-dessa-a-locally-run-voice-ai-model-that-carries-emotion-in-speech",
+      "editorialNote": "Limited research preview; reported October 24, 2026."
+    },
+    {
+      "digestItemId": 1023,
+      "digestDate": "2026-10-25",
+      "title": "Kimi K3.1 Pro launches ahead of its planned weights release",
+      "summary": "Moonshot released Kimi K3.1 Pro across its apps, coding tool and API, with full model weights promised by November 4. The company says it removed cybersecurity-related training data to limit offensive capability before the open release, while retaining general coding tasks.",
+      "whyItMatters": "Once weights are distributed, a provider cannot rely on its own hosting controls to govern every deployment. Moonshot is therefore moving part of that control into training. Its own tests still show substantial cyber capability after filtering, so the release tests whether reducing a capability before distribution meaningfully limits misuse as ordinary coding ability improves.",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "source": "Moonshot AI",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Security"
+      ],
+      "themes": [
+        {
+          "id": "open-weights",
+          "name": "Open and closed models"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-25-kimi-k3-1-pro-launches-ahead-of-its-planned-weights-release",
+      "editorialNote": "Released October 23, 2026; full weights are planned for November 4."
+    },
+    {
+      "digestItemId": 1024,
+      "digestDate": "2026-10-25",
+      "title": "Sakana packages shared business rules into its Aquarium agent platform",
+      "summary": "Sakana AI announced Aquarium, a platform that connects business data, definitions and rules for use by multiple agents. It combines reusable data connections with access permissions, human approvals and records linking decisions to their results.",
+      "whyItMatters": "An agent rollout becomes expensive when every team must reconnect the same data and explain the same business rules. Sharing that work could make each additional agent cheaper to deploy, but it also concentrates errors: a mistaken definition can spread across many workflows. The upkeep of shared rules becomes a product requirement as important as the agents themselves.",
+      "url": "https://sakana.ai/aquarium-release/",
+      "source": "Sakana AI",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-25-sakana-packages-shared-business-rules-into-its-aquarium-agent-platform",
+      "editorialNote": "Announced October 23, 2026."
+    },
     {
       "digestItemId": 1019,
       "digestDate": "2026-10-24",
@@ -5518,8 +5631,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-24 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-25T14:00:19.536Z",
-  "contentHash": "d677b7344d7b3061590690120ddbdcc862864c72332d7b2545deae36ea5c0b9f"
+  "publicationStatus": "current",
+  "notice": "2026-10-25 · 5 stories",
+  "publishedAt": "2026-10-25T15:09:40.151Z",
+  "contentHash": "0effc3bbee6471166a23a355ad54ddab04dec2e244f5ca1aebd9904496d9676c"
 }
