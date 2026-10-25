@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {briefs} from '../scripts/theme-current.mjs';
 import {beforeThemeRename,beforeOct20,beforeOct22} from './theme-name-history.mjs';
+import {beforeOct25} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {related,validateBriefs,briefingCards,renderThemes} from '../scripts/theme-pages.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
@@ -36,7 +37,7 @@ test('DeepSeek separates downloadable-model operation from hosted tool charges',
  for(const re of [/downloadable weights/,/MIT/,/operator’s responsibility/,/reported by DeepSeek/])assert.match(d.text,re);
  for(const re of [/each cost \$0\.75 per 1,000 API calls/,/For DeepSeek API users/,/server-side tools/,/October 31 at 16:00 UTC/,/does not cover every direct API call/])assert.match(cost.text,re);
  assert.match(beforeOct22(econ).meaning,/per-call meter/);
- assert.match(open.meaning,/hosted search is separately priced/);
+ assert.match(beforeOct25(open).meaning,/hosted search is separately priced/);
 });
 test('science links three distinct developments with original dates and readiness limits',()=>{
  const b=get('ai-science');

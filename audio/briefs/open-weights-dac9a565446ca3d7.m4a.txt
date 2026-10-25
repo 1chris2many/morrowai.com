@@ -1,0 +1,31 @@
+Open models. Publishing weights makes some safeguards harder to enforce
+
+Useful AI Werks. Analysis by Codex. Reviewed October 25, 2026. Synthetic narration.
+
+Moonshot has released hosted Kimi K3.1 Pro and plans to publish its weights by November 4. It says it removed cybersecurity-related training data to reduce offensive capability, while retaining general coding work. Its own tests still show greater cyber capability than the preceding model. Earlier releases from DeepSeek and Meta already let users operate weights on their own infrastructure.
+
+Three takeaways. Train the model. Choose which capabilities to develop or restrict. Distribute the weights. Allow operators to run their own copies. Control each deployment. Set local permissions, tools and monitoring.
+
+What it means. A hosted provider can change access rules or screen requests at its service boundary. Once others operate the weights, those measures cannot govern every copy. Moonshot’s approach puts part of the restriction into what the model learns, trading some capability for a limit it hopes will travel with the release. Its reported results expose a tension: ordinary coding improvements can increase cyber capability even after targeted data removal. Our inference is that publishing weights changes who bears the work of controlling use. Developers gain deployment choice, while operators inherit more responsibility for permissions, tools and monitoring. Efficient runtimes still determine who can afford that independence; downloadable weights do not remove reliance on separately paid services such as search.
+
+How the story developed. Earlier releases expanded who could deploy models and which hardware could run them. Moonshot’s October 23 announcement adds a planned release with explicit training-time restrictions. Its hosted model is available; the weights remain a future commitment.
+
+October 5. Reflection previews Beam. Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October. Source: Reflection.
+
+October 6. Google releases a compact media-search model. EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support. Source: Google.
+
+October 6. Mistral opens a Large 4 API preview. Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API. Source: Mistral.
+
+October 15. Meta releases Muse Spark Open weights. Meta describes running its 816-billion-parameter model, with 42 billion active per token, on two M5 Ultra Mac Studios using MLX. Weights and hosted access are available. The Muse Model License has limited commercial terms; downloadable weights do not imply unrestricted commercial use. Source: Meta.
+
+October 15. FLUX releases image-generation and editing weights. FLUX 3 Image Klein includes base and distilled weights. Its image generator has 5.6 billion parameters, excluding the text encoder. The FLUX Kommunity License permits free commercial use for individuals and companies with annual revenue under $5 million; larger organizations need a commercial arrangement for commercial deployment. Source: Black Forest Labs.
+
+October 15. IBM announces combined chat, decisions and transcription. IBM’s announcement describes Granite Switch 4.1 models released October 14. Decision and safety adapters plus speech transcription surround 8B or 30B base models, under Apache 2.0 licensing. IBM says the combined system uses approximately the base model’s GPU memory, a claim to test on the intended workload. Source: IBM.
+
+October 15. NVIDIA releases server and local Nemotron models. Super VL and Bolt 74B-A9B are available now, according to NVIDIA. The company says Bolt uses a 2-bit representation to fit in 24GB of memory on supported local systems. The smaller Bolt E4B is due October 23. Source: NVIDIA.
+
+October 17. DeepSeek publishes updated weights and integration tools. V4.1 Flash 1017 is available through DeepSeek’s hosted services and as downloadable weights. Its official model repository lists MIT licensing and a prompt-format toolkit. Inference, tool execution and transport remain the operator’s responsibility. Performance improvements are reported by DeepSeek. Source: DeepSeek.
+
+October 23. Moonshot plans a weights release with training-time cyber restrictions. Kimi K3.1 Pro is available through Moonshot’s products and API, with full weights planned by November 4. Moonshot reports removing cyber-related data from two training stages; its final model still outperforms its predecessor on the company’s cyber benchmark. Source: Moonshot AI.
+
+What to watch. Check whether the promised weights actually appear, what independent tests find after release, and which restrictions survive modification or new tool access. Compare defensive usefulness and misuse risk under the same conditions. Moonshot’s internal benchmark is evidence of its reported trade-off, not proof that filtering prevents misuse.

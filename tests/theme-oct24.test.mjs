@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
-import {oct24Revision,beforeOct24} from './theme-name-history.mjs';
+import {oct24Revision,beforeOct24,beforeOct25} from './theme-name-history.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
 import {narration,audioEntry} from '../scripts/brief-audio.mjs';
 import {themeQueue} from '../scripts/theme-lifecycle.mjs';
@@ -11,7 +11,7 @@ const root=new URL('../',import.meta.url),read=p=>JSON.parse(readFileSync(new UR
 test('October24 revision preserves each prior development and metric; history adapter cannot hide stray edits',()=>{
  assert.equal(briefs.length,11);
  for(const[id,c]of Object.entries(oct24Revision.changes)){
-  const b=briefs.find(x=>x.id===id);assert.deepEqual(b,c.after);assert.deepEqual(beforeOct24(b),c.before);
+  const b=beforeOct25(briefs.find(x=>x.id===id));assert.deepEqual(b,c.after);assert.deepEqual(beforeOct24(b),c.before);
   assert.equal(b.title,c.before.title);assert.deepEqual(b.metric,c.before.metric);
   for(const d of c.before.developments)assert.deepEqual(b.developments.find(x=>x.id===d.id),d);
   for(const key of Object.keys(b)){const bad=structuredClone(b);bad[key]=typeof bad[key]==='string'?bad[key]+' unreviewed':null;assert.equal(beforeOct24(bad),bad,key);}
@@ -37,6 +37,6 @@ test('triage clears only read evidence without inventing a health theme or incor
  for(const id of[1016,1017,1018,1019,1020])assert.ok(reviewedIds.includes(id));
  assert.ok(!reviewedIds.includes(980));
  assert.ok(!briefs.some(b=>b.developments.some(d=>[980,1017].includes(d.id))));
- const q=themeQueue(feed,'2026-10-24');assert.equal(q.updates.flatMap(x=>x.items).length,0);
+ const q=themeQueue(feed,briefs.map(b=>b.reviewedAt).sort().at(-1));assert.equal(q.updates.flatMap(x=>x.items).length,0);
  assert.equal(q.unclassified.filter(i=>!reviewedIds.includes(i.id)).length,0);assert.equal(q.candidates.length,0);
 });

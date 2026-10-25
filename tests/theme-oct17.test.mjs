@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
 import {beforeThemeRename,beforeOct20} from './theme-name-history.mjs';
+import {beforeOct25} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs,briefingCards} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
@@ -33,7 +34,7 @@ test('October17 source dates and key limitations survive synthesis',()=>{
  }
  const model=open.developments.find(d=>d.id===976);
  assert.match(model.text,/two M5 Ultra Mac Studios/);assert.match(model.text,/limited commercial terms/);
- assert.match(open.meaning,/multiple high-memory machines/);
+ assert.match(beforeOct25(open).meaning,/multiple high-memory machines/);
  const survey=work.developments.find(d=>d.id===977);
  for(const re of [/August surveys/,/75%/,/28%/,/employed US respondents/,/unweighted/,/answer formats differed/,/expectations, not measured automation/])assert.match(survey.text,re);
  const armor=safety.developments.find(d=>d.id===978);

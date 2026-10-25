@@ -1,0 +1,729 @@
+{
+  "changes": {
+    "open-weights": {
+      "before": {
+        "id": "open-weights",
+        "label": "Open models",
+        "title": "Open models shift the advantage toward deployment",
+        "reviewedAt": "2026-10-18",
+        "author": "Codex",
+        "accent": "gold",
+        "teaser": "Once weights are available, memory use and surrounding software help decide who can actually run them. A smaller headline parameter count can conceal a much larger system.",
+        "summary": "Meta’s desktop demonstration uses two high-memory machines to hold a model far larger than the portion active for each token. FLUX’s compact parameter figure excludes its text encoder. IBM instead reuses a shared base model and its cached context across specialist adapters. These releases show why deployment engineering changes the resources needed to make a downloadable model usable.",
+        "meaning": "Publishing weights widens the set of potential operators. Efficient implementations determine how far that access extends: multiple high-memory machines, extra components or a poorly matched runtime can limit who benefits. Advantage can therefore move toward the people who make models practical on available hardware. Control also remains divided. DeepSeek’s weights are downloadable, while its hosted search is separately priced; an open model can still sit inside a system that depends on paid services.",
+        "watch": "Watch independent tests of total memory and response time, including every required component, and whether practical implementations spread beyond vendor demonstrations. License terms and pending weight releases still determine who has access in the first place.",
+        "visualTitle": "Where practical access is decided",
+        "visual": [
+          [
+            "Weights",
+            "The model becomes obtainable"
+          ],
+          [
+            "Implementation",
+            "Memory, adapters and runtimes shape the system"
+          ],
+          [
+            "Deployment",
+            "Hardware and service needs decide who can run it"
+          ]
+        ],
+        "timelineIntro": "The releases broaden the choice of downloadable models. Their contrasting implementations show why active parameters, total weights and complete system requirements cannot be treated as the same measure.",
+        "developments": [
+          {
+            "date": "2026-10-17",
+            "id": 982,
+            "title": "DeepSeek publishes updated weights and integration tools",
+            "text": "V4.1 Flash 1017 is available through DeepSeek’s hosted services and as downloadable weights. Its official model repository lists MIT licensing and a prompt-format toolkit. Inference, tool execution and transport remain the operator’s responsibility. Performance improvements are reported by DeepSeek.",
+            "source": "DeepSeek",
+            "url": "https://api-docs.deepseek.com/news/news261017/",
+            "relation": "The announcement links the exact official model repository, whose weights, license and runtime responsibilities were reviewed for this deployment comparison."
+          },
+          {
+            "date": "2026-10-15",
+            "id": 976,
+            "title": "Meta releases Muse Spark Open weights",
+            "text": "Meta describes running its 816-billion-parameter model, with 42 billion active per token, on two M5 Ultra Mac Studios using MLX. Weights and hosted access are available. The Muse Model License has limited commercial terms; downloadable weights do not imply unrestricted commercial use.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/muse-spark-open"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 973,
+            "title": "FLUX releases image-generation and editing weights",
+            "text": "FLUX 3 Image Klein includes base and distilled weights. Its image generator has 5.6 billion parameters, excluding the text encoder. The FLUX Kommunity License permits free commercial use for individuals and companies with annual revenue under $5 million; larger organizations need a commercial arrangement for commercial deployment.",
+            "source": "Black Forest Labs",
+            "url": "https://bfl.ai/blog/flux-3-image-klein"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 971,
+            "title": "IBM announces combined chat, decisions and transcription",
+            "text": "IBM’s announcement describes Granite Switch 4.1 models released October 14. Decision and safety adapters plus speech transcription surround 8B or 30B base models, under Apache 2.0 licensing. IBM says the combined system uses approximately the base model’s GPU memory, a claim to test on the intended workload.",
+            "source": "IBM",
+            "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 965,
+            "title": "NVIDIA releases server and local Nemotron models",
+            "text": "Super VL and Bolt 74B-A9B are available now, according to NVIDIA. The company says Bolt uses a 2-bit representation to fit in 24GB of memory on supported local systems. The smaller Bolt E4B is due October 23.",
+            "source": "NVIDIA",
+            "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 937,
+            "title": "Google releases a compact media-search model",
+            "text": "EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 936,
+            "title": "Mistral opens a Large 4 API preview",
+            "text": "Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API.",
+            "source": "Mistral",
+            "url": "https://mistral.ai/news/mistral-large-4/"
+          },
+          {
+            "date": "2026-10-05",
+            "id": 925,
+            "title": "Reflection previews Beam",
+            "text": "Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October.",
+            "source": "Reflection",
+            "url": "https://reflection.ai/blog/introducing-beam"
+          }
+        ]
+      },
+      "after": {
+        "id": "open-weights",
+        "label": "Open models",
+        "title": "Publishing weights makes some safeguards harder to enforce",
+        "reviewedAt": "2026-10-25",
+        "author": "Codex",
+        "accent": "gold",
+        "teaser": "Operating a model yourself gives you control over its use. It also limits the original provider’s ability to enforce restrictions through its service, moving some safety choices into training and others to each operator.",
+        "summary": "Moonshot has released hosted Kimi K3.1 Pro and plans to publish its weights by November 4. It says it removed cybersecurity-related training data to reduce offensive capability, while retaining general coding work. Its own tests still show greater cyber capability than the preceding model. Earlier releases from DeepSeek and Meta already let users operate weights on their own infrastructure.",
+        "meaning": "A hosted provider can change access rules or screen requests at its service boundary. Once others operate the weights, those measures cannot govern every copy. Moonshot’s approach puts part of the restriction into what the model learns, trading some capability for a limit it hopes will travel with the release. Its reported results expose a tension: ordinary coding improvements can increase cyber capability even after targeted data removal. Our inference is that publishing weights changes who bears the work of controlling use. Developers gain deployment choice, while operators inherit more responsibility for permissions, tools and monitoring. Efficient runtimes still determine who can afford that independence; downloadable weights do not remove reliance on separately paid services such as search.",
+        "watch": "Check whether the promised weights actually appear, what independent tests find after release, and which restrictions survive modification or new tool access. Compare defensive usefulness and misuse risk under the same conditions. Moonshot’s internal benchmark is evidence of its reported trade-off, not proof that filtering prevents misuse.",
+        "visualTitle": "Where control moves after weights are released",
+        "visual": [
+          [
+            "Train the model",
+            "Choose which capabilities to develop or restrict"
+          ],
+          [
+            "Distribute the weights",
+            "Allow operators to run their own copies"
+          ],
+          [
+            "Control each deployment",
+            "Set local permissions, tools and monitoring"
+          ]
+        ],
+        "timelineIntro": "Earlier releases expanded who could deploy models and which hardware could run them. Moonshot’s October 23 announcement adds a planned release with explicit training-time restrictions. Its hosted model is available; the weights remain a future commitment.",
+        "developments": [
+          {
+            "date": "2026-10-23",
+            "id": 1023,
+            "title": "Moonshot plans a weights release with training-time cyber restrictions",
+            "text": "Kimi K3.1 Pro is available through Moonshot’s products and API, with full weights planned by November 4. Moonshot reports removing cyber-related data from two training stages; its final model still outperforms its predecessor on the company’s cyber benchmark.",
+            "source": "Moonshot AI",
+            "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+            "relation": "Personally read primary release and dated release note; pending distribution changes the reach of hosting controls, while vendor tests show residual capability."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 982,
+            "title": "DeepSeek publishes updated weights and integration tools",
+            "text": "V4.1 Flash 1017 is available through DeepSeek’s hosted services and as downloadable weights. Its official model repository lists MIT licensing and a prompt-format toolkit. Inference, tool execution and transport remain the operator’s responsibility. Performance improvements are reported by DeepSeek.",
+            "source": "DeepSeek",
+            "url": "https://api-docs.deepseek.com/news/news261017/",
+            "relation": "The announcement links the exact official model repository, whose weights, license and runtime responsibilities were reviewed for this deployment comparison."
+          },
+          {
+            "date": "2026-10-15",
+            "id": 976,
+            "title": "Meta releases Muse Spark Open weights",
+            "text": "Meta describes running its 816-billion-parameter model, with 42 billion active per token, on two M5 Ultra Mac Studios using MLX. Weights and hosted access are available. The Muse Model License has limited commercial terms; downloadable weights do not imply unrestricted commercial use.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/muse-spark-open"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 973,
+            "title": "FLUX releases image-generation and editing weights",
+            "text": "FLUX 3 Image Klein includes base and distilled weights. Its image generator has 5.6 billion parameters, excluding the text encoder. The FLUX Kommunity License permits free commercial use for individuals and companies with annual revenue under $5 million; larger organizations need a commercial arrangement for commercial deployment.",
+            "source": "Black Forest Labs",
+            "url": "https://bfl.ai/blog/flux-3-image-klein"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 971,
+            "title": "IBM announces combined chat, decisions and transcription",
+            "text": "IBM’s announcement describes Granite Switch 4.1 models released October 14. Decision and safety adapters plus speech transcription surround 8B or 30B base models, under Apache 2.0 licensing. IBM says the combined system uses approximately the base model’s GPU memory, a claim to test on the intended workload.",
+            "source": "IBM",
+            "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 965,
+            "title": "NVIDIA releases server and local Nemotron models",
+            "text": "Super VL and Bolt 74B-A9B are available now, according to NVIDIA. The company says Bolt uses a 2-bit representation to fit in 24GB of memory on supported local systems. The smaller Bolt E4B is due October 23.",
+            "source": "NVIDIA",
+            "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 937,
+            "title": "Google releases a compact media-search model",
+            "text": "EmbeddingGemma 2 converts text and other media into numerical representations for search. The 740-million-parameter model has an Apache 2.0 license, and developers can choose which media types to support.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 936,
+            "title": "Mistral opens a Large 4 API preview",
+            "text": "Mistral plans to release the weights by the end of October, following further red-team testing. The preview is available through its hosted API.",
+            "source": "Mistral",
+            "url": "https://mistral.ai/news/mistral-large-4/"
+          },
+          {
+            "date": "2026-10-05",
+            "id": 925,
+            "title": "Reflection previews Beam",
+            "text": "Reflection announced its coding, reasoning and agent model, with final testing underway and weights and technical documentation promised later in October.",
+            "source": "Reflection",
+            "url": "https://reflection.ai/blog/introducing-beam"
+          }
+        ]
+      }
+    },
+    "workplace-agents": {
+      "before": {
+        "id": "workplace-agents",
+        "label": "Agents at work",
+        "title": "More agents can mean more work waiting on you",
+        "reviewedAt": "2026-10-24",
+        "author": "Codex",
+        "accent": "lilac",
+        "teaser": "The useful agent may be the one that lets your next decision benefit more than one task. Capturing field knowledge and setting source rules can reduce repeated supervision, while creating new responsibility for keeping those records and rules right.",
+        "summary": "Early review and interactive charts let people steer work before generating another result. TK Elevator adds a different approach: agents prepare technicians for visits and capture their spoken debriefs for future service work. AWS’s new search-domain controls let developers decide which domains can appear in Bedrock Web Search results.",
+        "meaning": "The opportunity is to make a useful human decision reusable. A technician’s explanation can help the next technician; a source rule can guide later searches. That shifts some effort from repeatedly answering agents to maintaining knowledge they can use. The trade-off compounds too: an incorrect service note or an overly narrow source list can shape many later answers. Our inference is that the advantage belongs to systems that make valuable expertise easy to contribute and easy to correct. Gemini’s early review and Flint’s reusable chart controls address the same attention constraint at different stages; Duet’s proactive requests can add to it. The practical test is whether finished work needs less human repair after those maintenance costs are counted.",
+        "watch": "Compare review, correction and record-maintenance time with the time saved on later tasks. Track whether incorrect notes can be corrected wherever they are reused and whether source exclusions hide relevant evidence. TK Elevator’s case study and AWS’s controls announcement do not measure net productivity gains.",
+        "visualTitle": "Let one useful decision improve the next task",
+        "visual": [
+          [
+            "Capture expertise",
+            "Record the reasoning from completed work"
+          ],
+          [
+            "Reuse it",
+            "Give the next task better starting information"
+          ],
+          [
+            "Keep it correct",
+            "Fix mistakes before they spread through later answers"
+          ]
+        ],
+        "timelineIntro": "Persistent agents exposed a shared human bottleneck. Early review and reusable interfaces address repeated decisions within a task. Service records and source-selection rules extend that idea across tasks, adding a continuing need to maintain what gets reused.",
+        "metric": {
+          "value": "55.0%",
+          "label": "Average task-criteria score",
+          "context": "GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed.",
+          "sourceId": 932
+        },
+        "developments": [
+          {
+            "date": "2026-10-23",
+            "id": 1020,
+            "title": "AWS moves source selection into search configuration",
+            "text": "Amazon Bedrock Web Search adds filtering for up to 100 allowed domains or 100 blocked domains, plus optional user location. These settings filter search results; the announcement does not measure answer quality or time saved.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
+            "relation": "Reusable source-selection configuration connects advance human decisions and continuing maintenance to the workplace attention constraint."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1018,
+            "title": "TK Elevator captures field knowledge for the next visit",
+            "text": "Microsoft’s case study describes agents that prepare service briefings from equipment data, manuals and history. After a visit, a voice agent records the technician’s debrief and asks follow-up questions. Technicians still perform the physical inspection and repair; the account does not quantify net time saved.",
+            "source": "Microsoft",
+            "url": "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/",
+            "relation": "Reusable technician debriefs connect knowledge capture and correction to the existing analysis of repeated human supervision."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1010,
+            "title": "Duet brings background work back for decisions",
+            "text": "Anthropic’s US Pro/Max waitlisted preview can return work and request decisions through messages. Background checks count against the subscriber’s existing allowance. The company acknowledges that the preview can misjudge urgency or miss intervening messages.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+            "primaryUrl": "https://claude.com/product/claude-duet",
+            "relation": "Directly checked product terms connect background usage and human interruptions to the attention bottleneck, without claiming measured productivity."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1015,
+            "title": "Flint makes chart exploration reusable",
+            "text": "Microsoft Research’s Flint-interactive lets agents specify filtering and linked selections while a compiler handles rendering dependencies. Readers can explore the supported views directly; the announcement does not quantify net time saved.",
+            "source": "Microsoft Research",
+            "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
+          },
+          {
+            "date": "2026-10-19",
+            "id": 996,
+            "title": "Google adds an optional review before rendering",
+            "text": "Gemini Notebook can show slide outlines or video producer notes for feedback before the final artifact renders. Users can skip the review toggle. Google announced a global rollout over the following week; it did not report measured reductions in review time or rework.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/"
+          },
+          {
+            "date": "2026-10-16",
+            "id": 979,
+            "title": "Anthropic measures changes in work and hiring",
+            "text": "The share of junior technical hires fell from 27% to 9% since early 2025. By August, employee-directed agent runtime was six times estimated human work hours, calculated using a 40-hour week. Output rose after adoption, but adoption was not randomized. Runtime is not equivalent to productive output.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/research/employment-at-anthropic",
+            "relation": "Internal employment and agent-use evidence extends the workplace briefing beyond expectations to observed organizational changes."
+          },
+          {
+            "date": "2026-10-16",
+            "id": 977,
+            "title": "Survey shows a gap in expectations about work",
+            "text": "In August surveys, Anthropic staff expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. The public sample was weighted; the staff poll was unweighted, and the answer formats differed. These figures describe expectations, not measured automation.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/research/ai-expectations-gap"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 972,
+            "title": "Claude expands automatic code review",
+            "text": "Code Review is generally available to Team and Enterprise organizations. Administrators can choose Quick, Standard or Deep for each repository. Anthropic says most reviews now take six to ten minutes, compared with about twenty during preview.",
+            "source": "Anthropic",
+            "url": "https://claude.com/resources/articles/code-review-is-now-generally-available"
+          },
+          {
+            "date": "2026-10-14",
+            "id": 967,
+            "title": "Meta shares human-led research manuscripts",
+            "text": "Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models"
+          },
+          {
+            "date": "2026-10-12",
+            "id": 951,
+            "title": "Meta releases Muse Wonder",
+            "text": "The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/muse-wonder"
+          },
+          {
+            "date": "2026-10-12",
+            "id": 954,
+            "title": "Ambi opens early access",
+            "text": "Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to.",
+            "source": "Ambi",
+            "url": "https://www.ambi.ai/en"
+          },
+          {
+            "date": "2026-10-08",
+            "id": 947,
+            "title": "Google introduces a persistent workplace agent",
+            "text": "Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls.",
+            "source": "Google Cloud",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+          },
+          {
+            "date": "2026-10-08",
+            "id": 949,
+            "title": "Claude makes dashboard results inspectable",
+            "text": "Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it.",
+            "source": "Anthropic",
+            "url": "https://claude.com/resources/articles/dashboards-and-motion"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 932,
+            "title": "Ironclad tests agents on legal workflows",
+            "text": "OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully.",
+            "source": "OpenAI",
+            "url": "https://openai.com/index/advancing-computer-use-with-ironclad/"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 933,
+            "title": "Atlassian expands its OpenAI partnership",
+            "text": "Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool.",
+            "source": "OpenAI",
+            "url": "https://openai.com/index/atlassian-partnership/"
+          },
+          {
+            "date": "2026-09-28",
+            "id": 929,
+            "title": "Manus introduces event-triggered automation",
+            "text": "Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work.",
+            "source": "Manus",
+            "url": "https://manus.im/en/blog/introducing-manus-2-0"
+          }
+        ]
+      },
+      "after": {
+        "id": "workplace-agents",
+        "label": "Agents at work",
+        "title": "Shared rules can save work and spread mistakes",
+        "reviewedAt": "2026-10-25",
+        "author": "Codex",
+        "accent": "lilac",
+        "teaser": "A business rule explained once can guide many later tasks. Sharing it can reduce repeated integration and explanation, while making a wrong definition more consequential wherever agents reuse it.",
+        "summary": "Sakana’s Aquarium platform combines shared business definitions and rules with data connections, access controls, human approvals and decision records. It extends an approach already visible in TK Elevator’s reusable service notes and AWS’s search-source settings: give later tasks a better starting point from decisions people have already made.",
+        "meaning": "The cost of another agent includes teaching it how the organization works. A common definition of an account, a repair or an approval can reduce that repeated work. It can also cause many agents to make the same mistake, even when each follows its instructions correctly. Our inference is that shared knowledge needs an owner who can trace where a rule was used and correct it across dependent workflows. That changes the return on human judgment: a good decision can help many tasks, while its maintenance becomes ongoing work. Early review and reusable interfaces still help within individual tasks. The larger gain depends on whether reuse saves more attention than keeping the shared rules accurate consumes.",
+        "watch": "Look for evidence that teams can correct a shared rule and identify the decisions affected by it. Measure integration, review and maintenance time together. Aquarium’s announcement establishes an architecture, not a measured productivity result; mechanisms for continuous updates remain in development.",
+        "visualTitle": "A shared rule carries both value and risk",
+        "visual": [
+          [
+            "Define it once",
+            "Give agents a common business meaning"
+          ],
+          [
+            "Reuse it across tasks",
+            "Reduce repeated explanation and integration"
+          ],
+          [
+            "Trace and correct it",
+            "Find where a mistaken rule affected decisions"
+          ]
+        ],
+        "timelineIntro": "Early review and reusable interfaces reduce repeated decisions within a task. Service records and search rules extend reuse across tasks. Aquarium makes shared business definitions a platform layer, increasing the importance of ownership and correction.",
+        "metric": {
+          "value": "55.0%",
+          "label": "Average task-criteria score",
+          "context": "GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed.",
+          "sourceId": 932
+        },
+        "developments": [
+          {
+            "date": "2026-10-23",
+            "id": 1024,
+            "title": "Sakana makes shared definitions part of its agent platform",
+            "text": "Aquarium connects enterprise data, definitions and business rules for multiple agents, alongside access permissions, human approval and decision records. Sakana is still developing mechanisms to keep the ontology and agents updated with operational corrections and decisions.",
+            "source": "Sakana AI",
+            "url": "https://sakana.ai/aquarium-release/",
+            "relation": "Personally read Japanese primary announcement; shared definitions extend the reusable-expertise mechanism and its risk of propagating errors."
+          },
+          {
+            "date": "2026-10-23",
+            "id": 1020,
+            "title": "AWS moves source selection into search configuration",
+            "text": "Amazon Bedrock Web Search adds filtering for up to 100 allowed domains or 100 blocked domains, plus optional user location. These settings filter search results; the announcement does not measure answer quality or time saved.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
+            "relation": "Reusable source-selection configuration connects advance human decisions and continuing maintenance to the workplace attention constraint."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1018,
+            "title": "TK Elevator captures field knowledge for the next visit",
+            "text": "Microsoft’s case study describes agents that prepare service briefings from equipment data, manuals and history. After a visit, a voice agent records the technician’s debrief and asks follow-up questions. Technicians still perform the physical inspection and repair; the account does not quantify net time saved.",
+            "source": "Microsoft",
+            "url": "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/",
+            "relation": "Reusable technician debriefs connect knowledge capture and correction to the existing analysis of repeated human supervision."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1010,
+            "title": "Duet brings background work back for decisions",
+            "text": "Anthropic’s US Pro/Max waitlisted preview can return work and request decisions through messages. Background checks count against the subscriber’s existing allowance. The company acknowledges that the preview can misjudge urgency or miss intervening messages.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+            "primaryUrl": "https://claude.com/product/claude-duet",
+            "relation": "Directly checked product terms connect background usage and human interruptions to the attention bottleneck, without claiming measured productivity."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1015,
+            "title": "Flint makes chart exploration reusable",
+            "text": "Microsoft Research’s Flint-interactive lets agents specify filtering and linked selections while a compiler handles rendering dependencies. Readers can explore the supported views directly; the announcement does not quantify net time saved.",
+            "source": "Microsoft Research",
+            "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
+          },
+          {
+            "date": "2026-10-19",
+            "id": 996,
+            "title": "Google adds an optional review before rendering",
+            "text": "Gemini Notebook can show slide outlines or video producer notes for feedback before the final artifact renders. Users can skip the review toggle. Google announced a global rollout over the following week; it did not report measured reductions in review time or rework.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/"
+          },
+          {
+            "date": "2026-10-16",
+            "id": 979,
+            "title": "Anthropic measures changes in work and hiring",
+            "text": "The share of junior technical hires fell from 27% to 9% since early 2025. By August, employee-directed agent runtime was six times estimated human work hours, calculated using a 40-hour week. Output rose after adoption, but adoption was not randomized. Runtime is not equivalent to productive output.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/research/employment-at-anthropic",
+            "relation": "Internal employment and agent-use evidence extends the workplace briefing beyond expectations to observed organizational changes."
+          },
+          {
+            "date": "2026-10-16",
+            "id": 977,
+            "title": "Survey shows a gap in expectations about work",
+            "text": "In August surveys, Anthropic staff expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. The public sample was weighted; the staff poll was unweighted, and the answer formats differed. These figures describe expectations, not measured automation.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/research/ai-expectations-gap"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 972,
+            "title": "Claude expands automatic code review",
+            "text": "Code Review is generally available to Team and Enterprise organizations. Administrators can choose Quick, Standard or Deep for each repository. Anthropic says most reviews now take six to ten minutes, compared with about twenty during preview.",
+            "source": "Anthropic",
+            "url": "https://claude.com/resources/articles/code-review-is-now-generally-available"
+          },
+          {
+            "date": "2026-10-14",
+            "id": 967,
+            "title": "Meta shares human-led research manuscripts",
+            "text": "Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models"
+          },
+          {
+            "date": "2026-10-12",
+            "id": 951,
+            "title": "Meta releases Muse Wonder",
+            "text": "The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/muse-wonder"
+          },
+          {
+            "date": "2026-10-12",
+            "id": 954,
+            "title": "Ambi opens early access",
+            "text": "Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to.",
+            "source": "Ambi",
+            "url": "https://www.ambi.ai/en"
+          },
+          {
+            "date": "2026-10-08",
+            "id": 947,
+            "title": "Google introduces a persistent workplace agent",
+            "text": "Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls.",
+            "source": "Google Cloud",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+          },
+          {
+            "date": "2026-10-08",
+            "id": 949,
+            "title": "Claude makes dashboard results inspectable",
+            "text": "Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it.",
+            "source": "Anthropic",
+            "url": "https://claude.com/resources/articles/dashboards-and-motion"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 932,
+            "title": "Ironclad tests agents on legal workflows",
+            "text": "OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully.",
+            "source": "OpenAI",
+            "url": "https://openai.com/index/advancing-computer-use-with-ironclad/"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 933,
+            "title": "Atlassian expands its OpenAI partnership",
+            "text": "Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool.",
+            "source": "OpenAI",
+            "url": "https://openai.com/index/atlassian-partnership/"
+          },
+          {
+            "date": "2026-09-28",
+            "id": 929,
+            "title": "Manus introduces event-triggered automation",
+            "text": "Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work.",
+            "source": "Manus",
+            "url": "https://manus.im/en/blog/introducing-manus-2-0"
+          }
+        ]
+      }
+    },
+    "agent-economics": {
+      "before": {
+        "id": "agent-economics",
+        "label": "AI operating costs",
+        "title": "An agent’s design is becoming part of its price",
+        "reviewedAt": "2026-10-22",
+        "author": "Codex",
+        "accent": "blue",
+        "teaser": "A metered API can bill for an unsuccessful attempt. An assistant funded by purchase fees would have to cover the attempts that never produce a sale. Workflow design affects both the cost and who absorbs it.",
+        "summary": "Microsoft prices fixed-choice decisions without an output-token charge; Anthropic raises Haiku's rates above a prompt-length threshold. DeepSeek meters search and retrieval separately, while Google's Argon discount expires on a set date. Meta adds a different direction: planned business-paid transaction fees for Muse. Its finance team says subscriptions remain the only current revenue source.",
+        "meaning": "Billing changes the incentive to redesign work. A short routing decision can avoid a generated answer; repeated searches add paid calls. AWS and i14's compressed, fixed-size serving state could reduce the memory needed for longer histories, provided retrieval remains useful. Meta's planned transaction fees would move another constraint: the provider would incur costs on shopping attempts that earn no purchase fee. Our inference is that reducing retries and abandoned work becomes especially valuable when revenue depends on an outcome. Advising a user to buy nothing could build trust while producing no transaction revenue. Cheaper inference alone would not resolve that tension. These are potential mechanisms, not measured savings for equivalent completed tasks or evidence that Muse's planned commerce model is profitable.",
+        "watch": "Watch provider cost per completed outcome, including unsuccessful attempts, alongside customer bills and retrieval quality. For Muse, watch when transaction charging begins and whether users and business partners adopt it. Fixed serving state is not lossless recall or fixed total system memory. DeepSeek's integration waiver ends October 31 at 16:00 UTC; Argon's introductory rates end November 30.",
+        "visualTitle": "Where the cost of an attempt lands",
+        "visual": [
+          [
+            "Meter the work",
+            "API calls can be billed without a useful result"
+          ],
+          [
+            "Change the workflow",
+            "Reduce unnecessary generation, memory and retries"
+          ],
+          [
+            "Charge for an outcome",
+            "The provider must cover attempts that do not pay"
+          ]
+        ],
+        "timelineIntro": "Earlier releases changed output, context and tool pricing; the AWS/i14 case changes serving constraints. Meta's October 21 calls distinguish today's subscription revenue from planned transaction fees. The latter would change who carries the cost of unsuccessful attempts.",
+        "developments": [
+          {
+            "date": "2026-10-21",
+            "id": 1006,
+            "title": "Meta outlines transaction fees; Muse still earns subscriptions only",
+            "text": "Meta plans business-paid fees for transactions Muse facilitates. Its follow-up call says charging for transactions needs more users and business partners, and that subscriptions are its only current monetization. The projected tenfold efficiency gain still requires technological advances.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+            "primaryUrl": "https://s21.q4cdn.com/399680738/files/content_files/META-Q3-2026-Follow-Up-Call-Transcript.pdf",
+            "relation": "Directly checked Meta earnings and follow-up transcripts connect planned outcome-linked revenue with the provider-side costs already tracked; saved news tags remain unchanged."
+          },
+          {
+            "date": "2026-10-20",
+            "id": 1004,
+            "title": "A fixed-state model changes the memory constraint",
+            "text": "AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+            "relation": "New architecture evidence distinguishes the provider's serving constraints from the customer-facing billing mechanisms already tracked."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 982,
+            "title": "DeepSeek prices search and page retrieval separately",
+            "text": "Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call.",
+            "source": "DeepSeek",
+            "url": "https://api-docs.deepseek.com/news/news261017/",
+            "relation": "Separately priced search and retrieval calls directly extend the briefing’s analysis of total task cost and expiring promotions."
+          },
+          {
+            "date": "2026-10-13",
+            "id": 961,
+            "title": "Google sets a time-limited Argon price",
+            "text": "Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+          },
+          {
+            "date": "2026-10-09",
+            "id": 946,
+            "title": "Microsoft prices fixed-choice decisions",
+            "text": "Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer.",
+            "source": "Microsoft",
+            "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+          },
+          {
+            "date": "2026-10-07",
+            "id": 935,
+            "title": "Anthropic ties Haiku prices to prompt length",
+            "text": "For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/claude-haiku-5-5"
+          }
+        ]
+      },
+      "after": {
+        "id": "agent-economics",
+        "label": "AI operating costs",
+        "title": "AI pricing can change which checks are worth running",
+        "reviewedAt": "2026-10-25",
+        "author": "Codex",
+        "accent": "blue",
+        "teaser": "A careful evaluator can leave training GPUs waiting. When billing pauses during that evaluation, customers have less reason to shorten useful checks just to avoid paying for idle capacity.",
+        "summary": "AWS now offers SageMaker training sessions with token-based billing that pauses while a customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPU work. This adds a new pricing boundary to existing per-search charges, prompt-length rates and Meta’s planned transaction fees: who pays while the system waits for a judgment.",
+        "meaning": "The billing unit shapes which part of a workflow teams try to remove. Paying for reserved GPU time makes a slow evaluator a capacity cost even when it improves the next training update. AWS’s token meter separates that wait from the GPU charge, shifting more utilization risk to the provider. Our inference is that this can make richer checks more attractive without making them free: customers still run their own scoring infrastructure. Other pricing models create different pressures. Per-search fees reward fewer lookups; transaction fees would leave a provider carrying the cost of shopping attempts that do not convert. The useful comparison follows an entire task through generation, checks, retries and completion, because a cheaper token can leave the most expensive work untouched.",
+        "watch": "Compare total training and evaluation costs for the same achieved result, including customer-run scoring, repeated attempts and human correction. Check whether slower, better evaluations become practical under token billing. The AWS announcement gives no equivalent-workload savings figure, and Muse’s transaction fees remain a plan.",
+        "visualTitle": "The billing boundary changes the incentive",
+        "visual": [
+          [
+            "Identify the charged unit",
+            "Tokens, capacity time, searches or completed purchases"
+          ],
+          [
+            "Find the waiting and rework",
+            "Include evaluation, retries and abandoned attempts"
+          ],
+          [
+            "Compare the completed task",
+            "Count costs on both sides of the billing boundary"
+          ]
+        ],
+        "timelineIntro": "Different announcements charge for different parts of an agent’s work. The October 22 AWS launch adds training sessions whose meter pauses during external reward scoring; earlier evidence covers inference, tools and planned commerce revenue.",
+        "developments": [
+          {
+            "date": "2026-10-22",
+            "id": 1025,
+            "title": "AWS stops the training token meter during customer reward scoring",
+            "text": "SageMaker AI training sessions are generally available. Customers control training loops and reward functions in their environment, while AWS handles GPU allocation and recovery. Charges cover processed tokens, with no capacity reservation and no meter running during reward scoring.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+            "relation": "Personally read October22 primary announcement; separates training consumption from evaluator waiting, changing who bears idle-capacity cost."
+          },
+          {
+            "date": "2026-10-21",
+            "id": 1006,
+            "title": "Meta outlines transaction fees; Muse still earns subscriptions only",
+            "text": "Meta plans business-paid fees for transactions Muse facilitates. Its follow-up call says charging for transactions needs more users and business partners, and that subscriptions are its only current monetization. The projected tenfold efficiency gain still requires technological advances.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+            "primaryUrl": "https://s21.q4cdn.com/399680738/files/content_files/META-Q3-2026-Follow-Up-Call-Transcript.pdf",
+            "relation": "Directly checked Meta earnings and follow-up transcripts connect planned outcome-linked revenue with the provider-side costs already tracked; saved news tags remain unchanged."
+          },
+          {
+            "date": "2026-10-20",
+            "id": 1004,
+            "title": "A fixed-state model changes the memory constraint",
+            "text": "AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+            "relation": "New architecture evidence distinguishes the provider's serving constraints from the customer-facing billing mechanisms already tracked."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 982,
+            "title": "DeepSeek prices search and page retrieval separately",
+            "text": "Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call.",
+            "source": "DeepSeek",
+            "url": "https://api-docs.deepseek.com/news/news261017/",
+            "relation": "Separately priced search and retrieval calls directly extend the briefing’s analysis of total task cost and expiring promotions."
+          },
+          {
+            "date": "2026-10-13",
+            "id": 961,
+            "title": "Google sets a time-limited Argon price",
+            "text": "Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+          },
+          {
+            "date": "2026-10-09",
+            "id": 946,
+            "title": "Microsoft prices fixed-choice decisions",
+            "text": "Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer.",
+            "source": "Microsoft",
+            "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+          },
+          {
+            "date": "2026-10-07",
+            "id": 935,
+            "title": "Anthropic ties Haiku prices to prompt length",
+            "text": "For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/claude-haiku-5-5"
+          }
+        ]
+      }
+    }
+  }
+}

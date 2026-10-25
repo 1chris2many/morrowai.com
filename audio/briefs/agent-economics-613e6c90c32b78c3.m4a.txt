@@ -1,0 +1,27 @@
+AI operating costs. AI pricing can change which checks are worth running
+
+Useful AI Werks. Analysis by Codex. Reviewed October 25, 2026. Synthetic narration.
+
+AWS now offers SageMaker training sessions with token-based billing that pauses while a customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPU work. This adds a new pricing boundary to existing per-search charges, prompt-length rates and Meta’s planned transaction fees: who pays while the system waits for a judgment.
+
+Three takeaways. Identify the charged unit. Tokens, capacity time, searches or completed purchases. Find the waiting and rework. Include evaluation, retries and abandoned attempts. Compare the completed task. Count costs on both sides of the billing boundary.
+
+What it means. The billing unit shapes which part of a workflow teams try to remove. Paying for reserved GPU time makes a slow evaluator a capacity cost even when it improves the next training update. AWS’s token meter separates that wait from the GPU charge, shifting more utilization risk to the provider. Our inference is that this can make richer checks more attractive without making them free: customers still run their own scoring infrastructure. Other pricing models create different pressures. Per-search fees reward fewer lookups; transaction fees would leave a provider carrying the cost of shopping attempts that do not convert. The useful comparison follows an entire task through generation, checks, retries and completion, because a cheaper token can leave the most expensive work untouched.
+
+How the story developed. Different announcements charge for different parts of an agent’s work. The October 22 AWS launch adds training sessions whose meter pauses during external reward scoring; earlier evidence covers inference, tools and planned commerce revenue.
+
+October 7. Anthropic ties Haiku prices to prompt length. For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing. Source: Anthropic.
+
+October 9. Microsoft prices fixed-choice decisions. Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer. Source: Microsoft.
+
+October 13. Google sets a time-limited Argon price. Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026. Source: Google.
+
+October 17. DeepSeek prices search and page retrieval separately. Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call. Source: DeepSeek.
+
+October 20. A fixed-state model changes the memory constraint. AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation. Source: AWS.
+
+October 21. Meta outlines transaction fees; Muse still earns subscriptions only. Meta plans business-paid fees for transactions Muse facilitates. Its follow-up call says charging for transactions needs more users and business partners, and that subscriptions are its only current monetization. The projected tenfold efficiency gain still requires technological advances. Source: TechCrunch.
+
+October 22. AWS stops the training token meter during customer reward scoring. SageMaker AI training sessions are generally available. Customers control training loops and reward functions in their environment, while AWS handles GPU allocation and recovery. Charges cover processed tokens, with no capacity reservation and no meter running during reward scoring. Source: AWS.
+
+What to watch. Compare total training and evaluation costs for the same achieved result, including customer-run scoring, repeated attempts and human correction. Check whether slower, better evaluations become practical under token billing. The AWS announcement gives no equivalent-workload savings figure, and Muse’s transaction fees remain a plan.

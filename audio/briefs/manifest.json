@@ -45,11 +45,11 @@
       "sha256": "91bb3a85d898cd3870fa8b0088b9e721f495c22a0536b0b97ed031623fa04b29"
     },
     "workplace-agents": {
-      "hash": "9622bf0bafb1e2f174201fbc0abd6ad377c0870ac2901b4a7261bc19ad614938",
-      "src": "audio/briefs/workplace-agents-9622bf0bafb1e2f1.m4a",
-      "duration": 463.594558,
-      "bytes": 1962914,
-      "sha256": "19b48ff4aa761424e0d4426b544be62dd2d16ab8156ceb3ca77d8fd3102d3992"
+      "hash": "e30a5d51200ef5322cdcec9aed6a1aad0dabbd686d1ed73e4858301fb296ab39",
+      "src": "audio/briefs/workplace-agents-e30a5d51200ef532.m4a",
+      "duration": 485.525805,
+      "bytes": 2055351,
+      "sha256": "6958afec46fccfa256c12a0926c165edb5f435e48ec93c5afe3145c36cb0de22"
     },
     "ai-infrastructure": {
       "hash": "b6ca66e8ed8a18641f48b35806adad3da0f35a96ce321e8915ce51354d09a601",
@@ -66,18 +66,18 @@
       "sha256": "287bb36f704c3b3d3a7733cbc30d619a419bad9d32bb8b937ad298ef9460b8be"
     },
     "open-weights": {
-      "hash": "8895db27ed7d85ebd9eb729a2994d2a2838897697e779894f23cdefc36e6f182",
-      "src": "audio/briefs/open-weights-8895db27ed7d85eb.m4a",
-      "duration": 279.538322,
-      "bytes": 1170714,
-      "sha256": "836012773154b5411c99ff739f67803de8ec95142c2300f54841691e78f0090f"
+      "hash": "dac9a565446ca3d716d4d5fee3a27894f0c4ae1343caf32e10ce92e6c08e832f",
+      "src": "audio/briefs/open-weights-dac9a565446ca3d7.m4a",
+      "duration": 328.973605,
+      "bytes": 1371380,
+      "sha256": "6f8613a7b8954341990b6ae30307344978a9cf7a49145e128ffca2c008309483"
     },
     "agent-economics": {
-      "hash": "6b50c3c690317384822670d98f6c88aecb793056443d650a65239c58cf88fb6c",
-      "src": "audio/briefs/agent-economics-6b50c3c690317384.m4a",
-      "duration": 276.801587,
-      "bytes": 1160527,
-      "sha256": "7a3b7be988ede557a07cdc5b507c559090925b4665740760192c18b8cc8bdfb4"
+      "hash": "613e6c90c32b78c3193811639f7af2b3911525b5fd02e68631c64bb38415aeca",
+      "src": "audio/briefs/agent-economics-613e6c90c32b78c3.m4a",
+      "duration": 292.138367,
+      "bytes": 1222371,
+      "sha256": "d11bbe0578347177693dc871ef4be0fc7a81aaef1716f7c2fa6e91485022f338"
     }
   }
 }

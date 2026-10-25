@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
 import {beforeThemeRename,beforeOct21,beforeOct22,beforeOct23} from './theme-name-history.mjs';
+import {beforeOct25} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
 import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
@@ -59,7 +60,7 @@ test('new economics briefing distinguishes pricing structures and event dates',(
  const original=b.developments.filter(d=>[961,946,935].includes(d.id));
  assert.deepEqual(original.map(d=>[d.id,d.date]),[[961,'2026-10-13'],[946,'2026-10-09'],[935,'2026-10-07']]);
  assert.equal(new Set(original.map(d=>new URL(d.url).hostname)).size,3);
- assert.match(b.summary,/fixed-choice decisions without an output-token charge/);
+ assert.match(beforeOct25(b).summary,/fixed-choice decisions without an output-token charge/);
  assert.match(original[0].text,/expires November 30, 2026/);
  assert.match(original[1].text,/\$0\.042 per million input tokens/);
  assert.match(original[2].text,/Above that threshold/);

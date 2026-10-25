@@ -433,30 +433,30 @@ export const briefs = [
   {
     "id": "workplace-agents",
     "label": "Agents at work",
-    "title": "More agents can mean more work waiting on you",
-    "reviewedAt": "2026-10-24",
+    "title": "Shared rules can save work and spread mistakes",
+    "reviewedAt": "2026-10-25",
     "author": "Codex",
     "accent": "lilac",
-    "teaser": "The useful agent may be the one that lets your next decision benefit more than one task. Capturing field knowledge and setting source rules can reduce repeated supervision, while creating new responsibility for keeping those records and rules right.",
-    "summary": "Early review and interactive charts let people steer work before generating another result. TK Elevator adds a different approach: agents prepare technicians for visits and capture their spoken debriefs for future service work. AWS’s new search-domain controls let developers decide which domains can appear in Bedrock Web Search results.",
-    "meaning": "The opportunity is to make a useful human decision reusable. A technician’s explanation can help the next technician; a source rule can guide later searches. That shifts some effort from repeatedly answering agents to maintaining knowledge they can use. The trade-off compounds too: an incorrect service note or an overly narrow source list can shape many later answers. Our inference is that the advantage belongs to systems that make valuable expertise easy to contribute and easy to correct. Gemini’s early review and Flint’s reusable chart controls address the same attention constraint at different stages; Duet’s proactive requests can add to it. The practical test is whether finished work needs less human repair after those maintenance costs are counted.",
-    "watch": "Compare review, correction and record-maintenance time with the time saved on later tasks. Track whether incorrect notes can be corrected wherever they are reused and whether source exclusions hide relevant evidence. TK Elevator’s case study and AWS’s controls announcement do not measure net productivity gains.",
-    "visualTitle": "Let one useful decision improve the next task",
+    "teaser": "A business rule explained once can guide many later tasks. Sharing it can reduce repeated integration and explanation, while making a wrong definition more consequential wherever agents reuse it.",
+    "summary": "Sakana’s Aquarium platform combines shared business definitions and rules with data connections, access controls, human approvals and decision records. It extends an approach already visible in TK Elevator’s reusable service notes and AWS’s search-source settings: give later tasks a better starting point from decisions people have already made.",
+    "meaning": "The cost of another agent includes teaching it how the organization works. A common definition of an account, a repair or an approval can reduce that repeated work. It can also cause many agents to make the same mistake, even when each follows its instructions correctly. Our inference is that shared knowledge needs an owner who can trace where a rule was used and correct it across dependent workflows. That changes the return on human judgment: a good decision can help many tasks, while its maintenance becomes ongoing work. Early review and reusable interfaces still help within individual tasks. The larger gain depends on whether reuse saves more attention than keeping the shared rules accurate consumes.",
+    "watch": "Look for evidence that teams can correct a shared rule and identify the decisions affected by it. Measure integration, review and maintenance time together. Aquarium’s announcement establishes an architecture, not a measured productivity result; mechanisms for continuous updates remain in development.",
+    "visualTitle": "A shared rule carries both value and risk",
     "visual": [
       [
-        "Capture expertise",
-        "Record the reasoning from completed work"
+        "Define it once",
+        "Give agents a common business meaning"
       ],
       [
-        "Reuse it",
-        "Give the next task better starting information"
+        "Reuse it across tasks",
+        "Reduce repeated explanation and integration"
       ],
       [
-        "Keep it correct",
-        "Fix mistakes before they spread through later answers"
+        "Trace and correct it",
+        "Find where a mistaken rule affected decisions"
       ]
     ],
-    "timelineIntro": "Persistent agents exposed a shared human bottleneck. Early review and reusable interfaces address repeated decisions within a task. Service records and source-selection rules extend that idea across tasks, adding a continuing need to maintain what gets reused.",
+    "timelineIntro": "Early review and reusable interfaces reduce repeated decisions within a task. Service records and search rules extend reuse across tasks. Aquarium makes shared business definitions a platform layer, increasing the importance of ownership and correction.",
     "metric": {
       "value": "55.0%",
       "label": "Average task-criteria score",
@@ -464,6 +464,15 @@ export const briefs = [
       "sourceId": 932
     },
     "developments": [
+      {
+        "date": "2026-10-23",
+        "id": 1024,
+        "title": "Sakana makes shared definitions part of its agent platform",
+        "text": "Aquarium connects enterprise data, definitions and business rules for multiple agents, alongside access permissions, human approval and decision records. Sakana is still developing mechanisms to keep the ontology and agents updated with operational corrections and decisions.",
+        "source": "Sakana AI",
+        "url": "https://sakana.ai/aquarium-release/",
+        "relation": "Personally read Japanese primary announcement; shared definitions extend the reusable-expertise mechanism and its risk of propagating errors."
+      },
       {
         "date": "2026-10-23",
         "id": 1020,
@@ -791,31 +800,40 @@ export const briefs = [
   {
     "id": "open-weights",
     "label": "Open models",
-    "title": "Open models shift the advantage toward deployment",
-    "reviewedAt": "2026-10-18",
+    "title": "Publishing weights makes some safeguards harder to enforce",
+    "reviewedAt": "2026-10-25",
     "author": "Codex",
     "accent": "gold",
-    "teaser": "Once weights are available, memory use and surrounding software help decide who can actually run them. A smaller headline parameter count can conceal a much larger system.",
-    "summary": "Meta’s desktop demonstration uses two high-memory machines to hold a model far larger than the portion active for each token. FLUX’s compact parameter figure excludes its text encoder. IBM instead reuses a shared base model and its cached context across specialist adapters. These releases show why deployment engineering changes the resources needed to make a downloadable model usable.",
-    "meaning": "Publishing weights widens the set of potential operators. Efficient implementations determine how far that access extends: multiple high-memory machines, extra components or a poorly matched runtime can limit who benefits. Advantage can therefore move toward the people who make models practical on available hardware. Control also remains divided. DeepSeek’s weights are downloadable, while its hosted search is separately priced; an open model can still sit inside a system that depends on paid services.",
-    "watch": "Watch independent tests of total memory and response time, including every required component, and whether practical implementations spread beyond vendor demonstrations. License terms and pending weight releases still determine who has access in the first place.",
-    "visualTitle": "Where practical access is decided",
+    "teaser": "Operating a model yourself gives you control over its use. It also limits the original provider’s ability to enforce restrictions through its service, moving some safety choices into training and others to each operator.",
+    "summary": "Moonshot has released hosted Kimi K3.1 Pro and plans to publish its weights by November 4. It says it removed cybersecurity-related training data to reduce offensive capability, while retaining general coding work. Its own tests still show greater cyber capability than the preceding model. Earlier releases from DeepSeek and Meta already let users operate weights on their own infrastructure.",
+    "meaning": "A hosted provider can change access rules or screen requests at its service boundary. Once others operate the weights, those measures cannot govern every copy. Moonshot’s approach puts part of the restriction into what the model learns, trading some capability for a limit it hopes will travel with the release. Its reported results expose a tension: ordinary coding improvements can increase cyber capability even after targeted data removal. Our inference is that publishing weights changes who bears the work of controlling use. Developers gain deployment choice, while operators inherit more responsibility for permissions, tools and monitoring. Efficient runtimes still determine who can afford that independence; downloadable weights do not remove reliance on separately paid services such as search.",
+    "watch": "Check whether the promised weights actually appear, what independent tests find after release, and which restrictions survive modification or new tool access. Compare defensive usefulness and misuse risk under the same conditions. Moonshot’s internal benchmark is evidence of its reported trade-off, not proof that filtering prevents misuse.",
+    "visualTitle": "Where control moves after weights are released",
     "visual": [
       [
-        "Weights",
-        "The model becomes obtainable"
+        "Train the model",
+        "Choose which capabilities to develop or restrict"
       ],
       [
-        "Implementation",
-        "Memory, adapters and runtimes shape the system"
+        "Distribute the weights",
+        "Allow operators to run their own copies"
       ],
       [
-        "Deployment",
-        "Hardware and service needs decide who can run it"
+        "Control each deployment",
+        "Set local permissions, tools and monitoring"
       ]
     ],
-    "timelineIntro": "The releases broaden the choice of downloadable models. Their contrasting implementations show why active parameters, total weights and complete system requirements cannot be treated as the same measure.",
+    "timelineIntro": "Earlier releases expanded who could deploy models and which hardware could run them. Moonshot’s October 23 announcement adds a planned release with explicit training-time restrictions. Its hosted model is available; the weights remain a future commitment.",
     "developments": [
+      {
+        "date": "2026-10-23",
+        "id": 1023,
+        "title": "Moonshot plans a weights release with training-time cyber restrictions",
+        "text": "Kimi K3.1 Pro is available through Moonshot’s products and API, with full weights planned by November 4. Moonshot reports removing cyber-related data from two training stages; its final model still outperforms its predecessor on the company’s cyber benchmark.",
+        "source": "Moonshot AI",
+        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "relation": "Personally read primary release and dated release note; pending distribution changes the reach of hosting controls, while vendor tests show residual capability."
+      },
       {
         "date": "2026-10-17",
         "id": 982,
@@ -886,31 +904,40 @@ export const briefs = [
   {
     "id": "agent-economics",
     "label": "AI operating costs",
-    "title": "An agent’s design is becoming part of its price",
-    "reviewedAt": "2026-10-22",
+    "title": "AI pricing can change which checks are worth running",
+    "reviewedAt": "2026-10-25",
     "author": "Codex",
     "accent": "blue",
-    "teaser": "A metered API can bill for an unsuccessful attempt. An assistant funded by purchase fees would have to cover the attempts that never produce a sale. Workflow design affects both the cost and who absorbs it.",
-    "summary": "Microsoft prices fixed-choice decisions without an output-token charge; Anthropic raises Haiku's rates above a prompt-length threshold. DeepSeek meters search and retrieval separately, while Google's Argon discount expires on a set date. Meta adds a different direction: planned business-paid transaction fees for Muse. Its finance team says subscriptions remain the only current revenue source.",
-    "meaning": "Billing changes the incentive to redesign work. A short routing decision can avoid a generated answer; repeated searches add paid calls. AWS and i14's compressed, fixed-size serving state could reduce the memory needed for longer histories, provided retrieval remains useful. Meta's planned transaction fees would move another constraint: the provider would incur costs on shopping attempts that earn no purchase fee. Our inference is that reducing retries and abandoned work becomes especially valuable when revenue depends on an outcome. Advising a user to buy nothing could build trust while producing no transaction revenue. Cheaper inference alone would not resolve that tension. These are potential mechanisms, not measured savings for equivalent completed tasks or evidence that Muse's planned commerce model is profitable.",
-    "watch": "Watch provider cost per completed outcome, including unsuccessful attempts, alongside customer bills and retrieval quality. For Muse, watch when transaction charging begins and whether users and business partners adopt it. Fixed serving state is not lossless recall or fixed total system memory. DeepSeek's integration waiver ends October 31 at 16:00 UTC; Argon's introductory rates end November 30.",
-    "visualTitle": "Where the cost of an attempt lands",
+    "teaser": "A careful evaluator can leave training GPUs waiting. When billing pauses during that evaluation, customers have less reason to shorten useful checks just to avoid paying for idle capacity.",
+    "summary": "AWS now offers SageMaker training sessions with token-based billing that pauses while a customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPU work. This adds a new pricing boundary to existing per-search charges, prompt-length rates and Meta’s planned transaction fees: who pays while the system waits for a judgment.",
+    "meaning": "The billing unit shapes which part of a workflow teams try to remove. Paying for reserved GPU time makes a slow evaluator a capacity cost even when it improves the next training update. AWS’s token meter separates that wait from the GPU charge, shifting more utilization risk to the provider. Our inference is that this can make richer checks more attractive without making them free: customers still run their own scoring infrastructure. Other pricing models create different pressures. Per-search fees reward fewer lookups; transaction fees would leave a provider carrying the cost of shopping attempts that do not convert. The useful comparison follows an entire task through generation, checks, retries and completion, because a cheaper token can leave the most expensive work untouched.",
+    "watch": "Compare total training and evaluation costs for the same achieved result, including customer-run scoring, repeated attempts and human correction. Check whether slower, better evaluations become practical under token billing. The AWS announcement gives no equivalent-workload savings figure, and Muse’s transaction fees remain a plan.",
+    "visualTitle": "The billing boundary changes the incentive",
     "visual": [
       [
-        "Meter the work",
-        "API calls can be billed without a useful result"
+        "Identify the charged unit",
+        "Tokens, capacity time, searches or completed purchases"
       ],
       [
-        "Change the workflow",
-        "Reduce unnecessary generation, memory and retries"
+        "Find the waiting and rework",
+        "Include evaluation, retries and abandoned attempts"
       ],
       [
-        "Charge for an outcome",
-        "The provider must cover attempts that do not pay"
+        "Compare the completed task",
+        "Count costs on both sides of the billing boundary"
       ]
     ],
-    "timelineIntro": "Earlier releases changed output, context and tool pricing; the AWS/i14 case changes serving constraints. Meta's October 21 calls distinguish today's subscription revenue from planned transaction fees. The latter would change who carries the cost of unsuccessful attempts.",
+    "timelineIntro": "Different announcements charge for different parts of an agent’s work. The October 22 AWS launch adds training sessions whose meter pauses during external reward scoring; earlier evidence covers inference, tools and planned commerce revenue.",
     "developments": [
+      {
+        "date": "2026-10-22",
+        "id": 1025,
+        "title": "AWS stops the training token meter during customer reward scoring",
+        "text": "SageMaker AI training sessions are generally available. Customers control training loops and reward functions in their environment, while AWS handles GPU allocation and recovery. Charges cover processed tokens, with no capacity reservation and no meter running during reward scoring.",
+        "source": "AWS",
+        "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "relation": "Personally read October22 primary announcement; separates training consumption from evaluator waiting, changing who bears idle-capacity cost."
+      },
       {
         "date": "2026-10-21",
         "id": 1006,

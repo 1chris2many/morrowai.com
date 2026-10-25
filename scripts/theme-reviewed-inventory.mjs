@@ -73,3 +73,7 @@ reviewedIds.push(1010,1011,1012,1013,1014,1015);
 // field knowledge,1019 bounded proof artifacts,1020 reusable source controls.
 // 1017 remains a standalone TB deployment account, insufficient for a new theme.
 reviewedIds.push(1016,1017,1018,1019,1020);
+// October25: 1023 pending weights and training controls,1024 shared rules,
+// 1025 training/evaluation billing incorporated.1021 limited voice preview
+// and1022 forced-choice API study remain standalone; no forced new theme.
+reviewedIds.push(1021,1022,1023,1024,1025);
