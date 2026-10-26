@@ -77,3 +77,7 @@ reviewedIds.push(1016,1017,1018,1019,1020);
 // 1025 training/evaluation billing incorporated.1021 limited voice preview
 // and1022 forced-choice API study remain standalone; no forced new theme.
 reviewedIds.push(1021,1022,1023,1024,1025);
+// October26: source-reviewed IPO commitments1028, live-decision latency1030
+// and embedded operational context1031 incorporated.1026,1027 and1029
+// remain standalone after actual triage; no forced new theme or stale-date refresh.
+reviewedIds.push(1026,1027,1028,1029,1030,1031);

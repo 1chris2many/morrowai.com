@@ -1,0 +1,29 @@
+AI operating costs. AI pricing can change which checks are worth running
+
+Useful AI Werks. Analysis by Codex. Reviewed October 26, 2026. Synthetic narration.
+
+AWS’s SageMaker training sessions pause token billing while the customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPUs. Liquid AI’s RIPL launch adds a separate constraint: whether inference can finish before a live search, payment or fraud decision must be made. A useful check needs both an affordable cost and time to affect the result.
+
+Three takeaways. Identify the charged unit. Tokens, capacity time, searches or completed purchases. Find the waiting and rework. Include evaluation, retries and abandoned attempts. Reach the decision in time. Count cost, quality and response time together.
+
+What it means. The billing unit shapes which work teams can afford to add. Pausing GPU charges during reward scoring can make a more informative training evaluation easier to justify, while the customer still pays to run that evaluator. A live transaction has a stricter boundary: finish after its deadline and an answer may lose the opportunity to affect the outcome. Our inference is that low-latency models could open decision points where an inexpensive but slower model has little value. Pricing and speed therefore change which checks are worth attempting in different ways. Per-search fees and planned transaction fees add further incentives around retries and conversion. The useful comparison follows the task through checks and completion, including whether the answer arrived while it could still matter.
+
+How the story developed. Earlier developments change the bill for inference, tools and planned commerce revenue. AWS’s October 22 launch changes who pays while training waits for a judgment. Liquid’s same-day launch adds the deadline governing whether a live decision can use that judgment at all.
+
+October 7. Anthropic ties Haiku prices to prompt length. For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing. Source: Anthropic.
+
+October 9. Microsoft prices fixed-choice decisions. Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer. Source: Microsoft.
+
+October 13. Google sets a time-limited Argon price. Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026. Source: Google.
+
+October 17. DeepSeek prices search and page retrieval separately. Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call. Source: DeepSeek.
+
+October 20. A fixed-state model changes the memory constraint. AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation. Source: AWS.
+
+October 21. Meta outlines transaction fees; Muse still earns subscriptions only. Meta plans business-paid fees for transactions Muse facilitates. Its follow-up call says charging for transactions needs more users and business partners, and that subscriptions are its only current monetization. The projected tenfold efficiency gain still requires technological advances. Source: TechCrunch.
+
+October 22. Liquid targets decisions with millisecond deadlines. Liquid says RIPL produces complete LFM responses below 50 milliseconds on tested real-time workloads. The engine is available for enterprise deployments on NVIDIA GPUs. Source: Liquid AI.
+
+October 22. AWS stops the training token meter during customer reward scoring. SageMaker AI training sessions are generally available. Customers control training loops and reward functions in their environment, while AWS handles GPU allocation and recovery. Charges cover processed tokens, with no capacity reservation and no meter running during reward scoring. Source: AWS.
+
+What to watch. Compare useful results at the required quality and deadline, including customer-run scoring, retries and human correction. For live decisions, test response times under peak traffic. Liquid’s latency figures are vendor claims, not demonstrated revenue or fraud improvements. AWS reports no equivalent-workload savings figure; Muse’s transaction fees remain a plan.

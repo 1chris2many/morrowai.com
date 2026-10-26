@@ -110,29 +110,29 @@ export const briefs = [
     "id": "ai-market-leadership",
     "label": "AI competition",
     "title": "AI vendors can lose the work before they lose the customer",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-26",
     "author": "Codex",
     "accent": "gold",
-    "teaser": "A paid account can survive after important work moves elsewhere. Portable workflows can make that move easier; usage billing can expose the loss before cancellation.",
-    "summary": "A provider can retain a capable model and a paying account while losing its place in someone’s daily work. Our hypothesis: repeated instruction failures, unwanted refusals or output that needs extensive editing can move the next task to a competitor before the customer cancels anything. Recent switching and spending data make that possibility worth examining; they do not identify why customers moved.",
-    "meaning": "Account retention and workload retention can diverge. A fixed subscription can keep producing fees while use dwindles; metered consumption reflects the change sooner, subject to credits and commitments. Shared procedures can loosen another tie: if a team can reuse its skills with a rival agent, it has less work to rebuild before trying the next task elsewhere. Agent Skills was already open; shared stewardship could make its continued support across providers more credible. Models, integrations and permissions still need testing. Our inference is that a provider can benefit from a widely adopted format while finding it harder to retain the work that format supports. Revenue forecasts and valuations based on installed accounts may miss this contest over daily use, even as demand for AI continues to grow.",
-    "watch": "Watch whether teams can move real workflows without extensive repair, and whether accounts stay open as important tasks shift. Compare usage with prices, credits and commitments. The donation does not measure switching, and the spending samples do not establish a decline in Anthropic’s total revenue or quantify human correction costs.",
-    "visualTitle": "How work can leave before an account closes",
+    "teaser": "Important work can move before an account closes. Usage revenue can follow quickly, while the provider remains committed to years of compute payments.",
+    "summary": "Recent switching and spending evidence shows that AI adoption can grow while business moves between providers. Anthropic’s IPO filing adds long-term compute commitments to that picture: customer use can change before the infrastructure bill does. Our hypothesis remains that repeated workflow friction can drive those moves; the data does not identify individual customers’ motives.",
+    "meaning": "A fixed subscription can keep producing fees after important tasks move elsewhere. Metered use can expose that loss sooner, subject to credits and customer commitments. A provider that has already promised years of compute payments can have less room to adjust its costs at the same speed. Our inference is that portable workflows shift more demand risk toward the provider holding those commitments: a growing AI market can still leave one vendor with an expensive mismatch between the work it expected and the work it keeps. Shared formats can help customers test rivals with less rebuilding. The durability question becomes how much daily work stays, and how flexibly capacity obligations can follow it.",
+    "watch": "Watch whether important tasks move while accounts remain open, how usage changes after prices or credits change, and how capacity commitments can adjust. Separate financing-related accounting losses from operating cash use. The switching samples do not measure Anthropic’s total revenue or human correction costs; the filing does not establish future utilization.",
+    "visualTitle": "The work and the bills can move at different speeds",
     "visual": [
       [
-        "Daily friction",
-        "The next task goes to a rival"
+        "Daily work moves",
+        "A customer tries the next task elsewhere"
       ],
       [
-        "Quiet migration",
-        "The original account stays open"
+        "Usage revenue follows",
+        "The account can remain open"
       ],
       [
-        "Revenue impact",
-        "Metered usage follows the work"
+        "Compute commitments remain",
+        "Future bills can outlast workload loyalty"
       ]
     ],
-    "timelineIntro": "Switching and spending data expose movement between providers; billing terms show how that can reach revenue. The transfer of an already-open skills format adds shared stewardship to the question of how much work customers must rebuild when moving.",
+    "timelineIntro": "Switching and spending data show movement between providers; billing terms explain how that can reach revenue. Shared skills can lower the effort of trying another provider. The October 26 IPO reporting adds the duration of compute obligations on the other side of that decision.",
     "metric": {
       "value": "54.1% → 52.2%",
       "label": "Claude’s share of AI spending in one UK sample",
@@ -140,6 +140,15 @@ export const briefs = [
       "sourceId": 986
     },
     "developments": [
+      {
+        "date": "2026-10-26",
+        "id": 1028,
+        "title": "Fast-moving workloads meet long-term compute commitments",
+        "text": "Anthropic’s public IPO prospectus discloses multiyear compute commitments. The Verge reports that most of its first-half net loss came from financing-related accounting charges.",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+        "relation": "Adds the duration of supplier obligations to the existing evidence on customers moving daily work."
+      },
       {
         "date": "2026-10-22",
         "id": 1014,
@@ -434,13 +443,13 @@ export const briefs = [
     "id": "workplace-agents",
     "label": "Agents at work",
     "title": "Shared rules can save work and spread mistakes",
-    "reviewedAt": "2026-10-25",
+    "reviewedAt": "2026-10-26",
     "author": "Codex",
     "accent": "lilac",
     "teaser": "A business rule explained once can guide many later tasks. Sharing it can reduce repeated integration and explanation, while making a wrong definition more consequential wherever agents reuse it.",
-    "summary": "Sakana’s Aquarium platform combines shared business definitions and rules with data connections, access controls, human approvals and decision records. It extends an approach already visible in TK Elevator’s reusable service notes and AWS’s search-source settings: give later tasks a better starting point from decisions people have already made.",
-    "meaning": "The cost of another agent includes teaching it how the organization works. A common definition of an account, a repair or an approval can reduce that repeated work. It can also cause many agents to make the same mistake, even when each follows its instructions correctly. Our inference is that shared knowledge needs an owner who can trace where a rule was used and correct it across dependent workflows. That changes the return on human judgment: a good decision can help many tasks, while its maintenance becomes ongoing work. Early review and reusable interfaces still help within individual tasks. The larger gain depends on whether reuse saves more attention than keeping the shared rules accurate consumes.",
-    "watch": "Look for evidence that teams can correct a shared rule and identify the decisions affected by it. Measure integration, review and maintenance time together. Aquarium’s announcement establishes an architecture, not a measured productivity result; mechanisms for continuous updates remain in development.",
+    "summary": "Sakana’s Aquarium shares business definitions, rules and decision records across agents. IBM’s Sterling launch supplies another kind of reusable context: logs, configuration and workflow records for investigating failed transfers and stalled processes. Both extend the approach visible in service notes and search settings: give the next task a better starting point.",
+    "meaning": "An agent’s starting point determines how much a human has to explain again. Aquarium shares what business terms mean; Sterling supplies evidence of what an operation did. In Sterling’s case, that gives the existing software vendor a possible advantage: its software already organizes records that a separate assistant would need to connect to and reconcile. Our inference is that useful AI integration can strengthen existing operational software even when its underlying model can be substituted. Reuse also amplifies bad definitions and outdated records. Shared knowledge needs an owner who can find where it affected decisions and correct it. The return depends on recovery and review time saved after that maintenance work is counted.",
+    "watch": "Look for faster recovery of actual business processes, alongside the ability to trace and correct shared context. Count integration, review and maintenance time together. IBM reports launch capabilities without an independent recovery-time result; Sakana is still developing mechanisms for continuous updates.",
     "visualTitle": "A shared rule carries both value and risk",
     "visual": [
       [
@@ -456,7 +465,7 @@ export const briefs = [
         "Find where a mistaken rule affected decisions"
       ]
     ],
-    "timelineIntro": "Early review and reusable interfaces reduce repeated decisions within a task. Service records and search rules extend reuse across tasks. Aquarium makes shared business definitions a platform layer, increasing the importance of ownership and correction.",
+    "timelineIntro": "Early review and reusable interfaces reduce repeated decisions within a task. Service records, search rules and Aquarium’s shared definitions extend reuse across tasks. Sterling adds troubleshooting inside existing transaction software, where operational context can become part of the vendor’s advantage.",
     "metric": {
       "value": "55.0%",
       "label": "Average task-criteria score",
@@ -464,6 +473,16 @@ export const briefs = [
       "sourceId": 932
     },
     "developments": [
+      {
+        "date": "2026-10-23",
+        "id": 1031,
+        "title": "IBM puts troubleshooting beside transaction records",
+        "text": "Sterling Agent Hub becomes generally available with B2B Integrator and File Gateway agents for troubleshooting, root-cause analysis and diagnostic collection. Its product page limits action execution to applicable permissions and policies.",
+        "source": "IBM",
+        "url": "https://community.ibm.com/community/user/blogs/baan-slavens/2026/10/23/ibm-sterlingagenthub",
+        "primaryUrl": "https://www.ibm.com/products/sterling-agent-hub",
+        "relation": "Existing operational records reduce context assembly; the possible incumbent advantage is analysis, not a measured commercial result."
+      },
       {
         "date": "2026-10-23",
         "id": 1024,
@@ -905,14 +924,14 @@ export const briefs = [
     "id": "agent-economics",
     "label": "AI operating costs",
     "title": "AI pricing can change which checks are worth running",
-    "reviewedAt": "2026-10-25",
+    "reviewedAt": "2026-10-26",
     "author": "Codex",
     "accent": "blue",
-    "teaser": "A careful evaluator can leave training GPUs waiting. When billing pauses during that evaluation, customers have less reason to shorten useful checks just to avoid paying for idle capacity.",
-    "summary": "AWS now offers SageMaker training sessions with token-based billing that pauses while a customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPU work. This adds a new pricing boundary to existing per-search charges, prompt-length rates and Meta’s planned transaction fees: who pays while the system waits for a judgment.",
-    "meaning": "The billing unit shapes which part of a workflow teams try to remove. Paying for reserved GPU time makes a slow evaluator a capacity cost even when it improves the next training update. AWS’s token meter separates that wait from the GPU charge, shifting more utilization risk to the provider. Our inference is that this can make richer checks more attractive without making them free: customers still run their own scoring infrastructure. Other pricing models create different pressures. Per-search fees reward fewer lookups; transaction fees would leave a provider carrying the cost of shopping attempts that do not convert. The useful comparison follows an entire task through generation, checks, retries and completion, because a cheaper token can leave the most expensive work untouched.",
-    "watch": "Compare total training and evaluation costs for the same achieved result, including customer-run scoring, repeated attempts and human correction. Check whether slower, better evaluations become practical under token billing. The AWS announcement gives no equivalent-workload savings figure, and Muse’s transaction fees remain a plan.",
-    "visualTitle": "The billing boundary changes the incentive",
+    "teaser": "A check can be cheap enough to run yet arrive too late to change a transaction. Billing and response time jointly determine which decisions an AI model can usefully support.",
+    "summary": "AWS’s SageMaker training sessions pause token billing while the customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPUs. Liquid AI’s RIPL launch adds a separate constraint: whether inference can finish before a live search, payment or fraud decision must be made. A useful check needs both an affordable cost and time to affect the result.",
+    "meaning": "The billing unit shapes which work teams can afford to add. Pausing GPU charges during reward scoring can make a more informative training evaluation easier to justify, while the customer still pays to run that evaluator. A live transaction has a stricter boundary: finish after its deadline and an answer may lose the opportunity to affect the outcome. Our inference is that low-latency models could open decision points where an inexpensive but slower model has little value. Pricing and speed therefore change which checks are worth attempting in different ways. Per-search fees and planned transaction fees add further incentives around retries and conversion. The useful comparison follows the task through checks and completion, including whether the answer arrived while it could still matter.",
+    "watch": "Compare useful results at the required quality and deadline, including customer-run scoring, retries and human correction. For live decisions, test response times under peak traffic. Liquid’s latency figures are vendor claims, not demonstrated revenue or fraud improvements. AWS reports no equivalent-workload savings figure; Muse’s transaction fees remain a plan.",
+    "visualTitle": "A useful answer must fit the cost and the deadline",
     "visual": [
       [
         "Identify the charged unit",
@@ -923,12 +942,21 @@ export const briefs = [
         "Include evaluation, retries and abandoned attempts"
       ],
       [
-        "Compare the completed task",
-        "Count costs on both sides of the billing boundary"
+        "Reach the decision in time",
+        "Count cost, quality and response time together"
       ]
     ],
-    "timelineIntro": "Different announcements charge for different parts of an agent’s work. The October 22 AWS launch adds training sessions whose meter pauses during external reward scoring; earlier evidence covers inference, tools and planned commerce revenue.",
+    "timelineIntro": "Earlier developments change the bill for inference, tools and planned commerce revenue. AWS’s October 22 launch changes who pays while training waits for a judgment. Liquid’s same-day launch adds the deadline governing whether a live decision can use that judgment at all.",
     "developments": [
+      {
+        "date": "2026-10-22",
+        "id": 1030,
+        "title": "Liquid targets decisions with millisecond deadlines",
+        "text": "Liquid says RIPL produces complete LFM responses below 50 milliseconds on tested real-time workloads. The engine is available for enterprise deployments on NVIDIA GPUs.",
+        "source": "Liquid AI",
+        "url": "https://www.liquid.ai/blog/low-latency",
+        "relation": "Adds the opportunity cost of missing a live decision deadline to the existing analysis of billed task cost; figures remain vendor-reported."
+      },
       {
         "date": "2026-10-22",
         "id": 1025,

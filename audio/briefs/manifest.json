@@ -17,11 +17,11 @@
       "sha256": "3e277a499a065b989b26d0c0b6b6c42962d669dd8f5eb4f5c3b468dfbaea4d80"
     },
     "ai-market-leadership": {
-      "hash": "3fb27d5064d3bbc82d0a0e39d829afcc6b1eade329495b92bcfa8166745e5ff7",
-      "src": "audio/briefs/ai-market-leadership-3fb27d5064d3bbc8.m4a",
-      "duration": 266.526757,
-      "bytes": 1117560,
-      "sha256": "2d24567b4f1bba8457ccf8a0e1134c939aa8c42879e3b701834a7ccf96d82812"
+      "hash": "93a2351c47cef72aa372ba6189c64ce46a1d128a1dce2f7bec097e0c4553189f",
+      "src": "audio/briefs/ai-market-leadership-93a2351c47cef72a.m4a",
+      "duration": 281.526848,
+      "bytes": 1178400,
+      "sha256": "7cfab1596cd3004c425ce60b164483b6fa04d0c77b3a82264f8e0a3ebfe4f4e3"
     },
     "ai-science": {
       "hash": "891d08234f2759a9300978b3295b3c301cd097993688172bf5994a0aeefd757a",
@@ -45,11 +45,11 @@
       "sha256": "91bb3a85d898cd3870fa8b0088b9e721f495c22a0536b0b97ed031623fa04b29"
     },
     "workplace-agents": {
-      "hash": "e30a5d51200ef5322cdcec9aed6a1aad0dabbd686d1ed73e4858301fb296ab39",
-      "src": "audio/briefs/workplace-agents-e30a5d51200ef532.m4a",
-      "duration": 485.525805,
-      "bytes": 2055351,
-      "sha256": "6958afec46fccfa256c12a0926c165edb5f435e48ec93c5afe3145c36cb0de22"
+      "hash": "3cce98aa47d859e20597e0c98fc4174c8e9e9d694d7996d3b66bccfba6656d2e",
+      "src": "audio/briefs/workplace-agents-3cce98aa47d859e2.m4a",
+      "duration": 515.235737,
+      "bytes": 2178930,
+      "sha256": "ed9f597eeab02f235716ccbcbb4afe8ccc5c8bcb1b305929ed360ecd7b26413f"
     },
     "ai-infrastructure": {
       "hash": "b6ca66e8ed8a18641f48b35806adad3da0f35a96ce321e8915ce51354d09a601",
@@ -73,11 +73,11 @@
       "sha256": "6f8613a7b8954341990b6ae30307344978a9cf7a49145e128ffca2c008309483"
     },
     "agent-economics": {
-      "hash": "613e6c90c32b78c3193811639f7af2b3911525b5fd02e68631c64bb38415aeca",
-      "src": "audio/briefs/agent-economics-613e6c90c32b78c3.m4a",
-      "duration": 292.138367,
-      "bytes": 1222371,
-      "sha256": "d11bbe0578347177693dc871ef4be0fc7a81aaef1716f7c2fa6e91485022f338"
+      "hash": "b9e071c48a3eacb21f8b9bd7ef32097889611d738a2a441291c0cb0eaca4bb7c",
+      "src": "audio/briefs/agent-economics-b9e071c48a3eacb2.m4a",
+      "duration": 314.870703,
+      "bytes": 1314357,
+      "sha256": "74895f7fbf987cad6b25c218782f3b1248f0305ad348f39b96984baedcd6cc6e"
     }
   }
 }

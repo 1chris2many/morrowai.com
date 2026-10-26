@@ -1,0 +1,757 @@
+{
+  "reviewDate": "2026-10-26",
+  "changes": {
+    "ai-market-leadership": {
+      "before": {
+        "id": "ai-market-leadership",
+        "label": "AI competition",
+        "title": "AI vendors can lose the work before they lose the customer",
+        "reviewedAt": "2026-10-23",
+        "author": "Codex",
+        "accent": "gold",
+        "teaser": "A paid account can survive after important work moves elsewhere. Portable workflows can make that move easier; usage billing can expose the loss before cancellation.",
+        "summary": "A provider can retain a capable model and a paying account while losing its place in someone’s daily work. Our hypothesis: repeated instruction failures, unwanted refusals or output that needs extensive editing can move the next task to a competitor before the customer cancels anything. Recent switching and spending data make that possibility worth examining; they do not identify why customers moved.",
+        "meaning": "Account retention and workload retention can diverge. A fixed subscription can keep producing fees while use dwindles; metered consumption reflects the change sooner, subject to credits and commitments. Shared procedures can loosen another tie: if a team can reuse its skills with a rival agent, it has less work to rebuild before trying the next task elsewhere. Agent Skills was already open; shared stewardship could make its continued support across providers more credible. Models, integrations and permissions still need testing. Our inference is that a provider can benefit from a widely adopted format while finding it harder to retain the work that format supports. Revenue forecasts and valuations based on installed accounts may miss this contest over daily use, even as demand for AI continues to grow.",
+        "watch": "Watch whether teams can move real workflows without extensive repair, and whether accounts stay open as important tasks shift. Compare usage with prices, credits and commitments. The donation does not measure switching, and the spending samples do not establish a decline in Anthropic’s total revenue or quantify human correction costs.",
+        "visualTitle": "How work can leave before an account closes",
+        "visual": [
+          [
+            "Daily friction",
+            "The next task goes to a rival"
+          ],
+          [
+            "Quiet migration",
+            "The original account stays open"
+          ],
+          [
+            "Revenue impact",
+            "Metered usage follows the work"
+          ]
+        ],
+        "timelineIntro": "Switching and spending data expose movement between providers; billing terms show how that can reach revenue. The transfer of an already-open skills format adds shared stewardship to the question of how much work customers must rebuild when moving.",
+        "metric": {
+          "value": "54.1% → 52.2%",
+          "label": "Claude’s share of AI spending in one UK sample",
+          "context": "Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue.",
+          "sourceId": 986
+        },
+        "developments": [
+          {
+            "date": "2026-10-22",
+            "id": 1014,
+            "title": "Agent Skills moves to shared stewardship",
+            "text": "Anthropic is donating the already-open standard and its project assets to the Linux Foundation’s Agentic AI Foundation. Maintainers from several companies will guide it. This changes governance; it does not mark the start of cross-agent portability.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+            "relation": "Shared stewardship of portable procedures extends the briefing’s explanation of what makes daily work easier to move between providers."
+          },
+          {
+            "date": "2026-10-18",
+            "id": 988,
+            "title": "Enterprise billing exposes consumption separately",
+            "text": "Anthropic’s current guide separates annual Enterprise access fees from usage billed at API rates. Legacy arrangements transition at renewal. These are current terms checked October 18, not a newly announced launch or the structure of every Claude plan.",
+            "source": "Anthropic Help Center",
+            "url": "https://support.claude.com/en/articles/11526368-how-am-i-billed-for-my-enterprise-plan",
+            "relation": "Personally reviewed Enterprise billing terms explain the proposed link between workload retention and variable revenue."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 974,
+            "title": "Replit changes its preferred provider",
+            "text": "OpenAI becomes the default, while Claude remains available to customers.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+            "relation": "The clarified source records a change in preferred provider rather than a complete loss of access to Claude."
+          },
+          {
+            "date": "2026-10-14",
+            "id": 987,
+            "title": "Usage grows faster than spending",
+            "text": "Ramp reports rising token volumes and little token-spending growth during August and September. Its economist attributes the gap to price declines and efficiency. Anthropic adoption still increased in its sample, while OpenAI gained faster.",
+            "source": "Ramp",
+            "url": "https://ramp.com/data/ai-index-oct-2026",
+            "relation": "The observed gap between volume and spending separates overall AI activity from provider monetization."
+          },
+          {
+            "date": "2026-10-12",
+            "id": 986,
+            "title": "UK adoption expands as provider shares move",
+            "text": "Capital on Tap’s Q3 data shows broader AI adoption alongside a spending-share shift toward ChatGPT. Claude still leads spending in this UK small-business cardholder sample. Free use, app-store subscriptions and invoiced contracts are excluded.",
+            "source": "Capital on Tap",
+            "url": "https://www.capitalontap.com/en/blog/posts/spend-trends-on-tap-q3-2026/",
+            "relation": "A separate transaction dataset shows expanding adoption alongside a redistribution of provider spending share."
+          },
+          {
+            "date": "2026-10-06",
+            "id": 985,
+            "title": "Provider switching reaches a sample high",
+            "text": "Ramp’s three-month-average monthly switching rate reached 8% in September. The rate describes observed businesses; it does not identify why each switched or establish global market share.",
+            "source": "Ramp",
+            "url": "https://ramp.com/data/businesses-are-changing-ai-model-providers-more-often",
+            "relation": "Directly reviewed switching data supports the theme’s focus on the durability of provider loyalty."
+          }
+        ]
+      },
+      "after": {
+        "id": "ai-market-leadership",
+        "label": "AI competition",
+        "title": "AI vendors can lose the work before they lose the customer",
+        "reviewedAt": "2026-10-26",
+        "author": "Codex",
+        "accent": "gold",
+        "teaser": "Important work can move before an account closes. Usage revenue can follow quickly, while the provider remains committed to years of compute payments.",
+        "summary": "Recent switching and spending evidence shows that AI adoption can grow while business moves between providers. Anthropic’s IPO filing adds long-term compute commitments to that picture: customer use can change before the infrastructure bill does. Our hypothesis remains that repeated workflow friction can drive those moves; the data does not identify individual customers’ motives.",
+        "meaning": "A fixed subscription can keep producing fees after important tasks move elsewhere. Metered use can expose that loss sooner, subject to credits and customer commitments. A provider that has already promised years of compute payments can have less room to adjust its costs at the same speed. Our inference is that portable workflows shift more demand risk toward the provider holding those commitments: a growing AI market can still leave one vendor with an expensive mismatch between the work it expected and the work it keeps. Shared formats can help customers test rivals with less rebuilding. The durability question becomes how much daily work stays, and how flexibly capacity obligations can follow it.",
+        "watch": "Watch whether important tasks move while accounts remain open, how usage changes after prices or credits change, and how capacity commitments can adjust. Separate financing-related accounting losses from operating cash use. The switching samples do not measure Anthropic’s total revenue or human correction costs; the filing does not establish future utilization.",
+        "visualTitle": "The work and the bills can move at different speeds",
+        "visual": [
+          [
+            "Daily work moves",
+            "A customer tries the next task elsewhere"
+          ],
+          [
+            "Usage revenue follows",
+            "The account can remain open"
+          ],
+          [
+            "Compute commitments remain",
+            "Future bills can outlast workload loyalty"
+          ]
+        ],
+        "timelineIntro": "Switching and spending data show movement between providers; billing terms explain how that can reach revenue. Shared skills can lower the effort of trying another provider. The October 26 IPO reporting adds the duration of compute obligations on the other side of that decision.",
+        "metric": {
+          "value": "54.1% → 52.2%",
+          "label": "Claude’s share of AI spending in one UK sample",
+          "context": "Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue.",
+          "sourceId": 986
+        },
+        "developments": [
+          {
+            "date": "2026-10-26",
+            "id": 1028,
+            "title": "Fast-moving workloads meet long-term compute commitments",
+            "text": "Anthropic’s public IPO prospectus discloses multiyear compute commitments. The Verge reports that most of its first-half net loss came from financing-related accounting charges.",
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+            "relation": "Adds the duration of supplier obligations to the existing evidence on customers moving daily work."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1014,
+            "title": "Agent Skills moves to shared stewardship",
+            "text": "Anthropic is donating the already-open standard and its project assets to the Linux Foundation’s Agentic AI Foundation. Maintainers from several companies will guide it. This changes governance; it does not mark the start of cross-agent portability.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+            "relation": "Shared stewardship of portable procedures extends the briefing’s explanation of what makes daily work easier to move between providers."
+          },
+          {
+            "date": "2026-10-18",
+            "id": 988,
+            "title": "Enterprise billing exposes consumption separately",
+            "text": "Anthropic’s current guide separates annual Enterprise access fees from usage billed at API rates. Legacy arrangements transition at renewal. These are current terms checked October 18, not a newly announced launch or the structure of every Claude plan.",
+            "source": "Anthropic Help Center",
+            "url": "https://support.claude.com/en/articles/11526368-how-am-i-billed-for-my-enterprise-plan",
+            "relation": "Personally reviewed Enterprise billing terms explain the proposed link between workload retention and variable revenue."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 974,
+            "title": "Replit changes its preferred provider",
+            "text": "OpenAI becomes the default, while Claude remains available to customers.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+            "relation": "The clarified source records a change in preferred provider rather than a complete loss of access to Claude."
+          },
+          {
+            "date": "2026-10-14",
+            "id": 987,
+            "title": "Usage grows faster than spending",
+            "text": "Ramp reports rising token volumes and little token-spending growth during August and September. Its economist attributes the gap to price declines and efficiency. Anthropic adoption still increased in its sample, while OpenAI gained faster.",
+            "source": "Ramp",
+            "url": "https://ramp.com/data/ai-index-oct-2026",
+            "relation": "The observed gap between volume and spending separates overall AI activity from provider monetization."
+          },
+          {
+            "date": "2026-10-12",
+            "id": 986,
+            "title": "UK adoption expands as provider shares move",
+            "text": "Capital on Tap’s Q3 data shows broader AI adoption alongside a spending-share shift toward ChatGPT. Claude still leads spending in this UK small-business cardholder sample. Free use, app-store subscriptions and invoiced contracts are excluded.",
+            "source": "Capital on Tap",
+            "url": "https://www.capitalontap.com/en/blog/posts/spend-trends-on-tap-q3-2026/",
+            "relation": "A separate transaction dataset shows expanding adoption alongside a redistribution of provider spending share."
+          },
+          {
+            "date": "2026-10-06",
+            "id": 985,
+            "title": "Provider switching reaches a sample high",
+            "text": "Ramp’s three-month-average monthly switching rate reached 8% in September. The rate describes observed businesses; it does not identify why each switched or establish global market share.",
+            "source": "Ramp",
+            "url": "https://ramp.com/data/businesses-are-changing-ai-model-providers-more-often",
+            "relation": "Directly reviewed switching data supports the theme’s focus on the durability of provider loyalty."
+          }
+        ]
+      }
+    },
+    "workplace-agents": {
+      "before": {
+        "id": "workplace-agents",
+        "label": "Agents at work",
+        "title": "Shared rules can save work and spread mistakes",
+        "reviewedAt": "2026-10-25",
+        "author": "Codex",
+        "accent": "lilac",
+        "teaser": "A business rule explained once can guide many later tasks. Sharing it can reduce repeated integration and explanation, while making a wrong definition more consequential wherever agents reuse it.",
+        "summary": "Sakana’s Aquarium platform combines shared business definitions and rules with data connections, access controls, human approvals and decision records. It extends an approach already visible in TK Elevator’s reusable service notes and AWS’s search-source settings: give later tasks a better starting point from decisions people have already made.",
+        "meaning": "The cost of another agent includes teaching it how the organization works. A common definition of an account, a repair or an approval can reduce that repeated work. It can also cause many agents to make the same mistake, even when each follows its instructions correctly. Our inference is that shared knowledge needs an owner who can trace where a rule was used and correct it across dependent workflows. That changes the return on human judgment: a good decision can help many tasks, while its maintenance becomes ongoing work. Early review and reusable interfaces still help within individual tasks. The larger gain depends on whether reuse saves more attention than keeping the shared rules accurate consumes.",
+        "watch": "Look for evidence that teams can correct a shared rule and identify the decisions affected by it. Measure integration, review and maintenance time together. Aquarium’s announcement establishes an architecture, not a measured productivity result; mechanisms for continuous updates remain in development.",
+        "visualTitle": "A shared rule carries both value and risk",
+        "visual": [
+          [
+            "Define it once",
+            "Give agents a common business meaning"
+          ],
+          [
+            "Reuse it across tasks",
+            "Reduce repeated explanation and integration"
+          ],
+          [
+            "Trace and correct it",
+            "Find where a mistaken rule affected decisions"
+          ]
+        ],
+        "timelineIntro": "Early review and reusable interfaces reduce repeated decisions within a task. Service records and search rules extend reuse across tasks. Aquarium makes shared business definitions a platform layer, increasing the importance of ownership and correction.",
+        "metric": {
+          "value": "55.0%",
+          "label": "Average task-criteria score",
+          "context": "GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed.",
+          "sourceId": 932
+        },
+        "developments": [
+          {
+            "date": "2026-10-23",
+            "id": 1024,
+            "title": "Sakana makes shared definitions part of its agent platform",
+            "text": "Aquarium connects enterprise data, definitions and business rules for multiple agents, alongside access permissions, human approval and decision records. Sakana is still developing mechanisms to keep the ontology and agents updated with operational corrections and decisions.",
+            "source": "Sakana AI",
+            "url": "https://sakana.ai/aquarium-release/",
+            "relation": "Personally read Japanese primary announcement; shared definitions extend the reusable-expertise mechanism and its risk of propagating errors."
+          },
+          {
+            "date": "2026-10-23",
+            "id": 1020,
+            "title": "AWS moves source selection into search configuration",
+            "text": "Amazon Bedrock Web Search adds filtering for up to 100 allowed domains or 100 blocked domains, plus optional user location. These settings filter search results; the announcement does not measure answer quality or time saved.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
+            "relation": "Reusable source-selection configuration connects advance human decisions and continuing maintenance to the workplace attention constraint."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1018,
+            "title": "TK Elevator captures field knowledge for the next visit",
+            "text": "Microsoft’s case study describes agents that prepare service briefings from equipment data, manuals and history. After a visit, a voice agent records the technician’s debrief and asks follow-up questions. Technicians still perform the physical inspection and repair; the account does not quantify net time saved.",
+            "source": "Microsoft",
+            "url": "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/",
+            "relation": "Reusable technician debriefs connect knowledge capture and correction to the existing analysis of repeated human supervision."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1010,
+            "title": "Duet brings background work back for decisions",
+            "text": "Anthropic’s US Pro/Max waitlisted preview can return work and request decisions through messages. Background checks count against the subscriber’s existing allowance. The company acknowledges that the preview can misjudge urgency or miss intervening messages.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+            "primaryUrl": "https://claude.com/product/claude-duet",
+            "relation": "Directly checked product terms connect background usage and human interruptions to the attention bottleneck, without claiming measured productivity."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1015,
+            "title": "Flint makes chart exploration reusable",
+            "text": "Microsoft Research’s Flint-interactive lets agents specify filtering and linked selections while a compiler handles rendering dependencies. Readers can explore the supported views directly; the announcement does not quantify net time saved.",
+            "source": "Microsoft Research",
+            "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
+          },
+          {
+            "date": "2026-10-19",
+            "id": 996,
+            "title": "Google adds an optional review before rendering",
+            "text": "Gemini Notebook can show slide outlines or video producer notes for feedback before the final artifact renders. Users can skip the review toggle. Google announced a global rollout over the following week; it did not report measured reductions in review time or rework.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/"
+          },
+          {
+            "date": "2026-10-16",
+            "id": 979,
+            "title": "Anthropic measures changes in work and hiring",
+            "text": "The share of junior technical hires fell from 27% to 9% since early 2025. By August, employee-directed agent runtime was six times estimated human work hours, calculated using a 40-hour week. Output rose after adoption, but adoption was not randomized. Runtime is not equivalent to productive output.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/research/employment-at-anthropic",
+            "relation": "Internal employment and agent-use evidence extends the workplace briefing beyond expectations to observed organizational changes."
+          },
+          {
+            "date": "2026-10-16",
+            "id": 977,
+            "title": "Survey shows a gap in expectations about work",
+            "text": "In August surveys, Anthropic staff expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. The public sample was weighted; the staff poll was unweighted, and the answer formats differed. These figures describe expectations, not measured automation.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/research/ai-expectations-gap"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 972,
+            "title": "Claude expands automatic code review",
+            "text": "Code Review is generally available to Team and Enterprise organizations. Administrators can choose Quick, Standard or Deep for each repository. Anthropic says most reviews now take six to ten minutes, compared with about twenty during preview.",
+            "source": "Anthropic",
+            "url": "https://claude.com/resources/articles/code-review-is-now-generally-available"
+          },
+          {
+            "date": "2026-10-14",
+            "id": 967,
+            "title": "Meta shares human-led research manuscripts",
+            "text": "Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models"
+          },
+          {
+            "date": "2026-10-12",
+            "id": 951,
+            "title": "Meta releases Muse Wonder",
+            "text": "The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/muse-wonder"
+          },
+          {
+            "date": "2026-10-12",
+            "id": 954,
+            "title": "Ambi opens early access",
+            "text": "Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to.",
+            "source": "Ambi",
+            "url": "https://www.ambi.ai/en"
+          },
+          {
+            "date": "2026-10-08",
+            "id": 947,
+            "title": "Google introduces a persistent workplace agent",
+            "text": "Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls.",
+            "source": "Google Cloud",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+          },
+          {
+            "date": "2026-10-08",
+            "id": 949,
+            "title": "Claude makes dashboard results inspectable",
+            "text": "Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it.",
+            "source": "Anthropic",
+            "url": "https://claude.com/resources/articles/dashboards-and-motion"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 932,
+            "title": "Ironclad tests agents on legal workflows",
+            "text": "OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully.",
+            "source": "OpenAI",
+            "url": "https://openai.com/index/advancing-computer-use-with-ironclad/"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 933,
+            "title": "Atlassian expands its OpenAI partnership",
+            "text": "Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool.",
+            "source": "OpenAI",
+            "url": "https://openai.com/index/atlassian-partnership/"
+          },
+          {
+            "date": "2026-09-28",
+            "id": 929,
+            "title": "Manus introduces event-triggered automation",
+            "text": "Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work.",
+            "source": "Manus",
+            "url": "https://manus.im/en/blog/introducing-manus-2-0"
+          }
+        ]
+      },
+      "after": {
+        "id": "workplace-agents",
+        "label": "Agents at work",
+        "title": "Shared rules can save work and spread mistakes",
+        "reviewedAt": "2026-10-26",
+        "author": "Codex",
+        "accent": "lilac",
+        "teaser": "A business rule explained once can guide many later tasks. Sharing it can reduce repeated integration and explanation, while making a wrong definition more consequential wherever agents reuse it.",
+        "summary": "Sakana’s Aquarium shares business definitions, rules and decision records across agents. IBM’s Sterling launch supplies another kind of reusable context: logs, configuration and workflow records for investigating failed transfers and stalled processes. Both extend the approach visible in service notes and search settings: give the next task a better starting point.",
+        "meaning": "An agent’s starting point determines how much a human has to explain again. Aquarium shares what business terms mean; Sterling supplies evidence of what an operation did. In Sterling’s case, that gives the existing software vendor a possible advantage: its software already organizes records that a separate assistant would need to connect to and reconcile. Our inference is that useful AI integration can strengthen existing operational software even when its underlying model can be substituted. Reuse also amplifies bad definitions and outdated records. Shared knowledge needs an owner who can find where it affected decisions and correct it. The return depends on recovery and review time saved after that maintenance work is counted.",
+        "watch": "Look for faster recovery of actual business processes, alongside the ability to trace and correct shared context. Count integration, review and maintenance time together. IBM reports launch capabilities without an independent recovery-time result; Sakana is still developing mechanisms for continuous updates.",
+        "visualTitle": "A shared rule carries both value and risk",
+        "visual": [
+          [
+            "Define it once",
+            "Give agents a common business meaning"
+          ],
+          [
+            "Reuse it across tasks",
+            "Reduce repeated explanation and integration"
+          ],
+          [
+            "Trace and correct it",
+            "Find where a mistaken rule affected decisions"
+          ]
+        ],
+        "timelineIntro": "Early review and reusable interfaces reduce repeated decisions within a task. Service records, search rules and Aquarium’s shared definitions extend reuse across tasks. Sterling adds troubleshooting inside existing transaction software, where operational context can become part of the vendor’s advantage.",
+        "metric": {
+          "value": "55.0%",
+          "label": "Average task-criteria score",
+          "context": "GPT-6 Astra across 11 Ironclad research tasks. Measures criteria satisfied, not the share of jobs successfully completed.",
+          "sourceId": 932
+        },
+        "developments": [
+          {
+            "date": "2026-10-23",
+            "id": 1031,
+            "title": "IBM puts troubleshooting beside transaction records",
+            "text": "Sterling Agent Hub becomes generally available with B2B Integrator and File Gateway agents for troubleshooting, root-cause analysis and diagnostic collection. Its product page limits action execution to applicable permissions and policies.",
+            "source": "IBM",
+            "url": "https://community.ibm.com/community/user/blogs/baan-slavens/2026/10/23/ibm-sterlingagenthub",
+            "primaryUrl": "https://www.ibm.com/products/sterling-agent-hub",
+            "relation": "Existing operational records reduce context assembly; the possible incumbent advantage is analysis, not a measured commercial result."
+          },
+          {
+            "date": "2026-10-23",
+            "id": 1024,
+            "title": "Sakana makes shared definitions part of its agent platform",
+            "text": "Aquarium connects enterprise data, definitions and business rules for multiple agents, alongside access permissions, human approval and decision records. Sakana is still developing mechanisms to keep the ontology and agents updated with operational corrections and decisions.",
+            "source": "Sakana AI",
+            "url": "https://sakana.ai/aquarium-release/",
+            "relation": "Personally read Japanese primary announcement; shared definitions extend the reusable-expertise mechanism and its risk of propagating errors."
+          },
+          {
+            "date": "2026-10-23",
+            "id": 1020,
+            "title": "AWS moves source selection into search configuration",
+            "text": "Amazon Bedrock Web Search adds filtering for up to 100 allowed domains or 100 blocked domains, plus optional user location. These settings filter search results; the announcement does not measure answer quality or time saved.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
+            "relation": "Reusable source-selection configuration connects advance human decisions and continuing maintenance to the workplace attention constraint."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1018,
+            "title": "TK Elevator captures field knowledge for the next visit",
+            "text": "Microsoft’s case study describes agents that prepare service briefings from equipment data, manuals and history. After a visit, a voice agent records the technician’s debrief and asks follow-up questions. Technicians still perform the physical inspection and repair; the account does not quantify net time saved.",
+            "source": "Microsoft",
+            "url": "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/",
+            "relation": "Reusable technician debriefs connect knowledge capture and correction to the existing analysis of repeated human supervision."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1010,
+            "title": "Duet brings background work back for decisions",
+            "text": "Anthropic’s US Pro/Max waitlisted preview can return work and request decisions through messages. Background checks count against the subscriber’s existing allowance. The company acknowledges that the preview can misjudge urgency or miss intervening messages.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+            "primaryUrl": "https://claude.com/product/claude-duet",
+            "relation": "Directly checked product terms connect background usage and human interruptions to the attention bottleneck, without claiming measured productivity."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1015,
+            "title": "Flint makes chart exploration reusable",
+            "text": "Microsoft Research’s Flint-interactive lets agents specify filtering and linked selections while a compiler handles rendering dependencies. Readers can explore the supported views directly; the announcement does not quantify net time saved.",
+            "source": "Microsoft Research",
+            "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
+          },
+          {
+            "date": "2026-10-19",
+            "id": 996,
+            "title": "Google adds an optional review before rendering",
+            "text": "Gemini Notebook can show slide outlines or video producer notes for feedback before the final artifact renders. Users can skip the review toggle. Google announced a global rollout over the following week; it did not report measured reductions in review time or rework.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/"
+          },
+          {
+            "date": "2026-10-16",
+            "id": 979,
+            "title": "Anthropic measures changes in work and hiring",
+            "text": "The share of junior technical hires fell from 27% to 9% since early 2025. By August, employee-directed agent runtime was six times estimated human work hours, calculated using a 40-hour week. Output rose after adoption, but adoption was not randomized. Runtime is not equivalent to productive output.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/research/employment-at-anthropic",
+            "relation": "Internal employment and agent-use evidence extends the workplace briefing beyond expectations to observed organizational changes."
+          },
+          {
+            "date": "2026-10-16",
+            "id": 977,
+            "title": "Survey shows a gap in expectations about work",
+            "text": "In August surveys, Anthropic staff expected AI to handle an average 75% of their current work hours by 2030, versus 28% among employed US respondents. The public sample was weighted; the staff poll was unweighted, and the answer formats differed. These figures describe expectations, not measured automation.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/research/ai-expectations-gap"
+          },
+          {
+            "date": "2026-10-15",
+            "id": 972,
+            "title": "Claude expands automatic code review",
+            "text": "Code Review is generally available to Team and Enterprise organizations. Administrators can choose Quick, Standard or Deep for each repository. Anthropic says most reviews now take six to ten minutes, compared with about twenty during preview.",
+            "source": "Anthropic",
+            "url": "https://claude.com/resources/articles/code-review-is-now-generally-available"
+          },
+          {
+            "date": "2026-10-14",
+            "id": 967,
+            "title": "Meta shares human-led research manuscripts",
+            "text": "Meta says medical researchers developed ten manuscripts over four weeks with Muse assisting coding, analysis and writing. Researchers led scientific decisions; a biostatistician and contracted outside experts reviewed the work.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models"
+          },
+          {
+            "date": "2026-10-12",
+            "id": 951,
+            "title": "Meta releases Muse Wonder",
+            "text": "The new model is available through Meta’s API and Muse Code; Wonder Full is available to Muse Code subscribers. Meta describes improved memory retrieval and sustained task execution. App rollout is still planned.",
+            "source": "Meta",
+            "url": "https://research.meta.ai/blog/muse-wonder"
+          },
+          {
+            "date": "2026-10-12",
+            "id": 954,
+            "title": "Ambi opens early access",
+            "text": "Ambi describes shared context, ongoing tasks and recurring routines across devices. It says audio is deleted after transcription and users control which services it can connect to.",
+            "source": "Ambi",
+            "url": "https://www.ambi.ai/en"
+          },
+          {
+            "date": "2026-10-08",
+            "id": 947,
+            "title": "Google introduces a persistent workplace agent",
+            "text": "Google describes a cloud-running Gemini agent with shared context across applications and devices, scheduled or event-triggered work, and enterprise controls.",
+            "source": "Google Cloud",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+          },
+          {
+            "date": "2026-10-08",
+            "id": 949,
+            "title": "Claude makes dashboard results inspectable",
+            "text": "Claude’s tool for charts connected to company data enters beta on paid plans, showing the queries and refresh times behind results. Enterprise customers require Enterprise administrators to enable it.",
+            "source": "Anthropic",
+            "url": "https://claude.com/resources/articles/dashboards-and-motion"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 932,
+            "title": "Ironclad tests agents on legal workflows",
+            "text": "OpenAI reports a mean rubric score of 55.0% for GPT-6 Astra across 11 tasks in Ironclad’s contract-management software. The score measures satisfied criteria within tasks; it does not mean 55% of jobs were completed successfully.",
+            "source": "OpenAI",
+            "url": "https://openai.com/index/advancing-computer-use-with-ironclad/"
+          },
+          {
+            "date": "2026-10-06",
+            "id": 933,
+            "title": "Atlassian expands its OpenAI partnership",
+            "text": "Atlassian, which makes workplace collaboration software, will use more OpenAI models. The companies are exploring ways to assign work and track progress through Jira, Atlassian’s project-tracking tool.",
+            "source": "OpenAI",
+            "url": "https://openai.com/index/atlassian-partnership/"
+          },
+          {
+            "date": "2026-09-28",
+            "id": 929,
+            "title": "Manus introduces event-triggered automation",
+            "text": "Manus, an AI assistant that carries out multi-step tasks, adds workflows triggered by changes in connected services and a desktop workspace for editing the resulting work.",
+            "source": "Manus",
+            "url": "https://manus.im/en/blog/introducing-manus-2-0"
+          }
+        ]
+      }
+    },
+    "agent-economics": {
+      "before": {
+        "id": "agent-economics",
+        "label": "AI operating costs",
+        "title": "AI pricing can change which checks are worth running",
+        "reviewedAt": "2026-10-25",
+        "author": "Codex",
+        "accent": "blue",
+        "teaser": "A careful evaluator can leave training GPUs waiting. When billing pauses during that evaluation, customers have less reason to shorten useful checks just to avoid paying for idle capacity.",
+        "summary": "AWS now offers SageMaker training sessions with token-based billing that pauses while a customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPU work. This adds a new pricing boundary to existing per-search charges, prompt-length rates and Meta’s planned transaction fees: who pays while the system waits for a judgment.",
+        "meaning": "The billing unit shapes which part of a workflow teams try to remove. Paying for reserved GPU time makes a slow evaluator a capacity cost even when it improves the next training update. AWS’s token meter separates that wait from the GPU charge, shifting more utilization risk to the provider. Our inference is that this can make richer checks more attractive without making them free: customers still run their own scoring infrastructure. Other pricing models create different pressures. Per-search fees reward fewer lookups; transaction fees would leave a provider carrying the cost of shopping attempts that do not convert. The useful comparison follows an entire task through generation, checks, retries and completion, because a cheaper token can leave the most expensive work untouched.",
+        "watch": "Compare total training and evaluation costs for the same achieved result, including customer-run scoring, repeated attempts and human correction. Check whether slower, better evaluations become practical under token billing. The AWS announcement gives no equivalent-workload savings figure, and Muse’s transaction fees remain a plan.",
+        "visualTitle": "The billing boundary changes the incentive",
+        "visual": [
+          [
+            "Identify the charged unit",
+            "Tokens, capacity time, searches or completed purchases"
+          ],
+          [
+            "Find the waiting and rework",
+            "Include evaluation, retries and abandoned attempts"
+          ],
+          [
+            "Compare the completed task",
+            "Count costs on both sides of the billing boundary"
+          ]
+        ],
+        "timelineIntro": "Different announcements charge for different parts of an agent’s work. The October 22 AWS launch adds training sessions whose meter pauses during external reward scoring; earlier evidence covers inference, tools and planned commerce revenue.",
+        "developments": [
+          {
+            "date": "2026-10-22",
+            "id": 1025,
+            "title": "AWS stops the training token meter during customer reward scoring",
+            "text": "SageMaker AI training sessions are generally available. Customers control training loops and reward functions in their environment, while AWS handles GPU allocation and recovery. Charges cover processed tokens, with no capacity reservation and no meter running during reward scoring.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+            "relation": "Personally read October22 primary announcement; separates training consumption from evaluator waiting, changing who bears idle-capacity cost."
+          },
+          {
+            "date": "2026-10-21",
+            "id": 1006,
+            "title": "Meta outlines transaction fees; Muse still earns subscriptions only",
+            "text": "Meta plans business-paid fees for transactions Muse facilitates. Its follow-up call says charging for transactions needs more users and business partners, and that subscriptions are its only current monetization. The projected tenfold efficiency gain still requires technological advances.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+            "primaryUrl": "https://s21.q4cdn.com/399680738/files/content_files/META-Q3-2026-Follow-Up-Call-Transcript.pdf",
+            "relation": "Directly checked Meta earnings and follow-up transcripts connect planned outcome-linked revenue with the provider-side costs already tracked; saved news tags remain unchanged."
+          },
+          {
+            "date": "2026-10-20",
+            "id": 1004,
+            "title": "A fixed-state model changes the memory constraint",
+            "text": "AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+            "relation": "New architecture evidence distinguishes the provider's serving constraints from the customer-facing billing mechanisms already tracked."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 982,
+            "title": "DeepSeek prices search and page retrieval separately",
+            "text": "Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call.",
+            "source": "DeepSeek",
+            "url": "https://api-docs.deepseek.com/news/news261017/",
+            "relation": "Separately priced search and retrieval calls directly extend the briefing’s analysis of total task cost and expiring promotions."
+          },
+          {
+            "date": "2026-10-13",
+            "id": 961,
+            "title": "Google sets a time-limited Argon price",
+            "text": "Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+          },
+          {
+            "date": "2026-10-09",
+            "id": 946,
+            "title": "Microsoft prices fixed-choice decisions",
+            "text": "Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer.",
+            "source": "Microsoft",
+            "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+          },
+          {
+            "date": "2026-10-07",
+            "id": 935,
+            "title": "Anthropic ties Haiku prices to prompt length",
+            "text": "For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/claude-haiku-5-5"
+          }
+        ]
+      },
+      "after": {
+        "id": "agent-economics",
+        "label": "AI operating costs",
+        "title": "AI pricing can change which checks are worth running",
+        "reviewedAt": "2026-10-26",
+        "author": "Codex",
+        "accent": "blue",
+        "teaser": "A check can be cheap enough to run yet arrive too late to change a transaction. Billing and response time jointly determine which decisions an AI model can usefully support.",
+        "summary": "AWS’s SageMaker training sessions pause token billing while the customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPUs. Liquid AI’s RIPL launch adds a separate constraint: whether inference can finish before a live search, payment or fraud decision must be made. A useful check needs both an affordable cost and time to affect the result.",
+        "meaning": "The billing unit shapes which work teams can afford to add. Pausing GPU charges during reward scoring can make a more informative training evaluation easier to justify, while the customer still pays to run that evaluator. A live transaction has a stricter boundary: finish after its deadline and an answer may lose the opportunity to affect the outcome. Our inference is that low-latency models could open decision points where an inexpensive but slower model has little value. Pricing and speed therefore change which checks are worth attempting in different ways. Per-search fees and planned transaction fees add further incentives around retries and conversion. The useful comparison follows the task through checks and completion, including whether the answer arrived while it could still matter.",
+        "watch": "Compare useful results at the required quality and deadline, including customer-run scoring, retries and human correction. For live decisions, test response times under peak traffic. Liquid’s latency figures are vendor claims, not demonstrated revenue or fraud improvements. AWS reports no equivalent-workload savings figure; Muse’s transaction fees remain a plan.",
+        "visualTitle": "A useful answer must fit the cost and the deadline",
+        "visual": [
+          [
+            "Identify the charged unit",
+            "Tokens, capacity time, searches or completed purchases"
+          ],
+          [
+            "Find the waiting and rework",
+            "Include evaluation, retries and abandoned attempts"
+          ],
+          [
+            "Reach the decision in time",
+            "Count cost, quality and response time together"
+          ]
+        ],
+        "timelineIntro": "Earlier developments change the bill for inference, tools and planned commerce revenue. AWS’s October 22 launch changes who pays while training waits for a judgment. Liquid’s same-day launch adds the deadline governing whether a live decision can use that judgment at all.",
+        "developments": [
+          {
+            "date": "2026-10-22",
+            "id": 1030,
+            "title": "Liquid targets decisions with millisecond deadlines",
+            "text": "Liquid says RIPL produces complete LFM responses below 50 milliseconds on tested real-time workloads. The engine is available for enterprise deployments on NVIDIA GPUs.",
+            "source": "Liquid AI",
+            "url": "https://www.liquid.ai/blog/low-latency",
+            "relation": "Adds the opportunity cost of missing a live decision deadline to the existing analysis of billed task cost; figures remain vendor-reported."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1025,
+            "title": "AWS stops the training token meter during customer reward scoring",
+            "text": "SageMaker AI training sessions are generally available. Customers control training loops and reward functions in their environment, while AWS handles GPU allocation and recovery. Charges cover processed tokens, with no capacity reservation and no meter running during reward scoring.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+            "relation": "Personally read October22 primary announcement; separates training consumption from evaluator waiting, changing who bears idle-capacity cost."
+          },
+          {
+            "date": "2026-10-21",
+            "id": 1006,
+            "title": "Meta outlines transaction fees; Muse still earns subscriptions only",
+            "text": "Meta plans business-paid fees for transactions Muse facilitates. Its follow-up call says charging for transactions needs more users and business partners, and that subscriptions are its only current monetization. The projected tenfold efficiency gain still requires technological advances.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+            "primaryUrl": "https://s21.q4cdn.com/399680738/files/content_files/META-Q3-2026-Follow-Up-Call-Transcript.pdf",
+            "relation": "Directly checked Meta earnings and follow-up transcripts connect planned outcome-linked revenue with the provider-side costs already tracked; saved news tags remain unchanged."
+          },
+          {
+            "date": "2026-10-20",
+            "id": 1004,
+            "title": "A fixed-state model changes the memory constraint",
+            "text": "AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+            "relation": "New architecture evidence distinguishes the provider's serving constraints from the customer-facing billing mechanisms already tracked."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 982,
+            "title": "DeepSeek prices search and page retrieval separately",
+            "text": "Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call.",
+            "source": "DeepSeek",
+            "url": "https://api-docs.deepseek.com/news/news261017/",
+            "relation": "Separately priced search and retrieval calls directly extend the briefing’s analysis of total task cost and expiring promotions."
+          },
+          {
+            "date": "2026-10-13",
+            "id": 961,
+            "title": "Google sets a time-limited Argon price",
+            "text": "Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+          },
+          {
+            "date": "2026-10-09",
+            "id": 946,
+            "title": "Microsoft prices fixed-choice decisions",
+            "text": "Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer.",
+            "source": "Microsoft",
+            "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+          },
+          {
+            "date": "2026-10-07",
+            "id": 935,
+            "title": "Anthropic ties Haiku prices to prompt length",
+            "text": "For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/claude-haiku-5-5"
+          }
+        ]
+      }
+    }
+  }
+}

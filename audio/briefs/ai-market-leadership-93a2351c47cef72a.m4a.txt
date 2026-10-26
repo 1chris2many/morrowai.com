@@ -1,0 +1,29 @@
+AI competition. AI vendors can lose the work before they lose the customer
+
+Useful AI Werks. Analysis by Codex. Reviewed October 26, 2026. Synthetic narration.
+
+Recent switching and spending evidence shows that AI adoption can grow while business moves between providers. Anthropic’s IPO filing adds long-term compute commitments to that picture: customer use can change before the infrastructure bill does. Our hypothesis remains that repeated workflow friction can drive those moves; the data does not identify individual customers’ motives.
+
+Three takeaways. Daily work moves. A customer tries the next task elsewhere. Usage revenue follows. The account can remain open. Compute commitments remain. Future bills can outlast workload loyalty.
+
+What it means. A fixed subscription can keep producing fees after important tasks move elsewhere. Metered use can expose that loss sooner, subject to credits and customer commitments. A provider that has already promised years of compute payments can have less room to adjust its costs at the same speed. Our inference is that portable workflows shift more demand risk toward the provider holding those commitments: a growing AI market can still leave one vendor with an expensive mismatch between the work it expected and the work it keeps. Shared formats can help customers test rivals with less rebuilding. The durability question becomes how much daily work stays, and how flexibly capacity obligations can follow it.
+
+54.1% → 52.2%. Claude’s share of AI spending in one UK sample. Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue. Source: Capital on Tap, 2026-10-12.
+
+How the story developed. Switching and spending data show movement between providers; billing terms explain how that can reach revenue. Shared skills can lower the effort of trying another provider. The October 26 IPO reporting adds the duration of compute obligations on the other side of that decision.
+
+October 6. Provider switching reaches a sample high. Ramp’s three-month-average monthly switching rate reached 8% in September. The rate describes observed businesses; it does not identify why each switched or establish global market share. Source: Ramp.
+
+October 12. UK adoption expands as provider shares move. Capital on Tap’s Q3 data shows broader AI adoption alongside a spending-share shift toward ChatGPT. Claude still leads spending in this UK small-business cardholder sample. Free use, app-store subscriptions and invoiced contracts are excluded. Source: Capital on Tap.
+
+October 14. Usage grows faster than spending. Ramp reports rising token volumes and little token-spending growth during August and September. Its economist attributes the gap to price declines and efficiency. Anthropic adoption still increased in its sample, while OpenAI gained faster. Source: Ramp.
+
+October 17. Replit changes its preferred provider. OpenAI becomes the default, while Claude remains available to customers. Source: TechCrunch.
+
+October 18. Enterprise billing exposes consumption separately. Anthropic’s current guide separates annual Enterprise access fees from usage billed at API rates. Legacy arrangements transition at renewal. These are current terms checked October 18, not a newly announced launch or the structure of every Claude plan. Source: Anthropic Help Center.
+
+October 22. Agent Skills moves to shared stewardship. Anthropic is donating the already-open standard and its project assets to the Linux Foundation’s Agentic AI Foundation. Maintainers from several companies will guide it. This changes governance; it does not mark the start of cross-agent portability. Source: Anthropic.
+
+October 26. Fast-moving workloads meet long-term compute commitments. Anthropic’s public IPO prospectus discloses multiyear compute commitments. The Verge reports that most of its first-half net loss came from financing-related accounting charges. Source: The Verge.
+
+What to watch. Watch whether important tasks move while accounts remain open, how usage changes after prices or credits change, and how capacity commitments can adjust. Separate financing-related accounting losses from operating cash use. The switching samples do not measure Anthropic’s total revenue or human correction costs; the filing does not establish future utilization.
