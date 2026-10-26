@@ -1,18 +1,143 @@
 {
   "version": 1,
-  "digestDate": "2026-10-25",
+  "digestDate": "2026-10-26",
   "latestSavedDigest": "2026-10-26",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 6,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 7,
+  "pending": 3,
   "items": [
+    {
+      "digestItemId": 1028,
+      "digestDate": "2026-10-26",
+      "title": "Anthropic’s IPO filing reveals long-term compute commitments",
+      "summary": "Anthropic filed its public IPO prospectus and plans to list on Nasdaq as ANT. It reported $16.3 billion in first-half revenue and an $80.7 billion net loss, most of which came from financing-related accounting charges, alongside major multiyear compute commitments.",
+      "whyItMatters": "The headline loss is a poor proxy for cash spent running models. The harder business question is whether future customer revenue will cover capacity commitments signed years in advance: customers can switch providers much faster than that infrastructure can be paid off. The filing makes this mismatch more visible without proving how much capacity will ultimately be used.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+      "source": "The Verge (Robert Hart)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-26-anthropic-files-its-ipo-prospectus-plans-to-list-on-nasdaq-under-ticker-ant",
+      "editorialNote": "Public filing reported October 26, 2026."
+    },
+    {
+      "digestItemId": 1027,
+      "digestDate": "2026-10-26",
+      "title": "Apollo questions whether AI spending is reaching company profits",
+      "summary": "Apollo economist Torsten Slok argues that AI has yet to improve broad business results, pointing to flat revenue per worker and profit margins in the S&P 500 excluding the seven technology-linked companies known as the Magnificent Seven. His October 24 note contrasts those measures with rising results for that smaller group.",
+      "whyItMatters": "A supplier can earn revenue from AI before its customers earn a return on using it. If deployments keep adding token bills without changing how work gets done, customers have an incentive to cap usage even while suppliers report growth. These aggregate measures raise that question; they cannot isolate AI’s effect or show that every deployment failed.",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "source": "TechCrunch (Anthony Ha), citing an Apollo Global Management research note",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-26-apollo-chief-economist-says-ai-has-delivered-zero-financial-payoff-outside-the-tech-sector",
+      "editorialNote": "Apollo analysis published October 24, 2026; reported October 25."
+    },
+    {
+      "digestItemId": 1029,
+      "digestDate": "2026-10-26",
+      "title": "COBOL migration gains leave the system-replacement problem unresolved",
+      "summary": "New reporting from The Verge examines OpenAI’s October 19 code-migration results with software-engineering researchers. They point to dependencies, data and undocumented behavior that are not captured by tests of individual code conversions.",
+      "whyItMatters": "Cheaper translation shifts the scarce work toward proving that a replacement preserves the business rules hidden in the old system. That could make testing and documentation more valuable even as writing replacement code becomes cheaper. A model’s success rate on isolated examples therefore says little about the cost of finding one unacceptable failure across a bank’s entire workflow.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
+      "source": "The Verge (Robert Hart), citing an October 19, 2026 OpenAI announcement",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-26-ai-code-migration-tools-raise-fresh-questions-about-retiring-cobol-from-critical-infrastructure",
+      "editorialNote": "Expert reporting published October 26; underlying model announcement October 19, 2026."
+    },
+    {
+      "digestItemId": 1026,
+      "digestDate": "2026-10-26",
+      "title": "Grok releases its AI-generated Odyssey opening",
+      "summary": "The seven-minute episode was made with Wonder Studios and director Dev Walker.",
+      "whyItMatters": "Producing convincing shots is only one part of delivering a film. If cheaper generation increases the amount of footage available, selection, continuity and editing can become the expensive bottlenecks. A longer public release lets viewers judge that assembled experience; it does not establish a lower production cost.",
+      "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+      "source": "TechCrunch (Anthony Ha)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-26-xai-s-grok-releases-first-seven-minutes-of-its-ai-generated-odyssey-video-series",
+      "editorialNote": "Released October 23; reported October 25."
+    },
+    {
+      "digestItemId": 1031,
+      "digestDate": "2026-10-26",
+      "title": "IBM adds AI troubleshooting to Sterling business-data transfers",
+      "summary": "IBM made Sterling Agent Hub generally available on October 23, with agents for B2B Integrator and File Gateway. The release brings AI-assisted troubleshooting, root-cause analysis and diagnostic collection to failed transfers and stalled business processes.",
+      "whyItMatters": "Failed business-data transfers can hold up orders and invoices while operators assemble logs across systems. Embedding the agent where those records already live could reduce that handoff cost and give IBM an advantage over a separate assistant that needs new integrations. The commercial test is whether diagnosis converts into faster, permissioned recovery; a better explanation alone leaves the underlying transaction stuck.",
+      "editorialNote": "Available October 23, 2026.",
+      "url": "https://community.ibm.com/community/user/blogs/baan-slavens/2026/10/23/ibm-sterlingagenthub",
+      "source": "IBM",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "workplace-agents",
+          "name": "Agents at work"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-26-ibm-adds-ai-troubleshooting-to-sterling-business-data-transfers"
+    },
+    {
+      "digestItemId": 1030,
+      "digestDate": "2026-10-26",
+      "title": "Liquid AI targets live commerce decisions with low-latency inference",
+      "summary": "Liquid AI introduced RIPL, an inference engine for its Liquid Foundation Models on NVIDIA GPUs. The company reports complete responses below 50 milliseconds on tested real-time workloads, targeting search, recommendations, fraud checks and payments.",
+      "whyItMatters": "A model that fits an existing checkout or search latency budget can participate in every live transaction. That could let providers sell AI against measurable conversion or fraud outcomes, making consistent response times at peak traffic more valuable than general-purpose breadth. The trade-off is specialization: buyers still need to prove each fast decision is accurate enough for their own workflow.",
+      "editorialNote": "Announced October 22, 2026.",
+      "url": "https://www.liquid.ai/blog/low-latency",
+      "source": "Liquid AI",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-26-liquid-ai-targets-live-commerce-decisions-with-low-latency-inference"
+    },
     {
       "digestItemId": 1022,
       "digestDate": "2026-10-25",
@@ -5631,8 +5756,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-25 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-26T14:00:23.182Z",
-  "contentHash": "b3812b76c0d4cc223c5b19a611828700228557a080963250267d72d30253f7ab"
+  "publicationStatus": "current",
+  "notice": "2026-10-26 · 6 stories",
+  "publishedAt": "2026-10-26T15:09:48.510Z",
+  "contentHash": "7a8529ee200090a09db2fd9f7942cf26dc94ec9f2a34678119e8d3115b47d2f9"
 }
