@@ -81,3 +81,10 @@ reviewedIds.push(1021,1022,1023,1024,1025);
 // and embedded operational context1031 incorporated.1026,1027 and1029
 // remain standalone after actual triage; no forced new theme or stale-date refresh.
 reviewedIds.push(1026,1027,1028,1029,1030,1031);
+
+// October27: 1033 extends evidence access and expert review;1035 adds the
+// security work attached to local deployment.1032 reinforces yesterday’s
+// fixed-obligation analysis;1036 is a vendor-specific serving claim;1037 is
+// a planned shared-metrics feature. No forced new brief or unrelated redating.
+// Source1034 remains held and is excluded from the published-story inventory.
+reviewedIds.push(1032,1033,1035,1036,1037);

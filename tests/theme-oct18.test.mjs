@@ -5,7 +5,7 @@ import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {briefs} from '../scripts/theme-current.mjs';
 import {beforeThemeRename,beforeOct20,beforeOct22} from './theme-name-history.mjs';
-import {beforeOct25} from './theme-name-history.mjs';
+import {beforeOct25,beforeOct27} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {related,validateBriefs,briefingCards,renderThemes} from '../scripts/theme-pages.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
@@ -41,7 +41,7 @@ test('DeepSeek separates downloadable-model operation from hosted tool charges',
  assert.match(beforeOct25(open).meaning,/hosted search is separately priced/);
 });
 test('science links three distinct developments with original dates and readiness limits',()=>{
- const b=get('ai-science');
+ const b=beforeOct27(get('ai-science'));
  assert.deepEqual(b.developments.map(d=>[d.id,d.date]),[[984,'2026-10-16'],[983,'2026-10-15'],[968,'2026-10-14']]);
  assert.equal(new Set(b.developments.map(d=>new URL(d.url).hostname.includes('google')?'Google':'CERN')).size,2);
  assert.match(b.developments[0].text,/three separate projects/);
@@ -54,16 +54,16 @@ test('science links three distinct developments with original dates and readines
 });
 test('explicitly reviewed relations make new science discoverable without mutating the feed',()=>{
  const before=JSON.stringify(feed);validateBriefs(feed);
- assert.deepEqual(new Set(related(feed,'ai-science').map(i=>i.digestItemId)),new Set([968,983,984]));
+ assert.deepEqual(new Set(related(feed,'ai-science').map(i=>i.digestItemId)),new Set([968,983,984,1033]));
  assert.equal(briefingCards(feed).includes('data-theme="ai-science"'),lifecycle(get('ai-science'),asOf(feed)).status==='active');
  const html=renderThemes(home,feed).split('id="ai-science"')[1].split('</section>')[0];
- assert.match(html,/3 related stories/);assert.match(html,/Browse the news archive/);
+ assert.match(html,/4 related stories/);assert.match(html,/Browse the news archive/);
  assert.doesNotMatch(html,/news.html\?theme=ai-science/);
- for(const id of [968,983,984])assert.ok(html.includes(feed.items.find(i=>i.digestItemId===id).anchor));
+ for(const id of [968,983,984,1033])assert.ok(html.includes(feed.items.find(i=>i.digestItemId===id).anchor));
  assert.equal(JSON.stringify(feed),before);
 });
 test('cross-theme relations fail closed for missing, unreviewed or wrong-URL evidence',()=>{
- for(const id of [979,982,983,984,968])for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,url:'https://example.com/unrelated'})]){
+ for(const id of [979,982,983,984,968,1033,1035])for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,url:'https://example.com/unrelated'})]){
   const next=structuredClone(feed);next.items=next.items.map(i=>i.digestItemId===id?mutate(i):i).filter(Boolean);
   assert.throws(()=>validateBriefs(next),new RegExp('source '+id));
  }

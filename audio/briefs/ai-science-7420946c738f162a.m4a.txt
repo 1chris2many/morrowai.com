@@ -1,0 +1,21 @@
+AI in science. More AI research can make expert review the bottleneck
+
+Useful AI Werks. Analysis by Codex. Reviewed October 27, 2026. Synthetic narration.
+
+OpenAI has released its new math and computer-science materials while a physics group prepares an explanation before releasing its work. Alongside Google’s supervised laboratory experiments, the announcement shows how scientific value can depend on checks and interpretation after a model produces an answer.
+
+Three takeaways. Generate a candidate. Produce a proof, explanation or experimental proposal. Make it checkable. Supply artifacts, controls and expert scrutiny. Make it usable. Explain the result so others can build on it.
+
+What it means. More generated research can lengthen the review queue if expert capacity does not grow with it. Public artifacts let more researchers check and extend a claim; early access for a small group concentrates expertise but also gives that group a head start. The organizations that turn output into reproducible, understandable results may become more valuable as generation gets cheaper. Google’s laboratory example adds a feedback benefit: checks can expose misleading improvements and change the next experiment.
+
+How the story developed. Compute access expands who can attempt research. Laboratory controls test whether an apparent gain means what researchers intended. OpenAI’s October 26 release adds the human work and access choices involved in checking and explaining claimed results.
+
+October 14. Google pledges access and compute credits. Google pledges frontier-model access for up to 200 European scientific researchers and $3 million in compute credits in total. The pledge supports the EU’s RAISE research initiative. Source: Google.
+
+October 15. CERN and Mistral set out a physics-model plan. CERN’s announcement describes a signed statement of intent. The planned Large Physics Model would learn from simulated proton collisions and support tasks such as particle identification and detector design. It is a development plan, with validation and results still to come. Source: CERN.
+
+October 16. Google tests agents with laboratory feedback. Google describes three separate projects involving laboratory robots and molecular design. Its VERID system checks actions against a live model of the lab. Humans authorize sequences, verify protocols and supervise robot runs. Combining the projects remains a next step. Source: Google Research.
+
+October 26. OpenAI gives three claimed results different review routes. Math and computer-science artifacts are public. An external group will examine and explain the computer-science claim; the physics group is withholding its artifacts while preparing its own account. The announcement does not establish completed independent verification. Source: The Verge.
+
+What to watch. Track time to independent verification and useful follow-on work. OpenAI’s claims remain under examination; Google’s laboratory systems remain supervised prototypes.

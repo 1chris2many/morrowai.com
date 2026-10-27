@@ -66,6 +66,6 @@ test('six-source triage does not refresh unrelated briefs or admit the held stor
  assert.equal(q.unclassified.filter(i=>!reviewedIds.includes(i.id)).length,0);
  assert.equal(get('ai-regulation').reviewedAt,'2026-10-09');
  assert.equal(lifecycle(get('ai-regulation'),'2026-10-21').status,'watching');
- assert.equal(get('ai-science').reviewedAt,'2026-10-18');
+ assert.equal(beforeOct22(get('ai-science')).reviewedAt,'2026-10-18');
  assert.ok(!briefs.some(b=>b.developments.some(d=>[999,1000,1002,1003].includes(d.id))));
 });

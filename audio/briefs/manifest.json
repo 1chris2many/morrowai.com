@@ -24,11 +24,11 @@
       "sha256": "7cfab1596cd3004c425ce60b164483b6fa04d0c77b3a82264f8e0a3ebfe4f4e3"
     },
     "ai-science": {
-      "hash": "891d08234f2759a9300978b3295b3c301cd097993688172bf5994a0aeefd757a",
-      "src": "audio/briefs/ai-science-891d08234f2759a9.m4a",
-      "duration": 167.505261,
-      "bytes": 715300,
-      "sha256": "ac4cde46ef0cad1b05107daae5c38acf07994366fe99dbd9b1c875417c01dd87"
+      "hash": "7420946c738f162ad1cfc0df1fbc095413e4c1ba8a631c603050b0df5fcc969a",
+      "src": "audio/briefs/ai-science-7420946c738f162a.m4a",
+      "duration": 185.988345,
+      "bytes": 790808,
+      "sha256": "d82a5259df618e62016d351b0899a145dd58490861b9197d03a5b5cd4d672375"
     },
     "ai-regulation": {
       "hash": "b86dc71106ba80175ea709055e03c655454b8073055ec917181f84d17fd8c4e1",
@@ -66,11 +66,11 @@
       "sha256": "287bb36f704c3b3d3a7733cbc30d619a419bad9d32bb8b937ad298ef9460b8be"
     },
     "open-weights": {
-      "hash": "dac9a565446ca3d716d4d5fee3a27894f0c4ae1343caf32e10ce92e6c08e832f",
-      "src": "audio/briefs/open-weights-dac9a565446ca3d7.m4a",
-      "duration": 328.973605,
-      "bytes": 1371380,
-      "sha256": "6f8613a7b8954341990b6ae30307344978a9cf7a49145e128ffca2c008309483"
+      "hash": "e6775ce79380562f67f5d0743407d08166054bfd8d86779f98dd85615e309b54",
+      "src": "audio/briefs/open-weights-e6775ce79380562f.m4a",
+      "duration": 320.440272,
+      "bytes": 1335531,
+      "sha256": "bae8c3b283325ee7cc7f5d5f432d1b8b09e488a8d3c34f5514c732a9b13defc9"
     },
     "agent-economics": {
       "hash": "b9e071c48a3eacb21f8b9bd7ef32097889611d738a2a441291c0cb0eaca4bb7c",
