@@ -88,3 +88,10 @@ reviewedIds.push(1026,1027,1028,1029,1030,1031);
 // a planned shared-metrics feature. No forced new brief or unrelated redating.
 // Source1034 remains held and is excluded from the published-story inventory.
 reviewedIds.push(1032,1033,1035,1036,1037);
+
+// October28:1039extends scarce capacity/recovery;1040adds monitoring/privacy
+// trade-offs.1038simulation lacks physical-transfer results;1041allegations
+// concern cumulative conversational trust, not agent containment.1042local
+// multimodal release reinforces deployment choice without new security evidence.
+// Keep all event dates;1034/980remain source-held.
+reviewedIds.push(1038,1039,1040,1041,1042);

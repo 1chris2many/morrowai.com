@@ -5,7 +5,7 @@ import {briefs} from '../scripts/theme-current.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {narration,audioEntry} from '../scripts/brief-audio.mjs';
 import {validateBriefs,related,renderThemes,briefingCards} from '../scripts/theme-pages.mjs';
-import {lifecycle,themeQueue} from '../scripts/theme-lifecycle.mjs';
+import {lifecycle,themeQueue,asOf} from '../scripts/theme-lifecycle.mjs';
 import {beforeOct20,oct20Revision,beforeOct21,beforeOct22} from './theme-name-history.mjs';
 const root=new URL('../',import.meta.url),read=p=>JSON.parse(readFileSync(new URL(p,root)));
 const feed=read('news.json'),manifest=read('audio/briefs/manifest.json'),get=id=>briefs.find(b=>b.id===id);
@@ -34,7 +34,7 @@ test('new controls and review are proposals and optional workflows, not measured
  assert.match(w.developments[0].text,/over the following week/);
 });
 test('infrastructure reactivation requires substantive new evidence and keeps future capacity qualified',()=>{
- const b=get('ai-infrastructure');
+ const b=beforeOct22(get('ai-infrastructure'));
  assert.equal(lifecycle(b,'2026-10-20').status,'active');
  assert.match(b.summary,/hundreds of thousands/);assert.match(b.summary,/one million is the planned/);
  assert.match(b.meaning,/Our inference/);
@@ -55,7 +55,7 @@ test('robotics connects distinct transfer tests without inventing an exact launc
  assert.match(narration(b),/Source checked October 20/);
  const html=renderThemes(home,feed);
  assert.match(html,/Source checked Oct 20, 2026/);
- assert.ok(briefingCards(feed).includes('data-theme="robot-transfer"'));
+ assert.equal(briefingCards(feed).includes('data-theme="robot-transfer"'),lifecycle(b,asOf(feed)).status==='active');
  assert.deepEqual(new Set(related(feed,b.id).map(x=>x.digestItemId)),new Set([814,997]));
  const bad=structuredClone(briefs);bad.find(x=>x.id===b.id).developments[0].dateKind='invented';
  assert.throws(()=>validateBriefs(feed,bad),/date kind/);

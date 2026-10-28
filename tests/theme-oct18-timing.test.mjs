@@ -19,7 +19,7 @@ test('October18 timing correction changes exactly three spans, without redating 
  }
  assert.equal(hash(prior),'8a936788eb82088ebef10d14d72b169559c8b2378f72c5ec840443536bba7ae5');
  assert.equal(beforeOct20(b).reviewedAt,'2026-10-12');
- assert.equal(b.metric.value,'890 MW');
+ assert.equal(beforeOct20(b).metric.value,'890 MW');
  assert.equal(b.developments.find(d=>d.id===930).date,'2026-10-06');
 });
 test('October18 precision correction preserves three still-unrevised briefings',()=>{
@@ -40,6 +40,8 @@ test('corrected infrastructure narration is exact, valid and rejects the old aud
  assert.match(text,/expected by 2028/);
  assert.doesNotMatch(text,/expected in 2028|scheduled for 2028/);
  const stale=structuredClone(b);
- stale.metric.context=stale.metric.context.replace('expected by 2028','expected in 2028');
+ const oldPower=stale.developments.find(d=>d.id===930);
+ assert.match(oldPower.text,/expected by 2028/);
+ oldPower.text=oldPower.text.replace('expected by 2028','expected in 2028');
  assert.equal(audioEntry(stale,manifest),null);
 });

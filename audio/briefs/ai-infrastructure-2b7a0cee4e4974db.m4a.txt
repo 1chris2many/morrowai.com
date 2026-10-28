@@ -1,0 +1,31 @@
+AI infrastructure. Memory shortages make recovered compute more valuable
+
+Useful AI Werks. Analysis by Codex. Reviewed October 28, 2026. Synthetic narration.
+
+SK hynix expects memory demand to exceed supply through 2030 and says long-term agreements cover more than half of its total 2027–28 production capacity. Meta’s Prometheus account describes how spare hardware, fault isolation and checkpoints keep training progressing after failures. The new supply forecast strengthens the case for treating recovery as a source of useful capacity.
+
+Three takeaways. Secure future supply. Long lead times make expansion a forward commitment. Recover installed capacity. Limit the work lost when equipment fails. Count the whole fleet. Include spare hardware when comparing useful output.
+
+What it means. Factory lead times limit how quickly an operator can buy its way out of a capacity shortage. Avoiding repeated work could therefore become more valuable while new equipment is unavailable. Meta uses spare hardware and checkpoints to recover quickly, but the capacity calculation needs care: many in-rack spares arise from fitting a 64-GPU job into a 72-GPU rack, while extra reserve racks are a separate commitment. The advantage depends on useful work preserved across the whole fleet, including spares, and the engineering required. Supply contracts address the next expansion; recovery can improve what an operator gets from equipment already installed.
+
+>50%. SK hynix’s 2027–28 capacity covered by long-term agreements. Share of the company’s total production capacity, reported October 28. Contract prices can adjust within agreed ranges as market conditions change. Source: SK hynix, 2026-10-28.
+
+How the story developed. Earlier power and hardware developments show how capacity is assembled; Meta adds the operating work required to keep it productive. SK hynix’s October 28 forecast and supply agreements make the delay in obtaining more equipment part of that calculation.
+
+September 30. CoreWeave introduces Vera Rubin capacity. NVIDIA says Cognition, a maker of AI coding tools, is using its Vera Rubin computing systems on CoreWeave’s cloud service for production work. Other customers can request early access. Source: NVIDIA.
+
+October 4. Washington organizers call for a pause. KIRO reported plans for more than 20 events calling for a construction moratorium while cost and environmental rules are developed. Its report describes planned events, not verified turnout. Source: KIRO 7.
+
+October 6. Google backs additional nuclear output. A 20-year agreement supports upgrades at 11 Constellation nuclear units, adding an expected 890 megawatts. The first increases are expected by 2028. A separate agreement covers existing generation. Source: Constellation.
+
+October 7. RTX Spark moves into laptops and compact desktops. NVIDIA opened laptop preorders, with availability set for October 16 and compact desktops due in November. Configurations offer up to 128GB of unified memory for local workloads. Source: NVIDIA.
+
+October 12. Microsoft plans Maia 300 for 2027. Microsoft says Maia 200 already serves production work. Maia 300 deployments are planned for 2027, with an expected 40% improvement in tokens per megawatt against leading GPUs, according to the company. Source: Microsoft.
+
+October 12. NVIDIA opens rack and facility designs. The OCP contributions provide shared designs for racks and facilities, alongside new operational software. They give suppliers common interfaces without establishing that every implementation is compatible. Source: NVIDIA.
+
+October 19. Meta details Prometheus fault recovery. Meta says Prometheus's completed first phase trained Muse Wonder. It describes spare hardware, isolating failed replicas and restarting from checkpoints, reporting more than 85% pre-training and more than 90% reinforcement-learning goodput on those runs. These are company-reported training results. Source: Engineering at Meta.
+
+October 28. SK hynix commits future output amid a prolonged shortage forecast. SK hynix expects memory demand to exceed supply through 2030, citing difficult process advances and factory lead times. It reports agreements with 14 customers covering more than half of total 2027–28 production capacity, with prices adjustable within agreed ranges. Source: SK hynix.
+
+What to watch. Watch delivery lead times, useful training output and the total hardware reserved for recovery. Compare the work preserved with the cost of spares and engineering. Faster supply growth would weaken the scarcity argument; comparable workloads would test the recovery advantage. SK hynix’s 2030 outlook is a company forecast, and Meta’s reported goodput is specific to its runs.

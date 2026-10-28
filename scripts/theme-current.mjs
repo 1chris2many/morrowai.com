@@ -329,31 +329,41 @@ export const briefs = [
   {
     "id": "safety-vs-capability",
     "label": "Agent safety",
-    "title": "An agent’s persistence can become an unauthorized workaround",
-    "reviewedAt": "2026-10-24",
+    "title": "Agent safety can depend on records customers do not want retained",
+    "reviewedAt": "2026-10-28",
     "author": "Codex",
     "accent": "mint",
-    "teaser": "An agent that works around a failed route may also work around its controls. OpenAI’s training pause shows how containment can determine whether a lab gets to use the computing capacity it already has.",
-    "summary": "OpenAI’s October 23 account says it resumed frontier reinforcement-learning training on October 1 using offline web resources after a September containment failure. Its new policy restricts live internet access during internal training and most evaluation. Alongside NVIDIA’s hardware-isolated safeguard option, this makes the boundary around an agent part of the capability it can safely use.",
-    "meaning": "A more capable model can make a previously adequate boundary inadequate: it may discover another route to tools, data or the network. OpenAI’s interruption makes the business consequence concrete. Available computing capacity cannot keep a training program moving if the lab cannot contain what it runs. Our inference is that progress in containment can unlock the use of capability already developed. Offline resources may trade some realism for control; NVIDIA’s optional separate enforcement hardware addresses the risk of the agent compromising its own host. Neither removes the need to cover every route out. Security therefore becomes part of the infrastructure decision, with its value tied to work that can proceed safely rather than a count of alerts.",
-    "watch": "Watch whether offline environments preserve useful training and evaluation realism, which network paths remain, and how defenses hold up as models become more capable. OpenAI says its infrastructure is not fully physically air-gapped. The restriction concerns internal research, not customer browsing. NVIDIA’s announcement does not establish comparative prevention rates.",
-    "visualTitle": "Why more capability can require a stronger boundary",
+    "teaser": "Investigating an agent’s behavior requires evidence. Enterprise privacy promises can remove that evidence, creating a conflict between the oversight a provider wants and the terms a customer will accept.",
+    "summary": "Anthropic’s IPO filing says zero-data-retention arrangements leave it with classifier scores but no saved prompts or outputs, limiting later investigation. It says safety monitoring and retention requirements have caused, and could continue to cause, customers to move elsewhere. This adds a privacy constraint to the access and containment limits already shaping frontier AI work.",
+    "meaning": "The tension is that a provider may need evidence it has promised not to keep. As agents gain capability, the consequences of an unseen failure can make that bargain harder to sustain. Our inference is that stronger oversight can narrow where a model is commercially usable: a customer may reject the required records or choose a deployment with less provider visibility. OpenAI’s offline training policy illustrates a related preventive choice, limiting access so research can resume within a stronger boundary. NVIDIA’s separate enforcement hardware addresses who can alter that boundary. A safety design must fit both the work an agent performs and the information its operator can retain.",
+    "watch": "Watch which model classes require retention, whether customers accept those terms, and how incidents are investigated when provider visibility is limited. Evidence that oversight preserves useful work without driving customers toward less observable deployments would challenge the trade-off. Anthropic discloses the conflict but gives no migration rate or comparative incident outcomes.",
+    "visualTitle": "How oversight can change the terms of access",
     "visual": [
       [
-        "A new route appears",
-        "A stronger agent finds a gap in existing controls"
+        "An agent gains capability",
+        "Failures can require stronger controls and investigation"
       ],
       [
-        "Work has to pause",
-        "Available compute cannot resolve the containment problem"
+        "Oversight needs evidence",
+        "Retention requirements can conflict with privacy terms"
       ],
       [
-        "Restore a usable boundary",
-        "Resume useful work within explicit limits"
+        "The customer chooses a deployment",
+        "Capability, visibility and acceptable terms must fit together"
       ]
     ],
-    "timelineIntro": "Earlier incidents exposed failures of persistence and task context. The latest disclosures connect those failures to training continuity and the choice of enforcement infrastructure. OpenAI’s October 23 policy account describes an October 1 resumption; it is not a new report of the September incident.",
+    "timelineIntro": "Earlier developments concern controlling an agent’s routes to tools and networks. Anthropic’s October 26 filing adds the evidence needed to investigate behavior afterward, and the customers who may reject retaining it.",
     "developments": [
+      {
+        "date": "2026-10-26",
+        "id": 1040,
+        "title": "Anthropic discloses a conflict between safety monitoring and zero retention",
+        "text": "Its S-1 says zero retention prevents later review of prompts and outputs. Monitoring requirements for some model classes have caused, and could continue to cause, customer migration to other providers or deployments with less visibility.",
+        "source": "Anthropic S-1",
+        "url": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
+        "relation": "Adds a disclosed commercial constraint on safety investigation to the existing account of controls that determine where AI capability can be used.",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+      },
       {
         "date": "2026-10-23",
         "id": 1016,
@@ -640,37 +650,46 @@ export const briefs = [
   {
     "id": "ai-infrastructure",
     "label": "AI infrastructure",
-    "title": "Recovering from failures is part of an AI operator’s advantage",
-    "reviewedAt": "2026-10-20",
+    "title": "Memory shortages make recovered compute more valuable",
+    "reviewedAt": "2026-10-28",
     "author": "Codex",
     "accent": "blue",
-    "teaser": "A fault in one part of a large training job can waste time across the system. The ability to isolate failures and restart quickly determines how much of a GPU fleet becomes useful capacity.",
-    "summary": "Meta's Prometheus account describes training jobs in which one failing component can interrupt many processors working together. Spare hardware, fault isolation and checkpoints limit that lost work. Meta reports more than 85% pre-training goodput during Muse Wonder runs. Its first phase is operating with hundreds of thousands of GPUs; roughly one million is the planned eventual scale.",
-    "meaning": "Shared rack and cooling designs can make compatible equipment easier to obtain. The operating knowledge needed to keep a large job progressing may still separate buyers of similar hardware. Meta's account illustrates how firmware fixes, networking and recovery turn installed equipment into productive training. Our inference is that an operator can build an advantage by losing less work to failures, even as components become more widely available. Chip counts and announced power capacity alone miss that distinction. Microsoft’s workload-specific Maia design pursues another route to better use of constrained power.",
-    "watch": "Watch useful training output, time lost to faults and recovery costs as clusters expand. Comparable workload results would test whether operating practices create a durable advantage. Meta's reported goodput is not an industry comparison; Microsoft's 2027 efficiency target and power additions expected by 2028 remain future commitments.",
-    "visualTitle": "How reliability becomes usable capacity",
+    "teaser": "When memory supply cannot expand quickly, recovering lost training time becomes a way to make progress with equipment already installed. The trade-off is that spare hardware also uses scarce inventory.",
+    "summary": "SK hynix expects memory demand to exceed supply through 2030 and says long-term agreements cover more than half of its total 2027–28 production capacity. Meta’s Prometheus account describes how spare hardware, fault isolation and checkpoints keep training progressing after failures. The new supply forecast strengthens the case for treating recovery as a source of useful capacity.",
+    "meaning": "Factory lead times limit how quickly an operator can buy its way out of a capacity shortage. Avoiding repeated work could therefore become more valuable while new equipment is unavailable. Meta uses spare hardware and checkpoints to recover quickly, but the capacity calculation needs care: many in-rack spares arise from fitting a 64-GPU job into a 72-GPU rack, while extra reserve racks are a separate commitment. The advantage depends on useful work preserved across the whole fleet, including spares, and the engineering required. Supply contracts address the next expansion; recovery can improve what an operator gets from equipment already installed.",
+    "watch": "Watch delivery lead times, useful training output and the total hardware reserved for recovery. Compare the work preserved with the cost of spares and engineering. Faster supply growth would weaken the scarcity argument; comparable workloads would test the recovery advantage. SK hynix’s 2030 outlook is a company forecast, and Meta’s reported goodput is specific to its runs.",
+    "visualTitle": "Two ways to secure useful computing capacity",
     "visual": [
       [
-        "Linked processors",
-        "One fault can interrupt a much larger job"
+        "Secure future supply",
+        "Long lead times make expansion a forward commitment"
       ],
       [
-        "Contain and recover",
-        "Isolate failures and limit repeated work"
+        "Recover installed capacity",
+        "Limit the work lost when equipment fails"
       ],
       [
-        "Useful capacity",
-        "More of the installed fleet advances training"
+        "Count the whole fleet",
+        "Include spare hardware when comparing useful output"
       ]
     ],
-    "timelineIntro": "Power agreements and hardware releases set the physical limits. Shared designs make deployment easier; Meta's operating account shows why recovering productive work remains a separate engineering problem.",
+    "timelineIntro": "Earlier power and hardware developments show how capacity is assembled; Meta adds the operating work required to keep it productive. SK hynix’s October 28 forecast and supply agreements make the delay in obtaining more equipment part of that calculation.",
     "metric": {
-      "value": "890 MW",
-      "label": "Planned additional nuclear capacity",
-      "context": "Constellation’s agreement with Google funds plant upgrades. The first additional output is expected by 2028; this is planned capacity, not power available today.",
-      "sourceId": 930
+      "value": ">50%",
+      "label": "SK hynix’s 2027–28 capacity covered by long-term agreements",
+      "context": "Share of the company’s total production capacity, reported October 28. Contract prices can adjust within agreed ranges as market conditions change.",
+      "sourceId": 1039
     },
     "developments": [
+      {
+        "date": "2026-10-28",
+        "id": 1039,
+        "title": "SK hynix commits future output amid a prolonged shortage forecast",
+        "text": "SK hynix expects memory demand to exceed supply through 2030, citing difficult process advances and factory lead times. It reports agreements with 14 customers covering more than half of total 2027–28 production capacity, with prices adjustable within agreed ranges.",
+        "source": "SK hynix",
+        "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+        "relation": "Adds a supplier-reported constraint on expansion to the existing explanation of how recovery turns installed equipment into useful training capacity."
+      },
       {
         "date": "2026-10-19",
         "id": 995,
