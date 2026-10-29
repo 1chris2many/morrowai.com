@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": false
   },
-  "pending": 5,
+  "pending": 6,
   "items": [
     {
       "digestItemId": 1046,
@@ -6039,6 +6039,6 @@
   ],
   "publicationStatus": "partial",
   "notice": "2026-10-29 · 4 stories · More stories to follow",
-  "publishedAt": "2026-10-29T15:07:48.845Z",
-  "contentHash": "0a437961e038dd84a3ab03b136fd4351e8a56acd6e15dc04ef7afa79ffc0e3b0"
+  "publishedAt": "2026-10-29T15:11:37.385Z",
+  "contentHash": "79bd8c9397670c1a3385a8d9ffddf473745575541a5c6861d938b7ecaa2fb934"
 }
