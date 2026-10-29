@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
-import {oct28Revision,beforeOct28} from './theme-name-history.mjs';
+import {oct28Revision,beforeOct28,beforeOct29} from './theme-name-history.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
@@ -29,6 +29,6 @@ test('triage closes current evidence while retaining distinct event dates and th
  assert.equal(infra.developments[0].date,'2026-10-28');assert.equal(safety.developments[0].date,'2026-10-26');assert.equal(safety.reviewedAt,'2026-10-28');
  assert.equal(robot.reviewedAt,'2026-10-20');assert.equal(lifecycle(robot,'2026-10-28').status,'watching');
  for(const id of[1038,1039,1040,1041,1042])assert.ok(reviewedIds.includes(id));
- const q=themeQueue(feed,'2026-10-28');assert.equal(q.updates.flatMap(x=>x.items).length,0);assert.equal(q.candidates.length,0);assert.equal(q.unclassified.filter(x=>!reviewedIds.includes(x.id)).length,0);
+ const q=themeQueue(feed,'2026-10-28',briefs.map(beforeOct29));assert.equal(q.updates.flatMap(x=>x.items).length,0);assert.equal(q.candidates.length,0);assert.equal(q.unclassified.filter(x=>!reviewedIds.includes(x.id)).length,0);
  assert.ok(!reviewedIds.includes(980));assert.ok(!reviewedIds.includes(1034));
 });

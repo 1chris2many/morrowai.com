@@ -73,11 +73,11 @@
       "sha256": "bae8c3b283325ee7cc7f5d5f432d1b8b09e488a8d3c34f5514c732a9b13defc9"
     },
     "agent-economics": {
-      "hash": "b9e071c48a3eacb21f8b9bd7ef32097889611d738a2a441291c0cb0eaca4bb7c",
-      "src": "audio/briefs/agent-economics-b9e071c48a3eacb2.m4a",
-      "duration": 314.870703,
-      "bytes": 1314357,
-      "sha256": "74895f7fbf987cad6b25c218782f3b1248f0305ad348f39b96984baedcd6cc6e"
+      "hash": "8591ebe4d5ec1d1a9a16d1649b5ef79e79f54fced69ac025a08800557f525f7c",
+      "src": "audio/briefs/agent-economics-8591ebe4d5ec1d1a.m4a",
+      "duration": 336.83678,
+      "bytes": 1405419,
+      "sha256": "95500b6f94343f89b1ecfcc0a0c1576e15a3949427bd14594aaa0c8750a39301"
     }
   }
 }

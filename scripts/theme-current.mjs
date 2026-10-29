@@ -962,31 +962,40 @@ export const briefs = [
   {
     "id": "agent-economics",
     "label": "AI operating costs",
-    "title": "AI pricing can change which checks are worth running",
-    "reviewedAt": "2026-10-26",
+    "title": "Open components can make the integrated service more valuable",
+    "reviewedAt": "2026-10-29",
     "author": "Codex",
     "accent": "blue",
-    "teaser": "A check can be cheap enough to run yet arrive too late to change a transaction. Billing and response time jointly determine which decisions an AI model can usefully support.",
-    "summary": "AWS’s SageMaker training sessions pause token billing while the customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPUs. Liquid AI’s RIPL launch adds a separate constraint: whether inference can finish before a live search, payment or fraud decision must be made. A useful check needs both an affordable cost and time to affect the result.",
-    "meaning": "The billing unit shapes which work teams can afford to add. Pausing GPU charges during reward scoring can make a more informative training evaluation easier to justify, while the customer still pays to run that evaluator. A live transaction has a stricter boundary: finish after its deadline and an answer may lose the opportunity to affect the outcome. Our inference is that low-latency models could open decision points where an inexpensive but slower model has little value. Pricing and speed therefore change which checks are worth attempting in different ways. Per-search fees and planned transaction fees add further incentives around retries and conversion. The useful comparison follows the task through checks and completion, including whether the answer arrived while it could still matter.",
-    "watch": "Compare useful results at the required quality and deadline, including customer-run scoring, retries and human correction. For live decisions, test response times under peak traffic. Liquid’s latency figures are vendor claims, not demonstrated revenue or fraud improvements. AWS reports no equivalent-workload savings figure; Muse’s transaction fees remain a plan.",
-    "visualTitle": "A useful answer must fit the cost and the deadline",
+    "teaser": "Choosing models freely leaves developers responsible for making them work together. Deepgram’s move toward a complete voice service tests whether saving that integration work is worth more than the individual model calls.",
+    "summary": "Deepgram’s announced acquisition of Daily combines voice models with Pipecat’s framework and live communications infrastructure. Its new context protocol aims to preserve information that can disappear between speech recognition, reasoning and spoken output. Alongside earlier evidence on billing and response deadlines, the announcement shifts attention to the cost of assembling a useful workflow.",
+    "meaning": "Open components let a customer replace suppliers, but the customer still has to connect them and repair the failures between them. A transcript can preserve the words while losing uncertainty or tone that should change the response. Our inference is that an integrated provider can earn a place by maintaining those connections even when customers remain free to choose competing models. Deepgram’s promise to keep Pipecat open could encourage adoption of the framework while its forthcoming platform sells the convenience of operating the whole service. The trade-off is between assembling replaceable parts and paying someone to keep them working together. Earlier AWS billing changes and Liquid’s response-time claims show why model prices alone miss important costs; the voice example adds information lost at the handoff.",
+    "watch": "Watch whether the promised provider choice survives integration and whether customers need fewer retries or less maintenance. Compare the full service bill and human correction with the cost of assembling components independently. Deepgram has not supplied measured customer savings; its wider platform is forthcoming. Earlier Liquid latency figures remain company claims, and AWS has not reported equivalent-workload savings.",
+    "visualTitle": "Follow the work across the model boundary",
     "visual": [
       [
-        "Identify the charged unit",
-        "Tokens, capacity time, searches or completed purchases"
+        "Pay for the useful work",
+        "Separate inference charges from waiting and evaluation"
       ],
       [
-        "Find the waiting and rework",
-        "Include evaluation, retries and abandoned attempts"
+        "Preserve the handoff",
+        "Keep timing and necessary context between components"
       ],
       [
-        "Reach the decision in time",
-        "Count cost, quality and response time together"
+        "Count the completed result",
+        "Include integration, retries and correction in the cost"
       ]
     ],
-    "timelineIntro": "Earlier developments change the bill for inference, tools and planned commerce revenue. AWS’s October 22 launch changes who pays while training waits for a judgment. Liquid’s same-day launch adds the deadline governing whether a live decision can use that judgment at all.",
+    "timelineIntro": "Pricing changes expose the units customers pay for. AWS and Liquid add waiting time and deadlines; Deepgram’s October 29 announcement adds the integration and context handoffs needed to keep a live conversation useful.",
     "developments": [
+      {
+        "date": "2026-10-29",
+        "id": 1048,
+        "title": "Deepgram brings voice models and live infrastructure closer together",
+        "text": "Deepgram announced that it is acquiring Daily, Pipecat’s creator, and introduced a protocol for carrying audio context and response guidance between components. It promises to keep Pipecat open and vendor-neutral; its broader Voice Agent Platform is forthcoming.",
+        "source": "Deepgram",
+        "url": "https://deepgram.com/blog/daily-pipecat-deepgram",
+        "relation": "Extends the existing timing-and-cost explanation to information lost at handoffs and the work of connecting a live voice system."
+      },
       {
         "date": "2026-10-22",
         "id": 1030,

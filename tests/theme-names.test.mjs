@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
-import {themeNameChanges,beforeThemeRename,beforeInsightRevision,insightRevision,oct20Revision,beforeOct20,oct21Revision,oct25Revision,oct27Revision,oct28Revision} from './theme-name-history.mjs';
+import {themeNameChanges,beforeThemeRename,beforeInsightRevision,insightRevision,oct20Revision,beforeOct20,oct21Revision,oct25Revision,oct27Revision,oct28Revision,oct29Revision} from './theme-name-history.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const themes=readFileSync(new URL('../themes.html',import.meta.url),'utf8');
@@ -14,7 +14,8 @@ const currentTitles={
  ...Object.fromEntries(oct21Revision.added.map(b=>[b.id,b.title])),
  ...Object.fromEntries(Object.entries(oct25Revision.changes).map(([id,c])=>[id,c.after.title])),
  ...Object.fromEntries(Object.entries(oct27Revision.changes).map(([id,c])=>[id,c.after.title])),
- ...Object.fromEntries(Object.entries(oct28Revision.changes).map(([id,c])=>[id,c.after.title]))
+ ...Object.fromEntries(Object.entries(oct28Revision.changes).map(([id,c])=>[id,c.after.title])),
+ ...Object.fromEntries(Object.entries(oct29Revision.changes).map(([id,c])=>[id,c.after.title]))
 };
 test('all theme headings state the reviewed insight while preserving stable links',()=>{
  assert.equal(Object.keys(currentTitles).length,11);

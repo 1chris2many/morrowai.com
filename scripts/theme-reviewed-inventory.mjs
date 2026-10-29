@@ -95,3 +95,9 @@ reviewedIds.push(1032,1033,1035,1036,1037);
 // multimodal release reinforces deployment choice without new security evidence.
 // Keep all event dates;1034/980remain source-held.
 reviewedIds.push(1038,1039,1040,1041,1042);
+
+// October29:1048extends full-workflow costs through integration and context.
+//1043/1044legal risk allocation remains distinct from the archived source-check
+//brief.1046inquiry establishes no exclusion;1047preview no measured switching.
+//1045source429: retain privately reviewed competition proposal pending recovery.
+reviewedIds.push(1043,1044,1046,1047,1048);

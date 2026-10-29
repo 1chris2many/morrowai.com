@@ -6,7 +6,7 @@ import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {oct21Revision,beforeOct21,beforeOct22} from './theme-name-history.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 import {related,validateBriefs,briefingCards,renderThemes} from '../scripts/theme-pages.mjs';
-import {themeQueue,lifecycle} from '../scripts/theme-lifecycle.mjs';
+import {themeQueue,lifecycle,asOf} from '../scripts/theme-lifecycle.mjs';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
 const feed=read('news.json'),audio=read('audio/briefs/manifest.json');
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
@@ -30,7 +30,8 @@ test('chip comparison distinguishes trial access from optimization and preserves
  assert.match(b.timelineIntro,/not a head-to-head/);
  validateBriefs(feed);
  assert.deepEqual(new Set(related(feed,b.id).map(i=>i.digestItemId)),new Set([1001,1004]));
- assert.ok(briefingCards(feed).includes('data-theme="chip-switching"'));
+ // The stable brief remains available after age rules remove its homepage card.
+ assert.equal(briefingCards(feed).includes('data-theme="chip-switching"'),lifecycle(b,asOf(feed)).status==='active');
  const html=renderThemes(home,feed);assert.ok(html.includes('href="'+b.developments[0].primaryUrl+'"'));
  for(const url of ['javascript:alert(1)','http://example.com','https://user:pass@example.com']){
   const bad=structuredClone(briefs);bad.find(b=>b.id==='chip-switching').developments[0].primaryUrl=url;

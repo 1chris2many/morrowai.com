@@ -1,0 +1,216 @@
+{
+  "reviewDate": "2026-10-29",
+  "changes": {
+    "agent-economics": {
+      "before": {
+        "id": "agent-economics",
+        "label": "AI operating costs",
+        "title": "AI pricing can change which checks are worth running",
+        "reviewedAt": "2026-10-26",
+        "author": "Codex",
+        "accent": "blue",
+        "teaser": "A check can be cheap enough to run yet arrive too late to change a transaction. Billing and response time jointly determine which decisions an AI model can usefully support.",
+        "summary": "AWS’s SageMaker training sessions pause token billing while the customer’s reward function scores a batch. Customers supply the training loop; AWS manages the GPUs. Liquid AI’s RIPL launch adds a separate constraint: whether inference can finish before a live search, payment or fraud decision must be made. A useful check needs both an affordable cost and time to affect the result.",
+        "meaning": "The billing unit shapes which work teams can afford to add. Pausing GPU charges during reward scoring can make a more informative training evaluation easier to justify, while the customer still pays to run that evaluator. A live transaction has a stricter boundary: finish after its deadline and an answer may lose the opportunity to affect the outcome. Our inference is that low-latency models could open decision points where an inexpensive but slower model has little value. Pricing and speed therefore change which checks are worth attempting in different ways. Per-search fees and planned transaction fees add further incentives around retries and conversion. The useful comparison follows the task through checks and completion, including whether the answer arrived while it could still matter.",
+        "watch": "Compare useful results at the required quality and deadline, including customer-run scoring, retries and human correction. For live decisions, test response times under peak traffic. Liquid’s latency figures are vendor claims, not demonstrated revenue or fraud improvements. AWS reports no equivalent-workload savings figure; Muse’s transaction fees remain a plan.",
+        "visualTitle": "A useful answer must fit the cost and the deadline",
+        "visual": [
+          [
+            "Identify the charged unit",
+            "Tokens, capacity time, searches or completed purchases"
+          ],
+          [
+            "Find the waiting and rework",
+            "Include evaluation, retries and abandoned attempts"
+          ],
+          [
+            "Reach the decision in time",
+            "Count cost, quality and response time together"
+          ]
+        ],
+        "timelineIntro": "Earlier developments change the bill for inference, tools and planned commerce revenue. AWS’s October 22 launch changes who pays while training waits for a judgment. Liquid’s same-day launch adds the deadline governing whether a live decision can use that judgment at all.",
+        "developments": [
+          {
+            "date": "2026-10-22",
+            "id": 1030,
+            "title": "Liquid targets decisions with millisecond deadlines",
+            "text": "Liquid says RIPL produces complete LFM responses below 50 milliseconds on tested real-time workloads. The engine is available for enterprise deployments on NVIDIA GPUs.",
+            "source": "Liquid AI",
+            "url": "https://www.liquid.ai/blog/low-latency",
+            "relation": "Adds the opportunity cost of missing a live decision deadline to the existing analysis of billed task cost; figures remain vendor-reported."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1025,
+            "title": "AWS stops the training token meter during customer reward scoring",
+            "text": "SageMaker AI training sessions are generally available. Customers control training loops and reward functions in their environment, while AWS handles GPU allocation and recovery. Charges cover processed tokens, with no capacity reservation and no meter running during reward scoring.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+            "relation": "Personally read October22 primary announcement; separates training consumption from evaluator waiting, changing who bears idle-capacity cost."
+          },
+          {
+            "date": "2026-10-21",
+            "id": 1006,
+            "title": "Meta outlines transaction fees; Muse still earns subscriptions only",
+            "text": "Meta plans business-paid fees for transactions Muse facilitates. Its follow-up call says charging for transactions needs more users and business partners, and that subscriptions are its only current monetization. The projected tenfold efficiency gain still requires technological advances.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+            "primaryUrl": "https://s21.q4cdn.com/399680738/files/content_files/META-Q3-2026-Follow-Up-Call-Transcript.pdf",
+            "relation": "Directly checked Meta earnings and follow-up transcripts connect planned outcome-linked revenue with the provider-side costs already tracked; saved news tags remain unchanged."
+          },
+          {
+            "date": "2026-10-20",
+            "id": 1004,
+            "title": "A fixed-state model changes the memory constraint",
+            "text": "AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+            "relation": "New architecture evidence distinguishes the provider's serving constraints from the customer-facing billing mechanisms already tracked."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 982,
+            "title": "DeepSeek prices search and page retrieval separately",
+            "text": "Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call.",
+            "source": "DeepSeek",
+            "url": "https://api-docs.deepseek.com/news/news261017/",
+            "relation": "Separately priced search and retrieval calls directly extend the briefing’s analysis of total task cost and expiring promotions."
+          },
+          {
+            "date": "2026-10-13",
+            "id": 961,
+            "title": "Google sets a time-limited Argon price",
+            "text": "Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+          },
+          {
+            "date": "2026-10-09",
+            "id": 946,
+            "title": "Microsoft prices fixed-choice decisions",
+            "text": "Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer.",
+            "source": "Microsoft",
+            "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+          },
+          {
+            "date": "2026-10-07",
+            "id": 935,
+            "title": "Anthropic ties Haiku prices to prompt length",
+            "text": "For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/claude-haiku-5-5"
+          }
+        ]
+      },
+      "after": {
+        "id": "agent-economics",
+        "label": "AI operating costs",
+        "title": "Open components can make the integrated service more valuable",
+        "reviewedAt": "2026-10-29",
+        "author": "Codex",
+        "accent": "blue",
+        "teaser": "Choosing models freely leaves developers responsible for making them work together. Deepgram’s move toward a complete voice service tests whether saving that integration work is worth more than the individual model calls.",
+        "summary": "Deepgram’s announced acquisition of Daily combines voice models with Pipecat’s framework and live communications infrastructure. Its new context protocol aims to preserve information that can disappear between speech recognition, reasoning and spoken output. Alongside earlier evidence on billing and response deadlines, the announcement shifts attention to the cost of assembling a useful workflow.",
+        "meaning": "Open components let a customer replace suppliers, but the customer still has to connect them and repair the failures between them. A transcript can preserve the words while losing uncertainty or tone that should change the response. Our inference is that an integrated provider can earn a place by maintaining those connections even when customers remain free to choose competing models. Deepgram’s promise to keep Pipecat open could encourage adoption of the framework while its forthcoming platform sells the convenience of operating the whole service. The trade-off is between assembling replaceable parts and paying someone to keep them working together. Earlier AWS billing changes and Liquid’s response-time claims show why model prices alone miss important costs; the voice example adds information lost at the handoff.",
+        "watch": "Watch whether the promised provider choice survives integration and whether customers need fewer retries or less maintenance. Compare the full service bill and human correction with the cost of assembling components independently. Deepgram has not supplied measured customer savings; its wider platform is forthcoming. Earlier Liquid latency figures remain company claims, and AWS has not reported equivalent-workload savings.",
+        "visualTitle": "Follow the work across the model boundary",
+        "visual": [
+          [
+            "Pay for the useful work",
+            "Separate inference charges from waiting and evaluation"
+          ],
+          [
+            "Preserve the handoff",
+            "Keep timing and necessary context between components"
+          ],
+          [
+            "Count the completed result",
+            "Include integration, retries and correction in the cost"
+          ]
+        ],
+        "timelineIntro": "Pricing changes expose the units customers pay for. AWS and Liquid add waiting time and deadlines; Deepgram’s October 29 announcement adds the integration and context handoffs needed to keep a live conversation useful.",
+        "developments": [
+          {
+            "date": "2026-10-29",
+            "id": 1048,
+            "title": "Deepgram brings voice models and live infrastructure closer together",
+            "text": "Deepgram announced that it is acquiring Daily, Pipecat’s creator, and introduced a protocol for carrying audio context and response guidance between components. It promises to keep Pipecat open and vendor-neutral; its broader Voice Agent Platform is forthcoming.",
+            "source": "Deepgram",
+            "url": "https://deepgram.com/blog/daily-pipecat-deepgram",
+            "relation": "Extends the existing timing-and-cost explanation to information lost at handoffs and the work of connecting a live voice system."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1030,
+            "title": "Liquid targets decisions with millisecond deadlines",
+            "text": "Liquid says RIPL produces complete LFM responses below 50 milliseconds on tested real-time workloads. The engine is available for enterprise deployments on NVIDIA GPUs.",
+            "source": "Liquid AI",
+            "url": "https://www.liquid.ai/blog/low-latency",
+            "relation": "Adds the opportunity cost of missing a live decision deadline to the existing analysis of billed task cost; figures remain vendor-reported."
+          },
+          {
+            "date": "2026-10-22",
+            "id": 1025,
+            "title": "AWS stops the training token meter during customer reward scoring",
+            "text": "SageMaker AI training sessions are generally available. Customers control training loops and reward functions in their environment, while AWS handles GPU allocation and recovery. Charges cover processed tokens, with no capacity reservation and no meter running during reward scoring.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+            "relation": "Personally read October22 primary announcement; separates training consumption from evaluator waiting, changing who bears idle-capacity cost."
+          },
+          {
+            "date": "2026-10-21",
+            "id": 1006,
+            "title": "Meta outlines transaction fees; Muse still earns subscriptions only",
+            "text": "Meta plans business-paid fees for transactions Muse facilitates. Its follow-up call says charging for transactions needs more users and business partners, and that subscriptions are its only current monetization. The projected tenfold efficiency gain still requires technological advances.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+            "primaryUrl": "https://s21.q4cdn.com/399680738/files/content_files/META-Q3-2026-Follow-Up-Call-Transcript.pdf",
+            "relation": "Directly checked Meta earnings and follow-up transcripts connect planned outcome-linked revenue with the provider-side costs already tracked; saved news tags remain unchanged."
+          },
+          {
+            "date": "2026-10-20",
+            "id": 1004,
+            "title": "A fixed-state model changes the memory constraint",
+            "text": "AWS and i14 report 29.5 MB of recurrent state per sequence for Laplace 3B, independent of context length. History is compressed, and retrieval quality needs workload-specific evaluation.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+            "relation": "New architecture evidence distinguishes the provider's serving constraints from the customer-facing billing mechanisms already tracked."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 982,
+            "title": "DeepSeek prices search and page retrieval separately",
+            "text": "Search and Fetch each cost $0.75 per 1,000 API calls. For DeepSeek API users, calls through server-side tools in DeepSeek Harness, Claude Code and Codex are temporarily free; billing for those integrations starts October 31 at 16:00 UTC. The waiver does not cover every direct API call.",
+            "source": "DeepSeek",
+            "url": "https://api-docs.deepseek.com/news/news261017/",
+            "relation": "Separately priced search and retrieval calls directly extend the briefing’s analysis of total task cost and expiring promotions."
+          },
+          {
+            "date": "2026-10-13",
+            "id": 961,
+            "title": "Google sets a time-limited Argon price",
+            "text": "Argon’s public model launches at $2 per million input tokens and $10 per million output tokens. Google lists $4 and $20 respectively after the introductory period expires November 30, 2026.",
+            "source": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+          },
+          {
+            "date": "2026-10-09",
+            "id": 946,
+            "title": "Microsoft prices fixed-choice decisions",
+            "text": "Decision-1 scores predefined options for tasks such as routing and classification. Microsoft lists $0.042 per million input tokens and no output-token charge. This is a different output from a general-purpose model’s written answer.",
+            "source": "Microsoft",
+            "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+          },
+          {
+            "date": "2026-10-07",
+            "id": 935,
+            "title": "Anthropic ties Haiku prices to prompt length",
+            "text": "For prompts up to 100,000 tokens, Haiku 5.5 input costs $0.10 and output $0.50 per million tokens. Above that threshold, the rates are $0.50 and $2.50 respectively; cached input has separate pricing.",
+            "source": "Anthropic",
+            "url": "https://www.anthropic.com/claude-haiku-5-5"
+          }
+        ]
+      }
+    }
+  }
+}
