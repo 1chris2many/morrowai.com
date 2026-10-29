@@ -1,18 +1,96 @@
 {
   "version": 1,
-  "digestDate": "2026-10-28",
+  "digestDate": "2026-10-29",
   "latestSavedDigest": "2026-10-29",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 4,
+    "sourceCount": 2,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 9,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 1046,
+      "digestDate": "2026-10-29",
+      "title": "DOJ reportedly asks about Nvidia’s Hugging Face acquisition",
+      "summary": "The Justice Department has made inquiries about Nvidia’s $13 billion Hugging Face deal and its implications for competition, according to Reuters reporting cited by The Verge on October 28. The report describes inquiries, not an antitrust finding or a decision to block the deal.",
+      "whyItMatters": "Hugging Face sits where developers discover models and choose how to run them. Combined with Nvidia’s chips, that position could let hardware preferences enter the workflow before a buyer explicitly compares infrastructure. The competition question is whether rival hardware and services retain equally practical routes to those developers; the reported inquiry does not establish that access has been restricted.",
+      "url": "https://www.theverge.com/tech/1021355/the-doj-is-reportedly-looking-into-nvidias-hugging-face-acquisition",
+      "source": "The Verge, citing Reuters",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-29-doj-reportedly-scrutinizes-nvidia-s-13-billion-hugging-face-acquisition",
+      "editorialNote": "Reported inquiry, October 28; no enforcement outcome announced in this report."
+    },
+    {
+      "digestItemId": 1047,
+      "digestDate": "2026-10-29",
+      "title": "Google opens Connected Apps preview for Search and Gemini",
+      "summary": "Google announced a Connected Apps Platform preview on October 28 for developers to register, test and submit integrations for Search, Gemini or both. It combines development and operational metrics in one console; access is opening in phases rather than becoming universally available at launch.",
+      "whyItMatters": "A shared integration can put a service in front of customers already asking to book, buy or act. The service gains another route to demand while Google hosts more of the interaction that previously required opening a separate app. Developers may gain reach while becoming more dependent on the assistant’s selection and review rules; conversion and revenue gains remain to be demonstrated.",
+      "url": "https://www.theverge.com/tech/1020644/google-will-let-more-developers-make-apps-that-plug-into-search-and-gemini",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-29-google-opens-connected-apps-platform-letting-developers-plug-into-search-and-gemini",
+      "editorialNote": "Preview announced October 28; access and partner rollout are phased."
+    },
+    {
+      "digestItemId": 1044,
+      "digestDate": "2026-10-29",
+      "title": "House inquiry challenges Delaware proposal for AI-run companies",
+      "summary": "House Oversight chairman James Comer requested documents on October 26 about Delaware’s proposed AI-run companies. The draft would let an agent manage a separate legal entity while limiting its owner’s liability, subject to capitalization duties and exceptions including fraud and knowingly operating outside its stated purpose. It has not been enacted.",
+      "whyItMatters": "Giving an agent a company makes contracts and lawsuits easier to attach to an identifiable entity. Whether that protects the public depends on what assets sit behind that entity: a legal address offers little compensation if losses exceed the funds available. Capital requirements therefore help determine how much risk stays with the investor and how much reaches customers or creditors.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-29-congress-presses-delaware-over-plan-to-let-ai-agents-legally-run-companies",
+      "editorialNote": "Proposal under review; House letter dated October 26, reporting October 27."
+    },
+    {
+      "digestItemId": 1043,
+      "digestDate": "2026-10-29",
+      "title": "New York restricts AI companion features for minors",
+      "summary": "New York signed S9051B on October 28, with restrictions taking effect January 1, 2027. It limits features such as simulated human relationships, flattery and encouragement of secrecy for minors, and requires age checks before offering those features to adults. The law also provides exceptions for narrowly limited assistance and internal business uses.",
+      "whyItMatters": "Age checks become part of deciding which product a person can use. For developers, making a companion more emotionally engaging can now make serving younger users harder; restricting the service to a narrow practical purpose may change which rules apply. That trade-off could push a single chatbot into different experiences by age and use.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1020112/ny-governor-kathy-hochul-signs-law-banning-harmful-ai-chatbot-features-for-kids",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-29-new-york-signs-law-restricting-ai-chatbots-from-acting-human-with-kids",
+      "editorialNote": "Law signed October 28; effective January 1, 2027. Applies to covered use in New York."
+    },
     {
       "digestItemId": 1040,
       "digestDate": "2026-10-28",
@@ -5959,8 +6037,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-28 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-29T14:00:33.315Z",
-  "contentHash": "8161d6a277d9c0177618c4e4b11bbf2a7cacc56aa2660dcf6acdfd114fe52ab8"
+  "publicationStatus": "partial",
+  "notice": "2026-10-29 · 4 stories · More stories to follow",
+  "publishedAt": "2026-10-29T15:07:48.845Z",
+  "contentHash": "0a437961e038dd84a3ab03b136fd4351e8a56acd6e15dc04ef7afa79ffc0e3b0"
 }
