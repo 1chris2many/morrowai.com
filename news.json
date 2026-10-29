@@ -4,15 +4,40 @@
   "latestSavedDigest": "2026-10-29",
   "fresh": false,
   "coverage": {
-    "count": 4,
-    "sourceCount": 2,
+    "count": 5,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 6,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 1048,
+      "digestDate": "2026-10-29",
+      "title": "Deepgram announces acquisition of Pipecat creator Daily",
+      "summary": "Deepgram says it is acquiring Daily, the company behind the Pipecat voice-agent framework and real-time communications infrastructure. It promises to retain Pipecat’s open-source license and vendor-neutral integrations, and announced an open context protocol intended to preserve audio cues as speech moves between models.",
+      "whyItMatters": "Voice assistants can misread a conversation even when the transcript is accurate: tone and uncertainty can disappear between recognition, reasoning and speech generation. Preserving those signals could improve responses without replacing every model. Deepgram gains control of more of that pipeline; developers will need to see whether its promise of interchangeable providers survives integration.",
+      "url": "https://deepgram.com/blog/daily-pipecat-deepgram",
+      "source": "Deepgram",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Models"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-29-deepgram-announces-acquisition-of-pipecat-creator-daily",
+      "editorialNote": "Announced October 29. Openness and interoperability are company commitments; the broader platform is forthcoming."
+    },
     {
       "digestItemId": 1046,
       "digestDate": "2026-10-29",
@@ -6038,7 +6063,7 @@
     }
   ],
   "publicationStatus": "partial",
-  "notice": "2026-10-29 · 4 stories · More stories to follow",
-  "publishedAt": "2026-10-29T15:11:37.385Z",
-  "contentHash": "79bd8c9397670c1a3385a8d9ffddf473745575541a5c6861d938b7ecaa2fb934"
+  "notice": "2026-10-29 · 5 stories · More stories to follow",
+  "publishedAt": "2026-10-29T15:12:00.283Z",
+  "contentHash": "544b26695bd2f94d15a7aff5c067c956dc13bfcc189d6c3f910eda8897c193c4"
 }
