@@ -37,6 +37,8 @@ test('triage clears only read evidence without inventing a health theme or incor
  for(const id of[1016,1017,1018,1019,1020])assert.ok(reviewedIds.includes(id));
  assert.ok(!reviewedIds.includes(980));
  assert.ok(!briefs.some(b=>b.developments.some(d=>[980,1017].includes(d.id))));
- const q=themeQueue(feed,briefs.map(b=>b.reviewedAt).sort().at(-1));assert.equal(q.updates.flatMap(x=>x.items).length,0);
+ // Keep later, legitimately pending evidence visible in the live queue.
+ const historicalFeed={...feed,items:feed.items.filter(i=>i.digestDate<='2026-10-24')};
+ const q=themeQueue(historicalFeed,briefs.map(b=>b.reviewedAt).sort().at(-1));assert.equal(q.updates.flatMap(x=>x.items).length,0);
  assert.equal(q.unclassified.filter(i=>!reviewedIds.includes(i.id)).length,0);assert.equal(q.candidates.length,0);
 });

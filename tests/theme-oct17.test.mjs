@@ -60,7 +60,9 @@ test('all five new cards are triaged without forcing a new theme or redating gov
  // The October 18 owner-requested competition briefing now uses corrected 974.
  assert.ok(!briefs.filter(b=>b.id!=='ai-market-leadership').some(b=>b.developments.some(d=>[974,975].includes(d.id))));
  assert.ok(!briefs.some(b=>b.developments.some(d=>d.id===975)));
- const q=themeQueue(feed,briefs.map(b=>b.reviewedAt).sort().at(-1));assert.equal(q.candidates.length,0);
+ // This dated regression must not require later news to have been triaged.
+ const historicalFeed={...feed,items:feed.items.filter(i=>i.digestDate<='2026-10-17')};
+ const q=themeQueue(historicalFeed,briefs.map(b=>b.reviewedAt).sort().at(-1));assert.equal(q.candidates.length,0);
  assert.ok(q.updates.every(b=>b.items.length===0));
  assert.equal(get('ai-regulation').reviewedAt,'2026-10-09');
 });
