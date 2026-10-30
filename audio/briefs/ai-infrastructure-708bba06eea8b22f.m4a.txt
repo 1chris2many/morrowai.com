@@ -1,0 +1,43 @@
+AI infrastructure. AI suppliers can get paid before their customers earn a return
+
+Useful AI Werks. Analysis by Codex. Reviewed October 30, 2026. Synthetic narration.
+
+Samsung says server demand is lifting memory prices across applications; Sandisk’s data-center sales grew 61% from the preceding quarter. These supplier results sit alongside cash outflows at Alphabet and Amazon. Microsoft provides a useful counterexample: it remained cash-flow positive while spending heavily, with some capacity deliveries delayed.
+
+Three takeaways. Pay for components. Suppliers book sales as operators build capacity. Wait for useful capacity. Delivery and installation delay the earning period. Recover the investment. Customer use and margins determine the operator’s return.
+
+What it means. The buildout pays different participants at different times. Components become supplier revenue before a cloud operator has necessarily filled the new capacity or recovered its investment. Scarcity can also encourage longer purchase commitments, moving more of the risk of future demand onto buyers. Operators with enough operating cash can fund that gap internally; others may need debt or new shares. This is why strong supplier results and pressure on a customer’s valuation can coexist. Microsoft’s delayed deliveries add another distinction: a temporary reduction in spending can reflect a construction constraint rather than weaker customer demand. Earlier engineering reports show a further option—getting more useful work from installed hardware—but do not quantify the financial return.
+
+$220B. Amazon’s expected 2026 cash capital spending. Company forecast reaffirmed October 29. This is full-year capital spending, not realized AI revenue or a separately measured AI budget. Source: Amazon; Axios for S&P Capital IQ estimates, 2026-10-29.
+
+How the story developed. Supply constraints, financing and usable capacity shape who gets paid first. October earnings now show both suppliers and operators; original event dates remain below.
+
+September 30. CoreWeave introduces Vera Rubin capacity. NVIDIA says Cognition, a maker of AI coding tools, is using its Vera Rubin computing systems on CoreWeave’s cloud service for production work. Other customers can request early access. Source: NVIDIA.
+
+October 4. Washington organizers call for a pause. KIRO reported plans for more than 20 events calling for a construction moratorium while cost and environmental rules are developed. Its report describes planned events, not verified turnout. Source: KIRO 7.
+
+October 6. Google backs additional nuclear output. A 20-year agreement supports upgrades at 11 Constellation nuclear units, adding an expected 890 megawatts. The first increases are expected by 2028. A separate agreement covers existing generation. Source: Constellation.
+
+October 7. RTX Spark moves into laptops and compact desktops. NVIDIA opened laptop preorders, with availability set for October 16 and compact desktops due in November. Configurations offer up to 128GB of unified memory for local workloads. Source: NVIDIA.
+
+October 12. Microsoft plans Maia 300 for 2027. Microsoft says Maia 200 already serves production work. Maia 300 deployments are planned for 2027, with an expected 40% improvement in tokens per megawatt against leading GPUs, according to the company. Source: Microsoft.
+
+October 12. NVIDIA opens rack and facility designs. The OCP contributions provide shared designs for racks and facilities, alongside new operational software. They give suppliers common interfaces without establishing that every implementation is compatible. Source: NVIDIA.
+
+October 19. Meta details Prometheus fault recovery. Meta says Prometheus's completed first phase trained Muse Wonder. It describes spare hardware, isolating failed replicas and restarting from checkpoints, reporting more than 85% pre-training and more than 90% reinforcement-learning goodput on those runs. These are company-reported training results. Source: Engineering at Meta.
+
+October 21. Meta distinguishes current ad returns from longer-term AI investment. Meta raised its annual spending floor and said its frontier-model investments will take longer to generate returns than investment in the core business. Source: Meta via PR Newswire; Reuters for LSEG estimates.
+
+October 28. Alphabet’s expansion includes new shareholder capital. Cloud revenue doubled, quarterly free cash flow was negative $9.1 billion, and Alphabet raised $12.4 billion through common-share sales. Source: Alphabet; AP for FactSet estimates.
+
+October 28. SK hynix commits future output amid a prolonged shortage forecast. SK hynix expects memory demand to exceed supply through 2030, citing difficult process advances and factory lead times. It reports agreements with 14 customers covering more than half of total 2027–28 production capacity, with prices adjustable within agreed ranges. Source: SK hynix.
+
+October 28. Microsoft separates delivery delays from demand. Microsoft reported $18.6 billion quarterly free cash flow. Some third-party capacity slipped, contributing to its approximately $170 billion calendar-year spending forecast. Source: Microsoft.
+
+October 29. Amazon keeps its capital-spending plan as AWS grows. AWS revenue grew 39%. Amazon maintained its $220 billion full-year cash spending forecast and reported negative $42.4 billion free cash flow over the preceding twelve months. Source: Amazon; Axios for S&P Capital IQ estimates.
+
+October 29. Samsung plans longer contracts amid tight memory supply. Samsung attributes higher memory prices to server demand and capacity constraints. It expects demand to exceed supply in 2027 and plans multi-year contracts. Source: Samsung.
+
+October 29. Sandisk’s sales shift toward data centers. Data-center revenue rose 61% from the preceding quarter while consumer revenue fell 29%, showing different demand patterns within one supplier. Source: Sandisk (SEC filing via Groowe).
+
+What to watch. Compare operating cash with capital spending and new financing at each company. Watch delivery schedules, memory-contract duration and whether installed capacity earns enough to cover its cost. Keep quarterly and trailing-year figures separate. Supplier sales establish demand for equipment; they do not by themselves establish profitable use of that equipment by the buyer.

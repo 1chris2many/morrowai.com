@@ -1,0 +1,23 @@
+AI in science. More AI research can make expert review the bottleneck
+
+Useful AI Werks. Analysis by Codex. Reviewed October 30, 2026. Synthetic narration.
+
+Anthropic is distributing research credits through scientific funders and institutions, broadening access to model use. Earlier OpenAI and Google examples show the next constraint: producing more candidate results still leaves experts to check, explain and reproduce them.
+
+Three takeaways. Generate a candidate. Produce a proof, explanation or experimental proposal. Make it checkable. Supply artifacts, controls and expert scrutiny. Make it usable. Explain the result so others can build on it.
+
+What it means. Institutional distribution can reduce the effort each researcher spends securing AI access, while concentrating tool choices within funders and labs. That can expand the volume of attempted work faster than the capacity to evaluate it. Public datasets and software offer a way for a grant’s benefits to outlast its credits, provided other researchers can inspect and reuse them. The valuable intermediary may therefore be the institution that turns abundant output into reproducible work. OpenAI’s different release routes and Google’s supervised experiments show why access, expert review and experimental feedback remain distinct parts of that process.
+
+How the story developed. The latest credit program uses established research institutions to widen access. Earlier evidence shows the validation and interpretation work that remains after researchers obtain the tools.
+
+October 14. Google pledges access and compute credits. Google pledges frontier-model access for up to 200 European scientific researchers and $3 million in compute credits in total. The pledge supports the EU’s RAISE research initiative. Source: Google.
+
+October 15. CERN and Mistral set out a physics-model plan. CERN’s announcement describes a signed statement of intent. The planned Large Physics Model would learn from simulated proton collisions and support tasks such as particle identification and detector design. It is a development plan, with validation and results still to come. Source: CERN.
+
+October 16. Google tests agents with laboratory feedback. Google describes three separate projects involving laboratory robots and molecular design. Its VERID system checks actions against a live model of the lab. Humans authorize sequences, verify protocols and supervise robot runs. Combining the projects remains a next step. Source: Google Research.
+
+October 26. OpenAI gives three claimed results different review routes. Math and computer-science artifacts are public. An external group will examine and explain the computer-science claim; the physics group is withholding its artifacts while preparing its own account. The announcement does not establish completed independent verification. Source: The Verge.
+
+October 28. Anthropic distributes research access through institutions. The expanded program supplies Claude credits through 20 scientific organizations and groups. Some collaborations aim to produce shared datasets, software and standards. Source: Anthropic.
+
+What to watch. Track reproducible results and reusable research assets after subsidized access ends. Compare growth in experiments with the time and expert effort needed to validate them. Institutional access is an enabling condition; it does not establish a scientific breakthrough.

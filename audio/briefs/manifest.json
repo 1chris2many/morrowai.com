@@ -24,11 +24,11 @@
       "sha256": "7cfab1596cd3004c425ce60b164483b6fa04d0c77b3a82264f8e0a3ebfe4f4e3"
     },
     "ai-science": {
-      "hash": "7420946c738f162ad1cfc0df1fbc095413e4c1ba8a631c603050b0df5fcc969a",
-      "src": "audio/briefs/ai-science-7420946c738f162a.m4a",
-      "duration": 185.988345,
-      "bytes": 790808,
-      "sha256": "d82a5259df618e62016d351b0899a145dd58490861b9197d03a5b5cd4d672375"
+      "hash": "48c09a7c419b09b1c3c514a6136d651258ce7a3c47da9899edc11a8ac8185593",
+      "src": "audio/briefs/ai-science-48c09a7c419b09b1.m4a",
+      "duration": 210.404127,
+      "bytes": 889723,
+      "sha256": "5c2f1c350accc281fb83dbc9893782b494c05f2576fe4d154d1713e8e98a53b0"
     },
     "ai-regulation": {
       "hash": "b86dc71106ba80175ea709055e03c655454b8073055ec917181f84d17fd8c4e1",
@@ -52,11 +52,11 @@
       "sha256": "ed9f597eeab02f235716ccbcbb4afe8ccc5c8bcb1b305929ed360ecd7b26413f"
     },
     "ai-infrastructure": {
-      "hash": "3c6fed08977f3fbbb1e9914bb29cbd3077f8397e88ce1c0d3c8ad771b0352fcb",
-      "src": "audio/briefs/ai-infrastructure-3c6fed08977f3fbb.m4a",
-      "duration": 372.66517,
-      "bytes": 1586731,
-      "sha256": "dd9bcbfab2c369557f2dac4770589464edc1a300702178a158ad7de92c75c3d0"
+      "hash": "708bba06eea8b22f78232ae34ceb3906112ea4a67c895e0e7bb968bb1a1bc6c3",
+      "src": "audio/briefs/ai-infrastructure-708bba06eea8b22f.m4a",
+      "duration": 429.368299,
+      "bytes": 1821794,
+      "sha256": "31638552d34a976d206734b99d76eec2e55e014779057d8e05388625321fd673"
     },
     "evals": {
       "hash": "6b918da392223df9e29070354bb55f10ae19b05fddd4556b9dd7f67fbe463481",

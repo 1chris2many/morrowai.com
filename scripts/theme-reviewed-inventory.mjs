@@ -105,3 +105,8 @@ reviewedIds.push(1043,1044,1046,1047,1048);
 // October29 evening: company earnings1049–1051 incorporated into infrastructure
 // financing synthesis; actual source dates and quarter/TTM distinctions retained.
 reviewedIds.push(1049,1050,1051);
+
+// October30: personal source review; finance1055–1057 and science1054 incorporated.
+// 1052 supplies customer concentration evidence but no separate theme;1053 remains
+// an attributed report, insufficient to refresh or revive a broader briefing.
+reviewedIds.push(1052,1053,1054,1055,1056,1057);

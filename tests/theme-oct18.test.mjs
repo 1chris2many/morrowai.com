@@ -54,12 +54,12 @@ test('science links three distinct developments with original dates and readines
 });
 test('explicitly reviewed relations make new science discoverable without mutating the feed',()=>{
  const before=JSON.stringify(feed);validateBriefs(feed);
- assert.deepEqual(new Set(related(feed,'ai-science').map(i=>i.digestItemId)),new Set([968,983,984,1033]));
+ assert.deepEqual(new Set(related(feed,'ai-science').map(i=>i.digestItemId)),new Set([968,983,984,1033,1054]));
  assert.equal(briefingCards(feed).includes('data-theme="ai-science"'),lifecycle(get('ai-science'),asOf(feed)).status==='active');
  const html=renderThemes(home,feed).split('id="ai-science"')[1].split('</section>')[0];
- assert.match(html,/4 related stories/);assert.match(html,/Browse the news archive/);
+ assert.match(html,/5 related stories/);assert.match(html,/Browse the news archive/);
  assert.doesNotMatch(html,/news.html\?theme=ai-science/);
- for(const id of [968,983,984,1033])assert.ok(html.includes(feed.items.find(i=>i.digestItemId===id).anchor));
+ for(const id of [968,983,984,1033,1054])assert.ok(html.includes(feed.items.find(i=>i.digestItemId===id).anchor));
  assert.equal(JSON.stringify(feed),before);
 });
 test('cross-theme relations fail closed for missing, unreviewed or wrong-URL evidence',()=>{

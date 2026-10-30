@@ -209,13 +209,13 @@ export const briefs = [
     "id": "ai-science",
     "label": "AI in science",
     "title": "More AI research can make expert review the bottleneck",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-30",
     "author": "Codex",
     "accent": "mint",
     "teaser": "AI can produce candidate results faster than specialists can check them. Access to the evidence and the time needed to explain it help determine who can use the discoveries.",
-    "summary": "OpenAI has released its new math and computer-science materials while a physics group prepares an explanation before releasing its work. Alongside Google’s supervised laboratory experiments, the announcement shows how scientific value can depend on checks and interpretation after a model produces an answer.",
-    "meaning": "More generated research can lengthen the review queue if expert capacity does not grow with it. Public artifacts let more researchers check and extend a claim; early access for a small group concentrates expertise but also gives that group a head start. The organizations that turn output into reproducible, understandable results may become more valuable as generation gets cheaper. Google’s laboratory example adds a feedback benefit: checks can expose misleading improvements and change the next experiment.",
-    "watch": "Track time to independent verification and useful follow-on work. OpenAI’s claims remain under examination; Google’s laboratory systems remain supervised prototypes.",
+    "summary": "Anthropic is distributing research credits through scientific funders and institutions, broadening access to model use. Earlier OpenAI and Google examples show the next constraint: producing more candidate results still leaves experts to check, explain and reproduce them.",
+    "meaning": "Institutional distribution can reduce the effort each researcher spends securing AI access, while concentrating tool choices within funders and labs. That can expand the volume of attempted work faster than the capacity to evaluate it. Public datasets and software offer a way for a grant’s benefits to outlast its credits, provided other researchers can inspect and reuse them. The valuable intermediary may therefore be the institution that turns abundant output into reproducible work. OpenAI’s different release routes and Google’s supervised experiments show why access, expert review and experimental feedback remain distinct parts of that process.",
+    "watch": "Track reproducible results and reusable research assets after subsidized access ends. Compare growth in experiments with the time and expert effort needed to validate them. Institutional access is an enabling condition; it does not establish a scientific breakthrough.",
     "visualTitle": "What turns more output into useful research",
     "visual": [
       [
@@ -231,8 +231,17 @@ export const briefs = [
         "Explain the result so others can build on it"
       ]
     ],
-    "timelineIntro": "Compute access expands who can attempt research. Laboratory controls test whether an apparent gain means what researchers intended. OpenAI’s October 26 release adds the human work and access choices involved in checking and explaining claimed results.",
+    "timelineIntro": "The latest credit program uses established research institutions to widen access. Earlier evidence shows the validation and interpretation work that remains after researchers obtain the tools.",
     "developments": [
+      {
+        "id": 1054,
+        "date": "2026-10-28",
+        "title": "Anthropic distributes research access through institutions",
+        "text": "The expanded program supplies Claude credits through 20 scientific organizations and groups. Some collaborations aim to produce shared datasets, software and standards.",
+        "source": "Anthropic",
+        "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+        "relation": "Institutional distribution expands access while leaving validation capacity and reusable outputs as the next tests."
+      },
       {
         "date": "2026-10-26",
         "id": 1033,
@@ -650,30 +659,30 @@ export const briefs = [
   {
     "id": "ai-infrastructure",
     "label": "AI infrastructure",
-    "title": "AI growth can demand new investor money before it pays off",
-    "reviewedAt": "2026-10-29",
+    "title": "AI suppliers can get paid before their customers earn a return",
+    "reviewedAt": "2026-10-30",
     "author": "Codex",
     "accent": "blue",
-    "teaser": "Cloud sales are accelerating while operators commit cash to future capacity. A boom can be real and still require shareholders or lenders to supply more money before the investment pays back.",
-    "summary": "Alphabet doubled cloud revenue while quarterly free cash flow turned negative and common-share sales brought in $12.4 billion. Amazon reported 39% AWS growth alongside a trailing-year cash outflow. Meta raised its spending floor and says its frontier-model investments will take longer to return money than improvements to advertising.",
-    "meaning": "Operators must secure equipment and power before the capacity earns revenue. If that spending outruns operating cash, expansion can require debt or new shares even as customers buy more services. New shares spread future earnings across more owners; debt adds another claim on the cash those assets eventually produce. The timing and funding of growth can therefore pressure valuations without a collapse in demand. Earlier supply and engineering reports add another constraint: SK hynix forecasts prolonged shortages, while Meta describes recovering useful training time from installed hardware. Getting more work from existing equipment could reduce the capacity needed for a given workload, but those reports do not quantify the financial return.",
-    "watch": "Track capital spending against operating cash, new financing, useful capacity delivered and customer utilization. Keep quarterly and trailing-year measures separate. The companies do not isolate AI investment returns in these figures; Meta also distinguishes advertising gains from longer-term model and product returns. Faster cash generation or lower expansion costs would reduce the financing pressure.",
-    "visualTitle": "How fast growth can require fresh capital",
+    "teaser": "Memory suppliers are recording sales while cloud operators fund capacity that will earn money later. The same boom can strengthen a supplier’s cash position and increase its customer’s financing needs.",
+    "summary": "Samsung says server demand is lifting memory prices across applications; Sandisk’s data-center sales grew 61% from the preceding quarter. These supplier results sit alongside cash outflows at Alphabet and Amazon. Microsoft provides a useful counterexample: it remained cash-flow positive while spending heavily, with some capacity deliveries delayed.",
+    "meaning": "The buildout pays different participants at different times. Components become supplier revenue before a cloud operator has necessarily filled the new capacity or recovered its investment. Scarcity can also encourage longer purchase commitments, moving more of the risk of future demand onto buyers. Operators with enough operating cash can fund that gap internally; others may need debt or new shares. This is why strong supplier results and pressure on a customer’s valuation can coexist. Microsoft’s delayed deliveries add another distinction: a temporary reduction in spending can reflect a construction constraint rather than weaker customer demand. Earlier engineering reports show a further option—getting more useful work from installed hardware—but do not quantify the financial return.",
+    "watch": "Compare operating cash with capital spending and new financing at each company. Watch delivery schedules, memory-contract duration and whether installed capacity earns enough to cover its cost. Keep quarterly and trailing-year figures separate. Supplier sales establish demand for equipment; they do not by themselves establish profitable use of that equipment by the buyer.",
+    "visualTitle": "The same investment reaches each participant at a different time",
     "visual": [
       [
-        "Commit capacity",
-        "Equipment and power need funding before revenue arrives"
+        "Pay for components",
+        "Suppliers book sales as operators build capacity"
       ],
       [
-        "Bridge the cash gap",
-        "Debt or new shares can finance the expansion"
+        "Wait for useful capacity",
+        "Delivery and installation delay the earning period"
       ],
       [
-        "Earn the return",
-        "Utilization and margins determine what reaches each owner"
+        "Recover the investment",
+        "Customer use and margins determine the operator’s return"
       ]
     ],
-    "timelineIntro": "Power, supply and recovery determine how much useful capacity an operator gets. The October earnings reports add who funds that capacity and when the cash comes back. Event dates are retained below.",
+    "timelineIntro": "Supply constraints, financing and usable capacity shape who gets paid first. October earnings now show both suppliers and operators; original event dates remain below.",
     "metric": {
       "value": "$220B",
       "label": "Amazon’s expected 2026 cash capital spending",
@@ -688,6 +697,22 @@ export const briefs = [
         "text": "AWS revenue grew 39%. Amazon maintained its $220 billion full-year cash spending forecast and reported negative $42.4 billion free cash flow over the preceding twelve months.",
         "source": "Amazon; Axios for S&P Capital IQ estimates",
         "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q3-2026-report"
+      },
+      {
+        "id": 1055,
+        "date": "2026-10-29",
+        "title": "Samsung plans longer contracts amid tight memory supply",
+        "text": "Samsung attributes higher memory prices to server demand and capacity constraints. It expects demand to exceed supply in 2027 and plans multi-year contracts.",
+        "source": "Samsung",
+        "url": "https://news.samsungsemiconductor.com/global/samsung-electronics-announces-third-quarter-2026-results/"
+      },
+      {
+        "id": 1056,
+        "date": "2026-10-29",
+        "title": "Sandisk’s sales shift toward data centers",
+        "text": "Data-center revenue rose 61% from the preceding quarter while consumer revenue fell 29%, showing different demand patterns within one supplier.",
+        "source": "Sandisk (SEC filing via Groowe)",
+        "url": "https://groowe.com/newsroom/ojEwz129dq"
       },
       {
         "id": 1049,
@@ -705,6 +730,14 @@ export const briefs = [
         "source": "SK hynix",
         "url": "https://news.skhynix.com/en/q3-2026-business-results/",
         "relation": "Adds a supplier-reported constraint on expansion to the existing explanation of how recovery turns installed equipment into useful training capacity."
+      },
+      {
+        "id": 1057,
+        "date": "2026-10-28",
+        "title": "Microsoft separates delivery delays from demand",
+        "text": "Microsoft reported $18.6 billion quarterly free cash flow. Some third-party capacity slipped, contributing to its approximately $170 billion calendar-year spending forecast.",
+        "source": "Microsoft",
+        "url": "https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1"
       },
       {
         "id": 1051,
