@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-10-29",
   "fresh": false,
   "coverage": {
-    "count": 5,
-    "sourceCount": 3,
+    "count": 8,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -13,6 +13,56 @@
   },
   "pending": 5,
   "items": [
+    {
+      "digestItemId": 1049,
+      "digestDate": "2026-10-29",
+      "title": "Alphabet misses revenue expectations as cloud sales double and cash spending rises",
+      "summary": "Alphabet reported third-quarter revenue of $127.58 billion on October 28, below the $127.97 billion FactSet consensus reported by AP. Google Cloud revenue rose 103% to $30.7 billion, with enterprise AI, core cloud services and TPU system sales contributing. Quarterly capital spending reached $51.4 billion, exceeding operating cash flow and leaving free cash flow at negative $9.1 billion.",
+      "whyItMatters": "Alphabet is selling more computing capacity while paying to build capacity that will earn revenue later. That timing can make rapid growth more dependent on financing: the company also raised $12.4 billion through common-share sales during the quarter. The pressure on its valuation can therefore come from how much capital future growth requires and what remains for each shareholder, even while cloud demand is accelerating.",
+      "url": "https://s206.q4cdn.com/479360582/files/doc_news/2026/Oct/28/attachments/2026q3-alphabet-earnings-release.pdf",
+      "source": "Alphabet; AP for FactSet estimates",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Funding"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-29-alphabet-misses-revenue-expectations-as-cloud-sales-double-and-cash-spending-rises",
+      "editorialNote": "Results announced October 28; covered October 29. Cash-flow and capital-spending figures are for the quarter."
+    },
+    {
+      "digestItemId": 1050,
+      "digestDate": "2026-10-29",
+      "title": "Amazon misses revenue expectations despite 39% AWS growth",
+      "summary": "Amazon reported third-quarter revenue of $201.9 billion on October 29, below the $202.2 billion S&P Capital IQ estimate reported by Axios, while AWS revenue rose 39% to $46 billion. It maintained its forecast of roughly $220 billion in cash capital spending for 2026. Free cash flow was negative $42.4 billion over the trailing twelve months, with the company attributing the spending increase primarily to AI investment.",
+      "whyItMatters": "AWS produced $17.8 billion in quarterly operating profit, yet over the past twelve months Amazon spent more on infrastructure and equipment than the whole business generated in operating cash. New equipment requires cash up front while its cost is spread over its useful life in earnings, so stronger reported profits can coexist with a growing funding requirement. The return on this expansion depends on how quickly customers fill and pay for the additional capacity; AWS growth alone cannot establish that payback.",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q3-2026-report",
+      "source": "Amazon; Axios for S&P Capital IQ estimates",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-29-amazon-misses-revenue-expectations-despite-39-aws-growth",
+      "editorialNote": "Results announced after the market close October 29. The $42.4 billion cash outflow covers twelve months; it is not a quarterly loss."
+    },
     {
       "digestItemId": 1048,
       "digestDate": "2026-10-29",
@@ -96,6 +146,31 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-29-congress-presses-delaware-over-plan-to-let-ai-agents-legally-run-companies",
       "editorialNote": "Proposal under review; House letter dated October 26, reporting October 27."
+    },
+    {
+      "digestItemId": 1051,
+      "digestDate": "2026-10-29",
+      "title": "Meta beats revenue expectations and raises its spending floor",
+      "summary": "Meta reported third-quarter revenue of $64.6 billion on October 21, above the $63.37 billion LSEG consensus reported by Reuters. It raised the lower end of its 2026 capital-spending forecast from $130 billion to $135 billion, retaining the $145 billion upper end; that measure includes finance-lease principal payments. Quarterly free cash flow was negative $2.12 billion after $34.91 billion of capital spending.",
+      "whyItMatters": "Meta says AI is already increasing advertising revenue, while its frontier-model investments will take longer to produce returns. The established ad business is helping finance a longer-term model and product investment whose economics are still developing: stronger ad recommendations do not establish what new AI products will earn. Raising the spending floor commits more cash to that longer wait, so the revenue beat and the investment risk can both be real.",
+      "url": "https://www.prnewswire.com/news-releases/meta-reports-third-quarter-2026-results-302915964.html",
+      "source": "Meta via PR Newswire; Reuters for LSEG estimates",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Funding"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-29-meta-beats-revenue-expectations-and-raises-its-spending-floor",
+      "editorialNote": "Results announced October 21; covered October 29. The beat refers to revenue. Meta reported GAAP EPS of $3.83, or $7.40 excluding a $9.89 billion litigation charge."
     },
     {
       "digestItemId": 1043,
@@ -6063,7 +6138,7 @@
     }
   ],
   "publicationStatus": "partial",
-  "notice": "2026-10-29 · 5 stories · More stories to follow",
-  "publishedAt": "2026-10-29T15:12:00.283Z",
-  "contentHash": "544b26695bd2f94d15a7aff5c067c956dc13bfcc189d6c3f910eda8897c193c4"
+  "notice": "2026-10-29 · 8 stories · More stories to follow",
+  "publishedAt": "2026-10-30T00:54:39.107Z",
+  "contentHash": "d2989dd181ac58ff47a40a4f33cccc24849fc417733a73201c18eab388740ef9"
 }
