@@ -650,37 +650,53 @@ export const briefs = [
   {
     "id": "ai-infrastructure",
     "label": "AI infrastructure",
-    "title": "Memory shortages make recovered compute more valuable",
-    "reviewedAt": "2026-10-28",
+    "title": "AI growth can demand new investor money before it pays off",
+    "reviewedAt": "2026-10-29",
     "author": "Codex",
     "accent": "blue",
-    "teaser": "When memory supply cannot expand quickly, recovering lost training time becomes a way to make progress with equipment already installed. The trade-off is that spare hardware also uses scarce inventory.",
-    "summary": "SK hynix expects memory demand to exceed supply through 2030 and says long-term agreements cover more than half of its total 2027–28 production capacity. Meta’s Prometheus account describes how spare hardware, fault isolation and checkpoints keep training progressing after failures. The new supply forecast strengthens the case for treating recovery as a source of useful capacity.",
-    "meaning": "Factory lead times limit how quickly an operator can buy its way out of a capacity shortage. Avoiding repeated work could therefore become more valuable while new equipment is unavailable. Meta uses spare hardware and checkpoints to recover quickly, but the capacity calculation needs care: many in-rack spares arise from fitting a 64-GPU job into a 72-GPU rack, while extra reserve racks are a separate commitment. The advantage depends on useful work preserved across the whole fleet, including spares, and the engineering required. Supply contracts address the next expansion; recovery can improve what an operator gets from equipment already installed.",
-    "watch": "Watch delivery lead times, useful training output and the total hardware reserved for recovery. Compare the work preserved with the cost of spares and engineering. Faster supply growth would weaken the scarcity argument; comparable workloads would test the recovery advantage. SK hynix’s 2030 outlook is a company forecast, and Meta’s reported goodput is specific to its runs.",
-    "visualTitle": "Two ways to secure useful computing capacity",
+    "teaser": "Cloud sales are accelerating while operators commit cash to future capacity. A boom can be real and still require shareholders or lenders to supply more money before the investment pays back.",
+    "summary": "Alphabet doubled cloud revenue while quarterly free cash flow turned negative and common-share sales brought in $12.4 billion. Amazon reported 39% AWS growth alongside a trailing-year cash outflow. Meta raised its spending floor and says its frontier-model investments will take longer to return money than improvements to advertising.",
+    "meaning": "Operators must secure equipment and power before the capacity earns revenue. If that spending outruns operating cash, expansion can require debt or new shares even as customers buy more services. New shares spread future earnings across more owners; debt adds another claim on the cash those assets eventually produce. The timing and funding of growth can therefore pressure valuations without a collapse in demand. Earlier supply and engineering reports add another constraint: SK hynix forecasts prolonged shortages, while Meta describes recovering useful training time from installed hardware. Getting more work from existing equipment could reduce the capacity needed for a given workload, but those reports do not quantify the financial return.",
+    "watch": "Track capital spending against operating cash, new financing, useful capacity delivered and customer utilization. Keep quarterly and trailing-year measures separate. The companies do not isolate AI investment returns in these figures; Meta also distinguishes advertising gains from longer-term model and product returns. Faster cash generation or lower expansion costs would reduce the financing pressure.",
+    "visualTitle": "How fast growth can require fresh capital",
     "visual": [
       [
-        "Secure future supply",
-        "Long lead times make expansion a forward commitment"
+        "Commit capacity",
+        "Equipment and power need funding before revenue arrives"
       ],
       [
-        "Recover installed capacity",
-        "Limit the work lost when equipment fails"
+        "Bridge the cash gap",
+        "Debt or new shares can finance the expansion"
       ],
       [
-        "Count the whole fleet",
-        "Include spare hardware when comparing useful output"
+        "Earn the return",
+        "Utilization and margins determine what reaches each owner"
       ]
     ],
-    "timelineIntro": "Earlier power and hardware developments show how capacity is assembled; Meta adds the operating work required to keep it productive. SK hynix’s October 28 forecast and supply agreements make the delay in obtaining more equipment part of that calculation.",
+    "timelineIntro": "Power, supply and recovery determine how much useful capacity an operator gets. The October earnings reports add who funds that capacity and when the cash comes back. Event dates are retained below.",
     "metric": {
-      "value": ">50%",
-      "label": "SK hynix’s 2027–28 capacity covered by long-term agreements",
-      "context": "Share of the company’s total production capacity, reported October 28. Contract prices can adjust within agreed ranges as market conditions change.",
-      "sourceId": 1039
+      "value": "$220B",
+      "label": "Amazon’s expected 2026 cash capital spending",
+      "context": "Company forecast reaffirmed October 29. This is full-year capital spending, not realized AI revenue or a separately measured AI budget.",
+      "sourceId": 1050
     },
     "developments": [
+      {
+        "id": 1050,
+        "date": "2026-10-29",
+        "title": "Amazon keeps its capital-spending plan as AWS grows",
+        "text": "AWS revenue grew 39%. Amazon maintained its $220 billion full-year cash spending forecast and reported negative $42.4 billion free cash flow over the preceding twelve months.",
+        "source": "Amazon; Axios for S&P Capital IQ estimates",
+        "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q3-2026-report"
+      },
+      {
+        "id": 1049,
+        "date": "2026-10-28",
+        "title": "Alphabet’s expansion includes new shareholder capital",
+        "text": "Cloud revenue doubled, quarterly free cash flow was negative $9.1 billion, and Alphabet raised $12.4 billion through common-share sales.",
+        "source": "Alphabet; AP for FactSet estimates",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_news/2026/Oct/28/attachments/2026q3-alphabet-earnings-release.pdf"
+      },
       {
         "date": "2026-10-28",
         "id": 1039,
@@ -689,6 +705,14 @@ export const briefs = [
         "source": "SK hynix",
         "url": "https://news.skhynix.com/en/q3-2026-business-results/",
         "relation": "Adds a supplier-reported constraint on expansion to the existing explanation of how recovery turns installed equipment into useful training capacity."
+      },
+      {
+        "id": 1051,
+        "date": "2026-10-21",
+        "title": "Meta distinguishes current ad returns from longer-term AI investment",
+        "text": "Meta raised its annual spending floor and said its frontier-model investments will take longer to generate returns than investment in the core business.",
+        "source": "Meta via PR Newswire; Reuters for LSEG estimates",
+        "url": "https://www.prnewswire.com/news-releases/meta-reports-third-quarter-2026-results-302915964.html"
       },
       {
         "date": "2026-10-19",

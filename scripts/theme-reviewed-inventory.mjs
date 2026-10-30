@@ -101,3 +101,7 @@ reviewedIds.push(1038,1039,1040,1041,1042);
 //brief.1046inquiry establishes no exclusion;1047preview no measured switching.
 //1045source429: retain privately reviewed competition proposal pending recovery.
 reviewedIds.push(1043,1044,1046,1047,1048);
+
+// October29 evening: company earnings1049–1051 incorporated into infrastructure
+// financing synthesis; actual source dates and quarter/TTM distinctions retained.
+reviewedIds.push(1049,1050,1051);
