@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-10-31",
   "fresh": true,
   "coverage": {
-    "count": 5,
-    "sourceCount": 3,
+    "count": 9,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -50,6 +50,30 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-31-investors-grow-nervous-about-big-tech-s-ai-spending-as-cash-flow-turns-negative",
       "editorialNote": "Reported October 30, 2026; quarterly and trailing-year cash-flow measures are identified separately."
+    },
+    {
+      "digestItemId": 1064,
+      "digestDate": "2026-10-31",
+      "title": "Anthropic faces a reported credit hurdle",
+      "summary": "Blackstone reportedly expects speculative-grade credit after Anthropic’s IPO. This is a forecast, not an agency downgrade.",
+      "whyItMatters": "A large stock-market valuation cannot guarantee cheap borrowing. If lenders require higher returns or stronger guarantees, the same compute plan becomes harder to finance, giving suppliers able to support that financing more influence over which projects go ahead.",
+      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "source": "TechCrunch, citing Financial Times; corroborated by MT Newswires",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "anthropic-ipo",
+          "name": "Anthropic funding and IPO"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-31-anthropic-faces-a-reported-credit-hurdle",
+      "editorialNote": "Reported October 30, 2026."
     },
     {
       "digestItemId": 1059,
@@ -109,6 +133,78 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-31-mistral-releases-open-weights-for-its-trillion-parameter-large-4-model-aimed-at-cybersecurity",
       "editorialNote": "Weights released October 29, 2026; earlier API preview announced October 6."
+    },
+    {
+      "digestItemId": 1066,
+      "digestDate": "2026-10-31",
+      "title": "Nvidia reportedly weighs credit guarantees for Nscale’s Anthropic project",
+      "summary": "Nvidia is discussing billions of dollars in credit guarantees for Nscale’s West Virginia construction and power infrastructure serving Anthropic, Reuters reports, citing The Information. The deal is unsigned and its terms could change; the companies did not immediately comment.",
+      "whyItMatters": "A chip supplier that helps guarantee a customer’s borrowing can make equipment demand financeable, but also keeps financial exposure after selling the hardware. Strong orders and rising credit risk can then travel together, making the guarantor’s obligations as important as the sale itself.",
+      "url": "https://www.channelnewsasia.com/business/nvidia-in-talks-give-credit-support-nscales-deal-anthropic-information-reports-6505526",
+      "source": "Reuters via CNA, citing The Information",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-31-nvidia-reportedly-weighs-credit-guarantees-for-nscale-s-anthropic-project",
+      "editorialNote": "Reported October 29, 2026; proposed guarantees have not been signed."
+    },
+    {
+      "digestItemId": 1063,
+      "digestDate": "2026-10-31",
+      "title": "OpenAI reportedly falls short of its initial fundraising target",
+      "summary": "OpenAI has secured about $11 billion in commitments against an initial $30 billion goal, according to Wall Street Journal reporting relayed by 1news and Investing.com. The company is reportedly seeking to bring the round to $20 billion at a $1.25 trillion valuation, with more fundraising planned; this is not a final closed-round total.",
+      "whyItMatters": "A lower valuation changes how much ownership must be sold to finance the same spending plan; a smaller round also shortens the time before another financing decision. The pressure can therefore arrive before customer demand falls, through dilution, slower expansion or a need to improve cash generation.",
+      "url": "https://1news.az/en/news/20261031090508564-OpenAI-fails-to-raise-targeted-30-billion-ahead-of-IPO",
+      "source": "1news, citing The Wall Street Journal",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "openai-ipo",
+          "name": "OpenAI funding and IPO"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-31-openai-reportedly-falls-short-of-its-initial-fundraising-target",
+      "editorialNote": "WSJ report October 30; 1news published October 31 local time. Figures describe reported commitments and targets."
+    },
+    {
+      "digestItemId": 1065,
+      "digestDate": "2026-10-31",
+      "title": "S&P turns negative on Meta’s outlook as AI spending expands",
+      "summary": "S&P changed Meta’s credit outlook to negative from stable, citing uncertainty over capital spending and free operating cash flow. Reuters also reports plans to raise $97.5 billion through stock financing; that is planned funding, not cash already received. Meta disputed S&P’s assessment of its ability to monetize AI.",
+      "whyItMatters": "Meta can grow advertising revenue while its investment program consumes more cash than the business produces. Outside financing fills that gap, but exposes shareholders to dilution and makes the pace of investment more sensitive to creditors’ confidence in future returns.",
+      "url": "https://www.channelnewsasia.com/business/sp-global-revises-metas-outlook-negative-ai-spending-cash-flow-worries-6508631",
+      "source": "Reuters via CNA",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-31-s-p-turns-negative-on-meta-s-outlook-as-ai-spending-expands",
+      "editorialNote": "Outlook revised October 30, 2026. An outlook change is distinct from a credit-rating downgrade."
     },
     {
       "digestItemId": 1054,
@@ -6369,7 +6465,7 @@
     }
   ],
   "publicationStatus": "current",
-  "notice": "2026-10-31 · 5 stories",
-  "publishedAt": "2026-10-31T15:09:24.310Z",
-  "contentHash": "46fdc0dce892ebe843080517c6481fc4978a82bbdb51a2712a3cefa42241442c"
+  "notice": "2026-10-31 · 9 stories",
+  "publishedAt": "2026-10-31T15:12:56.421Z",
+  "contentHash": "660e3038247ab0951bc4483a22e92b4086621dad11c0df467972501279a88a59"
 }
