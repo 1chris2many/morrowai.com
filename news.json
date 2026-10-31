@@ -1,18 +1,115 @@
 {
   "version": 1,
-  "digestDate": "2026-10-30",
+  "digestDate": "2026-10-31",
   "latestSavedDigest": "2026-10-31",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 10,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 1062,
+      "digestDate": "2026-10-31",
+      "title": "AI companies propose a shared training opt-out signal",
+      "summary": "OpenAI, Google, Microsoft and Anthropic back a proposed robots.txt signal for expressing AI-training preferences across participating providers. Google aims to support it in 2027, alongside existing company-specific controls. The IETF document is still an individual draft, and Meta has expressed support without committing to honor it.",
+      "whyItMatters": "A shared default would reduce the work of maintaining separate rules as new crawlers appear, while individual exceptions could preserve access for selected providers. Its value depends on compliance: publishing a preference does not itself stop an uncooperative crawler or create a payment obligation.",
+      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-31-openai-google-microsoft-and-anthropic-back-shared-standard-for-publishers-to-opt-out-of-ai-scraping",
+      "editorialNote": "Announced October 30, 2026; Google targets support in 2027."
+    },
+    {
+      "digestItemId": 1061,
+      "digestDate": "2026-10-31",
+      "title": "AI spending turns cash generation into a financing question",
+      "summary": "TechCrunch reports that Alphabet, Amazon, Meta and Microsoft have outlined more than $740 billion in combined 2026 capital spending. Alphabet reported negative $9.1 billion quarterly free cash flow, while Amazon’s trailing-year figure was negative $42.4 billion; Microsoft remained positive at $18.6 billion for its quarter. The differing periods matter, but the results show that strong demand and a heavy buildout can coincide with cash pressure.",
+      "whyItMatters": "Equipment suppliers can collect cash well before cloud operators recover the investment from customers. Once operating cash stops covering that gap, the terms on which investors provide new money can constrain expansion even while AI usage grows; Microsoft’s positive cash flow shows that exposure differs by company.",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-31-investors-grow-nervous-about-big-tech-s-ai-spending-as-cash-flow-turns-negative",
+      "editorialNote": "Reported October 30, 2026; quarterly and trailing-year cash-flow measures are identified separately."
+    },
+    {
+      "digestItemId": 1059,
+      "digestDate": "2026-10-31",
+      "title": "Google runs its first AI response on an orbiting TPU",
+      "summary": "Google says its Project Suncatcher prototype ran Gemma 4 on a Tensor Processing Unit in orbit and sent a response back to Earth. Tests of thermal stress and radiation exposure come next, ahead of two interconnected satellites planned for 2027.",
+      "whyItMatters": "Moving compute into orbit could offer another way around limits on terrestrial capacity, but generating a response only proves that the hardware can execute a workload there. Reliability and connections between satellites now determine whether this can become usable capacity rather than an expensive isolated machine.",
+      "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-31-google-s-ai-satellite-powers-on-in-orbit-generates-its-first-response-a-haiku",
+      "editorialNote": "Google reported the milestone October 30, 2026."
+    },
+    {
+      "digestItemId": 1060,
+      "digestDate": "2026-10-31",
+      "title": "Malicious Claude Code extensions spread through Cursor’s marketplace",
+      "summary": "Cursor says malicious versions 2.1.312 and 2.1.313 of the Claude Code extension were distributed through its marketplace on October 29 and attempted to install a persistent SSH backdoor. It removed the packages, disabled the attacker’s server and published remediation guidance; Ars reports up to 5,000 users may have been affected, while the initial compromise remains unexplained.",
+      "whyItMatters": "A familiar publisher name and automatic updates can carry malicious code directly into a developer’s working environment. Because the payload installed separate persistence mechanisms, replacing the extension alone may leave the machine exposed; the trust decision extends to the distribution service and the cleanup it can verify.",
+      "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-31-backdoored-claude-code-extension-on-cursor-s-marketplace-hit-up-to-5-000-developer-machines",
+      "editorialNote": "Incident October 29; Cursor’s notice was updated October 30. The affected distribution was Cursor’s marketplace."
+    },
+    {
+      "digestItemId": 1058,
+      "digestDate": "2026-10-31",
+      "title": "Mistral releases Large 4 weights for self-hosted cyber defense",
+      "summary": "Mistral released the weights for its trillion-parameter Large 4 model on October 29, following an API preview earlier this month. The company says it matches GLM-5.3 on cyber tasks while using 47% fewer tokens per task; those are vendor performance claims.",
+      "whyItMatters": "A security team running downloaded weights can keep using the model if a hosted provider changes access or restrictions during an incident. That continuity transfers the work of securing and operating the system to the customer, so fewer generated tokens alone cannot establish a cheaper defense capability.",
+      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-31-mistral-releases-open-weights-for-its-trillion-parameter-large-4-model-aimed-at-cybersecurity",
+      "editorialNote": "Weights released October 29, 2026; earlier API preview announced October 6."
+    },
     {
       "digestItemId": 1054,
       "digestDate": "2026-10-30",
@@ -6271,8 +6368,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-10-30 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-10-31T14:00:39.982Z",
-  "contentHash": "7a13737a483dd488f3662cd427126b8b40d8d2dba21a246a232b0ad47a4fd9d9"
+  "publicationStatus": "current",
+  "notice": "2026-10-31 · 5 stories",
+  "publishedAt": "2026-10-31T15:09:24.310Z",
+  "contentHash": "46fdc0dce892ebe843080517c6481fc4978a82bbdb51a2712a3cefa42241442c"
 }
