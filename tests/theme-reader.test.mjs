@@ -8,7 +8,7 @@ import {readerRevision} from './theme-name-history.mjs';
 const feed=JSON.parse(readFileSync(new URL('../news.json',import.meta.url)));
 const active=briefs.filter(b=>readerRevision.changes[b.id]);
 test('every rewritten brief shows readers how each story connects to the theme',()=>{
- assert.equal(active.length,10);
+ assert.equal(active.length,11);
  for(const b of active)for(const d of b.developments)assert.ok(d.why?.length>=30&&!/reviewed|primary/i.test(d.why),b.id+':'+d.id);
  const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  const out=renderThemes(home,feed,{audioManifest:{}});

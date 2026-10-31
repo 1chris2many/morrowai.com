@@ -1,6 +1,5 @@
-// Source pages personally read by Codex; evidence review dates belong to each briefing.
-// October 18 insight revision changes analysis, not event dates, source inventory or freshness.
-// Feed ingestion cannot approve or refresh this analysis.
+// Source pages reviewed by Codex; evidence review dates belong to each briefing.
+// October 31 reader-context corrections preserve those dates and source provenance.
 export const briefs = [
   {
     "id": "chip-switching",
@@ -9,7 +8,7 @@ export const briefs = [
     "reviewedAt": "2026-10-21",
     "author": "Codex and Persephone",
     "accent": "blue",
-    "teaser": "Most AI software is built around Nvidia’s chips, so testing an alternative can mean rewriting code. Google and Amazon are now removing that first hurdle, which gives buyers a real alternative to compare, even though a full move stays hard.",
+    "teaser": "Many AI development tools are tuned for Nvidia’s chips, so testing an alternative can mean rewriting code. Google and Amazon are now removing that first hurdle, which gives buyers a real alternative to compare, even though a full move stays hard.",
     "summary": "Nvidia’s hold on AI rests partly on software: developers’ tools are built around its chips, so trying another supplier has been a project in itself. Google and Amazon, which design their own AI chips, are attacking that by supporting PyTorch, a framework many AI developers already use. This story follows whether easier testing turns into real competition. Google’s new backend promises minimal code changes, while an Amazon case study shows how much engineering a real workload can still need.",
     "meaning": "A cheaper chip means little if evaluating it takes a major project. Familiar tools lower that first cost, so a buyer can test a rival’s offer without replacing its whole workflow. Our inference is that this gives buyers bargaining power before it moves much actual work, since a credible alternative is useful even if it is never fully adopted. The supplier that makes real trials easiest could gain an edge. Compatibility alone still cannot show which chip delivers more for the money.",
     "watch": "Watch the engineering hours needed for a realistic trial, performance under real traffic, and the work of running it afterward. Compare equivalent models and quality before crediting any chip with a win.",
@@ -61,7 +60,7 @@ export const briefs = [
     "author": "Codex and Persephone",
     "accent": "mint",
     "teaser": "Robots have needed long, specific training for each place and body. New results show skills transferring to homes and machines they never trained on. As setup gets easier, the cost that matters shifts to the human time spent fixing failures.",
-    "summary": "Household robots have mostly been limited by training: each new home, or each new robot body, has needed its own preparation. Two recent results suggest skills can now transfer. Figure, a humanoid robot company, reports 56% full-task success in 30 unfamiliar homes, and Dream Labs reports controlling two-armed robots it had not trained on. This story tracks whether transfer turns into useful work, and how much human help it still takes.",
+    "summary": "Preparing a robot for a new home or a different body can require substantial training. Two recent results suggest skills can now transfer. Figure, a humanoid robot company, reports 56% full-task success in 30 unfamiliar homes, and Dream Labs reports controlling two-armed robots it had not trained on. This story tracks whether transfer turns into useful work, and how much human help it still takes.",
     "meaning": "Training a robot for every location makes expansion expensive before any useful work begins, so transfer could make far more deployments worth trying. Our inference is that the burden then moves to supervision. A robot that starts quickly and needs frequent rescuing can still consume a lot of human time. The measure that matters commercially is finished work, with the cost of that help included.",
     "watch": "Watch task completion in unfamiliar settings, human interventions per hour and recovery time. Compare like tasks on like hardware. Dream-1’s hourly API price covers the model only, leaving out the robot, supervision and repairs.",
     "visualTitle": "Where the work moves as setup gets easier",
@@ -118,8 +117,8 @@ export const briefs = [
     "author": "Codex and Persephone",
     "accent": "gold",
     "teaser": "Businesses are shifting work between AI providers such as OpenAI and Anthropic, sometimes without cancelling anything. Those providers have signed long contracts for computing power, so their revenue can move faster than their costs. Recent funding reports suggest investors are asking harder questions.",
-    "summary": "AI companies such as OpenAI and Anthropic spend heavily on computing power, often under contracts that run for years. Their customers are far less tied down. Data from Ramp, a corporate-card company, shows more businesses changing AI providers, and a customer can move a task to a rival without closing its account. This story tracks that gap: revenue that can shift within months against bills that last for years. Reported trouble raising money at OpenAI and a cautious credit forecast for Anthropic suggest investors are now asking how the gap gets paid for.",
-    "meaning": "This is the risk hiding behind headline growth numbers. Total AI use can keep rising while one provider loses its most valuable work, so adoption says little about any single company’s health. The danger is a squeeze. A provider committed to years of computing costs needs steady revenue, and usage-based pricing means that revenue can fall as soon as a customer sends a task elsewhere. Falling prices make it tighter, because customers can use more AI without paying much more. If raising money also gets harder, a provider has less time to win that work back. In the optimistic case, useful products keep customers in place and revenue grows enough to cover the bills. In the pessimistic case, work keeps moving while prices fall, leaving fixed bills and thinner income. So far the evidence shows work moving and investors growing cautious, while overall AI use keeps growing.",
+    "summary": "AI companies such as OpenAI and Anthropic spend heavily on computing power, often under contracts that run for years. Their customers are far less tied down. Data from Ramp, a corporate-card company, shows more businesses changing AI providers, and a customer can move a task to a rival without closing its account. This story tracks that gap: revenue that can shift quickly against bills that last for years. Reported trouble raising money at OpenAI and a cautious credit forecast for Anthropic suggest investors are now asking how the gap gets paid for.",
+    "meaning": "This is the risk hiding behind headline growth numbers. Total AI use can keep rising while one provider loses its most valuable work, so adoption says little about any single company’s health. The danger is a squeeze. A provider committed to years of computing costs needs steady revenue, and usage-based pricing exposes reduced consumption sooner than an account cancellation. Prepaid credits and minimum-spend commitments can delay the effect on cash receipts. Falling prices make it tighter, because customers can use more AI without paying much more. If raising money also gets harder, a provider has less time to win that work back. In the optimistic case, useful products keep customers in place and revenue grows enough to cover the bills. In the pessimistic case, work keeps moving while prices fall, leaving fixed bills and thinner income. The transaction samples show spending shifting while adoption or use grows; the financing reports add evidence of investor caution. They do not measure every provider’s workload retention.",
     "watch": "Three measures would settle this: how much paid work providers keep, whether they generate cash after paying for computing power, and how much money OpenAI actually closes, on what terms. Anthropic’s actual credit rating, once agencies issue one, will test Blackstone’s forecast.",
     "visualTitle": "Why revenue can move faster than the bills",
     "visual": [
@@ -129,7 +128,7 @@ export const briefs = [
       ],
       [
         "Usage revenue follows",
-        "Metered fees fall before any cancellation shows up"
+        "Metered charges reflect less use; prepaid commitments can delay the cash effect"
       ],
       [
         "The computing bill stays",
@@ -192,7 +191,7 @@ export const briefs = [
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
         "relation": "The clarified source records a change in preferred provider rather than a complete loss of access to Claude.",
-        "why": "One company’s decision moved future work, and no customer had to close an account."
+        "why": "A platform’s choice of default can redirect future work without any customer closing an account."
       },
       {
         "date": "2026-10-14",
@@ -233,9 +232,9 @@ export const briefs = [
     "reviewedAt": "2026-10-30",
     "author": "Codex and Persephone",
     "accent": "mint",
-    "teaser": "AI companies are giving scientists free tools and announcing striking results. The slow part is now checking those results and explaining them well enough for others to use. Who does that work may decide how much of this research lasts.",
+    "teaser": "AI companies are giving scientists access to models and announcing striking results. Those results still need experts to check and explain them well enough for others to use. Who does that work may decide how much of this research lasts.",
     "summary": "AI labs want scientists using their models, and they are widening access through free credits and partnerships. They are also publishing AI-generated results in mathematics, computer science and physics. This story follows what happens next: every new result still needs specialists to verify it, reproduce it and explain it, and expert time does not scale the way AI output does.",
-    "meaning": "AI’s value in science depends on results people can trust and build on, and volume alone provides neither. If output grows faster than checking capacity, unverified claims pile up and expert attention becomes the scarce resource. That raises the importance of the institutions that fund and review research, because they influence which tools scientists use and which claims get examined. It also makes openness a practical matter: anyone can check a result with public data and methods, while a withheld result waits on a small group. Shared datasets and software are also the part of a free-credit program that can outlast the credits.",
+    "meaning": "AI’s value in science depends on results people can trust and build on, and volume alone provides neither. If output grows faster than checking capacity, unverified claims pile up and expert attention becomes the scarce resource. That raises the importance of the institutions that fund and review research, because they influence which tools scientists use and which claims get examined. It also makes openness a practical matter: public data and methods let outside specialists scrutinize a result, while withheld materials restrict who can examine it. Shared datasets and software are also the part of a free-credit program that can outlast the credits.",
     "watch": "Look for results that outside experts reproduce, and for datasets and software still in use after free credits end. Compare the pace of AI-generated claims with the time needed to validate them. OpenAI’s computer-science claim is the nearest test, since an outside group plans to examine it.",
     "visualTitle": "What turns AI output into usable science",
     "visual": [
@@ -273,7 +272,7 @@ export const briefs = [
         "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
         "primaryUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
         "relation": "Adds expert interpretation and access to artifacts to the existing analysis of experimental feedback and scientific validation.",
-        "why": "The clearest example so far: the announcement is finished and the expert work has only begun."
+        "why": "Shows why an announcement and independent confirmation are separate steps, with access to the work determining who can check it."
       },
       {
         "date": "2026-10-16",
@@ -306,7 +305,7 @@ export const briefs = [
     "accent": "gold",
     "teaser": "AI-assisted influence campaigns gained access to audiences through real publications. Detecting generated text leaves the identity behind the byline unresolved.",
     "summary": "OpenAI reports that fabricated contributors placed articles in real outlets, while the same operation’s identifiable social-media replies drew little engagement. The contrast points to a distribution advantage: getting a publisher to carry a story can provide access to an audience that mass-produced comments fail to reach. The report establishes publication, not a measured change in readers’ beliefs.",
-    "meaning": "These operations exploited access to real publishers’ editorial channels. Once a real outlet publishes the article, its reputation and distribution can lend weight to a fictitious identity. Watermark tools answer a different question about how supported media was made. They cannot establish that an author exists, disclose who commissioned the piece or verify its claims. As production gets easier, contributor verification becomes a more consequential point of control.",
+    "meaning": "These operations exploited access to real publishers’ editorial channels. Once a real outlet publishes the article, its reputation and distribution can lend weight to a fictitious identity. Watermark detectors look for signals embedded in supported AI-generated text, images, audio or video. They help identify how that content was made. They cannot establish that an author exists, disclose who commissioned the piece or verify its claims. As production gets easier, contributor verification becomes a more consequential point of control.",
     "watch": "Watch whether publishers detect fabricated contributors before publication, whether deceptive articles continue to reach established outlets, and whether claims of influence are backed by audience evidence rather than the popularity of unrelated posts.",
     "visualTitle": "How a false identity gains reach",
     "visual": [
@@ -323,7 +322,7 @@ export const briefs = [
         "The outlet can promote the article"
       ]
     ],
-    "timelineIntro": "Public watermark tools expand checks on media origin. The false-front report shows a separate route to credibility through publishers and contributor identities.",
+    "timelineIntro": "Watermark detectors check for signals embedded in AI-generated content. The false-front report shows a different problem: a real publisher can lend credibility to a fabricated contributor even when the origin of the content is known.",
     "developments": [
       {
         "date": "2026-10-08",
@@ -331,7 +330,8 @@ export const briefs = [
         "title": "OpenAI reports two false-front operations",
         "text": "OpenAI says it banned Russia- and Iran-origin operations that used AI alongside false identities and conventional media tactics. Some content reached real outlets; the report also describes exaggerated claims of effectiveness.",
         "source": "OpenAI",
-        "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations/"
+        "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations/",
+        "why": "Shows how a fabricated identity can gain credibility and an audience through a real publisher."
       },
       {
         "date": "2026-10-07",
@@ -339,7 +339,8 @@ export const briefs = [
         "title": "Google opens SynthID Detector to everyone",
         "text": "The tool is available globally in English for images, video and audio carrying supported watermarks. Google names OpenAI, NVIDIA and Kakao as partners, with Apple support planned.",
         "source": "Google",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/"
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "why": "Makes checks on supported media easier to access, while leaving contributor identity and factual accuracy unresolved."
       },
       {
         "date": "2026-10-05",
@@ -347,20 +348,21 @@ export const briefs = [
         "title": "OpenAI sets out its watermark rollout",
         "text": "Eligible ChatGPT and Codex text in the EU will gain watermarks over the coming weeks. Selected API models offer an opt-in globally; detector access starts with approved researchers and organizations.",
         "source": "OpenAI",
-        "url": "https://openai.com/index/eu-text-provenance/"
+        "url": "https://openai.com/index/eu-text-provenance/",
+        "why": "Adds a way to signal the origin of generated text; that signal cannot establish who stands behind a byline."
       }
     ]
   },
   {
     "id": "safety-vs-capability",
     "label": "Agent safety",
-    "title": "AI labs need records to investigate agent failures. Some customers require that none are kept.",
+    "title": "AI labs need records to investigate failures. Some customers require private conversations to stay unrecorded.",
     "reviewedAt": "2026-10-28",
     "author": "Codex and Persephone",
     "accent": "mint",
-    "teaser": "When an AI agent misbehaves, someone needs the record of what it did. Some enterprise customers require that no such record is kept. Anthropic’s IPO filing says the conflict has already pushed customers away.",
-    "summary": "As AI agents take on more independent work, labs have reported agents doing things nobody intended, and they have tightened controls in response. Investigating those incidents takes a record of what the agent saw and did. Some enterprise customers buy an arrangement called zero data retention, which means that record is never saved. This story tracks that collision, which Anthropic put on the record in its IPO filing.",
-    "meaning": "Safety rules carry a commercial cost. A provider that cannot see what happened will struggle to investigate a failure or prevent the next one, and a customer asked to allow that visibility may take its work elsewhere. Our inference is that strict oversight could push sensitive work toward setups where nobody is watching, which is the opposite of what the rules intend. For a business buying agents, this turns safety into a procurement decision: how much privacy it wants, and how much visibility it will accept when something goes wrong.",
+    "teaser": "When an AI agent misbehaves, its provider needs evidence of what happened. Some enterprise customers require prompts and replies to stay out of the provider’s logs. Anthropic’s IPO filing says monitoring requirements have already pushed customers away.",
+    "summary": "As AI agents take on more independent work, labs have reported agents doing things nobody intended, and they have tightened controls in response. Investigating those incidents takes a record of what the agent saw and did. Some enterprise customers buy an arrangement called zero data retention, which means the provider does not retain prompts and replies. Customers can still keep their own records, and some automated safety scores remain. This story tracks that collision, which Anthropic put on the record in its IPO filing.",
+    "meaning": "Safety rules carry a commercial cost. A provider that cannot see what happened will struggle to investigate a failure or prevent the next one, and a customer asked to allow that visibility may take its work elsewhere. Our inference is that strict oversight could push sensitive work toward setups where the model provider has less visibility, which is the opposite of what the rules intend. For a business buying agents, this turns safety into a procurement decision: how much privacy it wants, and how much visibility it will accept when something goes wrong.",
     "watch": "Watch which models require records to be kept, whether customers accept those terms, and how incidents get investigated when a provider cannot see the details. Evidence that oversight keeps customers and catches failures would ease the conflict. Anthropic has not published how many customers moved.",
     "visualTitle": "Why oversight and privacy collide",
     "visual": [
@@ -370,7 +372,7 @@ export const briefs = [
       ],
       [
         "Investigators need records",
-        "Zero-retention contracts mean those records are never saved"
+        "Zero-retention terms keep prompts and replies out of the provider’s logs"
       ],
       [
         "The customer decides",
@@ -408,7 +410,7 @@ export const briefs = [
         "text": "Microsoft described using its Project Perception security system to combine identity, permissions and live activity signals into ongoing risk checks on enterprise agents. It reported no measured results.",
         "source": "Microsoft",
         "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
-        "why": "Continuous monitoring runs on data about each agent’s activity, which is the data zero-retention contracts erase."
+        "why": "Shows why oversight needs information about an agent’s actions; retention limits affect what can be investigated later."
       },
       {
         "date": "2026-10-10",
@@ -511,7 +513,7 @@ export const briefs = [
     "accent": "blue",
     "teaser": "Tech giants are buying AI chips and data centers faster than some of them generate cash. Chip sales still look strong, but the money behind them increasingly depends on borrowing, share sales and, possibly, help from the suppliers themselves.",
     "summary": "Amazon, Alphabet, Meta and Microsoft have outlined more than $740 billion in combined 2026 capital spending as they race to build AI capacity. Companies selling them equipment are booking the revenue now, while the buyers wait to earn it back. Alphabet and Amazon recently reported negative free cash flow, meaning they spent more than their businesses produced. This story tracks who covers that gap. Nvidia’s reported talks to guarantee borrowing for an Anthropic data center suggest some of the risk could return to the chip supplier.",
-    "meaning": "A chip order only becomes durable business if the buyer eventually earns a return on the chips. Until then, the buildout runs on outside money. When a supplier guarantees a customer’s borrowing, the project can go ahead, but the supplier keeps some exposure after the sale. That creates a possible loop: tighter funding slows construction, slower construction cuts orders, and suppliers lose the growth they counted on. In the optimistic case, delivery delays ease and paying customers fill new capacity quickly enough to cover its cost. Microsoft’s positive quarterly cash flow shows heavy spending need not mean a cash shortfall. In the pessimistic case, usage rises but earns too little, and operators keep depending on new borrowing or share sales. Credit warnings and guarantee talks strengthen that concern. Nothing here shows widespread defaults or cancelled orders.",
+    "meaning": "A chip order only becomes durable business if the buyer eventually earns a return on the chips. Where internal cash cannot cover the buildout, operators need reserves, borrowing or new equity. When a supplier guarantees a customer’s borrowing, the project can go ahead, but the supplier keeps some exposure after the sale. That creates a possible loop: tighter funding slows construction, slower construction cuts orders, and suppliers lose the growth they counted on. In the optimistic case, delivery delays ease and paying customers fill new capacity quickly enough to cover its cost. Microsoft’s positive quarterly cash flow shows heavy spending need not mean a cash shortfall. In the pessimistic case, usage rises but earns too little, and operators keep depending on new borrowing or share sales. Credit warnings and guarantee talks strengthen that concern. Nothing here shows widespread defaults or cancelled orders.",
     "watch": "Good signs: new capacity producing cash, and financing that closes on sustainable terms. Warning signs: worsening financing terms, delayed projects, cancelled orders or a guarantee being called. Supplier revenue alone cannot settle the question, because it arrives before the buyer’s return does.",
     "visualTitle": "How a customer’s financing can become a supplier’s risk",
     "visual": [
@@ -554,7 +556,7 @@ export const briefs = [
         "source": "Reuters via CNA",
         "url": "https://www.channelnewsasia.com/business/sp-global-revises-metas-outlook-negative-ai-spending-cash-flow-worries-6508631",
         "relation": "The credit outlook and planned equity financing show how the cash gap can affect funding decisions despite growing operating revenue.",
-        "why": "Credit markets are now pricing the gap, even for a company with growing revenue."
+        "why": "A credit assessor is flagging the cash gap even at a company with growing revenue; an outlook change alone does not show higher borrowing costs."
       },
       {
         "id": 1050,
@@ -612,9 +614,9 @@ export const briefs = [
     "author": "Codex and Persephone",
     "accent": "mint",
     "teaser": "AI companies increasingly release proofs, test code and outside reviews so others can verify their claims. That beats taking a lab’s word for it. The hard question moves to what exactly was proved, and whether it applies in the real world.",
-    "summary": "For years, readers mostly had to take AI companies’ test results on trust. That is starting to change. Labs are now publishing machine-checkable proofs, evaluation code and outside experts’ critiques, and giving independent evaluators more access. This story follows that shift toward evidence outsiders can examine, and the limit that comes with it: a checked result is only true under the conditions it states.",
-    "meaning": "A result anyone can verify is worth more than a result you have to trust, and it can be reused without repeating the expensive work behind it. The judgment then moves to the fine print. Anthropic and Theorem proved that selected software tests cannot crash, but only for single-threaded programs with small inputs and fixed memory. Microsoft’s benchmarks test simulated diagnosis, which is different from treating patients. Openness pays off when outsiders can see those boundaries as clearly as the headline number.",
-    "watch": "Watch for independent checks of these proofs, which materials are released, and whether the stated conditions match real deployments. Microsoft’s planned hospital study will be the real test for diagnosis, and METR’s access still has to produce published findings.",
+    "summary": "AI claims are easier to examine when labs publish the evidence behind them. Recent examples include machine-checkable proofs, evaluation code and outside experts’ critiques, as well as deeper access for independent evaluators. This story follows what outsiders can establish from that evidence, and its boundary: a checked result holds only under the conditions it states.",
+    "meaning": "A proof that independent checkers can verify reduces reliance on its author and can be reused without repeating the expensive search that found it. The judgment then moves to the fine print. Anthropic and Theorem proved that selected software tests cannot crash, but only for single-threaded programs with small inputs and fixed memory. Microsoft’s benchmarks test simulated diagnosis, which is different from treating patients. Openness pays off when outsiders can see those boundaries as clearly as the headline number.",
+    "watch": "Watch for independent checks of these proofs, which materials are released, and whether the stated conditions match real deployments. Microsoft’s planned hospital study is intended to test performance with actual patients, and METR’s access still has to produce published findings.",
     "visualTitle": "A checked result still has a boundary",
     "visual": [
       [
@@ -636,7 +638,7 @@ export const briefs = [
         "date": "2026-10-22",
         "id": 1019,
         "title": "Anthropic and Theorem publish checkable no-crash proofs",
-        "text": "After patching bugs, the team proved that 239 test entry points from 123 software libraries cannot crash under stated conditions: inputs below 64 MB, single-threaded programs and fixed memory. Whole libraries were not proved correct.",
+        "text": "After patching bugs, the team proved that 239 test entry points from 123 software libraries cannot crash under stated conditions: inputs below 64 MB, a single thread of execution and fixed memory in statically linked RISC-V/Linux programs. Whole libraries were not proved correct.",
         "source": "Anthropic",
         "url": "https://www.anthropic.com/research/formal-verification",
         "relation": "Machine-checked proof artifacts extend the distinction between checking a result and validating the assumptions behind its claim.",
@@ -691,8 +693,8 @@ export const briefs = [
     "reviewedAt": "2026-10-31",
     "author": "Codex and Persephone",
     "accent": "gold",
-    "teaser": "Open-weight models can be downloaded and run privately, which keeps a company’s data and access in its own hands. It also makes that company responsible for what the model can reach, as a recent test showed.",
-    "summary": "Open-weight models are AI models whose trained files anyone can download and run on their own hardware, rather than renting access from a provider. Companies choose them for control: the model keeps running whatever the provider decides, and data stays in-house. This story tracks what comes with that control. Running a model yourself also means patching it, limiting its tools and blocking what it should not do, and recent events show why those jobs matter.",
+    "teaser": "Downloadable models give companies more control over where AI runs. Keeping data private still requires control over the tools and network connections that the model can use, as a recent security test showed.",
+    "summary": "Open-weight models make trained model files available for others to run on their own hardware, subject to their licenses and any access conditions. Companies choose them for control: they can reduce dependence on a hosted service and choose where data is processed. This story tracks what comes with that control. Running a model yourself also means maintaining it, limiting its tools and blocking what it should not do; downloading it alone does not keep data in-house.",
     "meaning": "Downloading a model reduces dependence on its maker, which can matter most in a crisis such as a security incident. Responsibility moves too. The company running the model now owns the infrastructure, the updates and the decisions about access. Local hosting alone does not keep data private, since a model connected to tools can still try to send data out. In Cohere’s test, a network block stopped the attempt while the model’s stated reasoning gave no warning. Any honest cost comparison has to include the hardware and staff needed to keep those limits in place. A lab’s safety measures also travel only as far as its weights: once downloaded, the operator is in charge.",
     "watch": "Check whether released models can be used under their license and on your hardware, then test them with your real tools and network permissions. Moonshot’s planned Kimi K3.1 Pro weights, due by November 4, are the next release to watch.",
     "visualTitle": "Where the privacy benefit is actually enforced",
@@ -720,7 +722,7 @@ export const briefs = [
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
         "relation": "The actual weights release adds continuity of access to the operating responsibilities already examined in this briefing.",
-        "why": "Self-hosting in practice: no provider can withdraw access, and security becomes the operator’s job."
+        "why": "A downloaded copy reduces dependence on continued access to a hosted service, while hardware, licensing and security still constrain its use."
       },
       {
         "date": "2026-10-26",
@@ -741,7 +743,7 @@ export const briefs = [
         "source": "Moonshot AI",
         "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
         "relation": "Personally read primary release and dated release note; pending distribution changes the reach of hosting controls, while vendor tests show residual capability.",
-        "why": "A maker’s safety work has to happen before release, because it cannot control the model after download."
+        "why": "Unlike a hosted service, a released model cannot be assumed to receive every safeguard its maker adds later."
       },
       {
         "date": "2026-10-06",
@@ -761,9 +763,9 @@ export const briefs = [
     "reviewedAt": "2026-10-29",
     "author": "Codex and Persephone",
     "accent": "blue",
-    "teaser": "AI price lists show the cost per token, but a working product also pays for search, waiting time and the labor of connecting parts. Voice AI company Deepgram’s purchase of Daily is a bet that customers will pay to have that assembly done for them.",
+    "teaser": "AI price lists show the cost per token, but a working product also pays for search, waiting time and the labor of connecting parts. Voice AI company Deepgram’s planned purchase of Daily is a bet that customers will pay to have that assembly done for them.",
     "summary": "Most AI cost comparisons look at the price of a token, the unit models are billed by. Companies running AI in real products pay for much more: extra services such as web search, waiting time, and the engineering needed to connect separate parts. This story tracks where those costs show up. The latest case is voice AI, where Deepgram is buying Daily to offer more of the assembled system in one place.",
-    "meaning": "If token prices keep falling, the real costs and profits move elsewhere. Buyers comparing only model prices can pick the cheaper option on paper and pay more in practice. Providers, meanwhile, get a new product to sell: taking the integration work off a customer’s hands. Open, swappable parts let a customer change suppliers, but the customer still has to connect them and fix what breaks between them. In a voice system, for instance, a transcript can keep the words and lose the tone or uncertainty that should change the response. Our inference is that a provider who maintains those connections can earn a place even when customers stay free to choose other models.",
+    "meaning": "As model calls get cheaper, engineering and operating costs can become a larger share of the bill. Buyers comparing only model prices can pick the cheaper option on paper and pay more in practice. Providers, meanwhile, get a new product to sell: taking the integration work off a customer’s hands. Open, swappable parts let a customer change suppliers, but the customer still has to connect them and fix what breaks between them. In a voice system, for instance, a transcript can keep the words and lose the tone or uncertainty that should change the response. Our inference is that a provider who maintains those connections can earn a place even when customers stay free to choose other models.",
     "watch": "Compare the full bill, including retries, maintenance and human correction, with the cost of assembling the parts yourself. Watch whether Deepgram keeps its promise of open provider choice once its wider platform arrives. It has published no measured customer savings.",
     "visualTitle": "Follow the cost past the model price",
     "visual": [
@@ -785,7 +787,7 @@ export const briefs = [
       {
         "date": "2026-10-29",
         "id": 1048,
-        "title": "Deepgram buys the company behind Pipecat",
+        "title": "Deepgram is buying the company behind Pipecat",
         "text": "Voice AI company Deepgram is acquiring Daily, creator of the open-source Pipecat voice framework. It introduced a protocol to carry audio context between components and promises to keep Pipecat open. Its wider platform is still to come.",
         "source": "Deepgram",
         "url": "https://deepgram.com/blog/daily-pipecat-deepgram",
@@ -800,7 +802,7 @@ export const briefs = [
         "source": "Liquid AI",
         "url": "https://www.liquid.ai/blog/low-latency",
         "relation": "Adds the opportunity cost of missing a live decision deadline to the existing analysis of billed task cost; figures remain vendor-reported.",
-        "why": "Speed is a cost too, and a token price never shows it."
+        "why": "A low model price is little help if a response arrives too late for the task."
       },
       {
         "date": "2026-10-22",

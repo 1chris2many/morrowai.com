@@ -44,9 +44,9 @@ test('market-share number identifies the sample, period and denominator',()=>{
  assert.match(billing.text,/Legacy arrangements transition at renewal/);
  assert.equal(b.developments.find(d=>d.id===985).date,'2026-10-06');
 });
-test('eight exact reviewed sources connect the theme to stable news anchors',()=>{
+test('nine exact reviewed sources including earlier coverage connect to stable news anchors',()=>{
  validateBriefs(feed);
- const ids=[974,985,986,987,988,1028,1063,1064];
+ const ids=[974,985,986,987,988,1014,1028,1063,1064];
  assert.deepEqual(new Set(related(feed,b.id).map(i=>i.digestItemId)),new Set(ids));
  assert.match(briefingCards(feed),/themes.html#ai-market-leadership/);
  for(const id of ids){

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {briefs} from './theme-pre-reader-briefs.mjs';
 import {briefs as live} from '../scripts/theme-current.mjs';
+import {sourceHistory} from '../scripts/theme-source-history.mjs';
 import {beforeOct20,beforeOct23} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {renderThemes,validateBriefs,briefingCards} from '../scripts/theme-pages.mjs';
@@ -22,7 +23,8 @@ test('substantive source-backed briefings are stable, HTML-first and escaped',()
  for(const b of live){assert.ok(out.includes(b.id));for(const d of b.developments)assert.ok(out.includes(d.url));}
  assert.equal((out.match(/<h3>Why it matters<\/h3>/g)||[]).length,live.length);
  assert.equal((out.match(/<h3>What to watch<\/h3>/g)||[]).length,live.length);
- assert.equal((out.match(/opens in a new tab/g)||[]).length,live.reduce((n,b)=>n+b.developments.reduce((m,d)=>m+1+Number(Boolean(d.primaryUrl)),0),0));
+ const sources=[...live.flatMap(b=>b.developments),...Object.values(sourceHistory).flatMap(b=>b.developments)];
+ assert.equal((out.match(/opens in a new tab/g)||[]).length,sources.reduce((n,d)=>n+1+Number(Boolean(d.primaryUrl)),0));
  assert.match(out,/real publishers’ editorial channels/);
  assert.match(out,/noindex,nofollow/);assert.doesNotMatch(renderThemes(home,feed),/noindex|nofollow" data-preview/);
  assert.match(out,/rel="canonical" href="https:\/\/usefulaiwerks.com\/themes.html"/);

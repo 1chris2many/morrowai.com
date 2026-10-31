@@ -1,0 +1,21 @@
+AI operating costs. Model prices are only part of what AI costs to run
+
+Useful AI Werks. Analysis by Codex and Persephone. Reviewed October 29, 2026. Synthetic narration.
+
+Most AI cost comparisons look at the price of a token, the unit models are billed by. Companies running AI in real products pay for much more: extra services such as web search, waiting time, and the engineering needed to connect separate parts. This story tracks where those costs show up. The latest case is voice AI, where Deepgram is buying Daily to offer more of the assembled system in one place.
+
+Three takeaways. Price the extras. Search, retrieval and waiting time are billed or borne separately. Connect the parts. Information can get lost between components. Count the finished work. Include setup, retries and correction in the cost.
+
+Why it matters. As model calls get cheaper, engineering and operating costs can become a larger share of the bill. Buyers comparing only model prices can pick the cheaper option on paper and pay more in practice. Providers, meanwhile, get a new product to sell: taking the integration work off a customer’s hands. Open, swappable parts let a customer change suppliers, but the customer still has to connect them and fix what breaks between them. In a voice system, for instance, a transcript can keep the words and lose the tone or uncertainty that should change the response. Our inference is that a provider who maintains those connections can earn a place even when customers stay free to choose other models.
+
+How the story developed. Each October development adds a cost that a token price leaves out: extra services, then idle time, then speed, then integration.
+
+October 17. DeepSeek charges separately for search. DeepSeek priced its Search and Fetch tools at $0.75 per 1,000 calls. A temporary waiver for some coding tools was scheduled to end October 31. Why it’s here. The first hidden cost: a task can pay for more than tokens. Source: DeepSeek.
+
+October 22. Liquid sells speed for live decisions. Liquid AI says RIPL, its engine for running models, produces complete responses in under 50 milliseconds on tested real-time workloads. The figures are its own. Why it’s here. A low model price is little help if a response arrives too late for the task. Source: Liquid AI.
+
+October 22. AWS stops charging while customers score results. AWS’s SageMaker AI training now bills for tokens processed, with no capacity reservation. The meter stops while a customer’s own code grades the model’s output. Why it’s here. Waiting time is a real cost, and this changes who pays for it. Source: AWS.
+
+October 29. Deepgram is buying the company behind Pipecat. Voice AI company Deepgram is acquiring Daily, creator of the open-source Pipecat voice framework. It introduced a protocol to carry audio context between components and promises to keep Pipecat open. Its wider platform is still to come. Why it’s here. The latest test of the theme: will customers pay for assembly as well as for models? Source: Deepgram.
+
+What to watch. Compare the full bill, including retries, maintenance and human correction, with the cost of assembling the parts yourself. Watch whether Deepgram keeps its promise of open provider choice once its wider platform arrives. It has published no measured customer savings.

@@ -1,4 +1,5 @@
 import {briefs} from './theme-current.mjs';
+import {sourceHistory} from './theme-source-history.mjs';
 import {asOf,lifecycle,day,distinct} from './theme-lifecycle.mjs';
 import {readFileSync} from 'node:fs';
 import {narration,audioEntry,durationLabel} from './brief-audio.mjs';
@@ -6,12 +7,35 @@ const e=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':
 const date=value=>new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(value+'T12:00:00Z'));
 const developmentDate=d=>(d.dateKind==='source-review'?'Source checked ':'')+date(d.date);
 function external(raw){const u=new URL(raw);if(u.protocol!=='https:'||u.username||u.password)throw Error('Unsafe briefing source');return e(u.href);}
-export function related(feed,id){
-  const developments=briefs.find(b=>b.id===id)?.developments||[];
+export function related(feed,id,history=sourceHistory){
+  const developments=[...(briefs.find(b=>b.id===id)?.developments||[]),...(history[id]?.developments||[])];
   return distinct(feed.items.filter(i=>i.reviewed===true&&(
     i.themes?.some(t=>t.id===id)||
     developments.some(d=>d.id===i.digestItemId&&d.url===i.url&&typeof d.relation==='string'&&d.relation.length>=30)
   )).sort((a,b)=>b.digestDate.localeCompare(a.digestDate)||a.title.localeCompare(b.title)));
+}
+export function validateSourceHistory(feed,history=sourceHistory){
+  for(const [id,b] of Object.entries(history)){
+    if(!/^[-a-z0-9]+$/.test(id)||!briefs.some(b=>b.id===id))throw Error('Invalid source history identity');
+    day(b.reviewedAt);
+    const ids=new Set();
+    for(const d of b.developments){
+      if(!Number.isSafeInteger(d.id)||d.id<1||ids.has(d.id))throw Error('Invalid or duplicate history source');ids.add(d.id);
+      if(!['title','text','source'].every(k=>typeof d[k]==='string'&&d[k].length))throw Error('Incomplete history source');
+      external(d.url);external(d.feedUrl);
+      if(d.primaryUrl!==undefined)external(d.primaryUrl);
+      day(d.date);if(d.date>b.reviewedAt)throw Error('History review predates evidence');
+      if(d.dateKind!==undefined&&d.dateKind!=='source-review')throw Error('Invalid history date kind');
+      if(!feed.items.some(i=>i.digestItemId===d.id&&i.reviewed===true&&i.url===d.feedUrl&&(
+        i.themes?.some(t=>t.id===id)||typeof d.relation==='string'&&d.relation.length>=30&&i.url===d.url
+      )))throw Error(`History source ${d.id} missing, unreviewed or unrelated`);
+    }
+  }
+}
+function earlierCoverage(b,history){
+  const earlier=(history[b.id]?.developments||[]).filter(d=>!b.developments.some(current=>current.id===d.id));
+  if(!earlier.length)return '';
+  return `<details class="brief-related brief-source-history"><summary>${earlier.length} earlier developments and sources</summary><p class="meta">Earlier coverage, retained with its original dates and sources.</p><ol class="brief-timeline">${[...earlier].sort((x,y)=>x.date.localeCompare(y.date)).map(d=>`<li id="${b.id}-source-${d.id}"><time datetime="${d.date}">${developmentDate(d)}</time><h4>${e(d.title)}</h4><p>${e(d.text)}</p><a href="${external(d.url)}" target="_blank" rel="noopener noreferrer">${e(d.source)} <span aria-hidden="true">↗</span><span class="brief-sr-only"> (opens in a new tab)</span></a>${d.primaryUrl?` · <a href="${external(d.primaryUrl)}" target="_blank" rel="noopener noreferrer">Primary announcement<span class="brief-sr-only"> (opens in a new tab)</span></a>`:''}</li>`).join('')}</ol></details>`;
 }
 export function validateBriefs(feed,content=briefs){
   const ids=new Set();
@@ -38,8 +62,9 @@ function listen(b,manifest){const a=audioEntry(b,manifest);if(!a)return '<p clas
 export function briefingCards(feed){
   return `<section id="developing" aria-labelledby="developing-heading"><div class="section-heading"><div><p class="kicker">Developing stories</p><h2 id="developing-heading">The bigger picture.</h2></div><a href="themes.html">Explore the briefings →</a></div><div class="brief-grid">${briefs.filter(b=>lifecycle(b,asOf(feed)).status==="active"&&related(feed,b.id).length>=2).map((b,i)=>`<article class="brief-card tone-${b.accent}" data-theme="${b.id}"><div class="brief-card-top"><p class="kicker">${e(b.label)}</p><span class="brief-index" aria-hidden="true">0${i+1}</span></div><h3><a href="themes.html#${b.id}">${e(b.title)}</a></h3><p>${e(b.teaser)}</p>${visual(b)}<p class="meta">Reviewed ${date(b.reviewedAt)} · ${related(feed,b.id).length} related stories</p><a class="brief-link" href="themes.html#${b.id}">Read the briefing <span aria-hidden="true">↗</span></a></article>`).join('')}</div></section>`;
 }
-export function renderThemes(home,feed,{preview=false,audioManifest=readAudio()}={}){
+export function renderThemes(home,feed,{preview=false,audioManifest=readAudio(),history=sourceHistory}={}){
   validateBriefs(feed);
+  validateSourceHistory(feed,history);
   let head=home.slice(0,home.indexOf('</head>'))
     .replace(/<title>.*?<\/title>/,'<title>Developing stories — Useful AI Werks</title>')
     .replace(/<meta name="description"[^>]*>/,'<meta name="description" content="Briefings on the forces shaping AI: what is changing, why it matters, and what comes next.">')
@@ -51,8 +76,8 @@ export function renderThemes(home,feed,{preview=false,audioManifest=readAudio()}
   if(preview)head+='\n<meta name="robots" content="noindex,nofollow" data-preview-robots>';
   const ordered=[...briefs].sort((a,b)=>(lifecycle(a,asOf(feed)).status==="active"?0:1)-(lifecycle(b,asOf(feed)).status==="active"?0:1));
   const articles=ordered.map(b=>{
-    const items=related(feed,b.id),latest=items[0].digestDate;
-    return `<section class="briefing tone-${b.accent}" id="${b.id}" aria-labelledby="${b.id}-title"><header class="brief-heading"><p class="kicker">${e(b.label)} · ${e(lifecycle(b,asOf(feed)).reason)}</p><h2 id="${b.id}-title">${e(b.title)}</h2><p class="brief-deck">${e(b.summary)}</p><p class="meta">Analysis by ${e(b.author)} · Reviewed <time datetime="${b.reviewedAt}">${date(b.reviewedAt)}</time></p>${listen(b,audioManifest)}</header>${visual(b)}<div class="brief-columns"><div><h3>Why it matters</h3><p>${e(b.meaning)}</p>${metric(b)}<aside class="watch-next"><h3>What to watch</h3><p>${e(b.watch)}</p></aside></div><div><h3>How the story developed</h3><p class="timeline-intro">${e(b.timelineIntro)}</p><ol class="brief-timeline">${[...b.developments].sort((x,y)=>x.date.localeCompare(y.date)).map(d=>`<li id="${b.id}-source-${d.id}"><time datetime="${d.date}">${developmentDate(d)}</time><h4>${e(d.title)}</h4><p>${e(d.text)}</p>${d.why?`<p class="brief-why"><strong>Why it’s here:</strong> ${e(d.why)}</p>`:''}<a href="${external(d.url)}" target="_blank" rel="noopener noreferrer">${e(d.source)} <span aria-hidden="true">↗</span><span class="brief-sr-only"> (opens in a new tab)</span></a>${d.primaryUrl?` · <a href="${external(d.primaryUrl)}" target="_blank" rel="noopener noreferrer">Primary announcement<span class="brief-sr-only"> (opens in a new tab)</span></a>`:""}</li>`).join('')}</ol></div></div><details class="brief-related"><summary>${items.length} related stories · Latest coverage ${date(latest)}</summary>${latest>b.reviewedAt?'<p class="meta">New coverage since this briefing was reviewed.</p>':''}<ol>${items.map(i=>`<li><time datetime="${i.digestDate}">Edition ${date(i.digestDate)}</time> · <a href="news.html#${e(i.anchor)}">${e(i.title)}</a></li>`).join('')}</ol>${items.every(i=>i.themes?.some(t=>t.id===b.id))?`<a href="news.html?theme=${b.id}">Open filtered news archive →</a>`:'<a href="news.html">Browse the news archive →</a>'}</details></section>`;
+    const items=related(feed,b.id,history),latest=items[0].digestDate;
+    return `<section class="briefing tone-${b.accent}" id="${b.id}" aria-labelledby="${b.id}-title"><header class="brief-heading"><p class="kicker">${e(b.label)} · ${e(lifecycle(b,asOf(feed)).reason)}</p><h2 id="${b.id}-title">${e(b.title)}</h2><p class="brief-deck">${e(b.summary)}</p><p class="meta">Analysis by ${e(b.author)} · Reviewed <time datetime="${b.reviewedAt}">${date(b.reviewedAt)}</time></p>${listen(b,audioManifest)}</header>${visual(b)}<div class="brief-columns"><div><h3>Why it matters</h3><p>${e(b.meaning)}</p>${metric(b)}<aside class="watch-next"><h3>What to watch</h3><p>${e(b.watch)}</p></aside></div><div><h3>How the story developed</h3><p class="timeline-intro">${e(b.timelineIntro)}</p><ol class="brief-timeline">${[...b.developments].sort((x,y)=>x.date.localeCompare(y.date)).map(d=>`<li id="${b.id}-source-${d.id}"><time datetime="${d.date}">${developmentDate(d)}</time><h4>${e(d.title)}</h4><p>${e(d.text)}</p>${d.why?`<p class="brief-why"><strong>Why it’s here:</strong> ${e(d.why)}</p>`:''}<a href="${external(d.url)}" target="_blank" rel="noopener noreferrer">${e(d.source)} <span aria-hidden="true">↗</span><span class="brief-sr-only"> (opens in a new tab)</span></a>${d.primaryUrl?` · <a href="${external(d.primaryUrl)}" target="_blank" rel="noopener noreferrer">Primary announcement<span class="brief-sr-only"> (opens in a new tab)</span></a>`:""}</li>`).join('')}</ol></div></div>${earlierCoverage(b,history)}<details class="brief-related"><summary>${items.length} related stories · Latest coverage ${date(latest)}</summary>${latest>b.reviewedAt?'<p class="meta">New coverage since this briefing was reviewed.</p>':''}<ol>${items.map(i=>`<li><time datetime="${i.digestDate}">Edition ${date(i.digestDate)}</time> · <a href="news.html#${e(i.anchor)}">${e(i.title)}</a></li>`).join('')}</ol>${items.every(i=>i.themes?.some(t=>t.id===b.id))?`<a href="news.html?theme=${b.id}">Open filtered news archive →</a>`:'<a href="news.html">Browse the news archive →</a>'}</details></section>`;
   }).join('\n');
   const footer=home.slice(home.indexOf('</main>')+7).replace('</body>','<script type="module" src="js/brief-audio.js?v=20261010"></script></body>');
   return `${head}</head><body class="news-first theme-page"><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="./">USEFUL AI <span>WERKS</span></a><nav aria-label="Main navigation"><a href="index.html#latest">Latest</a><a href="themes.html" aria-current="page">Developing stories</a><a href="perspectives.html">Perspectives</a><a href="index.html#team">Team</a></nav></header><main id="main" tabindex="-1"><header class="intro"><p class="kicker">The bigger picture</p><h1>Follow the story.<br>Understand the change.</h1><p>Each story explains what is happening, why it matters and how the latest news fits in.</p><nav class="brief-jump" aria-label="Choose a briefing">${ordered.map(b=>`<a href="#${b.id}">${e(b.label)}${lifecycle(b,asOf(feed)).status==="active"?"":" (archive / watching)"} ↓</a>`).join('')}</nav></header>${articles}</main>${footer}`;

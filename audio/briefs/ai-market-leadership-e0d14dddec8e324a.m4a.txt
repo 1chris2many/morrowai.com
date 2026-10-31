@@ -1,0 +1,31 @@
+AI competition. AI customers can move work quickly. The computing bills last for years.
+
+Useful AI Werks. Analysis by Codex and Persephone. Reviewed October 31, 2026. Synthetic narration.
+
+AI companies such as OpenAI and Anthropic spend heavily on computing power, often under contracts that run for years. Their customers are far less tied down. Data from Ramp, a corporate-card company, shows more businesses changing AI providers, and a customer can move a task to a rival without closing its account. This story tracks that gap: revenue that can shift quickly against bills that last for years. Reported trouble raising money at OpenAI and a cautious credit forecast for Anthropic suggest investors are now asking how the gap gets paid for.
+
+Three takeaways. A customer moves a task. The next job goes to a rival while the account stays open. Usage revenue follows. Metered charges reflect less use; prepaid commitments can delay the cash effect. The computing bill stays. Contracts signed for years keep running.
+
+Why it matters. This is the risk hiding behind headline growth numbers. Total AI use can keep rising while one provider loses its most valuable work, so adoption says little about any single company’s health. The danger is a squeeze. A provider committed to years of computing costs needs steady revenue, and usage-based pricing exposes reduced consumption sooner than an account cancellation. Prepaid credits and minimum-spend commitments can delay the effect on cash receipts. Falling prices make it tighter, because customers can use more AI without paying much more. If raising money also gets harder, a provider has less time to win that work back. In the optimistic case, useful products keep customers in place and revenue grows enough to cover the bills. In the pessimistic case, work keeps moving while prices fall, leaving fixed bills and thinner income. The transaction samples show spending shifting while adoption or use grows; the financing reports add evidence of investor caution. They do not measure every provider’s workload retention.
+
+54.1% → 52.2%. Claude’s share of AI spending in one UK sample. Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue. Source: Capital on Tap, 2026-10-12.
+
+How the story developed. The story starts with customers, moves to how they are billed, and ends with the investors who fund the bills.
+
+October 6. More businesses change AI providers. Ramp says its monthly measure of businesses switching AI providers averaged 8% over the three months to September, the highest it has recorded. The figure covers the businesses Ramp observes, not the whole market. Why it’s here. The first sign of the pattern: winning a customer no longer guarantees keeping its spending. Source: Ramp.
+
+October 12. UK small businesses use more AI and shift their spending. Among cardholders of Capital on Tap, a UK business-card company, AI adoption rose from 12.8% to 14.5% between Q2 and Q3. Claude’s share of their AI spending slipped from 54.1% to 52.2%, while ChatGPT’s rose from 27.3% to 32.4%. Why it’s here. Adoption and a single provider’s position can move in opposite directions. Source: Capital on Tap.
+
+October 14. Businesses use more AI without paying much more. Ramp’s October index shows AI usage, measured in tokens (the units AI is billed by), rising in August and September while spending on it barely grew. Its economist credits lower prices and efficiency. Why it’s here. Even work a provider keeps can bring in less money per task, which tightens the squeeze. Source: Ramp.
+
+October 17. Replit makes OpenAI its default. Replit, a coding platform, made OpenAI its default model provider. Customers can still choose Anthropic’s Claude. Why it’s here. A platform’s choice of default can redirect future work without any customer closing an account. Source: TechCrunch.
+
+October 18. Claude Enterprise bills usage separately. Anthropic’s current Enterprise terms pair an annual access fee with metered usage at standard API rates. Older arrangements move to this structure at renewal. Why it’s here. This is how work can leave before the customer does: the account stays while the usage fees go. Source: Anthropic Help Center.
+
+October 26. Anthropic’s IPO filing puts the bills on the record. Anthropic’s public filing to list on Nasdaq reports $16.3 billion in first-half revenue and major multiyear commitments for computing power. Most of its $80.7 billion first-half net loss came from accounting charges tied to its financing. Why it’s here. The cost side of the story: bills fixed for years while customers can move. Source: The Verge.
+
+October 30. OpenAI’s fundraising reportedly falls short. The Wall Street Journal reports commitments of about $11 billion against an initial $30 billion goal. OpenAI is reportedly now aiming for $20 billion and is still raising. Why it’s here. Less outside money means less time to win back work or cover commitments. Source: 1news, citing The Wall Street Journal.
+
+October 30. Blackstone reportedly expects junk-grade credit for Anthropic. The Financial Times reports that the investment firm Blackstone expects Anthropic to receive a speculative-grade rating, often called junk, after its IPO. This is an investor’s forecast, and no rating agency has acted. Why it’s here. Borrowing to pay for computing power would likely cost more, turning the gap into a financing problem. Source: TechCrunch, citing Financial Times; corroborated by MT Newswires.
+
+What to watch. Three measures would settle this: how much paid work providers keep, whether they generate cash after paying for computing power, and how much money OpenAI actually closes, on what terms. Anthropic’s actual credit rating, once agencies issue one, will test Blackstone’s forecast.

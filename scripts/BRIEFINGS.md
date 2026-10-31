@@ -25,6 +25,13 @@ Every briefing needs a `timelineIntro` connecting the selected developments.
 Keep milestones that advance the explanation; related coverage remains in the
 archive. A timeline may compare different tests rather than imply a causal chain.
 
+When shortening a timeline, preserve earlier source notes and fragment anchors
+in `theme-source-history.mjs`. The page displays them in folded earlier coverage;
+they do not lengthen current narration. Keep full source and primary links, the
+original evidence dates, and the exact reviewed news URL in `feedUrl`. History
+validation rejects changed or unreviewed provenance rather than silently
+relabeling it. Preserve cross-theme `relation` metadata for related coverage.
+
 Optional `metric`: `value`, `label`, `context`, and `sourceId`. The source must be
 one of that briefing's developments. Include the population/test, units and any
 forecast/availability qualification. Do not manufacture a metric to fill a slot.

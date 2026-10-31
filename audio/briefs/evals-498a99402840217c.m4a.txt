@@ -1,0 +1,23 @@
+AI evaluations. More AI claims can be checked by outsiders, but only within their stated limits
+
+Useful AI Werks. Analysis by Codex and Persephone. Reviewed October 24, 2026. Synthetic narration.
+
+AI claims are easier to examine when labs publish the evidence behind them. Recent examples include machine-checkable proofs, evaluation code and outside experts’ critiques, as well as deeper access for independent evaluators. This story follows what outsiders can establish from that evidence, and its boundary: a checked result holds only under the conditions it states.
+
+Three takeaways. Check the work. Verify it without relying on its author. Read the promise. Identify exactly what was proved. Match the real use. Test whether the conditions describe the system people use.
+
+Why it matters. A proof that independent checkers can verify reduces reliance on its author and can be reused without repeating the expensive search that found it. The judgment then moves to the fine print. Anthropic and Theorem proved that selected software tests cannot crash, but only for single-threaded programs with small inputs and fixed memory. Microsoft’s benchmarks test simulated diagnosis, which is different from treating patients. Openness pays off when outsiders can see those boundaries as clearly as the headline number.
+
+How the story developed. Each step opens a different kind of evidence to outsiders, and each one has its own limits.
+
+October 6. OpenAI releases math proofs for scrutiny. Many of the proofs come in Lean, a language that lets software check each logical step. The model that produced them remains internal. Why it’s here. The basic idea of this story: others can verify a result without trusting the model that made it. Source: OpenAI.
+
+October 14. Meta publishes expert critiques with its AI-assisted research. Meta shared ten human-led health manuscripts developed with its Muse models, along with outside reviews. Some reviewers raised concerns about methods and interpretation. Why it’s here. Publishing the critiques lets readers see the weaknesses as well as the results. Source: Meta.
+
+October 15. Anthropic gives outside evaluator METR deeper access. Six staff at METR, an independent AI evaluator, get access roughly comparable to Anthropic’s risk teams, with specified exclusions. METR can publish without an Anthropic veto, subject to defined redactions it may publicly dispute. Why it’s here. Outside review only works if the reviewer can see enough and say what it finds. Source: Anthropic.
+
+October 22. Anthropic and Theorem publish checkable no-crash proofs. After patching bugs, the team proved that 239 test entry points from 123 software libraries cannot crash under stated conditions: inputs below 64 MB, a single thread of execution and fixed memory in statically linked RISC-V/Linux programs. Whole libraries were not proved correct. Why it’s here. The sharpest example so far: the proof is checkable, and its value depends entirely on those conditions. Source: Anthropic.
+
+October 22. Microsoft opens selected diagnostic tests. Microsoft says it is releasing SDBench, its evaluation for selected New England Journal of Medicine cases, including the code for judging results. These tests simulate diagnosis, and a planned hospital study will examine real clinical performance. Why it’s here. Outsiders can now challenge the score, and the gap between simulation and clinic stays visible. Source: TechCrunch.
+
+What to watch. Watch for independent checks of these proofs, which materials are released, and whether the stated conditions match real deployments. Microsoft’s planned hospital study is intended to test performance with actual patients, and METR’s access still has to produce published findings.
