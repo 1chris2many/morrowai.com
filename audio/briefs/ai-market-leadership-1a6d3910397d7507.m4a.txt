@@ -1,0 +1,33 @@
+AI competition. AI vendors can lose the work before they lose the customer
+
+Useful AI Werks. Analysis by Codex. Reviewed October 31, 2026. Synthetic narration.
+
+Switching and spending evidence shows that AI adoption can grow while work moves between providers. OpenAI’s reported fundraising shortfall and Blackstone’s assessment of Anthropic’s prospective credit quality add another constraint: investors may demand stronger financial evidence before funding long-term compute commitments.
+
+Three takeaways. Daily work moves. A customer tries the next task elsewhere. Usage revenue follows. The account can remain open. Compute commitments remain. Future bills can outlast workload loyalty.
+
+What it means. A fixed subscription can keep producing fees after important tasks move elsewhere; metered use can expose that loss sooner, subject to credits and customer commitments. Compute obligations can last much longer than customer preferences. Harder financing terms amplify that mismatch because a provider has less room to fund capacity while trying to win work back. The bull case is that retained workloads and useful product improvements produce enough cash to support those commitments. The bear case is that workloads move repeatedly while prices fall, leaving the provider with fixed bills and less revenue per unit of activity. The switching samples support portability, and the financing reports support investor caution; neither proves that every lab is losing customers or that overall AI demand is shrinking.
+
+54.1% → 52.2%. Claude’s share of AI spending in one UK sample. Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue. Source: Capital on Tap, 2026-10-12.
+
+How the story developed. Switching data and billing terms explain how moving work can reach revenue before an account closes. Compute commitments and the latest funding reports show why the duration of that revenue matters.
+
+October 6. Provider switching reaches a sample high. Ramp’s three-month-average monthly switching rate reached 8% in September. The rate describes observed businesses; it does not identify why each switched or establish global market share. Source: Ramp.
+
+October 12. UK adoption expands as provider shares move. Capital on Tap’s Q3 data shows broader AI adoption alongside a spending-share shift toward ChatGPT. Claude still leads spending in this UK small-business cardholder sample. Free use, app-store subscriptions and invoiced contracts are excluded. Source: Capital on Tap.
+
+October 14. Usage grows faster than spending. Ramp reports rising token volumes and little token-spending growth during August and September. Its economist attributes the gap to price declines and efficiency. Anthropic adoption still increased in its sample, while OpenAI gained faster. Source: Ramp.
+
+October 17. Replit changes its preferred provider. OpenAI becomes the default, while Claude remains available to customers. Source: TechCrunch.
+
+October 18. Enterprise billing exposes consumption separately. Anthropic’s current guide separates annual Enterprise access fees from usage billed at API rates. Legacy arrangements transition at renewal. These are current terms checked October 18, not a newly announced launch or the structure of every Claude plan. Source: Anthropic Help Center.
+
+October 22. Agent Skills moves to shared stewardship. Anthropic is donating the already-open standard and its project assets to the Linux Foundation’s Agentic AI Foundation. Maintainers from several companies will guide it. This changes governance; it does not mark the start of cross-agent portability. Source: Anthropic.
+
+October 26. Fast-moving workloads meet long-term compute commitments. Anthropic’s public IPO prospectus discloses multiyear compute commitments. The Verge reports that most of its first-half net loss came from financing-related accounting charges. Source: The Verge.
+
+October 30. OpenAI reportedly seeks more after a smaller initial commitment. Reporting puts commitments near $11 billion against the initial $30 billion target, with a revised $20 billion ambition. Fundraising is continuing. Source: 1news, citing The Wall Street Journal.
+
+October 30. Blackstone reportedly anticipates speculative-grade credit. MT Newswires, citing the Financial Times, reports Blackstone’s expectation for Anthropic after its IPO. The report describes an anticipated outcome rather than an agency action. Source: TechCrunch, citing Financial Times; corroborated by MT Newswires.
+
+What to watch. Watch retained paid workloads, cash generated after infrastructure payments, and the amount and terms of completed funding. Falling reliance on new capital would strengthen the bull case; repeated financing concessions alongside weak retention would strengthen the bear case. OpenAI’s reported commitments are not a final closed round, and Blackstone’s forecast is not an issued credit rating. No available measure here includes human correction time.

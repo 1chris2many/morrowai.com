@@ -110,3 +110,8 @@ reviewedIds.push(1049,1050,1051);
 // 1052 supplies customer concentration evidence but no separate theme;1053 remains
 // an attributed report, insufficient to refresh or revive a broader briefing.
 reviewedIds.push(1052,1053,1054,1055,1056,1057);
+
+// October31: source/copy review; six developments incorporated in three briefs.
+// Satelliteprototype1059,marketplaceattack1060,andtrainingpreferenceproposal1062
+// remain standalone: no forced inference that they revive unrelated older briefs.
+reviewedIds.push(1058,1059,1060,1061,1062,1063,1064,1065,1066);

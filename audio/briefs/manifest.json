@@ -17,11 +17,11 @@
       "sha256": "3e277a499a065b989b26d0c0b6b6c42962d669dd8f5eb4f5c3b468dfbaea4d80"
     },
     "ai-market-leadership": {
-      "hash": "93a2351c47cef72aa372ba6189c64ce46a1d128a1dce2f7bec097e0c4553189f",
-      "src": "audio/briefs/ai-market-leadership-93a2351c47cef72a.m4a",
-      "duration": 281.526848,
-      "bytes": 1178400,
-      "sha256": "7cfab1596cd3004c425ce60b164483b6fa04d0c77b3a82264f8e0a3ebfe4f4e3"
+      "hash": "1a6d3910397d75078ab666a76c191ac0907505a6d7fa1da43ed7704e6f4e9ef3",
+      "src": "audio/briefs/ai-market-leadership-1a6d3910397d7507.m4a",
+      "duration": 323.311156,
+      "bytes": 1348641,
+      "sha256": "67ca30f1afa0fef744d6dd7f23fc7b340a2481cce8e0800bb51637c7da04924e"
     },
     "ai-science": {
       "hash": "48c09a7c419b09b1c3c514a6136d651258ce7a3c47da9899edc11a8ac8185593",
@@ -52,11 +52,11 @@
       "sha256": "ed9f597eeab02f235716ccbcbb4afe8ccc5c8bcb1b305929ed360ecd7b26413f"
     },
     "ai-infrastructure": {
-      "hash": "708bba06eea8b22f78232ae34ceb3906112ea4a67c895e0e7bb968bb1a1bc6c3",
-      "src": "audio/briefs/ai-infrastructure-708bba06eea8b22f.m4a",
-      "duration": 429.368299,
-      "bytes": 1821794,
-      "sha256": "31638552d34a976d206734b99d76eec2e55e014779057d8e05388625321fd673"
+      "hash": "351e2573262561bfc6ebdc8befb347e7132602ba64325d153d07a74ffd51c5ce",
+      "src": "audio/briefs/ai-infrastructure-351e2573262561bf.m4a",
+      "duration": 483.308254,
+      "bytes": 2046223,
+      "sha256": "1f015503045bd64776ae2b2374efc3987d2727def8f2f3e52fa98c708aa370d4"
     },
     "evals": {
       "hash": "6b918da392223df9e29070354bb55f10ae19b05fddd4556b9dd7f67fbe463481",
@@ -66,11 +66,11 @@
       "sha256": "287bb36f704c3b3d3a7733cbc30d619a419bad9d32bb8b937ad298ef9460b8be"
     },
     "open-weights": {
-      "hash": "e6775ce79380562f67f5d0743407d08166054bfd8d86779f98dd85615e309b54",
-      "src": "audio/briefs/open-weights-e6775ce79380562f.m4a",
-      "duration": 320.440272,
-      "bytes": 1335531,
-      "sha256": "bae8c3b283325ee7cc7f5d5f432d1b8b09e488a8d3c34f5514c732a9b13defc9"
+      "hash": "d8386e888d958ca64361a2a64125b4c643359dba51004d7db4a1f9664c7c2b7e",
+      "src": "audio/briefs/open-weights-d8386e888d958ca6.m4a",
+      "duration": 347.735329,
+      "bytes": 1482123,
+      "sha256": "04622f98a4c1ddcfa8131612f75c69ce515e4b068e1e4be632023fbbfed7cf06"
     },
     "agent-economics": {
       "hash": "8591ebe4d5ec1d1a9a16d1649b5ef79e79f54fced69ac025a08800557f525f7c",
