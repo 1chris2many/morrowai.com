@@ -11,11 +11,11 @@ const home=await readFile(new URL('index.html',root),'utf8');
 const feed=JSON.parse(await readFile(new URL('news.json',root)));
 test('every briefing has current, nonempty audio with a matching transcript and checksum',async()=>{
  for(const b of briefs){
-  // Narration includes the complete source timeline. Bound duration against the
-  // actual transcript at175wpm, allowing pauses and spoken dates/numbers, rather
-  // than a fixed ceiling that fails as reviewed milestones are added.
-  const a=audioEntry(b,manifest),nominal=narration(b).split(/\s+/).length*60/175;
-  assert.ok(a,b.id);assert.ok(a.duration>60&&a.duration>nominal*.8&&a.duration<nominal*1.6,b.id);
+  // A broad 80–230 written-word/minute sanity range allows natural Rachel
+  // pauses and spoken dates/numbers. Duration cannot prove every word was read;
+  // exact text binding, checksums, actual decoding and release listening remain.
+  const a=audioEntry(b,manifest),words=narration(b).split(/\s+/).length;
+  assert.ok(a,b.id);assert.ok(a.duration>60&&a.duration>words*60/230&&a.duration<words*60/80,b.id);
   const bytes=await readFile(new URL(a.src,root));assert.equal(bytes.length,a.bytes);
   assert.equal(createHash('sha256').update(bytes).digest('hex'),a.sha256);
   assert.equal(await readFile(new URL(a.src+'.txt',root),'utf8'),narration(b)+'\n');

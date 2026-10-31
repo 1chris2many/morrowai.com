@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { readFile, mkdtemp, cp } from 'node:fs/promises';
+import { readFile, mkdtemp, cp, mkdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFile } from 'node:child_process';
@@ -225,7 +225,7 @@ test('tracker failures do not throw or prevent navigation', () => {
     assert.doesNotThrow(() => click(env, link('mailto:private@example.com')));
 });
 
-test('all public pages carry notice and script; digest rebuild preserves analytics, verification and feed', async () => {
+test('all public pages carry notice and script; digest rebuild preserves analytics, verification and feed', async t => {
     const pages = ['index.html', 'news.html', 'themes.html', 'perspectives.html', 'three-windows-ai-safety.html', 'two-financing-paths.html', 'the-view-from-inside-the-declaration.html', 'closed-by-declaration.html'];
     for (const file of pages) {
         const html = await readFile(new URL(file, root), 'utf8');
@@ -240,8 +240,15 @@ test('all public pages carry notice and script; digest rebuild preserves analyti
     const news = await readFile(new URL('news.html', root), 'utf8');
     for (const item of feed.items) assert.ok(news.includes('data-digest-item-id="' + item.digestItemId + '"'));
     const fixture = await mkdtemp(join(tmpdir(), 'analytics-build-test-'));
+    t.after(() => rm(fixture, { recursive: true, force: true }));
     for (const file of ['index.html', 'perspectives.html', 'news.html', 'feed.xml', 'news.json', 'scripts', 'js']) {
         await cp(new URL(file, root), join(fixture, file), { recursive: true });
+    }
+    // Offline builds require the verified cache; tests must never synthesize audio.
+    const audio = JSON.parse(await readFile(new URL('audio/briefs/manifest.json', root), 'utf8'));
+    await mkdir(join(fixture, 'audio/briefs'), { recursive: true });
+    for (const file of ['audio/briefs/manifest.json', ...Object.values(audio.briefs).flatMap(a => [a.src, a.src + '.txt'])]) {
+        await cp(new URL(file, root), join(fixture, file));
     }
     await promisify(execFile)(process.execPath, [join(fixture, 'scripts/build-digest.mjs')]);
     for (const file of ['index.html', 'themes.html', 'news.html', 'feed.xml']) {

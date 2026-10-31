@@ -1,0 +1,29 @@
+AI evaluations. Who gets to challenge an AI result?
+
+Useful AI Werks. Analysis by Codex. Reviewed October 24, 2026. Synthetic narration.
+
+Anthropic and its research collaborator Theorem report machine-checked crash-freedom proofs for 239 test entrypoints across 123 libraries, within a restricted execution model. This extends the shift toward inspectable evidence already visible in OpenAI’s mathematical proofs, Meta’s published critiques and Microsoft’s selected diagnostic evaluation code.
+
+Three takeaways. Check the artifact. Verify the reasoning without relying on its author. Read the promise. Identify exactly which property was proved. Match the deployment. Test whether the assumptions describe the system in use.
+
+What it means. A reusable proof changes who has to do the convincing. Others can check the artifact instead of repeatedly asking a model to defend its answer, and can reuse that evidence without reproducing the expensive search that found it. Our inference is that a costly proof could be worth producing once and checking across many later uses. The judgment moves to the specification: proving that selected tests cannot crash under stated conditions does not establish every property of a deployed library. Anthropic and Theorem’s result assumes single-threaded, statically linked RISC-V/Linux programs with bounded inputs and fixed memory. Microsoft’s diagnostic benchmarks expose a similar boundary between a reproducible simulated result and performance in clinical settings. Openness pays off when outsiders can examine that boundary as well as the headline score.
+
+12 percentage points. Average gap from human survey results. Pew compared AI-generated answers with human responses across nearly 300 questions. This describes its experiment, not every model or polling method. Source: Pew Research Center, 2026-09-30.
+
+How the story developed. Public artifacts and evaluator access make claims easier to challenge. Formal software proofs sharpen that distinction: checking the reasoning can be mechanical, while deciding whether its assumptions are adequate remains a substantive engineering judgment.
+
+September 30. Pew measures the gap in simulated opinions. In Pew’s experiment using Claude Opus 4.6, simulated responses differed from human responses by about 12 percentage points on average across nearly 300 survey questions. Source: Pew Research Center.
+
+September 30. Google leads the CDC’s season evaluation. Google’s model led individual team submissions in the 2025–26 flu hospital-admission evaluation. The ranking used state and D.C. forecasts, excluding national totals, among 39 eligible models. Source: CDC.
+
+October 6. OpenAI releases mathematical work for scrutiny. Many proofs come in Lean, a language that lets software check each logical step. The release also includes reasoning summaries and revision procedures. The model that produced the results remains internal. Source: OpenAI.
+
+October 14. Meta publishes expert critiques alongside research. Meta shared ten human-led health-research manuscripts developed with Muse. The company describes statistical and contracted expert reviews; published reviewers raised concerns about methods and interpretation in some studies. Source: Meta.
+
+October 15. Anthropic expands METR’s access. Six METR staff have access roughly comparable to Anthropic’s risk teams, with specified exclusions. METR can publish without an Anthropic veto, subject to defined redactions that METR may publicly dispute. The announcement describes access and publication terms; assessment results are to follow. Source: Anthropic.
+
+October 22. Anthropic and Theorem make bounded crash-freedom claims checkable. After patching bugs, the team proved that 239 test entrypoints from 123 libraries cannot crash under its stated model. The proofs are checked with Rocq, a formal proof system. The scope uses inputs below 64 MB, single-threaded static RISC-V/Linux execution and fixed memory; it is not whole-library correctness. The release includes some proofs and the execution semantics. Source: Anthropic.
+
+October 22. Microsoft opens selected diagnostic evaluations. Microsoft says it is releasing SDBench for selected NEJM cases, including case-interaction, judging and cost-estimation code. The evaluations simulate diagnostic decisions. A planned prospective hospital study will examine clinical performance separately. Source: TechCrunch.
+
+What to watch. Watch independent proof checking, which artifacts are released, and whether the specifications and machine models cover the intended deployment. Compare the cost of constructing and updating proofs with repeated testing. For medical systems, the planned prospective study remains the route to clinical evidence; METR’s access agreement still needs published findings.

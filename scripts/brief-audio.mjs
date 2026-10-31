@@ -1,6 +1,8 @@
 // Narration uses the same reviewed fields as the page, never a second AI summary.
 import {createHash} from 'node:crypto';
-export const AUDIO_VERSION='macos-samantha-175-v1';
+export const AUDIO_VERSION='eleven-v4-rachel-v1';
+export const AUDIO_MODEL='eleven_v4';
+export const AUDIO_VOICE='21m00Tcm4TlvDq8ikWAM';
 export function narration(b){
  const date=new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(b.reviewedAt+'T12:00:00Z'));
  const parts=[`${b.label}. ${b.title}`,`Useful AI Werks. Analysis by ${b.author}. Reviewed ${date}. Synthetic narration.`,b.summary,
@@ -14,8 +16,12 @@ export function narration(b){
  return parts.join('\n\n');
 }
 export const audioHash=b=>createHash('sha256').update(AUDIO_VERSION+'\n'+narration(b)).digest('hex');
+export const transcriptHash=b=>createHash('sha256').update(narration(b)+'\n').digest('hex');
 export function audioEntry(b,manifest){
- const a=manifest?.version===1?manifest.briefs?.[b.id]:null;
- return a&&a.hash===audioHash(b)&&a.src===`audio/briefs/${b.id}-${a.hash.slice(0,16)}.m4a`&&Number.isFinite(a.duration)&&a.duration>0?a:null;
+ const a=manifest?.version===1&&manifest.engine===AUDIO_VERSION?manifest.briefs?.[b.id]:null;
+ return a&&a.hash===audioHash(b)&&a.src===`audio/briefs/${b.id}-${a.hash.slice(0,16)}.m4a`
+  &&Number.isFinite(a.duration)&&a.duration>=5&&a.duration<=7200
+  &&Number.isSafeInteger(a.bytes)&&a.bytes>=1000&&a.bytes<=100*1024*1024
+  &&/^[a-f0-9]{64}$/.test(a.sha256)&&a.transcriptSha256===transcriptHash(b)?a:null;
 }
 export const durationLabel=seconds=>`${Math.floor(Math.round(seconds)/60)}:${String(Math.round(seconds)%60).padStart(2,'0')}`;

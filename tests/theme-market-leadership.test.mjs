@@ -16,7 +16,11 @@ test('historical competition release snapshots survive only the exact later edit
  assert.equal(briefs.length,11);
  for(const [id,h]of Object.entries(prior)){
   assert.equal(hash(briefs.find(b=>b.id===id)),h,id);
-  assert.deepEqual(audioEntry(beforeThemeRename(briefs.find(b=>b.id===id)),{version:1,briefs:audio}),audio[id],id);
+  const historical=beforeThemeRename(briefs.find(b=>b.id===id));
+  // Preserve the exact historical narration fingerprint without allowing an
+  // archived Samantha recording to satisfy the current Eleven/Rachel contract.
+  assert.equal(createHash('sha256').update('macos-samantha-175-v1\n'+narration(historical)).digest('hex'),audio[id].hash,id);
+  assert.equal(audioEntry(historical,{version:1,engine:'macos-samantha-175-v1',briefs:audio}),null,id);
  }
 });
 test('competition thesis distinguishes retained accounts from lost work without claiming causation',()=>{
