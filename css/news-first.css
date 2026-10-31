@@ -183,3 +183,4 @@ footer { padding: 2rem 0 4rem; border-top: 1px solid var(--line); color: var(--m
  .news-first #latest article h3 { margin:.5rem 0 1rem; }
  .news-first #latest article > p:not(:first-child) { font-size:.95rem; }
 }
+.brief-why { padding-left:.75rem; border-left:2px solid var(--brief-accent); }

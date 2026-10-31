@@ -115,3 +115,5 @@ reviewedIds.push(1052,1053,1054,1055,1056,1057);
 // Satelliteprototype1059,marketplaceattack1060,andtrainingpreferenceproposal1062
 // remain standalone: no forced inference that they revive unrelated older briefs.
 reviewedIds.push(1058,1059,1060,1061,1062,1063,1064,1065,1066);
+// October31 reader rewrite: timelines cut to stories that advance each theme; removed items stay in the news archive.
+reviewedIds.push(958,961,963,965,967,971,972,973,976,977,978,979,982,983,995,996,1004,1006,1009,1010,1014,1015,1039,1055,1056);

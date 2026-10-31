@@ -1,0 +1,21 @@
+AI in science. AI can produce research faster than experts can check it
+
+Useful AI Werks. Analysis by Codex and Persephone. Reviewed October 30, 2026. Synthetic narration.
+
+AI labs want scientists using their models, and they are widening access through free credits and partnerships. They are also publishing AI-generated results in mathematics, computer science and physics. This story follows what happens next: every new result still needs specialists to verify it, reproduce it and explain it, and expert time does not scale the way AI output does.
+
+Three takeaways. Generate a candidate. AI produces a proof, explanation or experiment. Make it checkable. Experts get the materials and controls to test it. Make it usable. The result is explained so others can build on it.
+
+Why it matters. AI’s value in science depends on results people can trust and build on, and volume alone provides neither. If output grows faster than checking capacity, unverified claims pile up and expert attention becomes the scarce resource. That raises the importance of the institutions that fund and review research, because they influence which tools scientists use and which claims get examined. It also makes openness a practical matter: anyone can check a result with public data and methods, while a withheld result waits on a small group. Shared datasets and software are also the part of a free-credit program that can outlast the credits.
+
+How the story developed. First labs widen access, then the results arrive, and the checking work becomes visible.
+
+October 14. Google offers European scientists free access. Google pledged access to its most advanced models for up to 200 European researchers, plus $3 million in computing credits, in support of the EU’s RAISE research initiative. Why it’s here. The first step in the story: labs competing to put their tools in scientists’ hands. Source: Google.
+
+October 16. Google connects AI agents to lab experiments. Google described three separate projects involving lab robots and molecular design. A system called VERID checks an agent’s actions against a live model of the lab, while humans approve sequences, verify protocols and supervise runs. Why it’s here. Even in Google’s own prototypes, people remain the checking layer. Source: Google Research.
+
+October 26. OpenAI announces three results and asks experts to examine them. OpenAI announced AI-generated results in math, computer science and physics. The math and computer-science materials are public, and an outside group will examine the computer-science claim. The physics group is withholding its materials while it prepares its own account. Independent verification is still ahead. Why it’s here. The clearest example so far: the announcement is finished and the expert work has only begun. Source: The Verge.
+
+October 28. Anthropic gives research credits through institutions. Anthropic expanded its free Claude credits across 20 scientific organizations and groups, including the Simons Foundation and the US National Science Foundation. Some projects aim to produce shared datasets, software and standards. Why it’s here. More access means more candidate results for the same experts, and shared materials are what could outlast the credits. Source: Anthropic.
+
+What to watch. Look for results that outside experts reproduce, and for datasets and software still in use after free credits end. Compare the pace of AI-generated claims with the time needed to validate them. OpenAI’s computer-science claim is the nearest test, since an outside group plans to examine it.

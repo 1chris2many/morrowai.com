@@ -19,7 +19,7 @@ test('substantive source-backed briefings are stable, HTML-first and escaped',()
  assert.equal(JSON.stringify(feed),before);
  assert.equal((out.match(/class="briefing tone-/g)||[]).length,briefs.length);
  for(const b of briefs){assert.ok(out.includes(b.id));for(const d of b.developments)assert.ok(out.includes(d.url));}
- assert.equal((out.match(/<h3>What it means<\/h3>/g)||[]).length,briefs.length);
+ assert.equal((out.match(/<h3>Why it matters<\/h3>/g)||[]).length,briefs.length);
  assert.equal((out.match(/<h3>What to watch<\/h3>/g)||[]).length,briefs.length);
  assert.equal((out.match(/opens in a new tab/g)||[]).length,briefs.reduce((n,b)=>n+b.developments.reduce((m,d)=>m+1+Number(Boolean(d.primaryUrl)),0),0));
  assert.match(out,/real publishers’ editorial channels/);

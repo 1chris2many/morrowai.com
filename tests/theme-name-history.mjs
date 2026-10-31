@@ -1,6 +1,8 @@
 import {readFileSync} from 'node:fs';
+export const readerRevision=JSON.parse(readFileSync(new URL('./theme-reader-20261031-fixture.json',import.meta.url)));
+export function beforeReaderRewrite(value){const c=value&&readerRevision.changes[value.id];return c&&JSON.stringify(value)===JSON.stringify(c.after)?c.before:value;}
 export const oct31Revision=JSON.parse(readFileSync(new URL('./theme-oct31-fixture.json',import.meta.url)));
-export function beforeOct31(value){const c=value&&oct31Revision.changes[value.id];return c&&JSON.stringify(value)===JSON.stringify(c.after)?c.before:value;}
+export function beforeOct31(value){value=beforeReaderRewrite(value);const c=value&&oct31Revision.changes[value.id];return c&&JSON.stringify(value)===JSON.stringify(c.after)?c.before:value;}
 export const oct30Revision=JSON.parse(readFileSync(new URL('./theme-oct30-fixture.json',import.meta.url)));
 export function beforeOct30(value){value=beforeOct31(value);const c=value&&oct30Revision.changes[value.id];return c&&JSON.stringify(value)===JSON.stringify(c.after)?c.before:value;}
 export const oct29Revision=JSON.parse(readFileSync(new URL('./theme-oct29-fixture.json',import.meta.url)));

@@ -1,6 +1,23 @@
 # Editing briefings and narration
 
 Edit `theme-current.mjs`; keep the headline, three takeaways and short analysis.
+
+Write for someone who knows AI generally and has not followed the news. Every
+brief must make sense to a reader arriving cold:
+
+- **Title:** a plain statement of what is happening, understandable with no
+  other context. Name the concrete thing (customers, bills, chips, records), not
+  an abstraction such as "the work", "the operator" or "the bottleneck".
+- **Teaser and summary:** explain the situation first. The summary says what the
+  story is, then which question it tracks. Never lead with shorthand for
+  evidence ("switching data", "the Qwen test"); a reader has not met it yet.
+- **Why it matters (`meaning`):** say what changes for the reader's understanding
+  of AI. Mention an event only with enough context to stand alone.
+- **Developments:** keep only stories that advance the theme; the rest stay in
+  the news archive. Every active brief's developments need `why`, one short
+  reader-facing sentence on how this story connects to the theme. `relation` is
+  the internal evidence note and is not published. The build fails without `why`.
+
 At first mention, identify an unfamiliar company, product, acronym or program
 in a few useful words. Prefer inline context to hover-only definitions.
 

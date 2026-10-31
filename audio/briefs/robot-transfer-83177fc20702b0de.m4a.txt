@@ -1,0 +1,19 @@
+Robotics. Robots are starting to work in unfamiliar homes, and people still have to rescue them
+
+Useful AI Werks. Analysis by Codex and Persephone. Reviewed October 20, 2026. Synthetic narration.
+
+Household robots have mostly been limited by training: each new home, or each new robot body, has needed its own preparation. Two recent results suggest skills can now transfer. Figure, a humanoid robot company, reports 56% full-task success in 30 unfamiliar homes, and Dream Labs reports controlling two-armed robots it had not trained on. This story tracks whether transfer turns into useful work, and how much human help it still takes.
+
+Three takeaways. Transfer a skill. Less retraining for each new setting. Try more jobs. Real environments expose the remaining failures. Measure the rescue work. Count supervision and recovery in the cost.
+
+Why it matters. Training a robot for every location makes expansion expensive before any useful work begins, so transfer could make far more deployments worth trying. Our inference is that the burden then moves to supervision. A robot that starts quickly and needs frequent rescuing can still consume a lot of human time. The measure that matters commercially is finished work, with the cost of that help included.
+
+56%. Reported full-task success. Figure’s test of three behaviors across 30 homes the robots had not seen. The tasks were trained elsewhere, and any safety intervention counted as a failure. Source: Figure, 2026-09-17.
+
+How the story developed. These are two different tests, one of new places and one of new robot bodies, so their results cannot be ranked against each other.
+
+September 17. Figure tests three chores in 30 unfamiliar homes. Figure reports 56% full-task success for tidying, towel folding and bed making in homes and with objects its robots had not seen. Any safety intervention failed the trial. Why it’s here. Shows transfer to new places, and how often a task still fails. Source: Figure.
+
+Source checked October 20. Dream Labs tests skills across robot bodies. Its Dream-1 release describes controlling unseen two-armed robots without robot-specific demonstrations. Performance varies, and Dream Labs calls it a research beta. Why it’s here. Adds the second kind of transfer: from one machine to another. Source: Dream Labs.
+
+What to watch. Watch task completion in unfamiliar settings, human interventions per hour and recovery time. Compare like tasks on like hardware. Dream-1’s hourly API price covers the model only, leaving out the robot, supervision and repairs.

@@ -1,0 +1,21 @@
+Agents at work. One business rule can now guide many AI agents. So can one mistake.
+
+Useful AI Werks. Analysis by Codex and Persephone. Reviewed October 26, 2026. Synthetic narration.
+
+An AI agent is only as useful as what it knows about your business. A growing set of products now gives agents shared context: company definitions, past service notes, system logs and rules for which sources to trust. This story follows that shift and its catch. Once context is shared, a mistake reaches every task that relies on it, the same way a good rule does.
+
+Three takeaways. Define it once. Agents get a common business meaning. Reuse it across tasks. People explain less and connect less by hand. Trace and correct it. Find every decision a mistaken rule affected.
+
+Why it matters. Explaining the same context again and again is one of the hidden costs of using agents at work, so sharing it once could make them far more useful. This also favors companies that already hold operational records. An established software vendor has them on hand, while a separate assistant would have to connect to them and reconcile them first. The catch is upkeep. Someone has to own the shared knowledge, find where a wrong rule affected decisions and fix it. Whether this pays off depends on the time saved after that upkeep is counted.
+
+How the story developed. Each of these October products reuses a different kind of context, moving from one technician’s notes to company-wide rules and operating records.
+
+October 22. TK Elevator saves field knowledge for the next visit. Microsoft’s case study describes agents preparing service briefings from equipment data, manuals and history. After each visit, a voice agent records the technician’s debrief. Technicians still do the repair, and the account gives no net time saved. Why it’s here. Shows the simplest version: what one person learned becomes the next task’s starting point. Source: Microsoft.
+
+October 23. IBM puts troubleshooting agents beside transaction records. IBM’s Sterling Agent Hub adds agents for troubleshooting and root-cause analysis to its software for exchanging data between businesses. Actions stay limited by permissions and policies. Why it’s here. Existing records give an established vendor a head start over a separate assistant. Source: IBM.
+
+October 23. Sakana builds shared definitions into its agent platform. Aquarium, from Japanese AI company Sakana, connects enterprise data, definitions and business rules for multiple agents, with access permissions and human approval. Sakana is still building ways to keep those definitions updated. Why it’s here. The clearest case of the theme: one shared meaning for many agents, with updates still unsolved. Source: Sakana AI.
+
+October 23. AWS lets teams set approved sources in advance. Amazon Bedrock Web Search can now filter results to as many as 100 allowed or 100 blocked domains. The announcement does not measure answer quality or time saved. Why it’s here. Source rules set once now apply to every search an agent runs. Source: AWS.
+
+What to watch. Look for faster recovery in real business processes, and for tools that can trace a bad rule back through the decisions it touched. Count setup, review and upkeep together. IBM has not reported an independent recovery-time result, and Sakana is still building its update mechanisms.

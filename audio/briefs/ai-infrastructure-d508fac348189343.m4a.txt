@@ -1,0 +1,29 @@
+AI infrastructure. Some AI buyers are spending more than they bring in, and suppliers may share that risk
+
+Useful AI Werks. Analysis by Codex and Persephone. Reviewed October 31, 2026. Synthetic narration.
+
+Amazon, Alphabet, Meta and Microsoft have outlined more than $740 billion in combined 2026 capital spending as they race to build AI capacity. Companies selling them equipment are booking the revenue now, while the buyers wait to earn it back. Alphabet and Amazon recently reported negative free cash flow, meaning they spent more than their businesses produced. This story tracks who covers that gap. Nvidia’s reported talks to guarantee borrowing for an Anthropic data center suggest some of the risk could return to the chip supplier.
+
+Three takeaways. Sell the equipment. The supplier books revenue before the buyer earns its money back. Help fund the buyer. A guarantee keeps construction and orders moving. Keep the exposure. If the buyer cannot pay, the supplier may have to.
+
+Why it matters. A chip order only becomes durable business if the buyer eventually earns a return on the chips. Until then, the buildout runs on outside money. When a supplier guarantees a customer’s borrowing, the project can go ahead, but the supplier keeps some exposure after the sale. That creates a possible loop: tighter funding slows construction, slower construction cuts orders, and suppliers lose the growth they counted on. In the optimistic case, delivery delays ease and paying customers fill new capacity quickly enough to cover its cost. Microsoft’s positive quarterly cash flow shows heavy spending need not mean a cash shortfall. In the pessimistic case, usage rises but earns too little, and operators keep depending on new borrowing or share sales. Credit warnings and guarantee talks strengthen that concern. Nothing here shows widespread defaults or cancelled orders.
+
+$220B. Amazon’s expected 2026 cash capital spending. Company forecast reaffirmed October 29. This is full-year capital spending, not realized AI revenue or a separately measured AI budget. Source: Amazon; Axios for S&P Capital IQ estimates, 2026-10-29.
+
+How the story developed. Earnings season showed the spending, then the cash gaps, then the first signs of lenders and suppliers reacting.
+
+October 21. Meta says frontier AI will take longer to pay off. Meta raised the floor of its annual spending forecast and said its frontier-model investments will take longer to generate returns than spending on its core business. Why it’s here. A big buyer saying plainly that the payback is further away than the bills. Source: Meta via PR Newswire; Reuters for LSEG estimates.
+
+October 28. Alphabet sells shares as spending outruns cash. Its cloud revenue doubled, yet quarterly free cash flow was negative $9.1 billion, and Alphabet raised $12.4 billion by selling common shares. Why it’s here. Strong AI demand and a need for outside money can arrive together. Source: Alphabet; AP for FactSet estimates.
+
+October 28. Microsoft keeps its cash flow positive. Microsoft reported $18.6 billion in quarterly free cash flow. Some third-party capacity arrived late, which contributed to its forecast of about $170 billion in calendar-year spending. Why it’s here. The counterexample: heavy spending does not create a cash gap everywhere. Source: Microsoft.
+
+October 29. Amazon keeps its $220 billion plan as cash flow turns negative. AWS, its cloud business, grew revenue 39%. Amazon kept its $220 billion spending forecast for the year and reported negative $42.4 billion free cash flow over the past twelve months. Why it’s here. Fast revenue growth and a large cash gap sit in the same company. Source: Amazon; Axios for S&P Capital IQ estimates.
+
+October 29. Nvidia reportedly discusses backing borrowing for an Anthropic data center. Reuters, citing The Information, reports proposed Nvidia credit guarantees for Nscale’s West Virginia facility serving Anthropic. The deal is unsigned and its terms could change. Why it’s here. The clearest sign of the theme: a chip supplier may take on part of a customer’s debt risk. Source: Reuters via CNA, citing The Information.
+
+October 30. Earnings show demand and cash moving apart. TechCrunch compares negative cash flow at some big buyers with Microsoft’s positive result. Their reporting periods differ, so the figures are not directly comparable. Why it’s here. Pulls the earnings into one picture: demand is strong while cash is uneven. Source: TechCrunch.
+
+October 30. S&P warns on Meta’s credit outlook. S&P moved Meta’s outlook to negative, citing spending and cash flow. Reuters reports plans to raise $97.5 billion through stock financing, which is planned funding, not money received. Meta disputes S&P’s view of how it will profit from AI. Why it’s here. Credit markets are now pricing the gap, even for a company with growing revenue. Source: Reuters via CNA.
+
+What to watch. Good signs: new capacity producing cash, and financing that closes on sustainable terms. Warning signs: worsening financing terms, delayed projects, cancelled orders or a guarantee being called. Supplier revenue alone cannot settle the question, because it arrives before the buyer’s return does.
