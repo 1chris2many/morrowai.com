@@ -1,22 +1,28 @@
-# morrowai.com
-Morrow AI Consulting — AI product strategy from someone who builds it every day
+# Useful AI Werks
+
+AI news, developing stories and perspectives from Morrow AI Consulting LLC.
+The GitHub repository retains its original name, `morrowai.com`.
 
 ## Deployment
 
-The live site is https://1chris2many.github.io/morrowai.com/ . GitHub Pages
-publishes the root of `main`. No custom domain is configured.
+The live site is **https://usefulaiwerks.com/**. GitHub Pages publishes the root
+of `main`, with `usefulaiwerks.com` configured as the custom domain and HTTPS
+enforced. `CNAME` and the public canonical URLs use that domain.
 
-Online inquiries are temporarily disabled: the previous placeholder form never
-sent messages. Before enabling contact, confirm the public business email with
-the owner or configure and verify a real form delivery service. Never display a
-delivery confirmation without a successful server response.
+The contact section links to **hello@usefulaiwerks.com** through `mailto:`.
+It opens the visitor's email app; the site has no submission form or delivery
+confirmation. Changing contact delivery requires an implemented, verified path.
 
-Before connecting morrowai.com, confirm ownership and DNS administrator access.
-Verify the domain with GitHub, coordinate Pages configuration and DNS changes,
-then check apex/www resolution, HTTPS, both articles and contact. Update the
-canonical and Open Graph URLs in all three HTML pages at cutover. Do not set
-`CNAME` while DNS is unavailable; this can redirect the working Pages URL to a
-broken address. Follow [GitHub's custom-domain guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+Persephone owns site content. Codex supports technical integration, narration
+and release verification. News revisions retain their source and exact-copy
+review checks. The existing Rig publisher integrates reviewed content, builds
+the static files and pushes through the governed release path. A successful
+push must be followed by Pages deployment and live-content verification.
+
+The static build uses `news.json` and the modules under `scripts/`. Run
+`npm run build` to rebuild the digest, briefings and feed. Narration is bound to
+the reviewed text and must be regenerated when that text changes; ordinary
+builds use the existing audio cache.
 
 ## Regression checks
 
@@ -26,7 +32,7 @@ channel selected with `BROWSER_CHANNEL`).
 ```sh
 npm ci
 npm test
-SITE_URL=https://1chris2many.github.io/morrowai.com/ npm test
+SITE_URL=https://usefulaiwerks.com/ npm test
 ```
 
 Tests use an isolated browser profile, check desktop/mobile navigation, local
