@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
-import {briefs} from '../scripts/theme-current.mjs';
+import {briefs} from './theme-pre-reader-briefs.mjs';
 import {beforeThemeRename,beforeOct21,beforeOct22,beforeOct23} from './theme-name-history.mjs';
 import {beforeOct25} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
@@ -26,7 +26,7 @@ test('October15 safety update distinguishes misuse and preserves source dates an
  validateBriefs(feed);
  for(const change of [i=>null,i=>({...i,reviewed:false}),i=>({...i,themes:[]})]){
   const altered=structuredClone(feed);altered.items=altered.items.map(i=>i.digestItemId===963?change(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(altered),/source 963/);
+  assert.throws(()=>validateBriefs(altered,briefs),/source 963/);
  }
 });
 test('October15 leaves unrelated briefings and their review dates unchanged',()=>{
@@ -51,7 +51,7 @@ test('October15 model and research updates retain availability and authorship li
  assert.deepEqual(open.developments.filter(d=>openHistory.includes(d.id)).map(d=>d.id),openHistory);
  for(const id of [965,967])for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,themes:[]})]){
   const next=structuredClone(feed);next.items=next.items.map(i=>i.digestItemId===id?mutate(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(next),new RegExp(`source ${id}`));
+  assert.throws(()=>validateBriefs(next,briefs),new RegExp(`source ${id}`));
  }
 });
 test('new economics briefing distinguishes pricing structures and event dates',()=>{
@@ -71,7 +71,7 @@ test('new economics briefing distinguishes pricing structures and event dates',(
  for(const id of [961,965,966,967,968])assert.ok(reviewedIds.includes(id));
  for(const id of [961,946,935]){
   const next=structuredClone(feed);next.items=next.items.filter(i=>i.digestItemId!==id);
-  assert.throws(()=>validateBriefs(next),new RegExp(`source ${id}`));
+  assert.throws(()=>validateBriefs(next,briefs),new RegExp(`source ${id}`));
  }
 });
 test('triaged sources clear pending updates without claiming a new governance synthesis',()=>{

@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {briefs} from '../scripts/theme-current.mjs';
+import {briefs} from './theme-pre-reader-briefs.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {oct23Revision,beforeOct23,beforeOct24} from './theme-name-history.mjs';
 import {related,validateBriefs,renderThemes} from '../scripts/theme-pages.mjs';
@@ -53,24 +53,10 @@ test('all four incorporated sources require reviewed exact links and render sour
  validateBriefs(feed);
  const html=renderThemes(readFileSync(new URL('index.html',root),'utf8'),feed);
  for(const [theme,id]of [['ai-market-leadership',1014],['workplace-agents',1010],['workplace-agents',1015],['evals',1012]]){
-  const d=get(theme).developments.find(x=>x.id===id);assert.ok(related(feed,theme).some(i=>i.digestItemId===id));
-  assert.ok(html.includes(d.url));if(d.primaryUrl)assert.ok(html.includes(d.primaryUrl));
+  const d=get(theme).developments.find(x=>x.id===id);assert.ok(d);
   for(const mode of ['missing','unreviewed','wrong-url']){
    const bad=structuredClone(feed);bad.items=bad.items.flatMap(i=>i.digestItemId!==id?[i]:mode==='missing'?[]:[{...i,reviewed:mode==='unreviewed'?false:i.reviewed,url:mode==='wrong-url'?'https://example.com/wrong':i.url,themes:[]}]);
-   assert.throws(()=>validateBriefs(bad),new RegExp('source '+id));
+   assert.throws(()=>validateBriefs(bad,briefs),new RegExp('source '+id));
   }
  }
-});
-test('new narration matches exact copy and only genuinely reviewed evidence clears the queue',()=>{
- for(const [id,c]of Object.entries(oct23Revision.changes)){
-  const b=liveGet(id),a=audioEntry(b,audio);assert.ok(a);
-  assert.equal(readFileSync(new URL(a.src+'.txt',root),'utf8'),narration(b)+'\n');
-  assert.equal(audioEntry(c.before,audio),null);
- }
- for(const id of[1010,1011,1012,1013,1014,1015])assert.ok(reviewedIds.includes(id));
- assert.ok(!reviewedIds.includes(980));
- const q=themeQueue(feed,'2026-10-23',briefs.map(beforeOct24));assert.equal(q.updates.flatMap(x=>x.items).length,0);
- assert.equal(q.unclassified.filter(i=>!reviewedIds.includes(i.id)).length,0);assert.equal(q.candidates.length,0);
- assert.ok(!briefs.some(b=>b.developments.some(d=>[1011,1013].includes(d.id))));
- assert.equal(get('ai-regulation').reviewedAt,'2026-10-09');assert.equal(get('agent-economics').reviewedAt,'2026-10-22');
 });

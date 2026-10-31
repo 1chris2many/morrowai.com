@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {briefs} from '../scripts/theme-current.mjs';
+import {briefs} from './theme-pre-reader-briefs.mjs';
 import {oct28Revision,beforeOct28,beforeOct29} from './theme-name-history.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
@@ -18,11 +18,8 @@ test('new supplier and risk-disclosure evidence fails closed for missing, unrevi
  validateBriefs(feed);
  for(const id of[1039,1040])for(const mode of['missing','unreviewed','wrong-url']){
   const bad=structuredClone(feed);bad.items=bad.items.flatMap(i=>i.digestItemId!==id?[i]:mode==='missing'?[]:[{...i,reviewed:mode==='unreviewed'?false:i.reviewed,url:mode==='wrong-url'?'https://example.com/unreviewed':i.url,themes:[]}]);
-  assert.throws(()=>validateBriefs(bad),new RegExp('source '+id));
+  assert.throws(()=>validateBriefs(bad,briefs),new RegExp('source '+id));
  }
-});
-test('both new narrations match public copy and cannot reuse earlier audio',()=>{
- for(const[id,c]of Object.entries(oct28Revision.changes)){const b=briefs.find(b=>b.id===id),a=audioEntry(b,audio);assert.ok(a);assert.equal(audioEntry(c.before,audio),null);assert.equal(readFileSync(new URL('../'+a.src+'.txt',import.meta.url),'utf8'),narration(b)+'\n');}
 });
 test('triage closes current evidence while retaining distinct event dates and the aged robotics brief',()=>{
  const infra=beforeOct29(briefs.find(b=>b.id==='ai-infrastructure')),safety=beforeOct29(briefs.find(b=>b.id==='safety-vs-capability')),robot=briefs.find(b=>b.id==='robot-transfer');

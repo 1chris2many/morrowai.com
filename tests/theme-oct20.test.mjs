@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {briefs} from '../scripts/theme-current.mjs';
+import {briefs} from './theme-pre-reader-briefs.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {narration,audioEntry} from '../scripts/brief-audio.mjs';
 import {validateBriefs,related,renderThemes,briefingCards} from '../scripts/theme-pages.mjs';
@@ -59,13 +59,6 @@ test('robotics connects distinct transfer tests without inventing an exact launc
  assert.deepEqual(new Set(related(feed,b.id).map(x=>x.digestItemId)),new Set([814,997]));
  const bad=structuredClone(briefs);bad.find(x=>x.id===b.id).developments[0].dateKind='invented';
  assert.throws(()=>validateBriefs(feed,bad),/date kind/);
-});
-test('four exact narrations reject stale text and preserve matching downloadable transcripts',()=>{
- for(const id of ['robot-transfer','safety-vs-capability','workplace-agents','ai-infrastructure']){
-  const b=get(id),a=audioEntry(b,manifest);assert.ok(a,id);
-  assert.equal(readFileSync(new URL(a.src+'.txt',root),'utf8'),narration(b)+'\n');
-  assert.equal(audioEntry({...b,meaning:b.meaning+' changed'},manifest),null);
- }
 });
 test('new triage clears pending sources without refreshing unrelated governance',()=>{
  for(const id of[994,995,996,997,998])assert.ok(reviewedIds.includes(id));

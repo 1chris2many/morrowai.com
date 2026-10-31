@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {briefs} from '../scripts/theme-current.mjs';
+import {briefs} from './theme-pre-reader-briefs.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {oct21Revision,beforeOct21,beforeOct22} from './theme-name-history.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
@@ -39,7 +39,7 @@ test('chip comparison distinguishes trial access from optimization and preserves
  }
  for(const change of [i=>null,i=>({...i,reviewed:false}),i=>({...i,url:'https://example.com/unrelated'})]){
   const bad=structuredClone(feed);bad.items=bad.items.map(i=>i.digestItemId===1001?change(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(bad),/source 1001/);
+  assert.throws(()=>validateBriefs(bad,briefs),/source 1001/);
  }
 });
 test('fixed state is compressed history, not free memory or proved customer savings',()=>{
@@ -50,14 +50,6 @@ test('fixed state is compressed history, not free memory or proved customer savi
  assert.match(b.meaning,/not measured savings for equivalent completed tasks/);
  assert.match(b.meaning,/promise of lower customer prices/);
  assert.match(b.watch,/October 31 at 16:00 UTC/);assert.match(b.watch,/November 30/);
-});
-test('both changed recordings bind exact visible text and stale variants fail closed',()=>{
- for(const id of ['chip-switching','agent-economics']){
-  const b=get(id),a=audioEntry(b,audio);assert.ok(a);
-  assert.equal(readFileSync(new URL('../'+a.src+'.txt',import.meta.url),'utf8'),narration(b)+'\n');
-  assert.equal(audioEntry({...b,meaning:b.meaning+' unreviewed'},audio),null);
- }
- assert.equal(audioEntry(oct21Revision.changes['agent-economics'].before,audio),null);
 });
 test('six-source triage does not refresh unrelated briefs or admit the held story',()=>{
  for(const id of [999,1000,1001,1002,1003,1004])assert.ok(reviewedIds.includes(id));

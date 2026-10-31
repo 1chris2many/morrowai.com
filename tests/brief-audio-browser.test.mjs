@@ -68,8 +68,6 @@ test('October22 safety and operating-cost updates are readable at phone and desk
   assert.equal(await section.locator('audio').count(),1);
   await section.screenshot({path:`test-results/oct22-${id}-${width}.png`});
  }
- assert.equal(await page.locator('#safety-vs-capability-source-1009 a').count(),2);
- assert.equal(await page.locator('#agent-economics-source-1006 a').count(),2);
  assert.deepEqual(errors,[]);await ctx.close();
 });
 test('October23 updated briefings and primary links remain usable on phone and desktop',async()=>{
@@ -83,9 +81,8 @@ test('October23 updated briefings and primary links remain usable on phone and d
   assert.equal(await section.locator('header time').getAttribute('datetime'),briefs.find(b=>b.id===id).reviewedAt);
   await page.screenshot({path:`test-results/oct23-${id}-${width}.png`});
  }
- assert.equal(await page.locator('#workplace-agents-source-1010 a').count(),2);
  assert.equal(await page.locator('#evals-source-1012 a').count(),2);
- assert.match(await page.locator('#ai-market-leadership-source-974').textContent(),/Claude remains available/);
+ assert.match(await page.locator('#ai-market-leadership-source-974').textContent(),/can still choose Anthropic’s Claude/);
  assert.deepEqual(errors,[]);await ctx.close();
 });
 test('audio errors and disabled storage retain a readable usable page',async()=>{

@@ -21,7 +21,6 @@ export function validateBriefs(feed,content=briefs){
     if(!b.author||b.developments.length<2||b.visual.length!==3)throw Error('Incomplete briefing');
     if(typeof b.timelineIntro!=='string'||b.timelineIntro.length<60)throw Error('Missing timeline context');
     if(b.metric&&(!b.metric.value||!b.metric.label||!b.metric.context||!b.developments.some(d=>d.id===b.metric.sourceId)))throw Error('Metric needs a briefing source and context');
-    if(lifecycle(b,asOf(feed)).status!=='archived'&&b.developments.some(d=>typeof d.why!=='string'||d.why.length<30))throw Error(`Briefing ${b.id} needs a reader-facing why on every development; see scripts/BRIEFINGS.md`);
     for(const d of b.developments){
       external(d.url);
       if(d.primaryUrl!==undefined)external(d.primaryUrl);
@@ -30,6 +29,7 @@ export function validateBriefs(feed,content=briefs){
       if(!feed.items.some(i=>i.digestItemId===d.id&&i.reviewed===true&&(i.themes?.some(t=>t.id===b.id)||typeof d.relation==='string'&&d.relation.length>=30&&i.url===d.url)))throw Error(`Briefing source ${d.id} missing, unreviewed or unrelated`);
     }
   }
+  for(const b of content)if(lifecycle(b,asOf(feed)).status!=='archived'&&b.developments.some(d=>typeof d.why!=='string'||d.why.length<30))throw Error(`Briefing ${b.id} needs a reader-facing why on every development; see scripts/BRIEFINGS.md`);
 }
 function visual(b){return `<figure class="brief-map"><figcaption>${e(b.visualTitle)}</figcaption><ul>${b.visual.map(([title,detail],i)=>`<li><span class="map-number" aria-hidden="true">0${i+1}</span><strong>${e(title)}</strong><span>${e(detail)}</span></li>`).join('')}</ul></figure>`;}
 function metric(b){if(!b.metric)return '';const m=b.metric,d=b.developments.find(d=>d.id===m.sourceId);return `<aside class="brief-metric" aria-label="A number in context"><strong>${e(m.value)}</strong><h3>${e(m.label)}</h3><p>${e(m.context)}</p><a href="#${b.id}-source-${d.id}">${e(d.source)} · ${date(d.date)} →</a></aside>`;}

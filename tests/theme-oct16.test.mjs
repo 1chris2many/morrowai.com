@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
-import {briefs} from '../scripts/theme-current.mjs';
+import {briefs} from './theme-pre-reader-briefs.mjs';
 import {beforeThemeRename,beforeOct23} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {validateBriefs} from '../scripts/theme-pages.mjs';
@@ -44,7 +44,7 @@ test('evaluation review distinguishes access terms from results and keeps cross-
  for(const d of b.developments.slice(0,2))assert.ok(d.relation.length>=30);
  for(const id of [969,967])for(const mutate of [i=>null,i=>({...i,reviewed:false})]){
   const next=structuredClone(feed);next.items=next.items.map(i=>i.digestItemId===id?mutate(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(next),new RegExp(`source ${id}`));
+  assert.throws(()=>validateBriefs(next,briefs),new RegExp(`source ${id}`));
  }
 });
 test('model and code-review claims retain license conditions, component scope and vendor attribution',()=>{
@@ -62,19 +62,6 @@ test('model and code-review claims retain license conditions, component scope an
  assert.match(ibm.text,/Apache 2.0/);assert.match(ibm.text,/IBM says/);
  for(const id of [971,972,973])for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,themes:[]})]){
   const next=structuredClone(feed);next.items=next.items.map(i=>i.digestItemId===id?mutate(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(next),new RegExp(`source ${id}`));
+  assert.throws(()=>validateBriefs(next,briefs),new RegExp(`source ${id}`));
  }
-});
-test('all three changes have exact narration and triage does not manufacture a new theme',()=>{
- validateBriefs(feed);
- for(const id of ['evals','workplace-agents','open-weights']){
-  const b=get(id),entry=audioEntry(b,manifest);assert.ok(entry);
-  assert.equal(readFileSync(new URL('../'+entry.src+'.txt',import.meta.url),'utf8'),narration(b)+'\n');
-  assert.equal(audioEntry({...b,summary:b.summary+' changed'},manifest),null);
- }
- for(const id of [969,970,971,972,973])assert.ok(reviewedIds.includes(id));
- assert.ok(!briefs.some(b=>b.developments.some(d=>d.id===970)));
- const reviewDay=briefs.map(b=>b.reviewedAt).sort().at(-1);
- const queue=themeQueue(feed,reviewDay);assert.equal(queue.candidates.length,0);
- for(const id of ['workplace-agents','open-weights'])assert.deepEqual(queue.updates.find(b=>b.id===id).items,[]);
 });

@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {briefs} from '../scripts/theme-current.mjs';
-import {themeNameChanges,beforeThemeRename,beforeInsightRevision,insightRevision,oct20Revision,beforeOct20,oct21Revision,oct25Revision,oct27Revision,oct28Revision,oct29Revision,oct30Revision,oct31Revision,readerRevision} from './theme-name-history.mjs';
+import {themeNameChanges,beforeThemeRename,beforeInsightRevision,insightRevision,oct20Revision,beforeOct20,oct21Revision,oct25Revision,oct27Revision,oct28Revision,oct29Revision,oct30Revision,oct31Revision,readerRevision,beforeReaderRewrite} from './theme-name-history.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const themes=readFileSync(new URL('../themes.html',import.meta.url),'utf8');
@@ -54,7 +54,7 @@ test('revised audio starts with the visible heading and cannot reuse earlier rec
 });
 test('historical snapshot normalization cannot conceal other title or body edits',()=>{
  for(const id of Object.keys(themeNameChanges)){
-  const b=briefs.find(b=>b.id===id),restored=beforeThemeRename(b);
+  const b=beforeReaderRewrite(briefs.find(b=>b.id===id)),restored=beforeThemeRename(b);
   assert.equal(restored.title,themeNameChanges[id].before,id);
   assert.equal(restored.meaning,insightRevision.changes[id].before.meaning,id);
   const unexpected={...b,title:'Unexpected replacement'};
@@ -64,6 +64,6 @@ test('historical snapshot normalization cannot conceal other title or body edits
   const changedEvidence={...b,reviewedAt:'2099-01-01'};
   assert.equal(beforeInsightRevision(changedEvidence).reviewedAt,'2099-01-01',id);
  }
- const robot=briefs.find(b=>b.id==='robot-transfer');
+ const robot=beforeReaderRewrite(briefs.find(b=>b.id==='robot-transfer'));
  assert.equal(beforeThemeRename(robot),robot);
 });

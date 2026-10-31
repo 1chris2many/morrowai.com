@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {briefs} from '../scripts/theme-current.mjs';
+import {briefs} from './theme-pre-reader-briefs.mjs';
 import {insightRevision,beforeInsightRevision,oct20Revision,beforeOct20,oct21Revision,beforeOct22} from './theme-name-history.mjs';
 import {lifecycle} from '../scripts/theme-lifecycle.mjs';
 const hash=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');

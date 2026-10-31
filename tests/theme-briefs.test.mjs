@@ -1,7 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {briefs} from '../scripts/theme-current.mjs';
+import {briefs} from './theme-pre-reader-briefs.mjs';
+import {briefs as live} from '../scripts/theme-current.mjs';
 import {beforeOct20,beforeOct23} from './theme-name-history.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {renderThemes,validateBriefs,briefingCards} from '../scripts/theme-pages.mjs';
@@ -17,11 +18,11 @@ function assertReviewDate(id,date){
 test('substantive source-backed briefings are stable, HTML-first and escaped',()=>{
  const before=JSON.stringify(feed),out=renderThemes(home,feed,{preview:true});
  assert.equal(JSON.stringify(feed),before);
- assert.equal((out.match(/class="briefing tone-/g)||[]).length,briefs.length);
- for(const b of briefs){assert.ok(out.includes(b.id));for(const d of b.developments)assert.ok(out.includes(d.url));}
- assert.equal((out.match(/<h3>Why it matters<\/h3>/g)||[]).length,briefs.length);
- assert.equal((out.match(/<h3>What to watch<\/h3>/g)||[]).length,briefs.length);
- assert.equal((out.match(/opens in a new tab/g)||[]).length,briefs.reduce((n,b)=>n+b.developments.reduce((m,d)=>m+1+Number(Boolean(d.primaryUrl)),0),0));
+ assert.equal((out.match(/class="briefing tone-/g)||[]).length,live.length);
+ for(const b of live){assert.ok(out.includes(b.id));for(const d of b.developments)assert.ok(out.includes(d.url));}
+ assert.equal((out.match(/<h3>Why it matters<\/h3>/g)||[]).length,live.length);
+ assert.equal((out.match(/<h3>What to watch<\/h3>/g)||[]).length,live.length);
+ assert.equal((out.match(/opens in a new tab/g)||[]).length,live.reduce((n,b)=>n+b.developments.reduce((m,d)=>m+1+Number(Boolean(d.primaryUrl)),0),0));
  assert.match(out,/real publishers’ editorial channels/);
  assert.match(out,/noindex,nofollow/);assert.doesNotMatch(renderThemes(home,feed),/noindex|nofollow" data-preview/);
  assert.match(out,/rel="canonical" href="https:\/\/usefulaiwerks.com\/themes.html"/);
@@ -30,15 +31,15 @@ test('substantive source-backed briefings are stable, HTML-first and escaped',()
 });
 test('new coverage changes related inventory, never analysis date or copy',()=>{
  const next=structuredClone(feed),i=next.items.find(i=>i.themes?.some(t=>t.id==='workplace-agents'));
- const tomorrow=new Date(Date.parse(briefs.map(b=>b.reviewedAt).sort().at(-1))+86400000).toISOString().slice(0,10);
+ const tomorrow=new Date(Date.parse(live.map(b=>b.reviewedAt).sort().at(-1))+86400000).toISOString().slice(0,10);
  next.publishedAt=tomorrow+'T19:00:00Z';
  next.items.unshift({...i,digestItemId:99999,digestDate:tomorrow,url:'https://example.com/new-coverage',anchor:'new-coverage',title:'New coverage'});
  const out=renderThemes(home,next);
  assert.match(out,/New coverage since this briefing was reviewed/);
- for(const date of new Set(briefs.map(b=>b.reviewedAt)))assert.equal(out.split('Reviewed <time datetime="'+date+'"').length-1,briefs.filter(b=>b.reviewedAt===date).length);
+ for(const date of new Set(live.map(b=>b.reviewedAt)))assert.equal(out.split('Reviewed <time datetime="'+date+'"').length-1,live.filter(b=>b.reviewedAt===date).length);
  assert.match(out,/news.html#new-coverage/);
  const escape=value=>value.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- for(const b of briefs)assert.ok(out.includes(escape(b.meaning)));
+ for(const b of live)assert.ok(out.includes(escape(b.meaning)));
  assert.match(briefingCards(next),/themes.html#workplace-agents/);
 });
 test('October 7 editorial additions preserve scope and untouched review dates',()=>{
@@ -101,7 +102,7 @@ test('October 10 synthesis keeps evaluation scope, beta access and event dates e
 test('missing, unreviewed or mistagged source references fail closed',()=>{
  for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,themes:[]})]){
   const next=structuredClone(feed);next.items=next.items.map(i=>i.digestItemId===926?mutate(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(next),/source 926/);
+  assert.throws(()=>validateBriefs(next,briefs),/source 926/);
  }
  const copy=structuredClone(briefs);copy[0].developments[0].url='javascript:alert(1)';assert.throws(()=>validateBriefs(feed,copy),/Unsafe/);
 });
@@ -116,7 +117,7 @@ test('October 11 timeline keeps proposal status and event date',()=>{
  assert.ok(reviewedIds.includes(950));
  assert.equal(briefs.length,11);
  const missing=structuredClone(feed);missing.items=missing.items.filter(i=>i.digestItemId!==950);
- assert.throws(()=>validateBriefs(missing),/source 950/);
+ assert.throws(()=>validateBriefs(missing,briefs),/source 950/);
 });
 test('October 12 memory and infrastructure synthesis preserves actual availability and unchanged dates',()=>{
  const work=briefs.find(b=>b.id==='workplace-agents');
@@ -155,5 +156,5 @@ test('October 14 replication addition separates hardware demo from simplified la
   ['ai-regulation','2026-10-09'],['workplace-agents','2026-10-16'],['ai-infrastructure','2026-10-12'],['evals','2026-10-16'],['open-weights','2026-10-16'],['agent-economics','2026-10-15']
  ])assertReviewDate(id,date);
  const missing=structuredClone(feed);missing.items=missing.items.filter(i=>i.digestItemId!==958);
- assert.throws(()=>validateBriefs(missing),/source 958/);
+ assert.throws(()=>validateBriefs(missing,briefs),/source 958/);
 });
