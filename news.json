@@ -251,6 +251,26 @@
       "editorialNote": "Fiscal first-quarter results reported October 28."
     },
     {
+      "digestItemId": 1053,
+      "digestDate": "2026-10-30",
+      "title": "NYT: US officials saw executive close to Nvidia's CEO as a Chinese asset",
+      "summary": "The New York Times, citing anonymous people briefed on classified intelligence, reports that US officials concluded Alice Huang, a top executive at Singapore-based Megaspeed, was funneling information to Beijing while close to Jensen Huang. The Times says President Trump was briefed roughly a year ago and took no action. Nvidia told TechCrunch the contact was ordinary customer business and that regional customers receive no sensitive trade secrets.",
+      "whyItMatters": "The allegation links chip-export enforcement to intelligence about who can reach Nvidia’s leadership. If the reported White House inaction is accurate, access to that intelligence did not translate into a policy response.",
+      "url": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
+      "source": "TechCrunch, citing The New York Times",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-30-us-reportedly-investigated-whether-an-executive-close-to-nvidia-s-ceo-was-a-chinese-spy",
+      "editorialNote": "Reported October 29."
+    },
+    {
       "digestItemId": 1052,
       "digestDate": "2026-10-30",
       "title": "OpenAI accounts for nearly 11% of Microsoft’s quarterly revenue",
@@ -269,26 +289,6 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-30-microsoft-recorded-10-billion-in-quarterly-revenue-from-openai",
       "editorialNote": "Filing reported October 28."
-    },
-    {
-      "digestItemId": 1053,
-      "digestDate": "2026-10-30",
-      "title": "Report: Nvidia customer investigated",
-      "summary": "TechCrunch reports an investigation into a customer executive’s access to Jensen Huang. Nvidia denied sharing sensitive information.",
-      "whyItMatters": "",
-      "url": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
-      "source": "TechCrunch, citing The New York Times",
-      "linkKind": "article",
-      "newsletters": [],
-      "tags": [
-        "Security",
-        "Policy"
-      ],
-      "themes": [],
-      "reviewed": true,
-      "reviewMethod": "automated-publication-checks-v1",
-      "anchor": "story-2026-10-30-us-reportedly-investigated-whether-an-executive-close-to-nvidia-s-ceo-was-a-chinese-spy",
-      "editorialNote": "Reported October 29."
     },
     {
       "digestItemId": 1055,
@@ -6466,6 +6466,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-10-31 · 9 stories",
-  "publishedAt": "2026-10-31T15:12:56.421Z",
-  "contentHash": "660e3038247ab0951bc4483a22e92b4086621dad11c0df467972501279a88a59"
+  "publishedAt": "2026-11-01T03:47:36.021Z",
+  "contentHash": "20af15a7ae84b96ac00aaabef765ed13454329d1a56daeaf8eeeae22294d0508"
 }
