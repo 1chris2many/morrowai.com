@@ -110,11 +110,11 @@ export const sourceHistory = {
         "id": 1010,
         "title": "Duet brings background work back for decisions",
         "text": "Anthropic’s US Pro/Max waitlisted preview can return work and request decisions through messages. Background checks count against the subscriber’s existing allowance. The company acknowledges that the preview can misjudge urgency or miss intervening messages.",
-        "source": "TechCrunch",
-        "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+        "source": "Anthropic",
+        "url": "https://claude.com/resources/articles/claude-duet",
         "primaryUrl": "https://claude.com/product/claude-duet",
         "relation": "Directly checked product terms connect background usage and human interruptions to the attention bottleneck, without claiming measured productivity.",
-        "feedUrl": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+        "feedUrl": "https://claude.com/resources/articles/claude-duet"
       },
       {
         "date": "2026-10-22",
@@ -253,9 +253,9 @@ export const sourceHistory = {
         "date": "2026-10-29",
         "title": "Sandisk’s sales shift toward data centers",
         "text": "Data-center revenue rose 61% from the preceding quarter while consumer revenue fell 29%, showing different demand patterns within one supplier.",
-        "source": "Sandisk (SEC filing via Groowe)",
-        "url": "https://groowe.com/newsroom/ojEwz129dq",
-        "feedUrl": "https://groowe.com/newsroom/ojEwz129dq"
+        "source": "Sandisk",
+        "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-10-29-sandisk-reports-fiscal-first-quarter-2027-financial-results",
+        "feedUrl": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-10-29-sandisk-reports-fiscal-first-quarter-2027-financial-results"
       },
       {
         "date": "2026-10-28",

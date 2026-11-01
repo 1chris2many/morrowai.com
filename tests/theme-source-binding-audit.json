@@ -1,0 +1,26 @@
+{
+  "1010": {
+    "before": {
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "feedUrl": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+    },
+    "after": {
+      "source": "Anthropic",
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "feedUrl": "https://claude.com/resources/articles/claude-duet"
+    }
+  },
+  "1056": {
+    "before": {
+      "source": "Sandisk (SEC filing via Groowe)",
+      "url": "https://groowe.com/newsroom/ojEwz129dq",
+      "feedUrl": "https://groowe.com/newsroom/ojEwz129dq"
+    },
+    "after": {
+      "source": "Sandisk",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-10-29-sandisk-reports-fiscal-first-quarter-2027-financial-results",
+      "feedUrl": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-10-29-sandisk-reports-fiscal-first-quarter-2027-financial-results"
+    }
+  }
+}

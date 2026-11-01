@@ -1,3 +1,4 @@
+import {validateHistoricalBriefs} from './theme-historical-source-bindings.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -44,7 +45,7 @@ test('evaluation review distinguishes access terms from results and keeps cross-
  for(const d of b.developments.slice(0,2))assert.ok(d.relation.length>=30);
  for(const id of [969,967])for(const mutate of [i=>null,i=>({...i,reviewed:false})]){
   const next=structuredClone(feed);next.items=next.items.map(i=>i.digestItemId===id?mutate(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(next,briefs),new RegExp(`source ${id}`));
+  assert.throws(()=>validateHistoricalBriefs(next,briefs),new RegExp(`source ${id}`));
  }
 });
 test('model and code-review claims retain license conditions, component scope and vendor attribution',()=>{
@@ -62,6 +63,6 @@ test('model and code-review claims retain license conditions, component scope an
  assert.match(ibm.text,/Apache 2.0/);assert.match(ibm.text,/IBM says/);
  for(const id of [971,972,973])for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,themes:[]})]){
   const next=structuredClone(feed);next.items=next.items.map(i=>i.digestItemId===id?mutate(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(next,briefs),new RegExp(`source ${id}`));
+  assert.throws(()=>validateHistoricalBriefs(next,briefs),new RegExp(`source ${id}`));
  }
 });

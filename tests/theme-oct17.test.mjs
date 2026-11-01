@@ -1,3 +1,4 @@
+import {validateHistoricalBriefs} from './theme-historical-source-bindings.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -45,7 +46,7 @@ test('all three new sources remain bound to reviewed related feed cards',()=>{
  validateBriefs(feed);
  for(const id of [976,977,978])for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,themes:[]})]){
   const next=structuredClone(feed);next.items=next.items.map(i=>i.digestItemId===id?mutate(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(next,briefs),new RegExp('source '+id));
+  assert.throws(()=>validateHistoricalBriefs(next,briefs),new RegExp('source '+id));
  }
 });
 test('all five new cards are triaged without forcing a new theme or redating governance',()=>{

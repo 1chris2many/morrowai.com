@@ -1,3 +1,4 @@
+import {validateHistoricalBriefs} from './theme-historical-source-bindings.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -56,7 +57,7 @@ test('all four incorporated sources require reviewed exact links and render sour
   const d=get(theme).developments.find(x=>x.id===id);assert.ok(d);
   for(const mode of ['missing','unreviewed','wrong-url']){
    const bad=structuredClone(feed);bad.items=bad.items.flatMap(i=>i.digestItemId!==id?[i]:mode==='missing'?[]:[{...i,reviewed:mode==='unreviewed'?false:i.reviewed,url:mode==='wrong-url'?'https://example.com/wrong':i.url,themes:[]}]);
-   assert.throws(()=>validateBriefs(bad,briefs),new RegExp('source '+id));
+   assert.throws(()=>validateHistoricalBriefs(bad,briefs),new RegExp('source '+id));
   }
  }
 });

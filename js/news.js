@@ -1,4 +1,4 @@
-import { selectNews, newsAnchor, freshnessMessage, sourceName } from './news-model.js?v=20260920';
+import { selectNews, newsAnchor, freshnessMessage, sourceName, displaySource } from './news-model.js?v=20261031';
 
 const status = document.getElementById('news-status');
 const list = document.getElementById('news-items');
@@ -82,7 +82,7 @@ async function loadNews() {
                 if (Number.isSafeInteger(item.digestItemId) && item.digestItemId > 0) card.dataset.digestItemId = item.digestItemId;
                 const meta = document.createElement('p');
                 meta.className = 'post-meta';
-                meta.textContent = item.source + ' · Edition ' + item.digestDate;
+                meta.textContent = displaySource(item.source) + ' · Edition ' + item.digestDate;
                 const heading = document.createElement('h3');
                 const link = document.createElement('a');
                 link.href = item.url;

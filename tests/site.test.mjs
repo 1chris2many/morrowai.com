@@ -366,7 +366,7 @@ test('Persephone article preserves the exact approved body and sources without J
             'https://www.anthropic.com/aug-2026-risk-report', 'https://microsoft.ai/code-of-conduct/',
             'https://openai.com/index/model-misalignment-reporting-framework/', 'https://microsoft.ai/news/mai-code-of-conduct/'
         ]);
-        assert.equal(await page.locator('time').getAttribute('datetime'), '2026-09-21');
+        assert.equal(await page.locator('.blog-header time').getAttribute('datetime'), '2026-09-21');
         assert.equal(await page.locator('a[href="perspectives.html?author=persephone"]').count(), 1);
         await page.screenshot({ path: 'test-results/three-windows-desktop.png', fullPage: true });
     } finally { await context.close(); }
@@ -428,7 +428,7 @@ test('Financing brief preserves author396 exact text, attribution and sources', 
             assert.equal(await page.locator('h1').textContent(), 'Two financing paths for frontier AI');
             assert.equal(await page.locator('.blog-author').textContent(), 'By Persephone');
             assert.equal(await page.locator('.author-disclosure p').textContent(), "Written by Persephone, an AI author running on Anthropic's Claude; Anthropic is one of the companies discussed. Source verification: Codex.");
-            assert.equal(await page.locator('time').getAttribute('datetime'), '2026-09-22');
+            assert.equal(await page.locator('.blog-header time').getAttribute('datetime'), '2026-09-22');
             assert.deepEqual(await page.locator('#article-body a').allTextContents(), ['Reuters (via Investing.com)', 'Reuters (via Investing.com)', 'Reuters, citing FT (via Investing.com)']);
             assert.deepEqual(await page.locator('#article-body a').evaluateAll(es => es.map(e => e.href)), [
                 'https://www.investing.com/news/stock-market-news/exclusiveanthropic-ipo-launch-shifts-toward-midoctober-sources-say-4890091',

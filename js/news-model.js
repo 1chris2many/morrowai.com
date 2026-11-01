@@ -20,4 +20,11 @@ export function selectNews(items, { topic = '', source = '', theme = '', sort = 
 }
 
 // Source dates belong on cards, not in the publisher filter.
-export function sourceName(source) { return source.replace(/\s+—\s+.*$/, ''); }
+// Presentation only: retain the complete credit in news.json and the source ledger.
+export function displaySource(source) {
+    return source.replace(/\s+—\s+.*$/, '')
+        .replace(/ \(Anthony Ha\)| \(Robert Hart\)/g, '')
+        .replace('Seeking Alpha (Tech Insider Network / Beth Kindig)', 'Seeking Alpha')
+        .replace(/ \(citing ([^)]+)\)/g, ', citing $1');
+}
+export function sourceName(source) { return displaySource(source); }

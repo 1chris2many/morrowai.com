@@ -1,3 +1,4 @@
+import {displaySource} from '../js/news-model.js';
 // Private integration candidate only; consumes the already-published reviewed feed.
 import { readFile, writeFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
@@ -30,7 +31,7 @@ export function renderLatest(template, feed, {preview=true}={}) {
   if (feed.digestDate !== date) throw Error('Feed edition does not match newest items');
   const selected = feed.items.filter(i => i.digestDate === date);
   const cards = selected.map((item, index) => `        <article class="${index === 0 ? 'lead-card' : 'news-card'}" data-digest-item-id="${item.digestItemId}">
-          <p class="meta">${escape(item.source)}</p>
+          <p class="meta">${escape(displaySource(item.source))}</p>
           <h3><a href="https://usefulaiwerks.com/news.html#${item.anchor}">${escape(item.title)}</a></h3>
           <p class="news-summary">${escape(item.summary)}</p>
 ${item.whyItMatters ? `          <p class="news-why">${escape(item.whyItMatters)}</p>\n` : ''}${item.editorialNote ? `          <p class="meta news-editorial-note">${escape(item.editorialNote)}</p>\n` : ''}${(item.newsletters || []).map(n => `          <p class="meta news-newsletter">${escape(n.name)} · <a href="${safeURL(n.signupUrl)}">Subscribe</a></p>\n`).join('')}        </article>`).join('\n');

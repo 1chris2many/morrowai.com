@@ -1,3 +1,4 @@
+import {validateHistoricalBriefs} from './theme-historical-source-bindings.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -47,7 +48,7 @@ test('exact sources and primary links are required; unreviewed or wrong links fa
  for(const [theme,id]of [['safety-vs-capability',1009],['agent-economics',1006]]){
   for(const change of [i=>null,i=>({...i,reviewed:false}),i=>({...i,url:'https://example.com/wrong',themes:[]})]){
    const bad=structuredClone(feed);bad.items=bad.items.map(i=>i.digestItemId===id?change(i):i).filter(Boolean);
-   assert.throws(()=>validateBriefs(bad,briefs),new RegExp('source '+id));
+   assert.throws(()=>validateHistoricalBriefs(bad,briefs),new RegExp('source '+id));
   }
  }
 });

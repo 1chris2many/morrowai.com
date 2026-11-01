@@ -1,3 +1,4 @@
+import {validateHistoricalBriefs} from './theme-historical-source-bindings.mjs';
 import {asOf,lifecycle} from '../scripts/theme-lifecycle.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -65,6 +66,6 @@ test('explicitly reviewed relations make new science discoverable without mutati
 test('cross-theme relations fail closed for missing, unreviewed or wrong-URL evidence',()=>{
  for(const id of [979,982,983,984,968,1033,1035])for(const mutate of [i=>null,i=>({...i,reviewed:false}),i=>({...i,url:'https://example.com/unrelated'})]){
   const next=structuredClone(feed);next.items=next.items.map(i=>i.digestItemId===id?mutate(i):i).filter(Boolean);
-  assert.throws(()=>validateBriefs(next,briefs),new RegExp('source '+id));
+  assert.throws(()=>validateHistoricalBriefs(next,briefs),new RegExp('source '+id));
  }
 });

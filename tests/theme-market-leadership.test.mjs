@@ -57,11 +57,14 @@ test('nine exact reviewed sources including earlier coverage connect to stable n
 });
 test('corrected historical cards preserve anchors and distinguish accounting from revenue loss',()=>{
  const replit=feed.items.find(i=>i.digestItemId===974);
- assert.equal(replit.summary,'OpenAI is now the default; customers can still choose Claude.');
+ assert.equal(replit.summary,"CEO Amjad Masad said at TechCrunch Disrupt that Replit is no longer working with Anthropic, citing cost, partnership and performance. He later clarified that OpenAI's ChatGPT is now the default and customers can still choose Claude. A person familiar with the relationship told TechCrunch the partnership remains in place.");
+ assert.match(replit.summary,/default and customers can still choose Claude/);
+ assert.match(replit.summary,/partnership remains in place/);
  assert.equal(replit.digestDate,'2026-10-17');
  const revenue=feed.items.find(i=>i.digestItemId===892);
- assert.equal(revenue.title,'OpenAI revenue accounting clarified');
- assert.match(revenue.summary,/partner-sales accounting/);
+ assert.equal(revenue.title,'Report: OpenAI tells investors annualized revenue is near $50 billion, not $70 billion');
+ assert.match(revenue.summary,/Anthropic, which counts sales made by its cloud partners\. OpenAI does not\./);
+ assert.match(revenue.editorialNote,/reporting summarized here was published October 8/);
  assert.equal(revenue.url,'https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/');
  assert.equal(revenue.digestDate,'2026-09-30');
  assert.ok(revenue.anchor.startsWith('story-2026-09-30-'));

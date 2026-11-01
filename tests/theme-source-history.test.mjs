@@ -15,7 +15,12 @@ const records=Object.entries(sourceHistory).flatMap(([theme,b])=>b.developments.
 
 test('all 47 earlier developments preserve the exact 4c3f649 source notes',()=>{
   assert.equal(records.length,47);
-  const original=Object.fromEntries(Object.entries(sourceHistory).map(([id,b])=>[id,b.developments.map(({feedUrl,...d})=>d)]));
+  const bindingCorrections=JSON.parse(readFileSync(new URL('./theme-source-binding-audit.json',import.meta.url)));
+  const original=Object.fromEntries(Object.entries(sourceHistory).map(([id,b])=>[id,b.developments.map(({feedUrl,...d})=>{
+    const correction=bindingCorrections[d.id];
+    if(correction){for(const key of ['source','url'])assert.equal(d[key],correction.after[key]);assert.equal(feedUrl,correction.after.feedUrl);return {...d,source:correction.before.source,url:correction.before.url};}
+    return d;
+  })]));
   // Independently calculated from the removed developments in commit 4c3f649.
   assert.equal(createHash('sha256').update(JSON.stringify(original)).digest('hex'),'6354228f47a0b0c625353ebcf89c0a8fca612da9b71fc2e2bf40f5019989dba8');
   validateSourceHistory(feed);

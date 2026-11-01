@@ -1,3 +1,4 @@
+import {validateHistoricalBriefs} from './theme-historical-source-bindings.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -18,7 +19,7 @@ test('new supplier and risk-disclosure evidence fails closed for missing, unrevi
  validateBriefs(feed);
  for(const id of[1039,1040])for(const mode of['missing','unreviewed','wrong-url']){
   const bad=structuredClone(feed);bad.items=bad.items.flatMap(i=>i.digestItemId!==id?[i]:mode==='missing'?[]:[{...i,reviewed:mode==='unreviewed'?false:i.reviewed,url:mode==='wrong-url'?'https://example.com/unreviewed':i.url,themes:[]}]);
-  assert.throws(()=>validateBriefs(bad,briefs),new RegExp('source '+id));
+  assert.throws(()=>validateHistoricalBriefs(bad,briefs),new RegExp('source '+id));
  }
 });
 test('triage closes current evidence while retaining distinct event dates and the aged robotics brief',()=>{
