@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {briefs} from './theme-pre-reader-briefs.mjs';
+import {briefs as currentBriefs} from '../scripts/theme-current.mjs';
 import {reviewedIds} from '../scripts/theme-reviewed-inventory.mjs';
 import {oct21Revision,beforeOct21,beforeOct22} from './theme-name-history.mjs';
 import {audioEntry,narration} from '../scripts/brief-audio.mjs';
@@ -29,9 +30,10 @@ test('chip comparison distinguishes trial access from optimization and preserves
  assert.match(b.meaning,/Our inference/);assert.match(b.watch,/equivalent models and quality/);
  assert.match(b.timelineIntro,/not a head-to-head/);
  validateBriefs(feed);
- assert.deepEqual(new Set(related(feed,b.id).map(i=>i.digestItemId)),new Set([1001,1004]));
+ // Current coverage also includes the audited acquisition and competition inquiry.
+ assert.deepEqual(new Set(related(feed,b.id).map(i=>i.digestItemId)),new Set([709,1001,1004,1046]));
  // The stable brief remains available after age rules remove its homepage card.
- assert.equal(briefingCards(feed).includes('data-theme="chip-switching"'),lifecycle(b,asOf(feed)).status==='active');
+ assert.equal(briefingCards(feed).includes('data-theme="chip-switching"'),lifecycle(currentBriefs.find(x=>x.id===b.id),asOf(feed)).status==='active');
  const html=renderThemes(home,feed);assert.ok(html.includes('href="'+b.developments[0].primaryUrl+'"'));
  for(const url of ['javascript:alert(1)','http://example.com','https://user:pass@example.com']){
   const bad=structuredClone(briefs);bad.find(b=>b.id==='chip-switching').developments[0].primaryUrl=url;

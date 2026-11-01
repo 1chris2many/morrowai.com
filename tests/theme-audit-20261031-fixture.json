@@ -1,0 +1,478 @@
+{
+  "changes": {
+    "chip-switching": {
+      "before": {
+        "id": "chip-switching",
+        "label": "AI chip competition",
+        "title": "Rival AI chips are getting easier to try, if not yet easier to run",
+        "reviewedAt": "2026-10-21",
+        "author": "Codex and Persephone",
+        "accent": "blue",
+        "teaser": "Many AI development tools are tuned for Nvidia’s chips, so testing an alternative can mean rewriting code. Google and Amazon are now removing that first hurdle, which gives buyers a real alternative to compare, even though a full move stays hard.",
+        "summary": "Nvidia’s hold on AI rests partly on software: developers’ tools are built around its chips, so trying another supplier has been a project in itself. Google and Amazon, which design their own AI chips, are attacking that by supporting PyTorch, a framework many AI developers already use. This story follows whether easier testing turns into real competition. Google’s new backend promises minimal code changes, while an Amazon case study shows how much engineering a real workload can still need.",
+        "meaning": "A cheaper chip means little if evaluating it takes a major project. Familiar tools lower that first cost, so a buyer can test a rival’s offer without replacing its whole workflow. Our inference is that this gives buyers bargaining power before it moves much actual work, since a credible alternative is useful even if it is never fully adopted. The supplier that makes real trials easiest could gain an edge. Compatibility alone still cannot show which chip delivers more for the money.",
+        "watch": "Watch the engineering hours needed for a realistic trial, performance under real traffic, and the work of running it afterward. Compare equivalent models and quality before crediting any chip with a win.",
+        "visualTitle": "How another supplier becomes a real option",
+        "visual": [
+          [
+            "Keep familiar tools",
+            "Starting a trial takes less work"
+          ],
+          [
+            "Test the real workload",
+            "Performance and integration costs come into view"
+          ],
+          [
+            "Gain a credible choice",
+            "Compare offers before committing to a move"
+          ]
+        ],
+        "timelineIntro": "Two sources from the same day show the two halves of this story: the promise, and the work that remains. Neither is a head-to-head chip comparison.",
+        "developments": [
+          {
+            "date": "2026-10-20",
+            "id": 1001,
+            "title": "Google brings PyTorch directly to its chips",
+            "text": "Google released a native PyTorch backend for its TPUs, the AI chips it designs, and says existing work can move with minimal code changes.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+            "primaryUrl": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
+            "relation": "Directly checked Google announcement establishes a familiar developer interface as a route to testing another hardware supplier.",
+            "why": "The promise: a familiar tool makes another chip supplier easy to test."
+          },
+          {
+            "date": "2026-10-20",
+            "id": 1004,
+            "title": "An Amazon chip case shows the remaining engineering",
+            "text": "AWS and its partner i14 describe running a custom model on Trainium2, Amazon’s AI chip, using PyTorch. The work still required changes to low-level code, and a simple test hid delays that appeared under changing traffic.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+            "relation": "A distinct native-PyTorch implementation demonstrates why framework compatibility and useful workload performance are separate tests.",
+            "why": "The reality check: getting a model to run and getting it to run well are separate tests."
+          }
+        ]
+      },
+      "after": {
+        "id": "chip-switching",
+        "label": "AI chip competition",
+        "title": "Rival AI chips are getting easier to try, if not yet easier to run",
+        "reviewedAt": "2026-10-31",
+        "author": "Codex and Persephone",
+        "accent": "blue",
+        "teaser": "Many AI development tools are tuned for Nvidia’s chips, so testing an alternative can mean rewriting code. Google and Amazon are now removing that first hurdle, which gives buyers a real alternative to compare, even though a full move stays hard.",
+        "summary": "Nvidia’s hold on AI rests partly on software: developers’ tools are built around its chips, so trying another supplier has been a project in itself. Google and Amazon are lowering that hurdle with native support for PyTorch, a framework many developers already use. Nvidia’s pending purchase of model-sharing platform Hugging Face puts that same developer workflow at the center of a reported competition inquiry. Easier trials could give buyers more choice, but an Amazon case study shows how much engineering a real workload can still need.",
+        "meaning": "A cheaper chip means little if evaluating it takes a major project. Familiar tools lower that first cost, so a buyer can test a rival’s offer without replacing its whole workflow. Our inference is that this gives buyers bargaining power before it moves much actual work, since a credible alternative is useful even if it is never fully adopted. The supplier that makes real trials easiest could gain an edge. Compatibility alone still cannot show which chip delivers more for the money.",
+        "watch": "Watch the engineering hours needed for a realistic trial, performance under real traffic, and the work of running it afterward. Compare equivalent models and quality before crediting any chip with a win. Also watch Nvidia’s pending $12.9 billion purchase of Hugging Face and whether developers keep equally practical access to rival hardware. Reported Justice Department inquiries are not a finding that competition has been harmed.",
+        "visualTitle": "How another supplier becomes a real option",
+        "visual": [
+          [
+            "Keep familiar tools",
+            "Starting a trial takes less work"
+          ],
+          [
+            "Test the real workload",
+            "Performance and integration costs come into view"
+          ],
+          [
+            "Gain a credible choice",
+            "Compare offers before committing to a move"
+          ]
+        ],
+        "timelineIntro": "Native PyTorch tools make rival chips easier to try, while Nvidia’s pending Hugging Face purchase puts control of the developer workflow under scrutiny. Neither compatibility nor an acquisition announcement establishes a performance advantage.",
+        "developments": [
+          {
+            "id": 1046,
+            "date": "2026-10-28",
+            "title": "DOJ reportedly asks about the Hugging Face deal",
+            "text": "The Verge, citing Reuters, reports Justice Department inquiries about Nvidia’s proposed acquisition and its effect on competition. The report does not establish an antitrust violation or a decision to block the deal.",
+            "source": "The Verge, citing Reuters",
+            "url": "https://www.theverge.com/tech/1021355/the-doj-is-reportedly-looking-into-nvidias-hugging-face-acquisition",
+            "relation": "The reported competition inquiry directly tests whether software compatibility is enough when ownership of the developer platform changes.",
+            "why": "The question is whether rival chips retain a practical route to developers as Nvidia expands into their model-sharing workflow."
+          },
+          {
+            "date": "2026-10-20",
+            "id": 1001,
+            "title": "Google and Amazon give PyTorch native routes to rival chips",
+            "text": "Google released TorchTPU, a native PyTorch backend for its TPUs, and says existing work can move with minimal code changes. AWS launched the TorchNeuron public beta for its Trainium chips on October 20. Both target the cost of trying another chip; neither announcement proves a cheaper completed workload.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+            "primaryUrl": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
+            "relation": "Directly checked Google announcement establishes a familiar developer interface as a route to testing another hardware supplier.",
+            "why": "Familiar tools lower the cost of a trial, while the real workload still decides whether switching pays."
+          },
+          {
+            "date": "2026-10-20",
+            "id": 1004,
+            "title": "An Amazon chip case shows the remaining engineering",
+            "text": "AWS and its partner i14 describe running a custom model on Trainium2, Amazon’s AI chip, using PyTorch. The work still required changes to low-level code, and a simple test hid delays that appeared under changing traffic.",
+            "source": "AWS",
+            "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+            "relation": "A distinct native-PyTorch implementation demonstrates why framework compatibility and useful workload performance are separate tests.",
+            "why": "The reality check: getting a model to run and getting it to run well are separate tests."
+          },
+          {
+            "id": 709,
+            "date": "2026-09-03",
+            "title": "Nvidia agrees to buy Hugging Face",
+            "text": "Nvidia announced an agreement to buy Hugging Face for about $12.9 billion. It says the model-sharing platform will stay open and support multiple clouds and chip suppliers. Those are commitments about a pending deal, not evidence of its eventual effects.",
+            "source": "Nvidia",
+            "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+            "relation": "The primary acquisition announcement concerns control of the developer workflow, the same switching cost this briefing examines.",
+            "why": "The acquisition reaches developers before they choose hardware; keeping the platform useful to rivals is part of the competitive test."
+          }
+        ]
+      }
+    },
+    "robot-transfer": {
+      "before": {
+        "id": "robot-transfer",
+        "label": "Robotics",
+        "title": "Robots are starting to work in unfamiliar homes, and people still have to rescue them",
+        "reviewedAt": "2026-10-20",
+        "author": "Codex and Persephone",
+        "accent": "mint",
+        "teaser": "Robots have needed long, specific training for each place and body. New results show skills transferring to homes and machines they never trained on. As setup gets easier, the cost that matters shifts to the human time spent fixing failures.",
+        "summary": "Preparing a robot for a new home or a different body can require substantial training. Two recent results suggest skills can now transfer. Figure, a humanoid robot company, reports 56% full-task success in 30 unfamiliar homes, and Dream Labs reports controlling two-armed robots it had not trained on. This story tracks whether transfer turns into useful work, and how much human help it still takes.",
+        "meaning": "Training a robot for every location makes expansion expensive before any useful work begins, so transfer could make far more deployments worth trying. Our inference is that the burden then moves to supervision. A robot that starts quickly and needs frequent rescuing can still consume a lot of human time. The measure that matters commercially is finished work, with the cost of that help included.",
+        "watch": "Watch task completion in unfamiliar settings, human interventions per hour and recovery time. Compare like tasks on like hardware. Dream-1’s hourly API price covers the model only, leaving out the robot, supervision and repairs.",
+        "visualTitle": "Where the work moves as setup gets easier",
+        "visual": [
+          [
+            "Transfer a skill",
+            "Less retraining for each new setting"
+          ],
+          [
+            "Try more jobs",
+            "Real environments expose the remaining failures"
+          ],
+          [
+            "Measure the rescue work",
+            "Count supervision and recovery in the cost"
+          ]
+        ],
+        "timelineIntro": "These are two different tests, one of new places and one of new robot bodies, so their results cannot be ranked against each other.",
+        "metric": {
+          "value": "56%",
+          "label": "Reported full-task success",
+          "context": "Figure’s test of three behaviors across 30 homes the robots had not seen. The tasks were trained elsewhere, and any safety intervention counted as a failure.",
+          "sourceId": 814
+        },
+        "developments": [
+          {
+            "date": "2026-10-20",
+            "dateKind": "source-review",
+            "id": 997,
+            "title": "Dream Labs tests skills across robot bodies",
+            "text": "Its Dream-1 release describes controlling unseen two-armed robots without robot-specific demonstrations. Performance varies, and Dream Labs calls it a research beta.",
+            "source": "Dream Labs",
+            "url": "https://dreamlabs.ai/research/dream-1/",
+            "relation": "Source-reviewed cross-robot transfer evidence joins Figure's environment-transfer results without equating their tasks or evaluation methods.",
+            "why": "Adds the second kind of transfer: from one machine to another."
+          },
+          {
+            "date": "2026-09-17",
+            "id": 814,
+            "title": "Figure tests three chores in 30 unfamiliar homes",
+            "text": "Figure reports 56% full-task success for tidying, towel folding and bed making in homes and with objects its robots had not seen. Any safety intervention failed the trial.",
+            "source": "Figure",
+            "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
+            "relation": "Original September evidence establishes the distinction between transfer to a new environment and reliable completion, now connected to cross-robot transfer.",
+            "why": "Shows transfer to new places, and how often a task still fails."
+          }
+        ]
+      },
+      "after": {
+        "id": "robot-transfer",
+        "label": "Robotics",
+        "title": "Robot skills can transfer to unfamiliar settings. Reliability still needs work.",
+        "reviewedAt": "2026-10-20",
+        "author": "Codex and Persephone",
+        "accent": "mint",
+        "teaser": "Robots have needed long, specific training for each place and body. New results show skills transferring to homes and machines they never trained on. As setup gets easier, the cost that matters shifts to the human time spent fixing failures.",
+        "summary": "Preparing a robot for a new home or a different body can require substantial training. Two recent results suggest skills can now transfer. Figure, a humanoid robot company, reports 56% full-task success in 30 unfamiliar homes, and Dream Labs reports controlling two-armed robots it had not trained on. This story tracks whether transfer turns into useful work, and how much human help it still takes.",
+        "meaning": "Training a robot for every location makes expansion expensive before any useful work begins, so transfer could make far more deployments worth trying. Our inference is that the burden then moves to supervision. A robot that starts quickly and needs frequent rescuing can still consume a lot of human time. The measure that matters commercially is finished work, with the cost of that help included.",
+        "watch": "Watch task completion in unfamiliar settings, human interventions per hour and recovery time. Compare like tasks on like hardware. Dream-1’s hourly API price covers the model only, leaving out the robot, supervision and repairs.",
+        "visualTitle": "Where the work moves as setup gets easier",
+        "visual": [
+          [
+            "Transfer a skill",
+            "Less retraining for each new setting"
+          ],
+          [
+            "Try more jobs",
+            "Real environments expose the remaining failures"
+          ],
+          [
+            "Measure the rescue work",
+            "Count supervision and recovery in the cost"
+          ]
+        ],
+        "timelineIntro": "These are two different tests, one of new places and one of new robot bodies, so their results cannot be ranked against each other.",
+        "metric": {
+          "value": "56%",
+          "label": "Reported full-task success",
+          "context": "Figure’s test of three behaviors across 30 homes the robots had not seen. The tasks were trained elsewhere, and any safety intervention counted as a failure.",
+          "sourceId": 814
+        },
+        "developments": [
+          {
+            "date": "2026-10-20",
+            "dateKind": "source-review",
+            "id": 997,
+            "title": "Dream Labs tests skills across robot bodies",
+            "text": "Its Dream-1 release describes controlling unseen two-armed robots without robot-specific demonstrations. Performance varies, and Dream Labs calls it a research beta.",
+            "source": "Dream Labs",
+            "url": "https://dreamlabs.ai/research/dream-1/",
+            "relation": "Source-reviewed cross-robot transfer evidence joins Figure's environment-transfer results without equating their tasks or evaluation methods.",
+            "why": "Adds the second kind of transfer: from one machine to another."
+          },
+          {
+            "date": "2026-09-17",
+            "id": 814,
+            "title": "Figure tests three chores in 30 unfamiliar homes",
+            "text": "Figure reports 56% full-task success for tidying, towel folding and bed making in homes and with objects its robots had not seen. Any safety intervention failed the trial.",
+            "source": "Figure",
+            "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
+            "relation": "Original September evidence establishes the distinction between transfer to a new environment and reliable completion, now connected to cross-robot transfer.",
+            "why": "Shows transfer to new places, and how often a task still fails."
+          }
+        ]
+      }
+    },
+    "ai-market-leadership": {
+      "before": {
+        "id": "ai-market-leadership",
+        "label": "AI competition",
+        "title": "AI customers can move work quickly. The computing bills last for years.",
+        "reviewedAt": "2026-10-31",
+        "author": "Codex and Persephone",
+        "accent": "gold",
+        "teaser": "Businesses are shifting work between AI providers such as OpenAI and Anthropic, sometimes without cancelling anything. Those providers have signed long contracts for computing power, so their revenue can move faster than their costs. Recent funding reports suggest investors are asking harder questions.",
+        "summary": "AI companies such as OpenAI and Anthropic spend heavily on computing power, often under contracts that run for years. Their customers are far less tied down. Data from Ramp, a corporate-card company, shows more businesses changing AI providers, and a customer can move a task to a rival without closing its account. This story tracks that gap: revenue that can shift quickly against bills that last for years. Reported trouble raising money at OpenAI and a cautious credit forecast for Anthropic suggest investors are now asking how the gap gets paid for.",
+        "meaning": "This is the risk hiding behind headline growth numbers. Total AI use can keep rising while one provider loses its most valuable work, so adoption says little about any single company’s health. The danger is a squeeze. A provider committed to years of computing costs needs steady revenue, and usage-based pricing exposes reduced consumption sooner than an account cancellation. Prepaid credits and minimum-spend commitments can delay the effect on cash receipts. Falling prices make it tighter, because customers can use more AI without paying much more. If raising money also gets harder, a provider has less time to win that work back. In the optimistic case, useful products keep customers in place and revenue grows enough to cover the bills. In the pessimistic case, work keeps moving while prices fall, leaving fixed bills and thinner income. The transaction samples show spending shifting while adoption or use grows; the financing reports add evidence of investor caution. They do not measure every provider’s workload retention.",
+        "watch": "Three measures would settle this: how much paid work providers keep, whether they generate cash after paying for computing power, and how much money OpenAI actually closes, on what terms. Anthropic’s actual credit rating, once agencies issue one, will test Blackstone’s forecast.",
+        "visualTitle": "Why revenue can move faster than the bills",
+        "visual": [
+          [
+            "A customer moves a task",
+            "The next job goes to a rival while the account stays open"
+          ],
+          [
+            "Usage revenue follows",
+            "Metered charges reflect less use; prepaid commitments can delay the cash effect"
+          ],
+          [
+            "The computing bill stays",
+            "Contracts signed for years keep running"
+          ]
+        ],
+        "timelineIntro": "The story starts with customers, moves to how they are billed, and ends with the investors who fund the bills.",
+        "metric": {
+          "value": "54.1% → 52.2%",
+          "label": "Claude’s share of AI spending in one UK sample",
+          "context": "Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue.",
+          "sourceId": 986
+        },
+        "developments": [
+          {
+            "id": 1063,
+            "date": "2026-10-30",
+            "title": "OpenAI’s fundraising reportedly falls short",
+            "text": "The Wall Street Journal reports commitments of about $11 billion against an initial $30 billion goal. OpenAI is reportedly now aiming for $20 billion and is still raising.",
+            "source": "1news, citing The Wall Street Journal",
+            "url": "https://1news.az/en/news/20261031090508564-OpenAI-fails-to-raise-targeted-30-billion-ahead-of-IPO",
+            "relation": "Funding commitments and valuation terms determine the financial room available while providers try to retain shifting workloads.",
+            "why": "Less outside money means less time to win back work or cover commitments."
+          },
+          {
+            "id": 1064,
+            "date": "2026-10-30",
+            "title": "Blackstone reportedly expects junk-grade credit for Anthropic",
+            "text": "The Financial Times reports that the investment firm Blackstone expects Anthropic to receive a speculative-grade rating, often called junk, after its IPO. This is an investor’s forecast, and no rating agency has acted.",
+            "source": "TechCrunch, citing Financial Times; corroborated by MT Newswires",
+            "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+            "relation": "The reported credit expectation connects the duration of compute obligations with the financing available to support them.",
+            "why": "Borrowing to pay for computing power would likely cost more, turning the gap into a financing problem."
+          },
+          {
+            "date": "2026-10-26",
+            "id": 1028,
+            "title": "Anthropic’s IPO filing puts the bills on the record",
+            "text": "Anthropic’s public filing to list on Nasdaq reports $16.3 billion in first-half revenue and major multiyear commitments for computing power. Most of its $80.7 billion first-half net loss came from accounting charges tied to its financing.",
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+            "relation": "Adds the duration of supplier obligations to the existing evidence on customers moving daily work.",
+            "why": "The cost side of the story: bills fixed for years while customers can move."
+          },
+          {
+            "date": "2026-10-18",
+            "id": 988,
+            "title": "Claude Enterprise bills usage separately",
+            "text": "Anthropic’s current Enterprise terms pair an annual access fee with metered usage at standard API rates. Older arrangements move to this structure at renewal.",
+            "source": "Anthropic Help Center",
+            "url": "https://support.claude.com/en/articles/11526368-how-am-i-billed-for-my-enterprise-plan",
+            "relation": "Personally reviewed Enterprise billing terms explain the proposed link between workload retention and variable revenue.",
+            "why": "This is how work can leave before the customer does: the account stays while the usage fees go."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 974,
+            "title": "Replit makes OpenAI its default",
+            "text": "Replit, a coding platform, made OpenAI its default model provider. Customers can still choose Anthropic’s Claude.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+            "relation": "The clarified source records a change in preferred provider rather than a complete loss of access to Claude.",
+            "why": "A platform’s choice of default can redirect future work without any customer closing an account."
+          },
+          {
+            "date": "2026-10-14",
+            "id": 987,
+            "title": "Businesses use more AI without paying much more",
+            "text": "Ramp’s October index shows AI usage, measured in tokens (the units AI is billed by), rising in August and September while spending on it barely grew. Its economist credits lower prices and efficiency.",
+            "source": "Ramp",
+            "url": "https://ramp.com/data/ai-index-oct-2026",
+            "relation": "The observed gap between volume and spending separates overall AI activity from provider monetization.",
+            "why": "Even work a provider keeps can bring in less money per task, which tightens the squeeze."
+          },
+          {
+            "date": "2026-10-12",
+            "id": 986,
+            "title": "UK small businesses use more AI and shift their spending",
+            "text": "Among cardholders of Capital on Tap, a UK business-card company, AI adoption rose from 12.8% to 14.5% between Q2 and Q3. Claude’s share of their AI spending slipped from 54.1% to 52.2%, while ChatGPT’s rose from 27.3% to 32.4%.",
+            "source": "Capital on Tap",
+            "url": "https://www.capitalontap.com/en/blog/posts/spend-trends-on-tap-q3-2026/",
+            "relation": "A separate transaction dataset shows expanding adoption alongside a redistribution of provider spending share.",
+            "why": "Adoption and a single provider’s position can move in opposite directions."
+          },
+          {
+            "date": "2026-10-06",
+            "id": 985,
+            "title": "More businesses change AI providers",
+            "text": "Ramp says its monthly measure of businesses switching AI providers averaged 8% over the three months to September, the highest it has recorded. The figure covers the businesses Ramp observes, not the whole market.",
+            "source": "Ramp",
+            "url": "https://ramp.com/data/businesses-are-changing-ai-model-providers-more-often",
+            "relation": "Directly reviewed switching data supports the theme’s focus on the durability of provider loyalty.",
+            "why": "The first sign of the pattern: winning a customer no longer guarantees keeping its spending."
+          }
+        ]
+      },
+      "after": {
+        "id": "ai-market-leadership",
+        "label": "AI competition",
+        "title": "AI customers can move work quickly. The computing bills last for years.",
+        "reviewedAt": "2026-10-31",
+        "author": "Codex and Persephone",
+        "accent": "gold",
+        "teaser": "Businesses are shifting work between AI providers such as OpenAI and Anthropic, sometimes without cancelling anything. Those providers have signed long contracts for computing power, so their revenue can move faster than their costs. Recent funding reports suggest investors are asking harder questions.",
+        "summary": "AI companies such as OpenAI and Anthropic spend heavily on computing power, often under contracts that run for years. Their customers are far less tied down. Data from Ramp, a corporate-card company, shows more businesses changing AI providers, and a customer can move a task to a rival without closing its account. This story tracks that gap: revenue that can shift quickly against bills that last for years. Reported trouble raising money at OpenAI and a cautious credit forecast for Anthropic suggest investors are now asking how the gap gets paid for.",
+        "meaning": "This is the risk hiding behind headline growth numbers. Total AI use can keep rising while one provider loses its most valuable work, so adoption says little about any single company’s health. The danger is a squeeze. A provider committed to years of computing costs needs steady revenue, and usage-based pricing exposes reduced consumption sooner than an account cancellation. Prepaid credits and minimum-spend commitments can delay the effect on cash receipts. Falling prices make it tighter, because customers can use more AI without paying much more. If raising money also gets harder, a provider has less time to win that work back. In the optimistic case, useful products keep customers in place and revenue grows enough to cover the bills. In the pessimistic case, work keeps moving while prices fall, leaving fixed bills and thinner income. The transaction samples show spending shifting while adoption or use grows; the financing reports add evidence of investor caution. They do not measure every provider’s workload retention.",
+        "watch": "Three measures would settle this: how much paid work providers keep, whether they generate cash after paying for computing power, and how much money OpenAI actually closes, on what terms. Anthropic’s actual credit rating, once agencies issue one, will test Blackstone’s forecast.",
+        "visualTitle": "Why revenue can move faster than the bills",
+        "visual": [
+          [
+            "A customer moves a task",
+            "The next job goes to a rival while the account stays open"
+          ],
+          [
+            "Usage revenue follows",
+            "Metered charges reflect less use; prepaid commitments can delay the cash effect"
+          ],
+          [
+            "The computing bill stays",
+            "Contracts signed for years keep running"
+          ]
+        ],
+        "timelineIntro": "The story starts with customers, moves to how they are billed, and ends with the investors who fund the bills.",
+        "metric": {
+          "value": "54.1% to 52.2%",
+          "label": "Claude’s share of AI spending in one UK sample",
+          "context": "Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue.",
+          "sourceId": 986
+        },
+        "developments": [
+          {
+            "id": 1063,
+            "date": "2026-10-30",
+            "title": "OpenAI’s fundraising reportedly falls short",
+            "text": "The Wall Street Journal reports commitments of about $11 billion against an initial $30 billion goal. OpenAI is reportedly now aiming for $20 billion and is still raising.",
+            "source": "1news, citing The Wall Street Journal",
+            "url": "https://1news.az/en/news/20261031090508564-OpenAI-fails-to-raise-targeted-30-billion-ahead-of-IPO",
+            "relation": "Funding commitments and valuation terms determine the financial room available while providers try to retain shifting workloads.",
+            "why": "Less outside money means less time to win back work or cover commitments."
+          },
+          {
+            "id": 1064,
+            "date": "2026-10-30",
+            "title": "Blackstone reportedly expects junk-grade credit for Anthropic",
+            "text": "The Financial Times reports that the investment firm Blackstone expects Anthropic to receive a speculative-grade rating, often called junk, after its IPO. This is an investor’s forecast, and no rating agency has acted.",
+            "source": "TechCrunch, citing Financial Times; corroborated by MT Newswires",
+            "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+            "relation": "The reported credit expectation connects the duration of compute obligations with the financing available to support them.",
+            "why": "Borrowing to pay for computing power would likely cost more, turning the gap into a financing problem."
+          },
+          {
+            "date": "2026-10-26",
+            "id": 1028,
+            "title": "Anthropic’s IPO filing puts the bills on the record",
+            "text": "Anthropic’s public filing to list on Nasdaq reports $16.3 billion in first-half revenue and major multiyear commitments for computing power. Most of its $80.7 billion first-half net loss came from accounting charges tied to its financing.",
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+            "relation": "Adds the duration of supplier obligations to the existing evidence on customers moving daily work.",
+            "why": "The cost side of the story: bills fixed for years while customers can move."
+          },
+          {
+            "date": "2026-10-18",
+            "id": 988,
+            "title": "Claude Enterprise bills usage separately",
+            "text": "Anthropic’s current Enterprise terms pair an annual access fee with metered usage at standard API rates. Older arrangements move to this structure at renewal.",
+            "source": "Anthropic Help Center",
+            "url": "https://support.claude.com/en/articles/11526368-how-am-i-billed-for-my-enterprise-plan",
+            "relation": "Personally reviewed Enterprise billing terms explain the proposed link between workload retention and variable revenue.",
+            "why": "This is how work can leave before the customer does: the account stays while the usage fees go."
+          },
+          {
+            "date": "2026-10-17",
+            "id": 974,
+            "title": "Replit makes OpenAI its default",
+            "text": "Replit, a coding platform, made OpenAI its default model provider. Customers can still choose Anthropic’s Claude.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+            "relation": "The clarified source records a change in preferred provider rather than a complete loss of access to Claude.",
+            "why": "A platform’s choice of default can redirect future work without any customer closing an account."
+          },
+          {
+            "date": "2026-10-14",
+            "id": 987,
+            "title": "Businesses use more AI without paying much more",
+            "text": "Ramp’s October index shows AI usage, measured in tokens (the units AI is billed by), rising in August and September while spending on it barely grew. Its economist credits lower prices and efficiency.",
+            "source": "Ramp",
+            "url": "https://ramp.com/data/ai-index-oct-2026",
+            "relation": "The observed gap between volume and spending separates overall AI activity from provider monetization.",
+            "why": "Even work a provider keeps can bring in less money per task, which tightens the squeeze."
+          },
+          {
+            "date": "2026-10-12",
+            "id": 986,
+            "title": "UK small businesses use more AI and shift their spending",
+            "text": "Among cardholders of Capital on Tap, a UK business-card company, AI adoption rose from 12.8% to 14.5% between Q2 and Q3. Claude’s share of their AI spending slipped from 54.1% to 52.2%, while ChatGPT’s rose from 27.3% to 32.4%.",
+            "source": "Capital on Tap",
+            "url": "https://www.capitalontap.com/en/blog/posts/spend-trends-on-tap-q3-2026/",
+            "relation": "A separate transaction dataset shows expanding adoption alongside a redistribution of provider spending share.",
+            "why": "Adoption and a single provider’s position can move in opposite directions."
+          },
+          {
+            "date": "2026-10-06",
+            "id": 985,
+            "title": "More businesses change AI providers",
+            "text": "Ramp says its monthly measure of businesses switching AI providers averaged 8% over the three months to September, the highest it has recorded. The figure covers the businesses Ramp observes, not the whole market.",
+            "source": "Ramp",
+            "url": "https://ramp.com/data/businesses-are-changing-ai-model-providers-more-often",
+            "relation": "Directly reviewed switching data supports the theme’s focus on the durability of provider loyalty.",
+            "why": "The first sign of the pattern: winning a customer no longer guarantees keeping its spending."
+          }
+        ]
+      }
+    }
+  }
+}

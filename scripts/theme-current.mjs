@@ -1,17 +1,16 @@
-// Source pages reviewed by Codex; evidence review dates belong to each briefing.
-// October 31 reader-context corrections preserve those dates and source provenance.
+// Exact reviewed October31 changes, integrated November1 when matching recordings were available.
 export const briefs = [
   {
     "id": "chip-switching",
     "label": "AI chip competition",
     "title": "Rival AI chips are getting easier to try, if not yet easier to run",
-    "reviewedAt": "2026-10-21",
+    "reviewedAt": "2026-10-31",
     "author": "Codex and Persephone",
     "accent": "blue",
     "teaser": "Many AI development tools are tuned for Nvidia’s chips, so testing an alternative can mean rewriting code. Google and Amazon are now removing that first hurdle, which gives buyers a real alternative to compare, even though a full move stays hard.",
-    "summary": "Nvidia’s hold on AI rests partly on software: developers’ tools are built around its chips, so trying another supplier has been a project in itself. Google and Amazon, which design their own AI chips, are attacking that by supporting PyTorch, a framework many AI developers already use. This story follows whether easier testing turns into real competition. Google’s new backend promises minimal code changes, while an Amazon case study shows how much engineering a real workload can still need.",
+    "summary": "Nvidia’s hold on AI rests partly on software: developers’ tools are built around its chips, so trying another supplier has been a project in itself. Google and Amazon are lowering that hurdle with native support for PyTorch, a framework many developers already use. Nvidia’s pending purchase of model-sharing platform Hugging Face puts that same developer workflow at the center of a reported competition inquiry. Easier trials could give buyers more choice, but an Amazon case study shows how much engineering a real workload can still need.",
     "meaning": "A cheaper chip means little if evaluating it takes a major project. Familiar tools lower that first cost, so a buyer can test a rival’s offer without replacing its whole workflow. Our inference is that this gives buyers bargaining power before it moves much actual work, since a credible alternative is useful even if it is never fully adopted. The supplier that makes real trials easiest could gain an edge. Compatibility alone still cannot show which chip delivers more for the money.",
-    "watch": "Watch the engineering hours needed for a realistic trial, performance under real traffic, and the work of running it afterward. Compare equivalent models and quality before crediting any chip with a win.",
+    "watch": "Watch the engineering hours needed for a realistic trial, performance under real traffic, and the work of running it afterward. Compare equivalent models and quality before crediting any chip with a win. Also watch Nvidia’s pending $12.9 billion purchase of Hugging Face and whether developers keep equally practical access to rival hardware. Reported Justice Department inquiries are not a finding that competition has been harmed.",
     "visualTitle": "How another supplier becomes a real option",
     "visual": [
       [
@@ -27,18 +26,28 @@ export const briefs = [
         "Compare offers before committing to a move"
       ]
     ],
-    "timelineIntro": "Two sources from the same day show the two halves of this story: the promise, and the work that remains. Neither is a head-to-head chip comparison.",
+    "timelineIntro": "Native PyTorch tools make rival chips easier to try, while Nvidia’s pending Hugging Face purchase puts control of the developer workflow under scrutiny. Neither compatibility nor an acquisition announcement establishes a performance advantage.",
     "developments": [
+      {
+        "id": 1046,
+        "date": "2026-10-28",
+        "title": "DOJ reportedly asks about the Hugging Face deal",
+        "text": "The Verge, citing Reuters, reports Justice Department inquiries about Nvidia’s proposed acquisition and its effect on competition. The report does not establish an antitrust violation or a decision to block the deal.",
+        "source": "The Verge, citing Reuters",
+        "url": "https://www.theverge.com/tech/1021355/the-doj-is-reportedly-looking-into-nvidias-hugging-face-acquisition",
+        "relation": "The reported competition inquiry directly tests whether software compatibility is enough when ownership of the developer platform changes.",
+        "why": "The question is whether rival chips retain a practical route to developers as Nvidia expands into their model-sharing workflow."
+      },
       {
         "date": "2026-10-20",
         "id": 1001,
-        "title": "Google brings PyTorch directly to its chips",
-        "text": "Google released a native PyTorch backend for its TPUs, the AI chips it designs, and says existing work can move with minimal code changes.",
+        "title": "Google and Amazon give PyTorch native routes to rival chips",
+        "text": "Google released TorchTPU, a native PyTorch backend for its TPUs, and says existing work can move with minimal code changes. AWS launched the TorchNeuron public beta for its Trainium chips on October 20. Both target the cost of trying another chip; neither announcement proves a cheaper completed workload.",
         "source": "TechCrunch",
         "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
         "primaryUrl": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
         "relation": "Directly checked Google announcement establishes a familiar developer interface as a route to testing another hardware supplier.",
-        "why": "The promise: a familiar tool makes another chip supplier easy to test."
+        "why": "Familiar tools lower the cost of a trial, while the real workload still decides whether switching pays."
       },
       {
         "date": "2026-10-20",
@@ -49,13 +58,23 @@ export const briefs = [
         "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
         "relation": "A distinct native-PyTorch implementation demonstrates why framework compatibility and useful workload performance are separate tests.",
         "why": "The reality check: getting a model to run and getting it to run well are separate tests."
+      },
+      {
+        "id": 709,
+        "date": "2026-09-03",
+        "title": "Nvidia agrees to buy Hugging Face",
+        "text": "Nvidia announced an agreement to buy Hugging Face for about $12.9 billion. It says the model-sharing platform will stay open and support multiple clouds and chip suppliers. Those are commitments about a pending deal, not evidence of its eventual effects.",
+        "source": "Nvidia",
+        "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+        "relation": "The primary acquisition announcement concerns control of the developer workflow, the same switching cost this briefing examines.",
+        "why": "The acquisition reaches developers before they choose hardware; keeping the platform useful to rivals is part of the competitive test."
       }
     ]
   },
   {
     "id": "robot-transfer",
     "label": "Robotics",
-    "title": "Robots are starting to work in unfamiliar homes, and people still have to rescue them",
+    "title": "Robot skills can transfer to unfamiliar settings. Reliability still needs work.",
     "reviewedAt": "2026-10-20",
     "author": "Codex and Persephone",
     "accent": "mint",
@@ -137,7 +156,7 @@ export const briefs = [
     ],
     "timelineIntro": "The story starts with customers, moves to how they are billed, and ends with the investors who fund the bills.",
     "metric": {
-      "value": "54.1% → 52.2%",
+      "value": "54.1% to 52.2%",
       "label": "Claude’s share of AI spending in one UK sample",
       "context": "Q2 to Q3 2026, among Capital on Tap business cardholders. AI adoption in that sample rose from 12.8% to 14.5%; direct payments exclude invoiced contracts. Spending share is not companywide revenue.",
       "sourceId": 986

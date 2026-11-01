@@ -3,28 +3,20 @@
   "engine": "eleven-v4-rachel-v1",
   "briefs": {
     "chip-switching": {
-      "hash": "4e70179440b591d28655597f25bb823b8ae07eeea5f03193ef7c95c0ca2ba5a7",
-      "src": "audio/briefs/chip-switching-4e70179440b591d2.m4a",
-      "duration": 200.017,
-      "bytes": 3373810,
-      "sha256": "16bcd13e56f807d37773cd11b3b308fea31192c536a3f87b78e75e9c1e15b5d8",
-      "transcriptSha256": "e0b9b300aa2f9d834d12eddfe8e662bc8522390e9e260ff80a5362446feacaaf"
+      "hash": "71edb4fc51f654352586c456671b9fdd2be19f94181225a8f68fcf5f0e443d8d",
+      "src": "audio/briefs/chip-switching-71edb4fc51f65435.m4a",
+      "duration": 302.928,
+      "bytes": 5138991,
+      "sha256": "b8d7ad540d92155ec5e1900e6e7d3fc33c303abd7c3b33511b6d35f9370543b5",
+      "transcriptSha256": "20c7f2aad1bb0b078aaad1fc875cd4a4c0546dd8b5efd1a5bfcef1353ad34eea"
     },
     "robot-transfer": {
-      "hash": "b63b1b918150104e87e25f45e52882c0e352de0d21f0a8641d137cdcd2368c4f",
-      "src": "audio/briefs/robot-transfer-b63b1b918150104e.m4a",
-      "duration": 202.804,
-      "bytes": 3440094,
-      "sha256": "491772d835222e084638d96a2a71298672e645744ca6135307f225bf0dc3dae6",
-      "transcriptSha256": "416442d1376c3bec9726b00dabd721b6a9290d11bfa6221286f54df5e3a75ff2"
-    },
-    "ai-market-leadership": {
-      "hash": "e0d14dddec8e324a67ad650d6a16cd47c8396088df55bfa8c592c38754072058",
-      "src": "audio/briefs/ai-market-leadership-e0d14dddec8e324a.m4a",
-      "duration": 501.18,
-      "bytes": 8487831,
-      "sha256": "b328025176039dc2a587158dcd24fa8392b57c5bfe2c09ea793033f10e035339",
-      "transcriptSha256": "42665f481adb01a5f1b758ba3b981812ae497de89a30acb8b59d31ff8b6782d3"
+      "hash": "f0572e93d061b373575d8326ec733097e3c392fb682a1aa51218b7f1576bd2c3",
+      "src": "audio/briefs/robot-transfer-f0572e93d061b373.m4a",
+      "duration": 197.37,
+      "bytes": 3337770,
+      "sha256": "a4d5a31e831ebd57ff633f0eb21847321bf167c7b5290c227fdef61bf7e2b947",
+      "transcriptSha256": "acc2aa0624280856a490dc2d349e55f37e988b7932f053e10bdfdd0b72a24fa0"
     },
     "ai-science": {
       "hash": "4672a772ba8f2c562c9fb6d08484bae01dba4a02d8833fd7e2e538576e7a88bb",
@@ -89,6 +81,14 @@
       "bytes": 4569423,
       "sha256": "e1f88c48ff79539e2e31da816123d90fca3b88a809664e7eae90e09fba45d671",
       "transcriptSha256": "03602eacb0b1b81bfb3ce1d493fadd478610453db7dbe1ee1a7ba5b4bf774e17"
+    },
+    "ai-market-leadership": {
+      "hash": "1fe7b9e8cb4a5689498f647052eb7f76f47891f42c28fa1407e9578883cd509c",
+      "src": "audio/briefs/ai-market-leadership-1fe7b9e8cb4a5689.m4a",
+      "duration": 484.926,
+      "bytes": 8203884,
+      "sha256": "11e0aecd49a19c9ac3e943d44595338d5b49aa9cfa01c57ecc83a24b93631e49",
+      "transcriptSha256": "df1d5a890996cded8c6a076b67516e9c0740891feb6a0281a7c2d2a6824a879f"
     }
   }
 }

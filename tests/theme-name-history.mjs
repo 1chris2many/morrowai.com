@@ -1,6 +1,9 @@
 import {readFileSync} from 'node:fs';
+export const auditRevision=JSON.parse(readFileSync(new URL('./theme-audit-20261031-fixture.json',import.meta.url)));
+// Restore only an exact independently reviewed replacement; unexpected edits must still fail.
+export function beforeAuditRevision(value){const c=value&&auditRevision.changes[value.id];return c&&JSON.stringify(value)===JSON.stringify(c.after)?c.before:value;}
 export const readerRevision=JSON.parse(readFileSync(new URL('./theme-reader-20261031-fixture.json',import.meta.url)));
-export function beforeReaderRewrite(value){const c=value&&readerRevision.changes[value.id];return c&&JSON.stringify(value)===JSON.stringify(c.after)?c.before:value;}
+export function beforeReaderRewrite(value){value=beforeAuditRevision(value);const c=value&&readerRevision.changes[value.id];return c&&JSON.stringify(value)===JSON.stringify(c.after)?c.before:value;}
 export const oct31Revision=JSON.parse(readFileSync(new URL('./theme-oct31-fixture.json',import.meta.url)));
 export function beforeOct31(value){value=beforeReaderRewrite(value);const c=value&&oct31Revision.changes[value.id];return c&&JSON.stringify(value)===JSON.stringify(c.after)?c.before:value;}
 export const oct30Revision=JSON.parse(readFileSync(new URL('./theme-oct30-fixture.json',import.meta.url)));
