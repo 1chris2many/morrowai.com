@@ -440,3 +440,16 @@ test('Financing brief preserves author396 exact text, attribution and sources', 
         } finally { await context.close(); }
     }
 });
+
+test('all public pages expose the same five primary navigation destinations', async () => {
+    const page = await browser.newPage({viewport:{width:390,height:844}});
+    try {
+        for (const file of ['index.html','news.html','themes.html','perspectives.html','three-windows-ai-safety.html','two-financing-paths.html','closed-by-declaration.html','the-view-from-inside-the-declaration.html']) {
+            await page.goto(base + file);
+            const expected=['AI Digest','Developing stories','Perspectives','Team','Work with Chris'];
+            const labels=await page.locator('nav[aria-label="Main navigation"] a').allTextContents();
+            assert.deepEqual(labels.map(x=>x.trim()).filter(x=>expected.includes(x)),expected,file);
+            assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),file);
+        }
+    } finally {await page.close();}
+});
