@@ -1,18 +1,100 @@
 {
   "version": 1,
-  "digestDate": "2026-11-01",
+  "digestDate": "2026-11-02",
   "latestSavedDigest": "2026-11-02",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 4,
+    "sourceCount": 2,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 11,
+  "pending": 7,
   "items": [
+    {
+      "digestItemId": 1077,
+      "digestDate": "2026-11-02",
+      "title": "Apple CEO John Ternus says Apple doesn’t want to ‘ship AI for AI’s sake’",
+      "summary": "In an interview with Wired’s Steven Levy, reported by TechCrunch, Apple CEO John Ternus defended the company’s position in AI, saying “I really like where we’re at.”",
+      "whyItMatters": "The harder question is the one Levy pressed: agents that complete tasks could reduce the role of apps. In the excerpts TechCrunch published, Ternus answered with a view of how products get made, not a plan for that shift.",
+      "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-02-apple-ceo-john-ternus-defends-company-s-measured-ai-approach",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1074,
+      "digestDate": "2026-11-02",
+      "title": "DOJ charges five in ‘ghost student’ crackdown, saying fraudsters use AI to fake coursework",
+      "summary": "The Justice Department announced charges against five people on October 29 in the first results of Operation Ghostbusters, a nationwide investigation into student aid obtained with stolen identities. The cases, in New Jersey, Virginia and Nebraska, allege about $2.9 million in combined intended losses, and officials said fraudsters use AI to complete coursework and make fake students appear present in online classes. Across the wider investigation, the department identified 830,840 potentially fraudulent federal student aid IDs tied to nearly $130 million, the FBI cited more than $32 million in losses in similar schemes, and estimates put the overall fraud well over $200 million.",
+      "whyItMatters": "Attendance is supposed to show a student is real; officials say AI can now fake it semester after semester, which keeps a stolen identity paying. The Education Department’s answer moves the check to live ID verification at application, shifting follow-up work onto colleges and the risk of delay onto applicants without ready ID.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-02-doj-charges-five-in-ai-enabled-ghost-student-financial-aid-fraud-scheme",
+      "editorialNote": "Announced October 29, 2026. Charges are allegations; DOJ says defendants are presumed innocent."
+    },
+    {
+      "digestItemId": 1076,
+      "digestDate": "2026-11-02",
+      "title": "DoorDash CEO says outside AI agents have produced only several hundred orders",
+      "summary": "DoorDash co-founder and CEO Tony Xu said on the company’s October 29 earnings call that third-party AI agents have generated “several hundred orders” since they started running; DoorDash handled nearly 1 billion orders in the third quarter alone. Xu said simple tasks like ordering food tend to come directly to DoorDash, though he sees potential for agents in long-consideration purchases. The company’s Model Context Protocol connector had launched less than a month earlier, is limited to a small number of early beta partners, and the count excludes DoorDash’s own AI tools.",
+      "whyItMatters": "The count says little yet about consumer demand, because the standardized route for outside agents had been open for weeks to a few partners, mainly for corporate lunches. The sharper signal is where DoorDash is steering the behavior: it reports Ask DoorDash orders average nearly 50% higher basket value than the same customers’ usual orders, and those run inside its own service. Outside assistants will likely have to meet the test Xu described and bring incremental orders.",
+      "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-02-doordash-ceo-says-third-party-ai-agents-generated-only-hundreds-of-orders",
+      "editorialNote": "Earnings call held October 29, 2026."
+    },
+    {
+      "digestItemId": 1073,
+      "digestDate": "2026-11-02",
+      "title": "OpenAI to merge ChatGPT’s Chat and Work tabs, starting with select users",
+      "summary": "OpenAI told users it will merge the Chat and Work tabs in the ChatGPT desktop app, first for select users giving feedback before a wider rollout. Its email says people will be able to move from exploring an idea to having ChatGPT carry it through, using files and plugins to build a website, create a presentation or do tasks on the web while reviewing the work. Codex stays a separate experience, but ChatGPT and Codex will draw tokens from the same allowance.",
+      "whyItMatters": "The merge removes a choice about where work belongs and adds one about how to spend a shared limit: after the change, a long ChatGPT task and a Codex session draw on the same tokens. OpenAI says most users won’t be affected, while some may wait for resets more often depending on usage and model. TechCrunch’s report gives no allowance figures, so the effect on people who rely on both can’t be sized yet.",
+      "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-02-openai-merges-chatgpt-s-chat-and-work-tabs-into-one-interface",
+      "editorialNote": ""
+    },
     {
       "digestItemId": 1071,
       "digestDate": "2026-11-01",
@@ -6575,8 +6657,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-01 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-02T15:00:47.070Z",
-  "contentHash": "9c333a120c8d498da8ca2254a4477dfa7ff25ca32751f8e20537b1b3f457e572"
+  "publicationStatus": "partial",
+  "notice": "2026-11-02 · 4 stories · More stories to follow",
+  "publishedAt": "2026-11-02T17:29:06.263Z",
+  "contentHash": "9fee43dde32d0c23a3042a4716606df263cbe4f72d2a0c525b0a595f0bc23448"
 }
