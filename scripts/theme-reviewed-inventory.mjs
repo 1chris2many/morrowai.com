@@ -122,3 +122,7 @@ reviewedIds.push(958,961,963,965,967,971,972,973,976,977,978,979,982,983,995,996
 // an editorial candidate. 1068/1071 remain standalone. Existing briefing copy,
 // evidence dates and narration stay unchanged; source1069 remains held.
 reviewedIds.push(1067,1068,1070,1071,1072);
+
+// November2: Persephone source dispositions, Codex final review. No briefing change.
+// 1073 links agent economics; 1074/1076/1077 standalone.1075 remains source-held privately.
+reviewedIds.push(1073,1074,1076,1077);
