@@ -65,7 +65,12 @@
         "Hardware",
         "AI costs"
       ],
-      "themes": [],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-01-boom-supersonic-s-data-center-power-pivot-falters-alongside-its-airliner-timeline",
@@ -84,7 +89,12 @@
       "tags": [
         "Policy"
       ],
-      "themes": [],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-01-finland-opens-criminal-probe-into-google-data-center-over-suspected-environmental-violations",
@@ -103,7 +113,12 @@
       "tags": [
         "Policy"
       ],
-      "themes": [],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-01-judge-rejects-xai-s-bid-to-dismiss-naacp-air-pollution-lawsuit-over-memphis-data-center",
@@ -3028,7 +3043,7 @@
       "digestItemId": 934,
       "digestDate": "2026-10-07",
       "title": "Report: National Compute plans $100 million in research credits",
-      "summary": "National Compute plans to donate $100 million in computing credits to the U.S. administration's Genesis Mission, Politico reports, citing two people familiar with the matter. An announcement is expected October 8; the credits would support AI-assisted scientific research.",
+      "summary": "National Compute planned to donate $100 million in computing credits to the U.S. administration's Genesis Mission, Politico reported, citing two people familiar with the matter. The White House's October 8 fact sheet listed $2.4 billion in pledges from eleven industry partners and did not name National Compute.",
       "whyItMatters": "Compute credits can let a research group attempt an experiment it could not justify buying capacity for upfront. A shared pool could also make smaller, intermittent projects easier to serve than negotiating a separate long contract for each lab. The proposed donation's scientific value therefore depends on usable access and continuity: a successful pilot that loses affordable capacity when its credits expire may never become a sustained research program.",
       "url": "https://www.politico.com/news/2026/10/07/trump-compute-credits-ai-science-initiative-01109749",
       "source": "Politico — October 7, 2026",
@@ -6319,7 +6334,7 @@
       "linkKind": "article",
       "newsletters": [],
       "title": "Analyst examines Nvidia’s revenue-per-gigawatt outlook",
-      "summary": "Beth Kindig of Tech Insider Network argues that Nvidia’s revenue expectations per gigawatt of AI infrastructure deserve attention alongside its chip sales. Her analysis considers record quarterly revenue and competition from large cloud providers’ own chip designs.",
+      "summary": "Beth Kindig of Tech Insider Network argues that Nvidia’s revenue expectations per gigawatt of AI infrastructure deserve attention alongside its chip sales. Her analysis considers Nvidia's $96.2 billion quarter and competition from large cloud providers’ own chip designs.",
       "whyItMatters": "Revenue per gigawatt asks how much Nvidia can earn from the power customers manage to secure. That can reveal growth that chip-market share alone misses if each site buys a more valuable bundle of computing equipment. But it also separates Nvidia's opportunity from its customers' economics: more supplier revenue per unit of power helps the buyer only if the system produces enough additional useful work to justify the expense.",
       "tags": [
         "Hardware",
@@ -6562,6 +6577,6 @@
   ],
   "publicationStatus": "partial",
   "notice": "2026-11-01 · 5 stories · More stories to follow",
-  "publishedAt": "2026-11-01T16:17:51.227Z",
-  "contentHash": "785edf80ec54b0c78ccdbe1d16891ded1f846e120a72f72e3aa35772731df4eb"
+  "publishedAt": "2026-11-02T00:05:11.872Z",
+  "contentHash": "b73606d96fef9912680890d31019558579209852bc754f3f5902c96576615b7c"
 }
