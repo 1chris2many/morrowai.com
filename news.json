@@ -1,7 +1,7 @@
 {
   "version": 1,
   "digestDate": "2026-11-01",
-  "latestSavedDigest": "2026-11-01",
+  "latestSavedDigest": "2026-11-02",
   "fresh": false,
   "coverage": {
     "count": 0,
@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": false
   },
-  "pending": 6,
+  "pending": 11,
   "items": [
     {
       "digestItemId": 1071,
@@ -6577,6 +6577,6 @@
   ],
   "publicationStatus": "delayed",
   "notice": "2026-11-01 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-02T08:00:45.959Z",
-  "contentHash": "c584a185c742eec2d676919180724a1a6f573d510a3c15e1f68b8ed139fc3b3d"
+  "publishedAt": "2026-11-02T15:00:47.070Z",
+  "contentHash": "9c333a120c8d498da8ca2254a4477dfa7ff25ca32751f8e20537b1b3f457e572"
 }
