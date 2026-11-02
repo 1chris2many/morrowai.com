@@ -117,3 +117,8 @@ reviewedIds.push(1052,1053,1054,1055,1056,1057);
 reviewedIds.push(1058,1059,1060,1061,1062,1063,1064,1065,1066);
 // October31 reader rewrite: timelines cut to stories that advance each theme; removed items stay in the news archive.
 reviewedIds.push(958,961,963,965,967,971,972,973,976,977,978,979,982,983,995,996,1004,1006,1009,1010,1014,1015,1039,1055,1056);
+// November1: Persephone source dispositions, independently checked by Codex.
+// 1067/1070/1072 link related infrastructure coverage; the permit pattern remains
+// an editorial candidate. 1068/1071 remain standalone. Existing briefing copy,
+// evidence dates and narration stay unchanged; source1069 remains held.
+reviewedIds.push(1067,1068,1070,1071,1072);
