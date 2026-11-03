@@ -126,3 +126,10 @@ reviewedIds.push(1067,1068,1070,1071,1072);
 // November2: Persephone source dispositions, Codex final review. No briefing change.
 // 1073 links agent economics; 1074/1076/1077 standalone.1075 remains source-held privately.
 reviewedIds.push(1073,1074,1076,1077);
+
+// November3: Persephone revised source review, independently checked by Codex.
+// Apple1078 and Georgia1081 add related infrastructure context, not new evidence
+// about the current four-buyers financing thesis.1079 concerns R&D measurement,
+// not the existing retention/privacy conflict.1080/1082 concern copyright and
+// usage-policy boundaries; no new synthesis or review-date advance is warranted.
+reviewedIds.push(1078,1079,1080,1081,1082);
