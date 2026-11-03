@@ -1,18 +1,127 @@
 {
   "version": 1,
-  "digestDate": "2026-11-02",
-  "latestSavedDigest": "2026-11-02",
-  "fresh": false,
+  "digestDate": "2026-11-03",
+  "latestSavedDigest": "2026-11-03",
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 7,
   "items": [
+    {
+      "digestItemId": 1079,
+      "digestDate": "2026-11-03",
+      "title": "Anthropic’s amended IPO filing says it may soon reach its own AI-accelerated-progress threshold",
+      "summary": "In an amended S-1/A filed Monday, November 2, Anthropic added risk-factor language saying internal estimates and expectations about future models indicate it “may imminently meet” its Responsible Scaling Policy threshold for “dramatically accelerated progress attributable to AI.” The company says it has not designated any current model as exceeding that threshold, that it continues to assess the data, and that it has previously failed to identify significant accelerations until after they occurred.",
+      "whyItMatters": "The filing names a measurement problem: Anthropic says it has recognized past accelerations late, so research could speed up before the company detects it or completes the matching safeguards. Anthropic says it is considering changes to its policy to keep humans in control of frontier development; those changes are under consideration, not adopted. The threshold claim is the company’s own estimate in a securities filing, not an independent finding.",
+      "editorialNote": "Filing amended November 2, 2026.",
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-03-anthropic-s-amended-ipo-filing-says-it-may-soon-reach-its-own-ai-accelerated-progress-threshold"
+    },
+    {
+      "digestItemId": 1078,
+      "digestDate": "2026-11-03",
+      "title": "Apple sells AI access without matching rivals’ capital spending",
+      "summary": "Apple reported record fiscal-year revenue and earnings per share on Monday, November 2, for the year ended September 26. September-quarter iPhone revenue rose 17.5% to $57.6 billion and Mac revenue rose 24% to $10.8 billion. Apple’s quarterly capital spending was $2.2 billion, against Amazon’s $77.3 billion and Alphabet’s $51.4 billion for the September quarter; all three are companywide figures, not AI-only spending.",
+      "whyItMatters": "Apple runs some AI on devices customers buy, uses models built with Google’s Gemini technology for Siri AI, and keeps its own capital spending low. Server-side requests still cost Apple money, booked in services cost of sales, and that cost can grow with usage. Apple plans usage limits on server-side features, with paid expanded access later, so heavier use can become subscription revenue.",
+      "editorialNote": "Results announced November 2, 2026; fiscal quarter ended September 26.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-03-apple-sells-ai-access-without-matching-rivals-capital-spending"
+    },
+    {
+      "digestItemId": 1082,
+      "digestDate": "2026-11-03",
+      "title": "Claude Code on Opus 5.5 gained a late-October rule against recreating specific existing games",
+      "summary": "On October 30, Anthropic engineer Addy Osmani said the company had added two sentences to Claude Code’s prompt on Opus 5.5, adding that original games, genre games and games built from users’ own designs and assets are meant to keep working. Ars Technica and The Verge reported the change November 2.",
+      "whyItMatters": "AI coding tools have cut much of the labor that once limited game porting and copying; Ars ties that to decomp.dev’s shutdown and to developers hesitating to show early demos. Ars argues one provider’s rule may do little across the market if copiers switch to other models. The rule also risks mistaken refusals where the model misjudges where a genre ends and a copy begins.",
+      "editorialNote": "Change confirmed October 30, 2026; reported November 2.",
+      "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-03-claude-code-on-opus-5-5-gained-a-late-october-rule-against-recreating-specific-existing-games"
+    },
+    {
+      "digestItemId": 1081,
+      "digestDate": "2026-11-03",
+      "title": "OpenAI launches a national grid-flexibility program, piloting it at a planned Georgia campus",
+      "summary": "OpenAI on Monday, November 2, announced a “Grid Protectors Program” and named its planned campus in Effingham County, Georgia, as the pilot. The Georgia site builds on a 25-year agreement announced July 22 that lets Georgia Power reduce power delivered to the projected 3,200-megawatt campus by up to 1,000 megawatts at certain times. Under the Georgia agreement, OpenAI pays for the project’s infrastructure and electric-service costs.",
+      "whyItMatters": "Grids are built for peak demand, so a large customer that contractually allows cuts at peaks can reduce how much new generation a utility must plan for; Georgia Power says so directly. That flexibility does not remove the need for new generation and transmission, and savings stay prospective until the campus operates. Georgia’s terms already exist; arrangements at OpenAI’s other future campuses are still to be negotiated.",
+      "editorialNote": "Program announced November 2, 2026; Georgia agreement announced July 22.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-03-openai-launches-a-national-grid-flexibility-program-piloting-it-at-a-planned-georgia-campus"
+    },
+    {
+      "digestItemId": 1080,
+      "digestDate": "2026-11-03",
+      "title": "Publishers sue Brave, alleging it sells scraped news to AI companies",
+      "summary": "The New York Times sued Brave Software on Monday, November 2, in federal court in Manhattan, alleging Brave built a 30-billion-page index with an unidentified crawler and sold access to AI companies including Anthropic, Perplexity, Mistral, xAI and Cohere for training and for answering user queries. The New York Daily News, Chicago Tribune and Orlando Sentinel filed a parallel suit the same day; the complaints also target a Brave browser feature that bypasses paywalls. Perplexity’s communications chief disputed the suit to The Verge; Brave and the other named companies did not immediately comment.",
+      "whyItMatters": "Earlier publisher suits went after AI developers directly; these target a supplier that allegedly sells them web access. If index suppliers end up paying for licenses, those costs could reach the AI companies that buy from them.",
+      "editorialNote": "Complaints filed November 2, 2026.",
+      "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-03-publishers-sue-brave-alleging-it-sells-scraped-news-to-ai-companies"
+    },
     {
       "digestItemId": 1077,
       "digestDate": "2026-11-02",
@@ -6657,8 +6766,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-02 · 4 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-03T08:00:49.663Z",
-  "contentHash": "946691ea9312822d0ae1734a4b470fbaa29d082dab2c90b035eb1b3acbb91d9a"
+  "publicationStatus": "current",
+  "notice": "2026-11-03 · 5 stories",
+  "publishedAt": "2026-11-03T16:26:19.935Z",
+  "contentHash": "2b221e26857dc341ec84b83d94633b052833a7e62ab1c88c7b475386fb4f9097"
 }
