@@ -2,16 +2,16 @@
   "version": 1,
   "digestDate": "2026-11-04",
   "latestSavedDigest": "2026-11-04",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 6,
-    "sourceCount": 3,
+    "count": 7,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": true
   },
-  "pending": 8,
+  "pending": 7,
   "items": [
     {
       "digestItemId": 1087,
@@ -92,6 +92,29 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-04-google-s-ai-search-boost-isn-t-translating-into-faster-ad-revenue-growth",
       "editorialNote": "Earnings reported October 28, 2026; November 4 reporting adds the Search monetization analysis."
+    },
+    {
+      "digestItemId": 1089,
+      "digestDate": "2026-11-04",
+      "title": "Lambda proposes a $33.1 billion AI campus in Lowndes County, Alabama",
+      "summary": "Lambda says it plans to be the end user of the Red Clay Technology Center campus in Lowndes County, Alabama, a site first announced by developer Cloverleaf, with an estimated investment of $33.1 billion. Construction is expected to begin in the first quarter of 2027 and run up to five years. Alabama Power would supply the site, pending regulatory approval.",
+      "whyItMatters": "Capacity on this scale is a multi-year bet: the dollar figure is a projection, the power is not yet approved, and construction is expected to begin in Q1 2027. Projects like this are where long-term compute commitments eventually have to land.",
+      "url": "https://lambda.ai/blog/lambda-to-invest-33-billion-in-alabama-with-new-data-center",
+      "source": "Lambda announcement, November 4",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-04-lambda-proposes-a-33-1-billion-ai-campus-in-lowndes-county-alabama"
     },
     {
       "digestItemId": 1088,
@@ -6886,8 +6909,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "2026-11-04 · 6 stories · More stories to follow",
-  "publishedAt": "2026-11-05T00:30:55.719Z",
-  "contentHash": "41a51c88c7fd0542a73e1e52f678beda14f3c8bfa912a32b9b76ffd5681bbbff"
+  "publicationStatus": "current",
+  "notice": "2026-11-04 · 7 stories",
+  "publishedAt": "2026-11-05T00:37:38.020Z",
+  "contentHash": "2353aa52d5e54e6b72e4ef0dc543c2e3b808edf2088bc88da0666f3cb8855ff1"
 }
