@@ -1,18 +1,115 @@
 {
   "version": 1,
-  "digestDate": "2026-11-04",
+  "digestDate": "2026-11-08",
   "latestSavedDigest": "2026-11-08",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 24,
+  "pending": 20,
   "items": [
+    {
+      "digestItemId": 1103,
+      "digestDate": "2026-11-08",
+      "title": "Memo alleges spying on Nvidia’s CEO",
+      "summary": "Reports allege China recruited a technology executive; Nvidia described the contacts as ordinary.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+      "source": "TechCrunch (citing The New York Times and Financial Times)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-08-us-intelligence-memo-alleges-chinese-effort-to-recruit-executive-close-to-nvidia-s-ceo",
+      "editorialNote": "Reported 2026-11-07."
+    },
+    {
+      "digestItemId": 1105,
+      "digestDate": "2026-11-08",
+      "title": "Meta pauses terms linking Facebook business pages to AI-training access",
+      "summary": "Meta indefinitely delayed rules requiring businesses to allow AI training on linked websites after court and regulatory scrutiny. Meta says existing terms and crawling preferences still apply.",
+      "whyItMatters": "Bundling data access with a service publishers already depend on could make licensing payments avoidable. Challenging that bundle before implementation attacks the acquisition strategy itself, rather than seeking compensation after scraping; the pause does not establish which pressure persuaded Meta.",
+      "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-08-meta-indefinitely-delays-commercial-terms-update-that-would-have-required-ai-training-access",
+      "editorialNote": "Reported 2026-11-06."
+    },
+    {
+      "digestItemId": 1104,
+      "digestDate": "2026-11-08",
+      "title": "METR finds Anthropic's benchmark progress running about twice its pre-October-2025 pace",
+      "summary": "METR's November 5 assessment, after an 11-week high-access engagement at Anthropic, estimates that Anthropic's models are improving on well-specified tasks at about twice their March 2024–October 2025 rate, within a plausible range of 1.3x to 3x. METR guesses that roughly 80% of the current acceleration is due to AI. Anthropic held unilateral redaction rights and, METR says, redacted most of the evidence METR found most informative.",
+      "whyItMatters": "If AI is doing more of the work of building the next model, progress could compound, because each generation shortens the wait for the next. The outside check on that loop here had mediated access and could publish only what the company released, so the public is relying on METR's judgment more than METR itself says is ideal.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+      "source": "The Verge (citing a METR report)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-08-metr-report-finds-anthropic-s-ai-models-are-accelerating-their-own-development-twice-as-fast-as-a-year-ago",
+      "editorialNote": "METR assessment published November 5, 2026; news report November 7."
+    },
+    {
+      "digestItemId": 1107,
+      "digestDate": "2026-11-08",
+      "title": "Prosecutors charge three in alleged $129 million AI impersonation scheme",
+      "summary": "Federal prosecutors in Manhattan charged three foreign nationals with using AI-cloned voices and images of company executives and lawyers to induce wire transfers. They allege more than $129 million was taken from victims including two hospital systems and a bank. The charges are allegations.",
+      "whyItMatters": "The alleged handoff from a fake executive to a fake lawyer made two impersonations look like independent confirmation. That makes verification outside the incoming conversation valuable: checking a previously established contact separates authority to move money from how convincing a caller sounds.",
+      "url": "https://www.justice.gov/usao-sdny/pr/three-foreign-nationals-arrested-and-charged-scheme-use-super-intelligence-defraud",
+      "source": "U.S. Attorney's Office, Southern District of New York",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-08-prosecutors-charge-three-in-alleged-129-million-ai-impersonation-scheme",
+      "editorialNote": "Announced November 5, 2026; release updated November 6."
+    },
+    {
+      "digestItemId": 1106,
+      "digestDate": "2026-11-08",
+      "title": "TSMC reportedly weighs making advanced memory chips",
+      "summary": "TSMC is considering adding memory back into its portfolio, starting with next-generation 3D DRAM, according to The Information as relayed by The Verge. The move could put it in competition with Micron, Samsung and SK Hynix while memory demand outpaces supply. The report describes a consideration, not a funded build.",
+      "whyItMatters": "If TSMC eventually supplies both logic and memory, chip designers could coordinate more of an accelerator’s components with one manufacturer. That could strengthen its role in choosing how those components fit together, but considering a technology supplies no immediate relief from shortages.",
+      "url": "https://www.theverge.com/news/1029248/tsmc-is-apparently-considering-getting-into-the-ram-business-at-the-request-of-nvidia",
+      "source": "The Verge (citing The Information)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-08-tsmc-reportedly-considers-entering-the-memory-chip-market-at-nvidia-s-request",
+      "editorialNote": "Reported 2026-11-06."
+    },
     {
       "digestItemId": 1087,
       "digestDate": "2026-11-04",
@@ -6909,8 +7006,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-04 · 7 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-08T15:01:07.994Z",
-  "contentHash": "fbd043f4bd31be46cbaa8f6c455fb516a0b9aadb3bc60c96993d7972062d5917"
+  "publicationStatus": "current",
+  "notice": "2026-11-08 · 5 stories",
+  "publishedAt": "2026-11-08T17:21:58.229Z",
+  "contentHash": "f40744ce3ee3a164a3b4d36224372618fd8f1982d7690679aa9565e584d72e2d"
 }
