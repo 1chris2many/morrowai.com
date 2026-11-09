@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": true
   },
-  "pending": 20,
+  "pending": 19,
   "items": [
     {
       "digestItemId": 1103,
@@ -109,6 +109,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-08-tsmc-reportedly-considers-entering-the-memory-chip-market-at-nvidia-s-request",
       "editorialNote": "Reported 2026-11-06."
+    },
+    {
+      "digestItemId": 1096,
+      "digestDate": "2026-11-06",
+      "title": "Agility Robotics becomes the first humanoid robot maker to list in the US",
+      "summary": "Agility listed on Nasdaq on November 5, and its filings illustrate pricing for Digit 5, expected in 2027: about $25,000 to deploy plus $8,500 a month, or $200,000 to buy plus $20,000 deployment and $36,000 annually for software and maintenance. The company reported $1.8 million in 2025 revenue against a $140 million operating loss.",
+      "whyItMatters": "Agility's labor-savings case depends on productive work delivered across shifts, not just a robot's hourly price. The recurring software and maintenance bill means buying the hardware does not end the operating cost; the small revenue base leaves large-scale economics to be demonstrated.",
+      "url": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-06-agility-robotics-becomes-first-humanoid-robot-maker-to-go-public-on-nasdaq",
+      "editorialNote": "Reported November 5, 2026; retained in the November 6 edition."
     },
     {
       "digestItemId": 1087,
@@ -7008,6 +7028,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-11-08 · 5 stories",
-  "publishedAt": "2026-11-08T17:21:58.229Z",
-  "contentHash": "f40744ce3ee3a164a3b4d36224372618fd8f1982d7690679aa9565e584d72e2d"
+  "publishedAt": "2026-11-09T00:35:31.086Z",
+  "contentHash": "d3f6e03ed46b1dce089fc37ea062613736e19cd54d4e72986310dcc2d6989685"
 }
