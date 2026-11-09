@@ -1,18 +1,116 @@
 {
   "version": 1,
-  "digestDate": "2026-11-08",
+  "digestDate": "2026-11-09",
   "latestSavedDigest": "2026-11-09",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 24,
+  "pending": 18,
   "items": [
+    {
+      "digestItemId": 1108,
+      "digestDate": "2026-11-09",
+      "title": "AI borrowers face tighter scrutiny even with big-company guarantees",
+      "summary": "Reuters reports that some banks and credit investors have become reluctant to add AI debt exposure after the recent stock-market selloff, including deals supported by major technology companies. Lenders are examining cash flows, deadlines and customers’ rights to reduce or end commitments. Goldman Sachs Research forecasts $420 billion in global hyperscaler debt issuance in 2027, compared with its $250 billion estimate for fiscal 2026.",
+      "whyItMatters": "A recognizable guarantor helps only if the contract still delivers cash when a project is delayed or demand changes. Scrutiny of those terms could make financing harder just as borrowing needs grow: an infrastructure bottleneck can develop in lenders’ willingness to carry risk even while customers continue buying AI services.",
+      "url": "https://www.globalbankingandfinance.com/banks-investors-grow-wary-ai-debt-spooked-market-selloff/",
+      "source": "Reuters via Global Banking & Finance Review",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-09-banks-and-credit-investors-grow-wary-of-ai-debt-after-market-selloff",
+      "editorialNote": "Reported November 9, 2026. Debt-issuance figures are forecasts, not completed financing."
+    },
+    {
+      "digestItemId": 1111,
+      "digestDate": "2026-11-09",
+      "title": "Apple’s reported Siri roadmap moves from app control toward continuing goals",
+      "summary": "The Verge, citing Bloomberg’s Mark Gurman, reports that Apple is accelerating Siri’s agent roadmap. Fine-grained control of Apple apps is expected with iOS 27.3, followed by third-party app integration likely in spring. Gurman says Apple ultimately wants Siri to pursue ongoing goals and believes it could move in that direction as early as next year.",
+      "whyItMatters": "App control could let Siri complete a purchase or reservation instead of handing the user to another app. Pursuing a goal over time raises the bar further: the assistant must preserve the user’s intent across changing circumstances, so reliable execution and clear delegated authority become part of the product’s value.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+      "source": "The Verge (citing Bloomberg)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-09-apple-pushes-to-make-siri-a-more-agentic-ai-assistant-bloomberg-reports",
+      "editorialNote": "Reported November 8, 2026. Roadmap timing is attributed reporting and prediction, not an Apple release commitment."
+    },
+    {
+      "digestItemId": 1112,
+      "digestDate": "2026-11-09",
+      "title": "Elvis and Eminem rights holders add to Suno’s legal challenges",
+      "summary": "The Verge reports two new lawsuits against Suno by Elvis Presley rights holders and Eminem’s publisher over allegedly unauthorized music, lyrics and artist imitations. The Presley plaintiffs invoke Tennessee’s ELVIS Act; the complaint also includes copyright claims. Suno says it prohibits artist-name prompts and screens uploaded audio and lyrics, and will strengthen its safeguards.",
+      "whyItMatters": "The disputes reach both copyrighted works and the commercial use of an artist’s identity. Licensing music alone may therefore leave a separate permissions problem, while blocking an artist’s name in a prompt does not establish whether the resulting imitation is authorized. These are contested claims, not court findings.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-09-elvis-presley-and-eminem-rights-holders-sue-ai-music-generator-suno",
+      "editorialNote": "Reported November 8, 2026; the Presley complaint was filed November 6."
+    },
+    {
+      "digestItemId": 1110,
+      "digestDate": "2026-11-09",
+      "title": "Google adapts existing TPU chips for secure inference and larger contexts",
+      "summary": "Google announced two eighth-generation TPU system configurations on November 9. TPU 8tx uses the same silicon as TPU 8t with hardware protections for sensitive workloads; TPU 8i Max combines two TPU 8i chips in one package to increase compute, memory and bandwidth. Google distinguishes these systems from a newly designed generation of chips.",
+      "whyItMatters": "AI workloads can change faster than a new chip can be designed and manufactured. Google is using packaging, networking and security around existing silicon to reach new workloads sooner; the competitive test shifts toward how quickly a supplier can configure an entire usable system, as well as how fast its chips are.",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "source": "Google announcement",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-09-google-launches-two-new-tpu-variants-aimed-at-secure-and-long-context-ai-workloads",
+      "editorialNote": "Announcement November 9, 2026. General availability is not established by this report."
+    },
+    {
+      "digestItemId": 1109,
+      "digestDate": "2026-11-09",
+      "title": "Nvidia board opens independent inquiry into reported foreign-intelligence targeting",
+      "summary": "Nvidia’s board said on November 8 that independent directors and outside counsel will investigate reports that CEO Jensen Huang was targeted by a foreign intelligence effort. The board said it has no reason to believe national security or company secrets were compromised and retains confidence in Huang and his leadership team. Huang supports the inquiry and has committed to cooperate.",
+      "whyItMatters": "An outside-led review creates a way to assess possible information exposure while leadership stays in place. Continued board support settles who runs the company for now; it does not settle the security question that the investigation is intended to answer.",
+      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "source": "Nvidia board statement",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-09-nvidia-board-launches-independent-probe-into-ceo-jensen-huang-after-spy-allegations",
+      "editorialNote": "Statement November 8, 2026. This follows the earlier reported allegations; the board has not announced findings."
+    },
     {
       "digestItemId": 1103,
       "digestDate": "2026-11-08",
@@ -109,6 +207,25 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-08-tsmc-reportedly-considers-entering-the-memory-chip-market-at-nvidia-s-request",
       "editorialNote": "Reported 2026-11-06."
+    },
+    {
+      "digestItemId": 1100,
+      "digestDate": "2026-11-07",
+      "title": "Google acquires Crusoe's prepared Wyoming data-center site",
+      "summary": "Google announced a planned $17 billion investment in its first Wyoming data center on November 5. The next day, Crusoe said Google had acquired the site after its pre-development work on site selection, governmental approvals and power strategy. Google says the project includes a contracted 702-megawatt fuel-cell development with carbon capture and plans to use air cooling.",
+      "whyItMatters": "The transaction puts value on work completed before a data center operates. If site and power planning reduce the buyer’s development risk, a developer can sell that head start without owning the eventual computing business; the announcements do not quantify time saved.",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+      "source": "Crusoe and Google announcements",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-07-google-buys-crusoe-s-wyoming-data-center-site-a-day-after-announcing-17-billion-build-out",
+      "editorialNote": "Google announcement November 5; Crusoe announcement November 6. Original edition: November 7, 2026."
     },
     {
       "digestItemId": 1096,
@@ -7026,8 +7143,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-08 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-09T15:01:11.925Z",
-  "contentHash": "194f1c65f0f92aa037915bb8c6e126b1a816fbfb2f2ae78648d6293a4873f8e4"
+  "publicationStatus": "current",
+  "notice": "2026-11-09 · 5 stories",
+  "publishedAt": "2026-11-09T16:10:45.232Z",
+  "contentHash": "bbe213b57a0ea0fba9ee254c766e193620f4fd3844c50737f9899a27043fadfa"
 }
