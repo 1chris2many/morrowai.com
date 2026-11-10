@@ -1,18 +1,136 @@
 {
   "version": 1,
-  "digestDate": "2026-11-09",
+  "digestDate": "2026-11-10",
   "latestSavedDigest": "2026-11-10",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 6,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 21,
+  "pending": 18,
   "items": [
+    {
+      "digestItemId": 1114,
+      "digestDate": "2026-11-10",
+      "title": "Adobe previews agents that edit native Creative Cloud projects",
+      "summary": "Adobe previewed local MCP integrations for Photoshop, Illustrator, Premiere and After Effects that would let outside agents change native project files while keeping layers and sequences editable. A private beta is planned for early 2027; separate agents for recurring background work were also previewed, with no specific release date given.",
+      "whyItMatters": "Editable layers and sequences would let creators revise an agent’s individual decisions and continue the same project by hand. Adobe could support outside assistants while keeping its apps central to refining the work.",
+      "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-10-adobe-adds-agentic-ai-tools-across-creative-cloud-at-max-conference",
+      "editorialNote": "Reported November 10, 2026. Local MCP integration is a preview."
+    },
+    {
+      "digestItemId": 1118,
+      "digestDate": "2026-11-10",
+      "title": "Anthropic launches Fable 5.2 and Mythos 5.2 with lower token prices",
+      "summary": "Anthropic released Fable 5.2 across its platforms and major cloud providers, while direct Mythos 5.2 access remains limited to verified cybersecurity and life-sciences organizations. Anthropic lists base prices of $8 per million input tokens and $40 per million output tokens; optional fast mode costs twice as much on supported platforms.",
+      "whyItMatters": "Anthropic’s early FrontierCode testing put Fable 5.2 at High effort near Opus 5.5 at Max effort for roughly half the cost per task. A stronger model could therefore need less reasoning effort for comparable results, but customers still have to test that trade-off on their own work.",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source": "Anthropic",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-10-anthropic-launches-fable-5-2-and-mythos-5-2-with-lower-token-prices",
+      "editorialNote": "Released November 9, 2026. Benchmark claims are Anthropic’s; cost per task does not include human correction time."
+    },
+    {
+      "digestItemId": 1113,
+      "digestDate": "2026-11-10",
+      "title": "Anthropic proposes IPO shares at $70–$78",
+      "summary": "Anthropic launched its IPO roadshow on November 10, offering 825 million shares at an expected $70–$78 each. About 801.35 million are new shares sold by Anthropic; about 23.65 million come from existing holders, whose proceeds do not go to the company. The registration is not yet effective.",
+      "whyItMatters": "The headline offering size overstates the cash available to fund the company: at the midpoint, Anthropic’s own shares would raise about $59.3 billion before fees, versus $61.05 billion for the whole offer. Separating fresh capital from investor exits matters when judging how much an IPO can finance continued expansion.",
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "source": "Anthropic",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-10-anthropic-sets-ipo-price-range-at-70-78-targeting-up-to-1-404-trillion-valuation",
+      "editorialNote": "Proposed terms announced November 10, 2026. Calculations exclude fees and the underwriters’ additional-share option."
+    },
+    {
+      "digestItemId": 1117,
+      "digestDate": "2026-11-10",
+      "title": "AWS pledges $100 million in AI and cloud credits for health projects",
+      "summary": "AWS announced a five-year, $100 million commitment of AI and cloud technology on November 9 for organizations serving underserved communities. Support comes as AWS credits, valid for 12 months and extendable to 24, for projects from prototype through deployment.",
+      "whyItMatters": "Cloud credits can fund the first version of a health service while leaving its continuing operating costs unresolved. A clinic that builds a patient service with an award needs a way to pay for hosting after those credits expire. Sustained care therefore depends on a longer-term operating budget, even though the overall program runs for five years.",
+      "url": "https://www.aboutamazon.com/news/aws/aws-health-impact-initiative-100-million-ai-cloud",
+      "source": "Amazon / AWS",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-10-aws-pledges-100-million-in-ai-and-cloud-credits-for-health-projects",
+      "editorialNote": "Announced November 9, 2026."
+    },
+    {
+      "digestItemId": 1116,
+      "digestDate": "2026-11-10",
+      "title": "Nvidia plans investments in three Korean AI companies",
+      "summary": "Nvidia said on November 9 it plans to invest in Motif Technologies, robotics-model developer RLWRLD and enterprise-AI company Upstage. The announcement also named an investment in interconnect maker Point2, without disclosing amounts or closing dates.",
+      "whyItMatters": "Funding model and robotics developers could help Nvidia expand the workloads that need its hardware, while Point2 targets the data links required to run larger clusters. The company could benefit from both growing demand and fewer scaling constraints, but the announced investments carry no disclosed chip-purchase commitments.",
+      "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "source": "NVIDIA Blog",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-10-nvidia-plans-investments-in-three-korean-ai-companies",
+      "editorialNote": "Announced November 9, 2026."
+    },
+    {
+      "digestItemId": 1115,
+      "digestDate": "2026-11-10",
+      "title": "Researchers find credentials in public Claude Code permission files",
+      "summary": "Apiiro reports finding credentials in 1,122 public Claude Code settings files, but did not test whether they worked. Remembered shell approvals can preserve passwords or tokens that later reach GitHub with committed code. Anthropic’s Boris Cherny said the team was considering safeguards, including secret scanning.",
+      "whyItMatters": "A permission rule can become a second copy of a secret, outside its original storage. Preventing execution mistakes therefore leaves another task: controlling what the agent saves and what enters version history.",
+      "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-10-claude-code-settings-files-are-leaking-passwords-and-api-keys-on-public-github-repos",
+      "editorialNote": "Reported November 9, 2026; research published November 5 and updated November 8."
+    },
     {
       "digestItemId": 1108,
       "digestDate": "2026-11-09",
@@ -7143,8 +7261,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-09 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-10T15:01:14.786Z",
-  "contentHash": "58bef042d319a277e11612d7c0149731e4b8bab4894133aa0cc7266316d140c9"
+  "publicationStatus": "current",
+  "notice": "2026-11-10 · 6 stories",
+  "publishedAt": "2026-11-10T16:11:40.392Z",
+  "contentHash": "531934a40432d898ae17254b532a16d8f750bc726d38f2ae45377cd2f2e008c3"
 }
