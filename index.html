@@ -19,7 +19,7 @@
         <div><p class="kicker">Latest edition · <time datetime="2026-11-11">2026-11-11</time></p><h2 id="latest-heading">Latest stories</h2></div>
         <a href="https://usefulaiwerks.com/news.html">All stories →</a>
       </div>
-      <p class="meta" role="status">2026-11-11 · 4 stories · More stories to follow</p>
+      <p class="meta" role="status">2026-11-11 · 5 stories</p>
       <p><a href="https://usefulaiwerks.com/feed.xml">Follow with RSS →</a></p>
       <div class="latest-grid">
         <article class="lead-card" data-digest-item-id="1123">
@@ -42,6 +42,13 @@
           <p class="news-summary">TechCrunch reports that New York opened its frontier AI developer registration portal on November 10. The RAISE Act’s requirements take effect January 1, 2027: large frontier developers must publish and follow safety frameworks, and covered developers must report critical incidents within 72 hours of determining or reasonably believing one occurred.</p>
           <p class="news-why">Requiring developers to follow their published safety frameworks gives regulators a basis to challenge gaps between a lab’s stated safeguards and its actual conduct. Incident reports also move information beyond the lab, although confidential reporting means the public will see less detail than the regulator.</p>
           <p class="meta news-editorial-note">Legal timing and requirements checked against New York’s statute and implementation guidance.</p>
+        </article>
+        <article class="news-card" data-digest-item-id="1119">
+          <p class="meta">Interesting Engineering, reporting on OpenAI</p>
+          <h3><a href="https://usefulaiwerks.com/news.html#story-2026-11-11-openai-deploys-control-room-to-automatically-halt-unsafe-ai-research-workloads">OpenAI puts research-job stop controls in the model-serving layer</a></h3>
+          <p class="news-summary">OpenAI says Control Room can cut a research job off from further model output within 35 seconds after a stop instruction. The job’s code can keep running; enforcement happens in the inference engines. At announcement, automatic refusal during a Control Room outage covered frontier research, with the rest still rolling out.</p>
+          <p class="news-why">Stopping at the shared model-serving layer means a broken or altered experiment script cannot simply ignore the stop order. The trade-off is a central dependency: a Control Room outage also interrupts authorized research. Faster enforcement still depends on a monitor or person deciding that a job should stop.</p>
+          <p class="meta news-editorial-note">Announced November 9; published in the November 11 edition. The 35-second interval excludes detection and decision time.</p>
         </article>
         <article class="news-card" data-digest-item-id="1122">
           <p class="meta">Ars Technica</p>

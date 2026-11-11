@@ -2,16 +2,16 @@
   "version": 1,
   "digestDate": "2026-11-11",
   "latestSavedDigest": "2026-11-11",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 4,
-    "sourceCount": 2,
+    "count": 5,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 9,
+  "pending": 8,
   "items": [
     {
       "digestItemId": 1123,
@@ -70,6 +70,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-11-new-york-opens-registration-portal-as-its-raise-act-ai-safety-law-takes-effect",
       "editorialNote": "Legal timing and requirements checked against New York’s statute and implementation guidance."
+    },
+    {
+      "digestItemId": 1119,
+      "digestDate": "2026-11-11",
+      "title": "OpenAI puts research-job stop controls in the model-serving layer",
+      "summary": "OpenAI says Control Room can cut a research job off from further model output within 35 seconds after a stop instruction. The job’s code can keep running; enforcement happens in the inference engines. At announcement, automatic refusal during a Control Room outage covered frontier research, with the rest still rolling out.",
+      "whyItMatters": "Stopping at the shared model-serving layer means a broken or altered experiment script cannot simply ignore the stop order. The trade-off is a central dependency: a Control Room outage also interrupts authorized research. Faster enforcement still depends on a monitor or person deciding that a job should stop.",
+      "url": "https://interestingengineering.com/ai-robotics/openai-control-room-35-second-model-shutdown",
+      "source": "Interesting Engineering, reporting on OpenAI",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-11-openai-deploys-control-room-to-automatically-halt-unsafe-ai-research-workloads",
+      "editorialNote": "Announced November 9; published in the November 11 edition. The 35-second interval excludes detection and decision time."
     },
     {
       "digestItemId": 1122,
@@ -7530,8 +7550,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "2026-11-11 · 4 stories · More stories to follow",
-  "publishedAt": "2026-11-11T16:06:45.362Z",
-  "contentHash": "b6647ef732c7c8bd1b4b4a7e9bc819053aa4c125b52a8d08a701cdf94f0cb15a"
+  "publicationStatus": "current",
+  "notice": "2026-11-11 · 5 stories",
+  "publishedAt": "2026-11-11T16:33:48.743Z",
+  "contentHash": "5dc8c7fee3a3c9ed74a080685c0243700f3415bc4b5ebb138f6b03af2ec91982"
 }
