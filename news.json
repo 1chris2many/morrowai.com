@@ -75,7 +75,7 @@
       "digestItemId": 1119,
       "digestDate": "2026-11-11",
       "title": "OpenAI puts research-job stop controls in the model-serving layer",
-      "summary": "OpenAI says Control Room can cut a research job off from further model output within 35 seconds after a stop instruction. The job’s code can keep running; enforcement happens in the inference engines. At announcement, automatic refusal during a Control Room outage covered frontier research, with the rest still rolling out.",
+      "summary": "OpenAI says Control Room can cut a research job off from further model output within 35 seconds after a stop instruction. The job’s code can keep running; enforcement happens in the inference engines. Its fail-closed safeguard denies requests while the control service is unavailable.",
       "whyItMatters": "Stopping at the shared model-serving layer means a broken or altered experiment script cannot simply ignore the stop order. The trade-off is a central dependency: a Control Room outage also interrupts authorized research. Faster enforcement still depends on a monitor or person deciding that a job should stop.",
       "url": "https://interestingengineering.com/ai-robotics/openai-control-room-35-second-model-shutdown",
       "source": "Interesting Engineering, reporting on OpenAI",
@@ -7552,6 +7552,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-11-11 · 5 stories",
-  "publishedAt": "2026-11-11T16:33:48.743Z",
-  "contentHash": "5dc8c7fee3a3c9ed74a080685c0243700f3415bc4b5ebb138f6b03af2ec91982"
+  "publishedAt": "2026-11-11T16:36:48.498Z",
+  "contentHash": "5b5492e2d642d6893e51694ed22fa612747b7b0d70c11155b38bcf989072fae9"
 }

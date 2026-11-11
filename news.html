@@ -49,7 +49,7 @@
 <p class="post-meta">Interesting Engineering, reporting on OpenAI · Edition 2026-11-11</p>
 <h3><a href="https://interestingengineering.com/ai-robotics/openai-control-room-35-second-model-shutdown" target="_blank" rel="noopener noreferrer">OpenAI puts research-job stop controls in the model-serving layer</a></h3>
 
-<p class="news-summary">OpenAI says Control Room can cut a research job off from further model output within 35 seconds after a stop instruction. The job’s code can keep running; enforcement happens in the inference engines. At announcement, automatic refusal during a Control Room outage covered frontier research, with the rest still rolling out.</p>
+<p class="news-summary">OpenAI says Control Room can cut a research job off from further model output within 35 seconds after a stop instruction. The job’s code can keep running; enforcement happens in the inference engines. Its fail-closed safeguard denies requests while the control service is unavailable.</p>
 <p class="reading-note">Why it matters</p><p class="news-summary news-why">Stopping at the shared model-serving layer means a broken or altered experiment script cannot simply ignore the stop order. The trade-off is a central dependency: a Control Room outage also interrupts authorized research. Faster enforcement still depends on a monitor or person deciding that a job should stop.</p>
 <p class="small-note">Announced November 9; published in the November 11 edition. The 35-second interval excludes detection and decision time.</p>
 
