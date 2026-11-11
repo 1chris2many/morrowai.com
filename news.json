@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": true
   },
-  "pending": 10,
+  "pending": 8,
   "items": [
     {
       "digestItemId": 1114,
@@ -439,6 +439,26 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-06-perplexity-launches-teammates-its-own-always-on-ai-agents-for-work",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1091,
+      "digestDate": "2026-11-05",
+      "title": "Amazon, Microsoft, Alphabet and Meta plan at least $720 billion in 2026 capital spending",
+      "summary": "The four companies told investors they plan to spend at least $720 billion on capital expenditures this year, most of it on AI infrastructure, on top of at least $1 trillion in commitments for later years. Alphabet and Amazon both said they will spend more in 2027. Tech stocks fell sharply the week of the calls, and Alphabet had its worst one-day drop on record.",
+      "whyItMatters": "The figure is total capital spending, not AI spending alone, and much of it is committed before the revenue it is meant to earn. On Alphabet's call, management named currency effects as the largest driver of Search deceleration from Q2 to Q3, with AI Mode's lower monetization also contributing. That shows usage can grow while revenue per query falls.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-05-amazon-microsoft-alphabet-and-meta-commit-to-over-720-billion-in-2026-ai-capital-spending",
       "editorialNote": ""
     },
     {
@@ -1383,6 +1403,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-29-doj-reportedly-scrutinizes-nvidia-s-13-billion-hugging-face-acquisition",
       "editorialNote": "Reported inquiry, October 28; no enforcement outcome announced in this report."
+    },
+    {
+      "digestItemId": 1045,
+      "digestDate": "2026-10-29",
+      "title": "GitHub's Copilot Fusion routes coding tasks across models to cut cost",
+      "summary": "GitHub unveiled Copilot Fusion at Universe on October 28. It evaluates what a coding task needs and chooses how to run it across one or more models. In the Artificial Analysis Coding Agent Index, which GitHub cites, Fusion Max scored within two points of Claude Code with Opus 5.5 Max at an average API cost of $5.59 per task, against $11.42, and took 36 minutes against about an hour.",
+      "whyItMatters": "The benchmark suggests an orchestration system can approach a top coding model's score at lower metered API cost; it does not isolate how much of that gap comes from routing. That isn't the same as a subscription price. Buyers on flat plans should measure their own bills before assuming the same gap.",
+      "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+      "source": "GitHub, citing Artificial Analysis",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-29-github-s-new-copilot-fusion-routes-coding-tasks-across-models-to-cut-costs",
+      "editorialNote": ""
     },
     {
       "digestItemId": 1047,
@@ -7415,6 +7455,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-11-10 · 6 stories",
-  "publishedAt": "2026-11-11T00:09:52.791Z",
-  "contentHash": "1c196fe771ed6ed5536abeb483b8acf5721a1bfd594a6ce8fa0fb8569d4a2491"
+  "publishedAt": "2026-11-11T00:16:01.012Z",
+  "contentHash": "ca86ee4d0ad1e4595ac261e5db64a4080753989d92357ed3f91f4a9daf0510c1"
 }
