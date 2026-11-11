@@ -1,18 +1,95 @@
 {
   "version": 1,
-  "digestDate": "2026-11-10",
+  "digestDate": "2026-11-11",
   "latestSavedDigest": "2026-11-11",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 4,
+    "sourceCount": 2,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 13,
+  "pending": 9,
   "items": [
+    {
+      "digestItemId": 1123,
+      "digestDate": "2026-11-11",
+      "title": "Anthropic launches Claude Sheets and Whiteboards; Meetings is still coming soon",
+      "summary": "Anthropic introduced Claude Sheets and Whiteboards in beta on paid plans and made Claude Data generally available. Shared artifacts and interactive connectors let teams work with Claude across documents and partner apps. Its November 10 announcement describes Claude Meetings as coming soon.",
+      "whyItMatters": "Moving a draft into another tool can leave the assistant behind as coworkers revise it. Keeping shared artifacts and connected apps in the same workspace could reduce repeated context handoffs, extending the assistant’s role beyond the first draft; that depends on teams granting appropriate access.",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-11-anthropic-adds-live-meeting-participation-and-spreadsheet-editing-to-claude-for-workplace-teams",
+      "editorialNote": "Availability follows Anthropic’s current announcement: Claude Meetings is coming soon."
+    },
+    {
+      "digestItemId": 1121,
+      "digestDate": "2026-11-11",
+      "title": "Google reports 96% kitting success in Gemini Robotics 2.5 factory pilot",
+      "summary": "Google says Apollo 2 robots using Gemini Robotics 2.5 achieved 96% success sorting automotive parts in a Mercedes-Benz proof-of-concept. It also released ASIMOV-Jailbreak to test robotic agents’ resistance to unsafe instructions.",
+      "whyItMatters": "Reusable robot models could reduce task-specific programming, making changing factory workflows more practical to automate. The pilot leaves failure-recovery costs and reliability across broader production work unresolved.",
+      "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+      "source": "Ars Technica, reporting on a Google DeepMind announcement",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-11-google-deepmind-s-gemini-robotics-2-5-hits-96-success-rate-in-real-factory-trials-adds-open-safety-benchmark",
+      "editorialNote": "The result covers automotive kitting; it is not a general reliability rating."
+    },
+    {
+      "digestItemId": 1120,
+      "digestDate": "2026-11-11",
+      "title": "New York prepares RAISE Act oversight for January 2027",
+      "summary": "TechCrunch reports that New York opened its frontier AI developer registration portal on November 10. The RAISE Act’s requirements take effect January 1, 2027: large frontier developers must publish and follow safety frameworks, and covered developers must report critical incidents within 72 hours of determining or reasonably believing one occurred.",
+      "whyItMatters": "Requiring developers to follow their published safety frameworks gives regulators a basis to challenge gaps between a lab’s stated safeguards and its actual conduct. Incident reports also move information beyond the lab, although confidential reporting means the public will see less detail than the regulator.",
+      "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-11-new-york-opens-registration-portal-as-its-raise-act-ai-safety-law-takes-effect",
+      "editorialNote": "Legal timing and requirements checked against New York’s statute and implementation guidance."
+    },
+    {
+      "digestItemId": 1122,
+      "digestDate": "2026-11-11",
+      "title": "Researchers find over 35,000 Grok Build apps accessible without sign-in",
+      "summary": "Claroc used discoverable app hostnames to find open apps, some holding business or personal information. It says public-link access was preselected when publishing; SpaceXSI says apps stay private until shared and employee accounts default to private.",
+      "whyItMatters": "A hard-to-guess address loses its protective value when DNS records reveal it. App builders still need access controls that restrict who can open sensitive material.",
+      "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-11-grok-build-s-vibe-coding-share-links-expose-35-000-apps-including-spacexsi-s-own-internal-data",
+      "editorialNote": "The mass exposure concerns platform sharing; separate generated-code tests covered only Claroc’s own apps."
+    },
     {
       "digestItemId": 1114,
       "digestDate": "2026-11-10",
@@ -7453,8 +7530,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-10 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-11T15:01:17.916Z",
-  "contentHash": "92c8417ad2359fe21caec3456842166a597452467232e771aaace35eff598574"
+  "publicationStatus": "partial",
+  "notice": "2026-11-11 · 4 stories · More stories to follow",
+  "publishedAt": "2026-11-11T16:06:45.362Z",
+  "contentHash": "b6647ef732c7c8bd1b4b4a7e9bc819053aa4c125b52a8d08a701cdf94f0cb15a"
 }
