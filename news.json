@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": true
   },
-  "pending": 18,
+  "pending": 10,
   "items": [
     {
       "digestItemId": 1114,
@@ -364,6 +364,158 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-06-agility-robotics-becomes-first-humanoid-robot-maker-to-go-public-on-nasdaq",
       "editorialNote": "Reported November 5, 2026; retained in the November 6 edition."
+    },
+    {
+      "digestItemId": 1099,
+      "digestDate": "2026-11-06",
+      "title": "Brockman says OpenAI could be IPO-ready in 2027",
+      "summary": "Onstage, he cited 70% third-quarter annualized-revenue growth, led by enterprise.",
+      "whyItMatters": "These are executive remarks, not disclosed financials.",
+      "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-06-openai-president-greg-brockman-says-the-company-could-be-ipo-ready-in-2027",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1097,
+      "digestDate": "2026-11-06",
+      "title": "Claude adds read-only Personal Finance tool via Plaid",
+      "summary": "Users ask about connected bank and card spending; a US beta reaches Pro, Max and Ultra plans.",
+      "whyItMatters": "",
+      "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-06-anthropic-launches-claude-personal-finance-tool-that-reads-bank-accounts-via-plaid",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1095,
+      "digestDate": "2026-11-06",
+      "title": "OpenAI drops NDAs with public officials in new data-center community commitments",
+      "summary": "After the midterms, OpenAI said it will no longer use non-disclosure agreements with public officials, keeping only narrow protections for security, trade secrets and competitively sensitive information. It also pledged to pay the full cost of the electricity and infrastructure its campuses need and to publish expected jobs. Amazon dropped NDAs with government agencies on data-center projects in October.",
+      "whyItMatters": "NDAs let developers and officials negotiate before a project is public. Giving them up could put more of a project's terms in front of residents earlier in the approval process, though whether that changes outcomes is not yet known.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-06-openai-drops-ndas-with-public-officials-in-new-data-center-community-commitments",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1098,
+      "digestDate": "2026-11-06",
+      "title": "Perplexity launches always-on 'Teammates' agents for work",
+      "summary": "Teammates take on separate roles in a workspace, work simultaneously on ongoing tasks using a user's existing Perplexity projects and memory, and can be followed in threads or in Slack. They require Perplexity's $200-a-month Max plan. CEO Aravind Srinivas says he envisions \"hundreds of teammates working for each person.\"",
+      "whyItMatters": "Agents that run continuously shift the user's job from asking questions to assigning and checking work. Our inference is that the more teammates run at once, the more of that checking someone has to do.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-06-perplexity-launches-teammates-its-own-always-on-ai-agents-for-work",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1093,
+      "digestDate": "2026-11-05",
+      "title": "Anthropic reportedly signs its first news licensing deal, with the Associated Press",
+      "summary": "Anthropic struck the deal ahead of the midterms, Adweek reports. On election night, Claude returned live polling information attributed to the AP.",
+      "whyItMatters": "A licensed feed gives the assistant a named source for fast-changing facts, so an answer can point to who reported it. The deal's terms were not reported.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1027173/anthropic-reportedly-made-a-licensing-deal-with-the-associated-press",
+      "source": "The Verge, citing Adweek",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-05-anthropic-strikes-its-first-news-publisher-licensing-deal-with-the-associated-press",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1090,
+      "digestDate": "2026-11-05",
+      "title": "Meta acquires AI coding startup Conductor",
+      "summary": "Its cloud service for parallel coding agents shuts down November 20.",
+      "whyItMatters": "Existing customers face a migration deadline.",
+      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-05-meta-acquires-ai-coding-startup-conductor",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1094,
+      "digestDate": "2026-11-05",
+      "title": "OpenAI is acquiring Pierre Computer Company, maker of Code Storage",
+      "summary": "OpenAI had already built Pierre's tools into Codex and says the deal will help Codex \"connect the code a company ships with the decisions its people make.\"",
+      "whyItMatters": "If that works as described, a coding agent could see why code was written a certain way, not just what it does. That's context engineers usually have to ask a colleague for.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026315/openai-is-acquiring-software-startup-pierre-computer-company",
+      "source": "The Verge, citing OpenAI",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-05-openai-acquires-pierre-computer-company-to-add-code-context-tracking-to-codex",
+      "editorialNote": ""
+    },
+    {
+      "digestItemId": 1092,
+      "digestDate": "2026-11-05",
+      "title": "Voters pass most data-center restriction measures as Texas elects a governor pledging delays",
+      "summary": "Voters in 10 states passed 38 of 44 ballot measures restricting data centers, according to tracking by Redbud Consulting cited by Ars Technica; analysts said projects under construction or approved through 2027 should not be affected. In Texas, Democrat Gina Hinojosa won the governor's race on a pledge to delay projects until laws address water, electricity, air and property-rights impacts. Bloomberg reported about 13 gigawatts of capacity exposed.",
+      "whyItMatters": "Local permission now joins power and chips as a constraint on AI buildout. Analysts expect the effect to show up mainly in later projects, as delays and higher costs, though how much is still a forecast.",
+      "url": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-05-us-voters-back-dozens-of-data-center-restrictions-as-texas-elects-a-governor-pledging-a-buildout-pause",
+      "editorialNote": "Source published Nov 4 about the Nov 3 vote; edition date preserved."
     },
     {
       "digestItemId": 1087,
@@ -7263,6 +7415,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-11-10 · 6 stories",
-  "publishedAt": "2026-11-10T16:11:40.392Z",
-  "contentHash": "531934a40432d898ae17254b532a16d8f750bc726d38f2ae45377cd2f2e008c3"
+  "publishedAt": "2026-11-11T00:09:52.791Z",
+  "contentHash": "1c196fe771ed6ed5536abeb483b8acf5721a1bfd594a6ce8fa0fb8569d4a2491"
 }
