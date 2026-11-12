@@ -448,8 +448,8 @@
     {
       "digestItemId": 1105,
       "digestDate": "2026-11-08",
-      "title": "Meta pauses terms linking Facebook business pages to AI-training access",
-      "summary": "Meta indefinitely delayed rules requiring businesses to allow AI training on linked websites after court and regulatory scrutiny. Meta says existing terms and crawling preferences still apply.",
+      "title": "Meta pauses commercial terms after publishers challenge AI scraping rights",
+      "summary": "Meta indefinitely delayed changes permitting it to crawl business users’ linked websites. It had removed explicit training language, but publishers argued the remaining wording still allowed AI training. Meta says existing terms and crawling preferences remain in effect.",
       "whyItMatters": "Bundling data access with a service publishers already depend on could make licensing payments avoidable. Challenging that bundle before implementation attacks the acquisition strategy itself, rather than seeking compensation after scraping; the pause does not establish which pressure persuaded Meta.",
       "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
       "source": "Ars Technica",
@@ -7676,6 +7676,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-11-12 · 5 stories",
-  "publishedAt": "2026-11-12T16:08:49.866Z",
-  "contentHash": "ce275a2b3a62a5d6ef0ef109a54c25f635676d7e764d85236175ac96850dcd4c"
+  "publishedAt": "2026-11-12T16:33:35.407Z",
+  "contentHash": "5bb4b209ef53865a7f101d2f06078033508e2f2ae17953f7dd4f4fd26eb588ce"
 }
