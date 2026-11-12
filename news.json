@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": true
   },
-  "pending": 8,
+  "pending": 7,
   "items": [
     {
       "digestItemId": 1123,
@@ -943,6 +943,31 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-02-doordash-ceo-says-third-party-ai-agents-generated-only-hundreds-of-orders",
       "editorialNote": "Earnings call held October 29, 2026."
+    },
+    {
+      "digestItemId": 1075,
+      "digestDate": "2026-11-02",
+      "title": "Nvidia and Oracle add independently scalable CPUs to their AI cloud",
+      "summary": "Nvidia and Oracle said on October 27 that Vera Rubin NVL72 systems and standalone Vera CPUs are generally available on Oracle Cloud Infrastructure, and announced plans to expand its superclusters to multi-gigawatt scale. They say customers can scale CPU and GPU resources independently to reduce idle capacity. OpenAI's chief technology officer of compute said OpenAI is bringing Vera into production on OCI for its agentic sandbox workloads.",
+      "whyItMatters": "An agent can leave GPU capacity waiting while its tools run on CPUs. Scaling those stages separately could improve the return on existing GPU capacity; buying more GPUs alone would not remove a CPU bottleneck.",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure",
+      "source": "NVIDIA newsroom, October 27, 2026",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-02-nvidia-and-oracle-expand-ai-cloud-infrastructure-as-enterprises-report-idle-gpus",
+      "editorialNote": "Announced October 27, 2026; included in the November 2 edition."
     },
     {
       "digestItemId": 1073,
@@ -7552,6 +7577,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-11-11 · 5 stories",
-  "publishedAt": "2026-11-11T16:36:48.498Z",
-  "contentHash": "5b5492e2d642d6893e51694ed22fa612747b7b0d70c11155b38bcf989072fae9"
+  "publishedAt": "2026-11-12T00:08:22.213Z",
+  "contentHash": "87de9157153ff33bf866016cff7c20edf963ab000ad30b0182ea9fdd75221123"
 }
