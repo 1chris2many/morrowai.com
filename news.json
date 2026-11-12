@@ -1,18 +1,117 @@
 {
   "version": 1,
-  "digestDate": "2026-11-11",
+  "digestDate": "2026-11-12",
   "latestSavedDigest": "2026-11-12",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 12,
+  "pending": 7,
   "items": [
+    {
+      "digestItemId": 1127,
+      "digestDate": "2026-11-12",
+      "title": "Anthropic’s latest prospectus puts compute commitments at $900.9 billion",
+      "summary": "Anthropic’s November 10 prospectus updates aggregate commitments to $900.9 billion, mostly compute and infrastructure, with $70.7 billion due in the 12 months following September 30. For the first nine months of 2026, it reports $4.08 billion in adjusted operating income but a $1.26 billion GAAP operating loss and a $104.04 billion net loss, including a $94.32 billion fair-value charge on financing instruments.",
+      "whyItMatters": "The noncash charge is not the near-term cash bill. The financing tension is that multiyear compute commitments secure capacity more cheaply, while much of Anthropic’s consumption-based revenue has no matching long-term customer commitment; a customer’s ability to switch providers can therefore outlast Anthropic’s ability to cut its own costs.",
+      "url": "https://ipo.anthropic.com/documents/us/prospectus.pdf",
+      "source": "Anthropic",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-12-anthropic-discloses-nearly-900-billion-in-future-computing-spending-commitments-ahead-of-ipo",
+      "editorialNote": "Updates the November 2 filing covered earlier. The new prospectus identifies $186.2 billion of commitments as conditional or terminable before commencement; figures are not all immediately payable."
+    },
+    {
+      "digestItemId": 1124,
+      "digestDate": "2026-11-12",
+      "title": "Jensen Huang resigns; Nvidia names Colette Kress interim CEO",
+      "summary": "Nvidia announced Huang’s immediate departure as CEO, president and director after reports of extramarital affairs, including one involving an alleged Chinese intelligence operative. CFO Colette Kress becomes interim CEO while retaining her finance role; Harvey C. Jones becomes the company’s first board chair. Nvidia says operations, customer commitments and its product roadmap are expected to continue without interruption.",
+      "whyItMatters": "Separating the chair and chief executive roles changes who oversees decisions previously concentrated around Nvidia’s founder. Customers now have to judge whether the leadership team can preserve delivery and commercial relationships through that transition; the resignation alone does not establish a change in chip demand or the roadmap.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-12-nvidia-ceo-jensen-huang-resigns-after-affair-and-spy-allegations-cfo-colette-kress-named-interim-chief",
+      "editorialNote": "Announced November 12, 2026. Allegations remain attributed reports; Nvidia’s next earnings release is scheduled for November 17."
+    },
+    {
+      "digestItemId": 1126,
+      "digestDate": "2026-11-12",
+      "title": "Nebius forecasts $40–45 billion in 2027 capex as some revenue slips into next year",
+      "summary": "Nebius reported $980.8 million in third-quarter revenue, including about $325 million of non-recurring revenue from deploying its platform on partner-funded capacity. It expects 2026 revenue at the low end of its $3.0–3.4 billion range after third-party capacity delays, while forecasting $12–13 billion in revenue and $40–45 billion in capital spending for 2027.",
+      "whyItMatters": "A strong reported quarter can coexist with a widening gap between construction spending and recurring service revenue. Nebius expects customer prepayments and financing against investment-grade contracts to cover 75–85% of next year’s capex, shifting part of the funding burden toward customers while leaving execution risk: paid-for capacity still has to arrive and serve workloads.",
+      "url": "https://assets.nebius.com/assets/95ccf2d3-ce98-4398-af50-33813f94d167/Nebius-SHL-2026-Q3.pdf",
+      "source": "Nebius",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-12-ai-cloud-provider-nebius-sinks-10-despite-revenue-beat-as-2027-capex-guidance-jumps-to-40-45-billion",
+      "editorialNote": "Results and forecasts released November 12, 2026. Funding coverage and 2027 figures are management expectations."
+    },
+    {
+      "digestItemId": 1125,
+      "digestDate": "2026-11-12",
+      "title": "TSMC approves up to $1 billion for stakes in Anthropic and OpenAI",
+      "summary": "TSMC’s November 10 board resolutions authorize up to $500 million for Anthropic common shares at its IPO price and up to $500 million for OpenAI preferred shares. These are investment approvals, not confirmation that either purchase has closed.",
+      "whyItMatters": "An equity stake gives a chip supplier exposure to the profits its customers might eventually earn, beyond manufacturing revenue. It also ties their financing fortunes more closely together: supplier-backed investment and chip orders become less independent evidence of end-customer demand, without proving that any particular order is artificial.",
+      "url": "https://focustaiwan.tw/business/202611110009",
+      "source": "Focus Taiwan (CNA)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-12-tsmc-s-board-approves-1-billion-investment-plan-in-openai-and-anthropic",
+      "editorialNote": "Board decision November 10; CNA report November 11. Checked against TSMC’s published resolutions."
+    },
+    {
+      "digestItemId": 1128,
+      "digestDate": "2026-11-12",
+      "title": "UK backs Fractile’s £500 million-plus funding round",
+      "summary": "Britain’s Sovereign AI Venture Fund and British Business Bank joined Fractile’s latest round, which exceeds £500 million and values the chip developer above £5 billion. Fractile is developing hardware and software together to accelerate large-model inference; the government says its investment aims to retain more technology, jobs and economic value in Britain.",
+      "whyItMatters": "Public investment is buying an ownership position in the technology behind AI, so the country could capture value beyond paying to use imported services. That depends on a British-designed system becoming commercially competitive: funding a domestic designer does not by itself establish an independent manufacturing supply chain or proven cost savings.",
+      "url": "https://www.gov.uk/government/news/sovereign-ai-and-british-business-bank-invest-in-british-firm-developing-the-next-generation-of-ai-hardware",
+      "source": "UK Government",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-12-uk-ai-chip-startup-fractile-raises-720-million-at-roughly-7-billion-valuation",
+      "editorialNote": "Announced November 11, 2026. Performance and efficiency remain development goals."
+    },
     {
       "digestItemId": 1123,
       "digestDate": "2026-11-11",
@@ -7575,8 +7674,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-11 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-12T15:01:20.187Z",
-  "contentHash": "2358254a6c53f79235c7f1dd560ac1fba35a9b6324eeb0b82c04661e66df4d7e"
+  "publicationStatus": "current",
+  "notice": "2026-11-12 · 5 stories",
+  "publishedAt": "2026-11-12T16:08:49.866Z",
+  "contentHash": "ce275a2b3a62a5d6ef0ef109a54c25f635676d7e764d85236175ac96850dcd4c"
 }
