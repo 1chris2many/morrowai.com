@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-11-12",
   "fresh": true,
   "coverage": {
-    "count": 5,
-    "sourceCount": 5,
+    "count": 6,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -32,6 +32,31 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-12-anthropic-discloses-nearly-900-billion-in-future-computing-spending-commitments-ahead-of-ipo",
       "editorialNote": "Updates the November 2 filing covered earlier. The new prospectus identifies $186.2 billion of commitments as conditional or terminable before commencement; figures are not all immediately payable."
+    },
+    {
+      "digestItemId": 1129,
+      "digestDate": "2026-11-12",
+      "title": "AWS opens its Chile cloud region to select customers and plans more than $4 billion investment",
+      "summary": "Amazon says its South America (Chile) Region has opened to select customers, with general availability expected by the end of 2026 and more than $4 billion in planned investment. It launches with core compute, storage, networking and database services. Amazon Bedrock and SageMaker AI are due within the first year.",
+      "whyItMatters": "For customers that need in-country processing, a local region removes a location barrier to buying AWS capacity. Bedrock and SageMaker arriving later separates that general cloud opportunity from demand for AWS’s managed AI services: local data-center capacity alone does not put those services in country.",
+      "url": "https://www.aboutamazon.com/news/aws/aws-south-america-chile-region-launch",
+      "source": "Amazon (aboutamazon.com)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-12-aws-opens-its-chile-cloud-region-to-select-customers-and-plans-more-than-4-billion-investment",
+      "editorialNote": "Announced 2026-11-11."
     },
     {
       "digestItemId": 1124,
@@ -7675,7 +7700,7 @@
     }
   ],
   "publicationStatus": "current",
-  "notice": "2026-11-12 · 5 stories",
-  "publishedAt": "2026-11-12T16:33:35.407Z",
-  "contentHash": "5bb4b209ef53865a7f101d2f06078033508e2f2ae17953f7dd4f4fd26eb588ce"
+  "notice": "2026-11-12 · 6 stories",
+  "publishedAt": "2026-11-12T18:04:07.046Z",
+  "contentHash": "18a05d40fa5235bf23d42112750573b5a7f4f779721b46c0b828874ef3a59ad5"
 }
