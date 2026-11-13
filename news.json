@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-11-12",
   "fresh": true,
   "coverage": {
-    "count": 6,
-    "sourceCount": 6,
+    "count": 7,
+    "sourceCount": 7,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -96,6 +96,31 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-12-ai-cloud-provider-nebius-sinks-10-despite-revenue-beat-as-2027-capex-guidance-jumps-to-40-45-billion",
       "editorialNote": "Results and forecasts released November 12, 2026. Funding coverage and 2027 figures are management expectations."
+    },
+    {
+      "digestItemId": 1130,
+      "digestDate": "2026-11-12",
+      "title": "Ramp sample shows AI token usage outpacing spending; Anthropic reports a $600 million price offset",
+      "summary": "For the week ending November 1, businesses using Ramp’s Token Spend Management product spent 10.5% more on tokens than in the week ending October 4, while token volume rose 29.0%. Anthropic’s November 10 prospectus separately reports that new-model price reductions and contractual discounts offset usage-driven revenue growth by about $600 million between its June and September quarters.",
+      "whyItMatters": "Cheaper tokens let buyers do more with the same budget, but make usage growth a less reliable guide to model providers’ revenue. Anthropic’s offset shows why revenue forecasts need both usage and realized pricing: more work can arrive without bringing proportionately more money.",
+      "url": "https://ramp.com/data/ai-index",
+      "source": "Ramp AI Index; Anthropic IPO prospectus",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Funding"
+      ],
+      "themes": [
+        {
+          "id": "agent-economics",
+          "name": "Agent economics"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-12-ramp-data-show-ai-token-volume-outpacing-spending-as-anthropic-reports-a-600-million-price-offset",
+      "editorialNote": "Follow-up reviewed November 12. Ramp figures describe its Token Spend Management sample; Anthropic’s filing covers a separate business and period. Prospectus: page 165."
     },
     {
       "digestItemId": 1125,
@@ -7700,7 +7725,7 @@
     }
   ],
   "publicationStatus": "current",
-  "notice": "2026-11-12 · 6 stories",
-  "publishedAt": "2026-11-12T18:04:07.046Z",
-  "contentHash": "18a05d40fa5235bf23d42112750573b5a7f4f779721b46c0b828874ef3a59ad5"
+  "notice": "2026-11-12 · 7 stories",
+  "publishedAt": "2026-11-13T00:10:36.663Z",
+  "contentHash": "bf5f31ae743637b54109004123033795e967da217f0a00a7d1019d810ec7e5ea"
 }
