@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-11-13",
   "fresh": true,
   "coverage": {
-    "count": 5,
-    "sourceCount": 5,
+    "count": 6,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -76,6 +76,25 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-13-google-pairs-gemini-4-hydrogen-with-automatic-model-routing",
       "editorialNote": "Google-reported benchmark results. Antigravity access is for paid Google AI Pro and Ultra subscribers."
+    },
+    {
+      "digestItemId": 1136,
+      "digestDate": "2026-11-13",
+      "title": "Meta uses long-term purchase commitments to help finance cleaner data-center materials",
+      "summary": "Meta announced multi-year purchase agreements for low-carbon cement, near-zero-emission steel, electric trucking and recycled plastics. Its Sublime Systems agreement supports at least 180,000 tons of lower-carbon cement and, Meta says, enables Sublime's first commercial-scale plant while giving Meta priority access for its data centers. The agreements deliver Environmental Attribute Certificates: Meta pays for the environmental benefit, and the materials themselves may be used elsewhere.",
+      "whyItMatters": "New factories need committed buyers before they can scale. Meta is using future purchasing to help bring supply into existence, and the certificates let it fund that production before its own construction can use the output. The test is verified delivery. Contract values and realized emissions cuts are not disclosed, and the commitments don't establish cheaper data centers.",
+      "url": "https://about.fb.com/news/2026/11/meta-new-agreements-clean-manufacturing-data-center-supply-chains/",
+      "source": "Meta announcement",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-13-meta-uses-long-term-purchase-commitments-to-help-finance-cleaner-data-center-materials",
+      "editorialNote": "Company announcement, November 12, 2026."
     },
     {
       "digestItemId": 1131,
@@ -7827,7 +7846,7 @@
     }
   ],
   "publicationStatus": "current",
-  "notice": "2026-11-13 · 5 stories",
-  "publishedAt": "2026-11-13T16:16:02.331Z",
-  "contentHash": "594499bfb92956aa26c2131fb7be04deb9fd0ebdfe89f9f670e28a7a8f846cea"
+  "notice": "2026-11-13 · 6 stories",
+  "publishedAt": "2026-11-13T16:39:09.771Z",
+  "contentHash": "7ac93d58fe39a0e7aa3473cc1c2e95a9fe55d87e44d098beff72c7982459a8ff"
 }
