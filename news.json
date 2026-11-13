@@ -68,8 +68,8 @@
       ],
       "themes": [
         {
-          "id": "ai-infrastructure",
-          "name": "AI infrastructure"
+          "id": "agent-economics",
+          "name": "Agent economics"
         }
       ],
       "reviewed": true,
@@ -7828,6 +7828,6 @@
   ],
   "publicationStatus": "current",
   "notice": "2026-11-13 · 5 stories",
-  "publishedAt": "2026-11-13T16:13:14.621Z",
-  "contentHash": "1f7c3ddf7d680c00cc4aba8a19c3efa942689691ce702785c1552631a163609e"
+  "publishedAt": "2026-11-13T16:16:02.331Z",
+  "contentHash": "594499bfb92956aa26c2131fb7be04deb9fd0ebdfe89f9f670e28a7a8f846cea"
 }
