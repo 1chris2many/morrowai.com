@@ -1,18 +1,95 @@
 {
   "version": 1,
-  "digestDate": "2026-11-12",
+  "digestDate": "2026-11-13",
   "latestSavedDigest": "2026-11-13",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 4,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 10,
+  "pending": 7,
   "items": [
+    {
+      "digestItemId": 1134,
+      "digestDate": "2026-11-13",
+      "title": "Cisco raises hyperscaler AI infrastructure revenue outlook to $9 billion",
+      "summary": "Cisco reported $18.5 billion in fiscal first-quarter revenue, up 24% year over year, on November 12. Networking product revenue rose 43%, and the company raised its fiscal 2027 hyperscaler AI infrastructure revenue outlook to $9 billion, more than double fiscal 2026.",
+      "whyItMatters": "AI spending is reaching the networks that connect compute, giving another supplier a route into the buildout. But demand growth and pricing power are different questions: Cisco’s total GAAP gross margin fell from 65.5% to 63.7% even as revenue grew. That combination makes the profit captured from each additional sale worth watching; it does not establish that AI caused the margin decline.",
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-reports-first-quarter-earnings.html",
+      "source": "Cisco Newsroom",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-13-cisco-raises-hyperscaler-ai-infrastructure-revenue-outlook-to-9-billion",
+      "editorialNote": "Quarter ended October 24, 2026. The $9 billion figure is company guidance."
+    },
+    {
+      "digestItemId": 1132,
+      "digestDate": "2026-11-13",
+      "title": "FAA expands human-reviewed AI routing advice to all 22 US airspace centers",
+      "summary": "The FAA announced on November 10 that SMART would cover airspace managed by all 22 US air-route centers. Specialists validate its recommendations before local controllers decide whether to use them. The agency reports that its earlier rollout rerouted 180 flights, saving an average of 10 minutes and almost 80 gallons of fuel per flight; the controllers’ union says it was not involved in design or testing.",
+      "whyItMatters": "The savings depend on controllers receiving useful advice without an offsetting burden of checking it. A national rollout therefore tests the workload and trust needed to turn recommendations into action. The reported pilot savings alone do not establish that human-review cost at scale.",
+      "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-13-faa-expands-its-ai-air-traffic-advisory-tool-to-cover-the-entire-us-airspace-system",
+      "editorialNote": "November 12 reporting on the November 10 expansion. Savings are FAA claims."
+    },
+    {
+      "digestItemId": 1131,
+      "digestDate": "2026-11-13",
+      "title": "Notion says Fireworks breach exposed AI chat data from fewer than 1% of workspaces",
+      "summary": "Notion says a Fireworks AI security incident affected fewer than 1% of its workspaces. Its Insights feature sent stored AI prompts and responses to the vendor for analysis; Notion disconnected Fireworks on November 3. The company says data was retained at the endpoints it used despite a contractual zero-retention commitment.",
+      "whyItMatters": "Usage analytics creates another copy of the work an enterprise is trying to keep private. Measuring AI adoption can therefore increase the data exposed through a downstream vendor. The commercial risk sits in the gap between a retention promise for individual inference requests and the actual handling of data across the whole product.",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "source": "Notion security disclosure",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-13-cyberattack-on-ai-hosting-platform-fireworks-ai-exposes-notion-customers-chat-transcripts",
+      "editorialNote": "Notion disclosure checked November 13; disconnection occurred November 3. The company’s investigation is ongoing."
+    },
+    {
+      "digestItemId": 1133,
+      "digestDate": "2026-11-13",
+      "title": "Yahoo Scout becomes first commercial customer of publisher-led AI licensing collective",
+      "summary": "The Internet Licensing Collective announced Yahoo Scout as its first commercial licensee on November 12. The nonprofit offers a single agreement for participating publishers’ content while letting each publisher choose which uses and licensees it permits. It says payments will reflect content’s contribution to AI products. The RSL technical standard remains separate from the renamed organization.",
+      "whyItMatters": "One agreement reduces the negotiation burden that keeps small publishers out of direct AI deals. The harder problem then becomes deciding whose reporting improved an answer and how much it deserves. Specialist outlets could gain bargaining reach, while their actual returns depend on attribution and payout rules that a first customer has yet to validate at scale.",
+      "url": "https://internetcollective.org/press/ilc-launch-2026",
+      "source": "Internet Licensing Collective announcement",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-13-yahoo-becomes-first-official-licensee-under-new-collective-ai-content-licensing-standard",
+      "editorialNote": "Company announcement; publisher income and the commercial terms of Yahoo’s agreement are not established by this launch."
+    },
     {
       "digestItemId": 1127,
       "digestDate": "2026-11-12",
@@ -7724,8 +7801,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-12 · 7 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-13T15:01:22.832Z",
-  "contentHash": "1254abe8ecc2b73015abc01d59835e519bfdd3bd3c36a4da1bb3777821003b93"
+  "publicationStatus": "thin",
+  "notice": "2026-11-13 · 4 stories",
+  "publishedAt": "2026-11-13T16:10:54.498Z",
+  "contentHash": "aa80588c50bc443f885e8a1989f3b20a330de59c40eb21eb94f5641a21cef57f"
 }
