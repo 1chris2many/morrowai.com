@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-11-13",
   "fresh": true,
   "coverage": {
-    "count": 6,
-    "sourceCount": 6,
+    "count": 7,
+    "sourceCount": 7,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -13,6 +13,26 @@
   },
   "pending": 7,
   "items": [
+    {
+      "digestItemId": 1137,
+      "digestDate": "2026-11-13",
+      "title": "Applied Materials revenue rises 53% as memory equipment takes a larger share",
+      "summary": "Applied Materials reported fiscal fourth-quarter revenue of $10.41 billion on November 12, up 53% year over year. Semiconductor Systems sales rose from $4.879 billion to $7.996 billion, with DRAM increasing from 28% to 33% of that segment. The company forecasts $11.1 billion in first-quarter fiscal 2027 revenue, plus or minus $500 million.",
+      "whyItMatters": "Equipment purchases commit money before the resulting chips can earn it back. Growth in both the segment and DRAM’s share shows manufacturers buying more memory-making capacity, extending the spending cycle beyond GPU orders. It gives equipment suppliers current revenue while leaving chipmakers exposed if eventual demand or memory prices disappoint; these figures do not isolate HBM or prove AI customers’ returns.",
+      "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026073360/exhibit991q42026earningsre.htm",
+      "source": "Applied Materials via SEC EDGAR",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-13-applied-materials-revenue-rises-53-as-memory-equipment-takes-a-larger-share",
+      "editorialNote": "Quarter ended October 25, 2026. Segment comparisons use the company’s recast prior-year figures."
+    },
     {
       "digestItemId": 1134,
       "digestDate": "2026-11-13",
@@ -7846,7 +7866,7 @@
     }
   ],
   "publicationStatus": "current",
-  "notice": "2026-11-13 · 6 stories",
-  "publishedAt": "2026-11-13T16:39:09.771Z",
-  "contentHash": "7ac93d58fe39a0e7aa3473cc1c2e95a9fe55d87e44d098beff72c7982459a8ff"
+  "notice": "2026-11-13 · 7 stories",
+  "publishedAt": "2026-11-13T17:26:45.858Z",
+  "contentHash": "47538f72a360d582dbe750a4a766c2d9d5462727b9b6933f713f89850df71c5b"
 }
