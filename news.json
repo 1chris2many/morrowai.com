@@ -4,12 +4,12 @@
   "latestSavedDigest": "2026-11-13",
   "fresh": true,
   "coverage": {
-    "count": 4,
-    "sourceCount": 4,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
   "pending": 7,
   "items": [
@@ -51,6 +51,31 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-13-faa-expands-its-ai-air-traffic-advisory-tool-to-cover-the-entire-us-airspace-system",
       "editorialNote": "November 12 reporting on the November 10 expansion. Savings are FAA claims."
+    },
+    {
+      "digestItemId": 1135,
+      "digestDate": "2026-11-13",
+      "title": "Google pairs Gemini 4 Hydrogen with automatic model routing",
+      "summary": "Google launched Gemini 4 Hydrogen on November 12 at $1.50 per million input tokens and $7.50 per million output tokens. Its new Antigravity Orchestrator switches between models within a session; Google reports near-Carbon success rates on Terminal-Bench 4.0 while using 24% less quota and finishing 19% faster.",
+      "whyItMatters": "Google is separating expensive architectural reasoning from the repeated execution work that follows it, then putting the routing decision inside its own product. Customers could get more completed work from a subscription without choosing a model at every step, while Google controls which model consumes the capacity. The saving depends on cheaper execution avoiding extra rework; the reported benchmark does not establish total cost per accepted result, including human correction.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "source": "Google",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-13-google-pairs-gemini-4-hydrogen-with-automatic-model-routing",
+      "editorialNote": "Google-reported benchmark results. Antigravity access is for paid Google AI Pro and Ultra subscribers."
     },
     {
       "digestItemId": 1131,
@@ -7801,8 +7826,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "thin",
-  "notice": "2026-11-13 · 4 stories",
-  "publishedAt": "2026-11-13T16:10:54.498Z",
-  "contentHash": "aa80588c50bc443f885e8a1989f3b20a330de59c40eb21eb94f5641a21cef57f"
+  "publicationStatus": "current",
+  "notice": "2026-11-13 · 5 stories",
+  "publishedAt": "2026-11-13T16:13:14.621Z",
+  "contentHash": "1f7c3ddf7d680c00cc4aba8a19c3efa942689691ce702785c1552631a163609e"
 }
