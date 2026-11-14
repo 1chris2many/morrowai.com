@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-11-14",
   "fresh": true,
   "coverage": {
-    "count": 5,
-    "sourceCount": 5,
+    "count": 6,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -70,6 +70,25 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-14-ai-agent-startup-langchain-raises-300-million-series-c-at-a-3-billion-valuation",
       "editorialNote": ""
+    },
+    {
+      "digestItemId": 1143,
+      "digestDate": "2026-11-14",
+      "title": "Meta completes $15 billion in dollar notes and €9 billion in euro notes",
+      "summary": "Meta completed a $15 billion offering of senior notes on November 5: five tranches maturing from 2031 to 2056, with coupons from 5.850% to 7.500%. On November 12 it completed a separate €9 billion offering of six tranches maturing from 2031 to 2065, with coupons from 4.300% to 6.400%.",
+      "whyItMatters": "The borrowing is now done, not just priced, and the interest rates are locked in, on the longest tranche for nearly forty years. Those payments come due on schedule whatever the money ends up funding. Neither closing filing says what the proceeds are for.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm",
+      "source": "Meta Form 8-K filings (November 5 and November 12 closings)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-14-meta-completes-15-billion-in-dollar-notes-and-9-billion-in-euro-notes",
+      "editorialNote": "Company SEC filings; closings on November 5 and November 12, 2026."
     },
     {
       "digestItemId": 1141,
@@ -7964,7 +7983,7 @@
     }
   ],
   "publicationStatus": "current",
-  "notice": "2026-11-14 · 5 stories",
-  "publishedAt": "2026-11-14T19:11:52.905Z",
-  "contentHash": "934ff0529d979a9ef8afdb1454e251fe667a04044ac5a835b9d08a0291e7b670"
+  "notice": "2026-11-14 · 6 stories",
+  "publishedAt": "2026-11-14T19:36:43.671Z",
+  "contentHash": "55b1a2d07895e1e2f6576312353693a1abdb12b30f0e169e5b09e19dec2a775f"
 }
