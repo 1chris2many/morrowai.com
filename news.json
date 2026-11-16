@@ -1,18 +1,77 @@
 {
   "version": 1,
-  "digestDate": "2026-11-14",
+  "digestDate": "2026-11-15",
   "latestSavedDigest": "2026-11-15",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 3,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 10,
+  "pending": 7,
   "items": [
+    {
+      "digestItemId": 1146,
+      "digestDate": "2026-11-15",
+      "title": "Helen Toner argues AI safety needs stronger institutions than trust in CEOs",
+      "summary": "CSET executive director Helen Toner said in The Verge's November 14 Decoder interview that AI safety needs stronger institutions than trust in any individual CEO. The former OpenAI board member advocated clearer safety thresholds for training and releasing frontier models, and said public-company regulation and scrutiny could improve governance even as profit pressure increases.",
+      "whyItMatters": "Toner's proposal makes evidence of acceptable risk a condition for advancing capabilities, potentially directing more time and compute toward safety work when that evidence falls short. It leaves room to deploy existing systems while raising the bar for new ones; the practical test is whether those thresholds can be defined and enforced.",
+      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-15-former-openai-board-member-helen-toner-warns-ai-safety-can-t-rely-on-trusting-any-single-ceo",
+      "editorialNote": "Published November 14; the interview was recorded before Nvidia's investigation and Huang's resignation."
+    },
+    {
+      "digestItemId": 1144,
+      "digestDate": "2026-11-15",
+      "title": "Microsoft says Outlook, Teams and Copilot have recovered",
+      "summary": "Microsoft said on November 14 that services had fully recovered from the global outage that began November 12. It blamed a network-upgrade issue exposed by a later network change, and said the incident was unrelated to cyberattacks or AI agents.",
+      "whyItMatters": "When an AI assistant connects to workplace software, that software becomes part of its availability chain. Switching model providers will not restore a workflow if both still depend on the same unavailable email or calendar service.",
+      "url": "https://abcnews.com/Technology/wireStory/microsoft-services-fully-restored-after-hourslong-global-outage-138137595",
+      "source": "Associated Press via ABC News",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-15-microsoft-s-daylong-email-and-cloud-outage-spirals-into-a-global-service-crisis",
+      "editorialNote": "Microsoft's restoration statement was reported November 14; the disruption began November 12."
+    },
+    {
+      "digestItemId": 1145,
+      "digestDate": "2026-11-15",
+      "title": "Musk and other tech leaders back petition to reinstate Jensen Huang",
+      "summary": "TechCrunch reported on November 14 that Elon Musk and other technology executives backed a petition asking Nvidia to reinstate Jensen Huang while an independent investigation proceeds. The petition website claimed more than 115,000 signatures, including employees and shareholders. Huang resigned November 12.",
+      "whyItMatters": "Reinstating Huang during an investigation would preserve founder-led continuity while putting him back in authority before the facts are settled. The petition exposes that governance trade-off; its signature count does not establish shareholder voting power or a board decision.",
+      "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-15-elon-musk-and-other-tech-executives-petition-nvidia-to-reinstate-ousted-ceo-jensen-huang",
+      "editorialNote": "Signature counts are the petition website's figures as reported by TechCrunch on November 14."
+    },
     {
       "digestItemId": 1140,
       "digestDate": "2026-11-14",
@@ -7982,8 +8041,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-14 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-15T15:01:28.654Z",
-  "contentHash": "c3e9208435dc5aa1e082438b74231bdce137b9f126fc728e01b9aa7ccba7cf54"
+  "publicationStatus": "thin",
+  "notice": "2026-11-15 · 3 stories",
+  "publishedAt": "2026-11-16T00:23:01.103Z",
+  "contentHash": "138a816525f308519402ca006127593499e2215423820f783f28f132ec5b9fee"
 }
