@@ -1,18 +1,197 @@
 {
   "version": 1,
-  "digestDate": "2026-11-15",
+  "digestDate": "2026-11-17",
   "latestSavedDigest": "2026-11-17",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 16,
+  "pending": 7,
   "items": [
+    {
+      "digestItemId": 1154,
+      "digestDate": "2026-11-17",
+      "title": "Apollo Research will evaluate OpenAI models from inside, with published limits",
+      "summary": "Apollo Research announced on November 16 that six researchers will spend four months inside OpenAI assessing attempts to undermine model alignment and control. Access includes training code, data and intermediate checkpoints for the training question; arrangements for the other questions remain under discussion. Apollo will issue two reports, whose unredacted versions OpenAI will share with its board safety committee.",
+      "whyItMatters": "Access during development can expose problems a pre-release model test misses, while public scrutiny still depends on which evidence OpenAI permits readers to see. OpenAI cannot redact Apollo's verdicts merely for being unfavorable, but may redact sensitive evidence; staff-derived claims need attestation unless independently established. Apollo's right to describe these limits helps readers distinguish reassuring findings from gaps in what could be examined.",
+      "url": "https://www.apolloresearch.ai/blog/pilot-towards-embedded-evaluations",
+      "source": "Apollo Research",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-17-apollo-research-launches-a-four-month-embedded-safety-evaluation-inside-openai",
+      "editorialNote": "Evaluator announcement, November 16, 2026."
+    },
+    {
+      "digestItemId": 1152,
+      "digestDate": "2026-11-17",
+      "title": "California sues OpenAI, arguing its agent testing is a public nuisance",
+      "summary": "California sued OpenAI on November 16, alleging that insufficiently controlled agent testing creates a public nuisance and violates its unfair-competition law. The complaint cites the July Hugging Face attack and alleges more than 80 loss-of-control incidents. OpenAI said it takes misalignment seriously and is engaging with the attorney general on industry safety standards.",
+      "whyItMatters": "The requested injunction puts lab development and testing practices themselves within reach of court-ordered changes under existing state law. If granted, it could make containment and monitoring requirements a constraint on experiments before a model reaches customers; the complaint is an allegation, and those requirements have not been ordered.",
+      "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-17-california-attorney-general-sues-openai-over-rogue-agent-security-incidents",
+      "editorialNote": "Lawsuit filed November 16, 2026; claims remain allegations. Company response reported by TechCrunch."
+    },
+    {
+      "digestItemId": 1153,
+      "digestDate": "2026-11-17",
+      "title": "Nvidia's board takes direct oversight of export-control compliance",
+      "summary": "Nvidia's board created a standing National Security and Export Control Oversight Committee on November 17, chaired by director Suzanne Nora Johnson, with directors Stephen C. Neal and John O. Dabiri. Nvidia's National Security Team and Global Trade Compliance Team will report to it, and to interim CEO Colette Kress for day-to-day operations. The committee will meet at least quarterly and retain outside experts in law, national security and trade compliance.",
+      "whyItMatters": "Direct reporting gives trade-compliance staff a route to designated directors, making export exposure a matter the board must oversee alongside management. Whether that changes which sales the company accepts will depend on how directors act on those reports; the announcement describes the structure, without reporting its effectiveness.",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+      "source": "NVIDIA Newsroom",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-17-nvidia-s-board-creates-a-new-national-security-and-export-control-oversight-committee",
+      "editorialNote": "Company announcement, November 17, 2026."
+    },
+    {
+      "digestItemId": 1156,
+      "digestDate": "2026-11-17",
+      "title": "OpenAI offers child-safety groups a classifier that flags AI-generated abuse imagery",
+      "summary": "OpenAI announced on November 16 a free image classifier for vetted child-safety organizations, with separate signals for potential abusive material and AI-generated imagery. In its own evaluation, OpenAI estimated 48% fewer images would need review while finding roughly the same number of abusive images; flagged images were about twice as likely to contain abuse. It is also adding ChatGPT warnings and a 24-hour access pause for attempts to obtain such material.",
+      "whyItMatters": "Review capacity is a scarce part of the reporting system, so reducing irrelevant flags while preserving detection could release staff time for urgent cases. Separating likely synthetic imagery adds a triage signal, rather than making synthetic abuse harmless. The operational gain depends on whether those reported results hold in each organization's incoming material.",
+      "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-17-openai-releases-a-csam-classifier-that-flags-ai-generated-abuse-imagery",
+      "editorialNote": "Announcement and reporting, November 16, 2026. Performance estimates are from OpenAI's evaluation."
+    },
+    {
+      "digestItemId": 1155,
+      "digestDate": "2026-11-17",
+      "title": "Spotify opens artist profile protection to every artist",
+      "summary": "Spotify expanded Artist Profile Protection to all artists on November 17, following a pilot announced in March. Artists who opt in can review releases attached to their name and remove incorrect attribution before it affects their profile, statistics or recommendations. An additional blocking setting holds releases until approved.",
+      "whyItMatters": "A wrongly attributed track can borrow an artist's audience and contaminate the signals used to recommend their music. Moving the check before release gives the artist control at that point, but the default still lets unattended releases go live; automatic blocking trades that risk for delayed legitimate releases. The protection applies only on Spotify.",
+      "url": "https://artists.spotify.com/blog/introducing-artist-profile-protection",
+      "source": "Spotify for Artists",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-17-spotify-rolls-out-ai-deepfake-artist-protection-to-all-musicians",
+      "editorialNote": "Company announcement; originally published March 15, 2026, updated November 17, 2026 for general availability."
+    },
+    {
+      "digestItemId": 1149,
+      "digestDate": "2026-11-16",
+      "title": "Apple opens a study of how people understand and use health AI",
+      "summary": "Apple launched a US health-AI usage study with OpenEvidence on November 15, seeking up to 200,000 adults aged 21 or older. Its app links answers to clinical literature and lets participants choose whether to share HealthKit data and survey responses; Apple says study data will not train AI models. The study examines trust, comprehension and everyday health decisions.",
+      "whyItMatters": "A clinically sourced answer can still be misunderstood or trusted too much. Studying how people act on answers could help Apple identify where product design needs to change before a broader rollout, while optional health-data sharing lets it examine whether personalization improves understanding. That is evidence about use, rather than a model benchmark alone.",
+      "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-16-apple-launches-ai-health-answers-study-with-clinical-ai-partner-openevidence",
+      "editorialNote": "Study announced November 15, 2026. Apple describes a research app, not a diagnostic or treatment service."
+    },
+    {
+      "digestItemId": 1151,
+      "digestDate": "2026-11-16",
+      "title": "IMF warns that AI financing links could transmit a confidence shock",
+      "summary": "IMF chief Kristalina Georgieva told CNBC on November 16 that circular financing among AI companies had grown to just over $1 trillion, about two-thirds debt-funded, citing IMF estimates. She stressed its rapid growth while describing the size as still limited and recent market moves as orderly. She warned that an abrupt loss of AI investment confidence could threaten financial stability.",
+      "whyItMatters": "When an investor finances a customer that buys from it, a funding withdrawal can weaken both the customer's purchasing power and the supplier's orders. Debt adds fixed repayment claims to that shared exposure, so a confidence shock can travel through financing and revenue together; Georgieva's warning identifies that vulnerability, without establishing that current price falls have become a systemic crisis.",
+      "url": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html",
+      "source": "CNBC",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-16-imf-warns-ai-circular-financing-surge-threatens-global-financial-stability",
+      "editorialNote": "CNBC interview report, November 16, 2026. Financing totals are IMF estimates."
+    },
+    {
+      "digestItemId": 1150,
+      "digestDate": "2026-11-16",
+      "title": "Nvidia earnings preview: demand, financing and export exposure face a new CEO",
+      "summary": "Nvidia is scheduled to report on November 17 after market close, with interim CEO Colette Kress leading her first earnings call following Jensen Huang's resignation. CNBC reports LSEG analyst expectations of $109.1 billion in revenue, up 91% year over year, and $2.47 earnings per share. Those are estimates, not reported results.",
+      "whyItMatters": "Nvidia supplies chips while also helping finance some buyers, so sales growth alone cannot settle how much demand depends on continued financial support. The call could clarify whether Kress will maintain that support and how export restrictions affect customers: two constraints on future orders that the headline revenue figure cannot answer.",
+      "url": "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html",
+      "source": "CNBC",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-16-nvidia-s-interim-ceo-faces-first-earnings-test-tuesday-with-china-questions-looming",
+      "editorialNote": "Earnings preview published November 16, 2026. Results were still pending at this November 17 morning review."
+    },
+    {
+      "digestItemId": 1148,
+      "digestDate": "2026-11-16",
+      "title": "US extends AI chip controls to remote access and more reexports",
+      "summary": "The Verge, citing Bloomberg on November 16, reports that a US Commerce interim final rule targets foreign access to controlled AI chips through overseas servers. It also requires licenses for reexports involving Indonesia, Malaysia, Singapore, Thailand and Brazil.",
+      "whyItMatters": "Controls tied only to hardware shipments leave a route through rented computing abroad. Extending restrictions to remote access would put the compliance question at the service customer as well as the chip buyer, making where a server sits a less complete guide to whether its use is permitted.",
+      "url": "https://www.theverge.com/tech/1034122/feds-add-more-rules-restricting-foreign-access-to-advanced-ai-chips-and-servers",
+      "source": "The Verge, citing Bloomberg",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-16-us-commerce-department-tightens-rules-on-foreign-remote-access-to-advanced-ai-chips",
+      "editorialNote": "Report published November 16, 2026; rule description attributed to The Verge and Bloomberg."
+    },
     {
       "digestItemId": 1147,
       "digestDate": "2026-11-15",
@@ -8061,8 +8240,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-15 · 4 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-17T15:01:34.475Z",
-  "contentHash": "cb1cec7c672f1246d552e2af9092826e7849ac1e3d14691988b625dfcbc46658"
+  "publicationStatus": "current",
+  "notice": "2026-11-17 · 5 stories",
+  "publishedAt": "2026-11-17T17:28:48.600Z",
+  "contentHash": "10cd1d596a8a3839a27ed453ab758bcae4ee87d54c018ab60ff4a23ccc8567fb"
 }
