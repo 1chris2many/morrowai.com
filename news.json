@@ -2,16 +2,16 @@
   "version": 1,
   "digestDate": "2026-11-18",
   "latestSavedDigest": "2026-11-18",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 7,
-    "sourceCount": 7,
+    "count": 8,
+    "sourceCount": 8,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": true
   },
-  "pending": 8,
+  "pending": 7,
   "items": [
     {
       "digestItemId": 1164,
@@ -91,6 +91,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-18-databricks-ai-index-open-weight-models-now-take-31-of-enterprise-tokens",
       "editorialNote": "Databricks announcement, November 16, 2026. Shares describe its gateway customers; coding costs use list prices and do not measure human correction time."
+    },
+    {
+      "digestItemId": 1165,
+      "digestDate": "2026-11-18",
+      "title": "Hugging Face adds OpenRouter provider routing to language-model inference",
+      "summary": "Hugging Face announced on November 16 that language-model calls through Inference Providers now use OpenRouter to select a serving provider and retry failures. Developers keep the Hugging Face API, token and billing, choose their model, and can guide routing by price, speed or preferred provider; image, video and audio routing is unchanged.",
+      "whyItMatters": "Provider switching and failure recovery move into the routing layer, so an application can keep using its chosen model when a serving provider fails. Competition between providers shifts toward the price and reliability the router can observe. That convenience also makes the routing service a more important dependency; it is not choosing a different model on the user's behalf.",
+      "url": "https://huggingface.co/blog/openrouter",
+      "source": "Hugging Face Blog",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-18-hugging-face-hands-open-model-inference-routing-to-openrouter",
+      "editorialNote": "Company announcement, November 16, 2026. Custom provider credentials are not supported on the new language-model route."
     },
     {
       "digestItemId": 1167,
@@ -8459,8 +8479,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "2026-11-18 · 7 stories · More stories to follow",
-  "publishedAt": "2026-11-18T16:17:06.828Z",
-  "contentHash": "96858f4c8663888c54c3866616b3254a73ace42550f01baf84c5516943fe731a"
+  "publicationStatus": "current",
+  "notice": "2026-11-18 · 8 stories",
+  "publishedAt": "2026-11-18T16:20:54.401Z",
+  "contentHash": "17f7f797bb2030d9cca8027b6319178dd536fa2f8fa69be97801ec66383cf1e6"
 }
