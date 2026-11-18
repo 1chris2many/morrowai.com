@@ -1,18 +1,156 @@
 {
   "version": 1,
-  "digestDate": "2026-11-17",
-  "latestSavedDigest": "2026-11-17",
+  "digestDate": "2026-11-18",
+  "latestSavedDigest": "2026-11-18",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 7,
+    "sourceCount": 7,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 7,
+  "pending": 8,
   "items": [
+    {
+      "digestItemId": 1164,
+      "digestDate": "2026-11-18",
+      "title": "Aikido reports credential theft in two Microsoft agent-framework releases",
+      "summary": "Aikido reported on November 17 that versions 1.26.1 and 1.26.2 of Microsoft Agent Framework's Python meta-package contained a credential stealer and had been removed from PyPI. Its analysis found startup hooks that ran when Python launched, even without importing the package, targeting cloud and development credentials; how the publishing credentials were obtained remained unknown.",
+      "whyItMatters": "An agent's permission rules cannot protect credentials from malicious code running underneath it in the development environment. A routine dependency update can therefore compromise the infrastructure used to build and deploy agents before an agent makes any decision. Removing the package stops future execution, but credentials already exposed require a separate response.",
+      "url": "https://www.aikido.dev/blog/two-malicious-agent-framework-releases-hit-pypi-in-33-minutes",
+      "source": "Aikido Security",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-18-microsoft-s-agent-framework-package-on-pypi-shipped-two-credential-stealing-releases",
+      "editorialNote": "Incident analysis by Aikido, November 17, 2026. The account of the compromise is attributed to the security researcher."
+    },
+    {
+      "digestItemId": 1161,
+      "digestDate": "2026-11-18",
+      "title": "AMD closes World Labs deal and names Fei-Fei Li chief scientist",
+      "summary": "AMD completed its acquisition of World Labs on November 16, bringing its research on interactive 3D environments and robot learning into the chipmaker. Fei-Fei Li joins as executive vice president and chief scientist, reporting to CEO Lisa Su; AMD says the team will help shape future hardware, software and systems.",
+      "whyItMatters": "An internal model team can expose changing workload requirements while future chips and software are still being designed. That could help AMD turn model research into a hardware advantage instead of waiting for customers to reveal where its systems fall short. The value depends on those findings reaching products that other developers can use.",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1306/amd-completes-acquisition-of-world-labs",
+      "source": "AMD Investor Relations",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-18-amd-closes-world-labs-deal-and-names-fei-fei-li-chief-scientist",
+      "editorialNote": "Company completion announcement, November 16, 2026. Acquisition terms are not stated in this release."
+    },
+    {
+      "digestItemId": 1163,
+      "digestDate": "2026-11-18",
+      "title": "Cerebras pairs AMD GPUs with its chips to increase inference per megawatt",
+      "summary": "Cerebras announced production use of disaggregated inference on November 17: AMD Instinct GPUs process prompts, while CS-3 systems generate responses. It reports five times the throughput per megawatt on a shared GPT-OSS-120B endpoint compared with its CS-3-only configuration, without reducing token-generation speed; broader deployment across hundreds of megawatts is planned by the end of 2027.",
+      "whyItMatters": "Moving prompt processing onto GPUs frees Cerebras hardware for the response generation it specializes in. Where available power limits expansion, that division of work could grow sellable capacity before another data center opens. The trade-off is coordinating two hardware pools, and the reported gain is a specific production comparison, not a universal advantage across models.",
+      "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "source": "Cerebras Blog",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-18-cerebras-splits-inference-across-amd-gpus-and-its-own-wafer-chips-claims-5x-throughput-per-megawatt",
+      "editorialNote": "Company announcement, November 17, 2026; reported production measurement from November 14."
+    },
+    {
+      "digestItemId": 1162,
+      "digestDate": "2026-11-18",
+      "title": "Databricks finds enterprise model loyalty is weakening in its gateway data",
+      "summary": "Databricks launched its AI Index on November 16, combining usage from more than 10,000 Unity Gateway customers with coding evaluations on its own private codebase. It reports that the share of gateway customers using one provider fell from about 64% in July to 28% by November 2, while open-weight models reached 30.9% of token traffic in November.",
+      "whyItMatters": "When customers already connect several providers through one gateway, a better model can win their next workload without winning a new account. Metered revenue can therefore move faster than customer counts suggest, making apparent account retention a weak measure of a provider's competitive position. This sample supports that mechanism; it does not establish market-wide shares or an industry-wide decline in AI demand.",
+      "url": "https://www.databricks.com/blog/introducing-databricks-ai-index-state-enterprise-ai-tokenomics",
+      "source": "Databricks Blog",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-18-databricks-ai-index-open-weight-models-now-take-31-of-enterprise-tokens",
+      "editorialNote": "Databricks announcement, November 16, 2026. Shares describe its gateway customers; coding costs use list prices and do not measure human correction time."
+    },
+    {
+      "digestItemId": 1167,
+      "digestDate": "2026-11-18",
+      "title": "Isomorphic Labs raises $5 billion to scale AI drug design",
+      "summary": "Isomorphic Labs announced on November 17 that it had raised $5 billion in a Series C round co-led by Greenoaks and Sequoia Capital, with participation from a16z and continued investment from Alphabet. The company is scaling its proprietary IsoDDE drug-design engine and its pipeline of AI-designed therapeutic candidates.",
+      "whyItMatters": "Funding both the design engine and a drug pipeline lets Isomorphic pursue value from medicines it develops, beyond providing predictions to other drugmakers. It also ties returns to the slower work of establishing whether promising designs become useful treatments: more computational candidates create more opportunities to test, not proof of patient benefit.",
+      "url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round",
+      "source": "Isomorphic Labs",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-18-isomorphic-labs-raises-5-billion-to-scale-ai-drug-design",
+      "editorialNote": "Company announcement, November 17, 2026."
+    },
+    {
+      "digestItemId": 1166,
+      "digestDate": "2026-11-18",
+      "title": "Nvidia funds supplier expansion to secure future packaging capacity",
+      "summary": "Nvidia announced new Kinsus and SPIL supply agreements on November 17. Kinsus plans more than 3.5 times its current Nvidia-dedicated substrate capacity, with production expected to begin in late 2027 and added capacity targeted for Q3 2028; SPIL plans dedicated packaging capacity by mid-2029 under a multiyear agreement supported by multibillion-dollar Nvidia funding.",
+      "whyItMatters": "By financing supplier expansion, Nvidia can help secure scarce production capacity years before it arrives, rather than relying only on future purchase orders. That ties capital to a particular buildout before the eventual level and mix of demand are known. The payoff depends on plants arriving on time and customers still needing their output.",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
+      "source": "NVIDIA Newsroom",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-18-nvidia-funds-its-suppliers-factories-to-lock-in-packaging-and-substrate-capacity-for-years-ahead",
+      "editorialNote": "Company announcement, November 17, 2026. Nearly $3 billion in Amkor agreements mentioned alongside these deals was previously announced; it is not new funding today."
+    },
+    {
+      "digestItemId": 1168,
+      "digestDate": "2026-11-18",
+      "title": "Replit Missions lets agents work toward a goal within a budget",
+      "summary": "Replit introduced Missions on November 17, letting users specify an outcome, a budget and actions requiring approval while teams of agents research, build, test and iterate. Its launch examples extend beyond generating an application to researching customers and preparing outreach, with human approval boundaries set by the user.",
+      "whyItMatters": "Giving agents a budget and permission to keep trying can reduce the human coordination between research, building and testing. The harder bottleneck moves to defining success: a team can spend its budget producing a convincing demo without proving that customers want it. Replit can sell longer runs, while buyers need outcome checks that distinguish useful progress from expensive activity.",
+      "url": "https://replit.com/blog/introducing-replit-missions",
+      "source": "Replit",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-18-replit-missions-lets-agents-work-toward-a-goal-within-a-budget",
+      "editorialNote": "Company announcement, November 17, 2026. Launch examples and benchmarks are vendor demonstrations, not established customer returns."
+    },
     {
       "digestItemId": 1158,
       "digestDate": "2026-11-17",
@@ -8321,8 +8459,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-17 · 9 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-18T08:01:37.344Z",
-  "contentHash": "34707a83307401330008bdb4614b1e2ee13720b06189ac05f2cfeabfa5ff0859"
+  "publicationStatus": "partial",
+  "notice": "2026-11-18 · 7 stories · More stories to follow",
+  "publishedAt": "2026-11-18T16:17:06.828Z",
+  "contentHash": "96858f4c8663888c54c3866616b3254a73ace42550f01baf84c5516943fe731a"
 }
