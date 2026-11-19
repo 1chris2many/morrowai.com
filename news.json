@@ -1,18 +1,57 @@
 {
   "version": 1,
-  "digestDate": "2026-11-18",
+  "digestDate": "2026-11-19",
   "latestSavedDigest": "2026-11-19",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 2,
+    "sourceCount": 2,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 12,
+  "pending": 10,
   "items": [
+    {
+      "digestItemId": 1171,
+      "digestDate": "2026-11-19",
+      "title": "Google launches Gemini 4 Neon with a lower cost-per-task claim",
+      "summary": "Google released Gemini 4 Neon on November 18 and says its default high thinking level costs 32% less per task than Carbon on the Artificial Analysis Intelligence Index. Pricing is $3 per million input tokens, $0.15 for cached input and $15 for output, with a one-million-token context window. The model is rolling out across Google's API, enterprise and paid consumer products; in Antigravity, it can coordinate Hydrogen subagents.",
+      "whyItMatters": "If Neon can handle work previously sent to Carbon, Google can make more tasks economical while customers reserve the larger model for difficult steps. That moves the purchasing decision from token price to the cost of completing a workflow; coordinating Hydrogen subagents makes routing part of the product. Google's benchmarks do not establish cost per accepted result once retries and human correction are included.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "source": "Google (The Keyword)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-19-google-releases-gemini-4-neon-a-faster-mid-tier-model-for-coding-and-enterprise-work",
+      "editorialNote": "Performance and cost comparisons are Google's claims; savings on a customer's workflow remain unverified."
+    },
+    {
+      "digestItemId": 1173,
+      "digestDate": "2026-11-19",
+      "title": "Major school districts weigh alternatives to Google Search over AI controls",
+      "summary": "New York, Los Angeles and Chicago schools are considering Search alternatives after Google said schools disabling Gemini features would also lose Search next year, The Verge reported on November 18, citing The New York Times. Google separately told The Verge that its Gemini app, Gemini Notebook and Search will be off by default until schools enable them. Neither statement establishes that schools can enable Search while keeping its AI features off.",
+      "whyItMatters": "Bundling AI with Search turns a classroom AI policy into a search-provider purchasing decision. That could put Google's existing search relationship at risk rather than automatically convert its school distribution into AI adoption. The districts are considering Search alternatives; the report does not show completed departures or require them to abandon Classroom and Chromebooks.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-19-google-s-plan-to-bundle-gemini-with-search-pushes-major-school-districts-to-consider-leaving",
+      "editorialNote": "The Verge relays the New York Times reporting and includes Google's direct response."
+    },
     {
       "digestItemId": 1164,
       "digestDate": "2026-11-18",
@@ -8479,8 +8518,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-18 · 8 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-19T14:52:09.846Z",
-  "contentHash": "d7ee68c34fb37c9a4917880e2ad3c3c48efda5c4c88327779a4cb8786c244f1b"
+  "publicationStatus": "partial",
+  "notice": "2026-11-19 · 2 stories · More stories to follow",
+  "publishedAt": "2026-11-19T21:19:55.487Z",
+  "contentHash": "43cbc32163992ec02e82f8e58551aca031c7c1e88aa4be673a9707c0b9793c66"
 }
