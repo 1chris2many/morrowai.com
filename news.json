@@ -4,14 +4,14 @@
   "latestSavedDigest": "2026-11-19",
   "fresh": false,
   "coverage": {
-    "count": 2,
-    "sourceCount": 2,
+    "count": 4,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 10,
+  "pending": 9,
   "items": [
     {
       "digestItemId": 1171,
@@ -51,6 +51,50 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-19-google-s-plan-to-bundle-gemini-with-search-pushes-major-school-districts-to-consider-leaving",
       "editorialNote": "The Verge relays the New York Times reporting and includes Google's direct response."
+    },
+    {
+      "digestItemId": 1174,
+      "digestDate": "2026-11-19",
+      "title": "Meta's emissions rose 45% in 2025, and it is re-evaluating its 2030 net-zero timeframe",
+      "summary": "Meta's sustainability report, released November 19, puts its 2025 net emissions at 11.8 million tonnes of CO2 equivalent, up 45%; capital goods account for 73% of its reported footprint. The company again matched all annual electricity use with clean and renewable energy, while electricity consumption rose 35%. Meta says it is reconsidering the 2030 timeframe for net-zero emissions, alongside other milestones, and gives no replacement date.",
+      "whyItMatters": "Clean-energy contracts address emissions assigned to purchased power, while building and equipping more data centers creates emissions upstream. That explains how full annual electricity matching can coexist with a sharply rising total footprint: expansion is outpacing progress elsewhere in the supply chain. The pressure shifts toward construction and equipment manufacturing, which cannot be decarbonized simply by buying more clean electricity for Meta's own operations.",
+      "url": "https://sustainability.atmeta.com/asset/2026-sustainability-report",
+      "source": "Meta (2026 Sustainability Report)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-19-meta-s-emissions-rose-45-in-2025-and-it-is-re-evaluating-its-2030-net-zero-timeframe",
+      "editorialNote": "Meta's primary report, pages 5, 19 and 21; figures describe 2025. The company says its long-term ambitions remain unchanged."
+    },
+    {
+      "digestItemId": 1170,
+      "digestDate": "2026-11-19",
+      "title": "Nadella links Microsoft buyouts to a redesign of work around AI agents",
+      "summary": "Microsoft offered buyouts to 60,000 employees in October; at the November 18 DealBook Summit, Satya Nadella described them as giving staff a choice during an AI-led reorganization, TechCrunch reports. He cited an 11-developer team building Cowork in Microsoft 365 as an example of people directing agents, and predicted that transforming an incumbent's work, workflows and pay structures would take longer than people expect.",
+      "whyItMatters": "The bottleneck Nadella describes is organizational: capable coding agents do not automatically change responsibilities, pay structures or who is willing to manage them. The buyout puts an exit option alongside that redesign, making adoption a workforce transition with staffing and financial costs. The small-team example does not establish company-wide productivity gains or how many employees will leave.",
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+      "source": "TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-19-microsoft-s-nadella-explains-why-he-offered-60-000-employees-buyouts-to-quit",
+      "editorialNote": "The offer covered 60,000 employees; this report does not establish 60,000 departures."
     },
     {
       "digestItemId": 1164,
@@ -8519,7 +8563,7 @@
     }
   ],
   "publicationStatus": "partial",
-  "notice": "2026-11-19 · 2 stories · More stories to follow",
-  "publishedAt": "2026-11-19T21:19:55.487Z",
-  "contentHash": "43cbc32163992ec02e82f8e58551aca031c7c1e88aa4be673a9707c0b9793c66"
+  "notice": "2026-11-19 · 4 stories · More stories to follow",
+  "publishedAt": "2026-11-19T21:30:27.179Z",
+  "contentHash": "f9590d5f7accc013835937611eeba49ac4bc4c3df7ec98939bed5c276c272afc"
 }
