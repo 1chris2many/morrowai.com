@@ -4,15 +4,34 @@
   "latestSavedDigest": "2026-11-19",
   "fresh": false,
   "coverage": {
-    "count": 4,
-    "sourceCount": 4,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 9,
+  "pending": 8,
   "items": [
+    {
+      "digestItemId": 1169,
+      "digestDate": "2026-11-19",
+      "title": "Anthropic closes its Nasdaq debut 17% above its IPO price",
+      "summary": "Anthropic closed its Nasdaq debut on November 19 at $97.17, 17% above its $83 offer price, after opening at $111.50, NPR reports. The company sold 956 million shares, about $79.3 billion before expenses; NPR's broader $107 billion-plus total also includes founder share sales and $26 billion of planned private placements. NPR reports first-half revenue of $16.3 billion and $1.6 billion in adjusted operating income.",
+      "whyItMatters": "Public trading gives investors a continuously repriced benchmark for frontier AI businesses while OpenAI's listing remains delayed. But the headline financing total combines money for the company, money for selling founders and planned placements; treating it all as new operating capital exaggerates the resources available to fund expansion. First-day gains measure investor appetite, while the durability of enterprise revenue and margins must support the valuation over time.",
+      "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion",
+      "source": "NPR",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-19-anthropic-raises-more-than-100-billion-in-record-breaking-nasdaq-ipo",
+      "editorialNote": "NPR discloses that Anthropic is a financial supporter."
+    },
     {
       "digestItemId": 1171,
       "digestDate": "2026-11-19",
@@ -8563,7 +8582,7 @@
     }
   ],
   "publicationStatus": "partial",
-  "notice": "2026-11-19 · 4 stories · More stories to follow",
-  "publishedAt": "2026-11-19T21:30:27.179Z",
-  "contentHash": "f9590d5f7accc013835937611eeba49ac4bc4c3df7ec98939bed5c276c272afc"
+  "notice": "2026-11-19 · 5 stories · More stories to follow",
+  "publishedAt": "2026-11-19T22:51:57.263Z",
+  "contentHash": "fc370124c8941edcef9d3d277c992fc8a6dfda623f39053f4faa977ed10f921c"
 }
