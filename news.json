@@ -1,18 +1,38 @@
 {
   "version": 1,
-  "digestDate": "2026-11-19",
+  "digestDate": "2026-11-20",
   "latestSavedDigest": "2026-11-20",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 1,
+    "sourceCount": 1,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 9,
+  "pending": 8,
   "items": [
+    {
+      "digestItemId": 1176,
+      "digestDate": "2026-11-20",
+      "title": "Signal adds screen-capture defenses against mobile AI assistants",
+      "summary": "Signal says it is adding screenshot protection on iOS 27 and enabling Android screen security when it detects an AI assistant accessing the screen. Users can disable protection; it does not cover every Android device, macOS screenshots or access to stored files.",
+      "whyItMatters": "Encryption can protect a message in transit while an operating-system assistant copies it after decryption. Signal is trading screenshot convenience for control over those copies, but its remaining gaps leave app-level privacy dependent on permissions and tools supplied by the same platforms building the assistants.",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "source": "Signal (Signal Technology Foundation blog)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-20-signal-to-block-ios-and-android-ai-agents-from-reading-app-screens-to-protect-chat-privacy",
+      "editorialNote": "Signal announcement, November 20, 2026."
+    },
     {
       "digestItemId": 1169,
       "digestDate": "2026-11-19",
@@ -8601,8 +8621,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-19 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-20T14:52:13.054Z",
-  "contentHash": "3f8d2db9b9cb4a47f8cf1eca9d52412365f40da5ec4818f1659c7acbe2df65ef"
+  "publicationStatus": "partial",
+  "notice": "2026-11-20 · 1 stories · More stories to follow",
+  "publishedAt": "2026-11-20T16:05:11.445Z",
+  "contentHash": "7ff8ef80170644918e99bf46d26e25301cbea02bd2a2005e97cf3a0972a101af"
 }
