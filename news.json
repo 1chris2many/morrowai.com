@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": false
   },
-  "pending": 8,
+  "pending": 7,
   "items": [
     {
       "digestItemId": 1176,
@@ -2837,6 +2837,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-10-27-openai-says-its-ai-model-produced-three-new-results-in-math-computer-science-and-physics",
       "editorialNote": "Announced October 26, 2026; independent examination is ongoing."
+    },
+    {
+      "digestItemId": 1034,
+      "digestDate": "2026-10-27",
+      "title": "OpenAI introduces lower-priced GPT-6.1 Terra for computer tasks",
+      "summary": "OpenAI released GPT-6.1 Terra for visual reasoning and computer use, with standard API prices 50% below GPT-5.6 Terra and GPT-6.1 Sol. The company reports better results on its computer-use and coding evaluations. It is available through the API, ChatGPT Work and Codex.",
+      "whyItMatters": "Screen-based workflows can require many small reads and actions, so a cheaper capable model could change which routine tasks are economical to automate. It also makes reserving expensive reasoning for difficult steps more attractive. The savings depend on successful completion: extra retries and human corrections can erase a lower token bill.",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "source": "OpenAI",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-10-27-openai-launches-gpt-6-1-terra-a-faster-lower-cost-model-built-for-computer-use-tasks",
+      "editorialNote": "Announced October 26, 2026. Performance figures are OpenAI’s evaluations."
     },
     {
       "digestItemId": 1037,
@@ -8623,6 +8643,6 @@
   ],
   "publicationStatus": "partial",
   "notice": "2026-11-20 · 1 stories · More stories to follow",
-  "publishedAt": "2026-11-20T16:05:11.445Z",
-  "contentHash": "7ff8ef80170644918e99bf46d26e25301cbea02bd2a2005e97cf3a0972a101af"
+  "publishedAt": "2026-11-20T20:22:13.780Z",
+  "contentHash": "b13f632a43bc1973feeff850a40c4739365cbb9827180b316a60c8bfc26449fb"
 }
