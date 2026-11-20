@@ -2,16 +2,16 @@
   "version": 1,
   "digestDate": "2026-11-19",
   "latestSavedDigest": "2026-11-19",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 5,
-    "sourceCount": 5,
+    "count": 6,
+    "sourceCount": 6,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": true
   },
-  "pending": 8,
+  "pending": 7,
   "items": [
     {
       "digestItemId": 1169,
@@ -114,6 +114,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-19-microsoft-s-nadella-explains-why-he-offered-60-000-employees-buyouts-to-quit",
       "editorialNote": "The offer covered 60,000 employees; this report does not establish 60,000 departures."
+    },
+    {
+      "digestItemId": 1172,
+      "digestDate": "2026-11-19",
+      "title": "Oracle patches Java flaw that Calif independently rediscovered with AI",
+      "summary": "Calif disclosed Java4Shell on November 17, when Oracle released a fix for the OpenJDK Base64-decoder vulnerability; exploitation requires affected x86-64 processors with AVX-512 VBMI and an application-specific attack path. In a November 19 timeline update, Calif credited a June public bug report and an unmerged September fix, saying its team independently rediscovered the bug with OpenAI’s Codex in October and subsequently demonstrated remote code execution.",
+      "whyItMatters": "Calif’s account suggests AI’s contribution was turning a reported crash into convincing evidence of a security risk, making an existing bug harder to leave in the backlog. That can change which fixes get attention without solving deployment: CISA warns that Java runtimes bundled inside applications, containers and appliances may be missing from inventories. Faster exploit research therefore raises the value of knowing where vulnerable code runs and who can update it; finding the bug is only one part of reducing exposure.",
+      "editorialNote": "Disclosed November 17; Calif updated its timeline November 19.",
+      "url": "https://calif.io/java4shell",
+      "source": "Calif",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-19-ai-model-uncovers-critical-security-flaw-in-java-used-by-nearly-all-fortune-500-companies"
     },
     {
       "digestItemId": 1164,
@@ -8581,8 +8601,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "2026-11-19 · 5 stories · More stories to follow",
-  "publishedAt": "2026-11-19T22:51:57.263Z",
-  "contentHash": "fc370124c8941edcef9d3d277c992fc8a6dfda623f39053f4faa977ed10f921c"
+  "publicationStatus": "current",
+  "notice": "2026-11-19 · 6 stories",
+  "publishedAt": "2026-11-20T00:21:56.756Z",
+  "contentHash": "cb810211e9bb845bee7c1ebbe4e8bc258503487a05d9066015a43e61675889c6"
 }
