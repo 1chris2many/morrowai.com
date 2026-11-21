@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-11-21",
   "fresh": true,
   "coverage": {
-    "count": 5,
-    "sourceCount": 4,
+    "count": 6,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -37,6 +37,31 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-21-alibaba-s-cloud-margins-rise-while-ai-application-losses-and-cash-outflows-grow",
       "editorialNote": "Recovery coverage. Results announced November 19, 2026. Adjusted EBITA and free cash flow are non-GAAP measures."
+    },
+    {
+      "digestItemId": 1182,
+      "digestDate": "2026-11-21",
+      "title": "Alphabet prices C$6 billion of bonds, including 40-year debt at 6%",
+      "summary": "Alphabet priced C$6 billion of senior unsecured notes on November 19, with settlement scheduled for November 24. Four tranches mature between 2029 and 2066; the C$1.25 billion 40-year tranche carries a 6% coupon and a 6.001% yield, 185 basis points above its Canadian government benchmark. The term sheet lists ratings of Aa2 from Moody’s and AA+ from S&P.",
+      "whyItMatters": "Canadian-dollar borrowing can broaden Alphabet’s lender base, while a 40-year maturity would secure funding far beyond the next capital-spending cycle. That reduces reliance on current cash generation but commits the company to interest payments regardless of how quickly its investments earn a return. The stated purpose is general corporate funding, including possible debt repayment; the filing does not earmark proceeds for AI.",
+      "editorialNote": "Recovery coverage. Priced November 19; term sheet filed November 20, 2026. Settlement is scheduled for November 24.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526469213/d21316dfwp.htm",
+      "source": "Alphabet (SEC filing)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-21-alphabet-prices-c-6-billion-of-bonds-including-40-year-debt-at-6"
     },
     {
       "digestItemId": 1178,
@@ -8745,7 +8770,7 @@
     }
   ],
   "publicationStatus": "recovery",
-  "notice": "2026-11-21 · Recovery edition · 5 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
-  "publishedAt": "2026-11-21T16:23:07.927Z",
-  "contentHash": "350829ea4f93ba74d7ad8da7ccb928b39d1ab901f8ac29b1d3741a32645b660a"
+  "notice": "2026-11-21 · Recovery edition · 6 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
+  "publishedAt": "2026-11-21T16:34:00.958Z",
+  "contentHash": "146ef0342e42d27339ac4723267646230ec86c5c0c9ae74639e19f6e41018a88"
 }
