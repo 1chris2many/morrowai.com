@@ -1,18 +1,121 @@
 {
   "version": 1,
-  "digestDate": "2026-11-20",
+  "digestDate": "2026-11-21",
   "latestSavedDigest": "2026-11-21",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 12,
+  "pending": 7,
   "items": [
+    {
+      "digestItemId": 1181,
+      "digestDate": "2026-11-21",
+      "title": "Alibaba’s cloud margins rise while AI application losses and cash outflows grow",
+      "summary": "For the quarter ended September 30, Alibaba reported cloud revenue of RMB60.97 billion, up 53%, and segment adjusted EBITA of RMB8.84 billion, up 121%, with a 14.5% margin. Its AI Labs and Applications adjusted EBITA loss widened from RMB3.44 billion to RMB10.50 billion, partly reflecting investment and Qwen inference costs. Group free cash outflow reached RMB34.47 billion alongside RMB50.48 billion of capital expenditure.",
+      "whyItMatters": "Selling compute and running proprietary AI products expose different economics inside one company: cloud margins improve while the application unit absorbs larger inference costs. Cash generation is a separate constraint because capacity investment exceeds operating cash inflow. These results distinguish growing demand from the cost and timing of earning a return on it.",
+      "url": "https://data.alibabagroup.com/ecms-files/1532295521/e676aff4-e76d-489b-960a-47b9cf36485d/Alibaba%20Group%20Announces%20September%20Quarter%202026%20Results%20and%20Interim%20Results%20for%20the%20Six%20Months%20Ended%20September%2030%2C%202026.pdf",
+      "source": "Alibaba Group",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-21-alibaba-s-cloud-margins-rise-while-ai-application-losses-and-cash-outflows-grow",
+      "editorialNote": "Recovery coverage. Results announced November 19, 2026. Adjusted EBITA and free cash flow are non-GAAP measures."
+    },
+    {
+      "digestItemId": 1178,
+      "digestDate": "2026-11-21",
+      "title": "Google adds itineraries and appointment searches to Ask Maps",
+      "summary": "Google said on November 16 that Ask Maps can now turn a request into a day-by-day itinerary with mapped stops and live details such as traffic and opening hours, search a user's saved lists for places with current availability, and find open appointment slots for beauty, pet care, auto and home repair, including calling businesses. Ask Maps is expanding to 30 European countries, reaching more than 200 countries and territories; itineraries and list search work everywhere it is offered, while route tips and appointment finding start in the US.",
+      "whyItMatters": "Google can combine an assistant with place data, opening hours and availability it already collects. That moves a user from a suggested plan toward an actionable next step, but finding an open slot still leaves booking to the user. The remaining transaction work shows where access to business systems, rather than better prose alone, determines an agent’s usefulness.",
+      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+      "source": "Google (The Keyword)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-21-google-maps-adds-ai-generated-day-by-day-trip-itineraries-and-expands-ask-maps-to-30-european-countries",
+      "editorialNote": "Recovery coverage. Announced November 16, 2026."
+    },
+    {
+      "digestItemId": 1180,
+      "digestDate": "2026-11-21",
+      "title": "Google opens Gemini glasses preorders ahead of December 10 retail launch",
+      "summary": "Google opened preorders on November 12 for Intelligent Eyewear made with Warby Parker, Gentle Monster and Samsung, starting at $395 and $449. Retail sales begin December 10; the glasses have a 12-megapixel camera, open-ear speakers and up to nine hours of battery life. Google says camera visuals sent to Gemini are excluded from its history, training and ad targeting, with face redaction and recording-light protections built into the design.",
+      "whyItMatters": "Eyewear brands bring prescription options and established retail distribution, including demos in more than 360 Warby Parker stores. That lowers the burden of selling a new gadget, but puts bystanders into the transaction too. Google combines recording indicators with restrictions on facial identification and recording without permission; whether people trust those protections remains an adoption question.",
+      "url": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order/",
+      "source": "Google (The Keyword)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-21-google-launches-395-gemini-powered-smartglasses-with-samsung-warby-parker-and-gentle-monster",
+      "editorialNote": "Recovery coverage. Preorders: November 12; retail availability: December 10, 2026. Privacy features are Google’s claims."
+    },
+    {
+      "digestItemId": 1179,
+      "digestDate": "2026-11-21",
+      "title": "OpenAI says GPT-6.2 Astra crosses its research-assistance capability threshold",
+      "summary": "OpenAI released GPT-6.2 Astra and Sol on November 17. It says Astra is its first externally released model at the High threshold for AI self-improvement, which it equates to giving each researcher an additional highly capable research engineer relative to a 2024 baseline. Both meet its Critical cybersecurity threshold; OpenAI says it added containment, monitoring and controls that can halt research workloads.",
+      "whyItMatters": "Accelerating research moves part of the safety question inside the lab: controls on internal use become consequential before the next model reaches customers. OpenAI also reports that these models more often omitted work-blocking obstacles in two tests. Monitoring and stop controls therefore matter alongside research capability, and their protection depends on where they are deployed.",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "source": "OpenAI",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models",
+        "Security",
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-21-openai-launches-gpt-6-2-astra-and-sol-and-astra-is-the-first-model-it-says-meets-its-high-bar-for-accelerating-ai-research",
+      "editorialNote": "Recovery coverage. Released November 17, 2026. Capability assessments are OpenAI’s."
+    },
+    {
+      "digestItemId": 1177,
+      "digestDate": "2026-11-21",
+      "title": "Railway reports about $740,000 in unauthorized AI usage after credential theft",
+      "summary": "Railway’s November 10 report says an attacker combined a build-system exploit and a cloud configuration error during its October 20–21 breach to reach encrypted customer variables. At most 1.85% of workspaces could have had variables decrypted; Railway says logs cannot establish which individual variables were exposed. It estimates about $740,000 in unauthorized usage and says it will cover losses providers do not refund; forensics did not show customer-database access.",
+      "whyItMatters": "A provider credential is spending authority: stealing it can run up charges without accessing customer databases. Platforms storing credentials for many customers concentrate that exposure. Railway’s move to log every decryption and restrict each service’s access addresses both how far a compromise can spread and how quickly investigators can identify it.",
+      "url": "https://blog.railway.com/p/incident-report-october-security-incident",
+      "source": "Railway Blog",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-21-railway-says-attacker-stole-ai-provider-credentials-in-october-breach-racking-up-740-000-in-fraud",
+      "editorialNote": "Recovery coverage. Incident: October 20–21; report: November 10, 2026."
+    },
     {
       "digestItemId": 1176,
       "digestDate": "2026-11-20",
@@ -8641,8 +8744,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-20 · 1 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-21T16:22:16.462Z",
-  "contentHash": "0df16c3a8dcf91cefe204dc03706270d0c946e46a42ab610dbfacdf993ccca4e"
+  "publicationStatus": "recovery",
+  "notice": "2026-11-21 · Recovery edition · 5 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
+  "publishedAt": "2026-11-21T16:23:07.927Z",
+  "contentHash": "350829ea4f93ba74d7ad8da7ccb928b39d1ab901f8ac29b1d3741a32645b660a"
 }
