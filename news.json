@@ -95,7 +95,7 @@
       "reviewed": true,
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-22-anthropic-mathematician-claims-lean-verified-proof-of-the-167-year-old-riemann-hypothesis-developed-with-claude",
-      "editorialNote": "Recovery coverage. Announcements and Vakil’s subsequent update: November 20, 2026. These are proposed proofs, not results independently verified by this publication."
+      "editorialNote": "Recovery coverage. Announcements and Vakil’s subsequent update: November 20, 2026. These are proposed proofs, not results independently verified by this publication. Disclosure: this article includes editorial contributions produced with Anthropic’s Claude models."
     },
     {
       "digestItemId": 1189,
@@ -8920,6 +8920,6 @@
   ],
   "publicationStatus": "recovery",
   "notice": "2026-11-22 · Recovery edition · 6 stories about earlier developments · Additional reviewed stories pending. Original event dates appear on each card; current-day coverage remains unverified.",
-  "publishedAt": "2026-11-22T16:23:17.993Z",
-  "contentHash": "308879a228af57f3bd0b2bb7de956c67329de72fca947863500008ce13702516"
+  "publishedAt": "2026-11-22T16:30:45.636Z",
+  "contentHash": "f63362f25ca41d19d71c839260dbc3b255882dc7f671682d509f0713d8aa2aa4"
 }
