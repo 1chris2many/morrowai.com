@@ -1,18 +1,147 @@
 {
   "version": 1,
-  "digestDate": "2026-11-21",
+  "digestDate": "2026-11-22",
   "latestSavedDigest": "2026-11-22",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 6,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 14,
+  "pending": 7,
   "items": [
+    {
+      "digestItemId": 1188,
+      "digestDate": "2026-11-22",
+      "title": "Alphabet closes a €6 billion bond sale with maturities out to 2045",
+      "summary": "Alphabet closed €6 billion of notes on November 5 after pricing them on November 2, according to its SEC filings: seven tranches maturing from 2028 to 2045, six with fixed coupons from 3.700% to 5.250% and one floating at three-month EURIBOR plus 0.50 percentage point. Alphabet says proceeds are for general corporate purposes, which may include repaying debt.",
+      "whyItMatters": "Together with its C$6 billion pricing on November 19, this offering shows Alphabet drawing on different currency markets and repayment horizons as capital spending expands. That broadens its funding options but does not show which investments the borrowed money will support or whether they will earn adequate returns; the filings specify general corporate purposes.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm",
+      "source": "Alphabet (SEC filings)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-alphabet-closes-a-6-billion-bond-sale-with-maturities-out-to-2045",
+      "editorialNote": "Recovery coverage. Priced November 2 and closed November 5, 2026. This is separate from the November 19 Canadian-dollar offering."
+    },
+    {
+      "digestItemId": 1187,
+      "digestDate": "2026-11-22",
+      "title": "Jensen Huang's foundation committed $350 million to CoreWeave compute for grant recipients, Bloomberg reports",
+      "summary": "Jensen Huang's charitable foundation has committed $350 million to CoreWeave, by far its biggest gift last year, with more than $100 million already spent, according to Bloomberg as relayed by The Verge on November 20. A CoreWeave spokesperson said the money buys compute that the foundation's grant recipients use for research.",
+      "whyItMatters": "A grant that buys compute from a selected provider supports research and creates demand for that provider at the same time. Nvidia’s former CEO funding work on an Nvidia-backed customer’s infrastructure adds another relationship to examine when judging customer independence. The reported commitment alone does not establish its revenue treatment or fabricated demand.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1038792/jensen-huangs-charity-is-spending-350-million-on-coreweave",
+      "source": "The Verge (reporting Bloomberg)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-jensen-huang-s-charity-committed-350-million-to-ai-cloud-provider-coreweave",
+      "editorialNote": "Recovery coverage. Bloomberg reported November 19; The Verge relayed it November 20, 2026. Commitment and spending are distinct."
+    },
+    {
+      "digestItemId": 1186,
+      "digestDate": "2026-11-22",
+      "title": "Loudoun County pauses final votes on data center and substation applications for up to a year",
+      "summary": "Loudoun County's Board of Supervisors voted on November 17 to pause its public hearings and final votes on legislative data center and substation applications for up to 12 months, retroactive to September 15, while it rewrites its data center standards. Developers can still submit applications, staff will keep reviewing them and Planning Commission hearings continue; the pause can affect 33 active applications, allows exceptions for grid reliability or expiring statutory deadlines, and excludes the Route 28 Tax District and administrative approvals.",
+      "whyItMatters": "For affected proposals, the bottleneck moves to final approval while earlier review can continue. Waiting for new standards adds timing and redesign risk, with exemptions limiting how much capacity is actually delayed. The decision therefore changes the sequence and certainty of approvals more than the headline project count suggests.",
+      "url": "https://www.loudoun.gov/m/newsflash/home/detail/10993",
+      "source": "Loudoun County",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-loudoun-county-virginia-s-data-center-alley-pauses-new-data-center-applications-for-a-year",
+      "editorialNote": "Recovery coverage. Board action: November 17, 2026; county notice: November 18. Retroactive effective date: September 15."
+    },
+    {
+      "digestItemId": 1183,
+      "digestDate": "2026-11-22",
+      "title": "Mathematician proposes a Claude-assisted Riemann proof; rival proof faces reported problems",
+      "summary": "Anthropic mathematician Levent Alpöge says he developed a proof of the Riemann hypothesis with Claude and released a Lean formalization before a readable explanation. TechCrunch reports that other mathematicians say it compiles. Ravi Vakil separately shared Alessandro Masullo’s proposed proof of the generalized hypothesis, then reported problems identified with help from AI models.",
+      "whyItMatters": "Formal checking can make an argument checkable before it is understandable; reviewers still need to examine its assumptions and whether the formal statement captures the intended theorem. AI is also helping researchers challenge a competing proposal. The opportunity is a faster cycle of constructing and checking arguments, while acceptance still depends on scrutiny.",
+      "url": "https://alpo.ge/remark.pdf",
+      "source": "Levent Alpöge; Ravi Vakil; TechCrunch",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-anthropic-mathematician-claims-lean-verified-proof-of-the-167-year-old-riemann-hypothesis-developed-with-claude",
+      "editorialNote": "Recovery coverage. Announcements and Vakil’s subsequent update: November 20, 2026. These are proposed proofs, not results independently verified by this publication."
+    },
+    {
+      "digestItemId": 1189,
+      "digestDate": "2026-11-22",
+      "title": "Microsoft issues $25 billion of bonds in ten tranches out to 2066",
+      "summary": "Microsoft said in a November 4 SEC filing that it had issued $25 billion of notes under an October 29 underwriting agreement: ten tranches maturing from 2028 to 2066, with fixed coupons from 4.850% to 6.350% and two floating tranches at SOFR plus 0.35 and 0.53 percentage point. It says proceeds are for general corporate purposes, which can include capital expenditures, buybacks, acquisitions or repaying debt.",
+      "whyItMatters": "Debt reaching out to 2066 lets Microsoft raise cash now and spread repayment across decades. That can separate the timing of investment from operating cash generation, while adding interest obligations regardless of how those investments perform. Capital spending is one possible use; the filing does not earmark this borrowing for AI.",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526447173/d178557d8k.htm",
+      "source": "Microsoft (SEC filings)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-microsoft-issues-25-billion-of-bonds-in-ten-tranches-out-to-2066",
+      "editorialNote": "Recovery coverage. Underwriting agreement: October 29; issuance reported November 4, 2026."
+    },
+    {
+      "digestItemId": 1185,
+      "digestDate": "2026-11-22",
+      "title": "UN talks on autonomous weapons end without a mandate to negotiate a binding treaty",
+      "summary": "Diplomats at UN talks in Geneva agreed early on November 21 to spend two years suggesting rules on lethal autonomous weapons that could be legally binding or optional, NPR reports, after the US proposed five years of non-binding guidelines and Russia delayed the agenda. The International Committee of the Red Cross, which had called for binding rules within a year, said it regretted the outcome and renewed its appeal.",
+      "whyItMatters": "Existing rules of war leave commanders accountable, but the talks did not settle specific common limits on autonomous targeting. The delay gives militaries more time to deploy systems before those limits are agreed, potentially making later restrictions harder to negotiate.",
+      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "source": "The Verge; NPR; ICRC",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-un-talks-on-regulating-autonomous-weapons-killer-robots-end-without-binding-rules",
+      "editorialNote": "Recovery coverage. Talks concluded early November 21, 2026; ICRC response published the same day."
+    },
     {
       "digestItemId": 1181,
       "digestDate": "2026-11-21",
@@ -2277,6 +2406,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-01-judge-rejects-xai-s-bid-to-dismiss-naacp-air-pollution-lawsuit-over-memphis-data-center",
       "editorialNote": "Court order October 30, 2026; reported October 31. Facility location and permitting analysis checked against the original order."
+    },
+    {
+      "digestItemId": 1069,
+      "digestDate": "2026-11-01",
+      "title": "Researchers alter Qwen personas by changing small parts of the model",
+      "summary": "Researchers are using open tools to alter Qwen’s generated personas by intervening on internal signals. Lyra’s Neuron Explorer tests inference-time changes against unmodified outputs and random controls; a separate Sauers project trained parameters associated with 128 neurons to create an owl persona. These demonstrations show changes in generated behavior, without establishing independent goals or real-world harmful capability.",
+      "whyItMatters": "Open weights make a model’s shipped behavior a starting point that downstream operators can change. Safety evaluations of the original release therefore cannot automatically certify a modified deployment; operators need to test the modified model together with the tools and permissions they give it.",
+      "url": "https://github.com/lyramakesmusic/neuron-explorer/blob/7ec363d2d9686802a1b4aa7c6d8a2627b1759159/research_log.md",
+      "source": "Lyra / Neuron Explorer; Sauers / Qwen model card",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-01-grassroots-researchers-manipulate-individual-ai-neurons-to-create-wild-alternate-personalities",
+      "editorialNote": "Reported October 30, 2026. Activation steering and neuron-level training are distinct interventions. Additional primary source: Sauers/Qwen3-8B-tawny-owl-128-neurons model card on Hugging Face."
     },
     {
       "digestItemId": 1061,
@@ -8769,8 +8918,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-21 · 6 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-22T16:22:20.092Z",
-  "contentHash": "e9c4ab49c77cb6a7058c5dd42ea96d5ff1e548d553dd16a436bc10f435df283b"
+  "publicationStatus": "recovery",
+  "notice": "2026-11-22 · Recovery edition · 6 stories about earlier developments · Additional reviewed stories pending. Original event dates appear on each card; current-day coverage remains unverified.",
+  "publishedAt": "2026-11-22T16:23:17.993Z",
+  "contentHash": "308879a228af57f3bd0b2bb7de956c67329de72fca947863500008ce13702516"
 }
