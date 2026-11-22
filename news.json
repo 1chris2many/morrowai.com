@@ -2,14 +2,14 @@
   "version": 1,
   "digestDate": "2026-11-21",
   "latestSavedDigest": "2026-11-21",
-  "fresh": true,
+  "fresh": false,
   "coverage": {
-    "count": 6,
-    "sourceCount": 5,
+    "count": 0,
+    "sourceCount": 0,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": true
+    "healthy": false
   },
   "pending": 7,
   "items": [
@@ -8769,8 +8769,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "recovery",
-  "notice": "2026-11-21 · Recovery edition · 6 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
-  "publishedAt": "2026-11-21T16:34:00.958Z",
-  "contentHash": "146ef0342e42d27339ac4723267646230ec86c5c0c9ae74639e19f6e41018a88"
+  "publicationStatus": "delayed",
+  "notice": "2026-11-21 · 6 stories · Today’s edition is delayed",
+  "publishedAt": "2026-11-22T08:07:18.667Z",
+  "contentHash": "390e7bada43817829126384f9e0b07a4d799dd749ba08399224e4c4b108e1379"
 }
