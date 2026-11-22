@@ -2,16 +2,16 @@
   "version": 1,
   "digestDate": "2026-11-22",
   "latestSavedDigest": "2026-11-22",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 6,
-    "sourceCount": 4,
+    "count": 7,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": true
   },
-  "pending": 7,
+  "pending": 6,
   "items": [
     {
       "digestItemId": 1188,
@@ -121,6 +121,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-22-microsoft-issues-25-billion-of-bonds-in-ten-tranches-out-to-2066",
       "editorialNote": "Recovery coverage. Underwriting agreement: October 29; issuance reported November 4, 2026."
+    },
+    {
+      "digestItemId": 1184,
+      "digestDate": "2026-11-22",
+      "title": "SEC's Nvidia probe is examining potential accounting issues, Reuters reports",
+      "summary": "Reuters reported on November 20, citing two people briefed on the matter, that SEC enforcement staff are scrutinizing potential accounting issues at Nvidia, after The Wall Street Journal reported the probe without its focus. Reuters said it could not determine when the inquiry began or which issues are being examined, noted that investigations are not evidence of wrongdoing, and said the SEC declined to comment and Nvidia did not immediately respond.",
+      "whyItMatters": "For a company whose results set expectations for the whole AI supply chain, the question an accounting inquiry raises is revenue quality: how sales are recognized and to whom, not whether demand exists. Nothing reported so far says which numbers are in question, so the useful response is to watch what Nvidia discloses in its next filings rather than to fill the gap with guesses, including about its customer and geographic reporting.",
+      "url": "https://www.gulf-times.com/gulftimes/uploads/pdf/2026/11/22/business-20261122-1-1795298488.pdf",
+      "source": "Reuters (via Gulf Times)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-sec-is-investigating-nvidia-s-accounting-practices-reuters-reports-as-shares-extend-seven-week-slide",
+      "editorialNote": "Recovery coverage. Reuters report: November 20, 2026; Gulf Times print edition: November 22, page 3. The inquiry’s scope remains unknown."
     },
     {
       "digestItemId": 1185,
@@ -8919,7 +8939,7 @@
     }
   ],
   "publicationStatus": "recovery",
-  "notice": "2026-11-22 · Recovery edition · 6 stories about earlier developments · Additional reviewed stories pending. Original event dates appear on each card; current-day coverage remains unverified.",
-  "publishedAt": "2026-11-22T16:30:45.636Z",
-  "contentHash": "f63362f25ca41d19d71c839260dbc3b255882dc7f671682d509f0713d8aa2aa4"
+  "notice": "2026-11-22 · Recovery edition · 7 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
+  "publishedAt": "2026-11-22T16:37:04.712Z",
+  "contentHash": "fe58a32729d63e0c1d9aacb48e7e1a2c497e89f15c3ac2f37ca105a5d39b2f2b"
 }
