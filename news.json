@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-11-22",
   "fresh": true,
   "coverage": {
-    "count": 7,
-    "sourceCount": 5,
+    "count": 9,
+    "sourceCount": 7,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -37,6 +37,57 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-22-alphabet-closes-a-6-billion-bond-sale-with-maturities-out-to-2045",
       "editorialNote": "Recovery coverage. Priced November 2 and closed November 5, 2026. This is separate from the November 19 Canadian-dollar offering."
+    },
+    {
+      "digestItemId": 1191,
+      "digestDate": "2026-11-22",
+      "title": "Amazon is close to buying Israeli AI startup Decart for up to $7.5 billion, Calcalist reports",
+      "summary": "Calcalist reported on November 18 that Amazon was near signing a Decart acquisition, with cash, stock and deferred payments potentially reaching nearly $7.5 billion. It reported five-year founder retention, a significant portion of the price payable in year five, and software that helps developers switch AI chips.",
+      "whyItMatters": "Amazon’s chip strategy also needs software customers can adopt. Decart’s reported portability work could help turn Trainium capacity into usable alternatives, while retaining the founders could preserve implementation expertise. The report supplies no measured switching benefit.",
+      "url": "https://www.calcalistech.com/ctechnews/article/uckadwd7r",
+      "source": "Calcalist (Ctech)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-amazon-is-close-to-buying-israeli-ai-startup-decart-for-up-to-7-5-billion-calcalist-reports",
+      "editorialNote": "Recovery coverage. Reported negotiations: November 18, 2026. Disclosure: this article includes editorial contributions produced with Anthropic’s Claude models."
+    },
+    {
+      "digestItemId": 1190,
+      "digestDate": "2026-11-22",
+      "title": "Apollo and Goldman price about $44 billion of notes to fund SpaceX's Nvidia GPUs",
+      "summary": "Apollo and Goldman Sachs announced pricing of about $44 billion in senior and subordinated notes on November 20 to finance Nvidia GPUs and related equipment for SpaceX. The upsized transaction follows the roughly $40 billion commitment announced in October; leases are expected to begin with equipment delivery in the first half of 2027.",
+      "whyItMatters": "Pricing connects investor demand with a funding route for future compute, but available financing does not establish the return on that capacity. Apollo describes an asset-based structure; assessing who bears losses requires the collateral, lease-payment and recourse terms, which this release does not provide.",
+      "url": "https://ir.apollo.com/news-events/press-releases/detail/662/apollo-and-goldman-sachs-announce-pricing-of-44-billion",
+      "source": "Apollo (press release)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-apollo-and-goldman-price-about-44-billion-of-notes-to-fund-spacex-s-nvidia-gpus",
+      "editorialNote": "Recovery coverage. Pricing announcement: November 20, 2026; earlier commitment: October 26. Expected delivery and lease commencement: first half of 2027."
     },
     {
       "digestItemId": 1187,
@@ -8939,7 +8990,7 @@
     }
   ],
   "publicationStatus": "recovery",
-  "notice": "2026-11-22 · Recovery edition · 7 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
-  "publishedAt": "2026-11-22T16:37:04.712Z",
-  "contentHash": "fe58a32729d63e0c1d9aacb48e7e1a2c497e89f15c3ac2f37ca105a5d39b2f2b"
+  "notice": "2026-11-22 · Recovery edition · 9 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
+  "publishedAt": "2026-11-22T16:42:17.865Z",
+  "contentHash": "8d71bf0f7b2be095ca020e48f1c7b28ed47cd7041e5cd7f1b502d4b9657aaf33"
 }
