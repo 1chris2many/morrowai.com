@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": true
   },
-  "pending": 6,
+  "pending": 5,
   "items": [
     {
       "digestItemId": 1188,
@@ -1815,6 +1815,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-07-google-buys-crusoe-s-wyoming-data-center-site-a-day-after-announcing-17-billion-build-out",
       "editorialNote": "Google announcement November 5; Crusoe announcement November 6. Original edition: November 7, 2026."
+    },
+    {
+      "digestItemId": 1101,
+      "digestDate": "2026-11-07",
+      "title": "OpenAI says its cyber model found 948 exploitable Linux vulnerabilities",
+      "summary": "OpenAI reports that a mid-October run of its cyber pipeline produced 948 working Linux privilege-escalation exploits from 2,308 candidate findings. The run used $1,213,430 in API credits, about $1,279 per exploit. Its proposed patches go through human and maintainer review.",
+      "whyItMatters": "OpenAI identifies validation and prioritization as bottlenecks: a larger stream of findings improves security only if maintainers can turn the most consequential ones into accepted fixes. The $1,279 figure prices model usage per exploit, not the full cost of resolving a vulnerability.",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "source": "OpenAI research report",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-07-openai-s-cyber-security-model-finds-nearly-1-000-exploitable-linux-flaws",
+      "editorialNote": "Recovery coverage. Research run: mid-October 2026; report: November 4. API credits are not an all-in remediation-cost estimate."
     },
     {
       "digestItemId": 1096,
@@ -8991,6 +9011,6 @@
   ],
   "publicationStatus": "recovery",
   "notice": "2026-11-22 · Recovery edition · 9 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
-  "publishedAt": "2026-11-22T16:42:17.865Z",
-  "contentHash": "8d71bf0f7b2be095ca020e48f1c7b28ed47cd7041e5cd7f1b502d4b9657aaf33"
+  "publishedAt": "2026-11-23T00:49:16.543Z",
+  "contentHash": "f1603f6c7441a973c45f8fd4ee0321ce6ab0d99a8254af82a1f665c572757dac"
 }
