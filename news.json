@@ -4,8 +4,8 @@
   "latestSavedDigest": "2026-11-22",
   "fresh": true,
   "coverage": {
-    "count": 9,
-    "sourceCount": 7,
+    "count": 10,
+    "sourceCount": 8,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
@@ -88,6 +88,26 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-22-apollo-and-goldman-price-about-44-billion-of-notes-to-fund-spacex-s-nvidia-gpus",
       "editorialNote": "Recovery coverage. Pricing announcement: November 20, 2026; earlier commitment: October 26. Expected delivery and lease commencement: first half of 2027."
+    },
+    {
+      "digestItemId": 1192,
+      "digestDate": "2026-11-22",
+      "title": "AWS says a Chinese-nexus actor's AI agents found and exploited a zero-day on their own",
+      "summary": "Amazon Threat Intelligence reported on November 20 that on September 10 it found an unauthenticated public server running Cairn, an open-source AI penetration-testing framework, whose history showed a roughly 48-hour campaign from September 8 against East Asian universities; AWS attributes it to a Chinese-nexus actor with moderate confidence. Given targets and the goal 'obtain shell access,' the agents worked one hardened server for about 16 hours and another for more than 6 hours without success, but against a medical imaging AI application they found an unpatched path-traversal flaw and went from mapping its API to writing arbitrary files in about 11 minutes, reaching a root shell in a later session.",
+      "whyItMatters": "The agents kept adapting for most of a day without the operator choosing each step, and one exposed flaw was enough. That puts weight on the basics agents can probe without fatigue, such as unauthenticated services and unpatched internet-facing applications. AWS says the maintainers released a fix and an advisory; the advisory, dated November 18, covers MONAI Label 0.8.5 and earlier but listed no patched version when checked, and version 0.8.6 was uploaded to PyPI on November 21 without confirmation here that it contains the fix. This is one reported campaign, not a measure of how often such agents succeed.",
+      "url": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
+      "source": "Amazon Threat Intelligence (AWS Security Blog)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-22-aws-says-a-chinese-nexus-actor-s-ai-agents-found-and-exploited-a-zero-day-on-their-own",
+      "editorialNote": "Recovery coverage. Incident: September 8–10; report: November 20, 2026. Disclosure: this article includes editorial contributions produced with Anthropic’s Claude models."
     },
     {
       "digestItemId": 1187,
@@ -9010,7 +9030,7 @@
     }
   ],
   "publicationStatus": "recovery",
-  "notice": "2026-11-22 · Recovery edition · 9 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
-  "publishedAt": "2026-11-23T00:49:16.543Z",
-  "contentHash": "f1603f6c7441a973c45f8fd4ee0321ce6ab0d99a8254af82a1f665c572757dac"
+  "notice": "2026-11-22 · Recovery edition · 10 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.",
+  "publishedAt": "2026-11-23T01:28:15.042Z",
+  "contentHash": "3aa31abc38eebf64782e0d8748a595ebdc2033dd2261177383ee4cf0a4b16369"
 }

@@ -19,7 +19,7 @@
         <div><p class="kicker">Latest edition · <time datetime="2026-11-22">2026-11-22</time></p><h2 id="latest-heading">Latest stories</h2></div>
         <a href="https://usefulaiwerks.com/news.html">All stories →</a>
       </div>
-      <p class="meta" role="status">2026-11-22 · Recovery edition · 9 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.</p>
+      <p class="meta" role="status">2026-11-22 · Recovery edition · 10 stories about earlier developments. Original event dates appear on each card; current-day coverage remains unverified.</p>
       <p><a href="https://usefulaiwerks.com/feed.xml">Follow with RSS →</a></p>
       <div class="latest-grid">
         <article class="lead-card" data-digest-item-id="1188">
@@ -42,6 +42,13 @@
           <p class="news-summary">Apollo and Goldman Sachs announced pricing of about $44 billion in senior and subordinated notes on November 20 to finance Nvidia GPUs and related equipment for SpaceX. The upsized transaction follows the roughly $40 billion commitment announced in October; leases are expected to begin with equipment delivery in the first half of 2027.</p>
           <p class="news-why">Pricing connects investor demand with a funding route for future compute, but available financing does not establish the return on that capacity. Apollo describes an asset-based structure; assessing who bears losses requires the collateral, lease-payment and recourse terms, which this release does not provide.</p>
           <p class="meta news-editorial-note">Recovery coverage. Pricing announcement: November 20, 2026; earlier commitment: October 26. Expected delivery and lease commencement: first half of 2027.</p>
+        </article>
+        <article class="news-card" data-digest-item-id="1192">
+          <p class="meta">Amazon Threat Intelligence (AWS Security Blog)</p>
+          <h3><a href="https://usefulaiwerks.com/news.html#story-2026-11-22-aws-says-a-chinese-nexus-actor-s-ai-agents-found-and-exploited-a-zero-day-on-their-own">AWS says a Chinese-nexus actor&#39;s AI agents found and exploited a zero-day on their own</a></h3>
+          <p class="news-summary">Amazon Threat Intelligence reported on November 20 that on September 10 it found an unauthenticated public server running Cairn, an open-source AI penetration-testing framework, whose history showed a roughly 48-hour campaign from September 8 against East Asian universities; AWS attributes it to a Chinese-nexus actor with moderate confidence. Given targets and the goal &#39;obtain shell access,&#39; the agents worked one hardened server for about 16 hours and another for more than 6 hours without success, but against a medical imaging AI application they found an unpatched path-traversal flaw and went from mapping its API to writing arbitrary files in about 11 minutes, reaching a root shell in a later session.</p>
+          <p class="news-why">The agents kept adapting for most of a day without the operator choosing each step, and one exposed flaw was enough. That puts weight on the basics agents can probe without fatigue, such as unauthenticated services and unpatched internet-facing applications. AWS says the maintainers released a fix and an advisory; the advisory, dated November 18, covers MONAI Label 0.8.5 and earlier but listed no patched version when checked, and version 0.8.6 was uploaded to PyPI on November 21 without confirmation here that it contains the fix. This is one reported campaign, not a measure of how often such agents succeed.</p>
+          <p class="meta news-editorial-note">Recovery coverage. Incident: September 8–10; report: November 20, 2026. Disclosure: this article includes editorial contributions produced with Anthropic’s Claude models.</p>
         </article>
         <article class="news-card" data-digest-item-id="1187">
           <p class="meta">The Verge (reporting Bloomberg)</p>
