@@ -1,18 +1,76 @@
 {
   "version": 1,
-  "digestDate": "2026-11-22",
+  "digestDate": "2026-11-23",
   "latestSavedDigest": "2026-11-23",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 3,
+    "sourceCount": 3,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 8,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 1193,
+      "digestDate": "2026-11-23",
+      "title": "Nvidia's board reinstates Jensen Huang as CEO while its investigation continues",
+      "summary": "Nvidia's board unanimously reinstated Jensen Huang as president, chief executive and director on November 22, effective immediately, and announced it on November 23. Harvey Jones remains board chair, and Colette Kress, who was interim CEO while remaining CFO, continues as CFO. The board says senior US government officials gave input and that it is confident Huang's return poses no national security risk. Its independent committee investigating reports that Huang was targeted by a foreign intelligence effort will continue to conclusion.",
+      "whyItMatters": "The board has decided who leads while its own investigation is unfinished, so that inquiry's outcome remains a risk the company carries. Its answer is added oversight: a national-security committee of independent directors and a planned chief compliance officer reporting to the board. The open question is whether those controls hold up while the investigation and government inquiries continue.",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "source": "NVIDIA (press release and SEC filing)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-23-nvidia-s-board-reinstates-jensen-huang-as-ceo-stock-surge-lifts-the-s-p-500-nearly-5",
+      "editorialNote": "Reinstatement is not a finding by the board's investigation, which continues. The release does not name the government officials who gave input."
+    },
+    {
+      "digestItemId": 1194,
+      "digestDate": "2026-11-23",
+      "title": "Sierra is raising $1.75 billion at a $30 billion valuation and charges customers per outcome",
+      "summary": "Sierra, the customer-service AI agent company led by Bret Taylor and Clay Bavor, said on November 23 it is raising $1.75 billion at a $30 billion valuation, led by Greenoaks and Lightspeed. It says it passed $400 million in annual recurring revenue, a figure first announced October 30, and that it charges for outcomes, such as a problem resolved or a loan originated, rather than for usage or tokens.",
+      "whyItMatters": "Charging per outcome moves the cost of a model's failures onto Sierra: if an agent needs several tries or a pricier model to resolve a case, the customer still pays for one resolution. That may make customers easier to sign, but it means Sierra's margin depends on how efficiently it serves each result, which it doesn't disclose. ARR is the company's run-rate measure, not recognized revenue.",
+      "url": "https://sierra.ai/blog/series-f-30b",
+      "source": "Sierra (company blog)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-23-enterprise-ai-agent-startup-sierra-raises-1-75b-doubling-its-valuation-to-30-billion-in-six-months",
+      "editorialNote": "Customer and revenue figures are Sierra's own; the $400 million ARR milestone was announced October 30."
+    },
+    {
+      "digestItemId": 1195,
+      "digestDate": "2026-11-23",
+      "title": "Walmart lets Meta's Muse agent shop Black Friday deals through its Agent Gateway",
+      "summary": "Walmart is rolling out its Agent Gateway so Meta's Muse AI agent can find and buy products through Walmart's Sparky assistant, The Verge reported on November 23. Purchases run through 'Agent Profiles' in a shopper's Walmart account, where they set a spending limit, approve purchases and see what Muse bought, paying with a saved card at regular prices under normal returns. Walmart says the agent does not receive purchase history.",
+      "whyItMatters": "Where Amazon and eBay have blocked outside agents, Walmart lets one in on its own terms: the agent shops, but Walmart keeps the account, payment, limits and customer data. That puts the controls with the retailer, not the agent's maker. Walmart says more agents are coming; for now it is one partner, and shopper uptake is untested.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+      "source": "The Verge",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-23-walmart-opens-its-site-to-meta-s-muse-ai-shopping-agent-ahead-of-black-friday",
+      "editorialNote": "Walmart first said the launch was delayed to November 24, then told The Verge it would roll out November 23."
+    },
     {
       "digestItemId": 1188,
       "digestDate": "2026-11-22",
@@ -9029,8 +9087,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-22 · 10 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-23T14:52:23.196Z",
-  "contentHash": "0b4e856d4dad0a616e35ac199f83112208aa582daf0e707079099521090dabac"
+  "publicationStatus": "thin",
+  "notice": "2026-11-23 · 3 stories",
+  "publishedAt": "2026-11-23T16:12:47.071Z",
+  "contentHash": "41277193e7ea6216866905acc91b3c9fb22be1ac75e819192b3671f89ce7b706"
 }
