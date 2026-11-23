@@ -2,17 +2,42 @@
   "version": 1,
   "digestDate": "2026-11-23",
   "latestSavedDigest": "2026-11-23",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 3,
-    "sourceCount": 3,
+    "count": 4,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 6,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 1196,
+      "digestDate": "2026-11-23",
+      "title": "Amazon signs a deal to buy Decart's chip-optimization technology and hire its founders",
+      "summary": "Amazon said on November 23 it has signed an agreement to buy the proprietary technology behind the Decart Optimization Stack and bring Decart's three co-founders and their team of researchers and engineers to Amazon. Decart has worked with Amazon on Trainium performance since 2025. Amazon disclosed no price, and completion is subject to customary closing conditions, including regulatory clearance.",
+      "whyItMatters": "Amazon is buying the software and hiring the people who have worked with it on Trainium since 2025. Software that gets more out of each chip could lower the cost of training and serving models on Trainium. Whether the stack delivers measurable gains at Amazon's scale is a claim, not yet a result.",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "source": "Amazon",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Hardware"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-23-amazon-signs-a-deal-to-buy-decart-s-chip-optimization-technology-and-hire-its-founders",
+      "editorialNote": "Signed agreement, not completed; no price disclosed (earlier reported figures are unconfirmed). Disclosure: this article includes editorial contributions produced with Anthropic’s Claude models."
+    },
     {
       "digestItemId": 1193,
       "digestDate": "2026-11-23",
@@ -9087,8 +9112,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "2026-11-23 · Partial edition · 3 stories from 3 source publishers. Target: 5–8 stories from at least 3 publishers.",
-  "publishedAt": "2026-11-23T16:37:23.424Z",
-  "contentHash": "da72e65e74d15f3cc6c55d4430994ef90d2f4f6233ecca65f2b0f629e4fead83"
+  "publicationStatus": "thin",
+  "notice": "2026-11-23 · Partial edition · 4 stories from 4 source publishers. Target: 5–8 stories from at least 3 publishers.",
+  "publishedAt": "2026-11-23T16:41:09.075Z",
+  "contentHash": "d74eb86a209f3c018e04caf6aebd2dccf9e71064b406ee0a7c3216a673efb789"
 }
