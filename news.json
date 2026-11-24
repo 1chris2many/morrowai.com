@@ -1,18 +1,114 @@
 {
   "version": 1,
-  "digestDate": "2026-11-23",
+  "digestDate": "2026-11-24",
   "latestSavedDigest": "2026-11-24",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 5,
+    "sourceCount": 5,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 10,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 1201,
+      "digestDate": "2026-11-24",
+      "title": "Anthropic's Claude Ship adds beta agents that fix pull requests and approve them under a team's policy",
+      "summary": "Anthropic announced Claude Ship on November 23 for Claude Team and Enterprise plans on GitHub. Code Review, which flags problems, is generally available. Two beta agents divide the work: PR Steward fixes failing checks, merge conflicts and review feedback but cannot approve or merge, and a separate Claude Approvals agent approves changes against a policy the team writes in natural language and stores in the repository. Anthropic suggests starting approvals in observe-only mode, and existing branch protections still apply.",
+      "whyItMatters": "As agents produce more code, human review can become the bottleneck, so the notable step is handing approval authority to an agent under written rules. Splitting the agent that changes code from the one that approves it keeps a fix from signing off on itself, and approval is still not a merge. Observe-only mode lets a team compare the agent's approvals with its own before relying on them.",
+      "url": "https://claude.com/resources/articles/introducing-claude-ship",
+      "source": "Anthropic",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-24-anthropic-launches-claude-ship-letting-an-ai-agent-approve-routine-code-changes-on-its-own",
+      "editorialNote": "PR Steward and Claude Approvals are in beta; branch protections continue to apply. Disclosure: this article includes editorial contributions produced with Anthropic’s Claude models."
+    },
+    {
+      "digestItemId": 1197,
+      "digestDate": "2026-11-24",
+      "title": "Commerce adds Megaspeed and six related entities to its Entity List",
+      "summary": "The Commerce Department's Bureau of Industry and Security added seven entities in Singapore, Malaysia and Thailand, including Singapore-based Megaspeed and affiliates, to its Entity List in a final rule filed for public inspection on November 23 and effective on filing, with printed publication scheduled for November 25. The rule cites significant risk of the entities being or becoming involved in diverting advanced computing items to unauthorized end uses or users. Exports, reexports and transfers of all items subject to US export rules to the listed parties now require a license, reviewed under a presumption of denial.",
+      "whyItMatters": "An Entity List designation acts on the supply chain rather than the target: anyone exporting, reexporting or transferring covered items to these parties needs a license that will usually be refused, which is how US rules reach companies abroad. Naming affiliates alongside Megaspeed may make buying through a related company harder. For chip vendors, the practical effect is more scrutiny of who their buyers sell to.",
+      "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
+      "source": "Federal Register (Bureau of Industry and Security)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-24-megaspeed-tied-to-the-nvidia-jensen-huang-scandal-is-reportedly-headed-for-a-us-trade-blacklist",
+      "editorialNote": "Effective on public inspection November 23; printed publication scheduled November 25. A limited transition applies to qualifying shipments already en route."
+    },
+    {
+      "digestItemId": 1199,
+      "digestDate": "2026-11-24",
+      "title": "Google starts letting AI Mode use Wallet data, with Drive and Gemini chats to follow",
+      "summary": "Google said on November 23 it is starting to roll out the option to connect Google Wallet to Personal Intelligence in Search's AI Mode, with Drive and the Gemini app following in the coming weeks, so answers can draw on a user's spending, documents and chats. They join Gmail, Calendar and Photos as connected sources. Google says connecting is opt-in through Search personalization settings.",
+      "whyItMatters": "Search answers can become more useful as they draw on data a user has stored with Google, and spending records are among the most personal. Once those accounts are connected, moving to another assistant means reconnecting or exporting that data, which adds friction to switching. It also puts more personal data behind one answer box, so how clearly Google shows what each answer used, and how easily users disconnect, matters more.",
+      "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "source": "Google (The Keyword)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-24-google-lets-ai-mode-pull-in-wallet-drive-and-gemini-app-data-for-more-personalized-search-answers",
+      "editorialNote": "Announced November 23: Wallet connection begins rolling out; Drive and Gemini app connections are planned for the coming weeks."
+    },
+    {
+      "digestItemId": 1200,
+      "digestDate": "2026-11-24",
+      "title": "Meta brings its Muse agent to the UK, requiring approval for every purchase",
+      "summary": "Meta made its Muse personal AI agent available to adults in the UK on November 23, after launches including Australia and Singapore. Users connect the apps Muse can use; Facebook, Instagram and Threads in the same Accounts Center connect automatically. Purchases need approval every time, while for other tasks users can grant lasting permission. Meta says a separate security agent checks Muse's actions, credentials sit in a store the model can't see, and conversations aren't shared with its ad systems, though use for improving Meta's AI is on by default.",
+      "whyItMatters": "An agent's value comes from acting without being asked, and its risk from the same thing, so Meta draws the line by action type: purchases always need a yes, other tasks can be pre-approved. The defaults run the other way in two places: Meta's own apps connect automatically, and use of conversations for AI development starts on until a user turns it off.",
+      "url": "https://about.fb.com/news/2026/11/muse-now-available-in-the-uk-muse-does-the-work-you-stay-in-control/",
+      "source": "Meta Newsroom",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-24-meta-s-muse-ai-agent-launches-in-the-uk-with-approval-prompts-for-sensitive-actions",
+      "editorialNote": "Safeguards are Meta's own description and were not independently tested."
+    },
+    {
+      "digestItemId": 1198,
+      "digestDate": "2026-11-24",
+      "title": "Prosecutors say an ex-OpenAI employee accused of bugging a meeting room kept hundreds of recordings",
+      "summary": "Prosecutors say in a court filing that Abdulrahman Alfozan, a former OpenAI employee arrested on charges of planting a hidden listening device in an OpenAI conference room, had hundreds of audio files of OpenAI meetings and conversations, many involving what may be trade secrets, according to Bloomberg as reported by The Verge. The filing says he kept the files and AI-generated transcripts 'meticulously categorized' and may have uploaded some to Dropbox.",
+      "whyItMatters": "According to the filing, the recordings were not just captured but organized: audio paired with AI-generated transcripts and sorted, which would turn hours of meetings into a searchable archive of what was discussed. That is the specific way AI tools change insider risk, by making covert recordings far easier to mine. These are prosecutors' allegations; the reported filing does not establish that trade secrets were taken.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041125/former-openai-employee-may-have-captured-trade-secrets-with-hidden-listening-device",
+      "source": "The Verge (reporting Bloomberg)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-24-prosecutors-say-ex-openai-employee-accused-of-bugging-a-conference-room-had-hundreds-of-recorded-files",
+      "editorialNote": "Allegations from a prosecution filing, reported by Bloomberg via The Verge; not established findings."
+    },
     {
       "digestItemId": 1196,
       "digestDate": "2026-11-23",
@@ -9112,8 +9208,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-23 · 4 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-24T14:52:26.329Z",
-  "contentHash": "35fa32f519d0eb2eeffa78356de629d5ad4384e3d16a12c44bebcb6e062e1292"
+  "publicationStatus": "current",
+  "notice": "2026-11-24 · 5 stories",
+  "publishedAt": "2026-11-24T16:11:40.035Z",
+  "contentHash": "9ff9dd94b6bf0ac9131a69d4ed493c98447d693a45ae439dca7a3c45d8c96fd6"
 }
