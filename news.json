@@ -1,18 +1,63 @@
 {
   "version": 1,
-  "digestDate": "2026-11-24",
+  "digestDate": "2026-11-25",
   "latestSavedDigest": "2026-11-25",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 2,
+    "sourceCount": 1,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 7,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 1202,
+      "digestDate": "2026-11-25",
+      "title": "Dell's revenue doubles to $54.9 billion and its AI server backlog reaches $132.3 billion",
+      "summary": "Dell reported third-quarter fiscal 2027 revenue of $54.9 billion on November 24, up 103% from a year earlier, with AI-optimized server revenue of $22.0 billion, up 291%. It said it booked $60.2 billion of AI orders and ended the quarter with a record $132.3 billion AI backlog, raised full-year revenue guidance to $202.0 billion from $192.0 billion, and added $25 billion to its share buyback authorization. Its PC business grew 3%.",
+      "whyItMatters": "A backlog is orders not yet fulfilled, not guaranteed revenue or cash: it still has to be built, shipped and paid for. Dell says it vets each order for the customer's access to capital, land and power, which names the execution risks, since delays in a buyer's financing or a powered site can push deliveries out. Dell's growth now comes almost entirely from its server business, so its results track AI buildout financing as much as PC demand.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm",
+      "source": "Dell Technologies (SEC Form 8-K, Exhibit 99.1)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-25-dell-posts-record-54-9-billion-quarter-as-ai-server-backlog-hits-132-billion",
+      "editorialNote": "Company-reported results; backlog and order-vetting claims are Dell's own."
+    },
+    {
+      "digestItemId": 1203,
+      "digestDate": "2026-11-25",
+      "title": "Meta pauses its new Class C shares, and the stock-sale program that depends on them, during a shareholder lawsuit",
+      "summary": "Meta said in an SEC filing on November 23 that, because of consolidated Delaware shareholder lawsuits challenging its recapitalization, it will not issue any Class C common stock while pre-trial and trial proceedings continue; trial is set for April 19, 2027. Mark Zuckerberg waived the deadline for paying the declared Class C stock dividend; the waiver ends at the earliest of specified litigation outcomes or June 30, 2027. Meta said its at-the-market stock program will not launch until Class C shares begin trading, which it expects only after the dividend is paid.",
+      "whyItMatters": "An at-the-market program lets a company sell new shares gradually to raise cash, so the delay removes, for now, one funding route Meta had planned. Its timing is now set by a court calendar rather than a financial decision. The filing gives no size for the program and says nothing about spending plans.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026075541/meta-20261118.htm",
+      "source": "Meta (SEC Form 8-K)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Funding",
+        "Policy"
+      ],
+      "themes": [
+        {
+          "id": "ai-infrastructure",
+          "name": "AI infrastructure"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-25-meta-pauses-its-new-class-c-shares-and-the-stock-sale-program-that-depends-on-them-during-a-shareholder-lawsuit",
+      "editorialNote": "Recovery coverage. Event November 18; filed November 23."
+    },
     {
       "digestItemId": 1201,
       "digestDate": "2026-11-24",
@@ -9208,8 +9253,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-24 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-25T16:07:30.067Z",
-  "contentHash": "7bf321a5f937f9f958168eaf96ab30bad6b2f3e85473565adc0c5f14dcec5c09"
+  "publicationStatus": "thin",
+  "notice": "2026-11-25 · Partial edition · 2 stories from 1 source publishers. Target: 5–8 stories from at least 3 publishers.",
+  "publishedAt": "2026-11-25T16:08:39.750Z",
+  "contentHash": "44a669933d7d91bf221ecfc9eb53c40b6bbb34c56faf1e86b3610618ac84f64f"
 }
