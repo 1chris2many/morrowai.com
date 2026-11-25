@@ -11,7 +11,7 @@
     "minSources": 3,
     "healthy": false
   },
-  "pending": 6,
+  "pending": 7,
   "items": [
     {
       "digestItemId": 1201,
@@ -9210,6 +9210,6 @@
   ],
   "publicationStatus": "delayed",
   "notice": "2026-11-24 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-25T14:52:29.986Z",
-  "contentHash": "ed4f955ae4c57df5345a940a253249860cbb95193e96fe7b6fc793dd6e22e67f"
+  "publishedAt": "2026-11-25T16:07:30.067Z",
+  "contentHash": "7bf321a5f937f9f958168eaf96ab30bad6b2f3e85473565adc0c5f14dcec5c09"
 }
