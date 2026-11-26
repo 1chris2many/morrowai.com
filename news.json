@@ -2,16 +2,16 @@
   "version": 1,
   "digestDate": "2026-11-26",
   "latestSavedDigest": "2026-11-26",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 4,
+    "count": 5,
     "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
-    "healthy": false
+    "healthy": true
   },
-  "pending": 6,
+  "pending": 5,
   "items": [
     {
       "digestItemId": 1208,
@@ -31,6 +31,30 @@
       "reviewMethod": "automated-publication-checks-v1",
       "anchor": "story-2026-11-26-42-state-attorneys-general-move-to-block-character-ai-from-selling-users-chat-data",
       "editorialNote": "Recovery coverage. Objections announced November 23 in Minnesota and November 24 in California; auction scheduled December 1. Figures and allegations are the attorneys general's."
+    },
+    {
+      "digestItemId": 1210,
+      "digestDate": "2026-11-26",
+      "title": "Amazon has held talks to let Meta's Muse agent shop its store, Fortune reports",
+      "summary": "Amazon has held talks about letting Meta's Muse AI agent shop on its marketplace, which could end its block on Muse, Fortune reported, according to The Verge on November 25. The discussions reportedly cover what products the agent recommends and the effect on Amazon's advertising revenue, which depends on people seeing ads in its store; Amazon is also reportedly concerned about the quality of Muse's search results and its relationship with customers. Neither company immediately commented, and no agreement has been reported.",
+      "whyItMatters": "Amazon's reported concerns name the trade-off for big retailers: an agent shopping on a customer's behalf could bring sales while bypassing the ads, search results and product pages that Amazon's store and its relationship with shoppers are built around. Walmart, by contrast, let Muse in while keeping the account, payment and spending limits on its own side.",
+      "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+      "source": "The Verge (reporting Fortune)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Agents"
+      ],
+      "themes": [
+        {
+          "id": "agentic-commerce",
+          "name": "Agentic commerce"
+        }
+      ],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-26-amazon-has-held-talks-to-let-meta-s-muse-agent-shop-its-store-fortune-reports",
+      "editorialNote": "Talks reported November 25 by Fortune, via The Verge; no agreement or restored access established. Walmart context reported November 23."
     },
     {
       "digestItemId": 1209,
@@ -9357,8 +9381,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "partial",
-  "notice": "2026-11-26 · Partial edition · 4 stories from 4 source publishers. Target: 5–8 stories from at least 3 publishers.",
-  "publishedAt": "2026-11-26T16:12:22.944Z",
-  "contentHash": "1ab964800875943d177e322f2563eab47a0a84603caea29bb59be1eb8c6457ac"
+  "publicationStatus": "current",
+  "notice": "2026-11-26 · 5 stories",
+  "publishedAt": "2026-11-26T16:20:52.594Z",
+  "contentHash": "993b506fa481b9270d18d444e62b14f31b2354d1d31b0a3030451b301faebd1b"
 }
