@@ -1,18 +1,97 @@
 {
   "version": 1,
-  "digestDate": "2026-11-25",
+  "digestDate": "2026-11-26",
   "latestSavedDigest": "2026-11-26",
   "fresh": false,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 4,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 10,
+  "pending": 6,
   "items": [
+    {
+      "digestItemId": 1208,
+      "digestDate": "2026-11-26",
+      "title": "42 state attorneys general oppose Character.AI's planned sale of users' chats",
+      "summary": "California Attorney General Rob Bonta said on November 24 that he had joined a bipartisan coalition of 42 attorneys general opposing Character.AI's plan, in its bankruptcy, to sell its platform and the private chat histories of more than 21 million US accounts, more than 2.1 million of them registered to minors. The chats and users' personal data, including IP addresses and other metadata, are set to be auctioned on December 1, 2026. The attorneys general say the sale lacks safeguards, despite Character.AI having told users their personal information would not be sold.",
+      "whyItMatters": "The sale tests what happens to users' chats when the company holding them goes bankrupt. The attorneys general object that the plan offers no safeguards for the people whose conversations would be sold, despite the company's earlier promise not to sell personal information. How the bankruptcy court handles those objections before the December 1 auction could determine what safeguards are written into this proposed sale.",
+      "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns",
+      "source": "California Attorney General",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-26-42-state-attorneys-general-move-to-block-character-ai-from-selling-users-chat-data",
+      "editorialNote": "Recovery coverage. Objections announced November 23 in Minnesota and November 24 in California; auction scheduled December 1. Figures and allegations are the attorneys general's."
+    },
+    {
+      "digestItemId": 1209,
+      "digestDate": "2026-11-26",
+      "title": "FCC authorizes SpaceX to deploy up to 1 million AI computing satellites",
+      "summary": "The FCC said on November 25 it had granted SpaceX the first US authorization for a constellation of data centers in space, allowing up to 1 million orbital compute modules for its Starmind system, with radio links for backup command and for supplementing its laser links between satellites. The order requires that SpaceX deploy at least one satellite by 2033 and the full million by 2040, and finalize its debris plan before deploying above 600 km; the FCC deferred its request to leave satellites in higher disposal orbits. Google said on November 19 it has booked Blue Origin's New Glenn for its first heavy-lift Project Suncatcher launch, targeted for early 2029.",
+      "whyItMatters": "Orbital computing trades terrestrial constraints, power hookups, land and local approval, for launch cost, cooling and in-orbit repair. Three questions stay separate: the FCC has approved deployment; how SpaceX will dispose of failed satellites in higher orbits is unresolved; and whether the operating economics work is unproven.",
+      "url": "https://docs.fcc.gov/public/attachments/DA-26-1273A1.pdf",
+      "source": "Federal Communications Commission; Google",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Hardware"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-26-fcc-approves-spacex-plan-to-deploy-up-to-1-million-ai-data-center-satellites",
+      "editorialNote": "FCC decision November 25. Deployment above 600 km requires a modification application with a final debris-mitigation plan. Google launch booking announced November 19."
+    },
+    {
+      "digestItemId": 1207,
+      "digestDate": "2026-11-26",
+      "title": "Nvidia has halted AI chip shipments to four Southeast Asian countries, the FT reports",
+      "summary": "Nvidia has stopped shipping AI chips to Malaysia, Singapore, Thailand and Indonesia, the Financial Times reported, according to The Verge on November 26, extending a halt Nvidia had already applied to China. The Verge says it follows tighter US restrictions introduced last week to limit Chinese access to AI computing through overseas data centers.",
+      "whyItMatters": "One possible reading: when rules target routing through third countries, halting a whole region may be simpler for a supplier than vetting each buyer. If so, legitimate data-center builders there would lose supply too, and demand could shift elsewhere. Neither effect is established; the halt is reported, not announced by Nvidia, and its scope and duration are unknown.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1043079/now-nvidias-stopped-sending-chips-to-southeast-asia-too",
+      "source": "The Verge (reporting the Financial Times)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-26-nvidia-reportedly-halts-ai-chip-shipments-to-southeast-asia-following-new-us-export-rules",
+      "editorialNote": "Reported by the Financial Times via The Verge; Nvidia had not confirmed the Southeast Asia halt in these sources."
+    },
+    {
+      "digestItemId": 1205,
+      "digestDate": "2026-11-26",
+      "title": "OpenAI says GPT-6 models can design protein shapes using only reasoning and code",
+      "summary": "OpenAI said on November 24 that its GPT-6 models can design new protein shapes and sequences using reasoning and general-purpose code, without calling specialized biology models, and performed comparably to or better than those models on most of its computational tests, though predicting a complete protein structure remains a weakness. In lab tests with research partner Onava, at least one protein built from GPT-6.2's designs showed evidence of binding for each of five targets; a specialized model, SolubleMPNN, supplied the amino-acid sequences and others helped pick which candidates to make.",
+      "whyItMatters": "Protein design today means chaining several specialized models, each with its own inputs and expertise. A general model that takes a plain-language goal and writes the design code could make that work easier to adapt. The evidence is uneven: strong computational results, but early lab results, binding on five targets with specialized models still supplying sequences and selecting candidates. OpenAI flags the same capability's biosecurity risk.",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+      "source": "OpenAI",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Research",
+        "Models"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-26-openai-says-gpt-6-models-can-design-new-proteins-without-specialized-biology-software",
+      "editorialNote": "Recovery coverage. OpenAI announcement November 24; company-reported results. Lab tests used specialized models for sequences and candidate selection."
+    },
     {
       "digestItemId": 1204,
       "digestDate": "2026-11-25",
@@ -9278,8 +9357,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-25 · 3 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-26T14:52:36.812Z",
-  "contentHash": "fcfcaac2971a579c1ad5d562d3b64a84d19a603f5cdfe3b251e0869afb41c2ce"
+  "publicationStatus": "partial",
+  "notice": "2026-11-26 · Partial edition · 4 stories from 4 source publishers. Target: 5–8 stories from at least 3 publishers.",
+  "publishedAt": "2026-11-26T16:12:22.944Z",
+  "contentHash": "1ab964800875943d177e322f2563eab47a0a84603caea29bb59be1eb8c6457ac"
 }
