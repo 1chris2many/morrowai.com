@@ -1,18 +1,97 @@
 {
   "version": 1,
-  "digestDate": "2026-11-26",
+  "digestDate": "2026-11-27",
   "latestSavedDigest": "2026-11-27",
-  "fresh": false,
+  "fresh": true,
   "coverage": {
-    "count": 0,
-    "sourceCount": 0,
+    "count": 4,
+    "sourceCount": 4,
     "targetMin": 5,
     "targetMax": 8,
     "minSources": 3,
     "healthy": false
   },
-  "pending": 9,
+  "pending": 5,
   "items": [
+    {
+      "digestItemId": 1214,
+      "digestDate": "2026-11-27",
+      "title": "Bank of England says AI borrowing is deepening links across the financial system",
+      "summary": "The Bank of England's Financial Stability Report, published November 26, says borrowing by hyperscalers, data-center operators and other AI-infrastructure firms is almost double its 2025 level, and that hyperscaler bond issuance is set to exceed $305 billion in 2026, about 8% of global investment-grade issuance. It describes AI financing as increasingly complex, circular and opaque, including AI companies financing others against future revenue commitments, and says equity valuations remain stretched on some measures despite recent falls. It also notes the pace of AI debt issuance has slowed from the first half of the year.",
+      "whyItMatters": "The Bank's concern is the connections: when AI firms fund each other against future revenue, and the same investors hold their bonds, private credit and shares, a disappointment in one place can spread through several markets at once. Circular arrangements also make it harder to tell how much demand is independent. The Bank says the UK system has been resilient; this is a warning about how stress would travel, not a forecast.",
+      "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026",
+      "source": "Bank of England",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-27-bank-of-england-warns-ai-hyperscaler-borrowing-threatens-financial-stability",
+      "editorialNote": "Published November 26."
+    },
+    {
+      "digestItemId": 1213,
+      "digestDate": "2026-11-27",
+      "title": "SAP is weighing at least 10,000 job cuts as it reshapes for AI, Bloomberg reports",
+      "summary": "SAP is preparing a plan to eliminate at least 10,000 positions as it reshapes its software business for AI, Bloomberg reported on November 26, citing people familiar with the matter, according to CNBC. SAP told CNBC it continually reviews how its organization needs to evolve but has made no decisions on further measures.",
+      "whyItMatters": "The reported plan puts product, engineering and sales roles under scrutiny. Reducing those teams could lower the cost of building and selling software, but only if AI or changed workflows sustain the work they perform. Proposed cuts alone do not show that productivity gain, and SAP has not confirmed a decision.",
+      "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+      "source": "CNBC (reporting Bloomberg)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "AI costs"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-27-sap-weighs-cutting-at-least-10-000-jobs-as-it-restructures-for-the-ai-era",
+      "editorialNote": "Reported plan: Bloomberg via CNBC, published November 27. SAP says no further decisions have been made."
+    },
+    {
+      "digestItemId": 1211,
+      "digestDate": "2026-11-27",
+      "title": "Taiwan raises its 2026 growth forecast to 13.28%, its fastest in nearly 50 years, on AI demand",
+      "summary": "Taiwan's statistics agency raised its 2026 GDP growth forecast to 13.28%, up 2.23 percentage points from August, citing strong demand for AI applications. If realized, that would be the fastest growth since 1978; the agency forecasts 6.51% growth in 2027. It expects AI infrastructure demand to support exports and private investment, while warning that US semiconductor export restrictions and tighter AI regulation could affect the outlook.",
+      "whyItMatters": "AI hardware orders are feeding through to Taiwan's factories and investment plans, giving a broader economic reading of the spending boom than individual company forecasts. That link also transmits risk: restrictions or delays affecting overseas buyers can disrupt the investment those orders support. The agency forecasts slower GDP growth next year, not a contraction.",
+      "url": "https://focustaiwan.tw/business/202611270017",
+      "source": "Focus Taiwan (CNA)",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Hardware",
+        "Policy"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-27-taiwan-s-economy-on-pace-for-fastest-growth-in-nearly-50-years-on-ai-chip-demand",
+      "editorialNote": "Government forecasts published November 27; growth projections are not final results."
+    },
+    {
+      "digestItemId": 1212,
+      "digestDate": "2026-11-27",
+      "title": "Virginia and Oregon sue SpaceX, alleging Grok still generates sexual images of children and real people",
+      "summary": "Virginia and Oregon sued SpaceX on November 23, alleging that Grok continued to generate child sexual abuse material and nonconsensual sexual images despite public safety assurances. Ars Technica reports that the states also allege cuts to safety-testing staff; X Safety says it has a zero-tolerance policy and strengthened protections.",
+      "whyItMatters": "The states are treating the gap between promised safeguards and alleged failures as a consumer-protection issue. If courts accept that argument, a chatbot maker's public safety assurances can help establish its liability. The filings are allegations, not court findings.",
+      "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+      "source": "Ars Technica",
+      "linkKind": "article",
+      "newsletters": [],
+      "tags": [
+        "Policy",
+        "Security"
+      ],
+      "themes": [],
+      "reviewed": true,
+      "reviewMethod": "automated-publication-checks-v1",
+      "anchor": "story-2026-11-27-virginia-and-oregon-sue-spacex-alleging-grok-still-generates-child-sexual-abuse-images-and-nonconsensual-intimate-imagery",
+      "editorialNote": "Recovery coverage. Lawsuits filed November 23."
+    },
     {
       "digestItemId": 1208,
       "digestDate": "2026-11-26",
@@ -9381,8 +9460,8 @@
       "editorialNote": ""
     }
   ],
-  "publicationStatus": "delayed",
-  "notice": "2026-11-26 · 5 stories · Today’s edition is delayed",
-  "publishedAt": "2026-11-27T14:52:52.342Z",
-  "contentHash": "8727c49397a16dd65e48f22fc154316e8d5a62f7e37644767c85f3c3a7b23239"
+  "publicationStatus": "thin",
+  "notice": "2026-11-27 · Partial edition · 4 stories from 4 source publishers. Target: 5–8 stories from at least 3 publishers.",
+  "publishedAt": "2026-11-27T16:09:22.921Z",
+  "contentHash": "ee6dd5daa2af673a59583d8d359b80cb04b280077a95f60af2c549e2496482d5"
 }
